@@ -2,15 +2,37 @@
 
 ## Introduction
 
-Introduction placeholder
+This is a co-learning and builder program for Web3 newcomers, early-stage builders, developers, operators, researchers, content creators, and community contributors.
+
+The program is designed as a practical path from learning to building:
+
+**3 weeks of intensive co-learning + 1 week hackathon + 1 week opportunity matching and portfolio building.**
+
+Participants will start from Web3 fundamentals, move into on-chain interaction, smart contract practice, AI-assisted development, and Monad testnet exploration, then turn what they learn into demos, Build Logs, and verifiable Proof of Work.
+
+This is not a passive lecture series. The goal is to help participants understand how Web3 works, complete real tasks on-chain, build something small but concrete, and prepare a portfolio that can support future collaboration, internship, ecosystem, or project opportunities.
 
 ## Keywords
 
-Keywords placeholder
+Web3, Monad, Smart Contract, AI, Builder Camp, Hackathon, Internship, Onchain, Consumer Crypto, Proof of Work
 
 ## Target Audience
 
-Target Audience placeholder
+This program is for:
+
+**Web3 newcomers** who want to understand wallets, transactions, gas, block explorers, testnets, and on-chain interaction.
+
+**Students and early-stage builders** who want to create a visible Web3 project during the summer.
+
+**Developers** who want to get started with smart contracts, on-chain applications, AI-assisted development, or the Monad ecosystem.
+
+**Product, operations, research, content, and community contributors** who want to understand how Web3 projects are built from concept to users, community, and ecosystem growth.
+
+**AI tool users**
+
+who want to apply AI to real Web3 learning, development, documentation, and project work.
+
+No one is expected to be strong from day one. What matters most is consistent participation, serious task completion, process documentation, and the willingness to push a real problem forward.
 
 ## Registration Period
 
@@ -31,8 +53,6 @@ Target Audience placeholder
 
 ## Organizations
 
-The organizing entities of the Intensive Co-learning. There can be multiple. 
-
 ## Leave Rules
 
 2 leaves per week.
@@ -43,11 +63,120 @@ Telegram：
 
 ## Learning Materials / Course Schedule
 
-Learning materials content
+Full path:
+
+**Web3 fundamentals → on-chain interaction → smart contracts and AI-assisted development → Monad testnet practice → hackathon demo → portfolio building and opportunity matching**
+
+**Week 1: Web3 Fundamentals and First On-chain Interaction**
+
+Build a shared foundation and complete your first verifiable on-chain record.
+
+Focus:
+
+- Wallets, addresses, private keys, and signatures
+- Transactions, gas, nonce, and block explorers
+- Testnets vs. mainnets
+- Course wallet setup
+- First testnet interaction
+- Using AI to understand concepts while manually verifying key results
+
+Expected outputs:
+
+- Course wallet
+- One testnet transaction record
+- Block explorer link / screenshot
+- First Build Log entry
+
+**Week 2: Smart Contracts and AI-assisted Development**
+
+Learn basic smart contract practice and complete a minimal on-chain artifact.
+
+Focus:
+
+- Smart contract structure
+- Solidity basics
+- Remix compilation, deployment, and interaction
+- Using AI to generate, explain, and revise contracts
+- Human review of AI output, risks, and changes
+
+Expected outputs:
+
+- Minimal contract or on-chain interaction demo
+- Prompt / AI output / human review notes
+- Contract address or interaction record
+- README or Build Log update
+
+**Week 3: Monad Practice and Project Direction**
+
+Bring the first two weeks of learning into Monad-related practice and prepare for the hackathon.
+
+Focus:
+
+- Monad testnet and ecosystem entry points
+- Differences between Monad and traditional EVM chains
+- High-frequency interaction, low latency, and consumer crypto scenarios
+- AI × Web3 and on-chain application experience
+- Hackathon direction selection, problem definition, and demo path design
+
+Expected outputs:
+
+- Hackathon project direction
+- Problem definition
+- Initial demo path
+- Task breakdown and support needs
+- Track Choice / Project Direction Card
+
+**Week 4: Hackathon Build Week**
+
+Turn your learning and direction into a presentable demo or prototype.
+
+Focus:
+
+- Team formation or solo project execution
+- Project scope refinement
+- Demo / MVP building (1/2)
+
+[2026/6/23 3:30] Xiaobu - lxpanda: - Repo, README, video, contract address, transaction hash, or other materials
+
+- Project submission and showcase
+
+Expected outputs:
+
+- Hackathon demo / MVP
+- Project repo or documentation
+- Submission materials
+- Demo video or live link
+- Verifiable on-chain or project proof
+
+**Week 5: Opportunity Matching and Portfolio Building**
+
+Organize your learning and project outcomes into assets that can continue to be used.
+
+Focus:
+
+- Portfolio building
+- Project narrative refinement
+- Build Log summary
+- WCB Profile / Builder Profile updates
+- Follow-up internship, collaboration, ecosystem, and community opportunities
+
+Expected outputs:
+
+- Portfolio materials
+- Improved project README / project description
+- Learning record and Proof of Work summary
+- Follow-up direction and opportunity-matching intent
 
 ## Study Rewards
 
-The greatest reward is gaining knowledge!
+By completing the program, participants will leave with:
+
+- A practical Web3 foundation: wallets, transactions, gas, block explorers, testnets, on-chain interaction, and smart contracts.
+- A real on-chain practice record: wallet setup, transaction hash, explorer link, contract address, or interaction proof.
+- An AI-assisted development process: prompts, AI outputs, human review notes, changes, and known issues.
+- A demo or project prototype: technical demo, research note, operations plan, content work, or community practice.
+- Build Logs and portfolio materials that show how you learned, thought, and pushed a real problem forward.
+- Potential follow-up opportunities, including ecosystem projects, internships, collaborations, mentor feedback, project showcases, and community support.
 
 ## Additional Information
 

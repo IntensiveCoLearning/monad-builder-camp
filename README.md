@@ -709,7 +709,7 @@ By completing the program, participants will leave with:
 | [1016013823-cmyk](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/1016013823-cmyk.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [eyw8](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/eyw8.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [JerryZZZZllll](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/JerryZZZZllll.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [kvxunz](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/kvxunz.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [kvxunz](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/kvxunz.md) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [KellenTn](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/KellenTn.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [louish-0809](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/louish-0809.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xzhc](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xzhc.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -792,6 +792,7 @@ By completing the program, participants will leave with:
 | [4c7k6ch9gn-prog](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/4c7k6ch9gn-prog.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [henanshifandaxue](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/henanshifandaxue.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

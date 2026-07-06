@@ -793,7 +793,9 @@ By completing the program, participants will leave with:
 | [henanshifandaxue](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/henanshifandaxue.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Junx20710](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Junx20710.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zane3412](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/zane3412.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Leo8341](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/Leo8341.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

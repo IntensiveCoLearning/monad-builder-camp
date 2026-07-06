@@ -348,7 +348,7 @@ By completing the program, participants will leave with:
 | [Nol4ovo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Nol4ovo.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [15210379072w-dot](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/15210379072w-dot.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [SelinaAnn](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/SelinaAnn.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [lamiyajaakhi767-tech](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lamiyajaakhi767-tech.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [lamiyajaakhi767-tech](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lamiyajaakhi767-tech.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xinxinxie924](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xinxinxie924.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Liime-liime](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Liime-liime.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Herobrine-dream](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Herobrine-dream.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -802,6 +802,7 @@ By completing the program, participants will leave with:
 | [AuralRain](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/AuralRain.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [NotBadSlime](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/NotBadSlime.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

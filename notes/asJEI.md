@@ -10,7 +10,7 @@ timezone: UTC+8
 
 ## Self-introduction
 
-Web3 暑期实习计划 - Monad Buidler Camp
+一个正在学习的大三学生而已
 
 ## Notes
 

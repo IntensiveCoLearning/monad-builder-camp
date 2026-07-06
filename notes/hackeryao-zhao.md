@@ -21,6 +21,6 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 1.  今天开始学习，一个月后成为大佬
     
-2.  奋斗白天，重回巅峰
+2.  奋斗百天，重回巅峰
 <!-- DAILY_CHECKIN_2026-07-06_END -->
 <!-- Content_END -->

@@ -223,7 +223,7 @@ By completing the program, participants will leave with:
 | [jonyhalin](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/jonyhalin.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lansheng-freedom](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lansheng-freedom.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zihanw541-dotcom](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zihanw541-dotcom.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Jiang0836](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Jiang0836.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Jiang0836](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Jiang0836.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Jaxmy](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Jaxmy.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Power0916](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Power0916.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Adazhangdada](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Adazhangdada.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -802,6 +802,7 @@ By completing the program, participants will leave with:
 | [AuralRain](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/AuralRain.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [NotBadSlime](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/NotBadSlime.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

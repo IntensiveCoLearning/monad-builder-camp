@@ -612,7 +612,7 @@ By completing the program, participants will leave with:
 | [sennkuwu](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sennkuwu.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jensen-Zeng](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/jensen-Zeng.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [linkmedcs](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/linkmedcs.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [sunshineluyao](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sunshineluyao.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [sunshineluyao](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sunshineluyao.md) |  ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [niniyvette13-prog](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/niniyvette13-prog.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zombiegazhi](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zombiegazhi.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [vickiee77](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/vickiee77.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |

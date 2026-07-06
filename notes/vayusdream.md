@@ -507,3 +507,4 @@ contract MessageBoard {
 ## 部署Monad合约
 <!-- DAILY_CHECKIN_2026-07-06_END -->
 <!-- Content_END -->
+https://remix.ethereum.org/

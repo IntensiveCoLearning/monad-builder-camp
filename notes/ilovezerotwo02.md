@@ -15,8 +15,18 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+1\. 创建或准备一个**课程专用钱包**，不要使用主力钱包。  
+2\. 添加 Monad Testnet 网络。  
+3\. 打开 Monad Explorer 或相关区块浏览器，确认可以查询地址。
+
+理解ethereum、协议资料、客户端、go客户端、数据和证明 EIP
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 了解基础概念
 
 -   `区块链`：一种分布式账本，很多节点共同保存同一份交易记录。为什么需要：不依赖单一公司或服务器，数据更难被篡改，任何人都能验证。

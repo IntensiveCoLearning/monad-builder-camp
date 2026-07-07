@@ -317,7 +317,7 @@ By completing the program, participants will leave with:
 | [Luney12](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Luney12.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [alishamclaughlingejof-tech](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/alishamclaughlingejof-tech.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zyaiire](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zyaiire.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [zzxwjm](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zzxwjm.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [zzxwjm](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zzxwjm.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [OffNormal](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/OffNormal.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [9-71](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/9-71.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sinuocai71-cyber](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sinuocai71-cyber.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -811,6 +811,7 @@ By completing the program, participants will leave with:
 | [blaze1128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/blaze1128.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [nniiovoo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nniiovoo.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

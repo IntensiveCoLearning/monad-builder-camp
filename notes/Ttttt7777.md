@@ -15,8 +15,205 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+# Solidity合约实践
+
+## 打卡合约
+
+### 首先使用了豆包查询了相关信息与生成了一个 Prompt
+
+**打卡合约（Attendance/Check-in 智能合约）**
+
+**一、基础定义**
+
+打卡合约是专门记录链上签到行为的智能合约，属于最基础的链上行为存证合约，和你之前问的 Onchain Todo 同属新手入门级项目，部署在 EVM 公链（以太坊、Monad、Polygon 等）。
+
+核心作用：用代码固化签到规则，自动记录钱包地址、打卡时间，防重复签到、自动发奖励/勋章，全程无后台人工干预。
+
+简单理解：链上版签到系统，代码=考勤规则。
+
+**二、核心底层逻辑**（代码层面）
+
+**1. 数据存储**
+
+用  mapping(address => 打卡记录数组)  绑定每个钱包，永久保存每一次打卡时间戳、连续打卡天数、领取奖励记录，数据写在区块账本不可篡改。
+
+**2. 核心校验规则（合约自带防作弊）**
+
+\- 时间锁：限制24小时仅能打卡1次，杜绝批量刷签到；
+
+\- 重复校验：同一地址当日重复调用直接拦截；
+
+\- 连续打卡统计：自动计算签到断签、连续天数（签到断一天清零）；
+
+\- 权限控制：仅合约部署者可修改奖励参数，普通用户仅能打卡。
+
+**3. 核心函数**
+
+\-  checkIn() ：用户连接钱包发起打卡主函数；
+
+\-  claimReward() ：完成签到后自动领取代币/NFT奖励；
+
+\-  getUserRecord(address) ：任何人可查询某钱包全部打卡历史；
+
+\-  resetReward() ：管理员调整每日奖励数量。
+
+**三、四大主流应用场景（Web3最常用）**
+
+**1\. DAO/项目社区日常签到（最普遍）**
+
+项目用来激活社区活跃度，用户每日打卡累积积分，兑换治理权重、空投、白名单。
+
+\- 优势：所有用户活跃度公开可查，无法后台篡改数据，杜绝刷量造假。
+
+**2\. 活动出席存证（POAP底层逻辑）**
+
+线下峰会、线上AMA、黑客松签到，打卡合约铸造SBT/POAP纪念NFT，作为链上参与凭证，后续可凭勋章解锁专属权益。
+
+**3\. 任务激励/链上Quest平台**
+
+Monad、各公链测试网新手任务标配：每日交互、每日签到领测试币、积分。你做Monad Builder Camp开发入门，第一个练手项目就是打卡合约。
+
+**4\. 自律/行为约束合约（小众）**
+
+健身、学习打卡质押合约：用户质押代币，连续打卡全额取回；断签自动扣除质押金分给持续打卡用户，自动强制执行，无人工仲裁。
+
+**四、两种主流打卡合约类型**
+
+**1\. 纯存证型（无奖励）**
+
+只记录打卡时间，不发放代币/NFT，多用于企业链上考勤、DAO出勤审计，Gas消耗极低。
+
+**2\. 激励型（带经济模型）**
+
+打卡自动发放代币、积分、灵魂绑定NFT（SBT），内置国库池，每日奖励额度由合约总量控制，适合社区运营。
+
+**五、优缺点**
+
+**优点**
+
+1. 完全去中心化：没有平台后台删除、篡改签到记录；
+
+2. 公开可审计：区块浏览器输入钱包地址，可完整导出全部打卡流水；
+
+3. 自动化执行：签到、发奖、惩罚全部由代码自动执行，无需人工审核；
+
+4. 开发门槛低：Solidity最简入门项目，Monad测试网新手开发首选。
+
+**缺点**
+
+1. 每次打卡需支付Gas手续费，高频签到成本高；
+
+2. 所有记录公开：任何人查到你的打卡时间与频率，无隐私；
+
+3. 规则固化：修改签到冷却、奖励额度需要重新部署合约；
+
+4. 无法验证线下真实行为：仅校验钱包交互，GPS、真人打卡需要搭配预言机。
+
+## Prompt：
+
+用 Solidity 编写一份最简打卡智能合约，适配 Monad 测试网，要求： 1. 每个钱包地址24小时只能打卡一次； 2. 记录每个用户总打卡次数、连续打卡天数，断签重置连续天数； 3. 只包含基础打卡、查询记录两个核心函数。 4. 代码附带中文注释，规避溢出漏洞，代码尽量简短易懂； 5. 最后附上简单部署、测试操作说明。
+
+## 合约代码：
+
+```remix-solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.26;
+
+
+/**
+ * @title SimpleCheckIn
+ * @dev 简单打卡合约
+ */
+contract SimpleCheckIn {
+
+    // 用户签到记录
+    struct UserInfo {
+        uint256 lastTime;   // 最近一次签到时间
+        uint256 count;      // 总签到次数
+    }
+
+
+    // 用户地址 => 签到数据
+    mapping(address => UserInfo) public users;
+
+
+    // 24小时冷却时间
+    uint256 public constant COOLDOWN = 24 hours;
+
+
+    // 签到事件
+    event CheckedIn(
+        address indexed user,
+        uint256 time,
+        uint256 count
+    );
+
+
+    /**
+     * @dev 用户签到
+     */
+    function checkIn() external {
+
+        UserInfo storage user = users[msg.sender];
+
+
+        // 24小时内不能重复签到
+        require(
+            block.timestamp >= user.lastTime + COOLDOWN,
+            "Already checked in"
+        );
+
+
+        // 更新签到时间
+        user.lastTime = block.timestamp;
+
+
+        // 增加签到次数
+        user.count += 1;
+
+
+        // 触发事件
+        emit CheckedIn(
+            msg.sender,
+            block.timestamp,
+            user.count
+        );
+    }
+
+
+
+    /**
+     * @dev 查询签到记录
+     */
+    function getRecord(address user)
+        external
+        view
+        returns(
+            uint256 lastTime,
+            uint256 count
+        )
+    {
+
+        UserInfo memory info = users[user];
+
+        return(
+            info.lastTime,
+            info.count
+        );
+    }
+
+}
+```
+
+通过以上流程我学会了如何使用Remix将一个简单合约部署到钱包中，并理解了合约是怎么工作，gas 费怎么收取。并且知道了怎么将部署的合约重新找出来
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 # 手册学习
 
 ## 区块链基础概览

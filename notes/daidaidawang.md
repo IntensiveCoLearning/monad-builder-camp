@@ -35,8 +35,6 @@ Vibecoding 是一种利用 AI Agent 进行软件开发 的方式。
 
 判断最终结果是否符合目标
 
-\---
-
 2\. AI Agent 与 Chatbot 区别
 
 Chatbot：
@@ -59,8 +57,6 @@ AI Agent：
 
 Vibecoding 的核心就是人与 AI Agent 协作完成开发。
 
-\---
-
 3\. Vibecoding 的关键能力：Prompt
 
 Prompt 决定 AI 输出质量。
@@ -82,8 +78,6 @@ UI 风格
 “做一个网站” → 信息不足
 
 “创建深色主题个人主页，包含项目展示、社交链接、移动端适配” → 更容易得到准确结果。
-
-\---
 
 4\. AI Agent 安全问题
 
@@ -109,8 +103,6 @@ Prompt Injection（提示注入）
 
 审查 AI 生成代码
 
-\---
-
 5\. Vibecoding Debug 方法
 
 遇到错误：
@@ -124,8 +116,6 @@ Prompt Injection（提示注入）
 提供给 AI Agent
 
 根据反馈继续迭代
-
-\---
 
 6\. Vibecoding 能力边界
 
@@ -144,17 +134,5 @@ Prompt Injection（提示注入）
 替代产品思考
 
 替代安全和技术判断
-
-\---
-
-核心总结
-
-Vibecoding 的重点不是让 AI 替代开发者，而是提升 Builder 的构建效率。
-
-未来 Builder 的核心能力：
-
-明确需求 → 有效 Prompt → AI 快速构建 → 人工验证迭代
-
-AI 降低了开发门槛，但产品判断、安全意识和技术理解仍然重要。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 <!-- Content_END -->

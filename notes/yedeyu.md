@@ -15,6 +15,8 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
-
-
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+-   观看回放 [Web3实习计划开营式](https://x.com/i/broadcasts/1MJgNNOXZvwGL)
+<!-- DAILY_CHECKIN_2026-07-07_END -->
 <!-- Content_END -->

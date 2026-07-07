@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+今天产出一个简单的DAPP，Monad测试网链上留言板，部署在：[https://message-board-ui.vercel.app/](https://message-board-ui.vercel.app/)
+
+repo地址：[Yunshiro/message-board-ui](https://github.com/Yunshiro/message-board-ui)
+
+合约地址：0x5407DA3398519b8E4fB6Ff96c46F36d2E1E85e40
+
+体验了一下dapp的前后端交互，感觉和web2类似，只不过dapp应用的后端部署在链上，逻辑都在链上运行，而Web2在服务器当中运行
+
+![1783416330279_a09d13b9bb5b479494730672088bd6c1.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-07-1783418252390-1783416330279_a09d13b9bb5b479494730672088bd6c1.png)![1783416360643_39b50e84557646958287422ca1056d55.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-07-1783418263107-1783416360643_39b50e84557646958287422ca1056d55.png)![1783416289749_606f7bbd91744a9d9e1c6d38fc51bc2a.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-07-1783418237725-1783416289749_606f7bbd91744a9d9e1c6d38fc51bc2a.png)
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 ## 学习内容
 
 1、了解钱包

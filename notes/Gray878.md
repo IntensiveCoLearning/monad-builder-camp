@@ -18,10 +18,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 1.  参加今天的培训和co-learning。
+    
+2.  完成测试网交易
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 1.选择了助教

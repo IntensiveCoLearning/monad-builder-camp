@@ -619,7 +619,7 @@ By completing the program, participants will leave with:
 | [explorerer](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/explorerer.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [0814d-yy](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/0814d-yy.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sylvia-by-w](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sylvia-by-w.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [FerryLLL](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/FerryLLL.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [FerryLLL](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/FerryLLL.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [hackeryao-zhao](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/hackeryao-zhao.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [hereMer](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/hereMer.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [pok0jk-09i](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/pok0jk-09i.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -813,6 +813,7 @@ By completing the program, participants will leave with:
 | [Camino-sec](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Camino-sec.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lidahe666](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lidahe666.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

@@ -23,12 +23,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
     
 2.  完成了第一笔测试网交易
     
+    ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Tuskiand/images/2026-07-07-1783436664738-image.png)
+3.  配置好codex，安装MONSKILLS
+    
 
-![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Tuskiand/images/2026-07-07-1783436664738-image.png)
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Tuskiand/images/2026-07-07-1783437825772-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Tuskiand/images/2026-07-07-1783437992511-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 1.  实时参加线上活动DevRel 的成长之路 —— 从 Builder 到生态连接者、Co-learning

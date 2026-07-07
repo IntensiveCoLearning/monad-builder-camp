@@ -271,7 +271,7 @@ By completing the program, participants will leave with:
 | [hynfrank](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/hynfrank.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Salieri-128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Salieri-128.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Click-75](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Click-75.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [LixinY-code](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LixinY-code.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [LixinY-code](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LixinY-code.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ding-dong-dong](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/ding-dong-dong.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [playerlxl00](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/playerlxl00.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yang02140124](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yang02140124.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -461,7 +461,7 @@ By completing the program, participants will leave with:
 | [Owen-owner-gif](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Owen-owner-gif.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [easonjames0108-collab](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/easonjames0108-collab.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Djbalaw-hhh](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Djbalaw-hhh.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Chichuzxy](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Chichuzxy.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Chichuzxy](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Chichuzxy.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yuetongz417](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yuetongz417.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sophietian822-crypto](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sophietian822-crypto.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lij818556-hash](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lij818556-hash.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -811,6 +811,7 @@ By completing the program, participants will leave with:
 | [blaze1128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/blaze1128.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [nniiovoo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nniiovoo.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

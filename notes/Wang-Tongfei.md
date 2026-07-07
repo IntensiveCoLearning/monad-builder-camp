@@ -15,8 +15,52 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+### **前置准备｜进入 Web3 与链上世界**
+
+**Summary**
+
+1.  创建或准备一个**课程专用钱包**，不要使用主力钱包。
+    
+2.  添加 Monad Testnet 测试网络。
+    
+3.  获取测试网资产，俗称“取水”。
+    
+4.  打开 Monad Explorer 或相关区块浏览器，可通过账户地址查询个人交易详情。
+    
+
+**Specific operations**
+
+1.  拓展插件Metamask
+    
+
+2.  创建钱包
+    
+
+Metamask创建钱包，并记住私钥
+
+3.  添加 Monad Testnet 测试网络
+    
+
+![bfae7d7454727fd78127d9b2e2b26ea8.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Wang-Tongfei/images/2026-07-07-1783429910381-bfae7d7454727fd78127d9b2e2b26ea8.png)
+
+4.  获取测试币，俗称“取水”
+    
+
+![878fab6dac3d34dcc22dd41ff2003d54.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Wang-Tongfei/images/2026-07-07-1783429969137-878fab6dac3d34dcc22dd41ff2003d54.png)
+
+**ps. 24h内每天上限50Mon**
+
+5.  用 Monad Explorer 查询你的课程钱包地址
+    
+
+![d9c3b1d5a43fd8684d7fe5f8595c0568.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Wang-Tongfei/images/2026-07-07-1783430245323-d9c3b1d5a43fd8684d7fe5f8595c0568.png)![b8c56d1f57c0850d75af789fddb35f50.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Wang-Tongfei/images/2026-07-07-1783430196336-b8c56d1f57c0850d75af789fddb35f50.png)
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 **一、Day1整体学习主线**
 
 1. Web3入门实操分三步：搭建Mod测试网钱包、链上取水获Mon测试币、AI生成部署智能合约。

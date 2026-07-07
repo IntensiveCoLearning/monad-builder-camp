@@ -17,11 +17,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-![以太坊知识概览.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-07-1783390063664-_______.png)
+为什么只能提交一张图片呢
+
+![区块链线上基本操作.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-07-1783390316618-_________.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

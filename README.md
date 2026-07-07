@@ -639,7 +639,7 @@ By completing the program, participants will leave with:
 | [2273310475-dev](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/2273310475-dev.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Ori-uii](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Ori-uii.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [4bvnywfrdf-png](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/4bvnywfrdf-png.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [0xlomai](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/0xlomai.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [0xlomai](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/0xlomai.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [djdjdj2948439](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/djdjdj2948439.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [JsLow666](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/JsLow666.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jinjinnan83-ui](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/jinjinnan83-ui.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -811,6 +811,7 @@ By completing the program, participants will leave with:
 | [blaze1128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/blaze1128.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [nniiovoo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nniiovoo.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

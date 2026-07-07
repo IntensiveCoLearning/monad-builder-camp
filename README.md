@@ -679,7 +679,7 @@ By completing the program, participants will leave with:
 | [xukangjie](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xukangjie.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Sunniva102](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Sunniva102.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [junnanhuang](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/junnanhuang.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [CHS1997](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/CHS1997.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [CHS1997](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/CHS1997.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ClaytonYang54](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/ClaytonYang54.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [nayanjohri-star](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nayanjohri-star.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [monadokiay](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/monadokiay.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -811,6 +811,7 @@ By completing the program, participants will leave with:
 | [blaze1128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/blaze1128.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [nniiovoo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nniiovoo.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

@@ -22,5 +22,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
     -   [https://docs.monad.xyz/developer-essentials](https://docs.monad.xyz/developer-essentials)
         
     -   [https://docs.monad.xyz/llms-full.txt](https://docs.monad.xyz/llms-full.txt)
+        
+    -   [https://docs.monad.xyz/guides/x402](https://docs.monad.xyz/guides/x402)
+        
+    -   [https://docs.monad.xyz/tooling-and-infra](https://docs.monad.xyz/tooling-and-infra)
+        
+    -   [https://developers.monad.xyz/](https://developers.monad.xyz/)
+        
+    -   [https://web3intern.xyz/zh/](https://web3intern.xyz/zh/)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 <!-- Content_END -->

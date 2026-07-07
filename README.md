@@ -202,7 +202,7 @@ By completing the program, participants will leave with:
 | [Kylinxin](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kylinxin.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [bahuang081-svg](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/bahuang081-svg.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [cheng-zhaofeng](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/cheng-zhaofeng.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [libuyi543-lang](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/libuyi543-lang.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [libuyi543-lang](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/libuyi543-lang.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [GnarALI](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/GnarALI.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [calla7777777](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/calla7777777.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [anna0608-png](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/anna0608-png.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -811,6 +811,7 @@ By completing the program, participants will leave with:
 | [blaze1128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/blaze1128.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [nniiovoo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nniiovoo.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

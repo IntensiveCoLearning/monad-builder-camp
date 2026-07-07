@@ -15,8 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+# DAY2 转账
+
+![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2ZiYTYxZmNiMjRmYzI3MzNlNWY4YzFjZmRmYjk5OTdfaDdBYkxTM0pFRUxtSzN5bmF2bzBKd3VURkljbm93WUxfVG9rZW46S3pkS2JUU3JTb1Q4QWN4a011TGNjbFVOblRoXzE3ODM0MzM1MjI6MTc4MzQzNzEyMl9WNA&add_watermark=true&scene_type=CCM)
+
+## Transaction hash
+
+![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=OTg3MzZhMzMzMzliNjM3NjEzNGM5NzBkMDQwYmY5NjFfY3paMnFSWVBtc01icGh4cHhsSW1PZlpUR29PT3hnamlfVG9rZW46TXBZSGJCZmVvb25YY3Z4cjBsUmNTVmphbnVnXzE3ODM0MzM1MjI6MTc4MzQzNzEyMl9WNA&add_watermark=true&scene_type=CCM)
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 DAY1 希望坚持！
 
 Web3入门：[https://web3intern.xyz/zh/preface/](https://web3intern.xyz/zh/preface/)

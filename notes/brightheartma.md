@@ -15,8 +15,48 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+\## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
+
+\### 今天做了什么
+
+\- 用 Remix 编译并部署了一个 Soulbound（不可转让）ERC-721 徽章合约 `NFTBadge`，基于 OpenZeppelin v5
+
+\- 网络：Monad Testnet（Chain ID 10143）
+
+\- 合约地址`0xe9a15a7A91708765b6339dCeED7b89D2b3a3eb9D`
+
+\- 完成了 read`owner()` 等）和 write`setBadgeTypeURI` / `mintBadge`）两类函数调用
+
+\- 给合约配置了真实 IPFS metadata（Pinata 上传图片 + JSON），替换掉了最初的占位字符串
+
+\- 整理了 README v0.1，写清楚了合约功能、部署步骤、交互方式
+
+\### 踩过的坑
+
+1\. **MetaMask 交易排队**：连续点击 write 按钮会攒一堆待确认请求，导致"点 A 方法却弹出 B 方法确认框"——本质是 nonce 顺序问题，不是合约或钱包故障，清空队列即可
+
+2\. \*`mintBadge` revert\*\*：合约设计上"同一地址同一 `badgeType` 不能重复领取"，第二次拿同样参数铸造会被 EVM 回滚。解决方式是新开一个 `badgeType=2` 重新走 `setBadgeTypeURI → mintBadge` 流程
+
+\### 关键技术点
+
+\- **Soulbound 实现**：重写 OpenZeppelin v5 的 `_update` 钩子，只放行铸造`from==0`）和销毁`to==0`），拦截普通转账
+
+\- **CEI 模式**`mintBadge` 里先完成状态写入（Effects）再调用 `_safeMint`（Interactions），降低重入风险
+
+\- **IPFS metadata 流程**：先传图片拿 CID → 写入 JSON 的 `image` 字段 → 再传 JSON 拿最终 CID → 这个 CID 才是 `setBadgeTypeURI` 要填的值
+
+\### 产出
+
+\- 合约地址 + 部署 tx hash + 两笔交互 tx hash`setBadgeTypeURI, mintBadge`）
+
+\- README v0.1（含部署信息、交互说明、安全设计说明）
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 **今日学习内容**
 
 **一、Web3 实习手册·入门导读**

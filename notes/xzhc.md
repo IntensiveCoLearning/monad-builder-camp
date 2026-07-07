@@ -15,8 +15,34 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+### **普通开发者如何进入以太坊协议层**
+
+## 什么是EPF？
+
+![epf.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xzhc/images/2026-07-07-1783437956400-epf.png)
+
+以太坊学习discord群组
+
+![eth-study-discord.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xzhc/images/2026-07-07-1783438102832-eth-study-discord.png)
+
+学习时间安排
+
+![timeline.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xzhc/images/2026-07-07-1783438144296-timeline.png)
+
+每个阶段怎么做
+
+![how1.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xzhc/images/2026-07-07-1783438222318-how1.png)![how2.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xzhc/images/2026-07-07-1783438324146-how2.png)![how3.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xzhc/images/2026-07-07-1783438427664-how3.png)
+
+什么时候去贡献
+
+![give.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xzhc/images/2026-07-07-1783438498897-give.png)
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 # DevRel的成长之路
 
 ## XiaoHai的身份

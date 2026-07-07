@@ -289,7 +289,7 @@ By completing the program, participants will leave with:
 | [xiqing21](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xiqing21.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [rensheng85666-commits](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/rensheng85666-commits.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [USDHGwang](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/USDHGwang.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [lilexi-bot](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lilexi-bot.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [lilexi-bot](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lilexi-bot.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [howardzhou989](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/howardzhou989.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [millarxixi-afk](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/millarxixi-afk.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [wodeche](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/wodeche.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -809,6 +809,7 @@ By completing the program, participants will leave with:
 | [MarnieWu](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/MarnieWu.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [GamlaNyx](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/GamlaNyx.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

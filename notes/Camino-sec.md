@@ -11,6 +11,7 @@ timezone: UTC+8
 ## Self-introduction
 
 Web3小趴菜一枚^ ^
+不断探索，无限进步
 
 ## Notes
 

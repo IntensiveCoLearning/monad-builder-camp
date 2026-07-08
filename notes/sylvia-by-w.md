@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+今天学到了合约部署的完整流程 大概理解了完整链路
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 第一次理解 Web3 钱包和链上交易
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 <!-- Content_END -->

@@ -17,13 +17,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-1.  了解了yoona老师的学习历程，专业背景，感情经历等等
+1.  了解了yoona老师的学习历程，专业背景，感情经历等等。
     
-2.  学习了AI Agent 支付的基础设施的架构和方案
+2.  学习了AI Agent 支付的基础设施的架构和方案。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 1.  参加今天的培训和co-learning。
     
@@ -32,6 +33,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+-   观看回放 [DevRel 的成长之路](https://www.youtube.com/watch?v=tVo5Q1rGa0w)
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 -   观看回放 [Web3实习计划开营式](https://x.com/i/broadcasts/1MJgNNOXZvwGL)
     
     -   [https://docs.monad.xyz/developer-essentials](https://docs.monad.xyz/developer-essentials)

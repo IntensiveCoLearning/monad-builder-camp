@@ -41,13 +41,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
     
 -   如何让自己的资料或产品能让ai更容易找到，从而成为塔常用付费的商户？——与百度合作
     
--   未来希望实现的场景：自动交水电费
+-   未来希望实现的场景：自动交水电费等高频生活场景
     
--   Jack Xiao邮箱：jackxiao@fluxapay.xyz
+-   agent payment过程中不涉及黑箱，支付比llm呈现的结果更清晰，协议中已经规定很清楚。
+    
+-   数字人民币：🈚️的原因主要是需求不够，单纯靠政策推动远远不够
+    
+-   Jack [Xiao邮箱：jackxiao@fluxapay.xyz](mailto:Xiao邮箱：jackxiao@fluxapay.xyz)
+    
+-   体验链接：[https://agentwallet.fluxapay.xyz/](https://agentwallet.fluxapay.xyz/)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 # D2
 
@@ -68,6 +75,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 # D1

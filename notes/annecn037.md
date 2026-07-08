@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+打个卡
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 **Web3 研究员工作要点清单：**
 
 -   **数据监控与报表：** 使用 Token Terminal 跟踪重点协议的营收、TVL 及活跃用户趋势，制作 Excel 对比表。

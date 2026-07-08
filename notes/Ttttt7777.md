@@ -15,8 +15,684 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+# 今日学习
+
+### 主要利用了 AI 辅助理解代码，逐步提升自己阅读与编写合约的能力。
+
+* * *
+
+## 1\. SPDX许可证
+
+```solidity
+// SPDX-License-Identifier: MIT
+```
+
+**作用：**
+
+告诉编译器，这份代码采用 **MIT 开源许可证**。
+
+这是 Solidity 官方推荐写法，没有这一行 Remix 会出现警告，但不会影响部署。
+
+* * *
+
+## 2\. 指定编译器版本
+
+```solidity
+pragma solidity ^0.8.26;
+```
+
+**作用：**
+
+告诉编译器：
+
+> 使用 **0.8.26及以上（但低于0.9.0）** 的 Solidity 编译。
+
+其中：
+
+-   `pragma`：告诉编译器配置
+    
+-   `^`：表示兼容当前大版本
+    
+-   `0.8.26`：最低版本
+    
+
+* * *
+
+## 3\. 定义合约
+
+```solidity
+contract SimpleCheckIn {
+```
+
+相当于 Java 的
+
+```java
+class SimpleCheckIn{
+}
+```
+
+或者 C++ 的
+
+```cpp
+class SimpleCheckIn{
+};
+```
+
+这里定义了一个智能合约，名字叫
+
+> **SimpleCheckIn**
+
+部署以后，这就是链上的一个程序。
+
+* * *
+
+# 4\. 定义用户数据结构
+
+```solidity
+struct UserInfo {
+```
+
+`struct` 的意思就是
+
+> **结构体**
+
+用于把多个变量组合在一起。
+
+里面包含：
+
+```solidity
+uint256 lastTime;
+```
+
+表示
+
+> 最近一次签到时间（时间戳）。
+
+例如：
+
+```
+1720000000
+```
+
+代表某一天的 Unix 时间。
+
+* * *
+
+第二个变量：
+
+```solidity
+uint256 count;
+```
+
+表示
+
+> 用户累计签到多少次。
+
+例如：
+
+```
+第一次签到
+count = 1
+
+第二次
+count = 2
+
+第三次
+count = 3
+```
+
+整个结构体就是
+
+```solidity
+UserInfo
+
+├── lastTime
+└── count
+```
+
+每一个用户都有一份这样的数据。
+
+* * *
+
+# 5\. mapping
+
+```solidity
+mapping(address => UserInfo) public users;
+```
+
+这是 Solidity 最重要的数据结构之一。
+
+意思是：
+
+```
+钱包地址
+      │
+      ▼
+UserInfo
+```
+
+例如
+
+```
+0x111...
+
+↓
+
+{
+lastTime: 1720000000
+count: 5
+}
+```
+
+再例如
+
+```
+0x222...
+
+↓
+
+{
+lastTime: 1721000000
+count: 2
+}
+```
+
+可以理解成 Java 的
+
+```java
+HashMap<Address, UserInfo>
+```
+
+或者 Python 的
+
+```python
+dict[address] = UserInfo
+```
+
+* * *
+
+# 6\. 定义24小时
+
+```solidity
+uint256 public constant COOLDOWN = 24 hours;
+```
+
+Solidity 内置时间单位。
+
+这里
+
+```
+24 hours
+```
+
+自动转换成
+
+```
+86400 秒
+```
+
+因此
+
+```
+COOLDOWN
+
+=
+
+86400
+```
+
+以后代码不用写
+
+```
+86400
+```
+
+直接写
+
+```
+COOLDOWN
+```
+
+更容易理解。
+
+* * *
+
+# 7\. 定义事件
+
+```solidity
+event CheckedIn(
+    address indexed user,
+    uint256 time,
+    uint256 count
+);
+```
+
+事件(Event)不会保存到 storage。
+
+作用只有一个：
+
+> 告诉链外程序：
+
+"刚刚有人签到成功了！"
+
+比如前端网页可以监听：
+
+```
+CheckedIn
+```
+
+然后自动刷新页面。
+
+里面包含：
+
+```
+用户地址
+
+签到时间
+
+签到次数
+```
+
+* * *
+
+# 8\. checkIn()
+
+```solidity
+function checkIn() external {
+```
+
+定义一个函数。
+
+名字：
+
+```
+checkIn
+```
+
+任何人都可以调用。
+
+* * *
+
+## 第一行
+
+```solidity
+UserInfo storage user = users[msg.sender];
+```
+
+这一句非常重要。
+
+### msg.sender
+
+代表：
+
+> 当前调用者的钱包地址。
+
+例如
+
+```
+钱包A
+
+调用
+checkIn()
+
+那么
+
+msg.sender
+
+=
+
+钱包A
+```
+
+如果
+
+钱包B调用
+
+那么
+
+```
+msg.sender
+
+=
+
+钱包B
+```
+
+* * *
+
+### users\[msg.sender\]
+
+从 mapping 中找到自己的数据。
+
+例如：
+
+```
+users
+
+↓
+
+0x123
+
+↓
+
+UserInfo
+```
+
+* * *
+
+### storage
+
+表示：
+
+不是复制数据。
+
+而是直接操作区块链里的原始数据。
+
+如果写
+
+```solidity
+storage
+```
+
+修改
+
+```
+user.count++
+```
+
+链上的数据真的会改变。
+
+* * *
+
+# 9\. require
+
+```solidity
+require(
+    block.timestamp >= user.lastTime + COOLDOWN,
+    "Already checked in"
+);
+```
+
+这是整个合约最关键的一句。
+
+先看
+
+```
+block.timestamp
+```
+
+表示
+
+> 当前区块时间。
+
+例如：
+
+```
+今天
+
+1720000000
+```
+
+* * *
+
+再看
+
+```
+user.lastTime
+```
+
+例如
+
+```
+昨天
+
+1719913600
+```
+
+加上
+
+```
+COOLDOWN
+
+86400
+```
+
+得到
+
+```
+今天
+```
+
+于是判断
+
+```
+当前时间
+
+>=
+
+上次签到+24小时
+```
+
+如果成立
+
+允许签到。
+
+否则
+
+直接报错：
+
+```
+Already checked in
+```
+
+交易回滚。
+
+* * *
+
+# 10\. 更新时间
+
+```solidity
+user.lastTime = block.timestamp;
+```
+
+保存
+
+当前签到时间。
+
+以后判断24小时就是依据它。
+
+* * *
+
+# 11\. 次数+1
+
+```solidity
+user.count += 1;
+```
+
+例如
+
+原来
+
+```
+count
+
+=
+
+5
+```
+
+执行以后
+
+```
+count
+
+=
+
+6
+```
+
+由于 Solidity 0.8+ 默认启用了整数溢出检查，因此无需额外使用 `SafeMath`。
+
+* * *
+
+# 12\. emit
+
+```solidity
+emit CheckedIn(
+    msg.sender,
+    block.timestamp,
+    user.count
+);
+```
+
+触发事件。
+
+告诉链外：
+
+```
+某用户
+
+签到成功
+
+签到次数
+
+6
+```
+
+前端可以监听这个事件更新界面。
+
+* * *
+
+# 13\. 查询函数
+
+```solidity
+function getRecord(address user)
+```
+
+这是查询接口。
+
+传入一个钱包地址。
+
+例如
+
+```
+0x123...
+```
+
+* * *
+
+函数声明：
+
+```solidity
+external
+view
+```
+
+表示：
+
+-   `external`：只能从合约外部调用。
+    
+-   `view`：只读取数据，不会修改区块链状态，因此调用通常不消耗 Gas（通过 RPC 查询）。
+    
+
+* * *
+
+返回值：
+
+```solidity
+returns(
+    uint256 lastTime,
+    uint256 count
+)
+```
+
+表示返回两个数据：
+
+```
+最近签到时间
+
+签到次数
+```
+
+* * *
+
+函数内部：
+
+```solidity
+UserInfo memory info = users[user];
+```
+
+这里使用 `memory`。
+
+意思是：
+
+> 把链上的数据复制到内存里读取，不会修改原始数据。
+
+因为这里只查询，不需要 `storage`。
+
+* * *
+
+最后：
+
+```solidity
+return(
+    info.lastTime,
+    info.count
+);
+```
+
+把数据返回给调用者。
+
+例如：
+
+```
+lastTime
+
+1720000000
+
+count
+
+5
+```
+
+* * *
+
+## 整个执行流程
+
+```
+用户点击签到
+        │
+        ▼
+checkIn()
+        │
+        ▼
+读取自己的签到记录
+        │
+        ▼
+距离上次是否超过24小时？
+      │         │
+      │否       │是
+      ▼         ▼
+交易失败     更新时间
+Already...      │
+                ▼
+          次数 +1
+                │
+                ▼
+          触发签到事件
+                │
+                ▼
+            交易成功
+```
+
+这份代码虽然只有几十行，却涵盖了 Solidity 中最常见的几个核心概念：`struct`（结构体）、`mapping`（映射）、`storage` 与 `memory` 的区别、`msg.sender`、`block.timestamp`、`require` 条件校验、事件（`event`/`emit`）以及状态变量更新。掌握了这些内容，就已经具备了阅读和编写许多基础智能合约的能力。
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 # Solidity合约实践
 
 ## 打卡合约
@@ -213,6 +889,7 @@ contract SimpleCheckIn {
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 # 手册学习
 

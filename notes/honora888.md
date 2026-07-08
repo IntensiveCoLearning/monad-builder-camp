@@ -66,7 +66,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 1.  **钓鱼攻击（最高发）**
     
-    -   域名钓鱼：Unicode 伪字符域名（如 [trẹzor.com](http://trẹzor.com)≠[trezor.io](http://trezor.io)，Punycode 伪装）仿冒官方钱包、交易所；
+    -   域名钓鱼：Unicode 伪字符域名（如 [trẹzor.com](http://xn--trzor-o51b.com)≠[trezor.io](http://trezor.io)，Punycode 伪装）仿冒官方钱包、交易所；
         
     -   社交钓鱼：Telegram/Discord 冒充 HR、学长、客服，发送 “面试专用软件”“空投领取链接”；
         
@@ -204,7 +204,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
     
 -   区块浏览器：[testnet.monadscan.com](http://testnet.monadscan.com)、[testnet.monadvision.com](http://testnet.monadvision.com)
     
--   水龙头：[https://faucet.monad.xyz（每日领取限额）](https://faucet.monad.xyz（每日领取限额）)
+-   水龙头：[https://faucet.monad.xyz（每日领取限额）](https://faucet.monad.xn--xyz-jx3eo93fs9hju1flyd8fo428gra)
     
 -   临时沙盒 Tempnet：Chain ID 20143，用于新功能测试，数据会频繁重置。
     
@@ -240,7 +240,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 6.  反复迭代调试，确认无漏洞后再考虑主网部署。
     
 
-# 五、以太坊链上交易原理 + 区块浏览器完整解析一笔测试网交易（[ethereum.org](http://ethereum.org)交易文档）
+# 五、以太坊链上交易原理 + 区块浏览器完整解析一笔测试网交易
 
 ## 5.1 一笔链上交易完整结构（EIP-1559 Type2 标准交易）
 
@@ -407,6 +407,7 @@ signature: 私钥签名，证明交易为本人发起
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 # 延续2026/7/6——
 
@@ -910,6 +911,7 @@ Builder 链上开发者、Alpha 内部项目机会、Tokenomics 代币经济、R
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,257 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+## **Day 3 —— 编写并部署第一个 Solidity 智能合约（OnchainTodo）**
+
+工具：Remix IDE、MetaMask、Monad Testnet、Solidity
+
+### **一、学习目标**
+
+本次学习的目标：
+
+了解 Solidity 智能合约的基本结构
+
+编写一个简单的 Todo List 合约
+
+学习智能合约的读写函数（Read / Write Function）
+
+使用 Remix 编译并部署合约
+
+在测试网上验证合约并进行交互
+
+### **二、实践内容**
+
+本次实现了一个简单的 **OnchainTodo** 合约。
+
+主要功能包括：
+
+添加待办事项（Add Todo）
+
+修改完成状态（Toggle Completed）
+
+查询待办事项（Get Todo）
+
+获取 Todo 数量（Get Todo Count）
+
+代码中使用了以下 Solidity 基础知识：
+
+Contract
+
+Struct
+
+Dynamic Array
+
+State Variable
+
+Event
+
+Require
+
+View Function
+
+### **三、核心知识**
+
+**1\. Contract**
+
+Solidity 使用 contract 定义智能合约。
+
+contract OnchainTodo {
+
+}
+
+可以理解为 Java 中的 Class，只不过部署后运行在区块链上。
+
+**2\. Struct**
+
+使用 Struct 定义 Todo 数据结构。
+
+struct Todo {
+
+string task;
+
+bool completed;
+
+}
+
+每个 Todo 包含：
+
+-   task：任务内容
+    
+-   completed：完成状态
+    
+
+**3\. Dynamic Array**
+
+Todo\[\] private todos;
+
+动态数组用于保存所有 Todo。
+
+调用 addTodo() 时，会向数组末尾新增一个 Todo。
+
+**4\. Read Function**
+
+getTodo()
+
+getTodoCount()
+
+读取链上数据。
+
+特点：
+
+-   不修改区块链
+    
+-   使用 view
+    
+-   一般不消耗 Gas（本地调用）
+    
+
+**5\. Write Function**
+
+addTodo()
+
+toggleCompleted()
+
+修改链上数据。
+
+特点：
+
+-   会产生交易（Transaction）
+    
+-   需要用户签名
+    
+-   消耗 Gas
+    
+
+**6\. Event**
+
+event TodoAdded(...);
+
+event TodoUpdated(...);
+
+事件用于记录链上日志。
+
+部署后，前端可以监听 Event 获取状态变化。
+
+### **四、实践过程**
+
+**1\. 编写合约**
+
+创建文件：
+
+OnchainTodo.sol
+
+使用 Solidity 0.8.20 编写 Todo 合约。
+
+2\. 编译合约
+
+在 Remix 中：
+
+-   Solidity Compiler
+    
+-   Compiler Version：0.8.x
+    
+-   Compile OnchainTodo.sol
+    
+
+编译成功，没有 Error。
+
+**3\. 部署合约**
+
+进入：
+
+Deploy & Run Transactions
+
+连接 MetaMask。
+
+网络：
+
+Monad Testnet
+
+点击：
+
+Deploy
+
+钱包确认交易后，合约成功部署。
+
+**4\. 调用 Write Function**
+
+添加 Todo：
+
+addTodo("Finish Assignment")
+
+交易成功。
+
+随后调用：
+
+toggleCompleted(0)
+
+成功修改完成状态。
+
+**5\. 调用 Read Function**
+
+查询 Todo：
+
+getTodo(0)
+
+返回：
+
+task = Finish Assignment
+
+completed = true
+
+查询数量：
+
+getTodoCount()
+
+返回：
+
+1
+
+### **五、部署结果**
+
+部署网络：
+
+Monad Testnet
+
+合约名称：
+
+OnchainTodo
+
+编译器：
+
+solc 0.8.34
+
+源码验证：
+
+Sourcify Verified
+
+说明部署的源码与链上的 Bytecode 完全一致，可以在区块链浏览器查看和验证。
+
+### **六、学习收获**
+
+通过本次实践，我了解了 Solidity 智能合约开发的基本流程：
+
+-   编写 Solidity 合约。
+    
+-   使用 Remix 编译。
+    
+-   部署到测试网络。
+    
+-   调用写函数修改链上数据。
+    
+-   调用读函数读取链上数据。
+    
+-   完成源码验证，确保链上部署的代码可公开验证。
+    
+
+同时，也进一步理解了智能合约与传统程序的区别：智能合约部署到区块链后，其状态由链维护，写操作需要发起交易并支付 Gas，而读操作通常可以直接查询，不会改变链上状态。这种模式保证了数据的公开性、透明性和不可篡改性。
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 ### **前置准备｜进入 Web3 与链上世界**
 
 **Summary**
@@ -60,6 +309,7 @@ Metamask创建钱包，并记住私钥
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 **一、Day1整体学习主线**
 

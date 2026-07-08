@@ -15,8 +15,68 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+## 今日进度：BuildAnything 新生课程 10/10 完结 ✅
+
+课程地址：[https://buildanything.so/zh/tracks/freshman](https://buildanything.so/zh/tracks/freshman)
+
+学完 Monad 官方学习平台 BuildAnything 新生阶段全部 10 节课，路线是「先会做产品 → 理解链 → 把产品搬上链」，最终在 Monad Testnet 部署了第一个 dApp。
+
+## 核心收获
+
+**1\. Monad 是什么**
+
+-   完全 EVM 兼容，核心指标：10,000 TPS、400ms 出块、800ms 确定性最终性。
+    
+-   去中心化不妥协的关键：`MonadBFT` 用 fan-out / fan-in 替代验证者 all-to-all 通信，通信开销线性增长，validator set 可以做大。
+    
+
+**2\. 区块链基础概念**
+
+-   PoW 拼算力，PoS 拼抵押（作恶触发 slashing）——用财务风险替代电力消耗保证安全。
+    
+-   `gas fee = gas units × gas price`：计算量 × 区块空间供需。
+    
+-   实用四件套：Chain ID（Monad Testnet 为 10143）、RPC、Faucet（[faucet.monad.xyz](http://faucet.monad.xyz)）、Explorer（[monadscan.com](http://monadscan.com)）。实验一律 testnet。
+    
+
+**3\. 10k TPS 解锁什么**
+
+-   关键不是数字，是确认时间 <1s 落进人脑「即时响应」感知窗口后，过去被迫绕开链的架构妥协可以取消：链上订单簿、链上游戏、社交图谱、微支付、AI Agent 非托管结算。
+    
+-   链上/链下的划分原则不变（无信任、永久性、可组合性才上链），变的只是线的位置。
+    
+
+**4\. Web2 基建与安全**
+
+-   元数据进 database，文件字节进 storage，数据库只存路径。
+    
+-   安全铁律：`service_role` key 绝不进前端/Git；生产必开 RLS；永远不要相信客户端。
+    
+
+**5\. 第一个 dApp（MessageBoard）**
+
+-   Hardhat 写合约 → 部署 Monad Testnet → wagmi `useReadContract` / `useWriteContract` 接前端。
+    
+-   最重的提醒：**绝不能让 AI 智能体接触私钥**（.env 都不够，要用加密 Secrets 管理）；AI 写 Solidity 远不如写 UI 可靠——合约保持小而简单、用经审计的库、先上 testnet。
+    
+
+## 个人思考
+
+-   上周刚用 Remix 手写部署了 Soulbound ERC-721 徽章，这门课走 vibecoding + Hardhat 路径，两相对照能分清哪些是链的本质（私钥、gas、finality），哪些只是工具链选择。
+    
+-   「800ms 确定性最终性」正是我之前分析 Monad 三级区块状态（Proposed → Voted → Finalized）做 indexer reorg-safety 时那套模型的用户侧表述，前后串起来了。
+    
+-   课程反复强调的安全意识是个提醒：Web3 里很多安全责任从公司基建直接落到开发者个人，且错误不可逆。
+    
+
+明天进入 Sophomore 阶段。
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 \## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
 
 \### 今天做了什么
@@ -56,6 +116,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 **今日学习内容**
 

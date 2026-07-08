@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+学会get测试币，会看transaction 的 detail了
+
+![a0c4f59d6e4b1c087ca59258fdf65ba6.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-08-1783517225187-a0c4f59d6e4b1c087ca59258fdf65ba6.png)![a0c4f59d6e4b1c087ca59258fdf65ba6.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-08-1783517266853-a0c4f59d6e4b1c087ca59258fdf65ba6.png)
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 普通互联网产品所有数据都存在公司后台，账号、道具平台想封就封，里面的虚拟东西也只能在这个软件里用。 链上产品数据存在全网节点，改不了，资产是自己私钥说了算，平台拿不走，虚拟资产还能跨软件流转，规则提前写死没法后台暗改。
 
 今天学会了创建钱包和连接区块链，并且进行了第一笔交易
@@ -26,6 +34,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 学习
 

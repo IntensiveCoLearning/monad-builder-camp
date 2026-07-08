@@ -22,10 +22,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 -   理解 DevRel / Builder / 生态连接者的角色。
     
 -   参与 Co-learning，开始把学习记录变成可持续的公开或半公开 proof of work。
+    
+-   数字人民币
+    
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/JadeTwinkle/images/2026-07-08-1783511326477-image.png)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 今日todo：
 
@@ -38,6 +44,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 又是一届实习计划，这次的目标是参与举办黑客松！

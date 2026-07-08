@@ -15,8 +15,32 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+DAY 4｜AI + Solidity + 合约部署：我如何从交易进入最小合约实践？
+
+今天的学习重点是用 AI 辅助生成一个最小 Solidity 合约，但不是完全相信 AI 输出，而是通过 Remix 自己编译、检查、部署和交互，理解一个合约从代码到链上运行的大致过程。
+
+学习内容上，我主要看了 Web3 实习手册里的智能合约开发部分，也了解了 Solidity Docs、Remix IDE、OpenZeppelin Contracts 和 Monad Remix Deployment Guide。通过这些内容，我对 Solidity 合约、ABI、合约地址、read / write function、transaction hash 之间的关系有了更具体的理解。
+
+实操部分，我先从最简单的合约开始练习，比如之前做过的 MessageBoard 留言板合约。这个合约的逻辑很简单：用户可以提交一条留言，也可以读取最后一条留言和最后留言人的地址。虽然功能很小，但它让我第一次比较清楚地看到：合约里的变量会被链上记录，write function 会触发钱包交易，read function 只读取状态、不需要花 gas。
+
+后面我又把这个思路延伸到了 Monad Buddy 的合约实践里。MonadBuddyCore 合约里设计了 Buddy 的基础状态，包括是否已领取、物种 family、成长阶段 stage、经验值 xp、Care Points，以及 build / social / meme 等积分。合约里主要有 mintBuddy、completeTask、care、getBuddy 和 isTaskDone 这些函数。通过 Remix 部署到 Monad Testnet 后，我可以用 MetaMask 发起交易，并通过 getBuddy 读取链上状态，看到 Buddy 的数据确实发生了变化。
+
+这次实践里我遇到的最大问题是钱包和网络连接。一开始 Remix 连接钱包时，我以为只要 MetaMask 里有测试币就可以部署，但实际发现 Remix 可能还停留在 Mainnet 或 WalletConnect 状态，导致页面显示 0 ETH / 余额不足。后来我切换到 Browser Extension / MetaMask，并确认网络是 Monad Testnet，Remix 里也显示出测试 MON 后，才成功部署合约。这个过程让我更理解：钱包、网络、RPC、测试币和部署环境必须全部对应上，少一个都会出问题。
+
+我也遇到了 gas estimation failed 的情况。后来发现有时候不是 gas 本身的问题，而是合约逻辑里的 require 条件不满足。比如 care(0) 需要至少 5 个 Care Points，但当时我只有 4 个，所以合约会拒绝执行，提示 Not enough care points。这个错误反而让我更理解智能合约的状态判断：不是每次按钮点下去都应该成功，合约会按照规则检查当前状态。
+
+AI 在这个过程中主要帮我完成了合约初版、函数逻辑梳理、报错解释和操作步骤拆解。但我不能直接复制 AI 代码就结束，而是要自己判断合约是否足够简单、安全、符合当前 Demo 需求，也要自己在 Remix 里编译、部署、确认交易，并根据实际报错一步步排查。
+
+今天最大的收获是：我开始理解“合约不是一个神秘的黑箱”，它更像是一套部署到链上的规则。前端页面可以很漂亮，但真正的 Web3 交互发生在钱包签名、交易确认、合约执行和链上状态读取之间。通过今天的练习，我对合约源码、ABI、合约地址、read/write function 和 transaction hash 的关系清楚了很多，也更能分辨一个 Demo 哪些部分只是前端模拟，哪些部分是真的发生了链上操作。
+
+后续我还想继续练习：如何把更复杂的产品逻辑拆成简单合约函数，哪些数据适合上链，哪些数据应该先放在前端或后端，以及如何让链上交互既真实又不影响用户体验。
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 DAY 3｜钱包、安全与第一笔测试网交易学习笔记
 
 今天的学习主要围绕“如何安全地使用钱包，并在测试网上完成一笔链上记录”展开。因为之前已经接触过钱包、助记词、Gas、交易哈希、区块浏览器，也在 Remix + MetaMask 里做过简单合约部署，所以今天更多是在把这些零散概念串成一条完整的操作流程。
@@ -85,6 +109,7 @@ DAY 3｜钱包、安全与第一笔测试网交易学习笔记
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 今天主要完成了 Web3 开发环境和工具的准备，并参加了Jack老师的会议和晚上的 Co-learning。分享会主要介绍了普通开发者如何逐步参与以太坊协议层开发，了解了 EPF、Client、EIP、Consensus 等概念。Co-learning 则进一步梳理了智能合约开发和部署流程。
 
 我今天更多时间花在自己动手实践上，完成了第一个 Solidity 智能合约的部署。
@@ -117,6 +142,7 @@ DAY 3｜钱包、安全与第一笔测试网交易学习笔记
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 今天参加了 Web3 实习计划开营仪式，并学习了 Web3 基础手册中的《前言》《区块链基础概念》和《以太坊概览》，同时了解了BuildAnything Freshman Track、Vibecoding 以及为什么要构建去中心化应用，对整个 Web3 的学习路线有了初步认识。

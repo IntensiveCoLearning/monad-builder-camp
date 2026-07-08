@@ -15,8 +15,40 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+# **Daily Note — 2026-07-08**
+
+## **Today's Events**
+
+-   Co-learning 打卡 — 7/8
+    
+-   一整天把自己的 agent workflow / harness 系統化，讀 Claude Code 官方 loop engineering 文章
+    
+
+## **Key Learnings**
+
+1.  **Loop engineering 這條演化線**：prompt → context → harness → loop。四種 loop 按 trigger / stop condition / 用哪個 primitive / 適合什麼任務分類：turn-based（你判斷完成，短任務）、goal-based（`/goal`，有可驗收出口，evaluator 擋早退）、time-based（`/loop`+`/schedule`，週期性 / 對接外部系統）、proactive（連 prompt 都交出去，well-defined 的重複工作流）。核心紀律：不是每件事都要複雜 loop，先用最簡單的解、selectively 用這些 pattern。
+    
+2.  **這條線是技術的疊加不是取代**：context 疊在 prompt 上，harness 包含前兩者，loop 是「你不再逐條 prompt，而是設計那個替你 prompt agent 的系統」。loop engineering 之所以 2026 才成立，是因為模型可靠到 loop 幾輪就收斂、context 大到整個 codebase 塞得下、per-token 成本降到划算——下層成熟才長得出上層。
+    
+3.  **個人感悟**：applied builder 的槓桿在 composition stack（prompt/context/harness/loop）這層，不在 model 層。model 層要資本和 research，是幾家 lab 的事；上層是概念疊加 + 判斷力密集，這剛好是我相對強的位置。
+    
+
+## **Actions Taken**
+
+-   全專案盤點 + 安全審計（EIV-core selftest 182/182 綠；找出 2 個 HIGH：signature malleability、max\_slippage\_bps 簽了但不 enforce）
+    
+-   把 CC 官方 loop 框架落進自己的 workflow-playbook（effort scaling / context 紀律 / deterministic vs advisory 分層 / loop 設計章）
+    
+-   建 3 個自動觸發 skill：verify-frontend、onchain-deploy-verify、first-source-verify（防已記錄的真實失誤：UI 未驗、私鑰外洩、弱來源誤判）
+    
+-   settings.json 加 SessionStart repo-status hook（掃 D:\\dev 未 commit / 未 push，防工作遺失）
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 **2026-07-07 — Day 2**
 
 -   今天在整理 agent 發展框架的路徑時想到：ML/DL 演算法本身有價值但不是技術核心，agent 的價值來自「堆疊」出來的工程概念——prompt engineering → context engineering → harness engineering → loop engineering，是一層層疊上去的，不是取代關係（prompts → context/memory → skill）
@@ -28,6 +60,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 **2026-07-06 — Day 1｜工具準備與 Builder 身份**
 

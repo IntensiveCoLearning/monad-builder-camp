@@ -698,7 +698,7 @@ By completing the program, participants will leave with:
 | [mao-bot699](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/mao-bot699.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [elliothunter32-star](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/elliothunter32-star.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [shenjiaying26](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/shenjiaying26.md) | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [fox896](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/fox896.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [fox896](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/fox896.md) | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lovelycat1222](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lovelycat1222.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [wskjie](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/wskjie.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [LikaiTOP](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LikaiTOP.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -813,6 +813,7 @@ By completing the program, participants will leave with:
 | [Camino-sec](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Camino-sec.md) | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lidahe666](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lidahe666.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

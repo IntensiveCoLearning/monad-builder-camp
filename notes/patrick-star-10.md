@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+今天复习了一下solidity的基本语法以及复习了一遍REC20，ERC721，和UNISWAPV2的源码
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 **_今天学习了怎么使用monad浏览器进行交易查询，同时也体验到了monad的交易速度确实很快相比于以太坊网络_**
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 ### 今天初步了解了 Monad 网络
 

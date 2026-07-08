@@ -15,8 +15,37 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+**Local Mempool**
+
+-   為什麼不用全域 mempool：gossip 協定在幾千 TPS 下光是各節點重傳就會吃光頻寬預算；多跳傳播拉長 time-to-inclusion；而且 leader schedule 本來就預先可知，廣播給全網是浪費。所以改成定向轉發
+    
+-   交易流程：交易送進某個 RPC 節點，這個節點成為它的 owner node，負責向用戶回報狀態 → RPC 做靜態檢查 → consensus process 再對 MonadDb 的本地狀態做動態檢查（餘額、nonce）→ 合法就轉發給接下來 N=3 個 leader → 每個 leader 同樣檢查後放進自己的 local mempool，輪到自己出塊時從裡面選交易
+    
+-   重送機制：owner node 盯著後續區塊，N 個區塊內沒看到這筆交易就再轉發給下一批 N 個 leader，最多重試 K=3 輪（主網 N、K 都是 3）
+    
+-   淘汰規則：區塊 finalize 時清掉已上鏈的複本；定期重驗交易有效性（nonce 太低、餘額不足就踢）；mempool 逼近軟上限時先淘汰舊交易
+    
+-   附帶意涵：pending 交易只存在接下來幾個 leader 的 local mempool 裡，沒有公開 mempool 可監聽。做套利的話，以太坊那套盯 mempool 的資訊來源在這裡不存在，競爭面被壓縮到 leader 端
+    
+
+**EIP-7702 × Reserve Balance**
+
+-   這頁回答了我昨天的疑問：為什麼 7702 委託會跟 reserve balance 綁在一起。未委託的 EOA，consensus 靜態看交易就能算出最大花費；委託之後，EOA 的錢可能被「別人送的交易」經由 delegate code 花掉，共識層靜態分析不到
+    
+-   解法是一份 consensus 與 execution 的契約：執行端保證每個 EOA 結餘不會低於 user\_reserve\_balance（10 MON），共識端就能在只看 inflight gas 預算的情況下安全收單
+    
+-   "dips below" 語意很精確：只有「餘額遞減且結果低於 10 MON」的交易會 revert。餘額不變或增加的交易沒事，結餘剛好停在 10 MON 以上也沒事
+    
+-   未委託帳戶有 emptying transaction 例外，可以把錢花到見底（例如餘額 5 MON 轉出 4.99 加 gas），前提之一是最近 k 個區塊內沒有委託或解除委託的請求。委託中的 EOA 不適用這個例外
+    
+-   實務坑：很多 sponsored gas 流程讓用戶的 7702 帳戶完全不持有 MON，這類設計搬到 Monad 要重新想 10 MON 下限怎麼處理
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 **2026.07.07**
 
 接續昨天的 differences 總覽，今天細讀 Gas Pricing 和 Opcode Pricing 兩頁，順便補 Reserve Balance 的機制。
@@ -63,6 +92,7 @@ warm access 維持 100 不變。受影響的是 BALANCE、EXTCODE 系列、CALL 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 今天簡單的掃過了 Monad 文件裡整理的與 Ethereum 差異清單，記幾個有感的點。
 

@@ -15,8 +15,77 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+## **今日学习日记：**
+
+（主播才发现其实每天都有学习任务来着，因为第一次参加我才看到旁边那个课程安排每天该做什么）
+
+主播今天也有点偷懒了，真的拜托不要这样下去了好吗......好痛苦。
+
+我的**代码思路**是这样的：按照CEI的标准先checks，用户前端点击售卖（调用我的智能合约），这时我接收前端传来的数据，当然不能相信前端，所以需要check seller调用的地址是否=msg.sender，其次seller是否拥有该NFT，我目前想到的就只有这些checks，我开始构思代码的逻辑时候，ai说先教我ERC721再开始写代码吧！
+
+OpenZepplin 的**ERC721**.，ERC721就是一个写好的NFT的engine，然后其中关键的代码：
+
+-   mapping (uint256 => address) public \_owners;
+    
+-   mapping (address => uint256) public \_balances;
+    
+
+这两个都是tokenid 和地址,虽然重复了，但是是有重复的必要的，因为如果用户查询你直接遍历的话需要花费非常多的gas去存储，所以Space For Time（用空间换时间）！
+
+### **ERC721和IERC721的区别：**
+
+ERC721是implementation，里面有mapping，ownerof()等等...它可以运行。
+
+IERC721是interface，里面没有代码只是定义你如果是ERC721你需要包含哪些函数！  
+
+Marketplace 面向的是"标准（Interface）"，而不是某一个具体实现。然后我学到了这句话：**Program to an Interface, not an Implementation.（面向接口编程，而不是面向实现编程。）**（当然主播其实并没有完全理解这句话的意思 (。. 。；） ）
+
+学到的一个**知识点**：**_address(0)_**叫**_Zero Address_**(零地址)，它表示的意义是不存在。
+
+这里还要说到我前面写的关于cei了，写代码要以cei为规范进行思考，当我运行我的maekrtplace的智能合约时第一步不是创建liastings而是先check你是**owner**吗？
+
+所以串联我这些天学到的知识，大致流程图如下所示：
+
+React Frontend
+
+│
+
+│ TokenId
+
+▼
+
+Marketplace
+
+│
+
+│ ownerOf(tokenId)
+
+▼
+
+ERC721 Contract
+
+│
+
+│ 查询 \_owners Mapping
+
+▼
+
+返回真正 Owner
+
+│
+
+▼
+
+Marketplace 比较： owner == msg.sender
+
+今天主播就学到这里，明天一定要学完！（而且我是一边学一边写笔记...其实学完了把今天所学的知识整理成笔记才更利于我学习，明天就按照这样做吧！）
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 ## **今日学习笔记：**
 
 智能合约的运行其实是contract A调用contract B,执行 contract B的代码再返回contract A.
@@ -55,6 +124,7 @@ AI告诉我一句话：**Update your own state before interacting with others** 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 ### 今日学习笔记：
 

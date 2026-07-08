@@ -15,8 +15,92 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+意思是：我們先只學 **EAS 怎麼把「人看得懂的資料」轉成「鏈上合約看得懂的 bytes」**。
+
+EAS 的 `SchemaEncoder` 做的事情很單純：
+
+你給它一個資料格式，也就是 `schema`：
+
+```
+"uint256 eventId, uint8 voteIndex"
+```
+
+這句話代表：
+
+```
+eventId 是 uint256
+voteIndex 是 uint8
+```
+
+然後你給它實際資料：
+
+```
+eventId = 1
+voteIndex = 1
+```
+
+`SchemaEncoder` 會把這些資料編碼成一串 hex bytes，例如：
+
+```
+0x0000000000000000000000000000000000000000000000000000000000000001...
+```
+
+這串 bytes 才是 EAS attestation 裡面 `data` 欄位真正要放的東西。
+
+可以把它想成：
+
+```
+原始資料：
+{
+  eventId: 1,
+  voteIndex: 1
+}
+
+Schema：
+uint256 eventId, uint8 voteIndex
+
+編碼後：
+0x......
+```
+
+這個階段完全不需要：
+
+-   錢包
+    
+-   私鑰
+    
+-   RPC provider
+    
+-   測試網 ETH
+    
+-   部署合約
+    
+-   發交易
+    
+-   gas
+    
+
+因為我們只是**在本機做資料編碼練習**，還沒有把資料送到鏈上。
+
+為什麼先學這個？因為 EAS 的核心流程其實是：
+
+```
+1. 定義 schema
+2. 根據 schema 編碼資料
+3. 用 encoded data 建立 attestation
+4. 查詢或驗證 attestation
+```
+
+你現在只學第 1、2 步，最輕、最安全，也最適合入門。
+
+一句話：**SchemaEncoder 就是 EAS 的資料打包器，負責把 structured data 變成 EVM 可以理解的 bytes。**
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 **On-chain vs Off-chain**
 
 EAS 支援兩種模式：
@@ -52,6 +136,7 @@ npm install @ethereum-attestation-service/eas-sdk
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 今天在看 021 學習以太坊，了解到多個層面叠加的去中心化  
   

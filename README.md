@@ -601,7 +601,7 @@ By completing the program, participants will leave with:
 | [AllureCurtain](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/AllureCurtain.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Xiaonan2020](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Xiaonan2020.md) | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Momo-Yiming](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Momo-Yiming.md) | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Goldlynn](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Goldlynn.md) | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Goldlynn](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Goldlynn.md) | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [tenacious89](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/tenacious89.md) | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Zhongrui-CHEN-0830](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Zhongrui-CHEN-0830.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [bella1020900-cmd](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/bella1020900-cmd.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -814,6 +814,7 @@ By completing the program, participants will leave with:
 | [lidahe666](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lidahe666.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

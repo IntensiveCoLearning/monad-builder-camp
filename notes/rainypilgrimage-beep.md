@@ -15,8 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+完成了 Monad Testnet 上的第一笔测试网交易，获取并使用测试网 MON，向另一个测试账户转账
+
+在区块浏览器中查看交易详情，确认交易状态为 Success，理解 transaction hash 是交易的唯一编号，from / to 分别表示发送方和接收方，value 表示转账金额。
+
+初步理解 gas / transaction fee 是链上交易消耗网络计算与验证资源所支付的手续费，失败交易也可能因为已经占用网络资源而消耗 gas
+
+按进度学习buildanything
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 -   完成 Week 1 前置准备任务进入 Web3 与链上世界。
     
 -   创建了课程专用钱包。
@@ -36,6 +48,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 1.  创建项目集合 记录群内信息
     

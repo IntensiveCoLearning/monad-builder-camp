@@ -194,7 +194,7 @@ approved: true
 查詢一筆真實鏈上的 attestation，但仍然不寫鏈、不花 gas
 ```
 
-EAS 的 data 是一串 0x....，decode 後就生成 schema . 鏈上儲的就是一串 0x...，但可以解碼為真正有意義的資料？
+EAS 的 data 是一串 0x…，decode 後就生成 schema . 鏈上儲的就是一串 0x…，但可以解碼為真正有意義的資料？
 
 這樣可以大覆減省鏈上存資料的 size 及 gas fee?
 
@@ -291,10 +291,132 @@ uint8 voteIndex = 1
 一句話總結：
 
 **鏈上儲的是** `0x...` **bytes；靠 schema 才能解碼成有意義資料；它通常比存 JSON 省 gas，但不是萬能壓縮，真正大幅省 gas 要用 off-chain data 或 hash/Merkle root。**
+
+下一步學 **Schema UID**，這是 EAS 從「資料編碼」走向「真正 attestation」的關鍵。
+
+你現在已經懂：
+
+```
+schema + data -> encoded 0x bytes
+```
+
+下一步要加上：
+
+```
+schema 本身也會有一個 UID
+```
+
+也就是：
+
+```
+schema:
+"uint256 eventId, uint8 voteIndex"
+
+schemaUID:
+0xabc123...
+```
+
+在 EAS 裡，一筆 attestation 通常不是只存 `data`，而是像這樣：
+
+```
+schema: 0xabc123...
+recipient: 0xUser...
+attester: 0xSigner...
+data: 0x0000...
+expirationTime: 0
+revocable: true
+```
+
+其中 `schema` 欄位放的不是完整 schema 字串，而是 **schema UID**。
+
+這樣做的原因是：
+
+```
+schema 註冊一次
+之後所有 attestation 只引用 schema UID
+```
+
+可以想像成：
+
+```
+Schema Registry:
+0xabc123... => "uint256 eventId, uint8 voteIndex"
+
+Attestation:
+schema = 0xabc123...
+data = 0x0000...
+```
+
+所以解碼時流程是：
+
+```
+1. 看到 attestation.schema = 0xabc123...
+2. 去 Schema Registry 找到 schema string
+3. 用 schema string 建立 SchemaEncoder
+4. decode attestation.data
+5. 得到真正資料
+```
+
+這一步你要建立的直覺是：
+
+**EAS 的 data 不能單獨理解，必須搭配 schema UID。**
+
+完整關係：
+
+```
+Schema string
+    ↓ 註冊後
+Schema UID
+    ↓ 被 attestation 引用
+Attestation.data
+    ↓ 用 schema string decode
+Meaningful data
+```
+
+下一個最輕量練習可以不用寫鏈，只做「模擬版 Schema Registry」：
+
+```
+import { SchemaEncoder } from "@ethereum-attestation-service/eas-sdk";
+
+const schemaUID =
+  "0xabc0000000000000000000000000000000000000000000000000000000000000";
+
+const schemaRegistry = {
+  [schemaUID]: "uint256 eventId, uint8 voteIndex"
+};
+
+const attestation = {
+  schema: schemaUID,
+  data: "0x..." // 前一步 encode 出來的 bytes
+};
+
+const schema = schemaRegistry[attestation.schema];
+
+const encoder = new SchemaEncoder(schema);
+
+const decoded = encoder.decodeData(attestation.data);
+
+console.log(decoded);
+```
+
+這是在模擬 EAS 真實世界裡的邏輯：
+
+```
+schemaUID -> 找 schema -> decode data
+```
+
+學完這步，下一步就可以進入：
+
+```
+讀取一筆真實鏈上的 attestation
+```
+
+那一步仍然不需要私鑰、不寫鏈、不花 gas，只需要讀公開資料。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 **On-chain vs Off-chain**
@@ -332,6 +454,7 @@ npm install @ethereum-attestation-service/eas-sdk
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

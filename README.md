@@ -209,7 +209,7 @@ By completing the program, participants will leave with:
 | [byby123byby](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/byby123byby.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xixiaoqi-art](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xixiaoqi-art.md) | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yang2267251737-cmd](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yang2267251737-cmd.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [emptytouch](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/emptytouch.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [emptytouch](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/emptytouch.md) | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [manningdereon-tech](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/manningdereon-tech.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Cap-bit-mint](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Cap-bit-mint.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Infinite-Approximation](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Infinite-Approximation.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -805,7 +805,7 @@ By completing the program, participants will leave with:
 | [lynn-000-cccc](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lynn-000-cccc.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Yashiine-code](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Yashiine-code.md) | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [pwp041](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/pwp041.md) | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Cool-CoCo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Cool-CoCo.md) | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Cool-CoCo](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Cool-CoCo.md) | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [MarnieWu](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/MarnieWu.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [GamlaNyx](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/GamlaNyx.md) | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [blaze1128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/blaze1128.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -814,6 +814,7 @@ By completing the program, participants will leave with:
 | [lidahe666](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lidahe666.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

@@ -15,8 +15,433 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+# 手册学习
+
+## 区块链岗位全景图
+
+Web3 催生出一系列新岗位形态，既包括技术端的智能合约工程师，也涵盖了产品、运营、社区管理等多种非技术职能。求职的第一性原理：从 **JD（Job Description）** 开始了解要求。
+
+* * *
+
+## 一、技术岗
+
+### 1\. 前端工程师
+
+**核心职责**：
+
+-   Dapp 前端界面开发，钱包连接、交易签名
+    
+-   集成智能合约，链上与用户界面的无缝连接
+    
+
+**技术栈**：
+
+```
+HTML5 / CSS3 / JavaScript (ES6+)
+React / Vue / TypeScript / Next.js
+Viem / Ethers.js / Web3.js
+```
+
+**职位要求**：本科及以上，了解 L1/L2 网络，有 Dapp 经验优先。
+
+### 2\. 后端工程师
+
+**核心职责**：
+
+-   后端服务开发，链上数据交互，API 构建
+    
+-   与合约团队协作，优化链上数据读写
+    
+
+**技术栈**：
+
+```
+Node.js / Go / Python
+Viem / Web3.js / Ethers.js
+RESTful API / GraphQL
+MySQL / PostgreSQL / Docker / Kubernetes
+```
+
+### 3\. 智能合约工程师
+
+**核心职责**：
+
+-   设计、开发、部署智能合约
+    
+-   编写测试，进行安全审计与 Gas 优化
+    
+
+**技术栈**：
+
+```
+Solidity
+Remix / Foundry / Hardhat
+Phalcon / Tenderly / Yul
+```
+
+**职位要求**：3 年以上 Solidity 经验，熟悉 ERC-20/721/1155，了解 Reentrancy/Overflow 等攻击模式。
+
+### 4\. 合约审计工程师
+
+**核心职责**：
+
+-   审查合约逻辑、权限控制、资产流向
+    
+-   输出结构化审计报告
+    
+
+**技术栈**：
+
+```
+Solidity / Foundry / Hardhat
+Slither / Echidna / Mythril
+Tenderly / Phalcon
+```
+
+* * *
+
+## 二、非技术岗
+
+### 1\. 产品与运营
+
+**职责**：产品生命周期协调、增长战略、数据分析  
+**技能**：Go-to-market 全流程、SQL/Excel 数据分析
+
+### 2\. 社区管理
+
+**职责**：社群建设、AMA 活动、社区健康度追踪  
+**平台**：Telegram, Twitter (X), Discord  
+**技能**：文案撰写、活动策划、数据分析
+
+### 3\. 研究分析
+
+**职责**：行业数据分析、深度研究报告、Tokenomics 分析  
+**工具**：Excel, SPSS, Python, Glassnode, Token Terminal  
+**技能**：定性定量研究、链上数据分析、报告撰写
+
+* * *
+
+## 三、求职平台推荐
+
+| 平台 | 特点 | 语言 |
+| --- | --- | --- |
+| DeJob (dejob.ai) | 大量高频工作机会 | 中文 |
+| SmartDeer | 综合性招聘平台 | 中文 |
+| Web3Career | 专业 Web3 招聘 | 英文 |
+| CryptoJobs | 区块链行业招聘 | 英文 |
+| ETHPanda 社区 | 内推与 Bounty 机会 | 中文 |
+| LXDAO 社区 | Bounty 岗位 | 中文 |
+| LinkedIn | 成熟公司职位 | 英文 |
+
+* * *
+
+## 四、项目可靠性 12 项评分表
+
+评估项目方是否可靠（满分 **120 分**，低于 **72 分**需谨慎）：
+
+| # | 评估项 | 分值 |
+| --- | --- | --- |
+| 1 | 项目愿景（做什么、如何实现） | 0-10 |
+| 2 | 项目声誉（负面舆情情况） | 0-10 |
+| 3 | 创始人背景（可查 rootdata.com） | 0-10 |
+| 4 | 是否上市及交易所层次 | 0-10 |
+| 5 | 办公地点 | 0-10 |
+| 6 | LinkedIn 可检索 | 0-10 |
+| 7 | 总市值排名 | 0-10 |
+| 8 | 创始年份 | 0-10 |
+| 9 | 合规性 | 0-10 |
+| 10 | 价值观匹配 | 0-10 |
+| 11 | 投资机构支持 | 0-10 |
+| 12 | 社区运营情况 | 0-10 |
+
+> 拿不定主意时，可在 **LXDAO 或 ETHPanda 社区**中问询。
+
+* * *
+
+## 五、识别招聘骗局
+
+### 常见骗局特征
+
+1.  🚩 要求**先付费**（培训费/工具费/押金）
+    
+2.  🚩 要求安装**不明软件或插件**
+    
+3.  🚩 公司无法核验：官网、LinkedIn、GitHub 缺失
+    
+4.  🚩 岗位描述极宽泛，承诺高回报
+    
+5.  🚩 使用**非官方邮箱**沟通（TG/WhatsApp/私人邮箱）
+    
+
+### 自我保护清单
+
+-   ✅ 核验主体：官网、LinkedIn、GitHub、工商信息
+    
+-   ✅ 拒绝付费招聘
+    
+-   ✅ 只使用官方渠道沟通
+    
+-   ✅ 不运行未知程序
+    
+-   ✅ 发现骗局立即停止沟通并保留证据
+    
+
+## 智能合约开发
+
+## 一、Dapp 架构与开发流程
+
+### Dapp 架构
+
+Dapp 由三大核心部分组成：
+
+```
+┌──────────────────────────────────────────────┐
+│  前端 (React/Vue) ←→ 钱包 (MetaMask)        │
+│      ↓                                       │
+│  智能合约 (Solidity → EVM)                   │
+│      ↓                                       │
+│  数据检索器 (Indexer) → 数据库 (PostgreSQL)  │
+│      ↓                                       │
+│  区块链 + IPFS/Arweave                       │
+└──────────────────────────────────────────────┘
+```
+
+### 开发流程
+
+1.  **需求分析与规划** → 2. **智能合约开发** → 3. **检索器开发** → 4. **前端开发** → 5. **部署上线**
+    
+
+* * *
+
+## 二、开发环境搭建
+
+### 基础环境
+
+```bash
+# 安装 nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install --lts
+
+# 安装 Foundry
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+```
+
+### 推荐框架
+
+| 框架 | 特点 | 核心工具 |
+| --- | --- | --- |
+| Foundry | Rust 实现，极快 | forge(构建测试) + anvil(本地节点) + cast(链上交互) |
+| Hardhat | 现代框架，插件丰富 | TypeScript 支持，npx hardhat |
+
+### 常用工具链
+
+-   **Remix IDE**：[https://remix.ethereum.org（在线快速测试）](https://remix.ethereum.org（在线快速测试）)
+    
+-   **OpenZeppelin 合约库**：`npm install @openzeppelin/contracts`
+    
+
+* * *
+
+## 三、RPC 节点服务
+
+### RPC 是什么？
+
+RPC（Remote Procedure Call）是连接前端应用与区块链网络的桥梁。好比 **银行 ATM 机**——查询余额（读取）、转账（发送交易）。
+
+### 常用 JSON-RPC 方法
+
+| 方法 | 功能 |
+| --- | --- |
+| eth_getBalance | 查询账户余额 |
+| eth_blockNumber | 获取最新区块号 |
+| eth_sendTransaction | 发送交易 |
+| eth_call | 调用合约（只读） |
+| eth_getLogs | 查询事件日志 |
+
+### 主流 RPC 服务商
+
+| 服务商 | 特点 | 免费额度 |
+| --- | --- | --- |
+| Alchemy | 企业级，文档完善 | 每月 3 亿次 |
+| Infura | 老牌，ConsenSys 旗下 | 每月 10 万次 |
+| QuickNode | 高性能，低延迟 | 有限免费 |
+| Public Node | 完全免费免注册 | 有速率限制 |
+| Ankr | 多链支持 | 有限免费 |
+
+### 代码中使用 RPC
+
+```javascript
+// Viem (推荐)
+import { createPublicClient, http } from 'viem'
+import { mainnet } from 'viem/chains'
+
+const client = createPublicClient({
+  chain: mainnet,
+  transport: http('https://eth-mainnet.g.alchemy.com/v2/YOUR_API_KEY')
+})
+const balance = await client.getBalance({ address: '0xd8dA6BF2...' })
+```
+
+* * *
+
+## 四、Solidity 基础语法
+
+### 数据类型
+
+| 类型 | 描述 | 示例 |
+| --- | --- | --- |
+| bool | 布尔值 | true/false |
+| uint256 | 256 位无符号整数 | 0~(2^256-1) |
+| address | 以太坊地址 | 0x... |
+| bytes32 | 固定长度字节 | 0x00 |
+| string | UTF-8 字符串 | "Hello" |
+
+### 复合类型
+
+```solidity
+mapping(address => uint256) public balances;
+struct Person { string name; uint age; }
+enum Status { Pending, Active, Inactive }
+```
+
+### 函数修饰符
+
+**可见性**：`public`（内外均可） | `external`（仅外部） | `internal`（本合约+子合约） | `private`（仅本合约）
+
+**状态修改**：`pure`（不读不写） | `view`（只读） | `payable`（可收 ETH） | 无修饰符（可读写）
+
+### 完整合约示例
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MessageBoard {
+    mapping(address => string[]) public messages;
+    event NewMessage(address indexed sender, string message);
+
+    constructor() {
+        messages[msg.sender].push("Hello ETH Pandas");
+        emit NewMessage(msg.sender, "Hello ETH Pandas");
+    }
+
+    function leaveMessage(string memory _msg) public {
+        messages[msg.sender].push(_msg);
+        emit NewMessage(msg.sender, _msg);
+    }
+
+    function getMessage(address user, uint256 index) public view returns (string memory) {
+        return messages[user][index];
+    }
+}
+```
+
+* * *
+
+## 五、安全实践 ⭐
+
+| 风险 | 攻击机理 | 防护措施 |
+| --- | --- | --- |
+| 重入攻击 | 回调中重复提款 | CEI 模式（先改状态后转账）、ReentrancyGuard |
+| 访问控制 | 未保护的管理函数 | Ownable、AccessControl、多签 |
+| 整数溢出 | 加减法越界 | Solidity 0.8+ 内置检查 |
+| 预言机操纵 | 操纵喂价 | Chainlink、TWAP、多源验证 |
+
+### CEI 模式示例
+
+```solidity
+// ❌ 危险：先转账后更新状态
+function withdraw() external {
+    uint256 amount = balances[msg.sender];
+    (bool success,) = msg.sender.call{value: amount}("");  // 此处可被重入
+    balances[msg.sender] = 0;
+}
+
+// ✅ 安全：先更新状态后转账 (CEI)
+function withdraw() external {
+    uint256 amount = balances[msg.sender];
+    balances[msg.sender] = 0;                              // 先更新
+    (bool success,) = msg.sender.call{value: amount}("");  // 后转账
+}
+```
+
+* * *
+
+## 六、合约审计
+
+### 审计流程
+
+1.  **静态分析**（Slither、Mythril）
+    
+2.  **动态测试**（Fuzzing/Property Testing）
+    
+3.  **人工审查**（资深审计员）
+    
+4.  **审计报告生成**
+    
+
+### 知名审计机构
+
+| 机构 | 特点 |
+| --- | --- |
+| 慢雾科技 | 国内领先，攻击复现 |
+| OpenZeppelin | 社区信赖，基础库作者 |
+| ConsenSys Diligence | 精通以太坊底层 |
+
+* * *
+
+## 七、开发协作规范
+
+**Git 分支模型**：`main`(可部署) → `develop`(开发) → `feature/xxx`(功能) → `fix/xxx`(修复)  
+**提交信息**：`feat:` / `fix:` / `docs:` / `refactor:` / `test:` / `chore:`  
+**PR 流程**：每个功能新建分支 → 通过测试 → 至少一位 reviewer → 合并
+
+* * *
+
+## 八、Layer 2 开发
+
+| 平台 | 类型 | 语言 | 特点 |
+| --- | --- | --- | --- |
+| Starknet | ZK-Rollup | Cairo | 高扩展 |
+| zkSync | ZK-Rollup | Solidity | 开发体验佳 |
+| Arbitrum | Optimistic | Solidity | 兼容 Hardhat/Foundry |
+| Base | Optimistic(OP Stack) | Solidity | Coinbase 支持 |
+
+## 7.09会议 从「裸奔」到「受控」：AI Agent 高危案例解析与安全构建
+
+AI Agent 正从“信息应答者”蜕变为“行动执行者”——它能够调用数字钱包、发起链上交易、管理资金、对接 API，并串联多种工具与服务。这种自主能力的跃升大幅提升了生产效率，但也将安全风险从“数据泄露”升级为“资产损失与系统操控”，影响层面截然不同。
+
+当前，AI Agent 面临的安全威胁主要集中在以下三类：
+
+外部指令劫持（Prompt Injection）：攻击者将恶意指令隐藏于网页、文档或外部内容中，诱导 Agent 绕过系统预设规则，擅自执行转账、泄露敏感信息或调用危险工具。
+
+内部权限失控：一旦 Agent 持有钱包私钥、API 密钥或高权限系统账号，被恶意利用后其破坏力将远超传统聊天误差，可能直接导致资金盗取或业务瘫痪。
+
+基础组件脆弱性：私钥明文存储、Tool Call 参数校验不足、MCP 等插件接口的安全缺陷，均为攻击者提供可乘之机，亟需开发者重点排查。
+
+因此，AI Agent 的安全底座不应是“盲目信任”，而应是“边界治理”。可行策略包括：恪守最小权限，仅开放任务必需的权限；高风险操作人工介入，对转账、删除、授权等动作强制加入审批或二次确认；密钥物理隔离，禁止 Agent 以明文形式访问私钥，改用硬件安全模块或密钥管理服务；全链路可观测，对每次 Tool Call 和插件调用实施日志审计、异常检测和频率限制。最终，AI Agent 越像一个真实员工，就越需要像管理员工一样，为其划定明确的职责边界、操作流程和合规检查，这才是安全落地的根本逻辑。
+
+## 7.09 CO-Learning
+
+现在的招聘开始要求开发者不仅要懂智能合约，还要懂如何将 AI Agent 接入链上操作（如 MCP 协议、Tool Call 安全沙盒），这种 “区块链 + AI”的复合型岗位要求极高，但市场上的对口人才极少，导致“企业招不到，求职者够不着”的结构性错配。
+
+远程招聘为主流，求职者很难实地考察公司。大量项目方并没有真实的商业模式，只是靠叙事融资。求职者入职后可能发现：
+
+1.工资由“稳定币 + 项目代币”组成，代币部分随市场暴跌归零。
+
+2.项目方用高薪吸引人才完成开发后，突然停止运营（软 Rug），甚至拖欠工资。
+
+3.背调极其困难，很多 Web3 项目的创始人匿名，过往履历无法核实，求职者踩雷概率远高于传统行业。
+
+目前找工作最效率的方式是内推.
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 # 今日学习
 
 ### 主要利用了 AI 辅助理解代码，逐步提升自己阅读与编写合约的能力。
@@ -693,6 +1118,7 @@ Already...      │
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 # Solidity合约实践
 
 ## 打卡合约
@@ -889,6 +1315,7 @@ contract SimpleCheckIn {
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 # 手册学习

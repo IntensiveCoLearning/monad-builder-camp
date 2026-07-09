@@ -19,13 +19,20 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+已完成本日大学习
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 晚上要赶火车先占位打卡一下
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 ———————————————————— 一、今日任务完成情况 ————————————————————
 
@@ -142,6 +149,7 @@ Gas 不足可去 [faucet.monad.xyz](http://faucet.monad.xyz) 领测试 MON。
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 今日完成 Monad Builder Camp 第一日学习，重点从理论走向实操，建立钱包安全习惯与基本链上认知。

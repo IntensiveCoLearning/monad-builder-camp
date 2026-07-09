@@ -15,8 +15,26 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+**合约源码**：开发者用 Solidity 编写的智能合约代码，定义了合约的功能和逻辑。
+
+**ABI**：合约的接口说明书，告诉外部有哪些函数可以调用以及如何调用**。**
+
+**合约地址**：智能合约部署到区块链后获得的唯一地址，用于定位和访问合约**。**
+
+**Read Function**：用于查询合约中的数据，不会修改区块链状态，也无需支付 Gas。
+
+**Write Function**：用于修改合约状态，需要钱包签名、支付 Gas，并记录到区块链。
+
+**Transaction Hash**：每笔链上交易生成的唯一编号，可用于查询交易状态和执行结果。
+
+**开发者编写合约源码，编译生成 ABI，部署后获得合约地址；用户通过 ABI 和合约地址调用 Read 或 Write Function，其中 Write 会产生一笔交易，并生成唯一的 Transaction Hash。**
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 DApp 与传统 App 区别
 
 最大区别：
@@ -47,6 +65,7 @@ DApp开发流程
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 **交易结构**
 
 -   **From/To**:转账双方地址
@@ -69,6 +88,7 @@ DApp开发流程
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 会议记录笔记：

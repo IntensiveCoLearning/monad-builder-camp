@@ -745,7 +745,7 @@ By completing the program, participants will leave with:
 | [KevinZeratul](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/KevinZeratul.md) | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [wangvikki991-source](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/wangvikki991-source.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Carl040814](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Carl040814.md) | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Leo072060](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Leo072060.md) | ✅ | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Leo072060](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Leo072060.md) | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [MalenthaWu](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/MalenthaWu.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [kagic1412](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/kagic1412.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zhaody26-collab](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zhaody26-collab.md) | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -814,6 +814,7 @@ By completing the program, participants will leave with:
 | [lidahe666](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lidahe666.md) | ⭕️ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

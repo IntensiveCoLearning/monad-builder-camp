@@ -15,8 +15,149 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+## **Monad 高频交互应用设计：Meme Arena（链上 Meme 对战排行榜）**
+
+### **1\. Research（约 300 字）**
+
+随着 Consumer Crypto 的发展，越来越多用户参与 Meme 创作、社区投票和社交互动。这类产品最大的特点不是价值转账，而是大量、高频、低价值的交互：点赞、投票、助力、PK、排行榜刷新、任务打卡等都可能每分钟发生数百甚至数千次。
+
+如果底层区块链确认速度慢或 Gas 成本较高，用户需要等待交易确认才能看到自己的投票、积分或排名变化，容易打断互动节奏。当一次点赞或投票都需要支付较高手续费时，用户也会倾向减少操作，社区活跃度和传播效果都会下降。因此，这类产品需要一条能够支持低延迟、高吞吐、低成本交易的链。
+
+Monad 更适合这一场景，不只是因为 TPS 更高，而是因为它能够让每一次互动都接近实时反馈。用户完成投票、领取任务奖励或刷新排行榜后，可以快速看到链上状态更新，形成连续互动体验。同时，Monad 与 EVM 兼容，开发者能够直接使用 Solidity、Hardhat、Foundry 等成熟工具迁移以太坊生态项目，降低开发成本。
+
+相比普通数据库，排行榜本身可以放在数据库缓存，但积分、投票记录、奖励领取、NFT Badge 和赛季结果更适合记录在链上。这样既保证数据公开透明、防止篡改，也方便不同应用共享同一套链上身份和荣誉体系，让用户的社区贡献成为真正可验证、可组合的链上资产。
+
+### **2\. Tech：高频交互 Demo 功能清单**
+
+**MVP 功能**
+
+**① Meme PK Arena**
+
+-   两张 Meme 卡片随机对战
+    
+-   用户点击支持其中一个 Meme
+    
+-   每次投票立即写入链上
+    
+
+**② 实时排行榜**
+
+-   根据票数实时更新 Top 100
+    
+-   支持按小时、每天、每周赛季排行
+    
+
+**③ Daily Quest**
+
+每日完成：
+
+-   投票 10 次
+    
+-   分享 1 次
+    
+-   评论 3 次
+    
+
+完成后链上领取奖励
+
+**④ On-chain Badge**
+
+例如：
+
+-   Early Voter
+    
+-   Top Contributor
+    
+-   Meme Creator
+    
+-   Season Champion
+    
+
+Badge 全部 NFT 化。
+
+**⑤ XP & Level System**
+
+每次交互获得 XP：
+
+-   Vote +1 XP
+    
+-   Share +5 XP
+    
+-   Create Meme +20 XP
+    
+
+升级后解锁头像框、称号等奖励。
+
+**⑥ Creator Reward Pool**
+
+赛季结束：
+
+-   Top Meme Creator
+    
+-   Top Voter
+    
+-   Top Community
+    
+
+自动按照智能合约分配奖励。
+
+### **3\. Ops：3 个适合 Meme / 社区传播的产品切入点**
+
+**① Vote to Pump**
+
+每天举行 Meme Battle。
+
+用户不断投票，把自己支持的 Meme 冲上榜首。
+
+社区自然形成拉票传播。
+
+传播口号：
+
+"Vote your Meme to the Moon."
+
+**② Raid Mission**
+
+社区发布任务：
+
+-   投票
+    
+-   转发 Twitter/X
+    
+-   邀请好友
+    
+-   加入 Discord
+    
+
+完成任务即可获得链上积分和 Badge。
+
+形成持续裂变增长。
+
+**③ Season Championship**
+
+每周开启一个新赛季：
+
+-   新排行榜
+    
+-   新 Badge
+    
+-   新奖励池
+    
+
+赛季结束后永久记录：
+
+-   Season #1 Champion
+    
+-   Season #2 Champion
+    
+
+所有荣誉保存在链上，可长期展示，增强用户参与感和社区竞争氛围。
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 ## **Day 3 —— 编写并部署第一个 Solidity 智能合约（OnchainTodo）**
 
 工具：Remix IDE、MetaMask、Monad Testnet、Solidity
@@ -266,6 +407,7 @@ Sourcify Verified
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 ### **前置准备｜进入 Web3 与链上世界**
 
 **Summary**
@@ -309,6 +451,7 @@ Metamask创建钱包，并记住私钥
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 **一、Day1整体学习主线**

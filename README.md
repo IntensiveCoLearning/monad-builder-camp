@@ -571,7 +571,7 @@ By completing the program, participants will leave with:
 | [christina246543](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/christina246543.md) | ⭕️ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [JessicaLin2000](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/JessicaLin2000.md) | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [AGF-DOT](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/AGF-DOT.md) | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Karynam2](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Karynam2.md) | ✅ | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Karynam2](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Karynam2.md) | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lokaiyu55](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lokaiyu55.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [RicardoXu2](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/RicardoXu2.md) | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xianyu104](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xianyu104.md) | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -814,6 +814,7 @@ By completing the program, participants will leave with:
 | [lidahe666](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lidahe666.md) | ⭕️ | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

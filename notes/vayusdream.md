@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+# D4 AI Agent高危示例&安全防线构建
+
+-   自动化到自主化的威胁演变
+    
+-   AgentGuard：要定期审查，防止过度授权。
+    
+-   安全加固建议：最小权限原则 / Human-in-the-loop（HITL）-对敏感操作设置人工复核或二次确认 / 部署安全监控工具 / 零信任，严防Prompt注入攻击 / 使用agentguard在安装skill前扫描，对安全skill可加入trust registry进行安全管理 / 拉依赖要锁版本，下载认准官方渠道
+    
+-   高风险实例：高风险skills / Prompt注入（恶意指令） / 系统漏洞 / 恶意安装包 / AI幻觉
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 # D3
 
 ## AI Agent支付
@@ -59,6 +73,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # D2
 
 ## 以太坊协议层
@@ -78,6 +93,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-09-1783601532564-image.png)
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 ### **硬核解读：用 Block Explorer 拆解交易**
 
 Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层区块链的数据翻译成人类可读的格式。将你的 Tx Hash 粘贴到 Monad 的 Block Explorer 搜索框中，你将看到如下核心字段（这是今天的**硬核知识点**）：
@@ -41,11 +47,13 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-07-1783431460944-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-06-1783336548272-image.png)

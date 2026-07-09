@@ -17,11 +17,164 @@ timezone: UTC-7
 <!-- Content_START -->
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-建立web3的ai project。开始实践
+## What I Did Today
+
+Today I continued Monad Builder Camp Week 1 and moved from concept learning into real onchain practice.
+
+I learned and discussed:
+
+-   why there are many different blockchains
+    
+-   how to understand chains as different public worlds or games
+    
+-   why Web3 does not simply put everything into one unified world
+    
+-   how Web3 relates to Web2
+    
+-   what blockchain state means at a beginner level
+    
+-   why a transaction changes the state of a specific chain
+    
+
+I also completed hands-on work:
+
+-   created a course-only MetaMask wallet
+    
+-   added Monad Testnet
+    
+-   confirmed MetaMask was on Monad Testnet
+    
+-   got testnet MON
+    
+-   completed my first Monad Testnet transfer
+    
+-   opened the transaction in MonadVision
+    
+-   recorded the transaction hash and key fields
+    
+
+## Proof
+
+Course wallet:
+
+```
+0x2596976c6D2D5a301eFc3833e2749bDF368223e5
+```
+
+First Monad Testnet transaction:
+
+```
+0xfcc719809d3984548a88305e8753d47539eb251fd800136a8c6bf24eeea441bd
+```
+
+Explorer link:
+
+```
+https://testnet.monadvision.com/tx/0xfcc719809d3984548a88305e8753d47539eb251fd800136a8c6bf24eeea441bd
+```
+
+Transaction summary:
+
+-   Status: Success
+    
+-   From: `0x2596976c6D2D5a301eFc3833e2749bDF368223e5`
+    
+-   To: `0xb11256348b1cba14E77Ca541A9b4a7E2Da2ecC49`
+    
+-   Value: `0.01 MON`
+    
+-   Transaction fee: `0.002162856067344 MON`
+    
+-   Gas used: `21,000`
+    
+
+## Problems I Had
+
+### 1\. I did not understand why there are many chains
+
+At first, it felt strange that Web3 has many separate chains. If everything were stored together, it seemed like it would be more convenient.
+
+Resolution:
+
+I started using the "different public game worlds" analogy. Different chains have different rules, costs, communities, speeds, and opportunities. People use a chain when the thing they want to do lives in that world.
+
+### 2\. I did not understand blockchain state
+
+The word "state" felt abstract because I do not have a finance or computer science background.
+
+Resolution:
+
+I understood state as "the current situation of a world." In a game, this means level, inventory, gold, and completed quests. Onchain, this means balances, ownership, votes, contract data, and transaction results.
+
+### 3\. The website said "No wallet detected"
+
+When trying to connect from the Codex in-app browser, the page said:
+
+```
+No wallet detected. Please install a compatible wallet to continue
+```
+
+Resolution:
+
+The Codex in-app browser does not have the MetaMask extension. Wallet actions need to happen in Chrome or another browser where MetaMask is installed.
+
+### 4\. I was confused by network vs token
+
+I saw MON in the wallet and wondered why there was no "Monad Testnet" in the receiver field.
+
+Resolution:
+
+Monad Testnet is the network. MON is the token used on that network. The receiver field is only an address.
+
+Mental model:
+
+```
+current network = the world I am acting in
+MON = the currency in that world
+receiver address = the account I send to
+```
+
+## What I Learned
+
+The most important sentence from today:
+
+```
+链记录状态，钱包控制身份，交易改变状态，gas 支付改变状态的成本。
+```
+
+I also learned:
+
+-   public addresses can be shared, but private keys and seed phrases must never be shared
+    
+-   a wallet does not store assets; the chain records balances, and the wallet controls keys
+    
+-   a transaction can be inspected through a block explorer
+    
+-   failed transactions can still consume gas because the network may spend computation before failure
+    
+-   Web3 is not just "trading"; it is about verifiable state and user-controlled actions
+    
+
+## How I Felt
+
+At the beginning, the concepts felt scattered and abstract. I was especially confused by why Web3 needs many chains and why transactions are so central.
+
+The "different games / public worlds" analogy made things easier. After completing the first transaction and seeing it in MonadVision, the idea became more concrete: the transaction was not just a button click in a website. It was a signed action that changed state on Monad Testnet and left a public record.
+
+I still feel that Web3 has many layers and the user experience is not very intuitive yet. But I now have a clearer first mental map, and I completed a real onchain action safely with a course-only wallet.
+
+## Next
+
+-   Practice reading more transaction details in the explorer.
+    
+-   Learn what `from`, `to`, `value`, `gas price`, and `gas fee` mean in more depth.
+    
+-   Continue Week 1 tasks toward AI + Solidity + contract deployment.
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 学习ai agent支付，先打卡
 <!-- DAILY_CHECKIN_2026-07-08_END -->
@@ -30,12 +183,14 @@ timezone: UTC-7
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
 
+
 和ai讨论心理测量+web3，得到结论为理念很好，但是实践层面上可能没有现存的启发式测量有削。  
 今日目标：开始实践
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

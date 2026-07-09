@@ -15,8 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+今天学习了在Monad测试网上部署智能合约并完成了测试
+
+1.合约地址：0x73bBdDe262634640fC330c1B5563E23C2Dd11826
+
+2\. 部署交易 hash：0xb393cebdccb9c4125138ebcdf3cceccc043802efb05c71433c88241d5a28e6ac
+
+![屏幕截图 2026-07-09 183752.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/yanyang04/images/2026-07-09-1783594045052-_____2026-07-09_183752.png)
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.20;
@@ -123,6 +135,7 @@ return userMessages\[\_user\];
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 今天知道了什么是EPF
 
 EPF = Ethereum Protocol Fellowship
@@ -148,6 +161,7 @@ EPF = Ethereum Protocol Fellowship
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 [https://x.com/tj1yVQuH8p7668/status/2073868297481920770](https://x.com/tj1yVQuH8p7668/status/2073868297481920770)

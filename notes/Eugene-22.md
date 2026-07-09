@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+学习了 agent 开发的使用，包括一个开发项目中 [CLAUDE.md](http://CLAUDE.md) 或 [AGENT.md](http://AGENT.md) 的项目结构安排
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 ### 以太坊平台
 
 核心组件：以太坊虚拟机（EVM），执行智能合约，运行各类程序和应用
@@ -117,11 +123,13 @@ ETH：既是真实的货币资产，同时也是整个 L2 生态的结算的 gas
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 注册个人钱包和账户，成功连接 monad 测试网，并从水龙头网站完成测试代币的领取。在monad 测试网上通过接收地址完成一次 monad 测试币的转账操作。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 阅读 web3 实习手册，了解 ETH 智能合约开发流程及技术栈，了解 web3 行业职业分类及发展概况

@@ -17,7 +17,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-## **Monad 高频交互应用设计：Meme Arena（链上 Meme 对战排行榜）**
+## **Day4 | Monad 高频交互应用设计：Meme Arena（链上 Meme 对战排行榜）**
 
 ### **1\. Research（约 300 字）**
 
@@ -115,7 +115,7 @@ Badge 全部 NFT 化。
 
 传播口号：
 
-"Vote your Meme to the Moon."
+“Vote your Meme to the Moon.”
 
 **② Raid Mission**
 
@@ -157,6 +157,7 @@ Badge 全部 NFT 化。
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 ## **Day 3 —— 编写并部署第一个 Solidity 智能合约（OnchainTodo）**
 
@@ -408,6 +409,7 @@ Sourcify Verified
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
 
+
 ### **前置准备｜进入 Web3 与链上世界**
 
 **Summary**
@@ -451,6 +453,7 @@ Metamask创建钱包，并记住私钥
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

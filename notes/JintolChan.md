@@ -1,5 +1,5 @@
 ---
-timezone: UTC+8
+timezone: UTC+300
 ---
 
 # Jintol

@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+今天参加了7点的分享会，也听了8点的colearning
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 今天在co-learning里面，yoona姐姐分享了她自己的经历和经验，受益匪浅！
 
 我也是一个enfj，我现在面临着毕业求职。我是在研究生的时接触到区块链和去中心化金融的，除了在课内的时候学习区块链的基础知识以外，然后我自己也参加一些相关的web3相关的峰会。
@@ -28,6 +34,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 今天主要复习了区块链的基础概念。
 

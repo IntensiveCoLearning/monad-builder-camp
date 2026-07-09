@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xianyu104/images/2026-07-09-1783606394588-image.png)
+
+今天听了老师对于agent安全方面的分享，co-learning中huahua老师，kk老师，yoona老师的聊天，beain老师的项目介绍分享，学习了智能合约的开发
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xianyu104/images/2026-07-08-1783524959638-image.png)
 
 学习monad，学习了Ethereum 钱包与交易基础，
@@ -26,6 +34,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
 
+
 今天听了老师的分享，以太坊方面的，没有太理解，然后看老师使用codex做demo
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xianyu104/images/2026-07-07-1783438885030-image.png)
@@ -33,6 +42,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

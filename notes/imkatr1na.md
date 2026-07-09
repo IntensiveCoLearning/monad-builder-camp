@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+观看了今晚两场直播，蹲一个智能纪要
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 **Agent 支付核心架构**
 
 -   **全链路能力分层**
@@ -87,6 +93,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
+
 -   合约生成阶段：向 AI 工具（如 Codex）明确业务需求，即可自动生成对应功能的智能合约代码，无需手动编写底层逻辑。
     
 
@@ -98,6 +105,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 **Gas 费机制与合约**

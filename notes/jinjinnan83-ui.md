@@ -15,8 +15,170 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+Monad 钱包配置指南
+
+任选一个钱包
+
+Rabby [rabby.io](http://rabby.io)
+
+MetaMask metamaskio/zh-CN
+
+Coinbase Wallet coinbase.com/wallet
+
+1 选择当前钱包
+
+钱包建议用Chrome打开链接来下载并添加为扩展程序。
+
+由于 Monad 兼容 EVM，所以任何 EVM 钱包都可以使用
+
+建议先确认钱包账户，再添加网络并领取测试币。
+
+以下用 Rabby 钱包示例。
+
+2 添加Monad Testnet网络
+
+钱包默认运行在 Ethereum 上。要在 Monad Teestnet
+
+上使用它，需要把 Monad Testnet 添加为个网络。
+
+【方法1】打开 [chainlist.org](http://chainlist.org) 搜索 Monad
+
+【方法2】手动添加 手动添加参数
+
+Network Name Monad Mainnet
+
+Chain ID 10143
+
+Currency Symbol MON
+
+RPC URL [https://rpc.monad.xyz](https://rpc.monad.xyz)
+
+Block Explorer [testnet.monadscan.com](http://testnet.monadscan.com)
+
+常用入口
+
+Monad Explorer：[testnet.monadexplorer.com](http://testnet.monadexplorer.com)
+
+Monad官方测试币领取：[faucet.monad.xyz](http://faucet.monad.xyz)
+
+Chain ID 是用来标识某条区块链的唯编号
+
+你的钱包或应用通过 URL 与区块链对话
+
+CLAIM TESTNET ASSETS
+
+领取测试网资产
+
+3 从 Faucet 获取 Testnet MON
+
+你需要先拿到一些 Monad 测试网上用的测试币，这样你才
+
+能在测试网上发起交易、转账、交互应用、支付 gas。
+
+测试币只用于开发和测试，没有真实价值。
+
+你要完成笔链上交易，哪怕只是测试网转账，也需要
+
+点点币来支付手续费，也就是 gas fee。
+
+每 24h 最多领取 50 MON。每隔 30s 可领取次。
+
+MONAD WALLET SETUP
+
+Monad 链上交易指南
+
+Gas：支付给处理你交易的验证者 + 防止垃圾信息
+
+在任何 EVM 兼容链上，每一个动作（发送代币、部署合约、调用函数）都需要计算。动作越复
+
+杂，消耗的 gas 越多。
+
+gas fee = gas units \* gas price
+
+Gas price 会根据网络需求波动。当大量用户同时想交易时，gas price 上升。
+
+4 选择接收钱包 5 输入发送金额 6 签名并提交
+
+你的钱包会在你确认前显示估算费用
+
+如果 MON 用完了交易就会失败，但仍会消耗 gas
+
+OPEN MONAD EXPLORER
+
+打开 Monad Explorer
+
+7 复制钱包地址
+
+0x0604a37f80daB97310a69589D18C7dddf442D67C
+
+总交易数 当前区块高度 合约数量 验证者数量
+
+8 打开区块浏览器
+
+将钱包地址粘贴到搜索框。
+
+主网用于真实交易 [monadscan.com](http://monadscan.com)
+
+测试网用于开发测试 [testnet.monadscan.com](http://testnet.monadscan.com)
+
+区块链世界的实时监控大屏
+
+Latest Blocks
+
+刚刚又产生了哪些新区块，是哪个验证者提出的，每个区块里包含了几
+
+笔交易，奖励是多少 MON。
+
+Latest Transactions
+
+刚刚链上发生了哪些交易，谁发给谁，金额是多少。
+
+链上交易不一定都是“转钱”。有时候它可能是在和某个应用或智能合约
+
+交互，比如授权、调用函数、提交操作等。即使 value 是 0，也可能发
+
+生了一次链上操作，并且仍然需要消耗 gas。
+
+VERIFY THAT YOU CAN LOOK UP ADDRESSES
+
+确认可以查询地址
+
+9 查看账户资产与交易记录
+
+资产余额 (Token Portfolio) 是119.9961 MON。
+
+交易记录 (Transaction) 共有 2 条：
+
+• From / To 表示转账方向
+
+• 一条是转入 IN
+
+• 另一条是转出 OUT
+
+交易状态 (Status) 均为已完成。
+
+Amount 不仅能看到转账金额，还有当次交易付给
+
+网络的手续费。 链上产品和普通互联网产品有什么不同
+
+普通互联网产品里，用户的数据通常存在平台自己
+
+的服务器里，平台背后的数据库般不能直接公开
+
+查询。
+
+链上产品的关键操作会被记录到区块链上，比如转
+
+账、领取测试币、和应用交互等，任何人都可以查
+
+询和验证。
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 音频围绕 AI Agent 支付基础设施的架构、落地进展、生态布局及行业趋势展开分享答疑，核心内容如下：
 
 -   **Agent 支付核心架构**
@@ -89,6 +251,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
+
 -   **Agent 支付核心架构**
     
     -   **全链路能力分层**
@@ -158,6 +321,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 |   |   |   |

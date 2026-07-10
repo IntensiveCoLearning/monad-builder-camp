@@ -15,8 +15,18 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+![IMG_3310.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SissiWang411/images/2026-07-10-1783686816698-IMG_3310.png)
+
+![IMG_3311.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SissiWang411/images/2026-07-10-1783686852758-IMG_3311.png)![IMG_3312.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SissiWang411/images/2026-07-10-1783686890658-IMG_3312.png)
+
+![IMG_3313.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SissiWang411/images/2026-07-10-1783687039669-IMG_3313.png)![IMG_3314.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SissiWang411/images/2026-07-10-1783687078383-IMG_3314.png)
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 一、黑客松项目 
 
 1）例题:猫咪行为分析智能体开发
@@ -460,6 +470,7 @@ o  多模块集成测试
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 ![](blob:https://intensivecolearn.ing/42c23353-2c9a-4611-b0b8-996ce799cde5)
 

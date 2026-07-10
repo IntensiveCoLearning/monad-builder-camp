@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+今天主要是参加例会！一会结束来写笔记心得
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 # 今天看了两场回放的视频：
 
 ### 视频一：《DevRel 的成长之路》
@@ -60,6 +66,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
+
 今日todo：
 
 -   理解 DevRel / Builder / 生态连接者的角色。
@@ -77,6 +84,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日todo：
 
 -   完成 Web3 常用工具安装和账号准备。
@@ -88,6 +96,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

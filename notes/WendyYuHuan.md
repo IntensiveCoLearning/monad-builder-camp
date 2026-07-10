@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+# 学习记录
+
+1.WEEK1例会
+
+2.学习Web3实习手册
+
+# 明日计划
+
+学习Web3实习手册
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 # 学习记录
 
 1.AI高危案例分享会及Co-learning
@@ -30,6 +44,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 # 学习记录
 
@@ -49,6 +64,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
 
+
 # 学习记录
 
 1.  《普通开发者如何进入以太坊协议层》分享会及co-learning（Codex演示自动部署智能合约）
@@ -65,6 +81,7 @@ Codex部署合约实操
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

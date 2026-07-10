@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+先打卡晚點補充筆記
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 **Local Mempool**
 
 -   為什麼不用全域 mempool：gossip 協定在幾千 TPS 下光是各節點重傳就會吃光頻寬預算；多跳傳播拉長 time-to-inclusion；而且 leader schedule 本來就預先可知，廣播給全網是浪費。所以改成定向轉發
@@ -45,6 +51,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 **2026.07.07**
 
@@ -92,6 +99,7 @@ warm access 維持 100 不變。受影響的是 BALANCE、EXTCODE 系列、CALL 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 今天簡單的掃過了 Monad 文件裡整理的與 Ethereum 差異清單，記幾個有感的點。

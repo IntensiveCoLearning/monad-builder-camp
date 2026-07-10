@@ -305,7 +305,7 @@ By completing the program, participants will leave with:
 | [hhhuang5w3](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/hhhuang5w3.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [elizabetheeeeeing-dev](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/elizabetheeeeeing-dev.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lora-sys](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lora-sys.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [saichato](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/saichato.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [saichato](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/saichato.md) | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [mini-zoro](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/mini-zoro.md) | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xuexin-dai](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xuexin-dai.md) | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [1983069478](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/1983069478.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -815,6 +815,7 @@ By completing the program, participants will leave with:
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [summer-sheep](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/summer-sheep.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

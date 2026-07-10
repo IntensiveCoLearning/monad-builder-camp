@@ -15,8 +15,30 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+epf都是自学的，epf 和智能合约相比更偏向于密码学和数学的知识，会更难。  
+可以做执行层和共识层去找上面的 issue 然后去进行修。
+
+最开始可以选择简单 issue，通过提 pr 的过程然后让自己的理解更完备。
+
+ETH这个机器可以简单分为
+
+1.  账户、交易、gas
+    
+2.  执行层
+    
+3.  共识层
+    
+4.  节点和网络
+    
+
+metamask 等钱包就是构建在以太坊之上的应用
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 很早之前用过 okx wallet，第一次用小狐狸。  
   
 之前还是主要通过交易的用户用钱包，完全没有想过区块链底层技术有这么多的方向。  
@@ -26,6 +48,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 # DevRel的成长之路 — 从 Builder 到生态链接者
 
@@ -50,6 +73,7 @@ SVP 是一个 AI Native 链，有 agent的 mcp 能够有强力的安全边界。
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 # Web3 暑期实习计划 - Monad Buidler Camp

@@ -17,15 +17,269 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-[https://kitten-namer-delight–yamentin1313.replit.app/](https://kitten-namer-delight--yamentin1313.replit.app/)
+# Hardhat 智能合约开发 Build Log（完整归档日志）
 
-生成了一个可以根据猫的种类、喜欢的风格、相遇时间以及猫的颜色生成小猫名字的网站。
+项目名称：hardhat-example
 
-今天下载了git、nodejs、hardhat，尝试运行手册中的一个合约失败了，明天再好好研究一下。
+开发环境：MacOS + Git + Hardhat v3.9.1 + Viem + TypeScript
+
+日志分类：钱包管理、链上交易、合约开发、AI 协作、安全审计记录
+
+## 一、基础环境构建记录
+
+1.  环境初始化
+    
+
+bash
+
+运行
+
+```
+mkdir hardhat-example && cd hardhat-example
+npx hardhat # 初始化Viem+TS模板项目
+npm install 自动安装166个依赖包
+```
+
+2.  版本标识
+    
+
+-   Hardhat：v3.9.1
+    
+-   Solidity 编译器：0.8.28
+    
+-   本地私有链 ID：31337，RPC：[http://127.0.0.1:8545](http://127.0.0.1:8545)
+    
+-   代码托管：Git 本地仓库（待推送 GitHub 云端）
+    
+
+## 二、钱包模块操作记录（MetaMask + Hardhat 内置测试账户）
+
+### 1\. Hardhat 本地节点测试钱包台账
+
+执行 `npx hardhat node` 自动生成 20 组测试账户，每组附带公开私钥，单账户初始 10000 虚拟 ETH
+
+-   风险标注：终端提示警告 `Funds sent on live network to accounts with publicly known private keys WILL BE LOST`
+    
+-   管控规则：仅本地调试使用，**禁止向该类私钥转入真实测试网 / 主网资产**
+    
+
+### 2\. MetaMask 钱包接入操作日志
+
+1.  本地网络配置参数
+    
+    -   RPC 地址：[http://127.0.0.1:8545](http://127.0.0.1:8545)
+        
+    -   链 ID：31337
+        
+    -   代币符号：ETH
+        
+2.  导入流程记录
+    
+    复制本地节点输出私钥导入 MetaMask，用于合约交互、转账测试
+    
+3.  钱包安全规范归档
+    
+    1.  真实私钥禁止明文打印、禁止写入代码 / 日志；
+        
+    2.  线上部署私钥存放.env 加密文件，纳入.gitignore 不上传 GitHub；
+        
+    3.  区分测试钱包、开发钱包、生产多签钱包三套隔离体系。
+        
+
+### 3\. 钱包操作事件日志
+
+1.  本地账户间虚拟 ETH 转账测试（无真实资产损耗）
+    
+2.  MetaMask 连接本地合约调用 write 函数签名记录
+    
+3.  本地节点重启后所有钱包余额、交易数据自动清空
+    
+
+## 三、链上交易完整执行记录
+
+### 1\. 本地节点启动指令
+
+bash
+
+运行
+
+```
+npx hardhat node # 常驻终端窗口A，关闭即销毁所有交易数据
+```
+
+### 2\. 合约部署交易（Hardhat3 Ignition 新版标准）
+
+正确部署指令：
+
+bash
+
+运行
+
+```
+npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
+```
+
+-   弃用旧版指令：`npx hardhat run scripts/deploy.js --network localhost`（v2 语法，项目无 scripts 目录）
+    
+
+### 3\. 交易生命周期日志
+
+1.  编译阶段：`npx hardhat compile` 下载 solc 0.8.28，生成 artifacts ABI / 字节码
+    
+2.  部署阶段：Ignition 模块发起部署交易，窗口 A 实时打印交易哈希、Gas 消耗、区块信息
+    
+3.  交互交易：MetaMask 调用合约函数产生签名交易，本地节点全量留存交易日志
+    
+
+### 4\. 交易故障记录
+
+1.  报错 HHE3：新开终端未 cd 至项目根目录，无 hardhat.config.ts，无法识别网络
+    
+    修复：`cd hardhat-example` 进入项目目录再执行指令
+    
+2.  报错 HHE10115：ignition 模块文件缺失
+    
+    修复：`npx hardhat ignition init` 重新生成部署模板 Lock.ts
+    
+
+### 5\. 交易归档规则
+
+-   本地链交易仅留存内存，无持久化；
+    
+-   测试网 / 主网交易哈希、区块号、合约地址单独制表归档，用于溯源。
+    
+
+## 四、智能合约开发全流程记录
+
+### 1\. 目录规范记录
+
+-   合约源码存放目录：`contracts/*.sol`，仅该目录文件可被 Hardhat 编译识别
+    
+-   部署脚本：`ignition/modules/*.ts`（v3 官方 Ignition 部署系统）
+    
+-   单元测试目录：`test/`，使用 Node Test Runner + Viem
+    
+
+### 2\. 合约开发流程台账
+
+1.  VSCode 安装 Solidity 官方插件，实时语法校验、漏洞提示
+    
+2.  编写合约 → `npx hardhat compile` 校验语法
+    
+3.  本地节点部署 → MetaMask 交互测试
+    
+4.  编写 test 用例：`npx hardhat test` 自动化边界测试
+    
+
+### 3\. 合约模板基线
+
+内置 Lock.sol 时间锁合约，采用 Solidity ^0.8.24，自带内置溢出保护；
+
+后续新增 ERC20、NFT 合约统一存放 contracts 文件夹，单合约独立文件。
+
+### 4\. 版本控制（Git）归档规范
+
+1.  初始化本地仓库：`git init`
+    
+2.  提交模板基线：`git add . && git commit -m "初始化Hardhat合约项目"`
+    
+3.  云端备份：关联 GitHub 仓库，`git push` 同步全部合约源码
+    
+
+## 五、AI 辅助协作开发记录
+
+### 1\. AI 使用场景台账
+
+1.  Solidity 合约代码生成、函数逻辑编写、注释标准化
+    
+2.  合约漏洞审查提示词：重入攻击、整数溢出、权限漏洞、tx.origin 误用检测
+    
+3.  Hardhat 部署脚本、Viem 交互 TS 代码生成与排错
+    
+4.  安全审计清单输出、漏洞修复方案生成
+    
+5.  Build Log、开发文档、部署流程文案整理
+    
+
+### 2\. AI 协作管控规范
+
+1.  AI 生成代码必须人工二次审查、单元测试验证，不可直接部署上链
+    
+2.  所有 AI 输出合约逻辑、修复方案记录至日志，留存提示词与修改记录
+    
+3.  敏感私钥、RPC 密钥、项目机密禁止输入 AI 对话上下文，防止泄露
+    
+
+### 3\. AI 排错实操记录
+
+1.  通过 AI 解析 HHE3、HHE10115 Hardhat 报错，定位目录、文件缺失问题
+    
+2.  解释`npx hardhat node`本地链运行逻辑、终端多窗口分工流程
+    
+3.  区分 Git（本地工具）与 GitHub（云端代码网站）底层原理
+    
+
+## 六、安全审计与风险记录（安全 Build 日志）
+
+### 1\. 开发阶段安全检查清单
+
+1.  代码层规范
+    
+    -   使用 OpenZeppelin 安全库：ReentrancyGuard、Ownable、SafeMath
+        
+    -   遵循 Checks-Effects-Interactions 外部调用规范，防止重入漏洞
+        
+    -   禁用 tx.origin 做身份校验，block.timestamp 不作为随机源
+        
+    -   Solidity 0.8 + 自动溢出检查，不依赖外部 SafeMath
+        
+2.  工具扫描
+    
+    npm audit 检测依赖漏洞：15 个低 / 中 / 高危依赖漏洞，本地开发不影响，线上部署执行`npm audit fix`修复
+    
+3.  节点与钱包安全
+    
+    -   Hardhat 公开测试私钥隔离使用，严禁线上转账
+        
+    -   .env 密钥文件加入.gitignore，禁止推送 GitHub
+        
+    -   本地节点 RPC 仅 127.0.0.1 本地访问，不对外开放端口
+        
+
+### 2\. 风险告警归档
+
+1.  高风险警告：本地测试私钥全网公开，主网转入资产永久丢失
+    
+2.  依赖安全风险：npm 依赖存在高危漏洞，生产环境需批量修复
+    
+3.  操作风险：新开终端易脱离项目根目录，引发 Hardhat 配置文件缺失报错
+    
+
+### 3\. 安全闭环整改记录
+
+1.  问题：ignition 部署文件丢失 → 执行`npx hardhat ignition init`修复
+    
+2.  问题：命令行目录错误 HHE3 → 标准化操作流程：新开终端先 cd 项目目录
+    
+3.  问题：私钥明文暴露风险 → 规范.env 加密存储、Git 忽略配置
+    
+
+## 七、项目迭代待办日志
+
+1.  完善单元测试，覆盖合约边界条件、异常场景
+    
+2.  配置 Sepolia 测试网 RPC，完成线上测试网部署流程
+    
+3.  完整配置 GitHub 远程仓库，建立代码云端备份机制
+    
+4.  使用 AI 完成合约全面安全审计，输出正式审计报告
+    
+5.  优化私钥加密存储方案，适配线上生产部署安全标准
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 [https://kitten-namer-delight--yamentin1313.replit.app/](https://kitten-namer-delight--yamentin1313.replit.app/)
@@ -37,6 +291,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -64,6 +319,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,14 @@ timezone: UTC-7
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+准备分享会分享，开始第一个合约demo
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 ## What I Did Today
 
 Today I continued Monad Builder Camp Week 1 and moved from concept learning into real onchain practice.
@@ -176,11 +182,13 @@ I still feel that Web3 has many layers and the user experience is not very intui
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
 
+
 学习ai agent支付，先打卡
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -190,6 +198,7 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,123 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+`bool` 是 **boolean** 的縮寫，意思是「布林值」。
+
+它只有兩種可能：
+
+```
+true
+false
+```
+
+也就是「是 / 否」、「對 / 錯」、「通過 / 不通過」。
+
+例如這個 schema：
+
+```
+"address user, bool approved, string note"
+```
+
+裡面的：
+
+```
+bool approved
+```
+
+意思是：
+
+```
+approved 這個欄位是一個布林值
+```
+
+資料可以是：
+
+```
+{ name: "approved", value: true, type: "bool" }
+```
+
+代表：
+
+```
+approved = true
+```
+
+也就是「已通過」。
+
+為什麼叫 `bool`？  
+因為它來自數學家 **George Boole** 的名字。程式語言裡常把 boolean 簡寫成 `bool`。Solidity / EVM 裡也用 `bool` 這個型別。
+
+**大整數是什麼？**
+
+一般 JavaScript 的 `number` 有安全上限：
+
+```
+9007199254740991
+```
+
+也就是：
+
+```
+Number.MAX_SAFE_INTEGER
+```
+
+超過這個數字，JavaScript 可能算不準。
+
+但鏈上常用的整數型別是：
+
+```
+uint256
+```
+
+`uint256` 可以表示非常非常大的非負整數，最大大概是：
+
+```
+2^256 - 1
+```
+
+這遠遠超過 JavaScript 普通 `number` 能安全表示的範圍。
+
+所以 JavaScript 用 `BigInt` 來表示大整數，例如：
+
+```
+1n
+1000000000000000000n
+```
+
+後面的 `n` 就代表這是 `BigInt`。
+
+例如 ETH 最小單位 wei 常常會用大整數：
+
+```
+1 ETH = 1000000000000000000 wei
+```
+
+這個數字用普通 `number` 處理不安全，所以會用：
+
+```
+1000000000000000000n
+```
+
+所以你看到：
+
+```
+value: 1n
+```
+
+意思只是：
+
+```
+這個值是 BigInt 型態的 1
+```
+
+不是錯誤，也不是多了一個字母。
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 好，下一步學 **讀取一筆真實的 attestation**。
 
 這一步的重點是：**只讀鏈上資料，不寫鏈、不花 gas、不需要私鑰。**
@@ -113,6 +228,7 @@ const decodedData = encoder.decodeData(encodedData);
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 意思是：我們先只學 **EAS 怎麼把「人看得懂的資料」轉成「鏈上合約看得懂的 bytes」**。
 
@@ -517,6 +633,7 @@ schemaUID -> 找 schema -> decode data
 
 
 
+
 **On-chain vs Off-chain**
 
 EAS 支援兩種模式：
@@ -552,6 +669,7 @@ npm install @ethereum-attestation-service/eas-sdk
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

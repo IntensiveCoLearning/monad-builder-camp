@@ -15,8 +15,32 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+# D5 例会
+
+待看实操笔记：
+
+-   [https://my.feishu.cn/wiki/PpWuwXWG6ionQjkmKVOcXqL3nme](https://my.feishu.cn/wiki/PpWuwXWG6ionQjkmKVOcXqL3nme)
+    
+-   [https://my.feishu.cn/wiki/LNWLwRqWeiCnVokKgjEc2pCbnYb](https://my.feishu.cn/wiki/LNWLwRqWeiCnVokKgjEc2pCbnYb)
+    
+-   [https://my.feishu.cn/wiki/NS8hwnjMoilV6xkHMeoc4MvUnmd](https://my.feishu.cn/wiki/NS8hwnjMoilV6xkHMeoc4MvUnmd)
+    
+-   [https://my.feishu.cn/wiki/Ph2dwoTJniZtKvk9apic5IpxnFd](https://my.feishu.cn/wiki/Ph2dwoTJniZtKvk9apic5IpxnFd)
+    
+-   [https://yuumonadbuddy.netlify.app/](https://yuumonadbuddy.netlify.app/)
+    
+-   今天分享的咨询网站：深潮[https://ww删w.techflowpost.com/](https://ww删w.techflowpost.com/)
+    
+    星球日报[https://www删.odaily.news/](https://www删.odaily.news/)
+    
+    Milk Road：[https://milkr删oad.com/news/](https://milkr删oad.com/news/)
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 # D4 AI Agent高危示例&安全防线构建
 
 -   自动化到自主化的威胁演变
@@ -30,6 +54,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -82,6 +107,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # D2
 
 ## 以太坊协议层
@@ -101,6 +127,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

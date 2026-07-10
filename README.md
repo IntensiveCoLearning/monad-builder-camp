@@ -554,7 +554,7 @@ By completing the program, participants will leave with:
 | [cryptobugweb3-cloud](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/cryptobugweb3-cloud.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zhutianyu688-gif](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zhutianyu688-gif.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [LierMi](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LierMi.md) | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [yu13777303650-dot](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yu13777303650-dot.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [yu13777303650-dot](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yu13777303650-dot.md) | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [0621Zoeng](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/0621Zoeng.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yuzhoujin1018](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yuzhoujin1018.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lebronboy500](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lebronboy500.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -815,6 +815,7 @@ By completing the program, participants will leave with:
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [summer-sheep](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/summer-sheep.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

@@ -681,7 +681,7 @@ By completing the program, participants will leave with:
 | [junnanhuang](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/junnanhuang.md) | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [CHS1997](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/CHS1997.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ClaytonYang54](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/ClaytonYang54.md) | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [nayanjohri-star](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nayanjohri-star.md) | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [nayanjohri-star](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/nayanjohri-star.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [monadokiay](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/monadokiay.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [AnnieZhang2026](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/AnnieZhang2026.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Flora-hihihi](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Flora-hihihi.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -815,6 +815,7 @@ By completing the program, participants will leave with:
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [summer-sheep](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/summer-sheep.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

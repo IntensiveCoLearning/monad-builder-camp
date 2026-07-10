@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+看了看[https://web3intern.xyz/zh/](https://web3intern.xyz/zh/) 中的简历编写部分
+
+做了一份自认为不错的简历 准备重新投递一下
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 参与了今天的共学，对AI Agent的安全性进行了总结，与昨天的内容产生了共鸣
 
 主要还是通过以下几个内容来进行安全构建：
@@ -55,6 +63,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
+
 观看了关于AI Agent支付的共学 打开了新世界的大门 提升了交易的效率 但存在很多问题 例如权限问题 合规监管 以及数据隐私等 如果能完善好 确实是一条新的赛道值得学习
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -62,11 +71,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
 
+
 整理投递了几家交易所 运营向的 技术方向真心找不到
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

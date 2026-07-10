@@ -23,11 +23,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
+
 學了ai agent的問題吧
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -42,11 +44,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天主要就了解了ETH的協議層和執行層的一些logic, 還有EPF 的獎學金資訊和gihub contribution。還在想那些demo 要怎樣做。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

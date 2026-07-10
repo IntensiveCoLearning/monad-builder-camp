@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+这周最难的部分已经完成，还有几个任务好好做完，思考和确定下周方向
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 在remix里面搞了好久终于deploy成功了！
 
 [https://app.notion.com/p/7-9-Day4-39854a97f451808baee5eab493c53a2c?source=copy\_link](https://app.notion.com/p/7-9-Day4-39854a97f451808baee5eab493c53a2c?source=copy_link)
@@ -24,6 +30,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 搞懂智能合约是如何部署的，和交易很类似
 
@@ -38,6 +45,7 @@ AI生成「积分记录」Solidity合约，第一次看合约
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
 
+
 完成了第一笔转账！
 
 开启notion记录学习过程
@@ -45,6 +53,7 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

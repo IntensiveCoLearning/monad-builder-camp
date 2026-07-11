@@ -15,8 +15,128 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+## **Meme Battle 应用开发笔记**
+
+### **📌 项目概述**
+
+基于 **Monad 测试网** 的链上 Meme 对战与排行榜 DApp。核心功能包括：
+
+-   用户提交 Meme（存储 IPFS URI）
+    
+-   投票给 Meme（每次 +1 分，作者积分增加）
+    
+-   每日任务（每天完成 +10 分）
+    
+-   积分达到阈值自动获得徽章（Bronze/Silver/Gold/Diamond）
+    
+-   积分可兑换奖励（合约中预留可领取奖励机制）
+    
+
+技术栈：**Solidity（Remix 可编译）+ React + TypeScript + Wagmi + Viem + Vite**
+
+* * *
+
+### **1\. 环境准备**
+
+-   **Node.js** ≥ 18.0
+    
+-   **MetaMask** 浏览器扩展
+    
+-   添加 Monad 测试网到 MetaMask：
+    
+    -   网络名称：Monad Testnet
+        
+    -   RPC URL：`https://testnet-rpc.monad.xyz`
+        
+    -   链 ID：`10143`
+        
+    -   货币符号：MON
+        
+    -   区块浏览器：`https://testnet.monadscan.com`
+        
+-   领取测试币：前往 [Monad Faucet](https://testnet.monad.xyz/faucet) 获取 MON
+    
+
+* * *
+
+### **2\. 智能合约（Solidity）**
+
+**2.1 合约代码**
+
+在 Remix 中新建 `MemeBattle.sol`
+
+### **2.2 部署步骤（Remix）**
+
+1.  打开 Remix IDE，创建 `MemeBattle.sol`。
+    
+2.  编译：选择 Solidity 版本 0.8.20，启用优化。
+    
+3.  部署：环境选 `Injected Provider`，连接 MetaMask（确保网络为 Monad Testnet）。
+    
+4.  点击 `Deploy`，确认交易。
+    
+
+### **3\. 前端项目构建**
+
+**3.1 项目文件结构**
+
+text
+
+```
+meme-battle/
+├── src/
+│   ├── wagmi.ts
+│   ├── contract.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+├── package.json
+└── ...
+```
+
+**3.2 各文件代码**
+
+（待整理）
+
+### **4\. 运行项目**
+
+1.  确保 `contract.ts` 中的 `contractAddress` 已替换为实际部署地址，且 ABI 正确。
+    
+2.  终端执行：
+    
+    bash
+    
+    ```
+    npm run dev
+    ```
+    
+3.  打开浏览器访问 `http://localhost:5173`。
+    
+4.  点击 **Connect Wallet**，授权 MetaMask 连接。
+    
+5.  提交 Meme（输入 IPFS URI），投票，完成每日任务，观察积分和排行变化。
+    
+
+* * *
+
+### **5\. 注意事项**
+
+-   **ABI 更新**：每次修改合约并重新部署，都需要复制新的 ABI 到 `contract.ts`。
+    
+-   **Gas 费用**：确保钱包有足够的 MON 测试币。
+    
+-   **每日任务**：每天只能完成一次，基于 UTC 时间。
+    
+-   **排行榜优化**：生产环境建议使用后端索引（如 The Graph）替代 `getAllMemes` 链上查询，以降低 Gas 并提升速度。
+    
+-   **徽章**：积分达到阈值自动触发，可在事件中监听 `BadgeEarned`。
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 ## Week 1 总结
 
 ### 学习内容
@@ -65,6 +185,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 ## **Day4 | Monad 高频交互应用设计：Meme Arena（链上 Meme 对战排行榜）**
 
@@ -206,6 +327,7 @@ Badge 全部 NFT 化。
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -461,6 +583,7 @@ Sourcify Verified
 
 
 
+
 ### **前置准备｜进入 Web3 与链上世界**
 
 **Summary**
@@ -504,6 +627,7 @@ Metamask创建钱包，并记住私钥
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

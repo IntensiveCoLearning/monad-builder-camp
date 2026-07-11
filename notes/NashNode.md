@@ -1,5 +1,5 @@
 ---
-timezone: UTC+12
+timezone: UTC+6
 ---
 
 # Nathan

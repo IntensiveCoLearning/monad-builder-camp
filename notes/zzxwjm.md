@@ -15,8 +15,35 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+**1\. 分轨初步理由**
+
+我目前更倾向于 **Research 为主，Tech 为实践支撑，Ops 作为表达辅助**。
+
+我不是 CS 或金融背景，纯 Tech 还需要补很多基础；但这周完成钱包、交易、合约部署和交互后，我也意识到 Tech 是理解 Web3 的必要工具。相比之下，Research 更接近我的背景。我会自然关心：链上行为到底代表什么？badge、积分、排行榜是否真的代表贡献？如何区分真实参与和刷量？这些问题和我的心理测量、研究方法背景更有连接。
+
+**2\. 本周最重要的学习收获**
+
+1.  我重新理解了交易：链上 transaction 不只是买卖，而是一次签名后的状态改变请求。转账、部署合约、调用 `createTodo` 都是状态改变。
+    
+2.  我理解了钱包、链和区块浏览器的关系：钱包负责签名，链记录状态，区块浏览器让状态改变可以被公开验证。
+    
+3.  我意识到 AI 可以辅助学习，但不能替代人工判断。合约权限、安全边界、是否使用课程钱包、哪些内容不该上链，都必须由我自己负责。
+    
+
+**3\. 希望助教或同伴帮助的问题**
+
+我最想了解的是：Web3 Research 到底在做什么？它是偏行业研究、协议研究、用户研究、机制设计、链上数据分析，还是产品策略？
+
+其次，我想知道我的背景是否有真实价值。我不是工程或交易出身，但我会关注“链上记录到底代表什么”“指标是否有效”“激励是否会扭曲行为”这类问题。我想知道这些问题在真实 Web3 项目中是否有需求。
+
+如果 Week 2 选择 Research 为主，我也希望得到建议：我应该产出什么样的小成果？比如生态研究、链上行为指标框架，还是结合一个小 demo 来验证问题。
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 Week 1 - AI 辅助开发 - Onchain Todo
 
 \## 任务理解
@@ -476,6 +503,7 @@ completed: true
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
 
+
 **分享笔记：一个新手如何理解 Web3**
 
 **1\. 我的起点**
@@ -618,6 +646,7 @@ Web3 试图改变一部分信任结构：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -787,11 +816,13 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 
 
+
 学习ai agent支付，先打卡
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -806,6 +837,7 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

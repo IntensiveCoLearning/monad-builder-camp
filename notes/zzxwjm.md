@@ -17,11 +17,464 @@ timezone: UTC-7
 <!-- Content_START -->
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-打卡
+Week 1 - AI 辅助开发 - Onchain Todo
+
+\## 任务理解
+
+这个任务不是单纯让 AI 写一段代码，而是练习一套开发流程：
+
+1\. 我先写出清晰的 Prompt，告诉 AI 要生成什么合约。
+
+2\. AI 给出一个 Solidity 合约初稿。
+
+3\. 我阅读代码，理解每个部分的作用。
+
+4\. 我人工检查代码是否符合预期、是否过度复杂、是否有明显风险。
+
+5\. 我记录自己保留、修改或拒绝了 AI 输出中的哪些设计。
+
+这次选择的方向是 `Onchain Todo`。它的含义是：把待办事项记录到链上。用户可以创建一条 todo，也可以把自己的 todo 标记为完成或未完成。
+
+\## 我最初给 AI 的 Prompt
+
+\`\`\`text
+
+现在我们开始这个项目吧。你之前已经向我解释过这个任务的需求了。现在请你先帮助我清晰地理解这个任务。然后我们一起做一个onchain Todo的demo
+
+\`\`\`
+
+这个 Prompt 是自然语言式的，适合开启协作，但如果直接用来生成 Solidity 合约，还不够精确。它说明了我要做 `Onchain Todo`，也说明了我需要先理解任务，但没有明确合约的功能边界、权限要求、编译版本和安全限制。
+
+\## AI 协助后改进的 Prompt
+
+\`\`\`text
+
+请帮我生成一个最小的 Solidity Onchain Todo 合约，适合 Web3 初学者阅读和检查。
+
+要求：
+
+1\. 使用 Solidity ^0.8.20。
+
+2\. 用户可以创建一条 todo，内容是字符串。
+
+3\. 每条 todo 需要记录创建者地址、内容、是否完成、创建时间、更新时间。
+
+4\. 用户只能修改自己创建的 todo 的完成状态。
+
+5\. 提供读取某条 todo 和读取 todo 总数的函数。
+
+6\. 不要加入 owner 管理员、删除功能、付费逻辑、复杂权限系统或外部依赖。
+
+7\. 代码命名要清晰，并加入必要的 event。
+
+8\. 请用简短文字解释合约结构，方便我人工检查。
+
+\`\`\`
+
+\## Prompt 可以改进的地方
+
+1\. 明确合约类型：说明要做 `Onchain Todo`，而不是泛泛地说“做一个 demo”。
+
+2\. 明确 Solidity 版本：例如 `^0.8.20`，这样编译环境更清楚。
+
+3\. 明确最小功能：创建 todo、修改完成状态、读取 todo、读取总数。
+
+4\. 明确权限规则：用户只能修改自己创建的 todo。
+
+5\. 明确不要什么：不要管理员、删除功能、付费逻辑、复杂权限、外部依赖。
+
+6\. 明确安全边界：不要处理真实资产，不要记录隐私信息。
+
+7\. 要求 AI 解释代码结构，方便我人工检查，而不是只输出代码。
+
+\## AI 生成的主要输出
+
+AI 生成了一个 `OnchainTodo` 合约，包含：
+
+\- `Todo` 结构体：定义一条待办事项包含哪些信息。
+
+\- `todos` 数组：保存所有链上 todo。
+
+\- `createTodo` 函数：创建新的 todo。
+
+\- `setCompleted` 函数：修改 todo 的完成状态。
+
+\- `getTodo` 函数：读取指定 todo。
+
+\- `getTodoCount` 函数：读取 todo 总数。
+
+\- `TodoCreated` 和 `TodoCompleted` 事件：方便外部工具追踪链上行为。
+
+合约源码见：
+
+\- `contracts/OnchainTodo.sol`
+
+\## 合约结构解释
+
+\### `pragma solidity ^0.8.20`
+
+指定 Solidity 编译器版本。可以理解为告诉编译器：“请用 0.8.20 或兼容版本来理解这份代码。”
+
+\### `contract OnchainTodo`
+
+定义一个智能合约。可以把它理解成部署到链上的一个小程序。部署后，它的规则会被链执行。
+
+\### `struct Todo`
+
+`struct` 是自定义数据结构。这里一条 todo 包含：
+
+\- `owner`：创建这条 todo 的钱包地址。
+
+\- `content`：待办事项内容。
+
+\- `completed`：是否已经完成。
+
+\- `createdAt`：创建时间。
+
+\- `updatedAt`：最后更新时间。
+
+\### `Todo[] private todos`
+
+这是一个 todo 列表`private` 不是说链上数据真的保密，而是说不能自动生成公开读取函数。我们通过 `getTodo` 控制读取格式。链上数据本质上仍然是公开的。
+
+\### `createTodo`
+
+用户调用这个函数创建 todo。函数会检查内容不能为空，然后把 todo 加入列表。
+
+\### `setCompleted`
+
+用户调用这个函数更新完成状态。这里有一个权限检查：只有创建这条 todo 的地址可以修改它。
+
+\### `getTodo` 和 `getTodoCount`
+
+这两个函数是读取函数，不改变链上状态。读取函数通常不需要支付 gas，除非它被另一个写入交易内部调用。
+
+\### `event`
+
+事件是链上的日志。它不会改变合约核心状态，但方便区块浏览器或前端知道发生了什么。
+
+\## 人工修改或判断说明
+
+1\. 保留了 `owner` 字段，因为如果没有 owner，任何人都可以修改任何 todo，权限太松。
+
+2\. 保留了 `require(bytes(content).length > 0)`，避免创建空内容 todo。
+
+3\. 没有加入管理员 `owner`，因为这个 demo 不需要中心化管理员。
+
+4\. 没有加入删除功能，因为删除会增加复杂度，也会让初学者更难检查状态变化。
+
+5\. 没有加入付款逻辑，因为这个任务重点是理解合约结构，不是处理资产。
+
+6\. 使用 `private todos + getTodo`，让读取接口更清晰。
+
+7\. 加入 `event`，因为链上应用通常需要事件让前端或区块浏览器追踪行为。
+
+\## 至少 3 条人工检查点
+
+\### 1. 合约是否能编译
+
+需要在 Remix 或本地 Solidity 编译器中选择 `0.8.20` 或兼容版本进行编译。当前代码没有使用外部依赖，理论上更容易编译通过。
+
+\### 2. 函数是否符合预期
+
+预期功能是：
+
+\- 用户可以创建 todo。
+
+\- 用户可以读取 todo。
+
+\- 用户可以查看 todo 总数。
+
+\- 用户只能修改自己创建的 todo。
+
+当前合约符合这些预期。
+
+\### 3. 是否存在明显权限问题
+
+关键权限在 `setCompleted`：
+
+\`\`\`solidity
+
+require(todos\[todoId\].owner == msg.sender, "Only owner can update this todo");
+
+\`\`\`
+
+这表示只有创建者地址可以修改自己的 todo。其他地址不能修改。
+
+\### 4. 是否使用了不必要的复杂逻辑
+
+当前合约没有管理员、没有 token、没有 NFT、没有外部依赖、没有复杂角色系统。对于最小 demo 来说，复杂度合适。
+
+\### 5. 是否有潜在安全或隐私风险
+
+这份合约不处理真实资产，所以金融风险较低。但 todo 内容会上链，链上数据公开可查，不应该写入隐私信息、真实身份信息、私钥、助记词、API Key 或其他敏感内容。
+
+\### 6. 变量和函数命名是否容易理解
+
+`createTodosetCompletedgetTodogetTodoCount` 都能直接表达用途`ownercontentcompletedcreatedAtupdatedAt` 也比较容易理解。
+
+\## 我的初步理解
+
+这个 demo 让我看到：智能合约不是神秘的金融工具，它也可以只是一个记录状态的小程序`createTodo` 是一次链上状态改变`setCompleted` 也是一次状态改变。链上记录的不是“我的内心计划”，而是某个地址公开提交过的 todo 状态。
+
+这个例子也提醒我：链上数据是公开的，所以 Onchain Todo 不适合记录私人生活事项，更适合作为学习 demo 或公开任务证明。
+
+\## 可提交内容草稿
+
+1\. Prompt：见“我最初给 AI 的 Prompt”和“AI 协助后改进的 Prompt”部分。
+
+2\. AI 生成的主要输出`OnchainTodo` 合约，包括创建 todo、更新完成状态、读取 todo 和读取总数。
+
+3\. 合约源码`contracts/OnchainTodo.sol`。
+
+4\. 人工修改或判断说明：保留 owner 权限检查、空内容检查、事件；拒绝管理员、删除、付费等复杂逻辑。
+
+5\. 人工检查点：编译、功能、权限、复杂度、安全/隐私、命名。
+
+\## Remix 编译和测试结果
+
+我已经在 Remix 中完成了编译、部署和基础功能测试。
+
+\### 编译 / 部署
+
+\- 工具：Remix 2.5.2
+
+\- Environment：Remix VM
+
+\- Contract`OnchainTodo`
+
+\- Deploy：成功
+
+\- Deployment value`0 wei`
+
+\- Remix VM 部署交易 hash`0xd77...9411f`
+
+说明：这个 hash 来自 Remix VM，只代表本地模拟链中的部署交易，不是 Monad Testnet 上的真实交易 hash。
+
+\### 功能测试
+
+已确认：
+
+1\. `createTodo("Learn Solidity basics")` 可以创建 todo。
+
+2\. `getTodoCount()` 返回了预期数量。
+
+3\. `getTodo(0)` 可以读取第一条 todo。
+
+4\. `setCompleted(0, true)` 可以把第一条 todo 标记为完成。
+
+5\. 再次调用 `getTodo(0)` 时`completed` 已变成 `true`。
+
+\### 测试后的判断
+
+这说明合约的最小功能路径可以跑通：
+
+\`\`\`text
+
+部署合约 -> 创建 todo -> 读取 todo 数量 -> 读取 todo 内容 -> 修改完成状态 -> 再次读取确认
+
+\`\`\`
+
+这次测试只是在 Remix VM 中完成，适合验证语法和基础逻辑。它不是正式审计，也不代表合约可以直接用于生产环境。
+
+\## Remix 使用步骤
+
+Remix 是一个网页版 Solidity 开发环境。它适合初学者，因为不需要本地安装编译器、Node.js 或 Hardhat。
+
+\### 1. 打开 Remix
+
+在 Chrome 里打开：
+
+\`\`\`text
+
+[https://remix.ethereum.org/](https://remix.ethereum.org/)
+
+\`\`\`
+
+第一次打开可能会出现一些欢迎页面或插件提示，可以先关闭弹窗。
+
+\### 2. 新建 Solidity 文件
+
+在左侧文件区找到 `contracts` 文件夹。
+
+操作步骤：
+
+1\. 点击 `contracts` 文件夹旁边的新建文件按钮。
+
+2\. 文件名输入：
+
+\`\`\`text
+
+OnchainTodo.sol
+
+\`\`\`
+
+3\. 把 `contracts/OnchainTodo.sol` 的源码放进去。
+
+\### 3. 打开 Solidity Compiler
+
+左侧栏有一个类似 Solidity 图标的按钮，通常叫 `Solidity compiler`。
+
+进入后检查：
+
+\- Compiler 版本选择 `0.8.20` 或兼容的 `0.8.x` 版本。
+
+\- 如果看到 `Auto compile`，可以打开，也可以手动点击 compile。
+
+然后点击：
+
+\`\`\`text
+
+Compile OnchainTodo.sol
+
+\`\`\`
+
+如果编译成功，说明合约语法上没有问题。这个结果可以记录到人工检查点里。
+
+\### 4. 打开 Deploy & Run Transactions
+
+左侧栏选择 `Deploy & Run Transactions`。
+
+这里是在 Remix 里测试合约如何部署和调用。
+
+初学阶段建议先用：
+
+\`\`\`text
+
+Environment: Remix VM
+
+\`\`\`
+
+`Remix VM` 是浏览器里的模拟链，不会连接真实钱包，也不会消耗真实 gas 或测试网 MON。它适合先确认合约功能。
+
+\### 5. 部署合约
+
+在 `Contract` 下拉框中选择：
+
+\`\`\`text
+
+OnchainTodo
+
+\`\`\`
+
+然后点击：
+
+\`\`\`text
+
+Deploy
+
+\`\`\`
+
+部署成功后，页面下方会出现一个 `Deployed Contracts` 区域，里面有刚部署的 `OnchainTodo`。
+
+\### 6. 测试 `createTodo`
+
+展开部署好的合约，找到 `createTodo`。
+
+输入一个公开、无隐私的测试内容，例如：
+
+\`\`\`text
+
+Learn Solidity basics
+
+\`\`\`
+
+点击 `transact`。
+
+这一步会改变合约状态，所以在真实链上需要 gas。在 Remix VM 里只是模拟。
+
+\### 7. 测试 `getTodoCount`
+
+点击 `getTodoCount`。
+
+如果刚刚成功创建了一条 todo，应该返回：
+
+\`\`\`text
+
+0: uint256: 1
+
+\`\`\`
+
+意思是当前合约里一共有 1 条 todo。
+
+\### 8. 测试 `getTodo`
+
+找到 `getTodo`，输入：
+
+\`\`\`text
+
+0
+
+\`\`\`
+
+因为第一条 todo 的编号是 `0`，不是 `1`。
+
+点击后应该能看到：
+
+\- owner：创建 todo 的地址。
+
+\- content：todo 内容。
+
+\- completed：是否完成，初始应该是 `false`。
+
+\- createdAt：创建时间戳。
+
+\- updatedAt：更新时间戳。
+
+\### 9. 测试 `setCompleted`
+
+找到 `setCompleted`。
+
+输入：
+
+\`\`\`text
+
+todoId: 0
+
+completed: true
+
+\`\`\`
+
+点击 `transact`。
+
+然后再次调用 `getTodo(0)`，如果 `completed` 变成 `true`，说明更新成功。
+
+\### 10. 人工检查时重点看什么
+
+1\. 编译是否成功。
+
+2\. `createTodo` 是否能创建 todo。
+
+3\. `getTodoCount` 是否能返回正确数量。
+
+4\. `getTodo(0)` 是否能读取第一条 todo。
+
+5\. `setCompleted(0, true)` 是否能修改完成状态。
+
+6\. todo 内容是否公开，因此不能写隐私内容。
+
+7\. 只有创建者可以修改 todo；这个权限逻辑在 Remix VM 里可以切换不同 Account 测试。
+
+\### 11. 如果要连接 Monad Testnet
+
+初学阶段建议先用 `Remix VM`。确认合约能正常编译和运行后，再考虑连接 MetaMask 和 Monad Testnet。
+
+如果连接测试网，需要：
+
+1\. MetaMask 当前网络切换到 `Monad Testnet`。
+
+2\. Remix 的 Environment 选择 `Injected Provider - MetaMask`。
+
+3\. MetaMask 弹窗确认连接。
+
+4\. 部署合约时会消耗测试网 MON。
+
+注意：不要用主力钱包，不要提交私钥、助记词、API Key 或 `.env` 文件。
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 **分享笔记：一个新手如何理解 Web3**
 
@@ -165,6 +618,7 @@ Web3 试图改变一部分信任结构：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -332,11 +786,13 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 
 
+
 学习ai agent支付，先打卡
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -350,6 +806,7 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

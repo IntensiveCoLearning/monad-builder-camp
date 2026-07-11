@@ -15,8 +15,52 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+### **Remix IDE 实战指南**
+
+[**Remix IDE**](https://remix.ethereum.org/) 是一个基于浏览器的集成开发环境，无需安装，是学习和快速原型开发的首选工具。
+
+**详细操作步骤：**
+
+1.  **编写与编译**：
+    
+    -   在 Remix 的文件管理器中，创建一个新文件 `SimpleStorage.sol`。
+        
+    -   将你（经过审计的）合约代码粘贴进去。
+        
+    -   打开左侧 **“Solidity Compiler”** 插件。确保编译器版本与代码中的 `pragma` 声明匹配。
+        
+    -   点击 **“Compile SimpleStorage.sol”**。成功后，你会看到绿色的对勾，并在下方看到生成的 **ABI** 和 **字节码**（Bytecode）。
+        
+2.  **部署到 Monad Testnet**：
+    
+    -   打开左侧 **“Deploy & Run Transactions”** 插件。
+        
+    -   **环境 (Environment)**：选择 **“Injected Provider - MetaMask”**。你的 MetaMask 应该会弹窗，确保你已连接到 **Monad Testnet** 并拥有测试币。
+        
+    -   **合约 (Contract)**：选择你刚刚编译的 `SimpleStorage`。
+        
+    -   点击 **“Deploy”**。MetaMask 会弹窗，确认交易并支付 Gas（使用测试币）。
+        
+    -   **成功！** 在下方“Deployed Contracts”区域，你会看到你的合约实例，旁边就是它的**合约地址**。**请务必记录下这个地址。**
+        
+3.  **交互与验证**：
+    
+    -   展开你部署的合约，你会看到：
+        
+        -   `storedData`：一个蓝色按钮（Read）。点击它，初始值应为 `0`。
+            
+        -   `set`：一个橙色按钮（Write）。在输入框中输入一个数字（如 `42`），然后点击 `set`。MetaMask 会再次弹窗确认交易。
+            
+        -   交易确认后，再次点击蓝色的 `storedData`，你应该能看到返回值变成了 `42`。
+            
+    -   **在区块浏览器中验证**：复制你调用 `set` 函数时产生的 **Transaction Hash**，前往 [**Monad Block Explorer**](https://docs.monad.xyz/tooling-and-infra/block-explorers) 进行查询。在交易详情的 **“To”** 字段，你应该能看到你的**合约地址**（而不是一个普通钱包地址）。这证明你成功与链上合约进行了交互。
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 ### **从“交易”到“合约”的思维跃迁**
 
 在 DAY 3，你通过钱包发起了一笔**转账交易**。今天，你将部署一个**智能合约**，它本质上是一段**自动执行、不可篡改的代码**，被永久存储在区块链上。理解以下核心概念的关联，是今天学习的关键。
@@ -36,11 +80,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-09-1783601532564-image.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 ### **硬核解读：用 Block Explorer 拆解交易**
@@ -69,11 +115,13 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-07-1783431460944-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

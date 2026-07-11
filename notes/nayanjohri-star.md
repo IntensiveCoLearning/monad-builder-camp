@@ -15,13 +15,44 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+今天主要完成了三部分：
+
+1.  **MessageBoard v0.1 读写闭环**
+    
+    -   `getMessageCount()`：`0 → 1`
+        
+    -   `postMessage` 写入成功
+        
+    -   `getMessage(0)` 成功读取留言
+        
+    -   README、交易哈希和证据截图全部整理完成
+        
+2.  **Monad 理解任务**
+    
+    -   完成并提交 Tech 方向的高频交互 Demo 功能清单
+        
+    -   设计 `Monad Pulse Board`
+        
+    -   理解 Monad 的低延迟、高吞吐、EVM 兼容性及链上/链下边界
+        
+3.  **确定技术路线**
+    
+    -   后续走 Tech / Dev
+        
+    -   下一步开发 MessageBoard v0.2 链上点赞功能
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 今天复盘了 AI Agent 安全课程，并参加 Week 1 Co-Learning。理解了 Agent 安全不能只依赖 Prompt，而要通过最小权限、人工审批、工具层拦截、沙箱、审计和恢复建立模型外防线。通过同学的 DApp 和 Monad Buddy 案例，我进一步区分了前端演示与真实链上交互：真实上链需要钱包签名、正确网络、可查询交易和合约状态变化。下一步完成 MessageBoard 读写闭环，并选择 Week 2 的 Research / Ops / Dev 方向。
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 \## 2026-07-09 Web3 学习打卡
 
@@ -54,6 +85,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
 
+
 今天学习了两场直播：第一场是 FluxA 关于 AI Agent 支付体系的分享，理解了 Agent 支付为什么需要身份、预算、风控、审计、撤销和结算能力，也了解了 X402、人机共管钱包、AgentCard、Monetize Gateway、Payment Link、Pay to Agent 等概念。
 
 第二场 Co-Learning 重点是 Web3 入行经验，强化了 Git/GitHub、`.env` 安全、AI 辅助开发、项目经验、远程工作和接单风险意识。明天会继续进入 Remix / Solidity / Monad 合约部署，把今天的概念落到一个可验证的小项目里。、Pay to Agent 等概念。
@@ -61,6 +93,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

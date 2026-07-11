@@ -15,13 +15,36 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+**Historical Data**
+
+**•** 先把兩種資料分開：ledger data（區塊、交易、receipt、event、trace）和 state data（交易依序套用後的世界狀態，存在 merkle trie）。Monad full node 提供完整歷史 ledger data，但不提供任意舊區塊的 state
+
+**•** 這頁直接把以太坊的節點分類作廢了：以太坊 full node 留最近 128 個區塊的狀態、archive node 存到創世；Monad 的每個 full node 都是「盡力而為的 archive node」——歷史 state trie 能留多少看磁碟多大。2 TB SSD 目前大約回看 40,000 個區塊，實際取決於每塊 state diff 的量
+
+**•** 為什麼沒有服務商提供完整歷史 state：單塊最多 5,000 筆交易（以太坊約 200 筆的 25 倍）、0.4 秒出塊（12 秒的 30 倍），changeset 是完全不同的量級。硬體上不是不能做，是目前沒人做
+
+**•** 實務結論：需要日後查的狀態，合約設計階段就要用 event 記錄，或交給 indexer 離線重建。臨時想用 eth\_call 帶舊 block number 回查，超過 trie 保留範圍就直接報錯
+
+**RPC Differences**
+
+**•** eth\_maxPriorityFeePerGas 目前寫死回 2 gwei，eth\_feeHistory 也只回預設值，文件標注是暫時的。意思是現階段的 fee 估算邏輯不能依賴這兩個方法，要自己從區塊資料算
+
+**•** newHeads / logs 訂閱永遠不會出現 reorg，因為只推送 finalized 區塊的即時資料。另外有 Monad 專屬的 monadNewHeads / monadLogs 訂閱，走更低延遲的路徑
+
+**•** debug\_trace\* 系列必須顯式帶 trace options 參數，省略會回 -32602，跟一般 EVM client 把它當可選參數的行為不同
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 先打卡晚點補充筆記
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 **Local Mempool**
 
@@ -51,6 +74,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 **2026.07.07**
@@ -99,6 +123,7 @@ warm access 維持 100 不變。受影響的是 BALANCE、EXTCODE 系列、CALL 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,377 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+结合你目前的学习路线（**前端 → DApp → Web3 → AI Coding**）以及今天的内容（**Claude Code 使用、合约部署**），我建议你的 Tech 学习方向可以围绕 **「DApp 前端复刻 + GitHub 开源项目学习」** 展开，而不是只做零散的知识点学习。
+
+下面是一份适合作为每日学习计划、Build Log 和长期 Roadmap 的整理。
+
+* * *
+
+# 📅 今日学习计划总结（2026-07-11）
+
+## 🎯 今日学习主题
+
+**Claude Code 使用实践 + DApp 前端复刻 + GitHub 开源项目拆解**
+
+* * *
+
+## 📚 今日学习内容
+
+### 1\. Claude Code 入门
+
+学习目标：
+
+-   了解 Claude Code 的开发流程
+    
+-   学会在本地项目中使用 Claude Code
+    
+-   学会让 AI 阅读整个代码仓库
+    
+-   学会使用 Prompt 完成代码生成、重构、Bug 修复
+    
+
+实践内容：
+
+-   安装 Claude Code
+    
+-   登录并连接本地项目
+    
+-   使用 AI 阅读项目结构
+    
+-   尝试生成组件
+    
+-   尝试修改已有页面
+    
+
+输出：
+
+-   Claude Code 学习笔记
+    
+-   常用 Prompt 模板
+    
+
+* * *
+
+### 2\. Solidity 合约部署
+
+实践内容：
+
+-   编写最小 Todo Contract
+    
+-   使用 Remix 编译
+    
+-   部署到 Monad Testnet
+    
+-   调用 Read Function
+    
+-   调用 Write Function
+    
+-   保存：
+    
+
+✅ Contract Address
+
+✅ Transaction Hash
+
+输出：
+
+README
+
+部署截图
+
+Build Log
+
+* * *
+
+### 3\. DApp 前端复刻
+
+开始选择一个优秀项目进行拆解。
+
+目标：
+
+不是照抄，而是分析：
+
+-   页面结构
+    
+-   UI
+    
+-   路由设计
+    
+-   Wallet 登录
+    
+-   合约调用
+    
+-   状态管理
+    
+-   请求流程
+    
+
+今天完成：
+
+-   找到一个优秀 DApp
+    
+-   截图页面
+    
+-   拆解组件
+    
+-   分析技术栈
+    
+
+输出：
+
+页面结构图
+
+组件树
+
+学习笔记
+
+* * *
+
+### 4\. GitHub 开源项目阅读
+
+开始每天阅读一个开源项目。
+
+重点：
+
+```
+README
+↓
+
+项目结构
+
+↓
+
+技术栈
+
+↓
+
+主要功能
+
+↓
+
+核心代码
+
+↓
+
+自己实现
+```
+
+今天目标：
+
+至少阅读：
+
+-   README
+    
+-   src
+    
+-   package.json
+    
+
+输出：
+
+项目拆解文档
+
+* * *
+
+# 🚀 Tech 学习方向（长期路线）
+
+## 第一阶段（当前）
+
+### AI Coding
+
+学习：
+
+-   Claude Code
+    
+-   ChatGPT
+    
+-   Cursor
+    
+-   Roo Code
+    
+
+目标：
+
+> 学会 AI 辅助开发
+
+* * *
+
+### 前端基础
+
+继续深入：
+
+-   React
+    
+-   Next.js
+    
+-   TypeScript
+    
+-   TailwindCSS
+    
+
+目标：
+
+能够独立完成现代 Web 应用开发。
+
+* * *
+
+### Web3
+
+继续：
+
+-   Solidity
+    
+-   Ethers.js / Viem
+    
+-   Wagmi
+    
+-   Wallet Connect
+    
+-   Monad
+    
+
+目标：
+
+完成自己的第一个 DApp。
+
+* * *
+
+## 第二阶段
+
+开始：
+
+> DApp Clone（项目复刻）
+
+建议选择：
+
+-   Uniswap
+    
+-   Aave
+    
+-   Zora
+    
+-   OpenSea
+    
+-   ENS
+    
+
+每天拆一点。
+
+重点学习：
+
+-   UI
+    
+-   Wallet
+    
+-   Contract
+    
+-   Hooks
+    
+-   API
+    
+
+* * *
+
+## 第三阶段
+
+GitHub 深度阅读
+
+每天坚持：
+
+**1 个项目**
+
+例如：
+
+```
+README
+↓
+
+目录
+
+↓
+
+运行
+
+↓
+
+修改
+
+↓
+
+提交PR（长期目标）
+```
+
+逐渐从“会使用”过渡到“能理解和改造”。
+
+* * *
+
+## 第四阶段
+
+Builder
+
+开始做自己的作品。
+
+例如：
+
+-   Onchain Todo
+    
+-   NFT Badge
+    
+-   链上签到
+    
+-   AI Agent Wallet
+    
+-   Monad Demo
+    
+
+最后部署：
+
+Vercel
+
+GitHub
+
+Monad
+
+形成自己的作品集。
+
+* * *
+
+# 📌 GitHub 学习路线（推荐）
+
+建议每天保持 **1～2 小时** 的 GitHub 学习节奏：
+
+| 阶段 | 学习目标 | 输出成果 |
+| --- | --- | --- |
+| 阅读 README | 理解项目定位与功能 | 项目简介 |
+| 理解目录结构 | 熟悉代码组织方式 | 项目结构图 |
+| 运行项目 | 本地启动并调试 | 环境搭建记录 |
+| 阅读核心模块 | 学习组件、Hooks、状态管理 | 模块分析 |
+| 模仿实现 | 独立复刻页面或功能 | Demo 页面 |
+| 二次开发 | 增加新功能或优化体验 | GitHub Commit |
+
+* * *
+
+# 🎯 本周目标
+
+-   ✅ 熟练使用 Claude Code 进行项目开发
+    
+-   ✅ 完成最小 Solidity 合约部署到 Monad Testnet
+    
+-   ✅ 启动第一个 DApp 前端复刻项目
+    
+-   ✅ 阅读并运行 1～2 个优秀 GitHub 开源项目
+    
+-   ✅ 每天记录 Build Log，形成持续学习沉淀
+    
+
+这条路线与你目前的背景（Vue 前端 + Web3 实习 + Solidity + Monad 学习）非常契合。坚持完成 **「复刻 → 拆解 → 改造 → 独立开发」** 的闭环，不仅能提升开发能力，还能逐步积累可展示的 GitHub 项目和个人作品集，为后续应聘 **DApp 前端/Web3 前端工程师** 打下扎实基础。
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 结合你提供的课程大纲、分享会内容、Demo 演示（Monad Buddy）、以及几场 Co-learning 的技术分享，可以看出这一周的目标并不是**教会大家所有 Web3 技术**，而是**建立一个 Web3 Builder 的完整学习闭环**：从认知 → 工具 → 钱包 → 链上交互 → 合约开发 → Demo → Build Log。
 
 下面是一份可以作为 Week1 总结分享或 Build Log 的总结。
@@ -633,6 +1002,7 @@ AI 知识库管理。
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
+
 # 个人学习打卡日志（优化排版 + 完整补充 Web3 DApp 前端学习规划）
 
 ## 一、长期个人目标定位
@@ -865,6 +1235,7 @@ AI 知识库管理。
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
 
+
 [BuildAnything](https://buildanything.space/)
 
 1.  闲鱼：发布信息5条，发布一个上线连接
@@ -1086,6 +1457,7 @@ AI Agent
 
 
 
+
 1.  博客搭建，(10%)  
     不想买云服务器.......
     
@@ -1154,6 +1526,7 @@ eg：web3Careerbuild
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

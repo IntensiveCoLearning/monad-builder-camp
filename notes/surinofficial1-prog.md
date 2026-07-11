@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+咦我以为每周请假两次是指的工作日，补上补上
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 下周开始准备把每天学到的东西打卡！现在每天都学的很迷茫，好在有ai可以助学。未来可以总结后做一个skill学习
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 每次听到嘉宾分享都会有新的感触，不同背景的人会因为不同的契机进入到web3行业，一切皆有可能～群里的大家也非常热心，每次点开群聊都让人感到很温暖！
 <!-- DAILY_CHECKIN_2026-07-08_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-07_START -->
 
 
+
 听到更多嘉宾分享，越了解web3这个行业，也越被它和从业者吸引。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

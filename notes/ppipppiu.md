@@ -15,8 +15,415 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+## 1\. 任务选择
+
+本次选择的合约方向为：**Onchain Todo**
+
+目标是实现一个最小的链上待办事项合约，使每个用户能够创建、完成并查询自己的 Todo。
+
+* * *
+
+## 2\. 使用的平台与工具
+
+-   AI 工具：ChatGPT
+    
+-   开发与编译平台：Remix IDE
+    
+-   编程语言：Solidity
+    
+-   Solidity 版本：0.8.x
+    
+-   部署环境：Remix VM Osaka
+    
+-   是否连接真实钱包：否
+    
+-   是否部署到真实测试网或主网：否
+    
+
+本次所有部署和交互均在 Remix 提供的本地模拟区块链环境中完成，不涉及 MetaMask、私钥、助记词、API Key 或真实资产。
+
+* * *
+
+## 3\. 我使用的 Prompt
+
+```
+请生成一个最小可运行的 Solidity Onchain Todo 智能合约，使用 Solidity 0.8.x。
+
+需求如下：
+1. 每个用户通过 msg.sender 拥有独立的 Todo 列表；
+2. 每条 Todo 包含：
+   - 任务内容 text；
+   - 是否完成 isCompleted；
+   - 创建时间 createdAt；
+3. 用户可以创建自己的 Todo；
+4. 用户只能将自己 Todo 列表中的指定任务标记为已完成；
+5. 用户可以查询自己全部的 Todo；
+6. 对创建 Todo 和完成 Todo 的操作分别定义 event；
+7. 完成 Todo 时需要检查任务下标是否存在，避免数组越界；
+8. 不需要管理员权限、Token、NFT、支付、前端、第三方库或复杂继承；
+9. 代码需要包含 SPDX License Identifier；
+10. 请先输出完整、可直接复制到 Remix 编译的 Solidity 代码，不要省略任何部分。
+```
+
+* * *
+
+## 4\. AI 生成的主要内容
+
+AI 生成了一个 `OnchainTodo` 合约，主要包含：
+
+-   `Todo` 结构体；
+    
+-   `mapping(address => Todo[])`，用于保存每个用户独立的 Todo 列表；
+    
+-   `createTodo` 函数，用于创建 Todo；
+    
+-   `completeTodo` 函数，用于将指定 Todo 标记为完成；
+    
+-   `getMyTodos` 函数，用于查询当前用户的 Todo；
+    
+-   `TodoCreated` 与 `TodoCompleted` 事件；
+    
+-   使用 `require` 检查 Todo 文本是否为空、Todo 下标是否存在。
+    
+
+* * *
+
+## 5\. 合约源码
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract OnchainTodo {
+    struct Todo {
+        string text;
+        bool isCompleted;
+        uint256 createdAt;
+    }
+
+    mapping(address => Todo[]) private todos;
+
+    event TodoCreated(
+        address indexed user,
+        uint256 indexed todoIndex,
+        string text,
+        uint256 createdAt
+    );
+
+    event TodoCompleted(
+        address indexed user,
+        uint256 indexed todoIndex,
+        uint256 completedAt
+    );
+
+    function createTodo(string calldata text) external {
+        require(bytes(text).length > 0, "Todo text cannot be empty");
+
+        todos[msg.sender].push(
+            Todo({
+                text: text,
+                isCompleted: false,
+                createdAt: block.timestamp
+            })
+        );
+
+        uint256 todoIndex = todos[msg.sender].length - 1;
+
+        emit TodoCreated(
+            msg.sender,
+            todoIndex,
+            text,
+            block.timestamp
+        );
+    }
+
+    function completeTodo(uint256 todoIndex) external {
+        require(
+            todoIndex < todos[msg.sender].length,
+            "Todo does not exist"
+        );
+
+        todos[msg.sender][todoIndex].isCompleted = true;
+
+        emit TodoCompleted(
+            msg.sender,
+            todoIndex,
+            block.timestamp
+        );
+    }
+
+    function getMyTodos()
+        external
+        view
+        returns (Todo[] memory)
+    {
+        return todos[msg.sender];
+    }
+}
+```
+
+* * *
+
+## 6\. 合约结构理解
+
+### 6.1 Todo 结构体
+
+```
+struct Todo {
+    string text;
+    bool isCompleted;
+    uint256 createdAt;
+}
+```
+
+每条 Todo 保存三个信息：
+
+-   `text`：待办任务内容；
+    
+-   `isCompleted`：任务是否完成；
+    
+-   `createdAt`：任务创建时的区块时间戳。
+    
+
+### 6.2 用户 Todo 数据隔离
+
+```
+mapping(address => Todo[]) private todos;
+```
+
+该结构以用户钱包地址作为 key，以 Todo 数组作为 value。
+
+因此，不同用户会拥有不同的 Todo 列表。合约通过 `msg.sender` 获取当前调用者地址，从而使用户只能操作自己的 Todo 数据。
+
+### 6.3 createTodo
+
+```
+function createTodo(string calldata text) external
+```
+
+该函数用于创建新的 Todo。
+
+创建前会检查文本是否为空，避免创建空任务；创建后会将任务写入当前用户地址对应的 Todo 数组中，并触发 `TodoCreated` 事件。
+
+### 6.4 completeTodo
+
+```
+function completeTodo(uint256 todoIndex) external
+```
+
+该函数用于将指定下标的 Todo 标记为完成。
+
+函数通过 `require` 检查当前用户是否存在该下标的 Todo，避免访问不存在的数组元素。
+
+### 6.5 getMyTodos
+
+```
+function getMyTodos() external view returns (Todo[] memory)
+```
+
+该函数仅查询当前用户自己的 Todo 列表，不会修改链上数据，因此使用 `view`。
+
+* * *
+
+## 7\. Remix 编译、部署与功能测试
+
+### Remix 测试记录
+
+-   合约在 Remix IDE 中编译成功。
+    
+-   在 Remix VM Osaka 中部署成功。
+    
+-   Account 1 创建 `Learn Solidity` 后，可通过 `completeTodo(0)` 将状态更新为已完成。
+    
+-   Account 2 初始无法查询到 Account 1 的 Todo，说明数据按 `msg.sender` 隔离。
+    
+-   调用 `completeTodo(1)` 时交易 revert，并返回 `Todo does not exist`，说明下标检查生效。
+    
+
+### 7.1 编译结果
+
+在 Remix IDE 中使用 Solidity 0.8.x 编译合约。
+
+顶部显示：
+
+```
+✓ Compiled
+```
+
+并且 Remix 成功识别出：
+
+```
+OnchainTodo (OnchainTodo.sol)
+```
+
+说明合约编译成功。
+
+### 7.2 部署结果
+
+部署环境选择：
+
+```
+Remix VM Osaka
+```
+
+使用 Remix VM 本地模拟账户进行部署，没有使用真实钱包或真实资产。
+
+部署后可以在交易记录中看到 constructor 部署交易，说明合约已成功部署到 Remix VM。
+
+### 7.3 Account 1 测试
+
+在 Account 1 中：
+
+1.  调用 `createTodo("Learn Solidity")`；
+    
+2.  调用 `getMyTodos()`；
+    
+3.  查询到 Todo 内容为 `Learn Solidity`，初始状态为 `false`；
+    
+4.  调用 `completeTodo(0)`；
+    
+5.  再次调用 `getMyTodos()`；
+    
+6.  查询结果显示：
+    
+
+```
+Learn Solidity, true, [timestamp]
+```
+
+说明第 0 条 Todo 已成功从未完成状态变为已完成状态。
+
+### 7.4 Account 2 测试
+
+切换到 Account 2 后：
+
+1.  首次调用 `getMyTodos()`，结果为空；
+    
+2.  创建新的 Todo：`Test Account 2`；
+    
+3.  再次调用 `getMyTodos()`；
+    
+4.  查询结果显示：
+    
+
+```
+Test Account 2, false, [timestamp]
+```
+
+切换回 Account 1 后，仍然只能看到 Account 1 创建的：
+
+```
+Learn Solidity
+```
+
+说明不同账户的 Todo 数据是独立保存的。
+
+### 7.5 不存在下标测试
+
+Account 1 只有一条 Todo，因此合法下标只有 `0`。
+
+调用：
+
+```
+completeTodo(1)
+```
+
+交易被 revert，并返回错误信息：
+
+```
+Todo does not exist
+```
+
+说明合约成功拒绝了不存在的 Todo 下标，避免了数组越界或无效状态修改。
+
+* * *
+
+## 8\. 人工检查点
+
+### 检查点 1：合约是否能编译
+
+检查结果：通过。
+
+Remix 顶部显示 `✓ Compiled`，并成功生成 ABI 与 Bytecode，说明 Solidity 代码没有语法或类型错误。
+
+### 检查点 2：函数是否符合预期
+
+检查结果：通过。
+
+`createTodo`、`completeTodo` 和 `getMyTodos` 分别对应创建任务、完成任务和查询当前用户任务，功能与最初需求一致。
+
+### 检查点 3：是否存在明显权限问题
+
+检查结果：通过。
+
+合约不允许用户传入任意地址读取或修改 Todo，而是始终通过 `msg.sender` 访问：
+
+```
+todos[msg.sender]
+```
+
+因此 Account 1 与 Account 2 的 Todo 数据相互隔离，普通用户无法直接操作其他账户的 Todo。
+
+### 检查点 4：是否检查任务下标
+
+检查结果：通过。
+
+`completeTodo` 中存在：
+
+```
+require(
+    todoIndex < todos[msg.sender].length,
+    "Todo does not exist"
+);
+```
+
+实际调用 `completeTodo(1)` 时交易被拒绝，并显示 `Todo does not exist`，说明该检查有效。
+
+### 检查点 5：是否存在不必要的复杂逻辑
+
+检查结果：通过。
+
+合约未包含：
+
+-   Token；
+    
+-   NFT；
+    
+-   支付和转账；
+    
+-   管理员权限；
+    
+-   复杂继承；
+    
+-   第三方库；
+    
+-   前端逻辑；
+    
+-   不必要的链上循环。
+    
+
+整体保持了最小合约的功能范围。
+
+* * *
+
+## 9\. 我对 AI 输出做出的修改或判断
+
+1.  我确认合约使用 Solidity 0.8.x，并包含 SPDX License Identifier。
+    
+2.  我确认 Todo 数据按 `msg.sender` 分开保存，而不是所有用户共享一个 Todo 数组。
+    
+3.  我确认 `completeTodo` 在修改状态前检查 Todo 下标是否存在。
+    
+4.  我通过 Remix VM 实际测试了 Todo 创建、Todo 完成、账户数据隔离和不存在下标的异常处理。
+    
+5.  我没有加入 Token、NFT、支付、管理员权限或前端功能，因为这些内容不属于最小 Onchain Todo 合约的必要范围。
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 ## 一、Monad 为什么不仅仅是“更快”
 
 ### 1\. Monad 与 Ethereum 的区别
@@ -215,6 +622,7 @@ Monad：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 ## 一、学习目标
 
@@ -691,6 +1099,7 @@ Transaction Hash 是一笔交易的唯一编号。
 
 
 
+
 ## 一、学习目标
 
 本节主要学习 Web3 钱包、测试网、交易和区块浏览器的基础使用流程，并完成一次测试网交互。
@@ -961,6 +1370,7 @@ Block：交易被打包进哪个区块。
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -1320,6 +1730,7 @@ Web3 不只是“写智能合约”或“炒币”，而是一个包含技术、
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+学习buildanything中的初中内容，非常好，把agent讲的通俗易懂，我了解了一项agent工程需要哪些组件
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 1.听分享会，观看同学做的飞书技术文档很不错，了解了一些大佬们对行业的见解，未来的方向，如agent与链上交互交易。
 
 2.重新学习一下sql知识，发现buildinganything说的对，到2050年还用得到
@@ -25,11 +31,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
+
 今天了解了一下agent的安全问题，Agent 的安全问题主要包括提示词注入、工具滥用、敏感信息泄露、权限控制不足、RAG 知识库污染、代码执行风险、越权访问以及模型幻觉导致的错误决策等。由于 Agent 具备调用外部工具和执行操作的能力，其风险远高于普通聊天模型。所以在设计 Agent 时，我们要遵循最小权限原则，增加人工确认，并通过权限校验、输入过滤、输出审查和安全沙箱等机制保障系统安全。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 1.了解了一下agent链上支付的现状，大致的实现办法，以及大佬已经做出实现支付的skill产品
@@ -39,6 +47,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

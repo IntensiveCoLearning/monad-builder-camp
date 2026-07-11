@@ -15,8 +15,405 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+下一步學 `bytes32 evidenceHash` **實作**。
+
+也就是把你剛剛理解的概念真的跑一次：
+
+```
+鏈下內容 -> hash -> bytes32 -> encode 到 EAS data
+```
+
+我們先不寫鏈、不花 gas，只在本機做。
+
+概念 schema 可以改成：
+
+```
+"address student, uint256 courseId, bool completed, bytes32 evidenceHash"
+```
+
+意思是：
+
+```
+student       學生地址
+courseId      課程 ID
+completed     是否完成
+evidenceHash  鏈下證明內容的 hash
+```
+
+原本你有：
+
+```
+string note
+```
+
+現在把它換成：
+
+```
+bytes32 evidenceHash
+```
+
+因為真實內容不直接放進 attestation，只放 hash。
+
+範例流程：
+
+```
+const { SchemaEncoder } = require("@ethereum-attestation-service/eas-sdk");
+const { keccak256, toUtf8Bytes } = require("ethers");
+
+const evidence = "Finished EAS basics";
+const evidenceHash = keccak256(toUtf8Bytes(evidence));
+
+const schema =
+  "address student, uint256 courseId, bool completed, bytes32 evidenceHash";
+
+const encoder = new SchemaEncoder(schema);
+
+const encoded = encoder.encodeData([
+  {
+    name: "student",
+    value: "0x0000000000000000000000000000000000000001",
+    type: "address",
+  },
+  {
+    name: "courseId",
+    value: 101,
+    type: "uint256",
+  },
+  {
+    name: "completed",
+    value: true,
+    type: "bool",
+  },
+  {
+    name: "evidenceHash",
+    value: evidenceHash,
+    type: "bytes32",
+  },
+]);
+
+const decoded = encoder.decodeData(encoded);
+
+console.log("evidence:");
+console.log(evidence);
+console.log();
+
+console.log("evidence hash:");
+console.log(evidenceHash);
+console.log();
+
+console.log("encoded data:");
+console.log(encoded);
+console.log();
+
+console.log("decoded data:");
+console.log(decoded);
+```
+
+這一步學到的是：
+
+```
+原文不進 EAS
+hash 進 EAS
+原文日後重新 hash 來驗證
+```
+
+如果原文多一個空格、大小寫不同、內容改一個字，hash 都會完全不同。
+
+下一個練習可以做成兩段：
+
+```
+1. hash "Finished EAS basics"
+2. hash "Finished EAS basic"
+```
+
+你會看到兩個 hash 完全不一樣。這就是 hash 用來驗證內容沒有被改過的原因。
+
+const { keccak256, toUtf8Bytes } = require("ethers"); 這句有甚麼用？
+
+這句是在從 `ethers` 套件裡拿兩個工具出來用：
+
+```
+const { keccak256, toUtf8Bytes } = require("ethers");
+```
+
+等於說：
+
+```
+我要使用 ethers 裡面的 keccak256
+我要使用 ethers 裡面的 toUtf8Bytes
+```
+
+它們各自的用途是：
+
+```
+toUtf8Bytes("Finished EAS basics")
+```
+
+把文字轉成 bytes。
+
+因為 hash 函數不是直接吃「人類文字」，而是吃 bytes。  
+所以要先把：
+
+```
+Finished EAS basics
+```
+
+轉成電腦可處理的 bytes。
+
+然後：
+
+```
+keccak256(bytes)
+```
+
+把 bytes 做 hash，產生一個固定長度的 `bytes32`。
+
+完整流程是：
+
+```
+const evidence = "Finished EAS basics";
+
+const evidenceBytes = toUtf8Bytes(evidence);
+
+const evidenceHash = keccak256(evidenceBytes);
+```
+
+也可以合成一行：
+
+```
+const evidenceHash = keccak256(toUtf8Bytes(evidence));
+```
+
+意思是：
+
+```
+文字 -> bytes -> keccak256 hash -> bytes32
+```
+
+為什麼用 `keccak256`？
+
+因為 Ethereum / EVM 生態最常用的 hash 函數就是 `keccak256`。  
+例如地址、交易、簽名、Solidity 裡的 hash，很多地方都用它。
+
+所以這句：
+
+```
+const { keccak256, toUtf8Bytes } = require("ethers");
+```
+
+就是在準備兩個工具：
+
+```
+toUtf8Bytes  負責把文字變 bytes
+keccak256    負責把 bytes 變 hash
+```
+
+然後你就可以把 hash 放進 EAS 的：
+
+```
+bytes32 evidenceHash
+```
+
+console.log("schema:");
+
+console.log(schema);
+
+console.log();
+
+這段沒有了？
+
+那段可以保留，沒有問題。它只是負責把 `schema` 印出來，方便你看目前用的是哪個資料格式。
+
+```
+console.log("schema:");
+console.log(schema);
+console.log();
+```
+
+意思是：
+
+```
+印出文字 "schema:"
+印出 schema 變數內容
+印出一個空行，讓畫面比較好讀
+```
+
+如果我們改成 `bytes32 evidenceHash` 練習，建議還是保留，完整輸出會比較清楚：
+
+```
+console.log("schema:");
+console.log(schema);
+console.log();
+
+console.log("evidence:");
+console.log(evidence);
+console.log();
+
+console.log("evidence hash:");
+console.log(evidenceHash);
+console.log();
+
+console.log("encoded data:");
+console.log(encoded);
+console.log();
+
+console.log("decoded data:");
+console.log(decoded);
+```
+
+所以不是不能用了，只是我上一段範例重點放在 `keccak256(toUtf8Bytes(...))`，沒有特別解釋 `console.log("schema:")`。你可以放心留著。
+
+這個練習，把 Finished EAS basics 也放入代碼中了。只要查找代碼，那就會曝露了 hash 代表的內容。實際上，又應該怎樣指向原來的內容，但又不需要放入代碼中，避免曝露呢？
+
+keccak256 為甚麼可以由 bytes 變成固定長度的 hash? 它到底做了甚麼？
+
+你問到真正實務設計了。對，練習裡把：
+
+```
+const evidence = "Finished EAS basics";
+```
+
+寫死在程式碼裡，只是為了教學。真實系統通常**不會把原文寫進公開程式碼**。
+
+實際上會這樣做：
+
+```
+原始內容放在鏈下
+程式只拿到內容或檔案後計算 hash
+鏈上只存 hash
+```
+
+例如幾種做法：
+
+```
+1. 本機檔案
+證書 PDF 放在你電腦或伺服器
+程式讀檔 -> hash 檔案 bytes -> 放 hash 上鏈
+
+2. 私有資料庫
+完整內容存在後端 DB
+DB 裡保存原文
+鏈上保存 hash
+
+3. IPFS / Arweave
+公開內容放 IPFS
+鏈上保存 hash 或 CID
+適合不怕公開、但要防竄改的資料
+
+4. 加密後上 IPFS
+內容先加密
+加密檔放 IPFS
+鏈上保存加密檔 hash
+只有有 key 的人能看內容
+
+5. 使用 salt
+hash(salt + content)
+避免別人猜短內容
+```
+
+最簡單的真實流程是：
+
+```
+certificate.pdf
+    ↓
+讀取檔案 bytes
+    ↓
+keccak256(fileBytes)
+    ↓
+得到 bytes32 evidenceHash
+    ↓
+EAS attestation.data 存 evidenceHash
+```
+
+這樣程式碼裡不需要出現原文。
+
+之後驗證時：
+
+```
+拿到 certificate.pdf
+重新 hash
+比對 EAS 裡的 evidenceHash
+```
+
+如果一樣，代表這份 PDF 沒被改過。
+
+* * *
+
+`keccak256` 為什麼能把任意 bytes 變成固定長度 hash？
+
+可以先用直覺理解：
+
+**hash function 是一台資料壓紋機。**
+
+你丟進去：
+
+```
+hello
+```
+
+它吐出固定長度：
+
+```
+0x1c8aff...
+```
+
+你丟進去一本書，它還是吐出固定長度：
+
+```
+0xabcd...
+```
+
+`keccak256` 的輸出永遠是 **256 bits**，也就是：
+
+```
+32 bytes
+```
+
+所以 EAS schema 可以用：
+
+```
+bytes32 evidenceHash
+```
+
+它做的不是「壓縮」，因為 hash 不能還原原文。  
+它做的是：
+
+```
+任意長度輸入 -> 固定長度指紋
+```
+
+這個指紋有幾個特性：
+
+```
+1. 同樣輸入，永遠得到同樣 hash
+2. 輸入改一點點，hash 會完全不同
+3. 從 hash 幾乎不可能反推出原文
+4. 很難找到兩份不同內容但 hash 一樣
+```
+
+所以它適合做「內容指紋」。
+
+它到底做了什麼？簡化講：
+
+```
+1. 把輸入 bytes 分成區塊
+2. 不斷混合、旋轉、替換、擴散 bits
+3. 讓每一點輸入變化都影響整個輸出
+4. 最後取出 256 bits 作為結果
+```
+
+Ethereum 用的是 Keccak 系列 hash。你可以把它當成 EVM 世界常用的內容指紋算法。
+
+一句話：
+
+**keccak256 不是把內容加密，也不是把內容壓縮；它是把任意 bytes 變成不可逆、固定 32 bytes 的內容指紋。**
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 `bool` 是 **boolean** 的縮寫，意思是「布林值」。
 
 它只有兩種可能：
@@ -242,6 +639,7 @@ revoked / expirationTime 驗證是否仍有效
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
 
+
 好，下一步學 **讀取一筆真實的 attestation**。
 
 這一步的重點是：**只讀鏈上資料，不寫鏈、不花 gas、不需要私鑰。**
@@ -338,6 +736,7 @@ const decodedData = encoder.decodeData(encodedData);
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -746,6 +1145,7 @@ schemaUID -> 找 schema -> decode data
 
 
 
+
 **On-chain vs Off-chain**
 
 EAS 支援兩種模式：
@@ -781,6 +1181,7 @@ npm install @ethereum-attestation-service/eas-sdk
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

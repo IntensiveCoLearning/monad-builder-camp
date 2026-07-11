@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 **注意 Vibecoding 智能合约风险：**AI 智能体编写 UI 代码的能力，要远比编写智能合约代码的能力强得多。Solidity 的训练数据更少，逻辑更专业，错误也更难被发现。
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 ## 7.09 学习笔记
 
@@ -68,6 +75,7 @@ Replit 网站无需梯子。
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
 
+
 打！
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -76,11 +84,13 @@ Replit 网站无需梯子。
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

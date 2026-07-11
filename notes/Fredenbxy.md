@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+预习下周任务
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 # Day5 打卡笔记：Monad 体系认知、BuildLog 归档与方向抉择，完成首周阶段复盘
 
 ## 今日学习目标复盘
@@ -59,6 +65,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 # Day4 打卡笔记：AI+Solidity + 合约部署，落地最小智能合约实操
 
@@ -122,6 +129,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 ## 今日学习目标复盘
@@ -188,6 +196,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # Day2 打卡笔记：工具准备与 Builder 身份，开启 Web3 远程协作之路
 
 ## 今日学习目标复盘
@@ -241,6 +250,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

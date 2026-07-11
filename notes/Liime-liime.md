@@ -15,8 +15,696 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+# Web3 智能合约开发笔记
+
+# 一、什么是智能合约（Smart Contract）
+
+## 定义
+
+智能合约本质上是：
+
+> 部署在区块链上的程序。
+
+特点：
+
+-   自动执行
+    
+-   不可篡改
+    
+-   公开透明
+    
+-   去中心化运行
+    
+
+简单理解：
+
+```text
+传统应用：
+用户 → 服务器 → 数据库
+
+DApp：
+用户 → 智能合约 → 区块链
+```
+
+智能合约相当于：
+
+> Web3 世界的后端服务器。
+
+* * *
+
+# 二、DApp 架构
+
+一个完整的 DApp 通常由四部分组成：
+
+```text
+前端
+ ↓
+钱包（MetaMask）
+ ↓
+RPC 节点
+ ↓
+智能合约
+ ↓
+区块链
+```
+
+* * *
+
+## 1\. 前端（Frontend）
+
+负责：
+
+-   页面展示
+    
+-   用户交互
+    
+-   调用钱包
+    
+-   调用智能合约
+    
+
+常见技术：
+
+-   HTML
+    
+-   CSS
+    
+-   JavaScript
+    
+-   React
+    
+-   Next.js
+    
+
+* * *
+
+## 2\. 钱包（Wallet）
+
+作用：
+
+-   用户身份认证
+    
+-   交易签名
+    
+-   管理私钥
+    
+
+常见钱包：
+
+-   MetaMask
+    
+-   Phantom
+    
+
+钱包 ≠ 存储资产
+
+实际上钱包保存的是：
+
+```text
+Private Key（私钥）
+```
+
+* * *
+
+## 3\. RPC 节点
+
+作用：
+
+> 前端访问区块链的入口。
+
+类似于：
+
+```text
+Web2：
+浏览器 → API服务器
+
+Web3：
+前端 → RPC节点 → 区块链
+```
+
+常见 RPC 服务：
+
+-   Infura
+    
+-   Alchemy
+    
+-   QuickNode
+    
+
+* * *
+
+## 4\. 智能合约
+
+作用：
+
+-   保存状态
+    
+-   处理业务逻辑
+    
+-   管理资产
+    
+
+开发语言：
+
+```text
+Solidity
+```
+
+运行环境：
+
+```text
+EVM（Ethereum Virtual Machine）
+```
+
+* * *
+
+## 5\. 数据检索器（Indexer）
+
+作用：
+
+> 将链上 Event 数据同步到数据库。
+
+为什么需要它？
+
+因为链上查询非常慢且昂贵。
+
+例如：
+
+NFT 合约无法直接查询：
+
+```text
+某地址拥有哪些 NFT
+```
+
+因此需要：
+
+```text
+Transfer Event
+↓
+Indexer
+↓
+PostgreSQL
+↓
+前端查询
+```
+
+常见方案：
+
+-   The Graph
+    
+-   Subsquid
+    
+
+* * *
+
+## 6\. 去中心化存储
+
+链上存储非常贵，因此图片、视频等文件通常放在链下。
+
+常见方案：
+
+-   IPFS
+    
+-   Arweave
+    
+
+存储内容：
+
+-   NFT 图片
+    
+-   用户头像
+    
+-   文档
+    
+-   视频
+    
+
+* * *
+
+# 三、智能合约开发流程
+
+```text
+需求分析
+↓
+编写 Solidity 合约
+↓
+本地测试
+↓
+部署测试网
+↓
+前端接入
+↓
+主网上线
+```
+
+* * *
+
+# 四、Solidity 合约结构
+
+一个最简单的合约：
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MyContract {
+
+    uint256 public myNumber;
+
+    constructor() {
+        myNumber = 100;
+    }
+
+    function setNumber(uint256 _number) public {
+        myNumber = _number;
+    }
+}
+```
+
+* * *
+
+## 1\. SPDX License
+
+```solidity
+// SPDX-License-Identifier: MIT
+```
+
+作用：
+
+声明开源协议。
+
+常见：
+
+-   MIT
+    
+-   GPL-3.0
+    
+
+* * *
+
+## 2\. pragma
+
+```solidity
+pragma solidity ^0.8.0;
+```
+
+作用：
+
+指定 Solidity 编译器版本。
+
+例如：
+
+```text
+^0.8.0
+```
+
+表示：
+
+```text
+>=0.8.0
+<0.9.0
+```
+
+* * *
+
+## 3\. contract
+
+```solidity
+contract MyContract {
+
+}
+```
+
+作用：
+
+定义一个智能合约。
+
+类似于：
+
+```text
+Java 的 class
+```
+
+* * *
+
+## 4\. 状态变量（State Variables）
+
+例如：
+
+```solidity
+uint256 public myNumber;
+```
+
+特点：
+
+-   永久存储在链上
+    
+-   会消耗 Storage Gas
+    
+-   所有人都可以读取
+    
+
+常见类型：
+
+```text
+uint
+int
+bool
+address
+string
+mapping
+array
+struct
+```
+
+* * *
+
+## 5\. 构造函数（Constructor）
+
+```solidity
+constructor() {
+    myNumber = 100;
+}
+```
+
+特点：
+
+-   合约部署时执行一次
+    
+-   之后不会再次调用
+    
+
+作用：
+
+-   初始化参数
+    
+-   设置管理员地址
+    
+-   初始化状态
+    
+
+* * *
+
+## 6\. 普通函数（Function）
+
+例如：
+
+```solidity
+function setNumber(uint256 _number) public {
+    myNumber = _number;
+}
+```
+
+作用：
+
+修改或者读取状态。
+
+* * *
+
+# 五、函数修饰符
+
+## 1\. pure
+
+```solidity
+function add(uint a,uint b)
+public
+pure
+returns(uint)
+```
+
+特点：
+
+-   不读取状态
+    
+-   不修改状态
+    
+
+```text
+只做计算
+```
+
+* * *
+
+## 2\. view
+
+```solidity
+function getBalance()
+public
+view
+returns(uint)
+```
+
+特点：
+
+-   可以读取状态
+    
+-   不允许修改状态
+    
+
+* * *
+
+## 3\. payable
+
+```solidity
+function deposit()
+public
+payable
+```
+
+特点：
+
+-   可以接收 ETH
+    
+-   可以修改状态
+    
+
+* * *
+
+## 4\. 普通函数
+
+特点：
+
+-   可以读取状态
+    
+-   可以修改状态
+    
+
+* * *
+
+## 面试高频总结
+
+| 类型 | 读取状态 | 修改状态 | 支付 ETH |
+| --- | --- | --- | --- |
+| pure | ❌ | ❌ | ❌ |
+| view | ✅ | ❌ | ❌ |
+| payable | ✅ | ✅ | ✅ |
+| 普通函数 | ✅ | ✅ | ❌ |
+
+* * *
+
+# 六、前端与智能合约交互
+
+## 读取数据
+
+```text
+call()
+```
+
+特点：
+
+-   免费
+    
+-   不消耗 Gas
+    
+-   不会修改状态
+    
+
+例如：
+
+```javascript
+contract.methods.balanceOf(address).call()
+```
+
+* * *
+
+## 写入数据
+
+```text
+send()
+```
+
+特点：
+
+-   消耗 Gas
+    
+-   需要钱包签名
+    
+-   修改链上状态
+    
+
+例如：
+
+```javascript
+contract.methods.transfer(to,amount).send()
+```
+
+* * *
+
+## 完整流程
+
+```text
+用户点击按钮
+↓
+前端调用 send()
+↓
+钱包弹窗签名
+↓
+广播交易
+↓
+矿工打包
+↓
+交易确认
+↓
+前端更新页面
+```
+
+* * *
+
+# 七、Gas 优化
+
+## 1\. Storage 最贵
+
+Gas 消耗：
+
+```text
+Storage > Memory > Calldata
+```
+
+原则：
+
+> 少写链上，多读链下。
+
+* * *
+
+## 2\. 位压缩（Bit Packing）
+
+例如：
+
+```solidity
+struct User {
+    uint128 a;
+    uint128 b;
+}
+```
+
+多个变量共享一个 Storage Slot。
+
+* * *
+
+## 3\. 循环优化
+
+错误写法：
+
+```solidity
+for(uint i=0;i<arr.length;i++)
+```
+
+优化：
+
+```solidity
+uint len = arr.length;
+
+for(uint i=0;i<len;i++)
+```
+
+* * *
+
+## 4\. external 优于 public
+
+如果函数只允许外部调用：
+
+```solidity
+external
+```
+
+Gas 更低。
+
+* * *
+
+# 八、智能合约安全
+
+## 安全原则
+
+-   最小权限原则
+    
+-   模块化设计
+    
+-   完整事件记录
+    
+-   显式错误处理
+    
+
+* * *
+
+## 重入攻击（Reentrancy）
+
+最经典漏洞：
+
+```text
+调用外部合约
+↓
+外部合约再次调用当前函数
+↓
+重复提款
+```
+
+历史案例：
+
+```text
+The DAO Hack（2016）
+```
+
+损失：
+
+约 6000 万美元 ETH。
+
+最终导致：
+
+```text
+Ethereum
+Ethereum Classic（ETC）
+```
+
+分叉。
+
+* * *
+
+# 九、一句话理解智能合约
+
+> 智能合约 = 部署在区块链上的后端程序。
+
+如果说：
+
+```text
+React = Web2 前端
+Node.js = Web2 后端
+```
+
+那么：
+
+```text
+React = Web3 前端
+Solidity = Web3 后端
+```
+
+这也是目前绝大多数 DApp 的技术架构。
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 # Web3 行业知识笔记
 
 ## 一、Web3 行业全景图
@@ -660,6 +1348,7 @@ Web3 的本质是利用区块链技术，将资产所有权、数据所有权和
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
+
 # DApp 架构笔记
 
 ### 一、DApp 的四大核心组成
@@ -959,6 +1648,7 @@ Indexer 监听事件
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 # 区块链是什么

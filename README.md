@@ -782,7 +782,7 @@ By completing the program, participants will leave with:
 | [Azzzting](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Azzzting.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [1537810744](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/1537810744.md) | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [qq1240204020-debug](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/qq1240204020-debug.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [QIng7ng](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/QIng7ng.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [QIng7ng](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/QIng7ng.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yuhangxian235](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yuhangxian235.md) | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Gooooods](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Gooooods.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [whitemime](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/whitemime.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -815,6 +815,7 @@ By completing the program, participants will leave with:
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [summer-sheep](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/summer-sheep.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

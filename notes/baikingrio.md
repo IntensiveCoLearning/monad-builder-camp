@@ -15,8 +15,36 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+今天继续完善 Monad 上的 ERC-4337 学习实践，重点是 Sponsor Authorization 的安全边界。
+
+我做了一个只在服务端运行的 Sponsor 授权接口。它的作用是为符合规则的 UserOperation 签发 Paymaster 授权，但不会直接广播交易，也不提供公开的 Relay 或 Bundler。
+
+这次我重点补了几个安全限制：
+
+1\. Sponsor 私钥只保存在服务端，前端和浏览器钱包都不会接触。
+
+2\. Sponsor 授权会绑定用户账户、nonce、调用内容、Gas 参数、有效期、链 ID 和 Paymaster 地址，避免授权被换成其他交易内容。
+
+3\. 服务端会检查实际的调用内容，只允许当前学习场景中的 checkIn 操作。
+
+4\. 增加了 Gas 和费用上限，避免一次授权消耗过多 Paymaster 预算。
+
+5\. Sponsor 接口默认关闭，只用于本地学习，不作为公开的免 Gas 服务开放。
+
+今天让我更清楚地理解到，ERC-4337 的 Sponsor 不只是“帮用户付 Gas”。如果没有成本限制、精确调用校验、短时有效期和私钥隔离，Paymaster 很容易变成被滥用的资金入口。
+
+下一步我准备部署新版 Paymaster 到 Monad Testnet，再在本地完成一次“Sponsor 服务签名 → Paymaster 验证授权”的完整验证。在补齐认证、限流、配额、预算管理和熔断机制之前，不会公开部署 Sponsor 服务。
+
+今日学习笔记：
+
+[https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-11.md](https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-11.md)
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 今天继续完善 Monad Testnet 上的 ERC-4337 实验，并学习和实践了 ERC-1363。
 
 在 ERC-4337 部分，我进一步理解了 Paymaster 的作用不只是代付 Gas，更重要的是限制赞助的范围和风险。通过把账户、调用内容、nonce、有效期等信息绑定到 sponsor 授权中，可以避免授权被复用到其他交易里。
@@ -32,6 +60,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 今天主要围绕 ERC-4337 Account Abstraction 做了三组连续实验，把智能账户从“能执行 UserOperation”继续扩展到更接近真实应用体验的能力，重点学习和实践了三个方向：
 
@@ -74,6 +103,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 今天继续做链上实践和学习记录，重点做了 ERC-4337 最小实践，从 EntryPoint v0.7 迁移到 Monad Testnet 官方 EntryPoint v0.8，并记录两者差异。
@@ -132,6 +162,7 @@ Explorer：  
 
 
 
+
 今天学习了 ERC-4337 Account Abstraction 和 thirdweb 的 Session Keys 文档，重点理解了智能账户、UserOperation、Bundler、EntryPoint、Paymaster 之间的关系。
 
 我的理解是，ERC-4337 让钱包不再只是一个由私钥控制的 EOA，而是可以变成有自定义验证逻辑和权限管理能力的智能账户。用户发起的不是普通交易，而是 UserOperation，由 Bundler 打包，再通过 EntryPoint 统一验证和执行。Paymaster 可以在特定条件下帮用户代付 gas，从而改善新用户进入链上应用时必须先准备 gas 的体验。
@@ -147,6 +178,7 @@ Explorer：  
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

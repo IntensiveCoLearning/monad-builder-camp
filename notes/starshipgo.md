@@ -23,11 +23,13 @@ Keeping up with the week1 content
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
+
 复习上周学习内容
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -41,11 +43,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 继续学习技术，做好作品集，等内推机会
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -66,11 +70,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 把学习以太坊协议加入学习计划中！
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

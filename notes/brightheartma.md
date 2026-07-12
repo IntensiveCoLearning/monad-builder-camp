@@ -15,8 +15,61 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+# **残酷共学打卡 · 2026-07-11**
+
+## **今日进度：BuildAnything 初中课程 4/13**
+
+课程地址：[https://buildanything.so/zh/tracks/sophomore/lessons/monad-architecture](https://buildanything.so/zh/tracks/sophomore/lessons/monad-architecture)
+
+学完第 4 课「Monad 架构」，把 EVM 那节的执行层外扩一圈，看清区块链六层架构（硬件/网络/数据/共识/执行/应用）里 Monad 和以太坊每一层的具体差异。
+
+## **核心收获**
+
+**1\. 硬件层与网络层**
+
+-   Monad 要求裸金属服务器（16 核 CPU、4.5GHz+、32GB+ 内存、2TB NVMe SSD），拒绝云虚拟机——虚拟化引入的延迟会破坏亚秒级时序，硬件门槛是为性能和去中心化做的有意折衷。
+    
+-   网络层活儿相同（节点发现 + 通信），Monad 靠 MonadBFT 预设种子地址启动，再走状态同步/区块同步追上进度，思路比以太坊的 Discv5+DevP2P+GossipSub 组合更直接。
+    
+
+**2\. 数据层：MonadDB**
+
+-   以太坊把 Merkle Patricia Trie 转成键值对塞进通用数据库（LevelDB/RocksDB）；MonadDB 直接存储 Trie 本身，不需要转换，并用 io\_uring 做异步 I/O 高速读写 SSD——为区块链数据定制 vs 通用数据库硬凑。
+    
+
+**3\. 共识层：MonadBFT vs Gasper**
+
+-   以太坊 Gasper = LMD-GHOST（选分叉）+ Casper FFG（两阶段投票锁定历史），12 秒出块、约 13 分钟最终性。
+    
+-   MonadBFT：领导者每 400ms 轮换，两轮投票后区块即最终确定（800ms）；抗 tailforking 强制领导者包含前一区块，防止跳过作恶；RaptorCast 用纠删编码 + 两级扇出分发区块小块，解决 2MB 区块广播的带宽瓶颈。
+    
+
+**4\. 执行层：从串行到乐观并行**
+
+-   以太坊瓶颈很明确：交易串行执行（15–25 TPS），且共识与执行交错——必须等区块执行完才能推进共识，出块时间大半被共识和传播吃掉。
+    
+-   Monad 三件套解耦这个瓶颈：乐观并行执行（多核同时跑，冲突了就重跑，结果与串行一致）、执行与共识异步解耦（共识跑第 N 块时执行在后台处理第 N-1 块）、MonadDB 支持海量并行状态读取——三者叠加做到约 10,000 TPS，同时完全兼容 EVM。
+    
+
+**5\. 应用层：兼容性的复利**
+
+-   Monad 完全 EVM 兼容，以太坊应用换个 chain ID 重新部署即可运行，同一套 Solidity、同一套工具、同一个钱包连接——用户感知不到底层差异，只感觉到更快更便宜。
+    
+
+## **个人思考**
+
+-   六层框架把之前零散学的 MonadBFT、并行执行、MonadDB 串成了一条线：每一层的改动都在服务同一个目标（亚秒级时序），而不是孤立的性能优化点。
+    
+-   「共识与执行解耦」这个设计和我做 indexer 时的双游标架构本质相通：把两个有依赖关系的流程解耦成可以流水线化的独立阶段，吞吐才能上得去。
+    
+-   MonadDB 直接存 Trie、不做键值对转换，提醒我评估任何存储方案时先问一句「这个数据结构原生适配底层引擎吗，还是在打补丁」。
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 ## **今日进度：monad-clicker 加登录系统，并用真实使用数据修了一串前端 bug**
 
 昨天把「为什么需要频繁交互」的场景论证做完之后，今天把 monad-clicker 从 Demo 推进到「能被人反复实际使用」的状态：加了 MetaMask 登录（会话代签），然后没有止步于"能跑"，而是自己连续实测/连点/换账号，揪出了 6 个真实 bug 并逐一修复，最后把改动推到了 GitHub，也把 Week 1 Build Log 整理提交。
@@ -58,6 +111,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 ## 今日进度：完成「Monad 理解｜为什么 Monad 体验不同」议题
 
@@ -109,6 +163,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 ## **今日进度：BuildAnything 初中课程 3/13**
@@ -168,6 +223,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -234,6 +290,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 \## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
 
 \### 今天做了什么
@@ -273,6 +330,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

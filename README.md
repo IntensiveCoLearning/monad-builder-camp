@@ -368,7 +368,7 @@ By completing the program, participants will leave with:
 | [aGolgenFish](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/aGolgenFish.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Lma-Te](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Lma-Te.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Yang1221-X](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Yang1221-X.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [guanlinfeng06-web](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/guanlinfeng06-web.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [guanlinfeng06-web](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/guanlinfeng06-web.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Eloise-qiu](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Eloise-qiu.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [NortySouth](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/NortySouth.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [SKY-shang1010](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/SKY-shang1010.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -815,6 +815,7 @@ By completing the program, participants will leave with:
 | [yoona333](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yoona333.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [summer-sheep](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/summer-sheep.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

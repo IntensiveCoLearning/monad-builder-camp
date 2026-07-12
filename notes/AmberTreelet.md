@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 打卡打卡～
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 资料笔记 看回放
 <!-- DAILY_CHECKIN_2026-07-10_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
 
+
 传统合约安全是"只要你没漏洞，你就安全"。但 Agent 不一样——它需要权限才能干活，而权限一旦给出去，攻击面就从"合约代码"扩展到了"Agent 的整个决策链路"。一个能调用 swap 的 Agent，本质上等于一个可以随时执行交易的私钥持有者。区别只在于，它是"听你话"还是"听 prompt 的话"。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -47,6 +56,7 @@ Jack 用支付宝早年做类比——大家不会在支付宝里放很多钱，
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

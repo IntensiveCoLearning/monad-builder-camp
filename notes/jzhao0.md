@@ -17,19 +17,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-今天完成了 Week 1 核心产出的汇总，并整理了第一个轻量级 Mini Demo 0。
+今天完成了 Week 1 核心产出的最终整理，并提交了第一个轻量级 Mini Demo 0。
 
-本周的作品是部署在 Monad Testnet 上的 DailyCheckIn 每日打卡智能合约。我使用 AI 生成 Solidity 初稿，但没有直接照搬，而是人工检查了业务逻辑、权限设计、时间判断、代码复杂度和变量命名。我将 AI 最初的“间隔 24 小时打卡一次”修改为“每个 UTC 自然日打卡一次”，并增加了 CheckedIn 事件。
+我的作品是部署在 Monad Testnet 上的 DailyCheckIn 每日打卡智能合约。我已经将 Solidity 源码、README v0.1、链上部署信息、MonadVision 交互截图和 Remix read function 查询截图整理到公开 GitHub 仓库中。
 
-在实践部分，我完成了 Remix 编译、课程钱包连接、Monad Testnet 部署和 checkIn() 写入函数调用，并在 MonadVision 区块浏览器中验证了交易状态、合约地址和 Transaction Hash。同时，我进一步区分了钱包地址、合约地址、部署交易 Hash、交互交易 Hash、read function 和 write function。
+本周我通过 AI 生成合约初稿，但没有直接照搬代码。我人工检查了业务逻辑、权限、时间判断、变量命名和安全风险，并将 AI 最初的“间隔 24 小时打卡一次”修改为“每个 UTC 自然日打卡一次”，同时增加了 CheckedIn 事件。
 
-本周过程中也遇到了钱包扩展密码遗失、不同测试网代币混淆、Remix VM 地址误认、网络切换错误、旧合约实例失效和重复部署等问题。通过实际排查，我认识到 Web3 开发不仅是编写代码，还需要认真处理钱包、网络、Gas、签名和链上验证。
+在真实链上实践中，我完成了课程钱包连接、Monad Testnet 合约部署、checkIn() 写入调用和 checkInCount(address) 只读查询，并通过 MonadVision 验证了合约地址、部署交易 Hash 和成功交互交易 Hash。
 
-Week 2 我确认选择 Tech 作为主方向，Research 作为辅助能力。下一步计划使用 ethers.js 为 DailyCheckIn 开发一个简单前端，并继续增加连续签到、积分、任务和排行榜功能，将当前合约逐步升级为可展示的 Monad Quest Demo。
+Week 2 我确认选择 Tech 作为主方向，Research 作为辅助能力。下一步计划使用 ethers.js 为 DailyCheckIn 开发一个简单前端，并继续增加连续签到、积分、任务和排行榜功能，将当前合约逐步升级为 Monad Quest DApp。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 今天完成了 Monad Testnet 钱包实操任务。由于之前的课程钱包浏览器扩展密码遗失，并且现有助记词恢复出的地址与旧钱包不一致，我在确认旧钱包仅含测试网资产后重新创建了课程专用钱包，并将新助记词离线备份。
 
@@ -42,6 +43,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -62,6 +64,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 
 
+
 今日完成了「AI Agent 高危案例解析与安全构建」线上活动的学习。本次分享主要围绕 AI Agent 的安全风险展开，重点讲解了当 Agent 拥有钱包权限、API 权限、文件访问权限、系统命令权限或插件调用能力后，可能出现的高危场景。
 
 今天我理解到，AI Agent 和普通聊天机器人最大的区别在于，它不仅会生成内容，还可能执行真实操作。因此它的安全风险也不只是“回答错了”，而是可能因为过度授权、提示词注入、恶意插件、恶意 Skill、MCP 工具风险或运行时缺乏防护，造成数据删除、凭证泄露、恶意转账、敏感信息外发等问题。
@@ -75,6 +78,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -99,6 +103,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 
 
+
 今天完成了 Web3 实习计划第一阶段的基础任务。首先，我创建并准备了一个课程专用钱包，没有使用自己的主力钱包，以降低后续测试和交互过程中的资产安全风险。随后，我按照任务要求添加了 Monad Testnet 网络，并打开 Monad Explorer / 区块浏览器，确认可以正常查询自己的钱包地址。
 
 通过这次操作，我初步理解了链上产品和普通互联网产品的区别。普通互联网产品主要依赖账号体系、平台数据库和中心化服务器；而链上产品通常通过钱包连接，资产、交易和合约交互会记录在区块链上，可以被公开查询和验证。链上产品更强调数据透明、资产归属和智能合约执行规则，但同时也对钱包安全、Gas、网络配置和用户理解门槛提出了更高要求。
@@ -108,6 +113,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

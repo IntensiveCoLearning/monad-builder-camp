@@ -15,8 +15,15 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+学习了**BattleChain Safe Harbor**   
+**BattleChain Safe Harbor** 是一个 Solidity 智能合约系统，它在区块链协议与 **BattleChain** 上的白帽黑客之间建立了信任框架——BattleChain 是一个激励性测试网环境，在主网上线前便涉及真实资金。该系统通过定义赏金条款、承诺窗口以及一个透明的状态机（管理从部署到生产阶段的每一项协议），赋予白帽黑客法律与经济上的信心，使其敢于攻击“可攻击”的合约。
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 学习了**BattleChain Safe Harbor**   
 **BattleChain Safe Harbor** 是一个 Solidity 智能合约系统，它在区块链协议与 **BattleChain** 上的白帽黑客之间建立了信任框架——BattleChain 是一个激励性测试网环境，在主网上线前便涉及真实资金。该系统通过定义赏金条款、承诺窗口以及一个透明的状态机（管理从部署到生产阶段的每一项协议），赋予白帽黑客法律与经济上的信心，使其敢于攻击“可攻击”的合约。
 <!-- DAILY_CHECKIN_2026-07-11_END -->
@@ -24,11 +31,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
+
 通过build构建了我的第一个dapp
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 学习了buildanything.的，什么是monad，重要的区块链概念，10000t p s会让什么成为可能
@@ -39,11 +48,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习了biildANYTHING的vibecoding入门，构建并发布第一个应用，什么是monad。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

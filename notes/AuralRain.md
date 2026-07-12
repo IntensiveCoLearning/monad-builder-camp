@@ -15,8 +15,88 @@ Java后端开发工程师
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+### 1\. 基础设施与成本控制
+
+### 选择合适的Web托管服务，避免因流量超出套餐额度而产生意外高额费用。
+
+-   警惕“诱饵”定价：许多服务商（如 Vercel、Railway）的低价套餐包含一定流量额度，但超额部分单价可能极高。务必提前计算成本（例如，$20/月套餐含1TB流量，超额$0.20/GB，则第二个TB实际成本为$200）。
+    
+-   生产环境推荐 (AWS)：
+    
+    -   静态文件与CDN：Amazon S3 + CloudFront
+        
+    -   无服务器函数：AWS Lambda
+        
+    -   容器化应用：Amazon ECS 或 EKS
+        
+    -   数据库：Amazon RDS
+        
+    
+    > ### 此组合能提供更精细的成本控制和更好的高流量扩展性。
+    
+
+### 2\. 优化链上交互与RPC调用
+
+### 2.1 使用硬编码Gas值
+
+-   原则：若操作的Gas消耗固定（如原生代币转账恒为21,000 Gas），应直接硬编码Gas值。
+    
+-   优势：
+    
+    -   省去 `eth_estimateGas` 的RPC请求，大幅提升钱包操作速度。
+        
+    -   避免某些钱包在 `eth_estimateGas` 调用失败时的异常行为。
+        
+
+### 2.2 减少 `eth_call` 延迟
+
+-   核心方法：并发处理多个请求，避免串行导致的多次网络往返延迟。
+    
+
+| 方案 | 实现方式 | 适用场景 | 注意事项 |
+| --- | --- | --- | --- |
+| Multicall合约 | 使用标准 Multicall3 合约（已部署于Monad主网/测试网，地址：0xcA11bde05977b3631167028862bE2a173976CA11），将多个读请求聚合为单次 eth_call。 | 同时获取多个独立数据点（如余额、授权额、多项参数）。 | 调用串行执行，避免放入过多或过昂贵的调用。 |
+| RPC请求批处理 | 利用库（如 viem）的批量请求功能，将多个RPC请求合并成一条消息。 | 需要并发执行多个独立RPC调用。 | RPC服务端可并行处理，效率更高。 |
+| 自定义合约 | 部署定制合约，将复杂的数据读取逻辑聚合在一个函数中。 | 标准Multicall难以处理的复杂读取模式。 | 合约内读取逻辑仍为串行。 |
+
+### 2.3 使用索引器替代 `eth_getLogs`
+
+### 对于频繁查询历史事件或派生状态的应用，强烈建议使用专业索引服务，而不是重复调用 `eth_getLogs`。文档列举了以下主流方案：
+
+-   Allium：提供SQL访问（Explorer）、实时数据流（Datastreams）和钱包活动API。
+    
+-   Envio HyperIndex：通过配置文件（指定网络ID `10143` 测试网 / `143` 主网）和事件处理器快速创建索引器。
+    
+-   GhostGraph：详见官方文档。
+    
+-   Goldsky：支持子图（Subgraph）和直接数据流（Mirror），配置中网络标识为 `monad-mainnet` 或 `monad-testnet`。
+    
+-   QuickNode Streams：在仪表盘创建数据流，或通过REST API管理，支持Webhook、S3等目标。
+    
+-   The Graph：使用子图（Subgraph），网络标识为 `monad-mainnet` 或 `monad-testnet`。
+    
+-   thirdweb Insight API：REST API，使用链ID `143`（主网）或 `10143`（测试网）。
+    
+
+### 3\. 交易发送与管理
+
+### 3.1 本地管理Nonce
+
+-   场景：若手动设置nonce，且短时间内从同一钱包发送多笔交易。
+    
+-   实践：实现本地nonce跟踪，避免每次都调用 `eth_getTransactionCount` 产生网络请求。
+    
+
+### 3.2 并发提交交易
+
+-   原则：发送多笔交易时，采用并发提交（如 `Promise.all`）替代串行（`for`循环 `await`）。
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 ### 1\. 虚拟机 (VM) 差异
 
 -   合约代码大小：
@@ -59,6 +139,7 @@ Java后端开发工程师
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
+
 Monad与以太坊虚拟机在字节码层面完全兼容。以太坊上的智能合约可以直接部署到Monad上，现有的Solidity、Vyper等编程语言也全部支持，可以继续使用已有钱包（如MetaMask）、开发框架和RPC API接口，获得性能提升。
 
 Monad的性能：10,000 TPS（每秒交易数）、400毫秒的出块时间和800毫秒的交易最终性。这比以太坊主网快了数个量级。
@@ -79,6 +160,7 @@ Monad的性能：10,000 TPS（每秒交易数）、400毫秒的出块时间和80
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 合约源码 (Source Code)
@@ -117,6 +199,7 @@ Transaction Hash (交易哈希)
 
 
 
+
 Transaction Hash: 交易唯一标识
 
 Status: 交易是否成功
@@ -144,6 +227,7 @@ Gas Limit & Usage: Gas 限制和使用量
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -182,6 +266,7 @@ Gas Limit & Usage: Gas 限制和使用量
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

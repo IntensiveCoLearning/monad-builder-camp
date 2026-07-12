@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 Web3 学习打卡 Day X
 
 今天学习了 Web3 社区运营的整体工作流程，发现社区运营并不是简单发推文、聊天，而是需要兼顾内容、活动、合作和数据分析。
@@ -37,6 +43,7 @@ Web3 学习打卡 Day X
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
+
 补卡
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
@@ -44,11 +51,13 @@ Web3 学习打卡 Day X
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
 
+
 最近一直在忙学习内容明天补上
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -61,11 +70,13 @@ Web3 学习打卡 Day X
 
 
 
+
 今天学习了助教老师发的关于web行业的软件，并且补了一下开始的开营仪式
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,26 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+# 从“裸奔”到受控：AI Agent高危，案例解析与安全构建
+
+AgentGuard
+
+ai agent安全防线看起来 coding agent 也会做
+
+安全加固建议：
+
+1.  最小权限原则：仅授予完成任务所需的最低权限
+    
+2.  Human-in-the-Loop：设置安全基线，对资金转账、邮件删除等敏感操作人工复核
+    
+3.  布置安全监控工具：如 AgentGuard 等专业工具
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 # AI Agent 如何拥有支付能力？
 
 ## 嘉宾自我介绍
@@ -65,6 +83,7 @@ layer 2 和 layer 1 之间的关系是什么（嘉宾说 layer 2 处理的交易
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
+
 epf都是自学的，epf 和智能合约相比更偏向于密码学和数学的知识，会更难。  
 可以做执行层和共识层去找上面的 issue 然后去进行修。
 
@@ -88,6 +107,7 @@ metamask 等钱包就是构建在以太坊之上的应用
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
 
+
 很早之前用过 okx wallet，第一次用小狐狸。  
   
 之前还是主要通过交易的用户用钱包，完全没有想过区块链底层技术有这么多的方向。  
@@ -97,6 +117,7 @@ metamask 等钱包就是构建在以太坊之上的应用
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -123,6 +144,7 @@ SVP 是一个 AI Native 链，有 agent的 mcp 能够有强力的安全边界。
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

@@ -15,8 +15,38 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+# AI开发与Web3技术栈分享
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Flora-hihihi/images/2026-07-13-1783956058670-image.png)
+
+-   **Web3 开发体系与技术栈指南**
+    
+    -   **Web3 开发的五大核心方向**
+        
+        -   五大方向覆盖范围：分别为面向用户的 **DApp 开发、链上逻辑实现的智能合约开发、用户密钥管理的钱包开发、底层节点开发、高价值的安全审计**。
+            
+        -   各方向独立程度说明：DApp 与智能合约开发耦合度较高，钱包、节点开发、安全审计三个方向的独立性较强，跨方向技术复用性较低。
+            
+        
+        ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGU0ZTRlY2UxZTJmZjQzNzI4ZGUxMjJkYWM4MDhhNDFfakR0VnI5SlpDZ3ZQMFJZQXRXVjN5QjlUZmx4SVpOdFFfVG9rZW46SWFBNWJPdlVUb3Q1UzR4M2tCQWN5M3ZjbkdmXzE3ODM5NTYwNzc6MTc4Mzk1OTY3N19WNA&add_watermark=true&scene_type=CCM_DOUBAO)
+        -   安全审计的行业定位：属于高壁垒垂类，是项目上线前的必要环节，核心作用是排查代码风险、保障项目与用户的资金安全。
+            
+    -   **各开发方向的技术栈要求**
+        
+        -   DApp 开发入门路径：优先选择该方向入门，直观反馈强、成就感高，技术栈以 **TypeScript + React/Vue + Web3.js** 为主。
+            
+        -   智能合约开发栈：**以太坊生态优先学习 Solidity，其他公链多采用 Rust，主流开发框架为 Foundry**，可复用经过安全验证的开源合约模板。
+            
+        -   钱包开发核心要求：核心能力为密钥管理与安全防护，需重点覆盖防钓鱼、防重放、防恶意授权、防供应链攻击等场景。
+            
+        -   节点开发核心要求：以 Go、Rust 为主要开发语言，需掌握 P2P 网络协议、共识机制、分布式系统设计，入门可从运行测试网节点切入。
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 # Web3 安全与合规
 
 ## 一、中国 Web3 监管基本态度
@@ -893,6 +923,7 @@ EOS 链上赌博平台 BigGame
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
+
 # 行业赛道
 
 -   DeFi
@@ -960,6 +991,7 @@ EOS 链上赌博平台 BigGame
 <!-- DAILY_CHECKIN_2026-07-08_START -->
 
 
+
 # AI agent支付领域的产品探索
 
 -   **已落地试点案例**
@@ -1014,6 +1046,7 @@ DAO ：Decentralized Autonomous Organization
 
 
 
+
 # 普通人如何进入以太坊协议链
 
 ## 学习路径（建地图 → 懂流程 → 找入口）
@@ -1050,6 +1083,7 @@ DAO ：Decentralized Autonomous Organization
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

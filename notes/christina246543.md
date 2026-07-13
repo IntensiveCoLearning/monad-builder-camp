@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+The incentive mechanism design incorporates game theory principles. Controlling inflation and maintaining scarcity through mechanisms like Bitcoin's halving events creates deflationary pressure that supports long-term price appreciation. The system is designed to incentivize long-term holders, and the reduction in mining rewards aligns with deflationary expectations, potentially driving prices upward. The design also encourages miner and validator participation—rewards must be sufficiently attractive to sustain network security and operational stability. Balancing these economic incentives with decentralization and security remains the core challenge in blockchain mechanism design.
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 Hard forks represent an important governance phenomenon in blockchain ecosystems. When a large portion of the community supports a protocol modification, a hard fork can occur, resulting in two separate chains. Under Proof-of-Work mechanisms, a hard fork supported by over 51% of computing power is considered the legitimate main chain. The key difference between Bitcoin and Ethereum forks is their classification: Bitcoin has undergone forks such as BCH and BSV, while Ethereum's most notable fork was the DAO incident, which split the chain into the current Ethereum (ETH) and Ethereum Classic (ETC).
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
+
 Blockchain scalability remains a critical challenge. Block size directly impacts transaction throughput—larger blocks can handle more transactions per batch. Layer 2 scaling solutions represent a major architectural approach to significantly improve TPS (transactions per second). The number and distribution of nodes directly affect the degree of decentralization; higher node count and broader geographic distribution correspond to stronger decentralization.
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 This study summary provides a comprehensive overview of blockchain operating mechanisms, covering distributed network architecture, decentralization principles, incentive systems, scalability solutions, and governance dynamics.
@@ -56,11 +64,13 @@ The incentive mechanism design incorporates game theory principles. Controlling 
 
 
 
+
 Blockchain is a decentralized distributed ledger technology that securely, transparently and immutably records transaction data across network nodes. Its core unit the block consists of transaction records and the hash summary of the previous block, with limited storage capacity that shapes network operation. Larger block sizes raise transaction throughput but increase node storage costs and weaken decentralization, while smaller blocks limit processing efficiency. Blocks are bundled at fixed intervals by miners for accounting. Shorter block creation times speed up transaction confirmation yet raise orphan block risks, and longer intervals boost network security by reducing temporary forks. Linked sequentially via each prior block’s hash value, blockchain data is tamper resistant. Altering any historical block requires rewriting all subsequent blocks. Special chain adjustments include rollbacks which are rare coordinated reversions of confirmed blocks amid severe attacks, hard forks which are non backward compatible protocol upgrades splitting the chain permanently such as Bitcoin Cash, and soft forks which are backward compatible updates where unupgraded nodes still validate basic transactions like Bitcoin’s SegWit upgrade. As core blockchain traits, full data transparency pairs with wallet anonymity. Privacy chains such as Monero and Zcash use zero knowledge proofs and ring signatures to hide sender, receiver and amount information, trading partial transparency for advanced privacy without conflicting with public blockchains as they serve distinct user demands. Blockchains enable fast borderless settlements far quicker than traditional cross border remittances, yet transaction speeds vary drastically. Bitcoin hits roughly seven transactions per second, Ethereum fifteen to thirty transactions per second, and new chains like Solana reach tens of thousands transactions per second. This throughput gap is determined by four key factors. They are consensus mechanisms where proof of stake outperforms proof of work, block generation intervals, block storage capacity, and network expansion architectures including sharding and Layer 2 solutions.
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

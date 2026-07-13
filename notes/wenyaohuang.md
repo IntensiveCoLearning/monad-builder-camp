@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+![8b3d7cf4eacfa07f731330cc0fa25c6c.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/wenyaohuang/images/2026-07-13-1783947846334-8b3d7cf4eacfa07f731330cc0fa25c6c.png)
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 周末打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 我最大的认知变化是：从前误以为 Web3 运营只是简单发消息、拉用户，经过一周学习才明白，社群、活动、社媒、BD、内容各岗位分工清晰、环环相扣。一场完整的新人活动，需要多岗位配合完成从曝光引流、承接用户、教学科普、渠道拓展到内容沉淀的全流程。运营不只是维护社群氛围，还要兼顾用户筛选、数据复盘与风险防控，是兼具沟通、策划、逻辑分析的综合工作，也让我清楚后续需要针对性补齐活动策划、数据复盘相关实操能力。
@@ -38,11 +46,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 FluxA 旨在搭建 AI 智能体专属支付结账底层层，赋能智能体开发者、工具服务商、电商商家、智能体平台四方，打通 A2A 智能体间交易与资金流转，构建完整 Agent 经济商业生态。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

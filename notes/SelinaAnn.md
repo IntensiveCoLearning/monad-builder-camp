@@ -15,13 +15,80 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+# **🛠️ AI-assisted Dev Plan**
+
+## **1\. 产品概念**
+
+-   **名字**：\[给起个酷炫或好记的名字，如 Monad-Gas-Tracker\]
+    
+-   **一句话描述**：\[用户能在这个页面上做一件什么事？如：用户输入一个地址，能看到该地址在 Monad 测试网上的历史交易记录。\]
+    
+
+## **2\. 用户核心路径**
+
+1.  用户连接 MetaMask 钱包。
+    
+2.  用户点击 \[某个按钮\]。
+    
+3.  页面展示 \[某个结果\]。
+    
+
+## **3\. 技术组件清单**
+
+-   **智能合约**：\[需要吗？如果需要，合约里存什么状态？如果不需要，写“无合约，纯前端读取链上数据”\]
+    
+-   **前端页面**：\[比如：1个输入框 + 1个查询按钮 + 1个展示列表\]
+    
+-   **链上交互**：\[比如：使用 ethers.js 调用 Monad RPC 的 `getTransactionCount`\]
+    
+
+## **4\. 边界控制 - _最重要的一步！_**
+
+-   **✅ Real (本周真做)**：
+    
+    -   1.
+        
+    
+-   **🧱 Mock (本周假装做了)**：
+    
+    1.  \[例如：页面头部的 Logo 和导航栏，直接写死，不做路由跳转\]
+        
+    
+    2.  \[例如：不连接钱包时，展示的示例数据直接写死在代码里\]
+        
+-   **🚫 Out of Scope (本周绝不碰)**：
+    
+    1.  \[例如：多链切换功能\]
+        
+    
+    2.  \[例如：交易详情的深度解析\]
+        
+
+## **5\. 本周必读文档**
+
+-   \[粘贴链接，如：Monad RPC 节点连接文档\]
+    
+-   \[粘贴链接，如：ethers.js 官方 Provider 文档\]
+    
+
+## **6\. AI 协作策略**
+
+-   **让 AI 做**：生成前端 React 组件脚手架、写 CSS 样式、提供 ethers.js 连接钱包的标准代码片段。
+    
+-   **我自己做**：将 AI 生成的碎片代码拼装起来、在 Remix 中手动测试合约逻辑、排查 RPC 连接不上的网络问题。
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-12-1783819303776-image.png)
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 ### **Remix IDE 实战指南**
 
@@ -68,6 +135,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
 
+
 ### **从“交易”到“合约”的思维跃迁**
 
 在 DAY 3，你通过钱包发起了一笔**转账交易**。今天，你将部署一个**智能合约**，它本质上是一段**自动执行、不可篡改的代码**，被永久存储在区块链上。理解以下核心概念的关联，是今天学习的关键。
@@ -89,11 +157,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-09-1783601532564-image.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -126,11 +196,13 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-07-1783431460944-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

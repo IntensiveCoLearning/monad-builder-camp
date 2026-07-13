@@ -15,13 +15,24 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+今天colearning做了销售扮演角色对区块链应用场景有了更深刻理解
+
+\- 区块链核心定义：本质是异步、强一致性的可编程金融平台，由多节点共同维护，无需信任单一中心即可达成交易共识。
+
+\- 五大细分开发方向：分别为面向用户交互的 DApp 开发、链上逻辑实现的智能合约开发、用户密钥管理的钱包开发、底层维护的节点开发、安全校验的审计方向。
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 今天要到了小海老师黑客松的作品demo万物皆可预测，对黑客松产品介绍有了具体了解如何用视频来介绍产品demo
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 本次参与Web3 Builder共学营第一周周会，完整吸收全员一周学习成果、实操经验、工具方法论与后续共学规划，本周完成零基础Web3入门+链上实操落地+AI开发能力搭建，整体完成从概念认知到可落地项目产出的完整闭环。
 
@@ -72,6 +83,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-09_START -->
 
 
+
 本次为 Web3 及 AI 安全基础设施服务商 GoPlus 主办的 AI Agent 安全主题分享会，通过真实高危案例拆解风险并给出落地防护方案，内容如下：
 
 \- AI Agent 安全风险的核心本质
@@ -90,6 +102,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![whiteboard_exported_image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/novaz02/images/2026-07-08-1783524110244-whiteboard_exported_image.png)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -99,11 +112,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天主要是对**EPF 项目介绍**：EPF 是聚焦以太坊协议层的学习实践项目，分为有津贴的入选通道和无门槛的公开参与通道，核心围绕以太坊共识、网络、密码学等内容开展。中途听着有些专业名词还是听着有些云里雾里需要加强记忆以及学习，同时colearning讲到了vibecoding
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

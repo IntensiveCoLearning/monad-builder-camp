@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+-   查看通用资料，了解常见职业、岗位和成长路径
+    
+-   完成**Role Choice Card**
+    
+-   **Week 2 Role Log** 撰写初版
+    
+-   **AI Collaboration Log** 撰写初版
+    
+-   分享会：**Web3 技术如何从 0 到 1 用 AI 开发**
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 -   在 Monad Testnet 完成 LearningCheckin 合约部署与读写验证，并围绕受限 Agent 的预算、授权、支付与验收边界完成 Monad 产品方向分析，提出低频 MVP 与后续验证问题。
     
 -   撰写完成并提交Mini Demo 0
@@ -24,6 +38,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 -   综合官方课程材料、嘉宾Agent支付分享、Agent安全分享内容，展开研究，撰写MiniDemo0
     
@@ -38,6 +53,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
 
+
 -   完成为什么是monad任务research，查阅buildanything对应05课参考
     
 -   AI辅助整理buildlog、理清为什么是monad的问题
@@ -49,6 +65,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -67,6 +84,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成了 Monad Testnet 上的第一笔测试网交易，获取并使用测试网 MON，向另一个测试账户转账
 
 在区块浏览器中查看交易详情，确认交易状态为 Success，理解 transaction hash 是交易的唯一编号，from / to 分别表示发送方和接收方，value 表示转账金额。
@@ -78,6 +96,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -102,6 +121,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

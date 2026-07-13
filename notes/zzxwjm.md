@@ -17,17 +17,51 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-选定research track
+1.  重新确定 Week 2 主方向  
+    选择 **Research** 作为主方向，Dev 作为辅助能力，重点关注协议、治理和链上指标。
+    
+2.  重新完成了任务 1  
+    明确了方向选择、研究问题、本周最小产出、参考资料和 Week 3 角色。
+    
+3.  建立 Week 2 学习记录方式  
+    确定使用独立的学习日志记录资料、Prompt、截图、错误、判断变化和下一步计划。
+    
+4.  完成 AI Collaboration Log  
+    记录 AI 帮助了什么、人类核查和修改了什么，以及哪些责任不能交给 AI。
+    
+5.  完成任务 4  
+    明确进入 Week 3 后承担 Research Lead / Product Research 角色，并说明需要 Dev、量化和 Ops 队友支持的部分。
+    
+
+### 主要迭代过程
+
+最开始，我倾向于强调心理测量背景可能为 Web3 Research 带来独特价值。讨论后，我们收窄了表述，没有把心理测量包装成万能能力，也没有声称我能胜过专业量化研究者。
+
+之后，研究重点从：
+
+> 心理测量如何赋能 Web3？
+
+调整为：
+
+> 链上指标能够证明什么，不能证明什么，以及指标被用于奖励或治理后是否会被操纵？
+
+职业定位也从“用心理测量解决 Web3 问题”，调整为：
+
+> 在链上数据和协议决策之间，增加对指标含义、解释边界和不确定性的检查。
+
+今天形成的核心认识是：我的优势不一定是更强的预测能力，而是能够关注指标和现实概念之间是否真的对应，并把这些问题转化为具体的协议、治理或产品研究问题。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 **1\. 分轨初步理由**
@@ -56,6 +90,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -521,6 +556,7 @@ completed: true
 
 
 
+
 **分享笔记：一个新手如何理解 Web3**
 
 **1\. 我的起点**
@@ -663,6 +699,7 @@ Web3 试图改变一部分信任结构：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -838,11 +875,13 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 
 
+
 学习ai agent支付，先打卡
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -860,6 +899,7 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

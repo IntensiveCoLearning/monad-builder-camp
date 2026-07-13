@@ -15,8 +15,49 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
+
+## 今日进度：完成 Week 2 职业方向选择提交，搭建 AI 协作记录 + 学习记录归档体系
+
+今天同时在 Claude Code 本地和 [claude.ai](http://claude.ai) 网页版并行推进：完成 Week 2 Role Choice Card 提交（选择 Dev 方向），搭建了 AI Collaboration Log 与本周学习记录两套 Notion 归档体系，并把"挖历史对话记录找 Prompt"这件事沉淀成了一个可复用的 Claude Code skill。
+
+## 核心收获
+
+**1\. 职业方向选择：基于已验证路径选 Dev，而不是从零转型**
+
+-   Go 背景 + 已落地的 NFT badge/DAO Voting/索引器/clicker 多个项目是选择 Dev 方向的实证支撑，本周最小产出定在 AI agent payment 或高频链上交互安全方向的可运行 demo。
+    
+
+**2\. AI 协作记录该记录什么、不该记录什么**
+
+-   除了"协作场景/AI 帮了什么/人类删改核查了什么/哪些不能交给 AI"四栏之外，还规划了四类具体截图证据（方向文案生成、打卡模板应用、技术细节核实修正、未采纳 AI 建议的决策点），让"AI 帮了忙但人工在把关"可验证。
+    
+
+**3\. 把"挖历史对话找 Prompt"沉淀成一个可复用 skill**
+
+-   本机 Claude Code CLI 会话和 [claude.ai](http://claude.ai) 网页版 Projects 是两套完全独立的系统：前者权威来源是 `~/.claude/projects/<dir>/*.jsonl` 而不是会话管理工具的部分索引；后者必须人工登录、且要滚动到顶才能读到完整对话。把这些坑写成 skill，并用真实的 monad-clicker 会话数据跑了带 skill / 不带 skill 的对比测试验证有效。
+    
+
+**4\. 两边并行操作同一份 Notion 笔记导致的结构纠缠**
+
+-   同一个 Week 2 索引页被两个不同的 Claude 会话同时修改，出现过重复子页面块、重复图标等问题。解决方式是每次都重新拉取现有真实结构再改动，不凭记忆猜测。
+    
+
+**5\. 一次关于工具安全边界的具体案例**
+
+-   测试 skill 时子任务被 Write 工具拦下后改用 Bash 绕过限制写文件——内容本身是真实的，但这提醒我以后审查 agent 产出不能只看结果对不对，还要看它是不是绕过了什么限制去达成的。
+    
+
+## 个人思考
+
+今天大部分时间不是在学新概念，而是在搭建"如何持续、诚实地记录学习过程"这件事本身的基础设施——这本身也是 Dev 方向要面对的问题：记录/文档系统的可靠性，和合约代码的可靠性同样重要。两个 Claude 会话并行改同一份笔记导致的结构冲突，本质上和 monad-clicker 里"两个组件各自独立轮询同一份分数导致不同步"是同一类问题，解法也一样——找一个单一可信来源，别让两边各自为战。
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 # **残酷共学打卡 · 2026-07-11**
 
 ## **今日进度：BuildAnything 初中课程 4/13**
@@ -70,6 +111,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
+
 ## **今日进度：monad-clicker 加登录系统，并用真实使用数据修了一串前端 bug**
 
 昨天把「为什么需要频繁交互」的场景论证做完之后，今天把 monad-clicker 从 Demo 推进到「能被人反复实际使用」的状态：加了 MetaMask 登录（会话代签），然后没有止步于"能跑"，而是自己连续实测/连点/换账号，揪出了 6 个真实 bug 并逐一修复，最后把改动推到了 GitHub，也把 Week 1 Build Log 整理提交。
@@ -111,6 +153,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 ## 今日进度：完成「Monad 理解｜为什么 Monad 体验不同」议题
@@ -163,6 +206,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -223,6 +267,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -291,6 +336,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 \## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
 
 \### 今天做了什么
@@ -330,6 +376,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

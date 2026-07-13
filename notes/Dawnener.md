@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+[https://app.notion.com/p/Day8-Dev-plan-39ca6b2138a9802396d3e78a879adcf1?v=989a6b2138a9831a878d8830e4768f1c&source=copy\_link](https://app.notion.com/p/Day8-Dev-plan-39ca6b2138a9802396d3e78a879adcf1?v=989a6b2138a9831a878d8830e4768f1c&source=copy_link)
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 [https://app.notion.com/p/Day7-Demo0-39ba6b2138a98095aab8e9423bfb6d42?v=989a6b2138a9831a878d8830e4768f1c&source=copy\_link](https://app.notion.com/p/Day7-Demo0-39ba6b2138a98095aab8e9423bfb6d42?v=989a6b2138a9831a878d8830e4768f1c&source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 [https://app.notion.com/p/Build-Log-Week1-39aa6b2138a98028b811f2aedf2125d2?v=989a6b2138a9831a878d8830e4768f1c&source=copy\_link](https://app.notion.com/p/Build-Log-Week1-39aa6b2138a98028b811f2aedf2125d2?v=989a6b2138a9831a878d8830e4768f1c&source=copy_link)
 
@@ -32,6 +39,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
 
+
 [https://app.notion.com/p/Day5-DataBase-399a6b2138a9802a8cfdc250ce93bdd8?v=989a6b2138a9831a878d8830e4768f1c&source=copy\_link](https://app.notion.com/p/Day5-DataBase-399a6b2138a9802a8cfdc250ce93bdd8?v=989a6b2138a9831a878d8830e4768f1c&source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
@@ -40,11 +48,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [https://app.notion.com/p/Day4-Build-Anything-398a6b2138a9805eb509d3f285457683?v=989a6b2138a9831a878d8830e4768f1c&source=copy\_link](https://app.notion.com/p/Day4-Build-Anything-398a6b2138a9805eb509d3f285457683?v=989a6b2138a9831a878d8830e4768f1c&source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -59,11 +69,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [https://app.notion.com/p/Day2-396a6b2138a980c6a077f21cedaf3b0f?v=989a6b2138a9831a878d8830e4768f1c&source=copy\_link](https://app.notion.com/p/Day2-396a6b2138a980c6a077f21cedaf3b0f?v=989a6b2138a9831a878d8830e4768f1c&source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

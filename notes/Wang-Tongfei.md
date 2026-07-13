@@ -15,8 +15,131 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+## **Week 2 | Moss 学习笔记**
+
+### **一、项目简介**
+
+Moss 是一个将 **Monad 区块链**上复杂的 DApp/协议交互抽象为 AI Agent 可调用统一能力的框架。它的核心工作流是 `discover → load → action → simulate`——由系统而非 Agent 负责组装正确的交易。
+
+Moss 目前处于 **Alpha 阶段**，运行在 Monad 主网（chain id 143）上。它**永不签名、永不发送**交易，只负责构建和验证，私钥始终留在钱包里，最终决定权在用户手中。
+
+### **二、它解决了什么问题？**
+
+**2.1 核心痛点：AI Agent 手搓交易数据太危险**
+
+Moss 要解决的根本问题是：**让 AI Agent 安全地与区块链协议交互**。
+
+考虑一个 DEX 上的“简单”swap：涉及 router 地址、exact-in 与 exact-out 变体、原生代币的包装与解包装、退款和扫尾调用、滑点计算……。一个 AI Agent 通过读取 ABI 来组装这些调用，“最终会把其中某一个搞错”——而一个 **“几乎正确”** 的 AI 构建的交易，恰恰是资金丢失的方式。
+
+**2.2 两条安全规则**
+
+Moss 通过两条在不同位置强制执行的安全规则来防范风险：
+
+| 规则 | 执行位置 | 作用 |
+| --- | --- | --- |
+| Effects 对账 | 服务器侧（机械判定） | 模拟提取实际发生的资产流出/流入、授权、收款方（包括不发 Transfer 事件的原生 MON 流和 wrapped 代币铸毁），对任何 Plan 未声明的差异产生警告——有 warning 即停 |
+| 意图对齐 | Agent 侧 | 将 effects 摘要与用户的原始意图对比——只有 Agent 掌握用户的原话 |
+
+**2.3 为什么现有方案不够？**
+
+如果让 Agent 直接读取合约 ABI 并手搓 calldata，风险在于：
+
+-   ABI 解析复杂，多步调用（如 multicall）容易出错
+    
+-   不同协议参数格式不统一
+    
+-   小数位换算、滑点计算等细节极易失误
+    
+-   一旦 Agent 犯错，后果是直接的资金损失
+    
+
+Moss 的解法是：**把复杂性收拢到按协议维护的统一能力层背后**，在每一次签名前加一道机械安全闸门。
+
+### **三、核心能力**
+
+**3.1 四步调用流**
+
+text
+
+```
+discover(verb?, category?) → 跨协议发现能力
+load(coordinates) → intent、参数语义、风险标签
+action(protocol, method, params) → 返回未签名交易 Plan + 量化期望
+simulate(plans[]) → 实际 effects + warnings（声明 vs 实际对账）
+```
+
+**3.2 Agent 不再手搓 calldata**
+
+Agent 不需要接触 ABI、合约地址、multicall 扫尾、decimals 换算——能力层接受人类可读的参数，返回组装完毕的未签名交易。
+
+**3.3 多步流程支持**
+
+`simulate` 接受 Plan 数组并在计划之间延续状态——Plan B 可以花掉只在 Plan A 模拟结果里才存在的代币。这是多步流程（claim → swap → supply）的基础。
+
+**3.4 已支持协议**
+
+目前支持 WMON（wrap/unwrap/balanceOf）、ERC20 通用协议（任意代币转账/余额/授权查询，含原生 MON）、ERC721 通用协议（任意 NFT 转账/归属查询）、Kuru（市价单 swap、报价、市场列表）。
+
+### **四、可能应用场景**
+
+**场景：AI 驱动的 DeFi 收益策略自动执行**
+
+**描述**：用户用自然语言描述一个收益策略，例如“当 wMON 价格低于 X 时，将 30% 的 USDC 换成 wMON，然后存入 Kuru 的流动性池”。Moss 框架负责：
+
+1.  **discover**：发现可用的 swap 和流动性池能力
+    
+2.  **load**：加载对应协议的 intent 和参数语义
+    
+3.  **action**：构建未签名交易的 Plan
+    
+4.  **simulate**：在真实链上状态模拟执行，验证 effects 是否匹配预期
+    
+
+**为什么 Moss 适合这个场景**：
+
+-   Agent 不需要知道 Kuru 的合约地址或 ABI 细节
+    
+-   模拟机制可以在签名前验证每一步的资产流动是否符合预期
+    
+-   多步 Plan 链式模拟确保整个流程（swap → 添加流动性）可串联执行
+    
+-   任何未声明的差异都会产生 warning，阻止危险交易
+    
+
+**安全边界**：Moss 不签名、不发送，最终交易由用户在钱包中审核后签名——这确保了即便 Agent 的策略逻辑有误，用户仍有最终否决权。
+
+### **五、我的个人理解**
+
+**5.1 Moss 的本质：为 AI Agent 建立区块链操作的“安全操作系统”**
+
+Moss 做的不是让 Agent 更“聪明”，而是让 Agent 更“安全”。在 AI Agent 自主执行链上操作这个方向上，最大的障碍不是 Agent 的理解能力，而是**可靠性**——一个会犯错但看起来很自信的 Agent，在金融场景中是灾难性的。
+
+Moss 的贡献在于：它把“Agent 如何与链交互”这个开放性问题，变成了“系统提供标准化能力、Agent 只做意图决策、模拟验证作为安全闸门”的封闭框架。这有点像操作系统把硬件抽象成系统调用——应用（Agent）不需要直接操作硬件（合约），只需要调用标准接口。
+
+**5.2 “永不签名”是设计亮点**
+
+Moss 明确声明“永不签名、永不发送”，这不仅是技术选择，更是**信任边界的设计**。在 AI 安全尚未成熟的今天，让 AI 拥有签名权是危险的。Moss 把“构建和验证”交给系统，“签名和执行”留给用户——这个边界划分是务实的。
+
+**5.3 Alpha 阶段的现实提醒**
+
+Moss 目前是 Alpha 软件，未经审计，API 和 Plan 格式可能变动。项目文档也坦诚指出：“模拟是一道安全网，不是保证——模拟结果反映的是模拟那一刻的链上状态，从模拟到签名之间，价格、流动性、合约状态都可能变化。”
+
+这种对自身局限的坦诚，反而增加了项目的可信度。
+
+### **六、参考链接**
+
+-   [Moss GitHub 仓库](https://github.com/nishuzumi/moss)
+    
+-   [Moss 中文 README](https://github.com/nishuzumi/moss/blob/main/README.zh-CN.md)
+    
+-   [Moss](https://github.com/nishuzumi/moss/blob/main/SECURITY.md) [Security.md](http://Security.md)
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 ## **Wagmi**
 
 > Wagmi 是 React 的 Web3 工具库，基于 Viem，提供类型安全的 Hooks 与合约交互。
@@ -192,6 +315,7 @@ useEffect(() => {
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
+
 ## **Meme Battle 应用开发笔记**
 
 ### **📌 项目概述**
@@ -313,6 +437,7 @@ meme-battle/
 <!-- DAILY_CHECKIN_2026-07-10_START -->
 
 
+
 ## Week 1 总结
 
 ### 学习内容
@@ -361,6 +486,7 @@ meme-battle/
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -504,6 +630,7 @@ Badge 全部 NFT 化。
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -763,6 +890,7 @@ Sourcify Verified
 
 
 
+
 ### **前置准备｜进入 Web3 与链上世界**
 
 **Summary**
@@ -806,6 +934,7 @@ Metamask创建钱包，并记住私钥
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

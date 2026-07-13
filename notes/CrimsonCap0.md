@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+今日学习很轻松，susheng老师举行了一个小游戏，让大家说服各种角色，让他们了解投票上链的意义。我抽到了web3媒体🤣虽然还是讲完了，但是有同学的质疑：记者还要掏钱投票这对吗？看来得让faucet发真币了🤣
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 今天依旧是周末，没有安排的任务～于是重新复盘了一下第一周的所有内容，以及产出的非常粗糙的demo。为第二周制定了计划，首先要做的是解决一下demo里面的多钱包连接问题。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 今日周六，没有安排讲座和co-learning～那就随手记录一点今天对区块链的一些新了解。
 
@@ -36,6 +43,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 今天参加了 Bein、Yoona、huahua 和苏生老师的 co-learning，主要围绕 Web3 实习、岗位选择、个人成长路径和项目案例展开。
@@ -57,6 +65,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -272,6 +281,7 @@ Agent 任务托管、链上赏金、Monad Testnet、React DApp、ethers.js、Met
 
 
 
+
 测试了链上交易，并且构思了接下来的项目方向：既不能太简单，也不能没有市场需求。目前打算设计并开发基于 Monad Testnet 的 AI Agent 任务托管 DApp，使用 Solidity 实现任务发布、资金托管、结果提交与奖励释放逻辑，使用 React + ethers.js 实现钱包连接、任务状态读取、链上交易提交与区块浏览器追踪。大概是这样……过两天逐渐开始开个头，看看有没有可行性。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -283,11 +293,13 @@ Agent 任务托管、链上赏金、Monad Testnet、React DApp、ethers.js、Met
 
 
 
+
 开通了metamask钱包，创建两个账户负责接收，并且完成了链上第一笔交易，学会了看from/to/transaction hash。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

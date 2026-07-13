@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+# 学习记录
+
+1.Monad高频交互Demo Idea：
+
+```markdown
+轻量级链上宠物养成、冒险探索和装扮交易游戏
+```
+
+2.AI如何0-1完成WEB3应用开发分享及Co-learning
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 # 学习记录
 
 Chatgpt生成NFT Badge合约并部署
@@ -581,6 +595,7 @@ contract NFTBadge {
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
+
 # 学习记录
 
 1.Web3实习手册文档阅读
@@ -594,6 +609,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 # 学习记录
@@ -612,6 +628,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 
 
+
 # 学习记录
 
 1.AI高危案例分享会及Co-learning
@@ -625,6 +642,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -650,6 +668,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 
 
+
 # 学习记录
 
 1.  《普通开发者如何进入以太坊协议层》分享会及co-learning（Codex演示自动部署智能合约）
@@ -666,6 +685,7 @@ Codex部署合约实操
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

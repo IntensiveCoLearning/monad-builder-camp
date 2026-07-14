@@ -76,10 +76,13 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 比较方便是用agent读adr的包
 
 **六个方向：主流协议补充（monad官网上看）/新兴协议接入/基于moss构建应用/推广与采用/内容创作/社区协作（后3个不要求代码）**
+
+-   **推荐ask-matt skill，流程相对规范**
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -129,6 +132,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 
 
+
 # D5 例会
 
 待看实操笔记：
@@ -160,6 +164,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 
 
+
 # D4 AI Agent高危示例&安全防线构建
 
 -   自动化到自主化的威胁演变
@@ -173,6 +178,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -241,6 +247,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 
 
+
 # D2
 
 ## 以太坊协议层
@@ -260,6 +267,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

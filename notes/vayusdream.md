@@ -32,7 +32,10 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 ### desci自学手册
 
-[https://equable-mountain-09d.notion.site/DeSci-3523ad5edf5c80809d20e9591cbaf8c8](https://equable-mountain-09d.notion.site/DeSci-3523ad5edf5c80809d20e9591cbaf8c8)
+-   [https://equable-mountain-09d.notion.site/DeSci-3523ad5edf5c80809d20e9591cbaf8c8](https://equable-mountain-09d.notion.site/DeSci-3523ad5edf5c80809d20e9591cbaf8c8)
+    
+-   [https://3ook.com/en/store/0xbef7ec8649fb96c8d78ea63d8dfeb40bc2a6eec4](https://3ook.com/en/store/0xbef7ec8649fb96c8d78ea63d8dfeb40bc2a6eec4)
+    
 
 ### 专业化的资料申请项目
 
@@ -45,10 +48,37 @@ Web3 暑期实习计划 - Monad Buidler Camp
 -   [https://maearth.com/](https://maearth.com/)
     
 -   [https://www.ai4pg.com/](https://www.ai4pg.com/)
+    
+
+### 不同搞法
+
+-   desci自学手册[https://equable-mountain-09d.notion.site/DeSci-3523ad5edf5c80809d20e9591cbaf8c8](https://equable-mountain-09d.notion.site/DeSci-3523ad5edf5c80809d20e9591cbaf8c8)
+    
+-   web3公共物品资助模式报告（lxdao on x）
+    
+-   desci funding data layer走到ai的上游让它来用我的资料 / 收集、清洗、整理desci项目的资料成为一份让任何ai都更容易分析整理和参考的资料（github：swiftevo）
+    
+-   p2p共有资料宣言[https://3ook.com/en/store/0xbef7ec8649fb96c8d78ea63d8dfeb40bc2a6eec4](https://3ook.com/en/store/0xbef7ec8649fb96c8d78ea63d8dfeb40bc2a6eec4)
+    
+
+# WEB3职业路径
+
+web3职业路径：学习-建设-贡献-影响者-领导者
+
+# Moss贡献指南
+
+从下载到第一个pr
+
+[https://github.com/nishuzumi/moss](https://github.com/nishuzumi/moss)
+
+monad上的mcp协议是把dapp交互抽象成agent可调用的能力
+
+比较方便是用agent读adr的包
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -94,6 +124,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # D5 例会
 
 待看实操笔记：
@@ -123,6 +154,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # D4 AI Agent高危示例&安全防线构建
 
 -   自动化到自主化的威胁演变
@@ -136,6 +168,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -200,6 +233,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # D2
 
 ## 以太坊协议层
@@ -219,6 +253,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

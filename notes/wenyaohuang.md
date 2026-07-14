@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-14
+<!-- DAILY_CHECKIN_2026-07-14_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-14_END -->
+
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 ![8b3d7cf4eacfa07f731330cc0fa25c6c.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/wenyaohuang/images/2026-07-13-1783947846334-8b3d7cf4eacfa07f731330cc0fa25c6c.png)
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 周末打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 FluxA 旨在搭建 AI 智能体专属支付结账底层层，赋能智能体开发者、工具服务商、电商商家、智能体平台四方，打通 A2A 智能体间交易与资金流转，构建完整 Agent 经济商业生态。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

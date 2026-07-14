@@ -35,11 +35,12 @@ Week2学习记录：
 
 确认开发主要方向；
 
-![Day07两个环节的任务-0.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-13-1783958492018-Day07_______-0.png)
+![Day08-5（周期性会议线上参与截图）.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-14-1784044585758-Day08-5_____________.png)![Day08-3（从研究到共识线上会议）.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-14-1784044553554-Day08-3____________.png)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 0713 Day06-
 
@@ -64,6 +65,7 @@ Week2学习记录：
 <!-- DAILY_CHECKIN_2026-07-12_START -->
 
 
+
 20260712自由打卡：
 
 今日记录——
@@ -82,6 +84,7 @@ Week2学习记录：
 
 
 
+
 20260711任务打卡：
 
 今日内容——
@@ -97,6 +100,7 @@ Week2学习记录：
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -122,6 +126,7 @@ Day05（2026-07-10）学习记录：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -184,6 +189,7 @@ Day04学习记录：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -339,6 +345,7 @@ Day04学习记录：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

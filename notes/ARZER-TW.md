@@ -15,8 +15,74 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-14
+<!-- DAILY_CHECKIN_2026-07-14_START -->
+2026.07.14
+
+主題：執行層架構（asynchronous execution、optimistic parallel execution、JIT、MonadDb）
+
+**Asynchronous Execution**
+
+-   核心設計：共識只對交易順序達成協議，不等執行結果；區塊 finalize 後才正式執行，共識同時繼續推進後續區塊
+    
+-   對比 interleaved execution（以太坊模式）：leader 提案前要先執行、驗證者投票前也要執行，執行預算只占 block time 的一小部分，其餘全花在跨洲通訊；async execution 把接近完整的 block time 讓給執行
+    
+-   一致性驗證：區塊 N 的提案攜帶區塊 N−D（D=3）的 delayed merkle root，各節點以此偵測執行分歧，對應 Verified 狀態
+    
+-   節點收到提案即可 speculative execution，不必等 finality；回滾安全性部分來自 MonadDb 以 merkle trie diff 形式儲存，捨棄投機結果成本低
+    
+-   昨天前面看過的 gas limit 收費、Reserve Balance 都是此設計的衍生配套
+    
+
+**Optimistic Parallel Execution**
+
+-   保證：區塊內交易線性排序，最終狀態等同逐筆序列執行；平行化純屬實作細節，合約端不需配合改寫
+    
+-   機制：計算與提交分離。交易先樂觀地平行執行，產出 pending result（記錄讀入的 input slots 與寫出的 output slots 及其值）；再依交易順序序列提交，提交時檢查 inputs 是否仍有效，被先前提交改動過就重新執行，完成前後續交易不得提交
+    
+-   每筆交易至多執行兩次：一次樂觀執行、至多一次提交時重執行；重執行通常便宜，因為所需 slot 多半已在快取，只有走到不同 codepath 才需要新的 SSD 讀取
+    
+-   可理解為 two-pass：第一遍平行執行把 storage slot 依賴全部拉進快取，第二遍序列提交
+    
+-   狀態競爭以 slot 為單位判定，不是以合約為單位：同一個 ERC-20 合約內兩筆不相干的轉帳互不衝突
+    
+-   官方不強制 EIP-2930 access list：長期瓶頸在頻寬，slot 依賴的發現交給系統底層處理
+    
+
+**JIT Compilation**
+
+-   執行端同時具備高度優化的 interpreter 與客製 native compiler
+    
+-   追蹤最常被呼叫的合約，非同步編譯成原生碼，後續呼叫直接跑編譯結果
+    
+-   完整保留 EVM 語意，含 gas 計算與錯誤行為
+    
+-   不走 LLVM IR / Cranelift 等中間層，直接輸出 x86-64；理由是客戶端鎖定特定硬體規格，換取最大控制與效能
+    
+
+**MonadDb**
+
+-   客製 key-value 資料庫，原生實作 Patricia trie（磁碟與記憶體皆是），儲存狀態、receipts、區塊頭與 payload 等 authenticated data
+    
+-   對比既有客戶端：MPT 塞進 B-Tree（LMDB）或 LSM-Tree（LevelDB/RocksDB）等通用資料庫，等於資料結構裡再包一層資料結構；原生實作消除這層間接，單次查詢的 IOPS 與 page read 大幅減少
+    
+-   async I/O 以 io\_uring 實作，讀取不阻塞執行緒、不需生成大量 kernel thread；平行執行同時發出大量狀態讀取，必須配這種資料庫才撐得住
+    
+-   繞過檔案系統，避開 block allocation、碎片化、讀寫放大、metadata 管理等隱性成本
+    
+-   persistent（immutable）trie 設計：更新時沿分支產生新版本節點、舊版本保留。帶來三個效果——節點級版本化、單一 writer（execution）對多 reader（consensus、RPC）的同步簡化、寫入變成 SSD 友善的循序寫
+    
+-   磁碟有限，僅保留近期版本並依可用空間動態調整歷史長度，配合 inline compaction 回收空間（對應前幾天 historical data 的 40,000 區塊回看限制）
+    
+-   節點版本化同時支撐 statesync：同步節點提供目前版本與目標版本，對方只需傳送差異的 trie 元件；缺塊另走 blocksync 補齊
+    
+
+小結：執行層四個元件互相咬合——async execution 爭取時間預算、parallel execution 吃滿 CPU、MonadDb 吃滿 SSD 並提供版本化基礎、JIT 壓低單筆計算成本；投機執行與快速回滾的安全性建立在 trie diff 的資料模型上。
+<!-- DAILY_CHECKIN_2026-07-14_END -->
+
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 ### 2026.07.13
 
 主題：共識層架構（MonadBFT、區塊狀態、RaptorCast）
@@ -83,11 +149,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
 
+
 假日水個打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 **Historical Data**
@@ -114,11 +182,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 先打卡晚點補充筆記
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -151,6 +221,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -202,6 +273,7 @@ warm access 維持 100 不變。受影響的是 BALANCE、EXTCODE 系列、CALL 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,63 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-14
+<!-- DAILY_CHECKIN_2026-07-14_START -->
+【Week 2｜Dev / Tech Track 打卡】  
+  
+今日围绕 Moss 开源项目，完成了从项目调研、源码实测到贡献规划和内容输出的一整套学习闭环。  
+  
+✅ 今日完成  
+  
+1\. 完成 Tech Role Statement，明确 Week 3 进入团队后承担 Tech / Core Dev，主要负责合约、前端集成和技术验证。  
+  
+2\. 深度阅读 Moss 的 README、Docs、Issues、PR 和代码结构，理解其核心流程：  
+discover → load → action → simulate  
+  
+3\. 本地实测 Moss：  
+\- 完成依赖安装和全量构建  
+\- 通过离线测试  
+\- 跑通零私钥 WMON Wrap 示例  
+\- 验证模拟结果返回 warnings: \[\]  
+  
+4\. 完成 GitHub Exploration Log，重点分析：  
+\- Issue #13：ERC-4626 tokenized vaults  
+\- PR #19：Windows CRLF 修复  
+\- Issue → Fix → CI → Review 的开源协作流程  
+  
+5\. 制定 Moss 开源贡献计划，将首个贡献收敛为可独立审查的 ERC-4626 ABI 基础 PR：  
+IERC4626.sol → ERC4626Abi → focused tests → docs / changeset → Draft PR  
+  
+6\. 完成两篇 Moss 公众号内容：  
+\- 开发者深度文章：解释 Plan、量化 expects、双 tracer 模拟、effects 对账、意图对齐与签名隔离  
+\- 新手教程：从零跑通一笔 Monad 链上交易模拟，整理常见错误、MCP 接入和贡献路径  
+  
+7\. 完成公众号排版、封面及 4 张 Moss 原理配图，并完成图片内容与文字标签 QA。  
+  
+💡 今日收获  
+  
+Moss 的价值不是让 AI Agent 更快发起交易，而是在用户签名前，用量化声明、真实状态模拟和机械对账验证交易效果。即使模拟结果为零 warning，也只能证明实际 effects 没有突破声明边界，不能替代用户意图检查和钱包复核。  
+  
+开源贡献同样不是“先写一大块代码”，而是先确认真实需求，再用边界清晰、容易测试、容易审查的小 PR 降低 Maintainer 的协作成本。  
+  
+⚠️ 遇到的问题  
+  
+文档中的 src/play.ts 示例文件实际不存在。通过检查项目目录找到真实入口，改用 src/wmon-wrap.ts 后成功跑通。  
+  
+另外，Moss 当前没有启用 GitHub Discussions，因此如实记录其主要协作渠道是 Issues 和 Pull Requests，没有虚构讨论内容。  
+  
+📌 下一步  
+  
+阅读 ADR 0007 / 0009，梳理 ERC-4626 的实例化方案；先在 Issue #13 对齐首个 PR 的范围，再推进 ABI 生成链、focused tests、changeset 和 Draft PR。  
+  
+一句话总结：  
+  
+今天不只是“读懂了一个项目”，而是完成了从真实运行、问题定位、源码理解到贡献路径设计的完整开源学习闭环。
+<!-- DAILY_CHECKIN_2026-07-14_END -->
+
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 今日完成：  
 \- 确定 Dev / Tech 主方向。  
 \- 提交三份产出：  
@@ -39,6 +94,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 今天是 Web3 Summer Internship Program / Monad Builder Camp 的 Day 5，主题是「AI 工具与 Vibe Coding 入门」。  
   
@@ -65,6 +121,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 今天是 Web3 Summer Internship Program / Monad Builder Camp 的 Day 4，主题是“第一笔 Monad Testnet 链上交易准备”。  
@@ -115,6 +172,7 @@ Testnet 虽然没有真实资产价值，但流程非常接近真实链上开发
 
 
 
+
 今日完成：  
 1\. 根据 Week 1 Day 3 任务，整理 Monad Testnet 配置清单：RPC URL、Chain ID、Explorer、Faucet。  
 2\. 在本地项目建立/更新了网络配置提交物 submissions/week-01/[network-config.md](http://network-config.md) 和实验记录 experiments/monad-wallet-setup/[README.md](http://README.md)。  
@@ -138,6 +196,7 @@ Testnet 虽然没有真实资产价值，但流程非常接近真实链上开发
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -175,6 +234,7 @@ Day: Day 2
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,13 +15,21 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-14
+<!-- DAILY_CHECKIN_2026-07-14_START -->
+学习solidity的各种函数  
+听了两场分享会，对Desci方向很感兴趣，阅读了一些相关资料，再研究研究，看能不能从传统科研往这个方向发展
+<!-- DAILY_CHECKIN_2026-07-14_END -->
+
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 做了一个小项目来更好的学习和实践如何接入钱包，如何用agent管理钱包，以及各环节的安全审查
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 ### 智能合约标准化部署 SOP
 
@@ -50,6 +58,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 ### 今日继续学习 智能合约开发 (Smart Contract Development)
@@ -100,6 +109,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习了怎么写智能合约，搭建了本地开发环境，基本上能看懂简单的合约，各种不同的语言都了解了一下。  
 
 1. 什么是智能合约？ —— “不会耍赖的自动售货机” 
@@ -141,6 +151,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 跟着web3实习手册学习，查漏补缺，逐个击破，夯实基础
 
 学习了TEE和ZK，在解决信任场景的时候可以搭配使用
@@ -155,12 +166,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 1，写简单的合约，部署合约，Remix（直接用AI也行，反正以后合约都是AI写）  
 2，听了老师分享会，学习了关于EPF (Ethereum Protocol Fellowship) 和 EIP（Ethereum Improvement Proposal），学习路线、研究方向等等
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

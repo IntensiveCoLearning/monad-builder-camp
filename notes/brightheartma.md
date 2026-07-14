@@ -15,8 +15,52 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-14
+<!-- DAILY_CHECKIN_2026-07-14_START -->
+## **今日进度：Week 2 Day 2｜排查 Moss monorepo 构建问题 + 撰写 Week 3 Role Statement**
+
+一句话总结：一次真实的 pnpm monorepo 报错排查，加上一份把 Week 1–2 产出转成 Week 3 组队筹码的角色声明。
+
+## **核心收获**
+
+**1\. Moss 是什么**
+
+-   把 Monad 上复杂的 DApp/协议交互抽象成 agent 可调用的统一流程：`discover → load → action → simulate`，由系统而非 agent 组装正确交易；agent 不用手搓 calldata、不碰 ABI 和 decimals 换算。
+    
+-   两条安全规则分别在两处强制执行：**effects 对账**（服务端机械判定，模拟出的实际资产流动只要和 Plan 声明有差异就 warning）、**意图对齐**（agent 侧，把 effects 摘要和用户原话核对）。Moss 本身永不签名、永不发送，私钥和最终决定权始终留在用户手里。
+    
+
+**2\. 调试实录：pnpm monorepo 构建失败**
+
+-   现象：跑 Moss 示例 `wrap` 直接报 `ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL`，只有个错误壳；把这行报错原样丢给 AI，AI 没有凭壳猜，而是先读 `package.json` 和入口脚本，重跑命令拿到完整堆栈 `ERR_MODULE_NOT_FOUND`，才确认是 `packages/core/dist` 不存在——仓库在这台机器上从未 build 过。
+    
+-   根因一句话：`workspace:\*` **依赖在运行时按普通 npm 包对待**（走 exports → dist），不是源码直连；fresh clone 之后跑任何示例前必须先 `pnpm build`。修复后重跑示例，四步全通过，`simulate` 在 Monad 主网真实模拟 1.5 MON 换 1.5 WMON，`warnings: []`。
+    
+
+**3\. Week 3 Role Statement：定位与队友需求**
+
+-   赛道 Tech，角色是链上开发 + 索引/数据层负责人：合约侧负责并行执行下的存储优化（`mapping` 替代全局计数器），链下侧负责 Proposed/Finalized 双游标 reorg-safe 索引器，外加合约安全 review。
+    
+-   最需要的队友是前端 Tech 伙伴（Next.js + wagmi/viem）——AI 辅助能把前端跑起来但难保证质量；其次是 Ops（社区/增长）和 Research（生态/方向判断）各一名，三条腿凑成完整闭环。
+    
+-   Proof of Work：Monad Testnet 上已部署的 NFTBadge / DAO Voting / Clicker 合约 + 可运行的索引器代码库，全部有公开打卡记录可查。
+    
+
+## **个人思考**
+
+-   Moss 的「effects 对账 + 意图对齐」两条门禁，和我关注的 AI agent 支付四要素（身份验证/预算约束/风险控制/可撤销交易）几乎是同一套思路的另一种实现——前者在交易签名前拦，后者在支付发生前拦，值得把两边的设计对照着看。
+    
+-   这次调试也提醒我一个通用习惯：**报错只是壳，别对着壳猜**——pnpm 顶层错误和 EVM revert 一样，真正的原因永远在下一层堆栈里，这条规则对合约调试同样适用。
+    
+-   Week 3 Role Statement 逼着我把 Week 1–2 的零散产出（徽章、DAO、索引器）第一次整理成「团队起步的技术底座」这个叙事——这比单独看每个项目更有说服力。
+    
+
+明日计划：跑通 `kuru-swap.ts`（跨 Plan 组合：MON→USDC swap），继续围绕 AI agent 支付 / 链上高频交互产出 Week 2 最小交付。
+<!-- DAILY_CHECKIN_2026-07-14_END -->
+
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 # 2026-07-13
 
 ## 今日进度：完成 Week 2 职业方向选择提交，搭建 AI 协作记录 + 学习记录归档体系
@@ -57,6 +101,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 # **残酷共学打卡 · 2026-07-11**
 
@@ -112,6 +157,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
 
+
 ## **今日进度：monad-clicker 加登录系统，并用真实使用数据修了一串前端 bug**
 
 昨天把「为什么需要频繁交互」的场景论证做完之后，今天把 monad-clicker 从 Demo 推进到「能被人反复实际使用」的状态：加了 MetaMask 登录（会话代签），然后没有止步于"能跑"，而是自己连续实测/连点/换账号，揪出了 6 个真实 bug 并逐一修复，最后把改动推到了 GitHub，也把 Week 1 Build Log 整理提交。
@@ -153,6 +199,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -206,6 +253,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -267,6 +315,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -337,6 +386,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 \## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
 
 \### 今天做了什么
@@ -376,6 +426,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

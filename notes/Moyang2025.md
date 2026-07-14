@@ -17,17 +17,24 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-初步地了解了Moss这个项目；回顾了有关Tokenomics的一些学习资料
+初步地了解了Moss这个项目；回顾了有关Tokenomics的一些学习资料  
+人们进入你的生态系统的一个最重要的原因是什么？这是网络的最有价值的交互（Most Valuable Interaction，MVI），代币设计的重点是激励这种 MVI 的可持续反馈循环。  
+
+![image.png](attachment:30dd7ac8-954f-40b9-a7ae-208885ca5dce:image.png)![image.png](attachment:b5a63ee7-6373-4bb0-bd0e-65954f622672:image.png)
+
+链接：[https://mp.weixin.qq.com/s/HQ4cU9mv6VfcaD8WZKX3kw](https://mp.weixin.qq.com/s/HQ4cU9mv6VfcaD8WZKX3kw)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 继续自行了解相关领域的研究，今天主要是预言机和多代币系统
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 完成了week1 的Demo，给下一周的思考定了基本的方向，细化了一些细节
@@ -38,11 +45,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 对自己初步构思的web3产品进行了深入思考，争取明天做出初版的demo
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -57,11 +66,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 根据分享和Co-Learning中的内容，了解了一些新东西；继续了解Monad
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -80,11 +91,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 用ai agent写了第一份智能合约，并完成了部署
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

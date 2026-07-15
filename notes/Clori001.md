@@ -17,7 +17,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-打卡
+打卡记录
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
@@ -25,7 +25,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
-打卡
+打卡记录
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14

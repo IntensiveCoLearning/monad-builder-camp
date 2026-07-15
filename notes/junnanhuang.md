@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-15
+<!-- DAILY_CHECKIN_2026-07-15_START -->
+回顾了昨天的colearning和今天lynn老师对于运营岗的介绍，我感觉我作为技术小白，更适合运营岗，因为最容易上手，而不是需要大量专业知识积累的技术岗和研究岗。我可以在做运营的同时学习技术岗和研究岗的专业知识，而后三个方向都能兼容。
+<!-- DAILY_CHECKIN_2026-07-15_END -->
+
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 今天学习了solidity的编译语言
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 今天还是跟着chatgpt学习编程，懂得了许多编程语言，逐渐能看懂Solidity的语言了。
 <!-- DAILY_CHECKIN_2026-07-13_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
 
+
 今天再次重看昨天的例会，大家的学习热情以及解决问题的能力都特别强，学习到了很多。
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天复习了区块链的基础知识以及编程的基础知识，一直学习新的内容但是旧的知识点没能很好掌握，还是需要暂停一下。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -68,11 +79,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天学习了区块链的基本知识，完成了钱包的注册以及交易，但在“用 AI 生成一个最小 Solidity 合约”这一步卡住了。我没有编程、代码的基础，明天需要先去补齐一下这一方面的知识。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

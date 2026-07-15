@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-15
+<!-- DAILY_CHECKIN_2026-07-15_START -->
+今天写的工作记录在notion上，分享一下链接：[https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3](https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3)
+<!-- DAILY_CHECKIN_2026-07-15_END -->
+
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 我今天的学习笔记 都搬到notion上了，完成了week2的一个任务：[https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy\_link](https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 开始看开源项目 moss：
 
@@ -40,6 +47,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 这次将我的项目部署到了github上，上传了我的第一个项目，刚开始原本是打算让claude替我完成的，但是api接的deepseek可能是能力不足，一直失败，所以选择手动部署，遇到问题问ai，这里记录下一些心得什么的：
@@ -80,6 +88,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 休息日ing
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
@@ -90,11 +99,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天没学什么，但是打个卡
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -137,6 +148,7 @@ ps：记得还要把私钥改成自己的
 
 
 
+
 今天主要学习了以太坊，和回顾了昨天的内容。
 
 1、老师先是带领我们回顾了一下钱包的设置，推荐了一个好用的钱包phantom；
@@ -160,6 +172,7 @@ ps：记得还要把私钥改成自己的
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

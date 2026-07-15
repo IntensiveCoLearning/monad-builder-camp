@@ -581,7 +581,7 @@ By completing the program, participants will leave with:
 | [doubao1106](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/doubao1106.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sonnyboy061117-cmd](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sonnyboy061117-cmd.md) | ⭕️ | ⭕️ | ✅ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [IsinkCN](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/IsinkCN.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [yangzhuo-ai](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yangzhuo-ai.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | |
+| [yangzhuo-ai](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yangzhuo-ai.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | |
 | [qoezh](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/qoezh.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [chxii](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/chxii.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | |
 | [B20190103103](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/B20190103103.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -816,6 +816,7 @@ By completing the program, participants will leave with:
 | [summer-sheep](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/summer-sheep.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

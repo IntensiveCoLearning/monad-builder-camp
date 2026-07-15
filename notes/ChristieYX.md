@@ -15,8 +15,85 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-15
+<!-- DAILY_CHECKIN_2026-07-15_START -->
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+/// @title NFTBadge
+/// @notice A minimal soulbound NFT badge: badges can be minted but not transferred.
+contract NFTBadge {
+    string public name = "NFT Badge";
+    string public symbol = "BADGE";
+    address public immutable owner;
+    uint256 public nextTokenId = 1;
+
+    mapping(uint256 => address) private _owners;
+    mapping(address => uint256) private _balances;
+    mapping(uint256 => string) private _tokenURIs;
+
+    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
+    event BadgeMinted(address indexed recipient, uint256 indexed tokenId, string tokenURI);
+
+    error NotContractOwner();
+    error ZeroAddress();
+    error TokenDoesNotExist();
+    error BadgesAreNonTransferable();
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    modifier onlyOwner() {
+        if (msg.sender != owner) revert NotContractOwner();
+        _;
+    }
+
+    /// @notice Issue a badge to a recipient. Only the contract deployer can mint.
+    function mintBadge(address recipient, string calldata uri)
+        external
+        onlyOwner
+        returns (uint256 tokenId)
+    {
+        if (recipient == address(0)) revert ZeroAddress();
+
+        tokenId = nextTokenId++;
+        _owners[tokenId] = recipient;
+        _balances[recipient]++;
+        _tokenURIs[tokenId] = uri;
+
+        emit Transfer(address(0), recipient, tokenId);
+        emit BadgeMinted(recipient, tokenId, uri);
+    }
+
+    function ownerOf(uint256 tokenId) public view returns (address) {
+        address tokenOwner = _owners[tokenId];
+        if (tokenOwner == address(0)) revert TokenDoesNotExist();
+        return tokenOwner;
+    }
+
+    function balanceOf(address account) external view returns (uint256) {
+        if (account == address(0)) revert ZeroAddress();
+        return _balances[account];
+    }
+
+    function tokenURI(uint256 tokenId) external view returns (string memory) {
+        ownerOf(tokenId); // verifies that the badge exists
+        return _tokenURIs[tokenId];
+    }
+
+    // Badges are soulbound, so every transfer attempt is rejected.
+    function transferFrom(address, address, uint256) external pure {
+        revert BadgesAreNonTransferable();
+    }
+}
+```
+<!-- DAILY_CHECKIN_2026-07-15_END -->
+
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 合约demo
 
 ```
@@ -64,6 +141,7 @@ contract Guestbook {
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 ```remix-solidity
 合约demo
@@ -152,6 +230,7 @@ contract OpsCampaignDemo {
 <!-- DAILY_CHECKIN_2026-07-12_START -->
 
 
+
 一、面试准备通用框架
 
 1.  **了解目标项目**
@@ -181,6 +260,7 @@ contract OpsCampaignDemo {
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -221,6 +301,7 @@ GHOST协议
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -417,6 +498,7 @@ MiCA（加密资产市场法规）：
 
 
 
+
 二、RPC节点服务详解
 
 在Web3开发中，RPC（Remote Procedure Call，远程过程调用）是连接前端应用与区块链网络的关键桥梁。理解RPC的工作原理、选择合适的RPC服务商，以及正确配置和使用RPC节点，是每个Web3开发者必须掌握的基础知识。
@@ -578,6 +660,7 @@ Twitter Space执行流程参考：主持人开场，嘉宾问答（每题15分�
 
 
 
+
 肆、智能合约开发
 
 一、Dapp架构和开发流程
@@ -663,6 +746,7 @@ Dapp的开发流程可以分为以下几个阶段：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -789,6 +873,7 @@ RWA（Real-World Assets）是把国债、基金份额、应收账款等现实世
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

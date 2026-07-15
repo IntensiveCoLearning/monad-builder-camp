@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-15
+<!-- DAILY_CHECKIN_2026-07-15_START -->
+![592fe03df460c9a59e134965af642c7a.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/elliothunter32-star/images/2026-07-15-1784121207325-592fe03df460c9a59e134965af642c7a.png)
+
+agents.md这个，我后续会结合自己的工作流深入研究一下；然后关于区块链开发，对于区块链的定义和理解比之前深了，也了解了区块链开发的几个方向和我们需要的技术栈
+<!-- DAILY_CHECKIN_2026-07-15_END -->
+
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 ## 一、ERC-20 是什么？
 
 **ERC** = Ethereum Request for Comments（以太坊意见征求稿），**20** 是提案编号。
@@ -249,6 +257,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
 
+
 分享一下今天的学习成果，从零搭了一个预测市场 DApp，已经上线了：
 
 [https://prediction-market-dapp.vercel.app/](https://prediction-market-dapp.vercel.app/)
@@ -260,6 +269,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 ## 一、账户与身份体系
@@ -315,6 +325,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 
 
 
+
 ![a672f12f-102a-4ea0-bd4a-38f9327668ac.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/elliothunter32-star/images/2026-07-09-1783605084886-a672f12f-102a-4ea0-bd4a-38f9327668ac.png)![12eaf9c6-c760-4770-a0ae-35d2ccda8daf.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/elliothunter32-star/images/2026-07-09-1783605100079-12eaf9c6-c760-4770-a0ae-35d2ccda8daf.png)
 
 1.agent高风险实例 过度授权 建议经常审查权限清单 使用agent guard工具 对于敏感操作使用人工复核  
@@ -328,6 +339,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 

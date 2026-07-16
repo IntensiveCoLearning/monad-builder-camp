@@ -15,6 +15,57 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-08-24
+<!-- DAILY_CHECKIN_2026-08-24_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-24_END -->
+
+# 2026-08-23
+<!-- DAILY_CHECKIN_2026-08-23_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-23_END -->
+
+# 2026-08-22
+<!-- DAILY_CHECKIN_2026-08-22_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-22_END -->
+
+# 2026-08-21
+<!-- DAILY_CHECKIN_2026-08-21_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-21_END -->
+
+# 2026-08-20
+<!-- DAILY_CHECKIN_2026-08-20_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-20_END -->
+
+# 2026-08-19
+<!-- DAILY_CHECKIN_2026-08-19_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-19_END -->
+
+# 2026-08-18
+<!-- DAILY_CHECKIN_2026-08-18_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-18_END -->
+
+# 2026-08-17
+<!-- DAILY_CHECKIN_2026-08-17_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-17_END -->
+
+# 2026-08-16
+<!-- DAILY_CHECKIN_2026-08-16_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-16_END -->
+
+# 2026-08-15
+<!-- DAILY_CHECKIN_2026-08-15_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-08-15_END -->
+
+
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
 今天主要围绕 **Portfolio 整理** 和 **开源贡献** 展开学习。相比前几天只关注完成任务，今天更意识到 Portfolio 不只是展示最终成果，更要体现自己的思考过程、AI 协作方式以及解决问题的能力。

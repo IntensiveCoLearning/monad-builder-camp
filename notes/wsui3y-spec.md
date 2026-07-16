@@ -68,13 +68,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-今天主要围绕 **Portfolio 整理** 和 **开源贡献** 展开学习。相比前几天只关注完成任务，今天更意识到 Portfolio 不只是展示最终成果，更要体现自己的思考过程、AI 协作方式以及解决问题的能力。
-
-上午整理了 Week 2 的学习内容，了解了不同方向（Research、Ops、Dev）对应的 Portfolio 应该包含哪些内容。我目前还是更偏向 Dev/Research，希望后续能够继续做一些有价值的研究和开发工作，因此也开始思考自己 Week 3 能承担什么角色，以及还需要哪些队友一起完成项目。
-
-今天花了不少时间完成 Moss 的开源贡献。从 Fork 仓库、创建分支、复制 Adapter 模板，到第一次使用 Git、VS Code 和 GitHub 提交 Pull Request，中间踩了很多坑，比如 Git Push 失败、VS Code 无法连接 GitHub、代理配置等问题，但最后还是成功创建了自己的第一个 PR。整个过程中 AI 帮我理解项目结构、生成 Adapter 初版代码、分析报错和指导 Git 操作，而我主要负责理解流程、确认实现内容、处理环境问题以及最终提交和检查结果。
-
-这次经历让我对开源协作流程有了更直观的认识，也第一次真正完成了从 Fork → Branch → Commit → Push → Pull Request 的完整流程。虽然很多细节还需要继续学习，但已经没有之前那么陌生了。接下来会继续完善自己的 Portfolio，把学习过程、PR、运行结果以及 AI Collaboration Log 一起整理出来，为 Week 3 组队做好准备。
+打卡
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16

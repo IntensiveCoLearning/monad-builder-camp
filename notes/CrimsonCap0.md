@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+huahua老师准备的谁是卧底小游戏很好玩！今天很开心哈哈哈，第一轮就轮到我了～
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 今天参加了运营分享会，邀请到lxdao的运营大佬给大家讲web3的运营究竟在做什么。破除了大家认为运营就是发发推特的传统想法～运营实际上涉及到项目落地的全流程，包括数据分析、策略优化，后续期待有更深层的理解。
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
 
+
 听嘉宾讲解了DeSci的相关内容，以及对public goods的展望。另外也具体确定了week3的角色，并且建立了building log，后续持续更新。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 今日学习很轻松，susheng老师举行了一个小游戏，让大家说服各种角色，让他们了解投票上链的意义。我抽到了web3媒体🤣虽然还是讲完了，但是有同学的质疑：记者还要掏钱投票这对吗？看来得让faucet发真币了🤣
@@ -38,11 +46,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天依旧是周末，没有安排的任务～于是重新复盘了一下第一周的所有内容，以及产出的非常粗糙的demo。为第二周制定了计划，首先要做的是解决一下demo里面的多钱包连接问题。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -60,6 +70,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -84,6 +95,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -305,6 +317,7 @@ Agent 任务托管、链上赏金、Monad Testnet、React DApp、ethers.js、Met
 
 
 
+
 测试了链上交易，并且构思了接下来的项目方向：既不能太简单，也不能没有市场需求。目前打算设计并开发基于 Monad Testnet 的 AI Agent 任务托管 DApp，使用 Solidity 实现任务发布、资金托管、结果提交与奖励释放逻辑，使用 React + ethers.js 实现钱包连接、任务状态读取、链上交易提交与区块浏览器追踪。大概是这样……过两天逐渐开始开个头，看看有没有可行性。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -319,11 +332,13 @@ Agent 任务托管、链上赏金、Monad Testnet、React DApp、ethers.js、Met
 
 
 
+
 开通了metamask钱包，创建两个账户负责接收，并且完成了链上第一笔交易，学会了看from/to/transaction hash。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

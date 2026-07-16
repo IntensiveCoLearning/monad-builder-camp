@@ -631,7 +631,7 @@ By completing the program, participants will leave with:
 | [Manifold68575](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Manifold68575.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [donaldsondonaldsonelg19m5-commits](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/donaldsondonaldsonelg19m5-commits.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [tianjinyi](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/tianjinyi.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [yyou89830-coder](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yyou89830-coder.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | |
+| [yyou89830-coder](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yyou89830-coder.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | |
 | [Cowrywang](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Cowrywang.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [gyw20061019](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/gyw20061019.md) | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zzhzkx](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zzhzkx.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

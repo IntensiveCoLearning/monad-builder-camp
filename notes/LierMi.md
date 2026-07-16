@@ -15,8 +15,76 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+继续学习DeSci相关内容以及和医药大佬聊了它未来的应用方向
+
+### DeSci 药物专利绑定 IP-NFT 的核心难点
+
+让现实世界中的实物专利成功绑定链上 IP-NFT 并向千名持有人分红，最棘手的难点不仅在智能合约代码，而在**链下法律映射（Legal-to-Code Bridging）与证券化合规（Securities Compliance）**：
+
+-   **难点一：实体法律主权的锚定（法律与代码的桥接）：** 智能合约无法直接强制现实世界各国的专利局。必须在链下设立专门的法律实体（如 SPV 特殊目的载体或瑞士/开曼 DAO 实体）来真正持有纸质专利文件，通过签署严格的现实法律协议（如 Molecule 提出的 IP-NFT 法律框架），在法律上明确该实体产生的全部商业利润独家授权并归宿于链上对应 IP-NFT 的持有者。
+    
+-   **难点二：代币化分红的金融合规（防范证券法打击）：** 将药物销售版税自动化分红给成千上万个链上散户地址，在大多数国家（特别是美国 SEC）会被直接界定为**未经注册的非法证券发行**。智能合约层必须放弃无权限的自由转账，转而集成合规证券型代币标准（如 ERC-3643），确保只有通过了现实 KYC/AML（身份与反洗钱认证）的白名单地址，才能持有该分红份额并领取收益。
+    
+
+### 智能合约部署基础版（Hardhat vs Foundry）
+
+**方案 A：Hardhat 部署脚本 (**`scripts/deploy.ts`**)**
+
+TypeScript
+
+```
+import { ethers } from "hardhat";
+
+async function main() {
+  const [deployer] = await ethers.getSigners();
+  console.log("Deploying contract with the account:", deployer.address);
+
+  // 获取合约工厂并部署
+  const myContract = await ethers.deployContract("MyContract");
+  await myContract.waitForDeployment();
+
+  console.log(`MyContract deployed successfully to: ${myContract.target}`);
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
+```
+
+**方案 B：Foundry 部署脚本 (**`script/Deploy.s.sol`**)**
+
+Solidity
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "forge-std/Script.sol";
+import "../src/MyContract.sol";
+
+contract DeployScript is Script {
+    function run() external {
+        // 读取环境变量中的私钥并开启链上广播
+        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast(deployerPrivateKey);
+
+        // 实例化合约
+        MyContract myContract = new MyContract();
+
+        vm.stopBroadcast();
+    }
+}
+```
+
+继续学习写合约
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 学习了DeSci相关的内容/学习手册，Dapp开发流程
 
 ### Traditional Web vs. Web3 (DApp) Architecture
@@ -75,6 +143,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
 
+
 学习solidity的各种函数  
 听了两场分享会，对Desci方向很感兴趣，阅读了一些相关资料，再研究研究，看能不能从传统科研往这个方向发展
 <!-- DAILY_CHECKIN_2026-07-14_END -->
@@ -83,11 +152,13 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 <!-- DAILY_CHECKIN_2026-07-13_START -->
 
 
+
 做了一个小项目来更好的学习和实践如何接入钱包，如何用agent管理钱包，以及各环节的安全审查
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -118,6 +189,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -172,6 +244,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 学习了怎么写智能合约，搭建了本地开发环境，基本上能看懂简单的合约，各种不同的语言都了解了一下。  
 
 1. 什么是智能合约？ —— “不会耍赖的自动售货机” 
@@ -215,6 +288,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 跟着web3实习手册学习，查漏补缺，逐个击破，夯实基础
 
 学习了TEE和ZK，在解决信任场景的时候可以搭配使用
@@ -231,12 +305,14 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 1，写简单的合约，部署合约，Remix（直接用AI也行，反正以后合约都是AI写）  
 2，听了老师分享会，学习了关于EPF (Ethereum Protocol Fellowship) 和 EIP（Ethereum Improvement Proposal），学习路线、研究方向等等
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

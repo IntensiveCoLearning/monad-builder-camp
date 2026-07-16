@@ -751,7 +751,7 @@ By completing the program, participants will leave with:
 | [zhaody26-collab](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zhaody26-collab.md) | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [WendyYuHuan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/WendyYuHuan.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | |
 | [a1449](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/a1449.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | |
-| [levi-oy](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/levi-oy.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | |
+| [levi-oy](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/levi-oy.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | |
 | [m7ho](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/m7ho.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [42zd57yk89-droid](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/42zd57yk89-droid.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [LLLay-zz](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LLLay-zz.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

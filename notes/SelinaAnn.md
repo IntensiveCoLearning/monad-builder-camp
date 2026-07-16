@@ -15,8 +15,36 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+**1\. 活动定义的 5 个核心锚点**
+
+-   **活动目标**：是为了解决“新人不懂怎么用钱包”（教育），还是“给新上线的测试网引流”（传播）？
+    
+-   **目标听众**：千万不要说“面向所有 Web3 爱好者”。要精确到：“有 MetaMask 钱包，但没在 Monad 测试网发过交易的开发者”。
+    
+-   **核心主题**：标题即主题。❌《Web3 的未来》；✅《30 分钟搞懂 Monad 并行执行如何提升 DApp 速度》。
+    
+-   **关键动作 (CTA)**：听众听完必须做一件事。是扫码进群？是去 Faucet 领水？还是提交一个合约地址？
+    
+-   **执行边界**：明确说明“本次只做 1 小时线上语音，不做线下、不做视频回放剪辑”。
+    
+
+**2\. 基础闭环流程** `预热（发推预告+报名链接）` → `参与（开场抛出核心问题）` → `互动（Q&A环节引导听众发言）` → `反馈（散场前再次强调CTA）` → `复盘（统计报名转化率）`
+
+> 📝 **Ops 产出模板：Space 策划 Brief**
+> 
+> -   **活动名称**：\[精准主题\]
+>     
+> -   **唯一 CTA**：\[听众离开页面时需要完成的动作\]
+>     
+> -   **听众参与路径草图**：`看到推文` -> `点击 Luma 链接` -> `添加日历提醒` -> `准时进入 X Spaces` -> `听到特定口令` -> `在 Discord 频道提交答案领勋章`
+>
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 **1\. “两条线”研究法**
 
 -   **线 A（规范线）**：读 EIP（以太坊改进提案）或 MIP（Monad 改进提案）。理解底层的“游戏规则”是怎么被制定出来的。
@@ -50,11 +78,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-14-1784037939936-image.png)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 # **🛠️ AI-assisted Dev Plan**
@@ -125,11 +155,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-12-1783819303776-image.png)
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -182,6 +214,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ### **从“交易”到“合约”的思维跃迁**
 
 在 DAY 3，你通过钱包发起了一笔**转账交易**。今天，你将部署一个**智能合约**，它本质上是一段**自动执行、不可篡改的代码**，被永久存储在区块链上。理解以下核心概念的关联，是今天学习的关键。
@@ -206,11 +239,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-09-1783601532564-image.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -249,11 +284,13 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-07-1783431460944-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

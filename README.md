@@ -378,7 +378,7 @@ By completing the program, participants will leave with:
 | [LinzhaoxiCelia](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LinzhaoxiCelia.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [imkatr1na](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/imkatr1na.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [onlyoneAlexia](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/onlyoneAlexia.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [kkiii2025](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/kkiii2025.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | |
+| [kkiii2025](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/kkiii2025.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | |
 | [ChongCzi](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/ChongCzi.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [RRYYQ](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/RRYYQ.md) | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [DrakenZeng](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/DrakenZeng.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

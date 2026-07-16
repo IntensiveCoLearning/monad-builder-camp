@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+占位
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 ### 活动标题
 
 -   **主标题：** Vibe Coding 破冰局：非技术背景如何用 AI 落地个人项目
@@ -94,6 +100,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
 
+
 ### 线上轻量级活动（Space/AMA）极简策划模型
 
 **一、 核心定义阶段（Make it Clear）**
@@ -149,6 +156,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-13_START -->
 
 
+
 ### 学习记录：Web3 社区运营实操与体系拆解
 
 **一、 核心角色认知：从单向传播到生态共建** Web3 社区运营的本质是连接用户与项目，虽然载体发生了变化，但其底层依然离不开扎实的内容策划与品牌公关逻辑。
@@ -197,6 +205,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天临时有事情没有整理完，下周慢慢同步上
 
 这周确实突然亲人离世，一直在处理各种事情，太突发了。
@@ -206,6 +215,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -221,6 +231,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -243,6 +254,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 占位笔记（不是水笔记，不好意思）
 
 这两天家里面出了一些大事情，最近几天在处理，没有精力认真归档笔记，等到周末的时候会对这周所有学习笔记进行补充。
@@ -252,6 +264,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -278,6 +291,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 占位笔记
 
 （这两天突发有急事，笔记过两天补上更新）
@@ -289,6 +303,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

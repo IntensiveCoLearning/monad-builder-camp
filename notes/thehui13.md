@@ -15,19 +15,29 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+参加colearning，参与二次元小游戏，观看moss的github并star
+
+![截屏2026-07-16 21.03.54.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/thehui13/images/2026-07-16-1784207038580-__2026-07-16_21.03.54.png)
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 今天了解了不是技术岗的运营岗位，需要懂一点技术，要干用户增涨，活动策划等工作
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
 
+
 今天听大佬们分享许多web3好的开源项目，以及如何为开源项目做贡献，成为社区维护的一部分，我需要行动起来，运行一下项目，先成为用户，感受别人idea设计先进在什么地方
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 今天总结本周的学习内容，明确下一周的学习方向
@@ -38,11 +48,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习buildanything中的初中内容，非常好，把agent讲的通俗易懂，我了解了一项agent工程需要哪些组件
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -59,11 +71,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天了解了一下agent的安全问题，Agent 的安全问题主要包括提示词注入、工具滥用、敏感信息泄露、权限控制不足、RAG 知识库污染、代码执行风险、越权访问以及模型幻觉导致的错误决策等。由于 Agent 具备调用外部工具和执行操作的能力，其风险远高于普通聊天模型。所以在设计 Agent 时，我们要遵循最小权限原则，增加人工确认，并通过权限校验、输入过滤、输出审查和安全沙箱等机制保障系统安全。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -77,6 +91,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

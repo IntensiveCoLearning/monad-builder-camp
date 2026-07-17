@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-17
+<!-- DAILY_CHECKIN_2026-07-17_START -->
+参加实习计划例会，聆听了六位同学们的精彩发言，看到了社媒上同学们对这周所学的运营分享帖、vibecoding的技巧以及skillls项目等等，学习了如何撰写web3行业的简历。
+
+![屏幕截图 2026-07-17 190804.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/zelllphyrx/images/2026-07-17-1784300026436-_____2026-07-17_190804.png)
+<!-- DAILY_CHECKIN_2026-07-17_END -->
+
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 在谁是卧底的游戏中了解了一些web3名词
 
 ![屏幕截图 2026-07-16 203011.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/zelllphyrx/images/2026-07-16-1784208221280-_____2026-07-16_203011.png)
@@ -26,11 +34,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-15_START -->
 
 
+
 了解了web3从目标到生态增长的运营全流程，包括从明确目标到寻找合作伙伴，从宣发到设计规划，从社区运营、项目提交评审与反馈再到最后的孵化与生态增长。了解了AI如何改变了运营工作流以及模拟了web3运营的一天在做什么...
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 

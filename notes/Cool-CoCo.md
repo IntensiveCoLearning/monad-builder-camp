@@ -37,13 +37,14 @@ Day12学习记录：
 
 接下来计划——
 
-继续跟着课程学习，确定下来接下来的方向，找可以互补的团队队友
+继续跟着课程学习，确定下来接下来的方向，找可以互补的团队队友。
 
 ![Day12-项目共享、所有本次会议分享内容的同学.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-17-1784301982114-Day12-__________________.png)![Day12-Week3学习计划.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-17-1784302103925-Day12-Week3____.png)![Day12-苏生分享，luma活动、跑会、关注行业活动、黑客松活动.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-17-1784302205368-Day12-_____luma__________________.png)
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 今日学习： 参与线上Co-learning会议，很有趣的寓教于乐的学习形式，通过谁是卧底的游戏让我们对Web3行业的基础知识有了更进一步的理解； 参与截图如下：
@@ -69,6 +70,7 @@ Day12学习记录：
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -128,6 +130,7 @@ b本次课程对于想要希望进入 社区运营、DevRel、市场增长、内
 
 
 
+
 0713 Day06-
 
 Week2学习记录：
@@ -151,6 +154,7 @@ Week2学习记录：
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -189,6 +193,7 @@ Week2学习记录：
 
 
 
+
 20260712自由打卡：
 
 今日记录——
@@ -204,6 +209,7 @@ Week2学习记录：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -241,6 +247,7 @@ Week2学习记录：
 
 
 
+
 Day05（2026-07-10）学习记录：
 
 本次学习主要围绕 “Web3 实习计划例会｜学员总结+Co-Learning”的线上会议目标，通过线上Zoom会议进行今日学习任务：
@@ -261,6 +268,7 @@ Day05（2026-07-10）学习记录：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -330,6 +338,7 @@ Day04学习记录：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -492,6 +501,7 @@ Day04学习记录：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-17
+<!-- DAILY_CHECKIN_2026-07-17_START -->
+打卡，理解 Monad 技术架构与开发文档
+<!-- DAILY_CHECKIN_2026-07-17_END -->
+
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 打卡，整合了前几天的知识点及实操
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 了解大概开发，运营内容流程和工具
 
@@ -32,11 +39,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-12_START -->
 
 
+
 整理了第一周内容，往research方向学习
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -47,6 +56,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -63,6 +73,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习了vibecoding
 
 Dapp开发
@@ -70,6 +81,7 @@ Dapp开发
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 

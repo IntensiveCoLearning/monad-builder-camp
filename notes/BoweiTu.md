@@ -15,19 +15,29 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-17
+<!-- DAILY_CHECKIN_2026-07-17_START -->
+学习DeFi基础模块，理解流动性池、AMM自动做市商的运行原理。对比不同协议的代币经济模型，分析激励机制设计逻辑。
+
+很多经济模型设计环环相扣，还需要慢慢拆解，进一步研究实际项目落地案例。
+<!-- DAILY_CHECKIN_2026-07-17_END -->
+
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 深入弄懂Monad的共识机制Monad‑BFT，区分了异步执行架构和传统公链的运行差异。研读官方文档，理清LayerZero、Hyperlane跨链方案的适用场景。浏览简单的合约源码，学习MCP‑API的调用逻辑，了解开发者配置RPC节点的方法，注重代码安全性，稳步夯实区块链相关开发认知。
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
 
+
 今日Web3学习打卡：系统了解Monad公链底层架构，读懂了MCP协议和传统API的区别，明白了Monad依托C++与Rust实现高性能异步执行。查阅官方RPC配置参数，学习跨链桥OFT‑CCIP相关原理，简单阅读Solidity基础代码。意识到合约开发安全至关重要，后续继续练习编写极简智能合约，夯实区块链开发基础。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 今天系统梳理了Monad公链相关基础内容，弄懂了L1底层链和通用API、MCP协议的层级区别：API是通用互联网调用接口，MCP是专门适配大模型交互的协议。
@@ -44,11 +54,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习了智能合约相关内容 注册了Meta Mask并转给自己了第一笔资金
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -63,11 +75,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习了Web3和Web3.0之间的关系相关知识 非常有趣！
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -86,11 +100,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天我学习了Monad 主网链配置文档，包含链基础参数、RPC 节点、区块浏览器、标准合约地址、开发配套资源等等知识点 感到受益匪浅
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

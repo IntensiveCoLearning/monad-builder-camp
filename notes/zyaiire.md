@@ -15,8 +15,526 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-18
+<!-- DAILY_CHECKIN_2026-07-18_START -->
+如果把 **FluxA** 放在整个 AI Agent 行业来看，我认为它不是在做一个普通的 Agent，而是在做 **Agent Economy（Agent 经济）里的支付基础设施（Payment Infrastructure）**。
+
+这条赛道我认为**天花板很高，但风险也非常高**。
+
+* * *
+
+## 先说结论
+
+我的判断是：
+
+| 维度 | 评价 |
+| --- | --- |
+| 市场空间 | ⭐⭐⭐⭐⭐ |
+| 当前成熟度 | ⭐⭐☆☆☆ |
+| 技术壁垒 | ⭐⭐⭐⭐☆ |
+| 商业化潜力 | ⭐⭐⭐⭐☆ |
+| 成功概率 | 中等偏低（赢家通吃） |
+
+如果 Agent 真进入大规模商业化，这类项目可能会成为 **"Agent 时代的 Stripe"**。
+
+但如果 Agent 没有真正进入自动消费（Autonomous Spending），FluxA 的市场会很小。
+
+* * *
+
+# 为什么这个赛道值得做？
+
+目前所有 Agent 都有一个共同问题：
+
+> Agent 能调用 API，但是不能自己付钱。
+
+例如：
+
+Claude：
+
+> 我帮你生成图片。
+
+但是：
+
+> 去 Midjourney 买一次生成额度。
+
+它做不了。
+
+原因不是模型不会。
+
+而是：
+
+**没有支付层。**
+
+* * *
+
+FluxA 正在解决这个问题。
+
+它提供：
+
+-   Agent Wallet
+    
+-   Payment Intent
+    
+-   Agent Identity
+    
+-   MCP 收费
+    
+-   x402 支付
+    
+-   Agent Payment Protocol (AEP2)
+    
+
+本质就是：
+
+> 给 AI 一个钱包。([Fluxapay](https://fluxapay.xyz/?utm_source=chatgpt.com))
+
+* * *
+
+# 为什么很多人觉得这是未来？
+
+因为 Agent 的最终形态其实不是 Chat。
+
+而是：
+
+Agent 完成一个完整 Workflow。
+
+例如：
+
+```
+用户：
+
+帮我做一份市场调研。
+
+↓
+
+Agent：
+
+Google Search
+
+↓
+
+Perplexity API
+
+↓
+
+Firecrawl
+
+↓
+
+PDF解析
+
+↓
+
+Notion
+
+↓
+
+Claude
+
+↓
+
+GPT
+
+↓
+
+图片生成
+
+↓
+
+最终报告
+```
+
+这里面：
+
+可能调用：
+
+10 个 API
+
+20 个 MCP
+
+5 个 SaaS
+
+如果每一个都：
+
+```
+人工充值
+人工绑卡
+人工买套餐
+```
+
+Agent 根本没法自动运行。
+
+所以必须变成：
+
+```
+调用
+
+↓
+
+自动报价
+
+↓
+
+自动付款
+
+↓
+
+继续执行
+```
+
+这就是 FluxA 想解决的问题。([Fluxapay](https://fluxapay.xyz/protocol?utm_source=chatgpt.com))
+
+* * *
+
+# 我觉得真正大的机会不是 Wallet
+
+很多人第一眼会觉得：
+
+> 哦，就是一个钱包。
+
+其实不是。
+
+真正大的护城河反而是：
+
+## Payment Intent
+
+例如：
+
+```
+Agent：
+
+我要买一次 OCR。
+
+价格：
+
+$0.03
+
+↓
+
+自动授权
+
+↓
+
+付款
+
+↓
+
+调用
+```
+
+这比：
+
+```
+信用卡
+
+Stripe
+
+Checkout
+
+网页
+```
+
+效率高太多。
+
+未来 Agent 根本不会点网页。
+
+它只需要：
+
+```
+Payment Intent
+```
+
+官网其实一直强调这一点。([Fluxapay](https://www.fluxapay.xyz/product?utm_source=chatgpt.com))
+
+* * *
+
+# 我认为真正值钱的是 MCP Monetization
+
+这一块我反而觉得比 Wallet 更重要。
+
+因为未来一定会出现：
+
+```
+100 万 MCP
+
+1000 万 API
+
+```
+
+问题来了：
+
+怎么收费？
+
+目前：
+
+几乎都是：
+
+```
+订阅
+
+API Key
+
+月付
+```
+
+未来很可能变成：
+
+```
+一次调用
+
+$0.0005
+```
+
+Agent：
+
+```
+自动找
+
+↓
+
+自动比较
+
+↓
+
+自动付款
+
+↓
+
+自动调用
+```
+
+这就是：
+
+Machine Commerce。
+
+FluxA 现在就在布局这一层。([Fluxapay](https://fluxapay.xyz/?utm_source=chatgpt.com))
+
+* * *
+
+# 为什么 Web3 更适合？
+
+很多人说：
+
+Stripe 不就行了吗？
+
+其实不是。
+
+因为：
+
+Agent 不可能：
+
+```
+登录
+
+验证码
+
+绑卡
+
+2FA
+```
+
+但是：
+
+钱包：
+
+```
+签名
+
+↓
+
+结束
+```
+
+另外还有：
+
+-   全球支付
+    
+-   微支付（几分钱）
+    
+-   USDC
+    
+-   API 即付款
+    
+
+这些都是链上支付的优势。([arXiv](https://arxiv.org/abs/2604.03733?utm_source=chatgpt.com))
+
+* * *
+
+# 但是，我觉得 FluxA 面临三个巨大风险
+
+## 第一：
+
+Agent 是否真的会自己花钱？
+
+这是最大的赌注。
+
+如果未来：
+
+OpenAI
+
+Claude
+
+Google
+
+还是：
+
+```
+用户点确认
+```
+
+那：
+
+Wallet 价值会下降。
+
+* * *
+
+## 第二：
+
+大厂可能自己做。
+
+例如：
+
+Google
+
+AP2
+
+Coinbase
+
+x402
+
+OpenAI
+
+Anthropic
+
+都已经开始布局 Agent Payment。([Fluxapay](https://fluxapay.xyz/blog?utm_source=chatgpt.com))
+
+如果：
+
+OpenAI：
+
+```
+Agent Wallet
+
+Agent Checkout
+
+Agent Pay
+```
+
+直接内置。
+
+第三方压力就会非常大。
+
+* * *
+
+## 第三：
+
+网络效应极强。
+
+支付行业：
+
+通常都是：
+
+Winner Takes Most。
+
+就像：
+
+Stripe
+
+PayPal
+
+Visa
+
+很难出现：
+
+第十名。
+
+所以：
+
+未来可能：
+
+```
+全球：
+
+2~3 家 Agent Payment
+
+吃掉绝大部分市场
+```
+
+* * *
+
+# 我最看好的不是 Wallet，而是整个 Agent Commerce
+
+FluxA 官网已经不仅仅在讲 Wallet。
+
+它开始讲：
+
+-   Agent Marketplace
+    
+-   Agent Identity
+    
+-   Capability Discovery
+    
+-   Payment Protocol
+    
+-   Monetization
+    
+-   AI Commerce
+    
+
+实际上是在做 Agent Commerce 的基础设施。([Fluxapay](https://fluxapay.xyz/?utm_source=chatgpt.com))
+
+如果未来真的出现：
+
+```
+Agent
+↓
+
+发现服务
+
+↓
+
+议价
+
+↓
+
+付款
+
+↓
+
+调用
+
+↓
+
+结算
+```
+
+那么：
+
+支付只是其中一层。
+
+真正大的市场是：
+
+整个 Machine Economy。
+
+* * *
+
+## 我的整体判断
+
+如果从未来 5～10 年来看，我会这样评价这个赛道：
+
+-   **短期（1–2 年）**：仍属于基础设施建设阶段，开发者数量和真实支付需求有限，商业化更多依赖早期生态合作。
+    
+-   **中期（3–5 年）**：如果 MCP、x402、Agent-to-Agent 协议逐渐普及，Agent 支付会开始形成真实需求，市场可能进入快速增长期。
+    
+-   **长期（5–10 年）**：如果 AI Agent 成为互联网的重要使用主体，那么支付、身份、授权和结算会像今天的 HTTP、OAuth、Stripe 一样成为底层基础设施。
+    
+
+因此，我认为 **FluxA 押注的是一个正确的方向，但它真正的竞争对象并不是其他 Web3 钱包，而是未来的 Stripe、Coinbase，甚至 OpenAI、Anthropic、Google 等平台级玩家。** 能否胜出，取决于它是否能在生态形成之前建立协议标准和网络效应，而不是单纯做出一个 Agent Wallet。
+<!-- DAILY_CHECKIN_2026-07-18_END -->
+
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 ## 实现 Cadence：单时隙版本
 
 Cadence究竟是什么
@@ -70,6 +588,7 @@ Cadence的一个时隙是如何工作的
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 ## 加密钱包
 
@@ -218,6 +737,7 @@ Cadence的一个时隙是如何工作的
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 ## 让你的应用具备生产级品质
@@ -380,6 +900,7 @@ gas 的作用:
 
 
 
+
 # 从“裸奔”到受控：AI Agent高危，案例解析与安全构建
 
 AgentGuard
@@ -397,6 +918,7 @@ ai agent安全防线看起来 coding agent 也会做
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -453,6 +975,7 @@ layer 2 和 layer 1 之间的关系是什么（嘉宾说 layer 2 处理的交易
 
 
 
+
 epf都是自学的，epf 和智能合约相比更偏向于密码学和数学的知识，会更难。  
 可以做执行层和共识层去找上面的 issue 然后去进行修。
 
@@ -480,6 +1003,7 @@ metamask 等钱包就是构建在以太坊之上的应用
 
 
 
+
 很早之前用过 okx wallet，第一次用小狐狸。  
   
 之前还是主要通过交易的用户用钱包，完全没有想过区块链底层技术有这么多的方向。  
@@ -489,6 +1013,7 @@ metamask 等钱包就是构建在以太坊之上的应用
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -519,6 +1044,7 @@ SVP 是一个 AI Native 链，有 agent的 mcp 能够有强力的安全边界。
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

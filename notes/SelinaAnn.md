@@ -15,8 +15,46 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-18
+<!-- DAILY_CHECKIN_2026-07-18_START -->
+**📝 Dev 产出模板：AI-assisted Dev Plan**
+
+# **🛠️ AI-assisted Dev Plan**
+
+## **1\. 产品概念 (一句话)**
+
+**\[如：一个网页，用户连钱包后，能向指定地址匿名发送一条消息并上链。\]**
+
+## **2\. 核心用户路径**
+
+**连接钱包 -> 输入文本 -> 点击发送 -> MetaMask 弹窗 -> 页面显示成功**
+
+## **3\. 边界控制 (三栏表)**
+
+-   **Real: 1. 合约存储消息 2. ethers.js 调用**
+    
+-   **Mock: 1. 页面 UI 极简，无 CSS 框架 2. 不做消息列表查询功能**
+    
+-   **Out of Scope: 1. 加密功能 2. NFT 化消息**
+    
+
+## **4\. 必读文档 (只读这些)**
+
+-   **Monad Docs: RPC 节点怎么填**
+    
+-   **ethers.js: Provider 怎么实例化**
+    
+
+## **5\. AI 协作边界**
+
+-   **AI 做: 生成合约基础框架、写前端 fetch 逻辑、帮我找 Remix 报错原因。**
+    
+-   **我做: 决定架构、审核合约有没有漏洞、手动在 MetaMask 里确认交易。**
+<!-- DAILY_CHECKIN_2026-07-18_END -->
+
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 **1\. 什么是 AI-assisted Web3 Prototype？** 你不再是苦力，而是**架构师 + 审计员**。你用 Cursor/ChatGPT 写脚手架、生成基础合约、解释报错；你负责把模块拼起来，并确保不把私钥喂给 AI。
 
 **2\. 终极心法：三栏 Scope 控制表** 在写任何代码前，必须把功能填入下面三个盒子里。**这是本周不熬夜、能交差的唯一保障。**
@@ -38,6 +76,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 **1\. 活动定义的 5 个核心锚点**
 
@@ -66,6 +105,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 **1\. “两条线”研究法**
@@ -103,11 +143,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-14-1784037939936-image.png)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -182,11 +224,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-12-1783819303776-image.png)
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -243,6 +287,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ### **从“交易”到“合约”的思维跃迁**
 
 在 DAY 3，你通过钱包发起了一笔**转账交易**。今天，你将部署一个**智能合约**，它本质上是一段**自动执行、不可篡改的代码**，被永久存储在区块链上。理解以下核心概念的关联，是今天学习的关键。
@@ -269,11 +314,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-09-1783601532564-image.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -316,11 +363,13 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-07-1783431460944-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-18
+<!-- DAILY_CHECKIN_2026-07-18_START -->
+Uniswap V3 Notion笔记链接：[https://www.notion.so/Uniswap-V3-3a0d7418ee2180e59f70feb8d872da6e?source=copy\_link](https://www.notion.so/Uniswap-V3-3a0d7418ee2180e59f70feb8d872da6e?source=copy_link)
+<!-- DAILY_CHECKIN_2026-07-18_END -->
+
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 今日主要了解了改进提案和治理提案
 
 | 名称 | 全称 | 所属范围 | 主要解决什么问题 |
@@ -188,6 +194,7 @@ EIP、ERC、MIP 通常会详细说明：
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
 
+
 | An NFT internet  一个非同质化代币网络 | The internet today  如今的互联网 |
 | --- | --- |
 | You own your assets! Only you can sell or swap them.你的资产属于你！只有你有权出售或交换这些资产。 | You rent an asset from some organization and it can be taken away from you.你从某个机构租借了一处资产，而这些资产最终可能会被夺走。 |
@@ -204,6 +211,7 @@ EIP、ERC、MIP 通常会详细说明：
 <!-- DAILY_CHECKIN_2026-07-14_START -->
 
 
+
 初步地了解了Moss这个项目；回顾了有关Tokenomics的一些学习资料  
 人们进入你的生态系统的一个最重要的原因是什么？这是网络的最有价值的交互（Most Valuable Interaction，MVI），代币设计的重点是激励这种 MVI 的可持续反馈循环。  
 
@@ -218,11 +226,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 继续自行了解相关领域的研究，今天主要是预言机和多代币系统
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -239,11 +249,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 对自己初步构思的web3产品进行了深入思考，争取明天做出初版的demo
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -264,11 +276,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 根据分享和Co-Learning中的内容，了解了一些新东西；继续了解Monad
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -293,11 +307,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 用ai agent写了第一份智能合约，并完成了部署
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

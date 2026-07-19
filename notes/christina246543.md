@@ -17,11 +17,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-Regarding decentralization, blockchain networks are distributed globally, with each node maintaining a full copy of all data. As long as at least one node remains operational, the blockchain data persists indefinitely. True immutability stems from the global distribution of nodes—no single entity controls the majority of nodes. Since altering records requires control of more than 51% of nodes, which is practically infeasible across a globally distributed network, the data becomes effectively tamper-proof. However, it is worth noting that early Bitcoin networks had relatively few nodes, meaning decentralization was not as pronounced in the early stages. The degree of decentralization also varies across different blockchain networks. For instance, if nodes are concentrated in just a few countries or controlled by a small number of large mining pools or exchanges, the network becomes more centralized and more vulnerable to manipulation.
+![Screenshot_20260719_205342_com.yinxiang.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/christina246543/images/2026-07-19-1784465744837-Screenshot_20260719_205342_com.yinxiang.jpg)
+
+之前因为太忙了，漏了很多内容，现在从第一天的开始补
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 Blockchain operates on a distributed network architecture where numerous nodes, also referred to as miners, collectively maintain and record transaction data. Each node stores a complete, identical copy of the blockchain ledger, which is the foundational characteristic that distinguishes blockchain from traditional centralized systems. This distributed structure gives rise to two core new features: decentralization and true immutability.
 <!-- DAILY_CHECKIN_2026-07-18_END -->
@@ -30,11 +33,13 @@ Blockchain operates on a distributed network architecture where numerous nodes, 
 <!-- DAILY_CHECKIN_2026-07-17_START -->
 
 
+
 This study summary covers the fundamentals of blockchain technology. The private key and public key system forms the foundation of blockchain security, where a single private key can generate multiple sub-keys for different purposes, and protecting the privacy of private keys is essential for safeguarding individual assets. The mnemonic or keystore is essentially the private key itself, which cannot be reset once lost, and most assets become irrecoverable in such cases. Security practices include storing keys offline, avoiding high-risk storage locations, and never taking screenshots of mnemonics or private keys. On the public key side, one seed phrase generates one public key, which can then derive multiple smart addresses. In the transaction and signature process, a transaction represents the intended operation and includes components such as transfer amount and contract address, with Gas Fee serving as the network handling fee for resource calls and a nonce preventing duplicate execution of the same transaction. Digital signatures use private keys to prove identity and authorization, allowing anyone to verify the authenticity of a transaction through the associated address before it is broadcast to the blockchain network. Gas Fee fulfills three key functions: rewarding miners for their operating costs, preventing network attacks by making malicious operations economically unfeasible, and allocating resources through a pay-per-use model for sustainable network operation.
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -47,11 +52,13 @@ Hard forks represent an important governance phenomenon in blockchain ecosystems
 
 
 
+
 The incentive mechanism design incorporates game theory principles. Controlling inflation and maintaining scarcity through mechanisms like Bitcoin's halving events creates deflationary pressure that supports long-term price appreciation. The system is designed to incentivize long-term holders, and the reduction in mining rewards aligns with deflationary expectations, potentially driving prices upward. The design also encourages miner and validator participation—rewards must be sufficiently attractive to sustain network security and operational stability. Balancing these economic incentives with decentralization and security remains the core challenge in blockchain mechanism design.
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -68,11 +75,13 @@ Hard forks represent an important governance phenomenon in blockchain ecosystems
 
 
 
+
 Blockchain scalability remains a critical challenge. Block size directly impacts transaction throughput—larger blocks can handle more transactions per batch. Layer 2 scaling solutions represent a major architectural approach to significantly improve TPS (transactions per second). The number and distribution of nodes directly affect the degree of decentralization; higher node count and broader geographic distribution correspond to stronger decentralization.
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -111,11 +120,13 @@ The incentive mechanism design incorporates game theory principles. Controlling 
 
 
 
+
 Blockchain is a decentralized distributed ledger technology that securely, transparently and immutably records transaction data across network nodes. Its core unit the block consists of transaction records and the hash summary of the previous block, with limited storage capacity that shapes network operation. Larger block sizes raise transaction throughput but increase node storage costs and weaken decentralization, while smaller blocks limit processing efficiency. Blocks are bundled at fixed intervals by miners for accounting. Shorter block creation times speed up transaction confirmation yet raise orphan block risks, and longer intervals boost network security by reducing temporary forks. Linked sequentially via each prior block’s hash value, blockchain data is tamper resistant. Altering any historical block requires rewriting all subsequent blocks. Special chain adjustments include rollbacks which are rare coordinated reversions of confirmed blocks amid severe attacks, hard forks which are non backward compatible protocol upgrades splitting the chain permanently such as Bitcoin Cash, and soft forks which are backward compatible updates where unupgraded nodes still validate basic transactions like Bitcoin’s SegWit upgrade. As core blockchain traits, full data transparency pairs with wallet anonymity. Privacy chains such as Monero and Zcash use zero knowledge proofs and ring signatures to hide sender, receiver and amount information, trading partial transparency for advanced privacy without conflicting with public blockchains as they serve distinct user demands. Blockchains enable fast borderless settlements far quicker than traditional cross border remittances, yet transaction speeds vary drastically. Bitcoin hits roughly seven transactions per second, Ethereum fifteen to thirty transactions per second, and new chains like Solana reach tens of thousands transactions per second. This throughput gap is determined by four key factors. They are consensus mechanisms where proof of stake outperforms proof of work, block generation intervals, block storage capacity, and network expansion architectures including sharding and Layer 2 solutions.
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

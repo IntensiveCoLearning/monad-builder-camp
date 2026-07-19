@@ -27,6 +27,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
 
+
 定义一个最小 Web3 / AI 原型，写清用户动作、要用到的工具或文档
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
@@ -36,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 keep working on moss
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -60,11 +63,13 @@ getting read to show proof of work
 
 
 
+
 Learning everything about MOSS
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -92,11 +97,13 @@ Learning everything about MOSS
 
 
 
+
 Learning AI tools for chain products
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -132,11 +139,13 @@ Keeping up with the week1 content
 
 
 
+
 复习上周学习内容
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -180,11 +189,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 继续学习技术，做好作品集，等内推机会
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -235,11 +246,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 把学习以太坊协议加入学习计划中！
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

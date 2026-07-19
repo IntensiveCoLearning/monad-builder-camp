@@ -15,13 +15,28 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-19
+<!-- DAILY_CHECKIN_2026-07-19_START -->
+今天主要围绕 Moss 的 Clober V2 Adapter PR #56 进行了第二轮 Review 修复和完善。
+
+这次收到 Reviewer 的两个后续反馈：一是 Receipt 不能只用 `transferCount >= 2` 判断交易结算完成；二是 99.9% 输入利用率会让部分可执行的小额 MON → USDC 交易被拒绝。针对第一个问题，我重新梳理了 Clober Controller 的真实结算流程，补充了 BookId 白名单、交易方向、代币、参与地址、非零金额和 native 退款守恒校验，避免缺失输出或混入无关转账时仍被错误解析。
+
+针对 99.9% 利用率问题，我没有简单降低阈值。通过阅读 Clober 的 Viewer 和 Controller 逻辑，发现当前返回数据无法可靠区分“单位取整产生的 dust”和“真实流动性不足”，贸然放宽会削弱安全保护。因此保留 fail-closed 策略，并在 README 中明确说明小额交易可能出现方向相关、非单调的拒绝边界。
+
+今天新增了多组边界测试，包括错误 BookId、缺失输出、错误代币或参与者、零金额、多余转账、native 退款不守恒，以及 99.9% 临界值和 0.001 MON 的实际案例。最终完成全仓 `lint`、`build`、`typecheck`、`test`，并通过 Monad 主网双向报价与 Viewer/Controller 模拟验证。
+
+我也更新了 PR 描述并用英文回复 Reviewer，邀请对方重新运行其 characterization tests。PR 当前已推送到最新提交，GitHub CI 处于等待维护者批准运行的状态。
+<!-- DAILY_CHECKIN_2026-07-19_END -->
+
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 今天主要围绕 **Moss Adapter 开源贡献** 和 **GitHub PR 提交流程** 完成学习与实践。
 
@@ -33,11 +48,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -84,6 +101,7 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 今天看完了实习手册感觉收获满满
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
@@ -95,11 +113,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -120,11 +140,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -149,11 +171,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -215,11 +239,13 @@ Web3 岗位大致分为技术岗和非技术岗。
 
 
 
+
 听了jack老师的讲解，对eth协议方面有了更深的了解
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -269,7 +269,7 @@ By completing the program, participants will leave with:
 | [Tanjiayi557](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Tanjiayi557.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | |
 | [541541541](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/541541541.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [hynfrank](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/hynfrank.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Salieri-128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Salieri-128.md) | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | |
+| [Salieri-128](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Salieri-128.md) | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | |
 | [Click-75](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Click-75.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [LixinY-code](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LixinY-code.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ding-dong-dong](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/ding-dong-dong.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

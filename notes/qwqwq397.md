@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-19
+<!-- DAILY_CHECKIN_2026-07-19_START -->
+今天没有进行线上学习，而是跟随学校前往上海上光所，b站总部进行相关学习
+<!-- DAILY_CHECKIN_2026-07-19_END -->
+
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 今天了解到adventurex的一些相关内容，结合昨天所学，打算与23-24日跑团到杭州进行学习
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 从小红书，vibe coding和建立书写几个部分知道了怎么提高自己和装饰自己的履历，受益匪浅
 <!-- DAILY_CHECKIN_2026-07-17_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-16_START -->
 
 
+
 进一步通过游戏的方式和环节了解到了web3开发的相关内容，继续努力
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 提前预习下周内容，好好调整，为下周学习打下基础
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -68,11 +79,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 从其他人身上学到很多关于vibe coding的知识，激励我继续前进
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -93,6 +106,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天学到web3网络开发钱包支付项目结合AI Agent的内容，包括支付基础设施的架构、落地进展、生态布局以及行业趋势展开。
 
 分别从全链路的能力分层，核心技术模块，以及具体产品方面来进行准确分析。同时，今天回看补完了开营仪式的相关内容
@@ -100,6 +114,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

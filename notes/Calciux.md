@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-19
+<!-- DAILY_CHECKIN_2026-07-19_START -->
+因事无法学习，暂时打卡
+<!-- DAILY_CHECKIN_2026-07-19_END -->
+
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 打卡占位，链接后补
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
 
+
 临时打卡，链接后补
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -42,11 +50,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日打卡链接明日提交
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -67,11 +77,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-10.md](https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-10.md)
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -96,11 +108,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [https://github.com/Calciux/Monad-Builder-Camp](https://github.com/Calciux/Monad-Builder-Camp)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

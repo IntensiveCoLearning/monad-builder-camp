@@ -23,6 +23,7 @@ Dev Portfolio Pack：汇总 Dev Plan、代码 / repo、README、运行证据、A
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
+
 **Dev Builder**
 
 -   推进 Prototype Evidence：repo、README、截图 / 录屏、交易 hash 或 mock 边界、错误日志、人工修改记录。
@@ -32,6 +33,7 @@ Dev Portfolio Pack：汇总 Dev Plan、代码 / repo、README、运行证据、A
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -48,11 +50,13 @@ Dev Portfolio Pack：汇总 Dev Plan、代码 / repo、README、运行证据、A
 
 
 
+
 keep working on moss
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -78,11 +82,13 @@ getting read to show proof of work
 
 
 
+
 Learning everything about MOSS
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -116,11 +122,13 @@ Learning everything about MOSS
 
 
 
+
 Learning AI tools for chain products
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -162,11 +170,13 @@ Keeping up with the week1 content
 
 
 
+
 复习上周学习内容
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -216,11 +226,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 继续学习技术，做好作品集，等内推机会
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -277,11 +289,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 把学习以太坊协议加入学习计划中！
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

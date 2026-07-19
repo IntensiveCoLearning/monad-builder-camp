@@ -15,13 +15,71 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-19
+<!-- DAILY_CHECKIN_2026-07-19_START -->
+本周我主要通过 Vibe Coding 的方式开发一个“假学习识别 Agent”。这个 Agent 的目标不是简单记录用户学习了多长时间，而是结合学习目标、过程记录、实际产出和用户反馈，判断用户是否存在形式化打卡、低效学习或缺乏真实进展的情况。我目前将自己的方向定位为 **AI Agent 与 Python 后端开发**，主要使用 Python 和 LangGraph 搭建工作流。
+
+### 本周完成的工作
+
+本周首先对产品逻辑进行了拆分。目前 Agent 的基本判断流程包括：
+
+1.  获取用户当天的学习目标；
+    
+2.  记录用户实际学习内容和时间；
+    
+3.  要求用户提交学习成果或过程证明；
+    
+4.  对目标、时间、行为和结果之间的一致性进行分析；
+    
+5.  输出有效学习、低效学习或疑似形式化打卡的判断；
+    
+6.  根据判断结果给出下一步学习建议。
+    
+
+在开发过程中，我尝试使用 LangGraph 管理不同节点之间的状态流转，例如用户信息输入、学习证据分析、结果判断和建议生成。目前已经完成部分节点和 Prompt 的设计，但完整的 Agent 流程还没有全部打通。
+
+### 目前开发过程中主要遇到了以下问题：
+
+-   用户可以通过编造学习过程影响 Agent 的判断；
+    
+-   仅依靠学习时长无法判断学习是否真正有效；
+    
+-   大模型的判断结果有时不够稳定，相似输入可能得到不同结论；
+    
+-   判断标准过于宽泛时，Agent 容易输出空泛建议；
+    
+-   LangGraph 不同节点之间需要保存的状态还没有完全确定；
+    
+-   当前还缺少更可信的学习证据，例如代码提交、文档记录、答题结果或链上行为。
+    
+
+这些问题让我意识到，产品不能只做“对话式监督”，而应该尽可能引入可以验证的过程信息。  
+当前项目还没有全部完成，但已经完成或正在推进的内容包括：
+
+-   明确产品问题和目标用户；
+    
+-   梳理 Agent 的基础判断流程；
+    
+-   初步设计 LangGraph 工作流；
+    
+-   编写和修改判断 Prompt；
+    
+-   测试部分输入与输出；
+    
+-   发现仅依赖用户自述存在的问题；
+    
+-   调整产品方向和判断标准。
+<!-- DAILY_CHECKIN_2026-07-19_END -->
+
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 今日终于可以开始学习
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/gexugg-wq/images/2026-07-16-1784205101157-image.png)
 
@@ -30,6 +88,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 可以从以下三个部分进行工作流变更
@@ -42,11 +101,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 Research：判断方向对不对 Ops：让用户愿不愿意参与 Dev：把产品真正做出来
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -61,11 +122,13 @@ pdd的编程理念能够帮助理解测试和边界的理解
 
 
 
+
 确认好目标是做一个假学习监督助手，将基于openhands基础上实现
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -86,11 +149,13 @@ Mini Demo 0：Monad FocusProof Agent
 
 
 
+
 我认识到裸奔状态下的智能体存在提示词注入、越权工具调用、自主执行不可控等高危风险，了解了对Agent做权限管控、结构化输出约束、流程校验的安全构建思路。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -121,11 +186,13 @@ Mini Demo 0：Monad FocusProof Agent
 
 
 
+
 ![faf35fdce29f9006cf9b3549f2863e3b.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/gexugg-wq/images/2026-07-07-1783406763416-faf35fdce29f9006cf9b3549f2863e3b.jpg)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

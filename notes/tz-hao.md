@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-20
+<!-- DAILY_CHECKIN_2026-07-20_START -->
+第三周 Day1 打卡记录
+
+今天进入第三周的学习，我主要完成了自己的 Builder Profile 梳理。在寻找队友之前，我先明确了自己的方向：偏 Dev，重点关注 Web3 / Agent / 智能合约相关项目。
+
+通过这次整理，我更清楚自己能为团队提供什么：我可以负责 Agent 后端逻辑、智能合约开发、前后端联调和 Demo 搭建，也能结合之前做过的 Web3 Agent、智能钱包、链上信誉系统等项目经验，帮助团队把想法落到一个可以演示的 MVP。
+
+我目前比较想参与 AI x Web3、Agent Wallet、链上信誉、预测市场、隐私计算或开发者工具类项目。相比只做展示页面，我更希望项目能跑通真实链路，比如包含合约、后端接口、前端交互和链上记录。
+
+接下来我希望寻找擅长前端设计、产品梳理、运营展示或合约安全的队友。第三周的目标是尽快找到合适的团队，明确项目方向和分工，开始推进一个完整 Demo。
+<!-- DAILY_CHECKIN_2026-07-20_END -->
+
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 今天主要围绕 Moss 的 Clober V2 Adapter PR #56 进行了第二轮 Review 修复和完善。
 
 这次收到 Reviewer 的两个后续反馈：一是 Receipt 不能只用 `transferCount >= 2` 判断交易结算完成；二是 99.9% 输入利用率会让部分可执行的小额 MON → USDC 交易被拒绝。针对第一个问题，我重新梳理了 Clober Controller 的真实结算流程，补充了 BookId 白名单、交易方向、代币、参与地址、非零金额和 native 退款守恒校验，避免缺失输出或混入无关转账时仍被错误解析。
@@ -31,11 +45,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 今天主要围绕 **Moss Adapter 开源贡献** 和 **GitHub PR 提交流程** 完成学习与实践。
@@ -49,11 +65,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -102,6 +120,7 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 今天看完了实习手册感觉收获满满
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
@@ -114,11 +133,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -141,11 +162,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -172,11 +195,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -240,11 +265,13 @@ Web3 岗位大致分为技术岗和非技术岗。
 
 
 
+
 听了jack老师的讲解，对eth协议方面有了更深的了解
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

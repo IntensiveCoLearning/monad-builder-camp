@@ -15,8 +15,40 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-20
+<!-- DAILY_CHECKIN_2026-07-20_START -->
+今日学习记录：
+
+一、产品分享听课记录：
+
+SWen分享PPT：
+
+Swen个人观点：
+
+AI本身就有一定偏见，
+
+销售类的业务逻辑方面的能力无法全部被AI“学会”，无法通过训练达到；
+
+最终一公里无法通过AI落地；
+
+当你的问题是需要通过明确的表述进行提问或干嘛的时候，适合直接用AI，当输入不够清晰或者比较模糊的时候适合用Agent，
+
+AIAgent，对于AI Native孩子来说可能只是一个工具，更适合作为知识库检索来用;
+
+”人最珍贵的地方在于不完美“；
+
+“人成长需要的情绪价值可以通过借助工具来平衡或者稀释、倾吐”
+
+“人之间的信任还是很重要的，目前AI无法取代”
+
+思维触感吧
+
+二、Co-learning部分
+<!-- DAILY_CHECKIN_2026-07-20_END -->
+
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 Day14 2026年7月19日 休息日，自由打卡）学习记录：
 
 优化改善昨天网页上显示或者观感明显不对的地方，优化本地网页显示情况；
@@ -33,6 +65,7 @@ Day14 2026年7月19日 休息日，自由打卡）学习记录：
 
 
 
+
 Day13 2026年7月18日 （休息日，自由打卡）学习记录：
 
 使用Notion和Ai coding了一个关于个人学习计划+每周活动SOP内置、最后呈现团队项目执行排期及项目呈现和复盘的一个游戏化复古像素风视觉呈现网页，所有记录可在线填写并储存在本地浏览器，希望用像玩游戏一样追踪本次的“Web3 Career Build”学习旅程。
@@ -42,6 +75,7 @@ Day13 2026年7月18日 （休息日，自由打卡）学习记录：
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -82,6 +116,7 @@ Day12学习记录：
 
 
 
+
 今日学习： 参与线上Co-learning会议，很有趣的寓教于乐的学习形式，通过谁是卧底的游戏让我们对Web3行业的基础知识有了更进一步的理解； 参与截图如下：
 
 ![Day11-ERC-20和ERC-721.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-16-1784217433503-Day11-ERC-20_ERC-721.png)![Day11-区别.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-16-1784217524023-Day11-__.png)![Day11-线上会议参与截图6、连麦可以加分.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-16-1784217553442-Day11-________6_______.png)
@@ -105,6 +140,7 @@ Day12学习记录：
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -176,6 +212,7 @@ b本次课程对于想要希望进入 社区运营、DevRel、市场增长、内
 
 
 
+
 0713 Day06-
 
 Week2学习记录：
@@ -199,6 +236,7 @@ Week2学习记录：
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -249,6 +287,7 @@ Week2学习记录：
 
 
 
+
 20260712自由打卡：
 
 今日记录——
@@ -264,6 +303,7 @@ Week2学习记录：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -313,6 +353,7 @@ Week2学习记录：
 
 
 
+
 Day05（2026-07-10）学习记录：
 
 本次学习主要围绕 “Web3 实习计划例会｜学员总结+Co-Learning”的线上会议目标，通过线上Zoom会议进行今日学习任务：
@@ -333,6 +374,7 @@ Day05（2026-07-10）学习记录：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -408,6 +450,7 @@ Day04学习记录：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -576,6 +619,7 @@ Day04学习记录：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-20
+<!-- DAILY_CHECKIN_2026-07-20_START -->
+今天学习了一下prompt 工程，明白llm的输出需要我们来规范。
+
+听了大神分享和colearning，发现自己的思维比较差，他们说的想法我都没想过，而且他们表达也很清晰
+<!-- DAILY_CHECKIN_2026-07-20_END -->
+
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 今天学习了一下如何在github上提交自己的修改，成为一名开源社区维护者，并沉淀为技术文档。
 
 [https://app.notion.com/p/GitHub-Pull-Request-3a047bbf878e808eab72f1c99c4a3fc3?source=copy\_link](https://app.notion.com/p/GitHub-Pull-Request-3a047bbf878e808eab72f1c99c4a3fc3?source=copy_link)
@@ -25,11 +33,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
 
+
 今天复习了一下moss项目，感觉像是一个skill，教会agent如何调用tool来在monad链上进行交易
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 参加colearning，参与二次元小游戏，观看moss的github并star
@@ -42,6 +52,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天了解了不是技术岗的运营岗位，需要懂一点技术，要干用户增涨，活动策划等工作
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
@@ -51,11 +62,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天听大佬们分享许多web3好的开源项目，以及如何为开源项目做贡献，成为社区维护的一部分，我需要行动起来，运行一下项目，先成为用户，感受别人idea设计先进在什么地方
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -72,11 +85,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习buildanything中的初中内容，非常好，把agent讲的通俗易懂，我了解了一项agent工程需要哪些组件
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -99,11 +114,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天了解了一下agent的安全问题，Agent 的安全问题主要包括提示词注入、工具滥用、敏感信息泄露、权限控制不足、RAG 知识库污染、代码执行风险、越权访问以及模型幻觉导致的错误决策等。由于 Agent 具备调用外部工具和执行操作的能力，其风险远高于普通聊天模型。所以在设计 Agent 时，我们要遵循最小权限原则，增加人工确认，并通过权限校验、输入过滤、输出审查和安全沙箱等机制保障系统安全。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -120,6 +137,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

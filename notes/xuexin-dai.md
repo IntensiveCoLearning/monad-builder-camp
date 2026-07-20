@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-20
+<!-- DAILY_CHECKIN_2026-07-20_START -->
+今天参加了co-learning以及分享会。在学习LinkedIn Event的相关内容时候发现和运营要准备的事情大同小异，知识共通了
+<!-- DAILY_CHECKIN_2026-07-20_END -->
+
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 Planned a 60-minute live audio session on X end to end this week, as the ops task on a summer programme I'm doing: brief, run of show, execution plan. Two things I took from it.  
   
 The first decision is who it's for, and it settles everything after it. I built the session for people new to Web3, at the stage I'd just come through myself, where you can read the terminology long before you can use it. That ruled out building it around an expert guest, because the more depth you add, the further it gets from what someone at that stage can use. So the session opens with the host introducing themselves as another beginner rather than as someone teaching, and the five questions run easiest to hardest, starting with the one people are actually asking themselves: is it me, or is this genuinely hard?  
@@ -27,11 +33,13 @@ The second is that a plan isn't finished until it says what happens when things 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
 
+
 今天系统性的又复习了一遍运营一个活动的完整流程。包括前期、活动中以及活动后的准备。还是很好奇在活动中都会遇到什么突发情况并且如何解决的。
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 今天学习了一些运营知识，但是发现还是很多内容都不会。继续学习中
@@ -42,11 +50,13 @@ The second is that a plan isn't finished until it says what happens when things 
 
 
 
+
 今天看了线上分享会。其中给ai写一个总体指令md对我很有帮助。
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -61,11 +71,13 @@ The second is that a plan isn't finished until it says what happens when things 
 
 
 
+
 今天听了两场分享会，在信息时代即时分享自己的知识和能力十分重要。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -84,11 +96,13 @@ The second is that a plan isn't finished until it says what happens when things 
 
 
 
+
 今天做Mini Demo 0，和AI好朋友一起
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -113,6 +127,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 
 
+
 今天参加了实习计划例会，在例会上分享经验的同学们都对web3很有理解。  
 为什么我学了几天还是一知半解我要哭了。  
 接下来我将选择产品与运营方向进行学习。
@@ -120,6 +135,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -154,6 +170,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 
 
+
 今天学习了如何创建钱包，如何保持安全以及操作了第一笔测试网交易。
 
 为了保持钱包的安全，不能将私钥发给别人。在进行测试网交易的时候，我发现交易的过程非常的快，并没有平时生活中交易时的输入密码以及生物识别等，感觉安全性就只能靠私钥，危。
@@ -163,6 +180,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

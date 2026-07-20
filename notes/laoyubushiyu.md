@@ -23,11 +23,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
+
 豆包好像也可以变成agent了
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -41,11 +43,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 看了直播
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -64,11 +68,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 听了直播跟co-learning
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -91,11 +97,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 构思了一下小游戏的改进方向，查询了一些合理数值
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -122,11 +130,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 部署了第一个Monad合约，并进行交易
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -157,11 +167,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成了任务二，看了一下实习手册入门导读的部分
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

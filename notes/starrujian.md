@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-20
+<!-- DAILY_CHECKIN_2026-07-20_START -->
+观看分享会**Building in the AI Era: From Product to Agent Economy**
+<!-- DAILY_CHECKIN_2026-07-20_END -->
+
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 学习第二周资料
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
 
+
 参加**Web3 实习计划例会**
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 观看回放  
@@ -39,11 +47,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 参加分享会**从研究到公共知识：AI 时代 Web3 Researcher 的成长之路**
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -58,11 +68,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习第一周内容
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -83,11 +95,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 参加**AI Agent 如何拥有支付能力**分享会
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -103,6 +117,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

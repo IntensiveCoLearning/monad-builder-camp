@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-20
+<!-- DAILY_CHECKIN_2026-07-20_START -->
+現在學了一些ai agent去做product的信任問題
+<!-- DAILY_CHECKIN_2026-07-20_END -->
+
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 今天也是去補做上星期的功課
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 要補做功課
 <!-- DAILY_CHECKIN_2026-07-18_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-17_START -->
 
 
+
 聽了其他同事的學習感想
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 學了做運營的方向和日常工作
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -68,11 +79,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 上課學了AI開發
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -93,11 +106,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 開始在弄demo 主要都是以遊戲為主
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -125,11 +140,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 學了ai agent的問題吧
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -166,11 +183,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天主要就了解了ETH的協議層和執行層的一些logic, 還有EPF 的獎學金資訊和gihub contribution。還在想那些demo 要怎樣做。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

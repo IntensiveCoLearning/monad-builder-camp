@@ -261,7 +261,7 @@ By completing the program, participants will leave with:
 | [qpoinsdovas](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/qpoinsdovas.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [caigua838](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/caigua838.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | |
 | [antony819](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/antony819.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | |
-| [JimmyZhou0505](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/JimmyZhou0505.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | |
+| [JimmyZhou0505](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/JimmyZhou0505.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | | |
 | [BIGrice66](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/BIGrice66.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | |
 | [uniqueskybaby](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/uniqueskybaby.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [may-tonk](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/may-tonk.md) | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -541,7 +541,7 @@ By completing the program, participants will leave with:
 | [1006568699-hub](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/1006568699-hub.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [kevinyang20070105-blip](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/kevinyang20070105-blip.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | |
 | [island8889](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/island8889.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [qingzzzjdst-hub](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/qingzzzjdst-hub.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | |
+| [qingzzzjdst-hub](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/qingzzzjdst-hub.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | |
 | [jiabin2001](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/jiabin2001.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [qiudingjie102-dot](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/qiudingjie102-dot.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ArdenLU](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/ArdenLU.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

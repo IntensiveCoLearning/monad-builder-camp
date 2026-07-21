@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-21
+<!-- DAILY_CHECKIN_2026-07-21_START -->
+[https://github.com/minzhenw490-pixel/Monad-Mini-Demo/blob/721f4122f002535041056ed194851062360418e6/my-melody-demo.html](https://github.com/minzhenw490-pixel/Monad-Mini-Demo/blob/721f4122f002535041056ed194851062360418e6/my-melody-demo.html)
+<!-- DAILY_CHECKIN_2026-07-21_END -->
+
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 [https://github.com/minzhenw490-pixel/web3-/blob/52106925dc7495994fd27304a4d860d174487990/Week3-Day1.md](https://github.com/minzhenw490-pixel/web3-/blob/52106925dc7495994fd27304a4d860d174487990/Week3-Day1.md)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
+
 [https://github.com/minzhenw490-pixel/web3-/blob/e7533aa61e3cef3365ded37f22cb36dab2ea33ce/Week2%20Day7%EF%BD%9C%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md](https://github.com/minzhenw490-pixel/web3-/blob/e7533aa61e3cef3365ded37f22cb36dab2ea33ce/Week2%20Day7%EF%BD%9C%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 [https://github.com/minzhenw490-pixel/web3-/blob/524a27fd7cbf262b849f2e60d44a17bc44bbe521/AI%20Collaboration%20Log%EF%BD%9CCoinGecko%20ETH%20%E4%BB%B7%E6%A0%BC%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.md](https://github.com/minzhenw490-pixel/web3-/blob/524a27fd7cbf262b849f2e60d44a17bc44bbe521/AI%20Collaboration%20Log%EF%BD%9CCoinGecko%20ETH%20%E4%BB%B7%E6%A0%BC%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.md)
@@ -38,11 +46,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [https://github.com/minzhenw490-pixel/web3-/blob/0ab8a8a1bf58955779eec164021c3ea7730eb875/DAY%205%EF%BD%9C%E8%B7%AF%E5%BE%84%E6%94%B6%E6%9D%9F%EF%BC%9AWeek3%20%E7%BB%84%E9%98%9F%E4%BD%9C%E5%93%81%E9%9B%86%20Portfolio.md](https://github.com/minzhenw490-pixel/web3-/blob/0ab8a8a1bf58955779eec164021c3ea7730eb875/DAY%205%EF%BD%9C%E8%B7%AF%E5%BE%84%E6%94%B6%E6%9D%9F%EF%BC%9AWeek3%20%E7%BB%84%E9%98%9F%E4%BD%9C%E5%93%81%E9%9B%86%20Portfolio.md)
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -57,11 +67,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [https://github.com/minzhenw490-pixel/web3-/blob/207f76bfc49d805ca7154d44fb5d6260af5a4509/Week2%20Day3%20space%20%E5%AE%A3%E4%BC%A0%E6%96%87%E6%A1%88%E6%96%B9%E6%A1%88%20.md](https://github.com/minzhenw490-pixel/web3-/blob/207f76bfc49d805ca7154d44fb5d6260af5a4509/Week2%20Day3%20space%20%E5%AE%A3%E4%BC%A0%E6%96%87%E6%A1%88%E6%96%B9%E6%A1%88%20.md)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -193,6 +205,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ```
 Week 2 Day 1（周一）｜主方向：**Ops Builder（运营）**
 
@@ -276,6 +289,7 @@ Week 2 Day 1（周一）｜主方向：**Ops Builder（运营）**
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -482,6 +496,7 @@ Week 2 Day 1（周一）｜主方向：**Ops Builder（运营）**
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -820,6 +835,7 @@ return total;
 
 
 
+
 Monad **学习笔记：不只是“更快”，而是高频交互体验的重构**
 
 **一、核心洞察：**Monad **改变的是什么？**
@@ -905,6 +921,7 @@ Monad **不是简单地“把** TPS **从** 15 **提高到** 10,000**”，而�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -1049,6 +1066,7 @@ OpenZeppelin **是一个经过社区验证的智能合约库，提供了** ERC20
 
 
 
+
 涵盖：安全合规、钱包账户、交易与Gas、Monad测试网与浏览器
 
 一、安全与合规（来自 [web3intern.xyz](http://web3intern.xyz)）
@@ -1150,6 +1168,7 @@ Monad Testnet（测试网）—— 实操重点
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

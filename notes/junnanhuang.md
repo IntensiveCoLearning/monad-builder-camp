@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-21
+<!-- DAILY_CHECKIN_2026-07-21_START -->
+我想做的产品和今天分享者分享的相似又不同，但是这个产品该如何变现呢？
+<!-- DAILY_CHECKIN_2026-07-21_END -->
+
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 我想做一个能够总结群聊话题及重点内容的产品，数据内容需要加密并保存在链上，只有特定的人可以共享
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 在例会上从各个学员的分享中学到了好多运营的方法，大家都太厉害了
 <!-- DAILY_CHECKIN_2026-07-17_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-16_START -->
 
 
+
 今天复习了学过的知识
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天学习了solidity的编译语言
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -68,11 +79,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天再次重看昨天的例会，大家的学习热情以及解决问题的能力都特别强，学习到了很多。
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -93,11 +106,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天复习了区块链的基础知识以及编程的基础知识，一直学习新的内容但是旧的知识点没能很好掌握，还是需要暂停一下。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -122,11 +137,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天学习了区块链的基本知识，完成了钱包的注册以及交易，但在“用 AI 生成一个最小 Solidity 合约”这一步卡住了。我没有编程、代码的基础，明天需要先去补齐一下这一方面的知识。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

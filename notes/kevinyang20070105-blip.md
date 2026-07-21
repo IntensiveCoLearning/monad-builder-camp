@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-21
+<!-- DAILY_CHECKIN_2026-07-21_START -->
+思考了一下接下来的研究方向并继续学习 Moss
+<!-- DAILY_CHECKIN_2026-07-21_END -->
+
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 重新补一下week2 的作业
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
+
 继续了解 Moss 项目
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 更新个人网站相关内容并丰富功能
@@ -38,11 +46,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 搭建了个人网站并成功推到 GitHub 上
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -57,11 +67,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 GitHub 了解 Moss 中
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -80,11 +92,13 @@ GitHub 了解 Moss 中
 
 
 
+
 选定了第二周的方向并制作了一个 Notion 的模板以备学习使用
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -107,11 +121,13 @@ GitHub 了解 Moss 中
 
 
 
+
 把 web3 手册里智能合约那一章全部阅读完了，补充理论知识
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -144,11 +160,13 @@ GitHub 了解 Moss 中
 
 
 
+
 今天把 AI 生成的 solidity 合约成功写进 remix 并部署到链上了，感觉要正儿八经写出一个 Todo 并让他又可以实践的内容还是一个挺复杂麻烦的过程，但最后完成的时候还是非常有成就感的，也算是对智能合约有了一个更加深入的认识了
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -181,11 +199,13 @@ GitHub 了解 Moss 中
 
 
 
+
 今天实实在在地把昨天交的内容落实了大半，首先是在metamask 上创建钱包，因为直接用的 chrome 插件所以钱包以及交易信息都会显示在屏幕右侧，非常清晰方便。点一下 Faucet 再把私钥贴过去就可以领水了，截至现在领了 50 块不知道以后能不能接着领，每笔交易完成后都会有一个transaction，在里面可以看到交易相关的东西如哈希值，from 哪个私钥 to 哪个私钥还有 gas 的值等等。接下来就是去用 remix 和 ai 自己部署一个 solidity 和智能合约了，慢慢来吧
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

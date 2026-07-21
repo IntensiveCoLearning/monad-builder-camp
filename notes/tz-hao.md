@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-21
+<!-- DAILY_CHECKIN_2026-07-21_START -->
+今天完成了组队方向和协作需求的梳理。我目前还在寻找队友，计划围绕 **AI × Web3 应用**完成项目实践。我主要负责技术开发和 Demo 实现，希望找到擅长运营、内容整理和项目展示的队友。
+
+接下来我会在社群发布组队信息，进一步确认项目要解决的用户问题，并在组队后建立群聊、任务看板和固定同步时间。协作过程中会注意安全边界，不共享私钥、助记词及其他敏感信息。
+<!-- DAILY_CHECKIN_2026-07-21_END -->
+
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 第三周 Day1 打卡记录
 
 今天进入第三周的学习，我主要完成了自己的 Builder Profile 梳理。在寻找队友之前，我先明确了自己的方向：偏 Dev，重点关注 Web3 / Agent / 智能合约相关项目。
@@ -30,6 +38,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 今天主要围绕 Moss 的 Clober V2 Adapter PR #56 进行了第二轮 Review 修复和完善。
 
@@ -46,11 +55,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-18_START -->
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -66,11 +77,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -121,6 +134,7 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 今天看完了实习手册感觉收获满满
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
@@ -134,11 +148,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -163,11 +179,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -196,11 +214,13 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -266,11 +286,13 @@ Web3 岗位大致分为技术岗和非技术岗。
 
 
 
+
 听了jack老师的讲解，对eth协议方面有了更深的了解
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

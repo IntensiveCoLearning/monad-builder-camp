@@ -15,19 +15,41 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-22
+<!-- DAILY_CHECKIN_2026-07-22_START -->
+今天主要去看了一下学习手册，发现了许多之前没有注意的东西：
+
+1、什么是恒定乘积公式：两种代币的乘积是固定的，然后代币价值会因为流通发生波动，
+
+2、流动性池是 Uniswap 交易的核心，流动性提供者会收到一笔手续费，每当别人进行交易时，你提供的资金就会被用来进行兑换
+
+3、compound：用户将自己的资产（如 ETH、DAI）存入 Compound，便能获得 cToken。比如，如果你存入 1 个 ETH，系统会给予你相应的 cETH 代币。利息是根据实时市场动态决定的，平台采用动态利率模型。当借贷需求增加时，利率会上升，反之则会下降。
+
+4、NFT是数字所有权的革命：它为数字资产注明了所有权，规定了唯一性，这其中就是由智能合约做到的
+
+5、DAO是一种区中心化组织
+
+6、MEME 币的特点通常是“有趣、搞怪、社区驱动”，它们往往缺乏明确的技术价值，但通过强大的社区共识和文化认同获得价值。
+
+7、其余还有一些交叉领域
+<!-- DAILY_CHECKIN_2026-07-22_END -->
+
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 今日主要是听了直播，然后对之前的任务做做复盘
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
+
 今日休息~~
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 完成了几项作业的提交
@@ -38,11 +60,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天提交了一个pull request，具体在notion里
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -63,6 +87,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天写的工作记录在notion上，分享一下链接：[https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3](https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
@@ -74,11 +99,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 我今天的学习笔记 都搬到notion上了，完成了week2的一个任务：[https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy\_link](https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -103,6 +130,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -155,6 +183,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 休息日ing
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
@@ -171,11 +200,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天没学什么，但是打个卡
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -230,6 +261,7 @@ ps：记得还要把私钥改成自己的
 
 
 
+
 今天主要学习了以太坊，和回顾了昨天的内容。
 
 1、老师先是带领我们回顾了一下钱包的设置，推荐了一个好用的钱包phantom；
@@ -253,6 +285,7 @@ ps：记得还要把私钥改成自己的
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

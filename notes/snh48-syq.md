@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-22
+<!-- DAILY_CHECKIN_2026-07-22_START -->
+![截屏2026-07-22 19.05.23.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/snh48-syq/images/2026-07-22-1784732712658-__2026-07-22_19.05.23.png)
+
+今天了解了crypto钱包的运作机制还有潜在被攻击的方式，意识到助记词的重要性和钱包需要注意的风险
+<!-- DAILY_CHECKIN_2026-07-22_END -->
+
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 ![截屏2026-07-21 19.15.28.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/snh48-syq/images/2026-07-21-1784647140205-__2026-07-21_19.15.28.png)
 
 今天了解了ai✖️web3第一次听说的赛道，学习到了web3技术还能应用在储存个人数据的角度，非常醍醐灌顶
@@ -24,6 +32,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 ![截屏2026-07-20 23.19.38.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/snh48-syq/images/2026-07-20-1784560874019-__2026-07-20_23.19.38.png)
 
@@ -34,6 +43,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
 
+
 学习了GitHub探索日志
 
 [https://github.com/snh48-syq/monad-builder-camp/blob/main/GitHub-Exploration-Log-Hardhat.md](https://github.com/snh48-syq/monad-builder-camp/blob/main/GitHub-Exploration-Log-Hardhat.md)
@@ -41,6 +51,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -55,6 +66,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![截屏2026-07-16 20.47.26.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/snh48-syq/images/2026-07-16-1784206130555-__2026-07-16_20.47.26.png)
 
 学习了web3运营向的时候，树立了web3方向不只是学习技术安全也是一大重要板块的意识
@@ -62,6 +74,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -80,6 +93,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天学习了解了ai和web3如何交叉使得大家都可以接触项目，完成自己的项目，从0开始每一个步骤合理运用ai，ai就是那个项目的码农，web3就是它使用的底层逻辑，以及人需要做出的监督和决策
 
 ![1314.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/snh48-syq/images/2026-07-13-1783957396569-1314.png)
@@ -87,6 +101,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -109,6 +124,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天了解了ai agent在使用时降低风险的防范措施，以及一些出现过严重后果的agent偏离人类意愿的自主操作，形成了对使用agent方面更全面的认知
 
 ![截屏2026-07-09 22.16.50.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/snh48-syq/images/2026-07-09-1783606843573-__2026-07-09_22.16.50.png)
@@ -116,6 +132,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -142,6 +159,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天了解了以太坊协议层的基础知识和研究方向，
 
 ![截屏2026-07-07 19.11.42.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/snh48-syq/images/2026-07-07-1783439565932-__2026-07-07_19.11.42.png)
@@ -157,6 +175,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

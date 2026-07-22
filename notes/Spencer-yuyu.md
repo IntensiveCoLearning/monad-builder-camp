@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-22
+<!-- DAILY_CHECKIN_2026-07-22_START -->
+[https://app.notion.com/p/7-22-Day17-3a554a97f45180dab20accd05c324270?source=copy\_link](https://app.notion.com/p/7-22-Day17-3a554a97f45180dab20accd05c324270?source=copy_link)
+<!-- DAILY_CHECKIN_2026-07-22_END -->
+
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 [https://app.notion.com/p/7-21-Day16-3a454a97f451803f896cd5fb2c1956e2?source=copy\_link](https://app.notion.com/p/7-21-Day16-3a454a97f451803f896cd5fb2c1956e2?source=copy_link)
 
 继续努力做任务ing
@@ -25,12 +31,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
 
+
 在DefiLlama和Dune中游泳  
 [https://app.notion.com/p/Week-2-Role-Log-39e54a97f45180a6bffbe838308c1ca6?source=copy\_link](https://app.notion.com/p/Week-2-Role-Log-39e54a97f45180a6bffbe838308c1ca6?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 打卡啊啊啊
@@ -41,11 +49,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 发现要研究一个问题，无数个问题会涌现出来
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -60,6 +70,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 **Product Research Question Card 任务中。。。**
 
 [https://app.notion.com/p/Week-2-Role-Log-39e54a97f45180a6bffbe838308c1ca6?source=copy\_link](https://app.notion.com/p/Week-2-Role-Log-39e54a97f45180a6bffbe838308c1ca6?source=copy_link)
@@ -67,6 +78,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -89,6 +101,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 差点忘了打卡。。。
 
 [https://app.notion.com/p/7-13-Day9-39d54a97f45180a0b290f51b678e87c5?source=copy\_link](https://app.notion.com/p/7-13-Day9-39d54a97f45180a0b290f51b678e87c5?source=copy_link)
@@ -96,6 +109,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -120,11 +134,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡！
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -155,11 +171,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 这周最难的部分已经完成，还有几个任务好好做完，思考和确定下周方向
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -179,6 +197,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -217,6 +236,7 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 
 
+
 完成了第一笔转账！
 
 开启notion记录学习过程
@@ -224,6 +244,7 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

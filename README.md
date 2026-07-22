@@ -391,7 +391,7 @@ By completing the program, participants will leave with:
 | [myw07170](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/myw07170.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Chou66677](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Chou66677.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [peanuut98](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/peanuut98.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [cointem](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/cointem.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | |
+| [cointem](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/cointem.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ⭕️ | ✅ | | | | | | | | | | | | | | | | |
 | [lxy965142065](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/lxy965142065.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | |
 | [jjjaker81-creator](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/jjjaker81-creator.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yaoyaodata](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yaoyaodata.md) | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

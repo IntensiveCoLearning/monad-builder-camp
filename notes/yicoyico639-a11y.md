@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-22
+<!-- DAILY_CHECKIN_2026-07-22_START -->
+学习了智能合约代码
+<!-- DAILY_CHECKIN_2026-07-22_END -->
+
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 学习了safe多签到码导读
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 学习了railgun隐私交互原理
 <!-- DAILY_CHECKIN_2026-07-20_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-18_START -->
 
 
+
 今天学了safe代码多签导读
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习如何阅读一个 EIP / MIP，同时拆解一个真实产品 / 协议，而不是只摘抄概念
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -70,11 +81,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 理解AI agent ,如何能够更快的融入自己的学习
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -97,11 +110,13 @@ Meme 币认知：掌握其高波动、短周期、无现金流、跑路归零等
 
 
 
+
 复盘首周认知转变，破除了对 Web3 运营浅层化的刻板印象
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -128,11 +143,13 @@ Meme 币认知：掌握其高波动、短周期、无现金流、跑路归零等
 
 
 
+
 学习了solidity合约
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -163,11 +180,13 @@ Meme 币认知：掌握其高波动、短周期、无现金流、跑路归零等
 
 
 
+
 熟悉 Web3 远程协作沟通、开发、数据类工具，掌握异步协作规范；2. 区分技术与非技术岗位，弄懂 Builder、DevRel、生态连接者职责；3. 持续记录学习内容，产出可对外展示的学习证明。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,74 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-23
+<!-- DAILY_CHECKIN_2026-07-23_START -->
+今天加了一个同学的微信，和她一起商量了一下她的项目，但是感觉还有很多问题，范围有点大了：文档自己写了：
+
+可靠后台任务执行器、失败自动重试、链重组处理、常驻事件监听和完整对账 — 仍需完成
+
+这意味着现在积分落库后，链上操作如果失败，就停了。没有重试，没有补偿，没有警报。
+
+3\. 图片存在 PostgreSQL 里
+
+\# 来自架构文档
+
+nft\_applications.image\_data # 原型保留发布记录
+
+用户上传的 NFT 原始图片以 Data URL 的形态直接存在 PostgreSQL 字段里。PostgreSQL 不是对象存储：
+
+\- 查询变慢（大字段拖垮行扫描）
+
+\- 备份膨胀
+
+\- 没法 CDN 加速
+
+文档自己写了"生产环境应迁移对象存储"，但目前没有做。
+
+4\. 合约的 owner/admin 单点风险
+
+当前测试网所有运营角色暂时共用部署钱包
+
+看合约的构造函数：
+
+solidity
+
+constructor(address admin) ERC721(...) {
+
+_grantRole(DEFAULT_ADMIN\_ROLE, admin);
+
+}
+
+一个地址拥有完整权限：配置等级、分配角色、撤销身份、暂停合约。这是测试网的配置，但如果在主网这样：
+
+\- 私钥泄露 → 攻击者可以销毁所有身份
+
+\- 没有时间锁 → 管理员可以瞬间做任何事
+
+\- 没有多签 → 单点故障
+
+文档里写了"正式环境必须拆分并迁移至多签"，但代码里没有对应的多签合约或拆分方案。
+
+5\. 前端的技术选择有一些小问题
+
+看前端依赖：
+
+RainbowKit + wagmi + viem → 钱包连接 ✅ 选得好
+
+Axios → API 请求 ✅ 主流选择
+
+但：
+
+\- 没有 React Query / TanStack Query — 数据获取和缓存全靠手动管理，很快会遇到 loading/error/stale 的样板代码膨胀
+
+\- 没有状态管理（Zustand/Jotai/Redux）— 用户会话、钱包状态这些跨页面数据目前靠什么？可能靠 React Context
+
+硬撑，页面一多就乱
+<!-- DAILY_CHECKIN_2026-07-23_END -->
+
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 今天主要去看了一下学习手册，发现了许多之前没有注意的东西：
 
 1、什么是恒定乘积公式：两种代币的乘积是固定的，然后代币价值会因为流通发生波动，
@@ -37,6 +103,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
 
+
 今日主要是听了直播，然后对之前的任务做做复盘
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
@@ -44,11 +111,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
 
+
 今日休息~~
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -61,11 +130,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天提交了一个pull request，具体在notion里
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -88,6 +159,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天写的工作记录在notion上，分享一下链接：[https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3](https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
@@ -100,11 +172,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 我今天的学习笔记 都搬到notion上了，完成了week2的一个任务：[https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy\_link](https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -130,6 +204,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -184,6 +259,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 休息日ing
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
@@ -201,11 +277,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天没学什么，但是打个卡
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -262,6 +340,7 @@ ps：记得还要把私钥改成自己的
 
 
 
+
 今天主要学习了以太坊，和回顾了昨天的内容。
 
 1、老师先是带领我们回顾了一下钱包的设置，推荐了一个好用的钱包phantom；
@@ -285,6 +364,7 @@ ps：记得还要把私钥改成自己的
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

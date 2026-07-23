@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-23
+<!-- DAILY_CHECKIN_2026-07-23_START -->
+深入了解Giveth，完善竞品分析
+<!-- DAILY_CHECKIN_2026-07-23_END -->
+
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 把自己的Demo又做了一些改进，继续思考该以何种形式呈现
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 把自己的产品想法初步地整理了出来，并且做了一点竞品分析
 <!-- DAILY_CHECKIN_2026-07-21_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-20_START -->
 
 
+
 今天主要是跟AI不停地互动，努力把一个潜在的想法落实成可讨论的产品结构
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Aave与Morpho完整笔记链接：[https://www.notion.so/Aave-vs-Morpho-A-Compar
 
 
 
+
 Uniswap V3 Notion笔记链接：[https://www.notion.so/Uniswap-V3-3a0d7418ee2180e59f70feb8d872da6e?source=copy\_link](https://www.notion.so/Uniswap-V3-3a0d7418ee2180e59f70feb8d872da6e?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -233,6 +244,7 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 | An NFT internet  一个非同质化代币网络 | The internet today  如今的互联网 |
 | --- | --- |
 | You own your assets! Only you can sell or swap them.你的资产属于你！只有你有权出售或交换这些资产。 | You rent an asset from some organization and it can be taken away from you.你从某个机构租借了一处资产，而这些资产最终可能会被夺走。 |
@@ -247,6 +259,7 @@ EIP、ERC、MIP 通常会详细说明：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -273,11 +286,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 继续自行了解相关领域的研究，今天主要是预言机和多代币系统
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -304,11 +319,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 对自己初步构思的web3产品进行了深入思考，争取明天做出初版的demo
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -339,11 +356,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 根据分享和Co-Learning中的内容，了解了一些新东西；继续了解Monad
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -378,11 +397,13 @@ EIP、ERC、MIP 通常会详细说明：
 
 
 
+
 用ai agent写了第一份智能合约，并完成了部署
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

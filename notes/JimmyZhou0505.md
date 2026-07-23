@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-23
+<!-- DAILY_CHECKIN_2026-07-23_START -->
+讨论黑客松
+<!-- DAILY_CHECKIN_2026-07-23_END -->
+
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 继续构思小组黑客松
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
+
 完成组队和初步想法构建
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 黑客松组队
@@ -38,11 +46,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天准备完成运营向的活动策划
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -57,11 +67,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习MOSS的GitHub内容
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -80,11 +92,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天选择运营向，开始做第一个活动的策划案。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -107,11 +121,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天复习前一周的知识，准备开始下一周的运营任务
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -138,11 +154,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天准备分享会，听其他人的分享学习经验
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -310,6 +328,7 @@ FluxA 的 AI Agent 支付方向，核心价值是让 AI Agent 拥有受控的支
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -557,6 +576,7 @@ AI：辅助生成初稿和整理思路
 
 
 
+
 ## Monad 合约部署学习笔记
 
 今天学习了如何把一个最小 Solidity 合约部署到 Monad Testnet，并完成基础合约交互。
@@ -584,6 +604,7 @@ AI：辅助生成初稿和整理思路
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

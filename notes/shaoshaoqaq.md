@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-23
+<!-- DAILY_CHECKIN_2026-07-23_START -->
+[Moss 入门指南：从零开始理解 AI Agent × Web3 Infrastructure](https://wonderful-cell-093.notion.site/Moss-AI-Agent-Web3-Infrastructure-3a6e6c1a1b8a8024b9f2fd6ef9dee9e9)
+<!-- DAILY_CHECKIN_2026-07-23_END -->
+
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 听了分享会，完成了builder profile
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 [https://wonderful-cell-093.notion.site/Moss-39de6c1a1b8a807c939df7a89b0d70f5](https://wonderful-cell-093.notion.site/Moss-39de6c1a1b8a807c939df7a89b0d70f5)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-17_START -->
 
 
+
 试着使用moss
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [https://wonderful-cell-093.notion.site/Aave-39ee6c1a1b8a80a3b0e5e8f3b6500493?pvs=74](https://wonderful-cell-093.notion.site/Aave-39ee6c1a1b8a80a3b0e5e8f3b6500493?pvs=74)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -70,6 +81,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 选择 Research作为主方向，学习参考资料和 Week 3 角色
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
@@ -82,11 +94,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 **提前预习research方向内容，在messari上看研报**
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -167,11 +181,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 [DEMO 0](https://wonderful-cell-093.notion.site/DEMO-0-399e6c1a1b8a8030a572e99ca39e15bc)
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -607,6 +623,7 @@ Web3 不再只是一个投资领域，而是一套由区块链、智能合约和
 
 
 
+
 **利用ai编写智能合约，配上对应解释。之后在remix上编译，再部署到monad internet上，要链接钱包。第一次部署失败，在研究好久后在苏生老师的提示下发现是最开始没告诉ai要在remix上部署。今日收获：最开始的提示词很重要，要搞清楚自己的需求，部署到链上之后就直接保存下来了。智能合约有点类似于app，能实现特定功能**
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -624,11 +641,13 @@ Web3 不再只是一个投资领域，而是一套由区块链、智能合约和
 
 
 
+
 **今天复习了昨天的co learning并尝试了第一次交易，配合实习手册的阅读更加加深了对区块链的理解**
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

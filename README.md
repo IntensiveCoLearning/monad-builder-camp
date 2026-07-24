@@ -460,7 +460,7 @@ By completing the program, participants will leave with:
 | [ChristieYX](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/ChristieYX.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | |
 | [Owen-owner-gif](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Owen-owner-gif.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [easonjames0108-collab](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/easonjames0108-collab.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Djbalaw-hhh](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Djbalaw-hhh.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ |   | | | | | | | | | | | | | | |
+| [Djbalaw-hhh](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Djbalaw-hhh.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | | | | | | |
 | [Chichuzxy](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Chichuzxy.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | | |
 | [yuetongz417](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yuetongz417.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sophietian822-crypto](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/sophietian822-crypto.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

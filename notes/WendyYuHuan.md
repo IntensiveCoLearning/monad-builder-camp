@@ -15,8 +15,18 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-24
+<!-- DAILY_CHECKIN_2026-07-24_START -->
+# 学习记录
+
+1.Hackathon Demo：新增landingpage、增加路由控制、钱包连接功能
+
+[https://github.com/YMH0417/sentinel-for-safe-execution/pull/2](https://github.com/YMH0417/sentinel-for-safe-execution/pull/2)
+<!-- DAILY_CHECKIN_2026-07-24_END -->
+
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 # 学习记录
 
 1.实时参与分享会及Co-learning
@@ -26,6 +36,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 # 学习记录
 
@@ -40,6 +51,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 <!-- DAILY_CHECKIN_2026-07-20_START -->
 
 
+
 # 学习记录
 
 1.实时参与分享会及co-learning
@@ -52,6 +64,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 
 
+
 # 学习记录
 
 学习 Solidity 智能合约开发。[https://docs.soliditylang.org/](https://docs.soliditylang.org/)
@@ -59,6 +72,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -75,6 +89,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 
 
+
 # 学习记录
 
 1.学习笔记分享例会及co-learning
@@ -84,6 +99,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -106,6 +122,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 
 
+
 # 学习记录
 
 1.了解 Web3 运营的完整工作流
@@ -115,6 +132,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -145,6 +163,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 
 
+
 # 学习记录
 
 1.Monad高频交互Demo Idea：
@@ -158,6 +177,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -742,6 +762,7 @@ contract NFTBadge {
 
 
 
+
 # 学习记录
 
 1.Web3实习手册文档阅读
@@ -755,6 +776,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -793,6 +815,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 
 
+
 # 学习记录
 
 1.AI高危案例分享会及Co-learning
@@ -806,6 +829,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -851,6 +875,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 
 
+
 # 学习记录
 
 1.  《普通开发者如何进入以太坊协议层》分享会及co-learning（Codex演示自动部署智能合约）
@@ -867,6 +892,7 @@ Codex部署合约实操
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

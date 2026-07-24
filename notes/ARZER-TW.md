@@ -15,13 +15,78 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-24
+<!-- DAILY_CHECKIN_2026-07-24_START -->
+\### 2026.07.23
+
+主題：實作篇（一）——Monad Foundry 環境與 gas 行為實測
+
+**環境**
+
+\- Monad Foundry（foundryup --network monad）＋ foundry-monad 模板，Monad Testnet（chain\_id 10143）
+
+\- 帳戶以 keystore 管理，faucet 領測試 MON；部署 Boom.sol 作 revert 測試用（0xE377...c667）
+
+**實驗一：gas limit 收費驗證**
+
+\- 方法：同額自轉帳兩筆，gas limit 分別設 21000 與 300000，比對前後餘額
+
+\- tx1（limit=21000）：price 104.195 gwei，扣 0.0021881 MON——limit 等於實際用量，作為基準組
+
+\- tx2（limit=300000）：price 103.000 gwei，餘額差 30,900,000,000,300,000 wei，
+
+恰等於 300000 × price，一 wei 不差；若按以太坊 used×price 模型應只扣 0.0021630 MON
+
+\- 結論：扣款依 gas limit 計，與 gas pricing 文件一致，實付為必要值的 14.3 倍
+
+\- 額外觀察（文件未明講）：receipt 的 gasUsed 欄回報的是 limit（300000）而非實際用量，
+
+任何依 receipt 估算成本或合約效率的工具在 Monad 上讀到的其實是 limit
+
+!\[實驗一：balance 與 receipt 對照\](./images/exp1\_receipts.png)
+
+!\[gas 收費模型對比\](./images/gas\_comparison.png)
+
+**實驗二：revert 交易的成本**
+
+\- 對 Boom.boom()（必定 revert）以 gas limit 200000 硬送
+
+\- 結果：交易上鏈、status 0 (failed)、revertReason "boom"（Error(string) selector 0x08c379a0，
+
+Monad Foundry 的 trace 解碼直接還原字串）
+
+\- 扣款 = 200000 × 105 gwei = 0.021 MON，全額按 limit 計
+
+\- 對應文件警告的錢包情境：estimateGas 遇 revert 時部分錢包會自動塞大 limit，
+
+在以太坊上多付有限，在 Monad 上是照 limit 全額實付
+
+!\[實驗二：revert 交易 receipt\](./images/exp2\_revert.png)
+
+**實驗三：RPC 固定值**
+
+\- eth\_maxPriorityFeePerGas 回傳 0x77359400 = 2 gwei，與 RPC differences 文件所述固定值一致
+
+\- 三筆交易 effectiveGasPrice 為 103.0～105.0 gwei，即 base fee 約 101～103 gwei 且逐塊浮動，
+
+與 gas pricing 頁的動態 base fee 控制器描述相符
+
+小結：三項實測全部與文件一致。開發面結論——在 Monad 上 gas limit 不是安全餘裕而是直接成本參數，
+
+必須顯式管理；靠 estimateGas 自動填 limit 的流程（尤其 revert 時塞大值的錢包行為）是真實的資損來源；
+
+receipt gasUsed 語意與以太坊不同，讀數工具需要重新校準。
+<!-- DAILY_CHECKIN_2026-07-24_END -->
+
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 先打個卡
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 主題：交易生命週期總覽（串接前面各篇）
 
@@ -76,6 +141,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
 
+
 假日打卡
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
@@ -84,11 +150,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 假日請假
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -141,6 +209,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -211,6 +280,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -289,11 +359,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 假日水個打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -332,11 +404,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 先打卡晚點補充筆記
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -375,6 +449,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -432,6 +507,7 @@ warm access 維持 100 不變。受影響的是 BALANCE、EXTCODE 系列、CALL 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-24
+<!-- DAILY_CHECKIN_2026-07-24_START -->
+找黑客松的方向，学习python
+<!-- DAILY_CHECKIN_2026-07-24_END -->
+
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 学习python…
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
+
 听了钱包设计的分享会，学习python中
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 学习python，找黑客松的想法
@@ -38,11 +46,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 学习python语言
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -58,11 +68,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天做了week2的任务，昨天忘记打卡了…
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -83,11 +95,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 去学习了解moss的项目
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -112,11 +126,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天补了第一周的任务
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -145,11 +161,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 我今天去补了AI大模型的概念，面试被拷打了……
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -182,11 +200,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天把合约部署到monad的测试网上了，去听了agent安全方面的分享会
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -225,11 +245,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 还在考试…明天补
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

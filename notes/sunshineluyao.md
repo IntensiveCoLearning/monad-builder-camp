@@ -6,7 +6,7 @@ timezone: UTC+8
 
 **GitHub ID:** sunshineluyao
 
-**Telegram:** 
+**Telegram:** zlypioneer
 
 ## Self-introduction
 

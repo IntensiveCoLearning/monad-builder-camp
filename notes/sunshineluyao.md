@@ -1,4 +1,4 @@
----
+<img width="1149" height="591" alt="image" src="https://github.com/user-attachments/assets/b33b1544-5482-492b-8292-2d02b52c7df3" />---
 timezone: UTC+8
 ---
 
@@ -6,7 +6,7 @@ timezone: UTC+8
 
 **GitHub ID:** sunshineluyao
 
-**Telegram:** 
+**Telegram:** zlypoineer
 
 ## Self-introduction
 
@@ -45,6 +45,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
+## 2026.07.06
+
+完成 Web3 入门学习，了解了区块链、以太坊、钱包、地址、交易、Gas 和智能合约等基础概念，并建立了自己的 Week 1 Build Log。
+
+## 2026.07.07
+
+完成 Web3 常用工具准备，了解了 X、Telegram、Discord、GitHub、Notion 和 AI Coding 工具的用途，并开始理解 Builder、DevRel 和 Proof of Work 的意义。
 
 今天的学习重点，是从“我们想做什么”转向“用户遇到了什么问题”。团队需要结合 Research、Ops、Dev 三个视角，确认问题是否真实、用户是否明确、功能是否能在 3–4 天内完成。
 

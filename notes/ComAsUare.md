@@ -15,8 +15,30 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-24
+<!-- DAILY_CHECKIN_2026-07-24_START -->
+参与例会，黑客松赛道分享和共学
+
+```markdown
+1. demo速度完成，比完成度重要
+    有了基本模式，功能,ui完善可以放在后面
+2. 黑客松赛道
+    1. 自由创造
+        monad上可体验、可解释、可验证的问题。
+        逻辑闭环，可实现功能
+        提交可检查材料
+    2. moss onchain agent
+
+3. 我想做什么，为谁做，我能贡献什么，我还需要谁
+
+4. 黑客松故事比完整重要
+    交流才能发现自己的故事是不是有问题
+```
+<!-- DAILY_CHECKIN_2026-07-24_END -->
+
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 1.  参加钱包开发新人避坑与需求直播分享
     
 2.  学习foundry测试框架
@@ -89,6 +111,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
+
 参加building in AI era和stevie project两场直播分享
 
 笔记：
@@ -150,6 +173,7 @@ datadance：数据隐私公链
 <!-- DAILY_CHECKIN_2026-07-19_START -->
 
 
+
 1.学习数据库原理后构建清单应用
 
 2.  dao投票系统合约部署到monad测试网上
@@ -159,6 +183,7 @@ datadance：数据隐私公链
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -249,6 +274,7 @@ datadance：数据隐私公链
 
 
 
+
 1.  测试网交易
     
 2.  vibe coding课程学习完毕
@@ -260,6 +286,7 @@ datadance：数据隐私公链
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -290,6 +317,7 @@ datadance：数据隐私公链
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -349,6 +377,7 @@ datadance：数据隐私公链
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -472,6 +501,7 @@ datadance：数据隐私公链
 
 
 
+
 1.  实习手册整理
     
 2.  monad主网钱包，转账试用
@@ -564,6 +594,7 @@ datadance：数据隐私公链
 
 
 
+
 1、进入epf回放观看。
 
 2、实习手册看完
@@ -615,6 +646,7 @@ datadance：数据隐私公链
 
 
 
+
 观看agent支付、进入epf两个分享。
 
 ```markdown
@@ -651,6 +683,7 @@ ai高效，安全的支付是核心问题；
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

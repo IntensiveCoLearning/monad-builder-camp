@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-24
+<!-- DAILY_CHECKIN_2026-07-24_START -->
+# d17
+<!-- DAILY_CHECKIN_2026-07-24_END -->
+
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 nft智能合约开发中
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 # D15
 <!-- DAILY_CHECKIN_2026-07-22_END -->
@@ -30,11 +37,13 @@ nft智能合约开发中
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
 
+
 # D14
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -49,11 +58,13 @@ Agent prod分享
 
 
 
+
 # D12
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -72,11 +83,13 @@ Agent prod分享
 
 
 
+
 # D10
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -99,6 +112,7 @@ Agent prod分享
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -251,6 +265,7 @@ Agent prod分享
 
 
 
+
 # D7
 
 ## 区块链+research
@@ -337,6 +352,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 
 
+
 # D6
 
 ## WEB3技术地图
@@ -374,6 +390,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -436,6 +453,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 
 
+
 # D4 AI Agent高危示例&安全防线构建
 
 -   自动化到自主化的威胁演变
@@ -449,6 +467,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -541,6 +560,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 
 
+
 # D2
 
 ## 以太坊协议层
@@ -560,6 +580,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

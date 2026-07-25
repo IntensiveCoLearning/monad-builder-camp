@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+今天要完成成品上线
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 [https://hello-agents.datawhale.cc/#/](https://hello-agents.datawhale.cc/#/)
 
 学习ai agent 开发
@@ -25,11 +31,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 完成 [https://web3career.build/](https://web3career.build/) 里的相关任务，进行组队分工
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 基于 ERC721 、ERC1152 开发，相关数据上链
@@ -39,6 +47,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -53,6 +62,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成 web3 auth 对接
 
 [https://github.com/ouminghai/Fanora](https://github.com/ouminghai/Fanora)
@@ -60,6 +70,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -78,6 +89,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成 Fanora 首页制作
 
 [https://github.com/ouminghai/Fanora](https://github.com/ouminghai/Fanora)
@@ -85,6 +97,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -109,6 +122,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 **Fanora--AI Agent 驱动的 Web3 链上粉丝身份与互动平台**  
 基于 `LangGraph + FastAPI + viem/web3.py + Monad + Solidity` 构建链上粉丝身份与互动协议，支持用户行为采集、链上身份徽章铸造、粉丝互动任务、积分/等级体系与智能 Agent 自动化分析，为创作者和社区提供可验证、可组合的粉丝关系基础设施。
 
@@ -117,6 +131,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -148,6 +163,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # 定义一个 AI-assisted Web3 Prototype。
 
 # 可以选择自己设计一个 Demo，也可以选择参与 Moss Open Source Challenge（推荐给有开发基础的同学）。
@@ -163,6 +179,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -215,11 +232,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 # 查看 week2 任务，打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -247,6 +266,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -295,6 +315,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 阅读 buildnaything 初中系列课程
 
 learn Monskills build ai dapp
@@ -302,6 +323,7 @@ learn Monskills build ai dapp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -417,6 +439,7 @@ FanBadge 是一个基于 Monad 区块链构建的高频互动粉丝生态 DApp�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -740,6 +763,7 @@ Monad 能做到这些，靠的是共识层和数据层的一系列创新：Monad
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

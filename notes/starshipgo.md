@@ -23,6 +23,7 @@ getting ready for hackthon!
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 ## **让研究、运营和开发真正一起工作**
 
 ### **🎯 学习目标**
@@ -38,6 +39,7 @@ getting ready for hackthon!
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 
@@ -64,6 +66,7 @@ getting ready for hackthon!
 
 
 
+
 ## **Define Together：从很多想法中选出一个可做的问题**
 
 ### **🎯 学习目标**
@@ -77,6 +80,7 @@ getting ready for hackthon!
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -110,11 +114,13 @@ getting ready for hackthon!
 
 
 
+
 Dev Portfolio Pack：汇总 Dev Plan、代码 / repo、README、运行证据、AI Collaboration Log、Known Issues、Week 3 开发角色
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -137,6 +143,7 @@ Dev Portfolio Pack：汇总 Dev Plan、代码 / repo、README、运行证据、A
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -177,11 +184,13 @@ Dev Portfolio Pack：汇总 Dev Plan、代码 / repo、README、运行证据、A
 
 
 
+
 keep working on moss
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -231,11 +240,13 @@ getting read to show proof of work
 
 
 
+
 Learning everything about MOSS
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -293,11 +304,13 @@ Learning everything about MOSS
 
 
 
+
 Learning AI tools for chain products
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -363,11 +376,13 @@ Keeping up with the week1 content
 
 
 
+
 复习上周学习内容
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -441,11 +456,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 继续学习技术，做好作品集，等内推机会
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -526,11 +543,13 @@ Finish homework, watch re-play of the sessions
 
 
 
+
 把学习以太坊协议加入学习计划中！
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

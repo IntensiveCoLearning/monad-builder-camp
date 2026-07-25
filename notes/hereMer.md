@@ -15,8 +15,16 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+2026/07/25 - 探索Moss Adapter扩展机制
+
+Moss框架的核心扩展力在于Adapter，它就像AI Agent的“万能接口”，每接入一个就能解锁新的Web3协议或链上能力。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 ### 2026/07/24 - **Monad**
 
 仔细阅读文档后发现，Monad 不仅仅是“以太坊的加速版”。它通过并行执行（Parallel Execution）和极速共识，达到了10,000TPS。
@@ -26,6 +34,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 ### 2026/07/22 - Moss 概念微科普
 
@@ -56,6 +65,7 @@ Moss 是什么？它解决了什么问题？
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
 
+
 ### 2026/07/21 - 复盘
 
 **今日**
@@ -67,6 +77,7 @@ Moss 是什么？它解决了什么问题？
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -87,6 +98,7 @@ Ops Builder (文档与体验优化)
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -113,6 +125,7 @@ Ops Builder (文档与体验优化)
 
 
 
+
 ### 2026/07/17 - AI Agent框架Moss
 
 **项目简介**
@@ -134,6 +147,7 @@ Moss是一个专为构建AI Agent设计的开发框架，提供了一套从开�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -201,6 +215,7 @@ function getAllMessages() public view returns (Message\[\] memory) { return mess
 
 
 
+
 ### 2026/07/15 - AI 辅助生成“打卡合约”
 
 **操作流**
@@ -218,6 +233,7 @@ function getAllMessages() public view returns (Message\[\] memory) { return mess
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -248,6 +264,7 @@ function getAllMessages() public view returns (Message\[\] memory) { return mess
 
 
 
+
 **2026/07/11 - 智能合约的搭建与落成**
 
 **合约全链路生命周期拆解**
@@ -261,6 +278,7 @@ function getAllMessages() public view returns (Message\[\] memory) { return mess
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -310,6 +328,7 @@ function getAllMessages() public view returns (Message\[\] memory) { return mess
 
 
 
+
 2026/07/09 - 链上第二步：完成首笔测试网转账与链上查证
 
 **概述**
@@ -344,6 +363,7 @@ function getAllMessages() public view returns (Message\[\] memory) { return mess
 
 
 
+
 2026/07/07 - 链上第一步：专用钱包与测试网配置
 
 **概述**
@@ -361,6 +381,7 @@ function getAllMessages() public view returns (Message\[\] memory) { return mess
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

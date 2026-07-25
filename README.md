@@ -209,7 +209,7 @@ By completing the program, participants will leave with:
 | [byby123byby](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/byby123byby.md) | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | | | | | |
 | [xixiaoqi-art](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xixiaoqi-art.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yang2267251737-cmd](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yang2267251737-cmd.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [emptytouch](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/emptytouch.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | |
+| [emptytouch](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/emptytouch.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | | | |
 | [manningdereon-tech](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/manningdereon-tech.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Cap-bit-mint](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Cap-bit-mint.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Infinite-Approximation](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Infinite-Approximation.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -817,6 +817,7 @@ By completing the program, participants will leave with:
 | [arcnapan](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/arcnapan.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Kokaro233](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Kokaro233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

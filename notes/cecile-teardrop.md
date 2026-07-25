@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+黑客松继续准备，预测市场产品分析
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 moss issue初稿：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/moss-issue-draft.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/moss-issue-draft.md)
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 黑客松准备
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 **Moss 入门指南：**
@@ -40,6 +48,7 @@ moss issue初稿：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7
 
 
 
+
 **GitHub 探索日志:**[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/721.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/721.md)
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
@@ -49,11 +58,13 @@ moss issue初稿：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7
 
 
 
+
 moss开源贡献计划篡写：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/720.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/720.md)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -100,11 +111,13 @@ readme：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week
 
 
 
+
 BattleEngine合约完成部署测试，功能验证
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -120,6 +133,7 @@ BattleEngine 合约核心逻辑编写（submitMove + 状态机）
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -170,6 +184,7 @@ Agent 是“大脑”，负责理解需求和规划步骤；Moss 是“翻译官
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -361,6 +376,7 @@ event BattleEnded(uint256 indexed battleId, address winner);
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -1965,11 +1981,13 @@ foundry.toml # Foundry 配置
 
 
 
+
 完成Week 1 Build Log，确定未来研究方向——Tech，链接：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/main/Week%201%20Build%20Log](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/main/Week%201%20Build%20Log)，继续完成week1产品——一个最小合约 Demo
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -2202,6 +2220,7 @@ AI Agent 的决策是连续的、多步的。一个 Agent 完成任务可能需�
 
 
 
+
 # 继续完成部署合约：  
 
 ![1.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/cecile-teardrop/images/2026-07-10-1783687734771-1.png)
@@ -2217,6 +2236,7 @@ README:链接：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/bl
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -2405,6 +2425,7 @@ AI Agent 从"自动化"到"自主化"的进化，本质上是**将更多决策�
 
 
 
+
 # 1.部署在Monad Testnet的第一个合约
 
 ## 合约源码：
@@ -2473,6 +2494,7 @@ contract SimpleStorage {
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

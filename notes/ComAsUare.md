@@ -15,8 +15,54 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+monad相关学习，链接： [https://github.com/ComAsUare/LearnMonadBuild/](https://github.com/ComAsUare/LearnMonadBuild/)
+
+笔记：
+
+1\. monad 和ethereum区别
+
+1.虚拟机
+
+1\. init code size, contract code size
+
+monad max init code size 256k, ethereum 48k
+
+monad maximum contract code size limit is 128 KB , ethereum 24k
+
+2\. precompiling 和 opcode重定价
+
+3\. 支持 secp256r1 (P256) verification precompile
+
+2\. 交易
+
+1\. 先共识打包，后异步执行
+
+2。 用gas\_limit取代gas\_usage，来避免DoS攻击
+
+3\. 保管余额优化。让共识阶段交易都能被执行。降低了共识阶段
+
+交易加入的限制，设置了执行阶段交易剔除的条件
+
+4\. 链上包含执行失败交易，这些交易是有效的，消耗gas,但在执行阶段被revert。
+
+5\. 全局内存池不存在；被放入一些leader的local memepool
+
+3\. eip 7702
+
+以太坊pectra升级中引入，协议层实现智能合约账户
+
+monad中，eoa被eip7702委托后，由于reserve balance,
+
+账户余额需大于10mon
+
+此外，历史数据，rpc也有所不同
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 参与例会，黑客松赛道分享和共学
 
 ```markdown
@@ -38,6 +84,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 1.  参加钱包开发新人避坑与需求直播分享
     
@@ -112,6 +159,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
 
+
 参加building in AI era和stevie project两场直播分享
 
 笔记：
@@ -174,6 +222,7 @@ datadance：数据隐私公链
 
 
 
+
 1.学习数据库原理后构建清单应用
 
 2.  dao投票系统合约部署到monad测试网上
@@ -183,6 +232,7 @@ datadance：数据隐私公链
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -275,6 +325,7 @@ datadance：数据隐私公链
 
 
 
+
 1.  测试网交易
     
 2.  vibe coding课程学习完毕
@@ -286,6 +337,7 @@ datadance：数据隐私公链
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -317,6 +369,7 @@ datadance：数据隐私公链
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -377,6 +430,7 @@ datadance：数据隐私公链
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -502,6 +556,7 @@ datadance：数据隐私公链
 
 
 
+
 1.  实习手册整理
     
 2.  monad主网钱包，转账试用
@@ -595,6 +650,7 @@ datadance：数据隐私公链
 
 
 
+
 1、进入epf回放观看。
 
 2、实习手册看完
@@ -647,6 +703,7 @@ datadance：数据隐私公链
 
 
 
+
 观看agent支付、进入epf两个分享。
 
 ```markdown
@@ -683,6 +740,7 @@ ai高效，安全的支付是核心问题；
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

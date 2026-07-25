@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+web3运营地岗位职责
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 完成打卡
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 完成收听钱包的产品设计
 <!-- DAILY_CHECKIN_2026-07-22_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
 
+
 观看产品分享：个人数据与 Stewie Project
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成运营思路的总结
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -68,11 +79,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成运营一些基本工具的了解，比如宣传，社区运营、活动策划、内容传播与用户增长。
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -95,6 +108,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成ai学习： **从研究到公共知识：AI 时代 Web3 Researcher 的成长之路**
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
@@ -109,11 +123,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 尝试使用ai完成一个mon币漫画制作；
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -142,11 +158,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 回顾web3实习手册的内容，比如区块链，哈希值，岗位网站等
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -182,6 +200,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成区块链合约的部署和写入调用
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/yeliang0815-design/images/2026-07-10-1783674704201-image.png)
@@ -203,6 +222,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 完成钱包和第一次交易的实现；
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/yeliang0815-design/images/2026-07-09-1783593443886-image.png)
@@ -210,6 +230,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -248,6 +269,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 对于产品与商业化的概念的思考。
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/yeliang0815-design/images/2026-07-07-1783426425967-image.png)
@@ -255,6 +277,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,614 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+# Moss 入门指南：从零开始了解 AI Agent × Web3 开源框架
+
+> **适合人群**
+> 
+> -   AI Agent 初学者
+>     
+> -   Web3 Builder
+>     
+> -   第一次参与 GitHub 开源项目的开发者
+>     
+> -   希望学习 Agent Runtime 的开发者
+>     
+> 
+> **预计阅读时间：20~30 分钟**
+
+* * *
+
+# 一、前言
+
+近年来，大语言模型（LLM）的快速发展推动了 AI Agent 的兴起。
+
+越来越多的开发者开始尝试构建：
+
+-   AI 编程助手
+    
+-   AI 客服
+    
+-   AI 办公助手
+    
+-   Web3 Agent
+    
+-   自动化工作流（Workflow）
+    
+
+但是，当真正开始开发一个 Agent 时，很多人都会遇到相同的问题：
+
+> **模型会聊天，但不会长期工作。**
+
+例如：
+
+-   记不住历史信息
+    
+-   无法长期保存用户数据
+    
+-   检索知识效率低
+    
+-   工具调用混乱
+    
+-   项目结构越来越复杂
+    
+
+因此，一个真正的 AI Agent，并不仅仅依赖大语言模型，还需要一套完整的运行框架（Runtime）。
+
+Moss 正是在这样的背景下诞生的。
+
+项目地址：
+
+[https://github.com/nishuzumi/moss](https://github.com/nishuzumi/moss)
+
+* * *
+
+# 二、什么是 Moss？
+
+Moss 是一个专注于 **AI Agent Runtime** 的开源项目。
+
+它并不是新的 LLM，也不是聊天机器人，而是一套帮助开发者快速构建 AI Agent 的基础设施。
+
+官方希望解决的问题包括：
+
+-   Agent 长期记忆
+    
+-   高性能语义搜索
+    
+-   Tool Calling
+    
+-   Runtime 管理
+    
+-   Agent 生命周期管理
+    
+
+可以把它理解成：
+
+```
+               GPT / Claude
+                    │
+          （负责思考与推理）
+                    │
+        ─────────────────────
+                Moss Runtime
+        ─────────────────────
+         Memory
+         Search
+         Tool Calling
+         Session
+         Runtime
+                    │
+              AI Agent
+```
+
+LLM 提供智能，Moss 提供运行能力。
+
+两者结合，才能构建真正可持续工作的 AI Agent。
+
+* * *
+
+# 三、为什么需要 Moss？
+
+很多开发者第一次接触 AI Agent 时，都会直接调用 OpenAI API。
+
+例如：
+
+```python
+response = client.chat.completions.create(...)
+```
+
+这种方式虽然简单，但只能完成一次性的问答。
+
+真正的 AI Agent 更像下面这样：
+
+```
+用户输入
+
+↓
+
+LLM 理解任务
+
+↓
+
+读取 Memory
+
+↓
+
+搜索知识
+
+↓
+
+调用工具
+
+↓
+
+执行任务
+
+↓
+
+保存结果
+
+↓
+
+等待下一次任务
+```
+
+因此，需要：
+
+-   Memory
+    
+-   Search
+    
+-   Runtime
+    
+-   Session
+    
+-   Tool Calling
+    
+
+Moss 希望把这些能力统一管理，降低开发复杂度。
+
+* * *
+
+# 四、Moss 项目结构解析
+
+第一次阅读源码时，建议不要直接进入核心代码，而是先理解项目结构。
+
+建议阅读顺序如下：
+
+```
+README
+    │
+Docs
+    │
+Examples
+    │
+Source Code
+    │
+Tests
+```
+
+## README
+
+README 是项目入口。
+
+建议重点关注：
+
+-   项目定位
+    
+-   为什么存在
+    
+-   如何安装
+    
+-   Quick Start
+    
+-   Roadmap
+    
+
+不要急于阅读 API，而是先理解设计理念。
+
+* * *
+
+## Docs
+
+Docs 是开发文档。
+
+一般包括：
+
+-   安装说明
+    
+-   API
+    
+-   架构介绍
+    
+-   Runtime
+    
+-   Memory
+    
+-   Search
+    
+
+建议边阅读边记录笔记。
+
+* * *
+
+## Examples
+
+Examples 是最快学习项目的方法。
+
+阅读 Example 时建议回答：
+
+-   Agent 如何创建？
+    
+-   如何配置？
+    
+-   如何启动？
+    
+-   如何调用 Memory？
+    
+-   如何调用 Search？
+    
+
+* * *
+
+## Source
+
+阅读源码时建议按模块进行：
+
+```
+Runtime
+
+↓
+
+Memory
+
+↓
+
+Search
+
+↓
+
+Tool
+
+↓
+
+Utils
+```
+
+不要一次阅读全部源码。
+
+* * *
+
+# 五、本地环境配置
+
+## 1\. Fork 项目
+
+点击 GitHub：
+
+Fork
+
+把项目复制到自己的账号。
+
+* * *
+
+## 2\. Clone
+
+```bash
+git clone <https://github.com/><your-name>/moss.git
+
+cd moss
+```
+
+* * *
+
+## 3\. 安装依赖
+
+按照 README：
+
+例如：
+
+```bash
+npm install
+```
+
+或者：
+
+```bash
+pnpm install
+```
+
+如果项目使用其他包管理工具，请以官方文档为准。
+
+* * *
+
+## 4\. 启动项目
+
+通常：
+
+```bash
+npm run dev
+```
+
+或者：
+
+```bash
+pnpm dev
+```
+
+如果启动失败：
+
+优先查看：
+
+-   README
+    
+-   Docs
+    
+-   Issues
+    
+
+很多问题都已经有人遇到。
+
+* * *
+
+# 六、如何阅读 GitHub 开源项目？
+
+很多新人只会看 README。
+
+其实真正重要的是：
+
+## Issues
+
+这里记录：
+
+-   Bug
+    
+-   Feature
+    
+-   Todo
+    
+
+建议关注：
+
+-   good first issue
+    
+-   help wanted
+    
+
+这些通常适合新人。
+
+* * *
+
+## Pull Requests
+
+这里能学到：
+
+Maintainer 如何：
+
+-   Review
+    
+-   修改代码
+    
+-   提建议
+    
+-   合并代码
+    
+
+建议阅读：
+
+已经 Merge 的 PR。
+
+学习价值非常高。
+
+* * *
+
+## Discussions
+
+适合：
+
+-   提问
+    
+-   分享经验
+    
+-   讨论设计
+    
+
+不是所有项目都有 Discussions。
+
+如果有，一定值得阅读。
+
+* * *
+
+# 七、第一次开源贡献
+
+很多人认为：
+
+只有修改源码才叫贡献。
+
+实际上：
+
+以下内容都属于优秀贡献：
+
+修正文档
+
+翻译 README
+
+编写 Tutorial
+
+增加 Example
+
+整理 FAQ
+
+优化开发体验
+
+很多大型开源项目都会优先欢迎这些贡献。
+
+* * *
+
+# 八、推荐的学习路线
+
+建议按照下面路线学习：
+
+第一周：
+
+-   阅读 README
+    
+-   阅读 Docs
+    
+-   浏览 Issues
+    
+
+第二周：
+
+-   阅读 Examples
+    
+-   学习 Runtime
+    
+
+第三周：
+
+-   修改文档
+    
+-   提交第一个 PR
+    
+
+第四周：
+
+-   阅读源码
+    
+-   修复 Bug
+    
+-   增加 Feature
+    
+
+循序渐进，比一开始阅读全部源码更高效。
+
+* * *
+
+# 九、常见问题（FAQ）
+
+## Q1：没有 AI 基础可以学习 Moss 吗？
+
+可以。
+
+建议先了解：
+
+-   LLM
+    
+-   Prompt
+    
+-   RAG
+    
+-   Tool Calling
+    
+
+之后再学习 Moss。
+
+* * *
+
+## Q2：不会写代码可以贡献吗？
+
+完全可以。
+
+文档、教程、翻译、示例项目、FAQ 都属于正式贡献。
+
+* * *
+
+## Q3：PR 被拒绝怎么办？
+
+不要灰心。
+
+Maintainer 的 Review 是帮助你改进代码。
+
+根据建议修改后重新提交即可。
+
+* * *
+
+## Q4：应该先读源码还是文档？
+
+建议：
+
+README → Docs → Examples → Source。
+
+* * *
+
+## Q5：如何持续学习？
+
+建议：
+
+-   Star 项目
+    
+-   Watch 仓库
+    
+-   关注新的 Issues
+    
+-   阅读 Release Notes
+    
+-   参与 Discussions
+    
+
+长期跟踪比一次性学习更有效。
+
+* * *
+
+# 十、我的学习心得
+
+在学习 Moss 的过程中，我最大的收获并不是学会了某个 API，而是理解了一个 AI Agent 框架的设计思路。
+
+我逐步完成了：
+
+-   阅读 README
+    
+-   理解项目目标
+    
+-   浏览 Docs、Issues、Pull Requests
+    
+-   制定开源贡献计划
+    
+-   编写学习笔记
+    
+-   整理中文教程
+    
+
+这些实践让我认识到，开源贡献不仅是提交代码，也包括整理知识、优化文档和帮助新人降低学习门槛。
+
+* * *
+
+# 十一、下一步学习建议
+
+如果你已经完成本教程，可以继续挑战以下内容：
+
+-   编写一个 Hello Moss Demo
+    
+-   尝试接入一个 LLM API
+    
+-   为 Agent 添加 Memory 功能
+    
+-   集成 Tool Calling
+    
+-   阅读 Runtime 核心源码
+    
+-   提交第一份 Pull Request
+    
+
+随着对项目理解的加深，再逐步参与 Bug 修复和新功能开发。
+
+* * *
+
+# 十二、总结
+
+Moss 不只是一个 AI Agent 框架，更是一个值得学习的开源工程实践案例。
+
+通过阅读它的文档、源码和社区协作方式，你不仅能够了解 AI Agent 的设计理念，还能学习 GitHub 开源协作流程，逐步完成从使用者到贡献者的转变。
+
+对于每一位希望进入 AI Agent 与 Web3 开源生态的开发者来说，持续学习、积极实践、勇于贡献，比一次性掌握所有知识更重要。
+
+希望这份教程能够帮助你迈出参与 Moss 开源社区的第一步，也期待未来在社区中看到你的第一份 Pull Request。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 # Builder Profile
 
 ## 身份标签
@@ -238,6 +844,7 @@ Agent 可以持续记录用户工作内容，自动整理会议纪要、跟踪�
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 # Moss 开源贡献计划（Builder Week 1）
 
 **项目地址：**  
@@ -423,6 +1030,7 @@ FAQ 可以减少重复提问，提高开发效率。
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 # Moss 开源项目学习记录（二）：了解项目组织方式
@@ -640,6 +1248,7 @@ Discussions 的定位与 Issues 不同。
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -1082,6 +1691,7 @@ Moss 可以作为整个 Agent 系统的知识层。
 
 
 
+
 -   今日目标：做 Week2 完整复盘，整理所有产出归档，梳理成长点和不足，同时准备 Week3 的组队和角色定位，衔接下一周的任务。
     
 -   Week2 复盘核心认知
@@ -1123,6 +1733,7 @@ Moss 可以作为整个 Agent 系统的知识层。
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -1217,6 +1828,7 @@ Moss 可以作为整个 Agent 系统的知识层。
 
 
 
+
 ### Day 5（案例总结+周复盘：收尾 Week2 核心任务，打包完整产出）
 
 -   今日目标：完成 Ops 学习案例总结，拆解 2 个标杆活动提炼可复用经验，同时复盘本周 5 项核心设计任务，把所有产出整合成一套完整的活动方案包，对齐最开始的保底目标。
@@ -1274,6 +1886,7 @@ Moss 可以作为整个 Agent 系统的知识层。
 
 
 
+
 ### Day 4（预案 + 物料设计：完成执行预案和运营物料设计）
 
 -   今日目标：完成活动执行预案设计 + 全平台运营物料设计，练习风险预判和多平台物料适配，对应本周第三、第四项核心设计任务。
@@ -1314,6 +1927,7 @@ Moss 可以作为整个 Agent 系统的知识层。
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -1394,6 +2008,7 @@ Moss 可以作为整个 Agent 系统的知识层。
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -1596,6 +2211,7 @@ Moss 可以作为整个 Agent 系统的知识层。
 
 
 
+
 # **Role Choice Card**
 
 ### 一、选择 Ops 方向的理由
@@ -1704,6 +2320,7 @@ Week3 进入小组协作与 Mini Demo 阶段，Ops 方向承担4类核心角色�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -2746,6 +3363,7 @@ Next.js 应用（App Router, TypeScript, Tailwind）。定义数据模型：
 
 
 
+
 # 手册学习
 
 ## 面试准备与行业岗位推荐
@@ -3164,6 +3782,7 @@ Ambassador (月) → Intern (月) → Core Contributor
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -3616,6 +4235,7 @@ Ambassador (月) → Intern (月) → Core Contributor
 
 
 
+
 # 手册学习
 
 ## 区块链岗位全景图
@@ -4040,6 +4660,7 @@ AI Agent 正从“信息应答者”蜕变为“行动执行者”——它能�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -4746,6 +5367,7 @@ Already...      │
 
 
 
+
 # Solidity合约实践
 
 ## 打卡合约
@@ -4942,6 +5564,7 @@ contract SimpleCheckIn {
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

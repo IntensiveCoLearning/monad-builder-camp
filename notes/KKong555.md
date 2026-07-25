@@ -15,13 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+搜集以往黑客松的一些项目，找找灵感，[https://dorahacks.io/buidl-collection/5662](https://dorahacks.io/buidl-collection/5662)
+
+以及vibe coding尝试做了一个应用，但是遇到一些问题，比如cursor额度用完，需要购买token之类的。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 整理自己擅长的技能以及整理作品，为黑客松做准备～
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 **会议主题**：OneKey 加密钱包产品设计与行业思考分享
 
@@ -126,6 +135,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
 
+
 Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 针对当前 AI Agent、MCP以及“第二大脑”赛道的割裂现状，推出了实验性项目Life Capsule AI：
@@ -151,6 +161,7 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -268,11 +279,13 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 
 
+
 观看回放 【DevRel 的成长之路 —— 从 Builder 到生态连接者】，学习智能合约，remix相关操作
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -291,6 +304,7 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 
 
+
 日常用钱包的安全常识。
 
 千万别相信任何私聊你的官方客服，也别觉得“只是点个同意”没啥大不了。比如，助记词一旦截图发错群，千万别侥幸以为“撤回了就没事”，必须立刻建新钱包转走资产，因为撤回根本不能让助记词失效。另外，网站上那些零 Gas 费的免费签名，或者让你点同意的无限授权，背后都可能给黑客留下了随时掏空你钱包的权限。记住一句话，光在网站上点“断开连接”是不够的，必须去链上撤销（Revoke）授权，才算真正把“钱袋子的口子”给扎紧了。 
@@ -300,6 +314,7 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -350,6 +365,7 @@ Web3 是一个极度务实且结果导向的行业。无论是 Researcher 往Gro
 
 
 
+
 本次会议围绕 AI 开发闭环与 Web3 技术栈展开，指出利用 AI（如配置持久化指令 [AGENTS.md](http://AGENTS.md)、推行测试与规范驱动开发）能大幅降低门槛并加速从 Demo 到系统的落地；同时系统梳理了 Web3 的五大开发方向（DApp、合约、钱包、节点、审计）及以太坊分层状态机原理，强调最终目标是利用 AI 提升定义问题、验证结果与设计系统的核心工程能力，而非盲目背诵工具清单。 
 
 我的思考：
@@ -363,6 +379,7 @@ Web3 开发需要去魅，回归底层计算机基础：此次分享把复杂的
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -386,6 +403,7 @@ Week 2 Builder Track Split 正式开启
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -438,6 +456,7 @@ AI Agent 高危案例解析与安全构建
 
 
 
+
 **Jack老师分享会：AI Agent 支付基础设施与Web3融合**
 
 AI Agent 支付的本质： 解决机器在安全合规前提下代替人类完成资金转移的问题，依赖授权、凭证、支付编排与风控四大支撑。
@@ -461,6 +480,7 @@ Agent Economy与Web3结合： 传统支付难以满足机器间的高频交互�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -548,6 +568,7 @@ Step 4：开发前端
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

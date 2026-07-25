@@ -15,13 +15,24 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+今天继续推进 Moss Week 2 的 **Protocol Adapter Challenge**，围绕 Monad 主网上的 [Nad.fun](http://Nad.fun) Lens 开发了一个 Query-only Adapter。
+
+已完成 `quoteBuy`、`quoteSell` 和 `tokenStatus` 三个查询能力，并将官方完整 ABI 固定到指定 Git Commit 和 SHA-256，补充了离线确定性生成、上游 ABI 更新脚本、来源记录和主网在线验证。当前包级测试 `7/7` 通过，主网查询测试通过，MCP Server 测试 `11/11` 通过，全仓 Build、Typecheck、Lint 和离线测试也全部通过。
+
+目前还剩 Monadscan Explorer ABI 交叉核验，因为终端尚未配置 `MONADSCAN_API_KEY`，所以没有将这一项伪装成已通过。下一步是完成交叉核验、审计最终 Diff、Commit、Push，并向 Moss 官方仓库提交 PR。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 今天周五，明天开始完成没完成的week任务
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 gpt会员到账了，我要开始完成没有完成的任务了
 <!-- DAILY_CHECKIN_2026-07-23_END -->
@@ -30,11 +41,13 @@ gpt会员到账了，我要开始完成没有完成的任务了
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 onekey 感觉很有意思，我都想买一个冷钱包了
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -47,11 +60,13 @@ onekey 感觉很有意思，我都想买一个冷钱包了
 
 
 
+
 今天gpt过期了，还在研究续费，但是有个点错了，现在要等明天退款才能继续看能不能订阅了，要是不行就只能等72小时用苹果了，今天晚上听了一些，还在完成week2任务，但是gpt一下子没有了，就很难办
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -82,6 +97,7 @@ onekey 感觉很有意思，我都想买一个冷钱包了
 
 
 
+
 现在在听yoyo分享，先打个卡，怕忘了
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
@@ -94,11 +110,13 @@ onekey 感觉很有意思，我都想买一个冷钱包了
 
 
 
+
 今天没有开发项目，colearning是玩游戏，谁是卧底
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -135,6 +153,7 @@ AI 可以辅助完成调研、Proposal、宣传文案、主持稿、评审标准
 
 
 
+
 【今日打卡】
 
 今天参加了两场与 Web3 Research、职业方向和开源协作有关的线上课程。
@@ -154,6 +173,7 @@ AI 可以辅助完成调研、Proposal、宣传文案、主持稿、评审标准
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -194,6 +214,7 @@ AI 可以辅助完成调研、Proposal、宣传文案、主持稿、评审标准
 
 
 
+
 今天完成了 Week 1 核心产出的最终整理，并提交了第一个轻量级 Mini Demo 0。
 
 我的作品是部署在 Monad Testnet 上的 DailyCheckIn 每日打卡智能合约。我已经将 Solidity 源码、README v0.1、链上部署信息、MonadVision 交互截图和 Remix read function 查询截图整理到公开 GitHub 仓库中。
@@ -220,6 +241,7 @@ Week 2 我确认选择 Tech 作为主方向，Research 作为辅助能力。下�
 
 
 
+
 今天完成了 Monad Testnet 钱包实操任务。由于之前的课程钱包浏览器扩展密码遗失，并且现有助记词恢复出的地址与旧钱包不一致，我在确认旧钱包仅含测试网资产后重新创建了课程专用钱包，并将新助记词离线备份。
 
 随后，我为新钱包添加了 Monad Testnet，领取了测试币，并向另一个由自己控制的测试钱包地址转账了一小笔 MON。转账完成后，我复制了 Transaction Hash，并在 Monad 测试网区块浏览器中查询了这笔交易。
@@ -231,6 +253,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -275,6 +298,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 
 
+
 今日完成了「AI Agent 高危案例解析与安全构建」线上活动的学习。本次分享主要围绕 AI Agent 的安全风险展开，重点讲解了当 Agent 拥有钱包权限、API 权限、文件访问权限、系统命令权限或插件调用能力后，可能出现的高危场景。
 
 今天我理解到，AI Agent 和普通聊天机器人最大的区别在于，它不仅会生成内容，还可能执行真实操作。因此它的安全风险也不只是“回答错了”，而是可能因为过度授权、提示词注入、恶意插件、恶意 Skill、MCP 工具风险或运行时缺乏防护，造成数据删除、凭证泄露、恶意转账、敏感信息外发等问题。
@@ -288,6 +312,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -336,6 +361,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 
 
+
 今天完成了 Web3 实习计划第一阶段的基础任务。首先，我创建并准备了一个课程专用钱包，没有使用自己的主力钱包，以降低后续测试和交互过程中的资产安全风险。随后，我按照任务要求添加了 Monad Testnet 网络，并打开 Monad Explorer / 区块浏览器，确认可以正常查询自己的钱包地址。
 
 通过这次操作，我初步理解了链上产品和普通互联网产品的区别。普通互联网产品主要依赖账号体系、平台数据库和中心化服务器；而链上产品通常通过钱包连接，资产、交易和合约交互会记录在区块链上，可以被公开查询和验证。链上产品更强调数据透明、资产归属和智能合约执行规则，但同时也对钱包安全、Gas、网络配置和用户理解门槛提出了更高要求。
@@ -345,6 +371,7 @@ Transaction Hash：**0xb7694e86f4d6b4756c874c3e8aaf5b189c8ac423bcf3b280367e41fa2
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

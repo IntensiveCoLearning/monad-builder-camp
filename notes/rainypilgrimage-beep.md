@@ -15,13 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+-   黑客松赛道校准方向
+    
+-   考虑组队和方案讨论
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 脑暴方案，产出A方向与B方向，待讨论决定
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 -   提交Moss PR
     
@@ -30,6 +39,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 -   完成Moss介绍、新手教程
@@ -46,6 +56,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   产品分享直播Building in the AI Era: From Product to Agent Economy
     
 -   Moss开源贡献计划，阅读项目架构、现状，找到方向，撰写Issue
@@ -53,6 +64,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -71,6 +83,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   认识Moss项目
     
 -   提交Moss任务
@@ -78,6 +91,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -98,6 +112,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   完成 EIP Reading Card
     
 -   co-Learning
@@ -107,6 +122,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -133,6 +149,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ```
 完成钱包、智能合约、交易与 ERC-20 授权的最小理解。
 完成 DeFi 借贷、清算、资金利用率与供应者风险的最小理解。
@@ -144,6 +161,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -178,6 +196,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   在 Monad Testnet 完成 LearningCheckin 合约部署与读写验证，并围绕受限 Agent 的预算、授权、支付与验收边界完成 Monad 产品方向分析，提出低频 MVP 与后续验证问题。
     
 -   撰写完成并提交Mini Demo 0
@@ -185,6 +204,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -208,6 +228,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -246,6 +267,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   完成智能合约实践，部署第一个 Monad 合约
     
 -   按进度学习BuildAnything
@@ -257,6 +279,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -299,6 +322,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   完成 Week 1 前置准备任务进入 Web3 与链上世界。
     
 -   创建了课程专用钱包。
@@ -318,6 +342,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

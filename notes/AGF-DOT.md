@@ -15,8 +15,476 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+````markdown
+EVM底层原理与前沿技术笔记
+
+日期：2026年7月25日
+主题：EVM执行模型、存储架构、2026最新特性（Monad并行EVM、EIP-1153瞬态存储）
+关联项目：OpenPerp永续DEX
+核心目标：从底层理解EVM运行机制，掌握2026最新优化方向，解决实际开发中的性能问题
+
+---
+
+第一部分：EVM基础执行模型
+
+1.1 EVM是什么
+
+EVM（Ethereum Virtual Machine）是以太坊的运行时环境，负责执行智能合约的字节码。它是一个栈式虚拟机，所有计算都基于256位（32字节）的字长。
+
+核心特性：
+- 确定性执行：相同输入必然产生相同输出
+- 隔离环境：每个合约在独立沙箱中运行
+- Gas计量：每个操作消耗计算资源，防止恶意合约耗尽节点资源
+- 图灵完备：支持循环、条件分支等所有计算逻辑
+
+1.2 EVM架构分层
+
+```
+用户层
+    |
+    v
+JSON-RPC接口
+    |
+    v
+交易池（Mempool）
+    |
+    v
+共识层（PoS）
+    |
+    v
+执行层（EVM）
+    |
+    v
+状态存储（LevelDB/RocksDB）
+```
+
+1.3 EVM三大存储区域
+
+存储层级对比表：
+
+| 存储类型 | 生命周期 | 作用域 | Gas成本 | 典型用途 |
+|---------|---------|--------|---------|---------|
+| Stack | 单次调用 | 仅当前调用 | 1-3 gas | 临时计算，最多1024层 |
+| Memory | 单次调用 | 可跨内部调用 | 3 gas/字（扩展时线性+二次增长） | 中间变量、返回数据 |
+| Storage | 永久 | 合约全生命周期 | SLOAD: 100-2100 gas, SSTORE: 2900-20000 gas | 合约状态、余额、配置 |
+
+关键字长：EVM所有操作基于256位（32字节）的word。使用uint8/uint128等小类型不会节省计算Gas，但多个小类型可以打包存储（Storage Packing）节省Storage槽位。
+
+1.4 四类合约调用对比
+
+```solidity
+// 1. CALL: 普通调用，可修改目标合约状态
+(bool success, bytes memory data) = target.call{value: 1 ether}(abi.encodeWithSignature("transfer(address,uint256)", user, amount));
+
+// 2. DELEGATECALL: 委托调用，目标合约代码在调用者上下文执行，可修改调用者状态
+(bool success, bytes memory data) = target.delegatecall(abi.encodeWithSignature("implement()"));
+
+// 3. STATICCALL: 静态调用，目标合约只读，禁止修改状态
+(bool success, bytes memory data) = target.staticcall(abi.encodeWithSignature("balanceOf(address)", user));
+
+// 4. CALLCODE: 代码调用（已废弃，建议用DELEGATECALL）
+(bool success, bytes memory data) = target.callcode(data);
+```
+
+对OpenPerp的影响：
+- 清算逻辑需要用CALL调用用户仓位合约
+- 预言机读取应用STATICCALL防止恶意修改
+- 升级代理模式用DELEGATECALL
+
+1.5 核心操作码（Opcode）分类
+
+低Gas操作（1-10 gas）：
+- STOP、RETURN、REVERT、INVALID
+- ADD、MUL、SUB、DIV、MOD、EXP
+- LT、GT、EQ、ISZERO
+- AND、OR、XOR、NOT、BYTE、SHL、SHR、SAR
+- POP、MLOAD、MSTORE、MSTORE8、SLOAD（已暖缓存）
+
+中Gas操作（50-500 gas）：
+- SLOAD（冷缓存，2100 gas）
+- SSTORE（暖写入，2900 gas）
+- JUMP、JUMPI、PC、MSIZE、GAS
+- BALANCE、ORIGIN、CALLER、ADDRESS
+- CALLDATALOAD、CALLDATASIZE、CALLDATACOPY
+
+高Gas操作（1000+ gas）：
+- SSTORE（冷写入，20000 gas）
+- SHA3（Keccak256）
+- LOG0-LOG4（事件日志）
+- CALL、DELEGATECALL、STATICCALL（2600 gas基础）
+- CREATE、CREATE2（32000 gas基础）
+- Precompiles：ecrecover(3000)、modexp(200+)等
+
+---
+
+第二部分：EIP-1153 瞬态存储（Transient Storage）
+
+2.1 什么是瞬态存储
+
+瞬态存储是EIP-1153引入的新存储区域，专门解决「单次交易内需要跨调用传递临时状态」的痛点。
+
+核心特性：
+- 生命周期：单次交易结束后自动清除
+- 作用域：合约全交易上下文（包括内部调用）
+- Gas成本：TLOAD(100 gas)、TSTORE(100 gas)，恒定成本无冷热区分
+- 与Storage的区别：不写入永久状态，无需清除逻辑
+
+2.2 为什么需要瞬态存储
+
+传统问题：
+- 用Storage做临时标记需要20000 gas初始化，还需要清除逻辑（另2900 gas）
+- 用Memory做临时标记无法跨内部调用（Memory仅在当前调用帧有效）
+- 2300 gas限制：低Gas调用（如transfer/send）无法执行SSTORE
+
+Transient Storage解决方案：
+- 100 gas恒定成本
+- 自动清除，无残留风险
+- 2300 gas限制不适用
+
+2.3 Solidity中的使用
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+contract TransientExample {
+    // 声明transient变量（仅支持值类型）
+    uint256 private transient _lock;
+    address private transient _flashLoanInitiator;
+    
+    function executeFlashLoan() external {
+        // 存储临时标记
+        _flashLoanInitiator = msg.sender;  // TSTORE: 100 gas
+        
+        // 执行闪电贷逻辑...
+        
+        // 自动清除，无需手动重置
+    }
+    
+    function checkInitiator() external view returns (address) {
+        // 读取临时标记（仅在当前交易内有效）
+        return _flashLoanInitiator;  // TLOAD: 100 gas
+    }
+}
+```
+
+2.4 重入锁优化对比
+
+传统Storage重入锁（OpenPerp可能在用）：
+```solidity
+abstract contract StorageReentrancyGuard {
+    uint256 private _status;
+    uint256 private constant NOT_ENTERED = 1;
+    uint256 private constant ENTERED = 2;
+    
+    constructor() {
+        _status = NOT_ENTERED;  // SSTORE: 20000 gas
+    }
+    
+    modifier nonReentrant() {
+        require(_status != ENTERED, "ReentrancyGuard: reentrant call");
+        _status = ENTERED;  // SSTORE: 2900 gas（暖写入）
+        _;
+        _status = NOT_ENTERED;  // SSTORE: 2900 gas（清除）
+    }
+}
+```
+
+Transient Storage重入锁（优化版）：
+```solidity
+abstract contract TransientReentrancyGuard {
+    uint256 private transient _status;
+    uint256 private constant NOT_ENTERED = 1;
+    uint256 private constant ENTERED = 2;
+    
+    // 无需构造函数初始化！
+    modifier nonReentrant() {
+        require(_status != ENTERED, "ReentrancyGuard: reentrant call");
+        _status = ENTERED;  // TSTORE: 100 gas（恒定）
+        _;
+        _status = NOT_ENTERED;  // TSTORE: 100 gas（可省略，自动清除）
+    }
+}
+```
+
+Gas成本对比：
+| 操作 | Storage版 | Transient版 | 节省比例 |
+|-----|-----------|-------------|---------|
+| 初始化 | 20000 gas | 0 gas | 100% |
+| 进入修饰符 | 2900 gas | 100 gas | 97% |
+| 退出修饰符 | 2900 gas | 0-100 gas | 66-100% |
+| 单次调用总计 | 5800 gas | 100-200 gas | 96-98% |
+
+2.5 EIP-1153安全风险（重要）
+
+风险1：TSTORE突破2300 gas限制
+- 传统认为transfer/send（2300 gas）无法修改合约状态
+- 但2300 gas足够执行TSTORE（100 gas）
+- 攻击场景：低Gas调用可修改transient状态，影响后续操作
+
+风险2：交易间残留风险
+- Transient在交易间自动清除，不会跨交易残留
+- 但在同一交易的不同调用间会共享状态
+- 攻击案例：SIR.trading（2025年3月，$355K被盗）
+
+风险3：Storage与Transient混淆
+- 同一slot index可同时用于Storage和Transient
+- 开发者混淆导致逻辑错误
+
+2.6 SIR.trading攻击案例分析
+
+攻击原理：
+1. SIR.trading在transient slot 0x1存储Uniswap池地址
+2. 闪电贷回调结束后，slot 0x1被复用来存储金额
+3. 攻击者从特定地址调用uniswapV3SwapCallback，绕过地址校验
+4. 因为slot 0x1残留了金额值，刚好匹配攻击者的合约地址
+
+攻击代码简化：
+```solidity
+// SIR.trading的漏洞代码
+function mint(address recipient, uint256 amount) external {
+    // 存储池地址到transient
+    tstore(PoolSlot, address(pool));  // TSTORE
+    
+    // 执行swap
+    pool.swap(...);
+    
+    // 复用同一slot存金额（覆盖了池地址）
+    tstore(PoolSlot, amount);  // TSTORE覆盖
+}
+
+function uniswapV3SwapCallback(int256 amount0, int256 amount1, bytes calldata data) external {
+    // 读取池地址（但已被覆盖为金额！）
+    address poolAddress = tload(PoolSlot);  // TLOAD
+    
+    // 校验调用者
+    require(msg.sender == poolAddress, "Invalid pool");  // 被绕过！
+}
+```
+
+OpenPerp防御措施：
+1. Transient变量命名清晰，避免复用同一slot
+2. 关键校验逻辑不依赖transient状态
+3. 结合modifier确保状态一致性
+
+---
+
+第三部分：Monad并行EVM架构
+
+3.1 Monad是什么
+
+Monad是2026年最热的高性能L1，核心技术是并行执行的EVM（Parallel EVM），目标解决传统EVM的串行瓶颈。
+
+性能指标：
+- TPS：10000（测试网稳定2000-3000）
+- 出块时间：0.4秒
+- 最终确认：0.8秒
+- EVM兼容性：100%字节码兼容，无需修改Solidity代码
+
+3.2 并行执行核心原理
+
+传统EVM：串行执行，一个交易完成才开始下一个
+Monad EVM：并行执行无依赖交易，有依赖的交易仍串行
+
+依赖分析：
+- 读集（Read Set）：交易读取的所有Storage slot
+- 写集（Write Set）：交易修改的所有Storage slot
+- 冲突检测：读集与写集有交集时，交易间存在依赖
+
+3.3 乐观并发控制（OCC）
+
+Monad采用数据库经典的OCC（Optimistic Concurrency Control）算法：
+
+```
+交易1: 读取Slot A, 修改Slot A
+交易2: 读取Slot B, 修改Slot B
+-> 无依赖，可并行执行
+
+交易1: 读取Slot A, 修改Slot A
+交易2: 读取Slot A, 修改Slot C
+-> 读集冲突，需串行执行
+```
+
+执行流程：
+1. 预执行：所有交易并行运行
+2. 收集：记录每个交易的读集和写集
+3. 检测：按交易顺序检查冲突
+4. 重试：冲突交易重新执行（最多重试N次）
+5. 提交：无冲突的交易写入状态
+
+3.4 MonadDB存储引擎
+
+MonadDB是为并行执行优化的存储层：
+- 并发随机读取优化
+- 支持多线程同时访问
+- 延迟比LevelDB低30%
+
+3.5 对OpenPerp的影响
+
+积极影响：
+1. 高TPS：清算密集型操作无压力
+2. 低延迟：0.8秒确认适合高频交易
+3. EVM兼容：可直接部署，无需重构
+
+需要注意的点：
+1. 合约设计影响并行度
+   - 不同用户的仓位独立：可并行清算
+   - 全局配置修改：强制串行
+   - 预言机更新：依赖链上时间戳，可能影响并行度
+
+2. Storage访问模式优化
+   - 避免全局Storage热点
+   - 用Mapping隔离不同用户数据
+   - 减少跨合约调用依赖
+
+3. 测试方法更新
+   - 模拟并行执行场景
+   - 检查竞态条件（Race Condition）
+   - 验证最终状态确定性
+
+OpenPerp清算逻辑优化建议：
+```solidity
+// 优化前：串行清算
+function batchLiquidate(address[] calldata users) external {
+    for (uint i = 0; i < users.length; i++) {
+        liquidate(users[i]);  // 每个调用都访问全局Storage
+    }
+}
+
+// 优化后：并行友好清算
+function liquidateUser(address user) external {
+    // Mapping隔离每个用户状态，无全局依赖
+    Position storage pos = positions[user];
+    require(pos.isLiquidatable(), "Not liquidatable");
+    
+    // 独立计算用户债务
+    uint256 debt = calculateDebt(user);
+    uint256 collateral = pos.collateral;
+    
+    // 更新用户状态（仅修改user对应的slot）
+    pos.isLiquidated = true;
+    pos.debt = 0;
+    
+    // 转账给清算者（独立调用）
+    payable(msg.sender).transfer(collateral - debt);
+}
+```
+
+---
+
+第四部分：2026 EVM前沿技术
+
+4.1 EIP-7732 ePBS
+
+将Proposer-Builder Separation（PBS）写入协议层：
+- 当前PBS依赖Flashbots等服务
+- ePBS让Builder直接向Proposer投标
+- 减少MEV泄露，提升透明度
+- 对OpenPerp的影响：减少三明治攻击，用户交易更公平
+
+4.2 EIP-7748 并行执行
+
+以太坊原生支持并行：
+- 基于交易依赖图（TDG）
+- 预计L1 TPS提升到100-200
+- 2026年H2纳入Glamsterdam升级
+
+4.3 新Gas表提案
+
+2026年多个EIP建议调整Gas定价：
+- 降低PUSH、DUP、SWAP操作码（3->2 gas）
+- 提高ECRECOVER（3000->12000 gas）
+- 调整TLOAD/TSTORE（100->20/50 gas）
+- 对OpenPerp的影响：重新评估签名验证成本（清算需要验证用户签名）
+
+4.4 JIT编译
+
+Monad等链支持JIT编译：
+- 将热点字节码编译为本地机器码
+- 执行速度提升5-10倍
+- 对OpenPerp的影响：清算计算逻辑（高频热点）可获大幅加速
+
+---
+
+第五部分：OpenPerp的EVM优化清单
+
+5.1 Storage优化（最重要）
+
+立即执行：
+1. 所有重入锁改用Transient Storage
+2. 用户仓位用Mapping隔离，避免全局Storage热点
+3. 打包小类型变量（Address + uint64 + bool -> 1个slot）
+4. 只读配置用immutable（不占Storage）
+
+5.2 操作码优化
+
+立即执行：
+1. 外部函数参数用calldata（避免memory复制）
+2. 循环减少SLOAD次数（缓存到Stack/Memory）
+3. 计算用Stack变量，避免临时Storage
+4. 事件索引选择（indexed参数适合过滤查询）
+
+5.3 调用模式优化
+
+立即执行：
+1. 预言机用STATICCALL（2100 gas保底）
+2. 批量操作用multicall（节省2100 gas基础费用）
+3. 避免跨合约调用（减少CALL开销）
+4. Delegatecall谨慎使用（不修改调用者敏感状态）
+
+5.4 Monad适配
+
+待执行：
+1. 测试并行场景（多用户同时清算）
+2. 依赖Monad并行特性优化合约结构
+3. 监控Monad主网gas价格（调整gaslimit）
+4. 升级到Solidity 0.8.24+（支持transient关键字）
+
+---
+
+第六部分：今日学习总结
+
+6.1 EVM核心认知
+
+1. 栈式虚拟机：所有操作基于256位word
+2. 存储分层：Stack（临时）-> Memory（调用内）-> Storage（永久）
+3. Gas计量：精确到每个操作码，防止恶意消耗
+4. 调用隔离：CALL/DELEGATECALL/STATICCALL有明确边界
+
+6.2 2026关键趋势
+
+1. 并行执行：从串行到并行，TPS提升10-100倍
+2. 瞬态存储：更高效的临时状态管理，需注意安全边界
+3. JIT编译：热点代码加速5-10倍
+4. Gas调整：更精细的成本定价
+
+
+6.3 关键提醒
+
+1. Transient Storage的2300 gas豁免是双刃剑
+2. 并行执行下需重新审视竞态条件
+3. 不要假设所有EVM都支持最新EIP（需检查兼容性）
+4. 测试覆盖所有边界条件（特别是安全边界）
+
+---
+
+参考资料
+
+1. Monad官方文档：https://docs.monad.xyz
+2. EIP-1153：https://eips.ethereum.org/EIPS/eip-1153
+3. Monad并行EVM深度解析：https://monadblock.com
+4. 以太坊黄皮书：https://ethereum.org/yellowpaper
+5. EVM操作码表：https://evm.codes
+6. 2026新Gas提案：EIP-7904
+
+````
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 ````markdown
 Uniswap V4 学习笔记
 
@@ -734,6 +1202,7 @@ cast send $POOL_MANAGER "initialize(PoolKey,sqrtPriceX96,bytes)" \
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 ````markdown
 可升级合约学习笔记
 
@@ -1246,6 +1715,7 @@ contract MyContract is UUPSUpgradeable, OwnableUpgradeable {
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 学习笔记
 
 日期：2026年7月22日 主题：钱包产品设计——新人避坑逻辑拆解与跨场景迁移 核心任务：从新人钱包的痛点出发，拆解避坑设计的底层逻辑，迁移到OpenPerp（永续DEX）的新人引导与安全设计中
@@ -1464,6 +1934,7 @@ contract MyContract is UUPSUpgradeable, OwnableUpgradeable {
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -2095,6 +2566,7 @@ OpenPerp = Monad L1 + Uniswap V4 Hook + Perpetual DEX
 
 
 
+
 ````markdown
 # 今日学习笔记
 
@@ -2382,6 +2854,7 @@ Hyperliquid证明了自建L1的威力（200K TPS），但V4和Morpho证明了模
 
 
 
+
 ````markdown
 # 📚 今日学习笔记
 
@@ -2643,6 +3116,7 @@ AI 是「加速器」，不是「替代品」
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -3068,6 +3542,7 @@ npx hardhat ignition deploy    # 部署合约
 
 
 
+
 # 今日学习笔记：ERC721 非同质化代币标准
 
 学习日期：2026-07-17
@@ -3240,6 +3715,7 @@ json
 
 
 
+
 # 今日学习笔记：智能合约常见安全漏洞汇总
 
 学习日期：2026-07-16
@@ -3387,6 +3863,7 @@ DEX 交易、NFT 发售、代币兑换场景，攻击者监听内存池，抬高
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -3719,6 +4196,7 @@ class MossError extends Error {
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -4233,6 +4711,7 @@ _学习笔记完_
 
 
 
+
 ````markdown
 
 
@@ -4477,6 +4956,7 @@ npx hardhat run scripts/deploy-migration.js --network monadTestnet
 
 
 
+
 今日学习笔记：ERC20代币完整知识点梳理
 
 **学习日期**：2026年07月12日
@@ -4580,6 +5060,7 @@ ERC20标准规定了智能合约必须实现的基础接口，所有合规ERC20�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -4861,6 +5342,7 @@ contract C is A, B {
 
 
 
+
 Ethers.js 今日学习笔记（v6 最新版）
 
 **学习版本**：Ethers.js v6（当前官方主推稳定版本）
@@ -5068,6 +5550,7 @@ console.log("合约查询结果：", result);
 
 
 
+
 ## 今日学习笔记
 
 DApp 架构、开发流程、以太坊基础开发环境、RPC 节点基础认知
@@ -5197,6 +5680,7 @@ JSON-RPC 是区块链与外部程序通信的标准协议，前端 / 工具通�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -5707,6 +6191,7 @@ await tx.wait()
 
 
 
+
 ````markdown
 学习笔记 - 2026年7月7日
 
@@ -5947,6 +6432,7 @@ const lastMsg = await contract.getMessageByIndex(newCount - 1n);
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

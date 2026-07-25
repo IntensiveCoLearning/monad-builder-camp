@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+今天我验证了 BTC/USD 15 分钟预测方向最关键的一层：价格能否在 Monad Testnet 上被真实、可复查地结算。
+
+我先核查了 Chainlink 文档中列出的 Testnet Feed，发现当前地址没有合约代码，所以没有直接把它当作产品依赖。随后改用 Pyth Pull Oracle，部署了一个最小的 PythBtcPriceProbe，并完成了一次真实的签名价格更新交易。
+
+这笔交易会先让 Pyth 在链上验证 updateData，再读取 60 秒内的新鲜 BTC/USD，最后由 Probe 记录价格、置信区间和 publishTime。此次链上记录的 BTC/USD 为 64,064.02499999，Pyth publishTime 是 2026-07-25 13:11:03 UTC。
+
+本地 Foundry 验证也已通过：58 passed，0 failed。下一步会把这条 Oracle 路径接进预测市场的 Round 状态机，继续完成开盘、封盘、结算和领奖的测试网闭环。
+
+\- 今日学习记录：[https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-25.md](https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-25.md)
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 今天把 Monad Lucky Draw 的免弹窗抽奖跑通了。
 
 我没有把 Session Key 直接设成 Safe owner，而是切换到 Zodiac Roles：用户先完成一次明确的 Owner 授权，把浏览器生成的 Session Key 安装为受限的 Roles member；之后它只能调用 Lucky Draw 的 draw()，可以免弹窗完成后续抽奖，但不能调用其他方法、不能换目标合约，也不能附带原生币 value。
@@ -32,6 +46,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 今天我继续完善 Monad Lucky Draw 的账户抽象实践，重点不是再加一个“免弹窗”按钮，而是核查 Session Key 的真实权限边界。
 
@@ -50,6 +65,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 今天继续推进 Monad Account Abstraction Practice Lab，并把 Lucky Draw 从学习型页面推进到真实 Monad Testnet 闭环。
 
 我完成了 EOA 登录、Counterfactual Safe、Pimlico 赞助首次抽卡，以及 Session Key 启用后的免钱包弹窗抽卡。首次操作仍需要用户明确签署 Safe UserOperation；后续操作只是使用已授权的短期 Session Key，在固定 draw()、零 value、有限次数和有效期范围内减少钱包弹窗。
@@ -61,6 +77,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -87,6 +104,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天进入 Week 3 的组队和 Mini Demo 阶段。我和 Hagoo、ritscher 先确定了 Research、Ops、Dev 的基础分工：Hagoo 负责用户与资料核查，ritscher 负责项目叙事和用户反馈，我负责 Monad Testnet 验证、前端原型、测试和技术 Proof。
 
 项目方向也从泛泛的账户交互展示收敛成了 Monad Account Abstraction Practice Lab。我们想做一个面向学习者的账户抽象实践 Demo，围绕 Safe、Safe 4337 Module 和 EntryPoint，帮助用户理解一条 UserOperation 在发送前需要哪些配置、验证和 Owner 确认。
@@ -98,6 +116,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -122,6 +141,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天系统看了 Safe SDK 的官方总览，重点不是马上接入代码，而是先把 Safe 的账户模型和交易流程理清。
 
 我理解 Safe 是智能合约账户，不只是普通多签钱包：owner、threshold、Module、Guard 等权限规则都在链上。Safe SDK 里，Starter Kit 适合快速入门；Protocol Kit 负责直接操作 Safe；API Kit 负责提案、收集多签和查询交易状态；Relay Kit 则面向 ERC-4337 / UserOperation 等账户抽象路径。
@@ -133,6 +153,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -155,6 +176,7 @@ Dev Portfolio Pack：[https://github.com/baikingrio/monad-builder-camp/blob/main
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -187,6 +209,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 
 
+
 今天完成了 Dev Track 的「文档到代码骨架」任务。
 
 我基于 Moss 的 README 和 Agent Skill Guide，整理了 Agent 链上交互的流程：discover → load → action → simulate → 人工核对 → 钱包确认。
@@ -200,6 +223,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -225,6 +249,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -263,6 +288,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 
 
+
 今天主要学习并实践了 ERC-7702，也继续梳理了 ERC-4337 Sponsor 授权的安全边界。
 
 Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判断“是否愿意为这笔具体请求付 Gas”。所以后端签名必须绑定完整的 UserOperation，不能只看 sender 或某一个业务参数。
@@ -288,6 +314,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -342,6 +369,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 
 
+
 今天继续完善 Monad Testnet 上的 ERC-4337 实验，并学习和实践了 ERC-1363。
 
 在 ERC-4337 部分，我进一步理解了 Paymaster 的作用不只是代付 Gas，更重要的是限制赞助的范围和风险。通过把账户、调用内容、nonce、有效期等信息绑定到 sponsor 授权中，可以避免授权被复用到其他交易里。
@@ -357,6 +385,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -413,6 +442,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -499,6 +529,7 @@ Explorer：  
 
 
 
+
 今天学习了 ERC-4337 Account Abstraction 和 thirdweb 的 Session Keys 文档，重点理解了智能账户、UserOperation、Bundler、EntryPoint、Paymaster 之间的关系。
 
 我的理解是，ERC-4337 让钱包不再只是一个由私钥控制的 EOA，而是可以变成有自定义验证逻辑和权限管理能力的智能账户。用户发起的不是普通交易，而是 UserOperation，由 Bundler 打包，再通过 EntryPoint 统一验证和执行。Paymaster 可以在特定条件下帮用户代付 gas，从而改善新用户进入链上应用时必须先准备 gas 的体验。
@@ -514,6 +545,7 @@ Explorer：  
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

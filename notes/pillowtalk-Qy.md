@@ -15,8 +15,134 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+## 今日重点
+
+今天主要推进 OriginShift 团队 Mini Demo 的工程基础与证据契约建设。项目从只有架构文档的 M0 阶段，正式进入可以实施 `PreflightReport v0.1` Schema 的 M1 阶段。
+
+## 一、质量门禁正式进入 main
+
+[PR #10](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/10) 已合并，完成了：
+
+-   Node 22、pnpm 11 工程约束；
+    
+-   严格 TypeScript 检查；
+    
+-   Biome 格式和 lint；
+    
+-   Vitest 测试基础；
+    
+-   GitHub Actions `quality-gate`；
+    
+-   根目录统一 `check` 命令。
+    
+
+合并后，`main` 分支保护已设置为严格模式，后续 PR 必须基于最新主分支并通过 `quality-gate`。Issue #3 随之关闭。
+
+这意味着项目以后不能只靠“本地跑过”或人工口头确认，代码和文档都需要经过稳定、可复现的检查。
+
+## 二、确定 PreflightReport v0.1 契约
+
+今天创建并合并了 [PR #13](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/13)，新增 ADR 0001，确定了 `PreflightReport v0.1` 的总体 Schema 契约。
+
+关键决定包括：
+
+-   Schema 由 `packages/report-schema/` 独立负责；
+    
+-   唯一公共入口为 `packages/report-schema/src/index.ts`；
+    
+-   原始 Capability、模拟证据与前端展示模型必须分离；
+    
+-   资产身份使用地址，symbol 只能作为展示信息；
+    
+-   金额必须使用最小单位的十进制整数字符串；
+    
+-   证据缺失不能通过可选字段或自然语言说明隐藏；
+    
+-   每个 `STOP` 原因必须指向可解析的原始证据；
+    
+-   `MANUAL_REVIEW` 只能在模拟成功、关键证据完整且所有关键检查均为 `PASS` 时出现。
+    
+
+该 PR 通过 `quality-gate` 后合并，没有引入真实地址、协议数据或业务代码。
+
+## 三、补充 Schema 的精确实现值
+
+ADR 0001 确定了边界，但部分枚举值和格式仍可能由实现者自行解释。因此又创建并合并了 [PR #14](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/14)，通过 ADR 0002 固定具体实现值。
+
+主要内容包括：
+
+-   资产类型：`NATIVE`、`ERC20`；
+    
+-   证据状态：`AVAILABLE`、`FAILED`、`MISSING`、`UNPROVABLE`；
+    
+-   选择状态：`SELECTED`、`NOT_SELECTED`；
+    
+-   模拟结果：`SUCCESS`、`FAILED`、`INTERRUPTED`；
+    
+-   证据来源：`FIXTURE`、`LOCAL_FORK`、`LIVE_SOURCE`；
+    
+-   Protocol ID 使用小写 kebab-case；
+    
+-   地址严格使用 EIP-55；
+    
+-   `reportId` 使用标准 UUID v4；
+    
+-   时间使用带三位毫秒的 UTC RFC 3339；
+    
+-   网络使用 `eip155:<chainId>`；
+    
+-   证据引用使用可解析的 RFC 6901 JSON Pointer。
+    
+
+其中最重要的判断是：证据“存在”不代表结果“成功”。例如 Receipt 可以是 `AVAILABLE`，但其验证结果仍然失败，这种情况依旧必须输出 `STOP`。
+
+## 四、正式授权 Schema 实现
+
+ADR 0001 和 ADR 0002 合并并通过主分支质量门禁后，[Issue #5](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/5) 已重新打开、分配给我，并标记为 `status:ready`。
+
+当前正式进入 `PreflightReport v0.1` 的 Zod Schema、TypeScript 类型、跨字段约束和 Vitest 测试实现阶段。
+
+过程中 GitHub 曾因 PR 文案中的否定式 closing keyword 临时关闭 Issue #5。我及时修正文案并重新打开 Issue，确认该状态变化不代表实现完成。这个问题提醒我：治理文案也可能触发自动化副作用，关键状态必须重新核验。
+
+## 五、反馈改进 PR 的处理
+
+基于模拟用户反馈建立的 [PR #12](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/12) 仍未合并。
+
+由于它基于旧版 `main`，且更新后的 Head 尚未通过新的 `quality-gate`，Issue #11 与 PR #12 已明确标记为 blocked。后续必须：
+
+1.  更新到最新 `main`；
+    
+2.  重新通过 `quality-gate`；
+    
+3.  单独申请 Maintainer Merge Gate。
+    
+
+这次没有为了赶进度直接合并，而是让它重新经过完整流程。
+
+## 当前项目状态
+
+-   M0：已完成；
+    
+-   M1-01 工程质量门禁：已完成；
+    
+-   PreflightReport 契约：已确定；
+    
+-   Schema 实现 Issue #5：已授权，尚未产生实现 PR；
+    
+-   Decision Engine、成功 Fixture、STOP Fixture：尚未开始；
+    
+-   PR #12：因落后于主分支而 blocked；
+    
+-   M1 Milestone：仍开放，当前 3 个 Issue 已关闭、6 个 Issue 未完成，原定日期已逾期；
+    
+-   可运行前端、真实 Moss 集成和报告导出：尚未实现。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 ## 今日进展
 
 完成一次真实 Monad 主网 Kuru 模拟：输入为 `1 MON -> USDC`，使用 Moss 构建未修改的 Kuru Capability 并执行 `debug_traceCall` 模拟。交易本身未回滚，但 Receipt parser 遇到 `FlipOrderUpdated` 后触发 `RECEIPT_FAILED`，因此系统按 fail-closed 原则输出 `STOP`。全过程未使用私钥、未签名、未发送交易。
@@ -43,6 +169,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 今天的工作重点是把 Week 3 团队 Mini Demo 从讨论阶段推进到可协作、可检查的工程化阶段，同时持续跟进 Moss 上游建设。
 
@@ -121,6 +248,7 @@ M0 基线已通过 [PR #2](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 今日主题：**从代码贡献进一步进入开源审查、安全维护与团队协作规划**
@@ -618,6 +746,7 @@ Week 3 方面，OriginShift 团队已经拥有脑暴会议方案和可导入 Not
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -1191,6 +1320,7 @@ Week 3 方面，OriginShift 团队已经完成组建，并将尚未命名的 Min
 
 
 
+
 ## 2026-07-20 今日打卡笔记
 
 今天主要做了两部分工作：一是完整阅读和理解 Week 3 团队协作任务，明确自己在团队 Mini Demo 中的定位和可选方向；二是继续推进 Moss 开源贡献，包括 Core 安全、Simulator 测试、Query metadata、ERC-4626 Adapter 前置能力等内容。
@@ -1512,6 +1642,7 @@ address-free compiled ERC-4626 ABI slice
 
 
 
+
 ## 今日打卡笔记：Moss 开源贡献记录
 
 日期：2026-07-19  
@@ -1713,6 +1844,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 
 
+
 ## 今日打卡笔记：Moss 开源贡献与 Adapter 架构建设
 
 今天继续围绕 Moss 做真实开源贡献，重点从单纯提交 PR，扩展到 **Adapter 基础能力建设、核心架构 review、安全边界审查** 三个层面。
@@ -1877,6 +2009,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 
 
+
 ## **今日学习笔记：Moss Adapter 方向判断与开源协作推进**
 
 今天主要围绕 Moss 的 Adapter Challenge 做了方向判断和开源协作规划。任务要求是为 Moss 开发一个新的 Adapter，并提交 Pull Request，包括 PR 链接、GitHub 主页、Adapter 名称和功能简介。
@@ -1918,6 +2051,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -2150,6 +2284,7 @@ AI Agent 可以辅助链上操作，但必须经过 capability、simulation、re
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -2564,6 +2699,7 @@ Aave 成立的关键条件包括：
 
 
 
+
 今天主要完成了两类任务：一是阅读并拆解一个真实 EIP，二是选择一个已经上线的 Web3 产品做 Product / Protocol Reading Card。今天的重点是从“看懂概念”进一步转向“结构化分析真实协议和产品”。
 
 ## **1\. EIP 阅读：EIP-7702**
@@ -2685,6 +2821,7 @@ Polymarket 连接的是预测市场、公共判断、信息聚合和 AI 治理�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -2879,6 +3016,7 @@ AI 今天主要帮助我：
 
 
 
+
 这一周的学习主线，可以概括为：
 
 `从链上基础实践，走向对 Web3 / AI / Crypto 交叉方向的系统理解。`
@@ -2977,6 +3115,7 @@ AI 在本周主要帮助我：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -3103,6 +3242,7 @@ d/acc 不是盲目加速所有技术，而是加速那些增强防御、韧性�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -3280,6 +3420,7 @@ AI 把问题从“找不到候选 bug”变成了“候选太多，如何筛选�
 
 
 
+
 今天主要阅读和理解了 Vitalik 关于 **obfuscation（程序混淆 / 程序不可读化）** 的文章。今天最大的收获是：这篇文章讨论的重点不是“如何隐藏数据”，而是 **如何隐藏程序本身**。
 
 ## **1\. 核心问题**
@@ -3393,6 +3534,7 @@ Obfuscated program 本身有一个明显问题：它不能防止复制。
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -3589,6 +3731,7 @@ Affluxa 的价值在于，它尝试用身份、预算、风控、可撤销、一
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -3821,6 +3964,7 @@ Week 2 的下一步计划是：
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

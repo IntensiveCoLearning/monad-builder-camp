@@ -15,8 +15,140 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+今天正式开始了我的第一次开源贡献实践。
+
+一开始我几乎不了解 GitHub 开源协作流程，只知道老师要求提交一个 Pull Request（PR）。今天最大的收获不是写代码，而是把整个协作流程真正跑通了一遍。
+
+**今天完成了什么**
+
+**1\. Fork 项目**
+
+我 Fork 了 Moss 仓库。
+
+以前不知道 Fork 是什么，现在理解了：Fork 就是把别人的仓库复制到自己的 GitHub 账号下，之后所有修改都先在自己的仓库完成，不会影响原作者。
+
+我的 Fork：
+
+[https://github.com/caigua838/moss](https://github.com/caigua838/moss)
+
+**2\. Clone 到本地**
+
+第一次 Clone 时还遇到了一点小插曲。
+
+因为电脑里已经有一个叫 moss 的文件夹，所以出现了：
+
+fatal: destination path 'moss' already exists and is not an empty directory
+
+后来才发现，我的目录实际上是：
+
+~/moss/
+
+    └── moss/
+
+真正的 Git 仓库在第二层 moss 里面。
+
+这也让我第一次学会了使用：
+
+pwd
+
+ls
+
+git remote -v
+
+来判断自己到底是不是在正确的项目目录。
+
+**3\. 学会了 Branch**
+
+创建了自己的开发分支：
+
+git checkout -b docs/first-contribution
+
+以前一直不知道 Branch 的意义。
+
+现在理解了，它就是一条独立的开发线，可以放心修改，不会影响主分支。
+
+**4\. 安装项目环境**
+
+成功安装了项目依赖：
+
+pnpm install
+
+项目已经能够正常识别 Workspace，说明开发环境没有问题。
+
+**5\. 学会了几个 Git 概念**
+
+今天终于分清楚了几个一直容易混淆的概念：
+
+-   Repository：整个项目仓库。
+    
+-   Fork：复制一份仓库到自己的 GitHub。
+    
+-   Clone：把仓库下载到本地电脑。
+    
+-   Branch：创建自己的开发分支。
+    
+-   Commit：保存一次修改。
+    
+-   Push：把本地修改上传到自己的 GitHub。
+    
+-   Pull Request：请求维护者把自己的修改合并回原项目。
+    
+
+以前觉得这些概念很抽象，今天通过实际操作终于串起来了。
+
+**今天遇到的问题**
+
+我一度进入了错误的目录，执行：
+
+git remote -v
+
+提示：
+
+fatal: not a git repository
+
+后来通过查看目录结构，发现真正的仓库在 ~/moss/moss。
+
+之后又因为重新打开了 Terminal，一度担心之前的工作都丢了。
+
+实际上 Git 和项目都没有丢，只需要重新：
+
+cd ~/moss/moss
+
+就回到了项目目录。
+
+这让我意识到：关闭终端并不会删除项目，重要的是知道自己的项目放在哪里。
+
+**今天最大的收获**
+
+今天几乎没有写业务代码，但完成了真正开源贡献最重要的准备工作：
+
+-   完成 Fork。
+    
+-   成功 Clone。
+    
+-   建立开发环境。
+    
+-   创建开发分支。
+    
+-   理解 GitHub 的基本协作流程。
+    
+
+这些步骤以后参与任何开源项目都会重复使用，是一次很有价值的实践。
+
+**明天的计划**
+
+下一步准备查看 Moss 项目的 Issues，寻找适合第一次贡献的任务。
+
+如果没有适合的新手任务，就从文档、示例或小型 Bug 入手，完成自己的第一份 Pull Request。
+
+希望能完成人生第一次真正被开源项目接受的贡献。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 **Day 17 | Monad Builder Camp 残酷共学**
 
 今天目标:向 Moss 提交人生第一个开源 PR。晚上全部时间花在找靶子和搭环境上,过程比结果曲折。
@@ -118,6 +250,7 @@ git checkout -b docs/first-contribution
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 **Day 16 | Monad Builder Camp**
 
 **🔍深读 Moss 仓库:从"这是什么"到"这怎么管人"**
@@ -195,6 +328,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 **Day 15 | Monad Builder Camp 残酷共学**
 
 今天听区块链钱包产品设计。这场的价值在于:它把我这两周踩的坑,变成了产品设计的取舍框架。
@@ -242,6 +376,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 
 
+
 **Day 14 | Monad Builder Camp 残酷共学**
 
 今天听课抓到一个跟我高度契合的方向:**群情感计算**。
@@ -278,6 +413,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 
 
+
 **Day 13 | Monad Builder Camp 残酷共学**
 
 今天听了一场 AI 产品与 agent 的分享,内容意外地对准了我这半个月的处境。
@@ -299,6 +435,7 @@ AI 时代真正稀缺的不是"会用工具"(工具人人会用了),是判断力
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -408,6 +545,7 @@ if (simulation.halted || simulation.results.some(i => i.warnings.length)) {
 
 
 
+
 今天没有产出,如实记录。
 
 白天上班,晚上没动。昨天一天读完Moss README、写完Space策划案、双平台发了内容、上了两场课——今天就空了。
@@ -427,6 +565,7 @@ if (simulation.halted || simulation.results.some(i => i.warnings.length)) {
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -533,6 +672,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 
 
+
 **Day 9 | Monad Builder Camp 残酷共学**
 
 今天是纯实战的一天,而且是我第一次独立从0跑通"用AI做出一个网站并部署上线"的完整流程。
@@ -566,6 +706,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -614,6 +755,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 
 
+
 **Day 5 | Monad Builder Camp 残酷共学**
 
 今天很累,只完成了听课和整理。
@@ -633,6 +775,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -720,6 +863,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 
 
+
 **Day 3**
 
 今天从"读代码"跨到"部署代码",完整走通了一次链上开发全链路。
@@ -765,6 +909,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 
 
+
 **Day 2 | Monad Builder Camp 共学打卡**
 
 **嘉宾分享:以太坊协议开发经验**
@@ -795,6 +940,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

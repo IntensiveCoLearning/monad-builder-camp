@@ -15,8 +15,129 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+這段是在 **把簽好的 off-chain attestation 存成 JSON 檔，然後把結果印出來給你看**。
+
+這句最重要：
+
+```
+fs.writeFileSync(outputFile, `${JSON.stringify(artifact, jsonReplacer, 2)}\n`);
+```
+
+拆開看：
+
+```
+artifact
+```
+
+是我們準備保存的完整資料包，裡面有：
+
+```
+signer
+schemaString
+evidenceHash
+decodedData
+sig
+```
+
+其中 `sig` 就是 EAS SDK 產生的 signed off-chain attestation。
+
+* * *
+
+```
+JSON.stringify(artifact, jsonReplacer, 2)
+```
+
+意思是：把 JavaScript object 轉成 JSON 文字。
+
+三個參數分別是：
+
+```
+artifact       要轉成 JSON 的資料
+jsonReplacer   遇到 BigInt 時，把它轉成字串
+2              縮排 2 格，讓 JSON 比較好讀
+```
+
+例如會變成類似：
+
+```
+{
+  "signer": "0x...",
+  "evidenceHash": "0x...",
+  "sig": {
+    "uid": "0x...",
+    "message": {
+      "recipient": "0x...",
+      "data": "0x..."
+    }
+  }
+}
+```
+
+* * *
+
+外面的：
+
+```
+`${...}\n`
+```
+
+是 template string。  
+這裡只是把 JSON 文字後面加一個換行。
+
+所以整句意思是：
+
+```
+把 artifact 轉成漂亮的 JSON
+然後寫入 outputFile
+```
+
+預設 `outputFile` 是：
+
+```
+offchain-attestation.json
+```
+
+* * *
+
+下面這些：
+
+```
+console.log("Created off-chain attestation:", outputFile);
+console.log("Signer:", attester);
+console.log("Recipient:", recipient);
+console.log("Schema UID:", schemaUID);
+console.log("Off-chain UID:", signedAttestation.uid);
+console.log("Evidence hash:", evidenceHash);
+```
+
+只是把重要結果印到 PowerShell：
+
+```
+建立了哪個檔案
+誰簽的
+簽給誰
+用哪個 schema
+這份 off-chain attestation 的 UID
+evidence hash 是什麼
+```
+
+`Off-chain UID` 可以理解成這份 off-chain attestation 的唯一 ID。  
+它不是鏈上交易 hash，也不是鏈上紀錄，只是根據這份 payload 算出來的識別碼。
+
+整段白話就是：
+
+```
+我已經簽好 off-chain attestation
+我把 payload + signature 存進 JSON 檔
+然後把關鍵資訊印出來，方便你確認
+```
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 `const` 是 JavaScript 裡用來**宣告變數**的關鍵字。
 
 例如：
@@ -288,6 +409,7 @@ main:
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 開始了，off-chain attestation 的簽名與驗證腳本已做好並測通。
 
 新增了兩個檔案：
@@ -325,6 +447,7 @@ evidence valid: true
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 下一步我建議學 **Off-chain attestation 實作**。
@@ -417,6 +540,7 @@ evidence.txt
 
 
 
+
 以現在查到的資料看，**EAS 還是活躍的，不像是死掉或完全邊緣化的項目**。但它也不是「所有 Web3 app 都在用的主流基礎設施」那種級別。比較準確的定位是：
 
 ```
@@ -475,6 +599,7 @@ reputation / credential design
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -728,6 +853,7 @@ nonce
 
 
 
+
 對，**橢圓曲線簽名**是加密學裡的東西，也是 Web3 幾乎每天都在用的核心技術。
 
 Ethereum 錢包用的是一種橢圓曲線簽名演算法：
@@ -824,6 +950,7 @@ DAO 投票簽名
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -1056,6 +1183,7 @@ DAO 投票簽名
 
 
 
+
 不是。**任何人都可以驗證** 的前提是：他拿到了那份 off-chain attestation。
 
 Off-chain attestation 不會自動公開在鏈上，所以不是全世界自然都看得到。
@@ -1118,6 +1246,7 @@ payload 裡只放 hash
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -1461,6 +1590,7 @@ Off-chain attestation 只做前者，所以不花 gas。
 
 
 
+
 PS C:\\Users\\User\\Documents\\EAS> node sepolia-verify.cjs
 
 Attestation UID: 0x1776cbbfea6a43bde8187e48993b4f1cf523a8333c71ea6b8bbe53ee2cacffc4
@@ -1543,6 +1673,7 @@ Revoked: false
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -1964,6 +2095,7 @@ Ethereum 用的是 Keccak 系列 hash。你可以把它當成 EVM 世界常用�
 
 
 
+
 `bool` 是 **boolean** 的縮寫，意思是「布林值」。
 
 它只有兩種可能：
@@ -2202,6 +2334,7 @@ revoked / expirationTime 驗證是否仍有效
 
 
 
+
 好，下一步學 **讀取一筆真實的 attestation**。
 
 這一步的重點是：**只讀鏈上資料，不寫鏈、不花 gas、不需要私鑰。**
@@ -2298,6 +2431,7 @@ const decodedData = encoder.decodeData(encodedData);
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -2732,6 +2866,7 @@ schemaUID -> 找 schema -> decode data
 
 
 
+
 **On-chain vs Off-chain**
 
 EAS 支援兩種模式：
@@ -2767,6 +2902,7 @@ npm install @ethereum-attestation-service/eas-sdk
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

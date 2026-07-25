@@ -15,8 +15,58 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+## Monad 与以太坊的兼容和差异
+
+### 交易层
+
+| 维度 | 说明 |
+| --- | --- |
+| 地址空间 | 与以太坊相同（20 字节，ECDSA） |
+| 交易格式 | 采用 EIP-2718 Typed Transaction Envelope，RLP 编码 |
+| 支持类型 | Type 0（Legacy）、1（EIP-2930）、2（EIP-1559，以太坊默认）、4（EIP-7702） |
+| EIP-155 重放保护 | 协议层允许 pre-EIP-155 交易，不建议复用曾发过 pre-EIP-155 交易的账户 |
+| 钱包兼容 | 兼容 MetaMask 等标准以太坊钱包，仅需改 RPC URL 和 Chain ID |
+
+### Gas 模型
+
+-   兼容 EIP-1559：Base Fee + Priority Fee 机制
+    
+-   Base Fee 控制器与以太坊类似，但**上涨更慢、下降更快**
+    
+-   **关键区别**：Monad **按 gas limit 收费，而非 gas usage**
+    
+    -   扣除总额 = `value + gas_price * gas_limit`
+        
+    -   目的：防止异步执行下的 DoS 攻击
+        
+
+### 智能合约层
+
+| 维度 | 以太坊 | Monad |
+| --- | --- | --- |
+| 字节码标准 | EVM（Fusaka fork） | EVM（Fusaka fork），完全兼容 |
+| 操作码定价 | 标准 | 与以太坊基本相同，少数因资源稀缺性重定价 |
+| 预编译合约 | 0x01 – 0x11 | 0x01 – 0x11 + 0x0100（P256，EIP-7951）+ 0x1000（质押） |
+| 最大合约大小 | 24.5 KB | 128 KB​ |
+
+### 共识与网络层
+
+| 维度 | 以太坊 | Monad |
+| --- | --- | --- |
+| 共识机制 | Gasper（Casper-FFG + LMD-GHOST） | MonadBFT |
+| TPS | ~10 | ~10,000 |
+| 区块频率 | 12 秒 | 300 ms |
+| 最终性 | 2 个 epoch（12-18 分钟） | 600 ms |
+| Mempool | 全局 | 本地（leader 维护本地 mempool，RPC 转发给后续 3 个 leader） |
+| 委托质押 | 不支持（通过 LST 伪委托） | 支持协议内委托​ |
+| 硬件要求（全节点） | 4 核 / 32 GB / 4 TB NVMe / 25 Mbit | 16 核 / 32 GB / 2×2 TB NVMe / 100 Mbit |
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 ## 一、什么是 Issues？
 
 GitHub Issues 是用于跟踪想法、反馈、任务和 Bug 的灵活工具。它不仅仅是“待办事项”，更是团队协作的中心，可用于规划、讨论和跟踪所有工作。
@@ -117,6 +167,7 @@ Issue 的创建非常灵活，适应不同工作流：
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 ## 一、投票合约（Voting）
 
@@ -258,6 +309,7 @@ Issue 的创建非常灵活，适应不同工作流：
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 ## 一、Solidity 基础合约示例
@@ -426,6 +478,7 @@ contract Coin {
 
 
 
+
 ## 一、README 的核心作用
 
 README 是项目的“门面”，用于向访客说明项目价值与使用方式，是仓库中访客最先看到的内容之一。它与 **许可证（License）、引用文件（Citation）、贡献指南（Contributing Guidelines）、行为准则（Code of Conduct）**​ 共同构成项目的规范体系，帮助管理社区贡献。
@@ -500,6 +553,7 @@ GitHub 会根据标题自动为 Markdown 文件（含 README）生成目录。�
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -604,6 +658,7 @@ GitHub 会根据标题自动为 Markdown 文件（含 README）生成目录。�
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -762,6 +817,7 @@ GitHub 会根据标题自动为 Markdown 文件（含 README）生成目录。�
 
 
 
+
 ## 一、EVM 以太坊虚拟机
 
 ### 1\. 它是什么
@@ -835,6 +891,7 @@ EVM 是**所有以太坊节点共同运行的栈式虚拟机**，负责把合约
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -940,6 +997,7 @@ EVM 是**所有以太坊节点共同运行的栈式虚拟机**，负责把合约
 
 
 
+
 ## 一、以太坊账户的两大分类
 
 以太坊所有账户在协议层都遵循同一个四元组结构：`σ[a] = (nonce, balance, storageRoot, codeHash)`，两类账户的差异本质是字段取值的不同：
@@ -1021,6 +1079,7 @@ EVM 是**所有以太坊节点共同运行的栈式虚拟机**，负责把合约
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -1195,6 +1254,7 @@ EVM 是**所有以太坊节点共同运行的栈式虚拟机**，负责把合约
 
 
 
+
 ## 一、以太坊的起源与发展
 
 -   **创始人**：Vitalik Buterin（V神），2013 年写白皮书，2015-07-30 主网 Frontier 上线
@@ -1343,6 +1403,7 @@ EVM 是**所有以太坊节点共同运行的栈式虚拟机**，负责把合约
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -1554,6 +1615,7 @@ Monad 完全兼容以太坊生态，开发者可无缝迁移应用：
 
 
 
+
 ## 一、DApp 核心架构
 
 DApp（去中心化应用）与传统 Web 应用的核心差异在于**去中心化**，由四类组件构成：
@@ -1705,6 +1767,7 @@ const count = await contract.methods.getMessageCount(userAddress).call();
 
 
 
+
 # 一、Web3合规核心：中国监管基调与法律风险
 
 ## （一）国内监管总原则
@@ -1774,6 +1837,7 @@ const count = await contract.methods.getMessageCount(userAddress).call();
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -1895,6 +1959,7 @@ Web3 工作以**远程协作**为核心，需要掌握一些特定的工具和�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

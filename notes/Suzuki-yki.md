@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+[https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/vks7gago7bua0o35/collaborator/join?token=Vg0Edi5wHYDDmgFy&source=doc\_collaborator#](https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/vks7gago7bua0o35/collaborator/join?token=Vg0Edi5wHYDDmgFy&source=doc_collaborator#) 《Moss Beginner Guide: Understanding Your First AI Agent Transaction》
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 [https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/collaborator/join?token=SmsRd6r0buqxz7in&source=book\_collaborator#](https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/collaborator/join?token=SmsRd6r0buqxz7in&source=book_collaborator#) 《Web3 Career Build Summary》我今天去语雀写了我的笔记
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 今日学习笔记：
 
@@ -114,6 +121,7 @@ Monad Ecosystem Gaming Report
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 今日学习笔记：
 
 继续完善我的项目工作流程，目前很多bug正在修改shi山代码中....好焦虑
@@ -121,6 +129,7 @@ Monad Ecosystem Gaming Report
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -135,6 +144,7 @@ Monad Ecosystem Gaming Report
 
 
 
+
 今天尝试我自己制作的工作流agent
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
@@ -145,11 +155,13 @@ Monad Ecosystem Gaming Report
 
 
 
+
 [https://github.com/Suzuki-yki/SeedFill-AutoCAD-GitHub](https://github.com/Suzuki-yki/SeedFill-AutoCAD-GitHub)
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -175,6 +187,7 @@ Week 2 | Space / 小型活动策划案
 
 
 
+
 # 今日学习笔记：
 
 我已经决定了制作方向，现在决定和ai交流制作一套我自己的agent工作流！！！
@@ -182,6 +195,7 @@ Week 2 | Space / 小型活动策划案
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -208,6 +222,7 @@ Week 2 | Space / 小型活动策划案
 
 
 
+
 ### **今日学习笔记：**
 
 go-learning学到的tx.origin看交易从谁开始，msg.sender看现在谁在调用。
@@ -217,6 +232,7 @@ go-learning学到的tx.origin看交易从谁开始，msg.sender看现在谁在�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -257,6 +273,7 @@ Web3 面试准备不能只靠背概念，而要同时完成“了解项目、夯
 
 
 
+
 ### Web3 安全与合规学习笔记
 
 在中国，区块链技术本身并非当然违法，但监管重点是严控其金融属性。ICO、IEO、IDO 等代币融资、面向境内居民的虚拟币交易服务及挖矿都属高风险领域；代币即使改名为“积分”或“凭证”，只要具备融资、流通或收益承诺特征，仍可能触及非法金融活动。项目形成“充值—随机收益—提现”闭环，可能涉嫌赌博；多级返利、团队计酬可能构成传销；OTC 出入金若涉及涉诈涉赌资金或地下换汇，可能导致冻卡，甚至涉嫌洗钱、帮信或非法经营。技术、产品、运营人员参与合约、模型或推广，也不能以“只是写代码”免责。
@@ -268,6 +285,7 @@ Web3 面试准备不能只靠背概念，而要同时完成“了解项目、夯
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -669,6 +687,7 @@ Web3 社区运营是一项综合能力要求较高的工作，需要具备内容
 
 
 
+
 # **今日学习笔记：**
 
 ### **1.1 核心概念：什么是Dapp？**
@@ -942,6 +961,7 @@ contract MyContract {
 
 
 
+
 ## **今日学习笔记：**
 
 （弥补前三天未学习的内容！今天是第一天，明天补充day2和day3还有day4的还有day5的！）
@@ -1031,6 +1051,7 @@ EVM（Ethereum Virtual Machine）是 **以太坊的"大脑"**，是专门用来\
 
 
 
+
 # 今日学习日记：
 
 我看web3实习手册其实有点不太理解pow和pos，然后今天我在buildanything里面学习了我发现这个教学我更能理解是什么意思了。
@@ -1069,6 +1090,7 @@ EVM（Ethereum Virtual Machine）是 **以太坊的"大脑"**，是专门用来\
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -1174,6 +1196,7 @@ Marketplace 比较： owner == msg.sender
 
 
 
+
 ## **今日学习笔记：**
 
 智能合约的运行其实是contract A调用contract B,执行 contract B的代码再返回contract A.
@@ -1212,6 +1235,7 @@ AI告诉我一句话：**Update your own state before interacting with others** 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

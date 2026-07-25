@@ -15,8 +15,116 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+## 今日主题
+
+围绕 Week 4 的交易前风险分析工具，按照“技术服务需求”的原则评审技术方案，并结合五人团队重新划分前端、后端、风险引擎与协议研究职责。
+
+## 今天完成了什么
+
+### 1\. 明确产品定位
+
+项目不是 DeFi 平台，也不是简单包装 Moss，而是一款交易前风险分析与决策辅助工具：
+
+```
+输入交易
+→ Preliminary Assessment
+→ Moss Simulation
+→ Final Assessment
+→ 用户自行决定是否继续
+```
+
+Moss 负责底层交易构建、模拟和验证；团队负责风险规则、数据整合和产品体验。
+
+### 2\. 收敛技术栈
+
+最终建议保留：
+
+-   pnpm workspace
+    
+-   TypeScript + Node 22
+    
+-   Vite + React + Recharts
+    
+-   Hono + zod + NDJSON 流
+    
+-   `contracts`、`risk-engine`、`moss-bridge`
+    
+-   Vitest、fixture 和 Biome
+    
+
+暂不引入 Next.js、数据库、LLM 裁决和复杂任务系统。钱包连接作为非阻塞增强，失败时仍可使用手动地址或 Demo 地址。
+
+五人协作使 workspace 有了真实价值：它用于职责隔离、契约共享和并行开发，而不是为了模仿大型项目结构。
+
+### 3\. 修正团队职责
+
+-   **Kai：**产品、流程、README、Demo、Pitch 与协调。
+    
+-   **Jie：**风险指标、规则、阈值、Risk Engine 和规则测试。
+    
+-   **Clare：**Backend、Moss Integration、外部数据、API Contract、流式接口、缓存与部署。
+    
+-   **Antony：**Wallet、UI、图表和前端集成。
+    
+-   **acoust：**协议研究、数据来源、历史事件、风险案例和研究证据。
+    
+
+其中最重要的修正是：数据获取、归一化、API DTO 和传输归 Backend；Jie 负责风险字段含义和计算规则，而不是后端数据接口。
+
+### 4\. 发现技术方案中的关键问题
+
+-   `bigint` 不能直接通过 JSON，应在网络边界转换为字符串；
+    
+-   无路由结果应使用判别联合，不能让部分字段被迫存在；
+    
+-   RPC URL 可能包含密钥，不能返回前端或写入快照；
+    
+-   固定区块只能保证链上读取一致，外部市场 API 需要单独记录；
+    
+-   安全边界搜索必须先验证单调性，再进行二分；
+    
+-   缺失数据不能默认视为低风险，Mock 也不能进入真实评级。
+    
+
+### 5\. 调整开发顺序
+
+不能把 Moss Integration 放到最后。它是最高技术风险，应先完成最小真实 Spike：
+
+```
+Kuru MON → USDC
+→ Quote
+→ Moss Simulation
+→ 原始 JSON
+→ 冻结 contracts v0.1
+→ 前后端并行开发
+```
+
+前端使用通过同一套 schema 验证的 fixture 开发，避免等待后端完成；第一次完整集成也不能拖到最后一天。
+
+## 今日复盘
+
+架构设计不能只考虑代码是否优雅，还要考虑真实团队如何交付。单人项目适合单 package，但五人并行开发需要有限且明确的物理边界。最关键的不是拆多少包，而是谁负责字段含义、谁实现接口、谁有最终修改权。
+
+## 下一步计划
+
+1.  确认 Clare 是否正式负责 Moss Integration；
+    
+2.  决定是否输出 Overall Risk 及其机械规则；
+    
+3.  确定第二协议做完整模拟还是事实对照面板；
+    
+4.  确认 Preliminary 与 Simulation 保持两次点击；
+    
+5.  完成 Kuru + Moss 最小真实 Spike；
+    
+6.  根据真实输出冻结 API Contract 与首份 fixture。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 ## 今日学习主题
 
 围绕 Moss Collaboration Demo Studio，重新梳理 Pendle Adapter 的展示重点，完成主网演示预检、用户测试流程设计和个人贡献说明。
@@ -94,6 +202,7 @@ discover → load → markets → quote → swap → simulate → Receipt
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 ## 今日主题
 
@@ -235,6 +344,7 @@ AI 帮助提取 Session Log、整理课程任务、生成研究与测试材料�
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 ## 今日主题
 
 复盘 Co-learning 中关于随机数、代理合约初始化、升级存储布局和预言机时效性的四道安全题，并将老师的讲解与 AI 辅助解释进行对照。同时了解 Week 3 Mini Demo、黑客松和组队要求。
@@ -349,6 +459,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 
 
+
 ## **今日主题**
 
 围绕 **PR** [**#109**](https://github.com/brightheartma/moss/issues/109) **Pendle Adapter 的 audit 后续收尾**：把作者对两个延后问题（ABI 交叉核对、dust 错误）的回复逐一落地，同时诚实处理一个新发现的 live 测试 flakiness——能确定性根治的交作者定，不硬修、不臆造证据。
@@ -379,6 +490,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -588,6 +700,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -1085,6 +1198,7 @@ Git 状态：
 
 
 
+
 ## 今日主题
 
 围绕 [Moss PR #56：Clober V2 CLOB Adapter](https://github.com/nishuzumi/moss/pull/56)，完成“作者修复—本地复测—发现剩余问题—定位根因—提交反馈—再次修复—全量回归”的完整开源 Review 闭环。
@@ -1443,6 +1557,7 @@ AI 帮助完成：
 
 
 
+
 # 2026-07-17｜残酷共学笔记
 
 ## 今日主题
@@ -1602,6 +1717,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：完成 Moss GitHub 探索，并把三个 Week 2 任务收束成一个 MCP 安全预览原型**
 
 今天没有急着继续写 Adapter，而是先把 Moss 的代码架构、GitHub 治理方式和 PR review 过程系统读了一遍，并完成三份相互关联的 Week 2 提交：
@@ -1725,6 +1841,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：完成 Moss 项目的业务理解 + 全链路实操**
 
 从手写代码到 agent 自主调用,完整走了一遍 Moss([github.com/nishuzumi/moss](http://github.com/nishuzumi/moss))的两种用法:先在 play.ts 里手写 discover → load → action → simulate 四步;再通过 `.mcp.json` 把 Moss 的 MCP 服务器接入 Claude Code,让 agent 纯靠四个 MCP 工具自主跑通"1 MON 能换多少 USDC"(本地 mainnet fork 实测)。同步完成任务:⭐ Star 仓库、README 精读、理解分享文案。
@@ -1773,6 +1890,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -1837,6 +1955,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 # 2026-07-13
 
 ## 今日进度：完成 Week 2 职业方向选择提交，搭建 AI 协作记录 + 学习记录归档体系
@@ -1877,6 +1996,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -1954,6 +2074,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：monad-clicker 加登录系统，并用真实使用数据修了一串前端 bug**
 
 昨天把「为什么需要频繁交互」的场景论证做完之后，今天把 monad-clicker 从 Demo 推进到「能被人反复实际使用」的状态：加了 MetaMask 登录（会话代签），然后没有止步于"能跑"，而是自己连续实测/连点/换账号，揪出了 6 个真实 bug 并逐一修复，最后把改动推到了 GitHub，也把 Week 1 Build Log 整理提交。
@@ -1995,6 +2116,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -2074,6 +2196,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：BuildAnything 初中课程 3/13**
 
 课程地址：[https://buildanything.so/zh/tracks/sophomore](https://buildanything.so/zh/tracks/sophomore)
@@ -2131,6 +2254,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -2223,6 +2347,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 \## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
 
 \### 今天做了什么
@@ -2262,6 +2387,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

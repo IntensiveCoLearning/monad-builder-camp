@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+组队中
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 寻找队友ing
 
 ![IMG_3093.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/mkbkoaa/images/2026-07-24-1784908327305-IMG_3093.png)
@@ -25,11 +31,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
+
 大家都好厉害，思路都很清晰…继续向大家学习
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 **今天对项目进行了改进**，**AI Prompt Library** 虽然不错，但是更像一个”工具网站”，**缺少 Web3 的特色和用户测试价值**。
@@ -392,6 +400,7 @@ Coming Soon
 
 
 
+
 **项目名称**
 
 **Prompt3：AI × Web3 Prompt Library**
@@ -592,6 +601,7 @@ Coming Soon
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -866,6 +876,7 @@ Week 2 对我来说，不只是完成了一系列运营任务，更重要的是�
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -1146,6 +1157,7 @@ X Space
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -1484,6 +1496,7 @@ Feedback Form。
 
 
 
+
 **Ops Task 12｜Space 执行预案**
 
 **一、活动基础信息（Event Overview）**
@@ -1801,6 +1814,7 @@ Feedback Form。
 
 
 
+
 今日稍微调整一下 Reverse AMA 的设定，
 
 **Reverse AMA：Ask Better Questions｜社区教你如何向项目方提问。**
@@ -2082,6 +2096,7 @@ AMA 听过很多，但真正会提问的人并不多。本次 Space，我们将�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -2453,6 +2468,7 @@ AMA 听过很多，但真正会提问的人并不多。本次 Space，我们将�
 
 
 
+
 **Monad 与以太坊显著差异及高性能开发最佳实践总结**（智能合约开发者视角）
 
 **1\. 虚拟机（EVM）差异**
@@ -2561,6 +2577,7 @@ Monad 在执行效率和 Gas 模型上与以太坊有明显差异，开发者需
 
 
 
+
 **Monad vs 以太坊：开发者必知的核心差异**
 
 **1\. 虚拟机（VM）**
@@ -2616,6 +2633,7 @@ Monad 在执行效率和 Gas 模型上与以太坊有明显差异，开发者需
 
 
 
+
 今天的内容感觉比较偏技术，对于非计算机专业的学习者来看，其实有一定难度。
 
 **DApp 架构和开发流程简要总结**：去中心化 + 多技术栈协作（合约 + 前端 + Indexer），重点解决链上查询低效和安全问题。
@@ -2659,6 +2677,7 @@ Monad 在执行效率和 Gas 模型上与以太坊有明显差异，开发者需
 
 
 
+
 学习了智能体相关内容。建立了自己的钱包，理解交易过程。
 
 ![IMG_3067.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/mkbkoaa/images/2026-07-08-1783526077503-IMG_3067.png)
@@ -2666,6 +2685,7 @@ Monad 在执行效率和 Gas 模型上与以太坊有明显差异，开发者需
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

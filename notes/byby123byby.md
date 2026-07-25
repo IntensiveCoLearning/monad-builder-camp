@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 今天参加了预测决赛和参加了晚自习
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
 
+
 今天上了那个人生胶囊的project的meeting感觉非常有意思和启发给力我一些insight
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 今天看了一个meeting 打卡1
@@ -38,11 +46,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日打卡
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -57,11 +67,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天玩了三轮web3 谁是卧底的游戏 很感谢老师带来的活动
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -80,11 +92,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日听了两个公开课
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -108,11 +122,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 补了漏掉的一些内容 然后准备今天复习一下
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -141,11 +157,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天参加了今天7点钟的会议 学习了今日的任务 并且完成了前几天的钱包创建 然后完成了My First NFT
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 

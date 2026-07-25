@@ -15,8 +15,68 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+学习Monad链的知识，以更好进行黑客松  
+  
+绝大多数区块链之所以慢，是因为它们在串行处理交易，且受到了 CPU 读写硬盘数据（I/O）的严重拖累。Monad 通过重构以太坊最底层的四个核心组件，完成了整机的“极速改造”：
+
+1\. 并行 EVM (Parallel EVM) 与乐观并发控制 (OCC)
+
+-   **传统 EVM 痛点**：以太坊是“单线程”的，几万笔交易必须老老实实排队，一笔执行完了才能跑下一笔。哪怕 A 转账给 B，和 C 在 Uniswap 交易压根毫不相干，也必须排队。
+    
+-   **Monad 解决方案**：引入**乐观并发控制（Optimistic Concurrency Control, OCC）**。系统会“乐观地”假设同时发来的多笔交易彼此之间没有冲突，利用多核 CPU 瞬间**并行执行**它们。
+    
+-   **防冲突机制**：如果执行完发现其中两笔交易碰了同一个账户余额（产生状态冲突），系统会在后台以极快的速度对冲突的交易进行重新排序并重新执行。最终呈现给全局账本的结果，完全等同于串行执行的正确顺序。
+    
+
+2\. MonadDb —— 为区块链而生的自定义状态数据库
+
+-   **传统 EVM 痛点**：区块链性能真正的最大瓶颈往往不是 CPU 算力，而是**状态访问（State Access）**——即电脑去硬盘里读取账户余额和智能合约数据这一步。传统 EVM 使用的外部数据库（如 LevelDB）并不是为区块链树状结构（默克尔帕特里亚树 MPT）设计的，每次读写都要在硬盘里翻找很久。
+    
+-   **Monad 解决方案**：Monad 团队从零用 C++ 和 Rust 编写了 **MonadDb**。这是一个原生支持区块链状态树结构的数据库，并且结合 Linux 底层的异步 I/O 机制（`io_uring`），允许 SSD 硬盘同时并发处理数千个数据读写请求，把硬盘的性能压榨到了极限。
+    
+
+3\. 延迟执行 (Deferred Execution)
+
+-   **传统 EVM 痛点**：在传统以太坊网络中，验证节点做共识（大家同意区块里有哪些交易、顺序如何）和执行交易（跑 Solidity 代码算余额）是**绑在一起同时进行的**。这导致节点必须花大量时间等待代码跑完，才能盖章确认区块。
+    
+-   **Monad 解决方案**：将“共识”与“执行”彻底解耦。
+    
+    -   **共识阶段**：节点们先极速达成一致：“我们确定这一块包含这 5000 笔交易，顺序锁死！”（此时即可确认交易打包，达到共识终局）。
+        
+    -   **执行阶段**：在共识达成后，节点再利用充裕的时间在后台调用 Parallel EVM 去并行计算这些交易的最终余额状态。这极大地压缩了出块的时间窗口。
+        
+
+4\. MonadBFT —— 高性能流水线共识机制
+
+-   基于著名的 HotStuff 算法升级而来，是一种高性能的拜占庭容错共识机制。它通过两阶段投票和领袖轮换流水线设计，确保在数百个去中心化验证节点之间，依然能够以毫秒级的速度达成通信与共识，彻底摆脱了传统 PoW 或早期 PoS 复杂的通信开销。
+    
+
+### **三、 核心维度对比：Monad vs 以太坊 vs Solana**
+
+在实际面试或撰写技术方案时，评委非常喜欢考核你对不同 L1 路线的权衡认知（Trade-offs）：
+
+| 核心维度 | Ethereum 主网 (传统 EVM) | Solana 主网 (Alt-L1 代表) | Monad 主网 (高性能 EVM) |
+| --- | --- | --- | --- |
+| 理论吞吐量 (TPS) | 约 15 - 30 TPS | 约 3,000 - 5,000+ TPS | 10,000+ TPS |
+| 开发语言与架构 | Solidity / EVM | Rust / SVM (Solana 虚拟机) | Solidity / EVM (100% 字节码兼容) |
+| 开发与迁移成本 | 极低（生态标准） | 极重（需重新学习 Rust/Account 模型） | 零迁移成本（代码直接拷贝部署） |
+| 状态访问机制 | 串行执行 + LevelDB 瓶颈 | 需在代码中提前显式声明读写账户 | 乐观并发控制 (OCC) + MonadDb |
+| 共识与执行关系 | 共识与执行捆绑同步 | 依靠 POH 历史证明流水线 | 延迟执行 (Deferred Execution) 解耦 |
+
+### **💡 给 Web3 实习工程师的实战启示**
+
+理解了 Monad 的底层，对你现在的写代码实战（如 Hardhat / Foundry 部署、Ethers.js 调用）有两点极其重要的实战价值：
+
+1.  **“开箱即用”的开发红利**：因为 Monad 做到的是底层的**字节码级兼容（Bytecode Compatibility）**，这意味着你这周学的 **Hardhat、Foundry 部署脚本，以及 MetaMask、Viem、Ethers.js 交互库，不需要做任何专用 SDK 的修改** 。你只需要在脚本的配置文件（如 `hardhat.config.ts`）中把 RPC URL 换成 Monad 测试网的节点地址 ，你写的那些防重入锁、打卡合约 就能瞬间获得 10,000 TPS 的超跑级执行速度。
+    
+2.  **DeFi 可组合性（Lego）的复兴**：传统为了解决以太坊慢而出现的 Layer 2（如 Arbitrum、Optimism），导致了“流动性割裂”（资金分散在不同链上，彼此跨链极其麻烦）。而 Monad 作为一个统一的 Layer 1，允许极其复杂的 DeFi 协议（如将 Uniswap、Aave、MakerDAO 串联在一起的闪电贷或多重衍生品 ）在同一瞬间、同一底层状态池中毫无摩擦地高频并发执行，这为未来的**高频链上交易工具**和 **AI 代理高频微支付（如 x402 协议）** 提供了完美的终局基建。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 今日黑客松项目持续中。。
 
 和团队沟通。。
@@ -26,6 +86,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 今天主要学习了 Web3 中钱包授权、智能合约和 DeFi 协议的安全机制。我认识到，Web3 的真正安全边界是链上合约，而不是项目网页：断开钱包不代表取消授权，隐藏按钮也不能阻止别人直接调用合约。
 
@@ -38,6 +99,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 今天系统了解了 Moss 项目，并完成了项目介绍、GitHub 探索日志和新手教程。
@@ -70,6 +132,7 @@ Moss 是一个面向 Monad 的 AI Agent 交易框架，可以把协议操作变�
 
 
 
+
 完成组队，拟定了团队分工计划，我的角色：PM + Tech  
 继续学习Monad链 + MOSS相关知识、源码  
 和团队成员一起持续讨论中……
@@ -77,6 +140,7 @@ Moss 是一个面向 Monad 的 AI Agent 交易框架，可以把协议操作变�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -95,6 +159,7 @@ Moss 是一个面向 Monad 的 AI Agent 交易框架，可以把协议操作变�
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -134,12 +199,14 @@ AMM 如何决定代币的价格呢？最经典的算法是 Uniswap V2 推广的�
 
 
 
+
 参加了这周例会和co-learning  
 完成了上一个项目，今天浅浅休息一下，周末继续
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -222,6 +289,7 @@ contract DeployScript is Script {
 
 
 
+
 学习了DeSci相关的内容/学习手册，Dapp开发流程
 
 ### Traditional Web vs. Web3 (DApp) Architecture
@@ -288,6 +356,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 学习solidity的各种函数  
 听了两场分享会，对Desci方向很感兴趣，阅读了一些相关资料，再研究研究，看能不能从传统科研往这个方向发展
 <!-- DAILY_CHECKIN_2026-07-14_END -->
@@ -304,11 +373,13 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 做了一个小项目来更好的学习和实践如何接入钱包，如何用agent管理钱包，以及各环节的安全审查
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -347,6 +418,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -417,6 +489,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 学习了怎么写智能合约，搭建了本地开发环境，基本上能看懂简单的合约，各种不同的语言都了解了一下。  
 
 1. 什么是智能合约？ —— “不会耍赖的自动售货机” 
@@ -468,6 +541,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 跟着web3实习手册学习，查漏补缺，逐个击破，夯实基础
 
 学习了TEE和ZK，在解决信任场景的时候可以搭配使用
@@ -492,12 +566,14 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 
 
+
 1，写简单的合约，部署合约，Remix（直接用AI也行，反正以后合约都是AI写）  
 2，听了老师分享会，学习了关于EPF (Ethereum Protocol Fellowship) 和 EIP（Ethereum Improvement Proposal），学习路线、研究方向等等
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

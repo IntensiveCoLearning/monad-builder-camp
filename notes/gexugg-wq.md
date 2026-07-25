@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+实习生周末也加班，还能挤出时间学吗
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 黑客松真的很考验队友
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 那便是把针对生活中一个小痛点进行分析，先在假学习这个demo上先跑，后续再深化
 <!-- DAILY_CHECKIN_2026-07-23_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 了解链上服务基本是要接触钱包，但钱包容错率极低
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -47,6 +56,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 **Dev Builder—修复 Bug** 需要先找到可复现 Bug，并理解 Moss 内部代码，结果不确定。
 
 **Dev Builder—开发 Adapter** 难度最高，需要处理协议地址、ABI、参数契约、Capability、Receipt 和测试，目前不适合作为第一周贡献。官方的 Protocol 接入流程本身就包含多个开发与验证环节。
@@ -54,6 +64,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -121,11 +132,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日终于可以开始学习
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -140,6 +153,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -164,11 +178,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 Research：判断方向对不对 Ops：让用户愿不愿意参与 Dev：把产品真正做出来
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -195,11 +211,13 @@ pdd的编程理念能够帮助理解测试和边界的理解
 
 
 
+
 确认好目标是做一个假学习监督助手，将基于openhands基础上实现
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -232,11 +250,13 @@ Mini Demo 0：Monad FocusProof Agent
 
 
 
+
 我认识到裸奔状态下的智能体存在提示词注入、越权工具调用、自主执行不可控等高危风险，了解了对Agent做权限管控、结构化输出约束、流程校验的安全构建思路。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -279,11 +299,13 @@ Mini Demo 0：Monad FocusProof Agent
 
 
 
+
 ![faf35fdce29f9006cf9b3549f2863e3b.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/gexugg-wq/images/2026-07-07-1783406763416-faf35fdce29f9006cf9b3549f2863e3b.jpg)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

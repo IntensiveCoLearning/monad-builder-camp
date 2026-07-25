@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+今日与小组成员共同进行了第一次讨论，确定了产品方向
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 今日休息日，制作了md学习文档
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 今日是周五分享例会，公布了黑客松的具体要求，准备做一个新的链上demo，并且尝试接入moss
 <!-- DAILY_CHECKIN_2026-07-24_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
 
+
 今天的colearning自习～询问了助教老师关于以太坊底层一些比较好奇的问题，相对比较轻松～
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 周末复盘了week2的所有内容，包括运营、tech的内容，下周开始继续完善demo，为hackathon做准备。
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -68,11 +79,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日周六，复盘了上周任务，并且开始尝试在写moss入门文档。
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -93,11 +106,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 huahua老师准备的谁是卧底小游戏很好玩！今天很开心哈哈哈，第一轮就轮到我了～
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -122,11 +137,13 @@ huahua老师准备的谁是卧底小游戏很好玩！今天很开心哈哈哈�
 
 
 
+
 听嘉宾讲解了DeSci的相关内容，以及对public goods的展望。另外也具体确定了week3的角色，并且建立了building log，后续持续更新。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -155,11 +172,13 @@ huahua老师准备的谁是卧底小游戏很好玩！今天很开心哈哈哈�
 
 
 
+
 今天依旧是周末，没有安排的任务～于是重新复盘了一下第一周的所有内容，以及产出的非常粗糙的demo。为第二周制定了计划，首先要做的是解决一下demo里面的多钱包连接问题。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -200,6 +219,7 @@ huahua老师准备的谁是卧底小游戏很好玩！今天很开心哈哈哈�
 
 
 
+
 今天参加了 Bein、Yoona、huahua 和苏生老师的 co-learning，主要围绕 Web3 实习、岗位选择、个人成长路径和项目案例展开。
 
 今天比较大的收获是，我对 Web3 找机会的方式有了更现实的认识。Web3 行业不像传统互联网那样只靠海投简历，很多机会来自社群、线下活动、黑客松、朋友推荐和内推。尤其现在行情没有以前那么热，想找到实习或项目机会，不能只等招聘平台反馈，更重要的是让别人看见自己的能力和持续产出。
@@ -219,6 +239,7 @@ huahua老师准备的谁是卧底小游戏很好玩！今天很开心哈哈哈�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -458,6 +479,7 @@ Agent 任务托管、链上赏金、Monad Testnet、React DApp、ethers.js、Met
 
 
 
+
 测试了链上交易，并且构思了接下来的项目方向：既不能太简单，也不能没有市场需求。目前打算设计并开发基于 Monad Testnet 的 AI Agent 任务托管 DApp，使用 Solidity 实现任务发布、资金托管、结果提交与奖励释放逻辑，使用 React + ethers.js 实现钱包连接、任务状态读取、链上交易提交与区块浏览器追踪。大概是这样……过两天逐渐开始开个头，看看有没有可行性。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -481,11 +503,13 @@ Agent 任务托管、链上赏金、Monad Testnet、React DApp、ethers.js、Met
 
 
 
+
 开通了metamask钱包，创建两个账户负责接收，并且完成了链上第一笔交易，学会了看from/to/transaction hash。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

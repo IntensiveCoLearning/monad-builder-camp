@@ -15,8 +15,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-25
+<!-- DAILY_CHECKIN_2026-07-25_START -->
+之前的繁忙忙工作暂时告一段落，web3我回来了。
+<!-- DAILY_CHECKIN_2026-07-25_END -->
+
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 今日学习数学ing，
 
 linear functions
@@ -29,6 +35,7 @@ linear functions
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Adazhangdada/images/2026-07-22-1784719282859-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Adazhangdada/images/2026-07-22-1784719648869-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Adazhangdada/images/2026-07-22-1784719778421-image.png)
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
@@ -36,11 +43,13 @@ linear functions
 <!-- DAILY_CHECKIN_2026-07-20_START -->
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Adazhangdada/images/2026-07-20-1784545923956-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Adazhangdada/images/2026-07-20-1784546093005-image.png)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -57,11 +66,13 @@ linear functions
 
 
 
+
 今天学习了HITS和PageRank算法。
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -78,11 +89,13 @@ linear functions
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Adazhangdada/images/2026-07-14-1784028307388-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Adazhangdada/images/2026-07-14-1784031777758-image.png)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -111,6 +124,7 @@ Agent = 模型 + 上下文 + 记忆 + 工具 + 执行循环 + 权限边界 + 验
 
 
 
+
 周末~  
 buildanything freshman课程完结打卡
 
@@ -128,11 +142,13 @@ buildanything freshman课程完结打卡
 
 
 
+
 今天听了好多优秀的同学们的分享！学习学习学习。
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -163,6 +179,7 @@ buildanything freshman课程完结打卡
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -331,6 +348,7 @@ Explorer 也是你确认自己在「正确的链上」最快的方式。如果�
 
 
 
+
 # DAY2 转账
 
 ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2ZiYTYxZmNiMjRmYzI3MzNlNWY4YzFjZmRmYjk5OTdfaDdBYkxTM0pFRUxtSzN5bmF2bzBKd3VURkljbm93WUxfVG9rZW46S3pkS2JUU3JTb1Q4QWN4a011TGNjbFVOblRoXzE3ODM0MzM1MjI6MTc4MzQzNzEyMl9WNA&add_watermark=true&scene_type=CCM)
@@ -342,6 +360,7 @@ Explorer 也是你确认自己在「正确的链上」最快的方式。如果�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

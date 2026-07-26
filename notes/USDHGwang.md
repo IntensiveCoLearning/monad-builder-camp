@@ -15,8 +15,54 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+\# Day 21 — 被打回七項，然後去讀自己送出去的東西
+
+把 Week 2 卡住的四個任務清掉。開任務詳情才發現「完成第一次 GitHub 協作 +50」
+
+和「向 Moss 提交第一個 PR +60」是互斥的，只能選一個，我之前算的 260 學分不成立。
+
+最後交了 +60、+100、+50 三項。
+
+nishuzumi 給了 review，CHANGES\_REQUESTED，七項 blocking。
+
+他不是掃一眼打回。review 裡寫了他自己跑過 lint / build / typecheck / test:offline
+
+和我全部的 live test，重跑 keyed update:abis 確認 ABI bytes 沒變，還用一個有錢的
+
+EOA 手動模擬了一次 redeem。
+
+機械層的東西是對的，calldata 正確、ABI 抓對了。七項全部落在另一層：這東西會不會
+
+出錯、它產出的證據到底證明了什麼。
+
+最具體的是 Receipt 那項。Moss 框架有一個 verifyReceiptCoverage，檢查我有沒有把
+
+模擬產生的每一條 Change 都認領完、順序對不對、握的是不是原始物件。我的 parser
+
+過得了這個檢查，因為每條都被認領了。但我沒有檢查事件是不是 shMONAD 合約發出來的，
+
+native transfer 也只比金額不比 from/to。一個不相干的同簽章事件加一筆金額剛好的轉帳，
+
+就能組出一份看起來權威的結果。框架只檢查有沒有漏認，認得對不對是 adapter 自己的
+
+責任，這件事我當時沒想到。
+
+另一項是 README 宣稱 default CLI 會 expose 這個 adapter，但 package 還是 private，
+
+也沒被 compose 進 defaultProtocolModules。文件寫了一個實際不成立的事。
+
+今天剩下的時間花在把整條 Moss 流程弄清楚：discover / load / action / simulate 各做
+
+什麼、MCP server 是常駐進程不是腳本、LLM 其實不執行任何東西，只是輸出文字由 host
+
+去打 JSON-RPC。
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 \# 2026-07-25
 
 <!-- DAILY\_CHECKIN\_2026-07-25\_START -->
@@ -35,6 +81,7 @@ DeFi 協議把 unbonding delay 當常識，文件寫一行就算交代。但 age
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 \# 2026-07-24
 
 <!-- DAILY\_CHECKIN\_2026-07-24\_START -->
@@ -50,6 +97,7 @@ DeFi 協議把 unbonding delay 當常識，文件寫一行就算交代。但 age
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 \# 2026-07-23
@@ -76,6 +124,7 @@ ABI 從完整 verified 版抓，不是手寫 trim。shMONAD 是 proxy，explorer
 
 
 
+
 \# 2026-07-22
 
 <!-- DAILY\_CHECKIN\_2026-07-22\_START -->
@@ -99,6 +148,7 @@ FastLane 的官方套件 @fastlane-labs/fastlane-contracts 只 ship Solidity 原
 
 
 
+
 今天沒寫 code，花時間把「為什麼模型輸出需要外部驗證」從機制層拆開。起點是一支 AI 科普影片加楊植麟的 K2 訪談，過程跟 Claude 逐條核對理解，錯的當場被抓（驗證器是訓練迴圈內的東西，我原本以為是訓練完的考核；推理時我以為參數還會微調，實際上全程凍結）。
 
 搞清楚的幾件事：
@@ -117,6 +167,7 @@ FastLane 的官方套件 @fastlane-labs/fastlane-contracts 只 ship Solidity 原
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -151,6 +202,7 @@ FastLane 的官方套件 @fastlane-labs/fastlane-contracts 只 ship Solidity 原
 
 
 
+
 shMONAD adapter 昨天寫完跑過 mainnet，今天回頭看整個過程，注意到一件事：在 Moss repo 裡貢獻程式碼的體驗，和在自己的 EIV/AIP repo 裡寫東西完全不同。
 
 Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTING.md) 列 Definition of Done 清單，有 [protocol-onboarding.md](http://protocol-onboarding.md) 從零走一遍流程，有 \_template 可以直接複製。每一步該做什麼、做到什麼程度算完成，都有人替你想過了。我照著走，三小時出一個通過 live test 的 adapter。
@@ -164,6 +216,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -190,6 +243,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 
 
+
 今天把技術、研究、運營三個賽道的任務都交了。十份文件寫的都是 Moss 和 agent authorization，但寫給不同讀者的時候，自己對材料的理解會被迫重組。
 
 研究賽道要我拆解 ERC-7579。這個標準我在 AIP 專案裡用了快一年，以為很熟。但要按 Reading Card 格式寫「背景問題 → 核心方案 → 爭議風險」的時候，發現自己一直在用 hook 的部分，對 validator 和 fallback handler 的設計取捨其實沒認真想過。寫的過程補了這塊。
@@ -201,6 +255,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -235,6 +290,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 
 
+
 今天開始接觸 Moss 這個 AI Agent × Web3 的開源專案，一開始只是想了解目前 AI Agent 在 Web3 生態中的發展方向，因此花了一些時間閱讀專案的 README 和整體架構。
 
 目前最大的感受是，AI Agent 不再只是回答問題，而是開始朝向「能夠真正執行任務」發展。當 Agent 需要查詢鏈上資料、操作錢包、呼叫智慧合約時，背後就需要一套穩定且容易擴充的基礎設施，而 Moss 正是在這個方向上提供了一種解決方案。
@@ -258,6 +314,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -314,6 +371,7 @@ Week 2 Challenge 方向是 Moss（github.com/nishuzumi/moss），今天花時間
 
 
 
+
 Week 2 Dev 軌開跑，這週的 Challenge 是給開源專案 Moss 做貢獻——认识 codebase、
 
 發第一個 PR、完成一次 GitHub 協作。
@@ -339,6 +397,7 @@ agent 只当查询和解释工具。
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -381,6 +440,7 @@ agent 只当查询和解释工具。
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -439,6 +499,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 
 
+
 **2026-07-09 — Day 4｜Agent 安全框架 vs 自己的 AIP/EIV**
 
 -   **Agent Guard 四能力**：Discover（資產發現）/ Red-Team（模擬攻擊）/ Defend（運行時攔截 allow-warn-approve-block）/ Govern（治理儀表盤）。它是**廣而淺**的通用平台，橫跨 prompt injection、RAG 洩露、MCP 提權這些層——正好是我 AIP/EIV **刻意 scope out 的感知/推理層**。
@@ -454,6 +515,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -518,6 +580,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 
 
+
 **2026-07-07 — Day 2**
 
 -   今天在整理 agent 發展框架的路徑時想到：ML/DL 演算法本身有價值但不是技術核心，agent 的價值來自「堆疊」出來的工程概念——prompt engineering → context engineering → harness engineering → loop engineering，是一層層疊上去的，不是取代關係（prompts → context/memory → skill）
@@ -529,6 +592,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

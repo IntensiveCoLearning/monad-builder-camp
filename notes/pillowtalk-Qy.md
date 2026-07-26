@@ -15,8 +15,161 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+## 今日概览
+
+今天主要同时推进了两个仓库：
+
+-   在 [Moss-Mini-Demo](https://github.com/Moss-Mini-Demo/moss-mini-demo) 中实现 PreflightReport Schema、准备成功 Fixture、冻结 Decision Engine 契约，并开展 Maintainer 级别的信任边界复核。
+    
+-   在 [nishuzumi/moss](https://github.com/nishuzumi/moss) 中提交 Kuru Receipt 修复 PR，更新依赖安全审计，并提出 Protocol 一致性检查方案。
+    
+
+## 一、Moss-Mini-Demo：Schema 实现
+
+创建了 [PR #15：PreflightReport v0.1 Runtime Schema](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/15)。
+
+本次实现新增 `@moss-mini-demo/report-schema` 包，包含：
+
+-   EIP-55 地址、金额、时间、网络和 UUID 校验；
+    
+-   `AVAILABLE / FAILED / MISSING / UNPROVABLE` 证据状态；
+    
+-   Capability、Simulation、Receipt、Outcome 等证据结构；
+    
+-   RFC 6901 SourceReference；
+    
+-   `MANUAL_REVIEW` 与 `STOP` 跨字段约束；
+    
+-   66 个合成数据测试；
+    
+-   Node 22、pnpm 和 `quality-gate` 验证。
+    
+
+虽然当前 Head 的 CI 全部通过，但我在 Maintainer 复核中发现了多项信任边界问题：
+
+1.  Node 22 无法通过包名正常加载公共入口；
+    
+2.  `AVAILABLE` 状态仍允许 `raw: null`；
+    
+3.  SourceReference 可以形成循环引用或引用自身的引用元数据；
+    
+4.  对 `display`、`prose`、`extensions` 等合法原始字段进行了过度拒绝；
+    
+5.  独立导出的 SourceReference Schema 只能验证语法，无法验证完整报告上下文；
+    
+6.  缺少 nullable raw、循环引用和完整 STOP 触发关系测试。
+    
+
+因此没有因为 CI 通过就进入 Merge Gate，而是将 PR #15 与 Issue #5 标记为 blocked，等待修复后重新进行完整复核。
+
+## 二、成功 Fixture
+
+基于 PR #15 创建了堆叠式 [PR #16](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/16)，加入一份合成的 `MANUAL_REVIEW` 成功报告。
+
+Fixture 明确使用 `FIXTURE` provenance，不包含真实 Monad、Moss、协议或 Receipt 证据。新增两个专门测试，完整测试数量达到 68 个，质量门禁通过。
+
+但由于它依赖仍有问题的 PR #15，所以 PR #16 与 Issue #7 同样保持 Draft 和 blocked。当前测试结果只能证明旧 Schema Head 下的兼容性，不能证明未来修复后的 Schema 仍然通过。
+
+## 三、Decision Engine 契约
+
+创建、审查并合并了 [PR #17](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/17)，新增 ADR 0003，冻结 Decision Engine v0.1 契约。
+
+ADR 0003 确定了：
+
+-   独立的 Decision Engine 包与单向 Schema 依赖；
+    
+-   输入必须排除既有 `decision` 和 `limitations`；
+    
+-   输出只能是 `MANUAL_REVIEW` 或 `STOP`；
+    
+-   22 个穷举 STOP reason code；
+    
+-   选择、Capability、模拟、Warning、Receipt、Outcome、coverage、ordering、状态连续性和关键 Alignment 的停止规则；
+    
+-   所有同时触发的原因都必须返回，不能只返回第一个；
+    
+-   原因按固定 rank 排序，同类引用去重并排序；
+    
+-   Alignment 失败必须引用底层 Intent、Quote、Capability 或 Simulation，不能引用 Alignment 自身作为证明；
+    
+-   无效输入返回输入边界错误，不能伪造一个缺少有效证据引用的 `STOP`。
+    
+
+PR #17 的 Proposed Head、Accepted Head 和合并后的 `main` 均通过质量门禁，最终合并为 `29d2cbc`。Issue #6 已获得依赖受限的实现授权，但必须等待 PR #15 修复并合并后才能开始 Decision Engine 代码。
+
+## 四、反馈改进 PR
+
+重新审查了 [PR #12](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/12) 的 STOP 展示规范。
+
+原方案方向仍然有效，但它早于 ADR 0001–0003，存在“默认 Warning 一定有 code/message”“只展示单一友好原因”“把部分非必有字段当作固定字段”等问题。
+
+目前 PR #12 已改为 Draft，继续保持 blocked。后续需要基于最新 `main` 刷新，将所有展示模式映射到 ADR 0003 的 22 个原因代码，并按固定顺序展示全部独立 STOP 原因。
+
+## 五、Moss：Kuru Receipt 修复
+
+提交了 [PR #138](https://github.com/nishuzumi/moss/pull/138)，解决此前在真实模拟中发现的 [Issue #117](https://github.com/nishuzumi/moss/issues/117)。
+
+修复内容包括：
+
+-   将 `FlipOrderUpdated` 和 `FlippedOrderCreated` 表示为结构化 ReceiptChange；
+    
+-   只记录事件直接提供的字段，不推测不存在的业务含义；
+    
+-   要求 flip 事件后必须紧邻同一市场发出的 `Trade`；
+    
+-   要求 Trade taker 必须是 Kuru Router；
+    
+-   保留原始 Change 的对象身份、长度和顺序；
+    
+-   反向顺序、中间夹杂 Change、不同市场、孤立事件和其他未知事件继续 fail-closed。
+    
+
+验证结果：
+
+-   Kuru focused live suite：27/27；
+    
+-   完整 live suite：207/207；
+    
+-   新鲜真实模拟：零 Warning；
+    
+-   Linux CI 与 Windows offline CI 均通过；
+    
+-   未修改 ABI、Capability、参数、依赖或交易构造。
+    
+
+PR #138 当前可合并但仍为 Open，尚未收到正式 Review。我也主动向此前希望参与该问题的 Zane 说明了改变执行计划的原因，请求独立审查，并保留由 Box 决定最终维护归属。
+
+## 六、依赖安全与仓库质量
+
+更新了 [Issue #125](https://github.com/nishuzumi/moss/issues/125)，新增 PostCSS 高危 advisory，并重新验证四项 override：
+
+-   `fast-uri 3.1.4`
+    
+-   `@hono/node-server 2.0.11`
+    
+-   `postcss 8.5.18`
+    
+-   `esbuild 0.28.1`
+    
+
+测试后的生产与完整 audit 均为零 advisory，peer、lint、build、typecheck 和 offline tests 全部通过。Hono 仍存在跨 major override 风险，因此没有直接提交依赖 PR，继续等待 Maintainer 选择“全部修复”还是“先修复另外三项”。
+
+同时在 [Issue #67](https://github.com/nishuzumi/moss/issues/67) 提议拆出一个 Protocol conformance gate，用于自动检查 TypeScript 文件是否真正被 typecheck、Protocol 是否可通过 `discover/load` 到达、发布包是否进入 changeset linked group、compile-time fixture 是否存在，以及 ABI 测试是否被正确纳入。该任务仍等待 Box 批准，没有提前实现。
+
+此外，我此前独立审查并批准的 [PR #124](https://github.com/nishuzumi/moss/pull/124) 今天正式合并，ERC-1155 `ApprovalForAll` 已进入统一 Receipt 解析路径。
+
+## 今日判断
+
+今天最重要的判断是：**CI 通过只证明既有检查通过，不代表信任边界正确。** PR #15 已有 66 个测试且质量门禁成功，但人工复核仍然发现 `raw: null`、循环引用、自证引用和公共包入口等关键问题。
+
+下一步优先修复 PR #15并扩充测试；Schema 合并后再重放 PR #16，随后才能启动 Decision Engine 实现。Moss 侧继续等待 PR #138 Review，以及 Issue #125、#67 的 Maintainer 决定。
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 ## 今日重点
 
 今天主要推进 OriginShift 团队 Mini Demo 的工程基础与证据契约建设。项目从只有架构文档的 M0 阶段，正式进入可以实施 `PreflightReport v0.1` Schema 的 M1 阶段。
@@ -143,6 +296,7 @@ ADR 0001 和 ADR 0002 合并并通过主分支质量门禁后，[Issue #5](https
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 ## 今日进展
 
 完成一次真实 Monad 主网 Kuru 模拟：输入为 `1 MON -> USDC`，使用 Moss 构建未修改的 Kuru Capability 并执行 `debug_traceCall` 模拟。交易本身未回滚，但 Receipt parser 遇到 `FlipOrderUpdated` 后触发 `RECEIPT_FAILED`，因此系统按 fail-closed 原则输出 `STOP`。全过程未使用私钥、未签名、未发送交易。
@@ -169,6 +323,7 @@ ADR 0001 和 ADR 0002 合并并通过主分支质量门禁后，[Issue #5](https
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 今天的工作重点是把 Week 3 团队 Mini Demo 从讨论阶段推进到可协作、可检查的工程化阶段，同时持续跟进 Moss 上游建设。
@@ -248,6 +403,7 @@ M0 基线已通过 [PR #2](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -746,6 +902,7 @@ Week 3 方面，OriginShift 团队已经拥有脑暴会议方案和可导入 Not
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -1321,6 +1478,7 @@ Week 3 方面，OriginShift 团队已经完成组建，并将尚未命名的 Min
 
 
 
+
 ## 2026-07-20 今日打卡笔记
 
 今天主要做了两部分工作：一是完整阅读和理解 Week 3 团队协作任务，明确自己在团队 Mini Demo 中的定位和可选方向；二是继续推进 Moss 开源贡献，包括 Core 安全、Simulator 测试、Query metadata、ERC-4626 Adapter 前置能力等内容。
@@ -1643,6 +1801,7 @@ address-free compiled ERC-4626 ABI slice
 
 
 
+
 ## 今日打卡笔记：Moss 开源贡献记录
 
 日期：2026-07-19  
@@ -1845,6 +2004,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 
 
+
 ## 今日打卡笔记：Moss 开源贡献与 Adapter 架构建设
 
 今天继续围绕 Moss 做真实开源贡献，重点从单纯提交 PR，扩展到 **Adapter 基础能力建设、核心架构 review、安全边界审查** 三个层面。
@@ -2010,6 +2170,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 
 
+
 ## **今日学习笔记：Moss Adapter 方向判断与开源协作推进**
 
 今天主要围绕 Moss 的 Adapter Challenge 做了方向判断和开源协作规划。任务要求是为 Moss 开发一个新的 Adapter，并提交 Pull Request，包括 PR 链接、GitHub 主页、Adapter 名称和功能简介。
@@ -2051,6 +2212,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -2284,6 +2446,7 @@ AI Agent 可以辅助链上操作，但必须经过 capability、simulation、re
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -2700,6 +2863,7 @@ Aave 成立的关键条件包括：
 
 
 
+
 今天主要完成了两类任务：一是阅读并拆解一个真实 EIP，二是选择一个已经上线的 Web3 产品做 Product / Protocol Reading Card。今天的重点是从“看懂概念”进一步转向“结构化分析真实协议和产品”。
 
 ## **1\. EIP 阅读：EIP-7702**
@@ -2821,6 +2985,7 @@ Polymarket 连接的是预测市场、公共判断、信息聚合和 AI 治理�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -3017,6 +3182,7 @@ AI 今天主要帮助我：
 
 
 
+
 这一周的学习主线，可以概括为：
 
 `从链上基础实践，走向对 Web3 / AI / Crypto 交叉方向的系统理解。`
@@ -3115,6 +3281,7 @@ AI 在本周主要帮助我：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -3242,6 +3409,7 @@ d/acc 不是盲目加速所有技术，而是加速那些增强防御、韧性�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -3421,6 +3589,7 @@ AI 把问题从“找不到候选 bug”变成了“候选太多，如何筛选�
 
 
 
+
 今天主要阅读和理解了 Vitalik 关于 **obfuscation（程序混淆 / 程序不可读化）** 的文章。今天最大的收获是：这篇文章讨论的重点不是“如何隐藏数据”，而是 **如何隐藏程序本身**。
 
 ## **1\. 核心问题**
@@ -3534,6 +3703,7 @@ Obfuscated program 本身有一个明显问题：它不能防止复制。
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -3731,6 +3901,7 @@ Affluxa 的价值在于，它尝试用身份、预算、风控、可撤销、一
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -3964,6 +4135,7 @@ Week 2 的下一步计划是：
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

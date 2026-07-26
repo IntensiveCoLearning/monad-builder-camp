@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+准备黑客松
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 准备黑客松
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 参加co-learning
 <!-- DAILY_CHECKIN_2026-07-24_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
 
+
 参加co-learning
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -51,6 +60,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 参加**产品分享：个人数据与 Stewie Project**
 
 参加co-learning
@@ -58,6 +68,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -76,6 +87,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 预习Week3内容
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
@@ -88,11 +100,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日预习Week3内容
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -117,11 +131,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 参加7.16 co-learning
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -154,11 +170,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天学习了一个开源项目：Moss，并撰写了一篇Moss介绍
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -178,6 +196,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -212,11 +231,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日复习week1所学
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -255,6 +276,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今日目标：
 
 参加会议：**AI Agent 高危案例解析与安全防线构建**
@@ -266,6 +288,7 @@ co-learning
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -322,6 +345,7 @@ co-learning
 
 
 
+
 今日目标：
 
 1.  参加**普通开发者如何进入以太坊协议层**线上meeting
@@ -331,6 +355,7 @@ co-learning
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

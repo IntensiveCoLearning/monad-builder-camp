@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 先打卡
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 先打卡一下
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 ## 一、团队节奏（项目可控推进体系）
@@ -224,11 +232,13 @@ Web3 新手、开发者同学、社群 builder、对公链测试感兴趣的用�
 
 
 
+
 先打卡，后补一下
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -461,6 +471,7 @@ Web3 新手、开发者同学、社群 builder、对公链测试感兴趣的用�
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
@@ -472,11 +483,13 @@ Web3 新手、开发者同学、社群 builder、对公链测试感兴趣的用�
 
 
 
+
 先打卡后补内容
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -756,6 +769,7 @@ Git + GitHub：项目版本归档、开源 Demo 交付（你 Mini Demo 提交标
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -1061,6 +1075,7 @@ Git + GitHub：项目版本归档、开源 Demo 交付（你 Mini Demo 提交标
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -1384,6 +1399,7 @@ Web3 行业 “智库”，通过链上数据、行业资讯、项目拆解、�
 
 
 
+
 Web3三大核心角色：研究、运营、开发 + 方向选择指南
 
 一、Web3 研究员（Research）
@@ -1582,6 +1598,7 @@ Web3三大核心角色：研究、运营、开发 + 方向选择指南
 
 
 
+
 一、什么是 Monad
 
 核心定义
@@ -1767,6 +1784,7 @@ TPS = Transactions Per Second 每秒交易/请求处理数（区块链/支付/�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -2056,6 +2074,7 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
 
 
 
+
 [https://kitten-namer-delight--yamentin1313.replit.app/](https://kitten-namer-delight--yamentin1313.replit.app/)
 
 生成了一个可以根据猫的种类、喜欢的风格、相遇时间以及猫的颜色生成小猫名字的网站。
@@ -2065,6 +2084,7 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -2105,6 +2125,7 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

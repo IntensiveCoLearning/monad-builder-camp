@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+学习运营知识中
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 学习web3运营知识中
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 ```
 // SPDX-License-Identifier: MIT
@@ -58,6 +65,7 @@ contract DailyCheckIn {
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 ```
@@ -99,6 +107,7 @@ contract SimpleCounter {
 
 
 
+
 我选择 Ops（运营） 作为自己的主方向，因为我认为运营是连接产品、社区和用户的重要角色。通过 Ops 工作，我不仅可以深入了解 Web3 项目的运作方式，还能锻炼沟通、协作和组织能力。同时，运营方向对技术背景要求相对较低，适合我在实践中不断学习和成长。
 
 Ops 主要服务于项目的日常运营和社区建设，帮助解决用户增长、社区活跃度不足、新用户上手困难以及用户反馈收集等问题，促进项目的持续发展。
@@ -112,6 +121,7 @@ Ops 主要服务于项目的日常运营和社区建设，帮助解决用户增�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -215,6 +225,7 @@ Day 7：总结提交
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -325,6 +336,7 @@ Day 7：总结提交
 
 
 
+
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -371,6 +383,7 @@ contract DonationBox {
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -470,6 +483,7 @@ contract OpsCampaignDemo {
 
 
 
+
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -524,6 +538,7 @@ contract SimpleVote {
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -619,6 +634,7 @@ contract NFTBadge {
 
 
 
+
 合约demo
 
 ```
@@ -666,6 +682,7 @@ contract Guestbook {
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -774,6 +791,7 @@ contract OpsCampaignDemo {
 
 
 
+
 一、面试准备通用框架
 
 1.  **了解目标项目**
@@ -803,6 +821,7 @@ contract OpsCampaignDemo {
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -853,6 +872,7 @@ GHOST协议
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -1069,6 +1089,7 @@ MiCA（加密资产市场法规）：
 
 
 
+
 二、RPC节点服务详解
 
 在Web3开发中，RPC（Remote Procedure Call，远程过程调用）是连接前端应用与区块链网络的关键桥梁。理解RPC的工作原理、选择合适的RPC服务商，以及正确配置和使用RPC节点，是每个Web3开发者必须掌握的基础知识。
@@ -1240,6 +1261,7 @@ Twitter Space执行流程参考：主持人开场，嘉宾问答（每题15分�
 
 
 
+
 肆、智能合约开发
 
 一、Dapp架构和开发流程
@@ -1325,6 +1347,7 @@ Dapp的开发流程可以分为以下几个阶段：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -1461,6 +1484,7 @@ RWA（Real-World Assets）是把国债、基金份额、应收账款等现实世
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

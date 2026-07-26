@@ -15,8 +15,58 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+# W3D7 Web3-GrowthOS 项目升级讨论
+
+## 今日学习内容
+
+今天主要和队友讨论了 Web3-GrowthOS Demo v0.1 完成后的升级方向，并对后续开发任务进行了初步规划。
+
+目前的 Demo 已经能够完成 CSV 数据上传、数据校验、数据清洗、基础指标分析和简单前端展示，但数据处理仍然依赖固定字段，因此还不能适配不同项目的数据格式。
+
+经过讨论，我们认为下一阶段应该优先开发 Demo v0.2，重点升级数据接入和处理逻辑。
+
+## 项目升级想法
+
+后续计划增加“标准数据模型、字段映射和动态分析能力”。
+
+用户上传 CSV 后，系统可以将不同名称的字段映射为统一字段，例如：
+
+-   `user_address` 映射为 `wallet_address`
+    
+-   `tx_hash` 映射为 `transaction_hash`
+    
+-   `value` 映射为 `amount`
+    
+-   `block_time` 映射为 `timestamp`
+    
+
+系统再根据实际存在的字段，动态决定可以进行哪些分析。
+
+例如，只有钱包地址和时间字段时，可以分析用户数量、交易频次和活跃情况；存在金额字段时，可以进一步分析交易金额和高价值用户。
+
+## 后续计划
+
+目前初步确定的项目升级顺序为：
+
+1.  升级数据接入和字段映射能力；
+    
+2.  增加用户画像和数据可视化；
+    
+3.  增加 AI 运营策略建议；
+    
+4.  增加 Monad 报告上链验证；
+    
+5.  最后重新设计前端 UI。
+    
+
+今天的讨论让项目后续方向更加清晰。下一步将从 Demo v0.2 的标准数据模型和字段映射功能开始开发。
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 # W3D6
 
 今天主要和队友讨论了 Web3-GrowthOS Demo v0.1 完成后的下一步升级方向。当前版本已经能够完成数据上传、数据校验、数据清洗、基础指标计算和用户分层，并通过简单前端页面展示分析结果。接下来的重点，是在现有功能基础上继续完善产品体验和分析能力。
@@ -135,6 +185,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 # W3D5
 
@@ -493,6 +544,7 @@ Mock 的作用不是代替真实开发，而是先降低不确定性。
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
 
+
 # W3D4｜Monad Growth Intelligence Demo v0.1
 
 今天完成了 **Monad Growth Intelligence Demo v0.1** 的核心开发，并成功跑通了从链上交易数据到前端可视化展示的完整流程。
@@ -604,6 +656,7 @@ Monad Verification        ⏳
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -779,6 +832,7 @@ AI 可以帮助快速整理信息、生成方案，但最终产品判断仍需�
 
 
 
+
 # W3D2 学习记录：从项目想法缩小到可执行 Demo
 
 今天主要围绕项目的目标用户、核心问题和 Demo 范围进行了梳理。
@@ -828,6 +882,7 @@ Demo 的核心流程暂定为：
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -1158,6 +1213,7 @@ GitHub：
 
 
 
+
 W2D7  
   
 今天主要复习了 Week 2 的学习内容，重新梳理了智能合约的部署、函数测试、链上交易查询以及前端与合约交互的基本流程。通过复习，我对之前完成的 Check-in DApp 有了更完整的理解，也进一步意识到，一个项目除了能够正常运行，还需要考虑真实的使用场景、目标用户和项目价值。
@@ -1171,6 +1227,7 @@ W2D7
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -1356,6 +1413,7 @@ Week 3 我计划承担 Dev Builder 角色。
 
 
 
+
 # W2D5｜Prototype Evidence 学习记录
 
 ## Builder 方向
@@ -1456,6 +1514,7 @@ Monad Check-in DApp 是一个部署在 Monad Testnet 上的链上签到项目。
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -1853,6 +1912,7 @@ Pull Request 是贡献者提交代码或文档修改的地方。
 
 
 
+
 # W2D3｜Dev Builder：从文档到代码骨架
 
 ## 今日学习内容
@@ -1964,6 +2024,7 @@ AI 主要帮助我：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -2746,6 +2807,7 @@ You have already checked in today
 
 
 
+
 # Week 2 Day 1｜职业方向选择与学习记录建立
 
 ## 今日学习内容
@@ -2832,6 +2894,7 @@ You have already checked in today
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -3354,6 +3417,7 @@ Spring Boot + MySQL + 排行榜
 
 
 
+
 # Day 6 ：部署 Onchain Todo 到 Monad Testnet
 
 ## 一、今天完成了什么
@@ -3771,6 +3835,7 @@ Solidity 源码
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -4273,6 +4338,7 @@ TPS 是 Transactions Per Second，也就是每秒可以处理的交易数量。
 
 
 
+
 # Day 4：AI + Solidity + 合约部署
 
 今天学习了智能合约开发的基础流程，并使用 Remix 尝试编译、部署和交互一个最小 Solidity 合约。
@@ -4316,6 +4382,7 @@ SimpleTodo / OnchainTodo
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -4473,6 +4540,7 @@ Transaction Hash：
 
 
 
+
 # Day 2：工具准备与 Builder 身份
 
 ## 1\. 今日学习目标
@@ -4600,6 +4668,7 @@ ChatGPT + Remix + VS Code：用于辅助学习 Solidity、理解代码和完成�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,8 +15,26 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+今日完成：  
+  
+1\. 对本周任务进行了集中收尾和梳理，汇总了团队组建、问题定义、Mini Demo 范围、技术论证、团队计划、重要决定与 AI 使用记录，并检查了各文档中的成员、方向和范围是否一致。  
+  
+2\. 明确 Week 3 继续采用「自然语言 swap 确认助手」作为最小可展示路径：通过 Moss Kuru Capability 和 simulate 生成交易模拟结果，再用「付出 / 收到 / 风险」帮助用户理解交易，最终签名权仍保留给用户。  
+  
+3\. 完成创意方向复盘。当前 Mini Demo 方向适合稳定交付；Riso 提出的「不是我干的 / NOT MY FAULT」在 AI × Web3、Moss、Monad 原生性和 Demo 冲击力上更有潜力，保留为 Week 4 Hackathon 的重点候选。  
+  
+4\. 补齐本周后半段的每日记录，并将已完成的文档成果与尚未形成证据的 Demo、用户测试、交易哈希等事项明确区分，避免把计划误写成完成。  
+  
+今日收获：  
+  
+本周最重要的不是堆叠更多功能，而是形成清晰的决策链：先确定真实用户问题，再证明为什么需要 Monad 和 Moss，最后锁定一周内能够交付的范围。今天通过集中梳理，把散落的任务和选题沉淀为可追溯的交付物，也明确了下一阶段需要通过真实 Demo、用户反馈和链上证据补齐的部分。
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 ## 今日完成
 
 ### 选题与创意评审
@@ -69,6 +87,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
+
 今日主题: 团队创意投票锁定 & Mini Demo 技术骨架推进  
 学习投入时长: 约 2–3 小时  
   
@@ -109,6 +128,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 主题：项目创意收集与 MVP 方向梳理  
   
 今日完成：  
@@ -134,6 +154,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -185,6 +206,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 Week 2 Day 5｜Moss Neverland 协议适配器 PR 提交 + Proof of Work 记录  
   
 今日完成：  
@@ -224,6 +246,7 @@ GitHub：[https://github.com/NeoWeb3Nova](https://github.com/NeoWeb3Nova)
 
 
 
+
 今日完成：  
   
 \- 整理《Web3 如何从 0 到 1 开始运营》分享会，沉淀完整转录与结构化笔记，梳理了从曝光、报名、社群承接、组队 Build、项目提交到生态留存的完整运营漏斗。  
@@ -257,6 +280,7 @@ GitHub：[https://github.com/NeoWeb3Nova](https://github.com/NeoWeb3Nova)
 
 
 
+
 Week 2｜Moss Core 首个开源 PR 打卡  
   
 今日完成：  
@@ -273,6 +297,7 @@ Week 2｜Moss Core 首个开源 PR 打卡
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -342,6 +367,7 @@ Moss 的价值不是让 AI Agent 更快发起交易，而是在用户签名前�
 
 
 
+
 今日完成：  
 \- 确定 Dev / Tech 主方向。  
 \- 提交三份产出：  
@@ -364,6 +390,7 @@ Moss 的价值不是让 AI Agent 更快发起交易，而是在用户签名前�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -398,6 +425,7 @@ Moss 的价值不是让 AI Agent 更快发起交易，而是在用户签名前�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -464,6 +492,7 @@ Testnet 虽然没有真实资产价值，但流程非常接近真实链上开发
 
 
 
+
 今日完成：  
 1\. 根据 Week 1 Day 3 任务，整理 Monad Testnet 配置清单：RPC URL、Chain ID、Explorer、Faucet。  
 2\. 在本地项目建立/更新了网络配置提交物 submissions/week-01/[network-config.md](http://network-config.md) 和实验记录 experiments/monad-wallet-setup/[README.md](http://README.md)。  
@@ -487,6 +516,7 @@ Testnet 虽然没有真实资产价值，但流程非常接近真实链上开发
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -532,6 +562,7 @@ Day: Day 2
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -15,19 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+复习Java基本逻辑语言 同步学习web
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 自主学习vibe coding
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 ![e9e2c3fe9d0287846737b1802fbf5aee.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/W11Main00/images/2026-07-24-1784905498865-e9e2c3fe9d0287846737b1802fbf5aee.jpg)
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 ### 1\. Research Builder 研究作品集
@@ -115,6 +123,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ## 一、第一大类：钱包与用户安全（6 个场景，面向普通用户风险）
 
 核心准则：助记词 / 私钥是钱包最高控制权，任何场景绝不外泄；网页断开≠撤销链上授权，无 Gas 签名不代表安全。
@@ -192,6 +201,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 1.  **核心产品：Life Capsule（人生胶囊）** 团队当前主推的落地产品，属于 “第二大脑” 赛道。不追求直接做巨型大模型，而是先搭建**轻量化小模型**，把它做成打通不同 AI 大模型的中间桥梁：
     
 
@@ -262,6 +272,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 多学习 多交流 参加峰会
 
 同学分享得连接[https://x.com/swiftevo1/status/2079170829045391602?s=20](https://x.com/swiftevo1/status/2079170829045391602?s=20)
@@ -273,6 +284,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -408,6 +420,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 处理文档读取相关问题时，要先分清用户真实需求，再决定是否告知内容获取、解析失败提示。若用户只是简单查阅资料、提取文字，系统无法读取文档链接、文件内容时，需直白说明获取或解析失败，同时结合报错提示、文档名称、链接里仅存的有效信息，给出有限可用内容；若用户需求侧重格式调整、排版修改，无原文支撑难以操作，除报错提醒外，仅依托 URL、文件名里的关键词简单回应。
 
 回复全程语言简洁通俗，不堆砌专业术语，只挖掘现有有限信息，不编造文档内容。如果链接失效、文件损坏导致解析失败，优先告知故障原因，再利用文档标题、网址关键词提供少量相关参考，避免让用户完全无信息参考。区分不同用户诉求灵活调整话术，不统一机械推送报错，兼顾告知故障与提供少量有效信息，让用户清晰知晓问题所在，同时拿到仅能提取到的相关内容。
@@ -415,6 +428,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -492,6 +506,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 1.  三大角色分工
     
     -   Research：挖掘行业 / 协议问题、分析生态、识别风险与机会、输出研究内容
@@ -539,6 +554,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 运营得工作内容
 
 ![029685c8dda775bdbbee6042da5657c8.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/W11Main00/images/2026-07-15-1784122977833-029685c8dda775bdbbee6042da5657c8.png)
@@ -546,6 +562,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -641,6 +658,7 @@ Web3 Researcher、AI 大模型、人机协同、研究员不可替代性、行�
 
 
 
+
 围绕 AI 赋能 Web3 开发搭建完整知识框架，清晰区分 0 到 1 验证产品与 1 到 99 规模化系统两个阶段，拆解 AI 开发方法论与 Web3 全栈技术体系，让我跳出工具背诵思维，建立系统化工程认知，收获颇丰。
 
 在 AI 开发板块，核心逻辑是借助 AI 降低开发门槛、缩短验证周期，核心载体是 AI Agent 与标准化开发流程。0 到 1 阶段的核心目标是产出可验证 Demo，不用追求完整功能，只需打通核心业务流程、明确解决的用户痛点，允许模拟数据辅助验证；而 1 到 99 则是工程化落地，补齐安全、性能、运营体系，实现产品可持续运转。AI Agent 是提升开发效率的关键，它依靠目标、感知、规划、行动、评估闭环自主完成开发任务，依靠更强的大模型、更长上下文、丰富工具链与完整执行循环实现能力飞跃。
@@ -656,6 +674,7 @@ Web3 技术栈部分摒弃零散工具罗列，先梳理区块链底层原理，
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -779,6 +798,7 @@ Web3 技术栈部分摒弃零散工具罗列，先梳理区块链底层原理，
 
 
 
+
 今天学习了小海老师得一篇文章：[https://x.com/xiaohai67890/status/2075399417566539947?s=46](https://x.com/xiaohai67890/status/2075399417566539947?s=46)
 
 层层思考以下5点
@@ -831,6 +851,7 @@ Web3 技术栈部分摒弃零散工具罗列，先梳理区块链底层原理，
 
 
 
+
 网站：深潮[https://ww删w.techflowpost.com/](https://ww删w.techflowpost.com/)
 
 星球日报[https://www删.odaily.news/](https://www删.odaily.news/)
@@ -842,6 +863,7 @@ Milk Road：[https://milkr删oad.com/news/](https://milkr删oad.com/news/)
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -972,6 +994,7 @@ AI 自己可以自动执行指令之后，出现 4 大类攻击方式；通过�
 
 
 
+
 ![1e4d51775fb91947d5657d220bb76d29.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/W11Main00/images/2026-07-08-1783518186515-1e4d51775fb91947d5657d220bb76d29.jpg)
 
 ## 一、核心作用
@@ -997,6 +1020,7 @@ AI 自己可以自动执行指令之后，出现 4 大类攻击方式；通过�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

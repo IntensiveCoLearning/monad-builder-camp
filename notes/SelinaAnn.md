@@ -15,8 +15,27 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+# **📅 Team Build Plan (Week 3 剩余时间)**
+
+| 任务 | 负责人 | 截止时间 | 依赖关系 |
+| --- | --- | --- | --- |
+| R: 输出竞品分析 1 页纸 | Research | DAY 3 晚 | 无 |
+| O: 写 3 版不同的项目宣传推文 | Ops | DAY 3 晚 | 依赖 Problem Card 定稿 |
+| D: 搭建前端空白页面与连钱包逻辑 | Dev | DAY 3 晚 | 无 |
+| D: 编写并测试核心 Solidity 合约 | Dev | DAY 4 中午 | 无 |
+| D: 前后端联调，部署到测试网 | Dev | DAY 4 晚 | 依赖上面两步完成 |
+| O: 寻找 3 个测试者，准备测试反馈表 | Ops | DAY 5 上午 | 依赖 Demo 跑通 |
+| 全队：内部走查 Demo 并录制 Loom 视频 | All | DAY 5 下午 | 依赖联调完成 |
+| R: 撰写最终 Pitch 文档/README | Research | DAY 6 | 依赖所有人素材 |
+
+_注：Dev 的任务通常阻塞其他人的后续动作，所以 Dev 必须按时交付“可点击的半成品”给 Ops 做 UI 测试或截图。_
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-24-1784902640044-image.png)
 
 ### **💡 核心认知：为什么“互补”比“相似”更重要？**
@@ -35,6 +54,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 **Dev Portfolio 必须包含的 6 个模块：**
@@ -56,11 +76,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-22-1784727059124-image.png)
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -130,6 +152,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-20-1784556028506-image.png)
 
 **Workflow 2：开源项目阅读法 (如何看懂别人的代码库)**
@@ -155,11 +178,13 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-19-1784466140748-image.png)
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -212,6 +237,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 
 
+
 **1\. 什么是 AI-assisted Web3 Prototype？** 你不再是苦力，而是**架构师 + 审计员**。你用 Cursor/ChatGPT 写脚手架、生成基础合约、解释报错；你负责把模块拼起来，并确保不把私钥喂给 AI。
 
 **2\. 终极心法：三栏 Scope 控制表** 在写任何代码前，必须把功能填入下面三个盒子里。**这是本周不熬夜、能交差的唯一保障。**
@@ -233,6 +259,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -269,6 +296,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -322,11 +350,13 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-14-1784037939936-image.png)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -417,11 +447,13 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-12-1783819303776-image.png)
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -494,6 +526,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 
 
+
 ### **从“交易”到“合约”的思维跃迁**
 
 在 DAY 3，你通过钱包发起了一笔**转账交易**。今天，你将部署一个**智能合约**，它本质上是一段**自动执行、不可篡改的代码**，被永久存储在区块链上。理解以下核心概念的关联，是今天学习的关键。
@@ -528,11 +561,13 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-09-1783601532564-image.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -591,11 +626,13 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-07-1783431460944-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

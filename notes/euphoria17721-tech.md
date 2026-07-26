@@ -15,8 +15,222 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+1.  ## 活动简介
+    
+
+本周我围绕 **AI Agent × Web3 新人入门** 设计了一场小型线上 Space / AMA，活动主题是：
+
+**从钱包到 Agent：新人如何理解 AI Agent × Web3？**
+
+活动以 Moss 和 Monad 为核心案例，目标是帮助 Web3 / AI 新人理解 AI Agent 在链上世界里可以做什么、不应该做什么。活动重点不是讲复杂代码，而是解释钱包、签名、未签名交易、模拟交易、链上安全边界和 Builder 入门路径。
+
+我希望通过这场活动解决一个核心问题：很多新人听过 AI Agent 和 Web3，但不知道二者结合后到底意味着什么，也不清楚 AI 在链上操作里应该扮演什么角色。活动希望用 Moss 的 `discover → load → action → simulate` 工作流，帮助新人理解：AI Agent 可以帮助用户准备和理解链上操作，但不应该直接替用户签名或发送交易。
+
+## 本周运营成果
+
+本周我围绕这场活动完成了从主题定位到上线准备的一整套基础运营物料。
+
+### 2.1 活动主题与定位
+
+我确定了活动主题：
+
+**从钱包到 Agent：新人如何理解 AI Agent × Web3？**
+
+活动定位是新人友好的 AI Agent × Web3 入门 Space，适合 30–100 人参与。目标听众包括 Web3 / AI 新人、Monad 学习者、想参与开源但不知道从哪里开始的 Builder。
+
+### 2.2 活动内容策划
+
+我完成了活动当天的内容流程，包括：
+
+-   0–5 分钟：开场与活动背景
+    
+-   5–15 分钟：AI Agent × Web3 概念铺垫
+    
+-   15–30 分钟：Moss 案例分享
+    
+-   30–45 分钟：应用场景讨论
+    
+-   45–55 分钟：互动环节
+    
+-   55–60 分钟：收尾 CTA
+    
+
+活动内容围绕一个主线展开：AI Agent 在 Web3 中不是越自动越好，而是要清楚、安全、可验证。
+
+### 2.3 核心讨论问题设计
+
+我设计了 5 个讨论问题：
+
+1.  AI Agent 在 Web3 中应该做到哪一步？
+    
+2.  为什么 Moss 不负责签名和发送交易？
+    
+3.  新人参与 Web3 开源项目，是否一定要会写代码？
+    
+4.  哪些 Web3 场景最需要 AI Agent？
+    
+5.  如何判断一个链上操作是否适合交给 AI 辅助？
+    
+
+这些问题的目标是引导新人从“AI 能不能替我做”转向“AI 应该如何安全地协助我”。
+
+### 2.4 互动环节设计
+
+我设计了一个互动环节：
+
+**这一步该不该交给 AI？**
+
+听众对不同 Web3 场景进行判断：
+
+-   A：可以交给 AI 自动完成
+    
+-   B：AI 可以辅助，但用户必须确认
+    
+-   C：不建议交给 AI
+    
+
+这个互动降低了参与门槛，也帮助新人通过具体场景理解 AI Agent 的安全边界。
+
+### 2.5 活动执行预案
+
+我完成了活动执行预案，包括：
+
+-   T-7 / T-5 / T-3 / T-1 / T Day / T+1 时间线
+    
+-   宣传节奏
+    
+-   人员分工
+    
+-   活动当天执行流程
+    
+-   风险预案
+    
+-   预期目标
+    
+
+其中风险预案包括听众太少、技术概念太难、互动冷场、嘉宾掉线、讨论偏题和安全误导等情况。
+
+### 2.6 活动预热物料
+
+我完成了一套可以直接上线使用的基础运营物料，包括：
+
+-   一份完整宣传文案
+    
+-   一份简短活动介绍 / 报名页简介
+    
+-   一条活动开始前提醒文案
+    
+-   一个清晰的参与 CTA
+    
+
+活动 CTA 引导用户完成三个小行动：
+
+1.  阅读 Moss README。
+    
+2.  写 100 字学习笔记。
+    
+3.  选择一个 Builder 小任务，比如 Star、阅读 Docs、整理 FAQ、写学习笔记或提出文档建议。
+    
+
+## 核心运营思考
+
+本周最重要的运营判断是：
+
+**这场活动不应该被设计成“技术讲座”，而应该被设计成“新人理解 AI Agent × Web3 安全边界的入门活动”。**
+
+原因是目标用户不是已经很熟悉 AI Agent 和 Web3 的开发者，而是刚开始接触这些概念的新 Builder。如果一开始就讲复杂合约、Adapter 或底层架构，用户很容易失去参与感。
+
+所以我选择从更基础但更关键的问题切入：
+
+-   AI Agent 到底可以帮用户做到哪一步？
+    
+-   为什么链上操作不能完全交给 AI？
+    
+-   签名、模拟交易和未签名交易有什么区别？
+    
+-   不会写代码的新人能不能参与开源？
+    
+
+这个判断影响了整套活动设计。活动没有把重点放在“宣传 Moss 很厉害”，而是放在“用 Moss 解释一个新人真正需要理解的问题”。这样更容易让用户听懂，也更容易让活动产生后续行动，比如阅读 README、写学习笔记、整理 FAQ 或参与 GitHub 开源协作。
+
+我对 Ops 的理解也在这个过程中更清楚了：运营不是把内容发出去，而是要设计用户理解和行动的路径。一个好的活动不只是让用户听完，而是让用户知道下一步可以做什么。
+
+## AI 协作记录
+
+AI 在本周主要协助我完成了以下工作：
+
+### 4.1 帮助梳理活动主题
+
+我先提出想围绕 Web3、AI 或 Builder 学习主题设计活动，AI 帮我把方向收敛成：
+
+**从钱包到 Agent：新人如何理解 AI Agent × Web3？**
+
+这个主题和我之前学习 Moss、Monad、AI Agent 安全边界的内容保持一致。
+
+### 4.2 帮助生成活动内容结构
+
+AI 帮我拆出了活动标题、简介、议程、核心讨论问题、互动环节和 CTA，让活动不只是一个想法，而是变成一份可以执行的内容方案。
+
+### 4.3 帮助设计执行预案
+
+AI 帮我整理了时间排期、宣传计划、人员分工、活动当天流程、风险预案和预期目标，让活动从“内容策划”进一步变成“上线准备”。
+
+### 4.4 帮助生成运营物料
+
+AI 帮我起草了完整宣传文案、报名页简介、活动开始前提醒文案和参与 CTA，方便后续直接复制到 Notion、飞书或社群中使用。
+
+### 4.5 我自己修改和判断的部分
+
+AI 提供了结构和初稿，但以下部分主要由我自己判断：
+
+-   选择 Ops / Product Ops 作为主方向。
+    
+-   判断活动目标用户是新人，而不是高级开发者。
+    
+-   决定活动重点放在“安全边界”和“Builder 入门路径”。
+    
+-   保留 Moss 和 Monad 作为核心案例。
+    
+-   判断活动规模控制在 30–100 人，而不是大型公开活动。
+    
+-   决定 CTA 不设置太高门槛，而是引导用户从 README、学习笔记、FAQ、Issue 等轻量行动开始。
+    
+
+## Week 3 Role Statement
+
+进入 Week 3 后，我希望继续承担 **Ops / Product Ops Builder** 角色。
+
+我可以负责的工作包括：
+
+-   设计活动主题和用户参与路径。
+    
+-   输出活动策划案、执行预案和宣传物料。
+    
+-   将复杂技术概念转化成新人能理解的内容。
+    
+-   设计互动环节和活动 CTA。
+    
+-   整理活动复盘、FAQ 和学习笔记。
+    
+-   协助 Dev / Research 同学把项目价值表达给更多新人 Builder。
+    
+
+我希望在团队中的定位是：
+
+**负责把技术项目转化成新人愿意理解、愿意参与、愿意继续行动的运营内容和活动机制。**
+
+如果团队继续围绕 Moss、Monad 或 AI Agent × Web3 做 Builder 活动，我可以负责活动策划、内容包装、传播文案、用户反馈收集和开源贡献路径设计。
+
+## 一句话总结
+
+本周我完成了一套围绕 **AI Agent × Web3 新人入门** 的活动运营方案，从主题定位、内容流程、执行预案到预热物料都有产出。我的核心运营思考是：好的 Ops 不是单纯宣传项目，而是帮助目标用户理解项目为什么重要，并设计清楚的下一步行动。
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 # Moss 是什么？为什么 AI Agent 需要一个 Web3 安全协作框架
 
 最近在学习 Monad 和 AI Agent 相关项目时，我阅读了一个叫 **Moss** 的开源项目。它的方向很有意思：不是单纯做一个链上 SDK，也不是直接让 AI Agent 代替用户操作钱包，而是尝试为 **AI Agent × Web3** 提供一套更安全、更清晰的链上交互框架。
@@ -168,6 +382,7 @@ Moss 是一个面向 Monad 生态的 AI Agent × Web3 开源框架。它试图�
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 # Open Source Contribution：Moss Documentation Suggestion
 
 ## Contribution Type
@@ -244,6 +459,7 @@ I would be happy to draft a first version if maintainers think this direction is
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 # Open Source Contribution Plan：Moss
@@ -373,6 +589,7 @@ Moss 的 README 已经说明它通过 `discover → load → action → simulate
 
 
 
+
 今天学习了一下钱包的设计，收获颇深
 
 ![7f79603506567bdf1cc83128c5a2fab7.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-22-1784724979177-7f79603506567bdf1cc83128c5a2fab7.png)
@@ -380,6 +597,7 @@ Moss 的 README 已经说明它通过 `discover → load → action → simulate
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -541,6 +759,7 @@ Pull Requests 里可以看到很多协议接入和核心能力改进，例如：
 
 
 
+
 进入 Week 3 团队后，我希望主要承担 **Ops / Product Ops** 角色。我目前的方向是基于 Monad 的高频交互场景，继续推进 **Monad Rank Rush**：一个链上社交小游戏 + 实时排行榜 + 任务徽章 + Meme 传播的 Campaign 原型。我能负责的部分不是复杂合约开发，而是把产品机制设计得更适合用户参与和社区传播。
 
 具体来说，我可以承担三类工作：第一，设计用户参与路径，比如用户如何进入活动、完成挑战、刷新排行榜、领取徽章、分享战绩图；第二，设计运营机制，包括 7 天挑战活动、每日任务、排行榜规则、奖励节奏、Meme 文案和 X / Discord 发布内容；第三，协助 Dev 同学把 Ops 方案拆成清楚的功能需求，比如哪些数据需要上链、哪些数据留在链下、战绩卡需要哪些字段、徽章触发条件是什么。
@@ -553,6 +772,7 @@ Pull Requests 里可以看到很多协议接入和核心能力改进，例如：
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -1011,6 +1231,7 @@ Pull Requests 里可以看到很多协议接入和核心能力改进，例如：
 
 
 
+
 # Web3 学习笔记续篇
 
 今天继续整理 Week 2 的学习内容，其实这几天我对自己方向的判断比一开始清楚了很多。刚开始做 Monad 相关任务的时候，我更多是在想“我要交什么”“我要做出什么东西”，但现在慢慢发现，这个过程其实也在帮我判断自己更适合在 Web3 里做哪一类事情。
@@ -1034,6 +1255,7 @@ Week 1 的时候，我做了 Monad Rank Rush 这个方向，一个基于 Monad �
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -1070,6 +1292,7 @@ AI 在这个过程中帮我做了很多整理工作，比如帮我把零散想�
 
 
 
+
 认真看完这份 Web3 运营全景流程图，很多之前模糊的思路一下子理顺了，也纠正了我长久以来对 Web3 运营比较片面的理解。
 
 在此之前，我一直简单认为 Web3 运营的工作重心就是维护社群、组织线上活动、日常和社区成员沟通。但这份流程图完整展示了从目标设定一直到生态持续增长的九大闭环流程：先明确项目目标，开展 BD 拓展合作伙伴，配合市场宣传推广，搭建开发者激励计划，招募 Builder，深耕社区运营，接收项目申报，组织评审反馈，最后落地孵化实现生态增长，并且全程依靠数据分析持续复盘迭代。
@@ -1091,6 +1314,7 @@ AI 在这个过程中帮我做了很多整理工作，比如帮我把零散想�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -1172,6 +1396,7 @@ Ops：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -1374,6 +1599,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 
 
+
 完成了一次部署合约交互
 
 ![559ca49f2d530da4cf31eba2c5195760.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-13-1783925534095-559ca49f2d530da4cf31eba2c5195760.png)
@@ -1394,6 +1620,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 
 
+
 用 AI 生成一个最小 Solidity 合约，学习中。。。。还是不太懂
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-12-1783851047639-image.png)
@@ -1401,6 +1628,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -1437,6 +1665,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 
 
+
 我使用 Remix 编写并编译了一个最小化的 `MessageBoard` 留言板智能合约，通过课程专用钱包连接 Monad Testnet 后完成了合约部署，并记录了部署后的合约地址和部署交易 hash。部署完成后，我调用了 `message()` 等 read function 读取链上留言内容，又调用 `setMessage()` write function 修改留言，并再次读取确认链上状态已经更新。通过这次操作，我完整体验了从 Solidity 合约源码、编译、部署、链上交互到区块浏览器验证的全过程。
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-10-1783649245388-image.png)
@@ -1444,6 +1673,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -1502,6 +1732,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 
 
+
 学会get测试币，会看transaction 的 detail了
 
 ![a0c4f59d6e4b1c087ca59258fdf65ba6.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-08-1783517225187-a0c4f59d6e4b1c087ca59258fdf65ba6.png)![a0c4f59d6e4b1c087ca59258fdf65ba6.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-08-1783517266853-a0c4f59d6e4b1c087ca59258fdf65ba6.png)
@@ -1509,6 +1740,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -1536,6 +1768,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

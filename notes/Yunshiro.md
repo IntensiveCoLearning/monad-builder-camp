@@ -23,6 +23,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
 
+
 查看我们团队的整体计划
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
@@ -30,11 +31,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
 
+
 参与分享 介绍 我们团队作品 不要鸽我
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 
@@ -47,6 +50,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 onekey产品经理分享
 
 学习了一下钱包相关 如何设计一款钱包
@@ -54,6 +58,7 @@ onekey产品经理分享
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -72,11 +77,13 @@ onekey产品经理分享
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-20-1784548428415-image.png)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -122,11 +129,13 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 
 
+
 今天加入lxdao，参加了onboarding流程
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -143,6 +152,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -171,6 +181,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 
 
+
 链上2048开发
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-15-1784120813826-image.png)
@@ -178,6 +189,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -212,6 +224,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 
 
+
 [https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/week2/chain2048-%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3.md](https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/week2/chain2048-%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3.md)
 
 链上2048游戏方案、思路
@@ -219,6 +232,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -259,6 +273,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 
 
+
 做了一个链上五子棋，游玩地址：[https://gomoku-onchain.vercel.app/](https://gomoku-onchain.vercel.app/)
 
 github repo：[https://github.com/Yunshiro/gomoku-contract](https://github.com/Yunshiro/gomoku-contract)
@@ -266,6 +281,7 @@ github repo：[https://github.com/Yunshiro/gomoku-contract](https://github.com/Y
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -304,11 +320,13 @@ github repo：[https://github.com/Yunshiro/gomoku-contract](https://github.com/Y
 
 
 
+
 今天做了一个需求清单，链上五子棋：[https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/链上五子棋需求清单.md](https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/链上五子棋需求清单.md)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -351,6 +369,7 @@ github repo：[https://github.com/Yunshiro/gomoku-contract](https://github.com/Y
 
 
 
+
 今天产出一个简单的DAPP，Monad测试网链上留言板，部署在：[https://message-board-ui.vercel.app/](https://message-board-ui.vercel.app/)
 
 repo地址：[Yunshiro/message-board-ui](https://github.com/Yunshiro/message-board-ui)
@@ -364,6 +383,7 @@ repo地址：[Yunshiro/message-board-ui](https://github.com/Yunshiro/message-boa
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

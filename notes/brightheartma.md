@@ -15,8 +15,106 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+## 今日主题
+
+围绕 Week 4 项目 **Parallax** 完成差异化定位、核心机制收敛、协议范围确认、仓库结构设计与 PRD 审查。
+
+## 今天完成了什么
+
+### 1\. 从“交易风控助手”转向差异化产品
+
+在发现其他团队也在做交易风控助手后，我调研了 YO Risk Graph、Credora、Blockaid、Hypernative、LlamaRisk，以及 EEA 和 Galaxy 的 DeFi 风险框架。
+
+最终将 Parallax 定位为：
+
+> 把交易依赖、用户风险政策与 Moss 模拟结果结合起来，在签名前生成可验证的 Risk Receipt。
+
+它不只是给协议打分，而是回答：**这笔交易虽然能够执行，但是否符合用户自己的风险边界？**
+
+### 2\. 锁定三个核心创新点
+
+-   **Risk Policy：**把“价格影响不超过 1%”“禁止无限授权”等偏好转成机器可执行规则。
+    
+-   **Transaction Risk Diff：**解释交易前后新增了哪些资产、授权、协议与风险暴露。
+    
+-   **Risk Receipt：**把区块、数据来源、依赖、模拟结果和规则结论整理成一份人和 Agent 都能读取的凭证。
+    
+
+同时加入 Dependency Resolver 与 Module Registry：系统先识别交易依赖，再动态选择适用的风险模块，避免给所有交易机械展示 Oracle、Liquidity、Approval 等无关检查。
+
+### 3\. 确认 MVP 与协议范围
+
+MVP 使用 Moss 已支持的：
+
+-   Kuru；
+    
+-   PancakeSwap V2 / V3。
+    
+
+两条路径都要求使用真实 Quote、Action 与 Simulation，不使用协议 Mock。Oracle 风险不再强行进入首版；只有交易真实依赖预言机时才启用对应模块。
+
+### 4\. 确认产品名与仓库基线
+
+项目与产品正式统一命名为 **Parallax**。
+
+仓库采用精简的 TypeScript monorepo：
+
+-   `apps/web`：前端；
+    
+-   `apps/api`：后端与流程编排；
+    
+-   `packages/engine`：风险规则、Policy、Diff 和 Receipt；
+    
+-   `docs`：Product、Research 与 Ops 文档。
+    
+
+首版保留 README、package.json、pnpm workspace、TypeScript、Biome、环境变量示例和 gitignore；Issue、PR 模板、Contributing、Security 等等真正进入公开协作时再添加。
+
+### 5\. 完成 PRD 审查
+
+当前 PRD 主线完整，但仍需在开发前修正：
+
+-   明确 Kuru 与 PancakeSwap 都是真实 P0；
+    
+-   Demo 交易方向优先统一为 `MON → USDC`；
+    
+-   增加 On-chain Evidence Collector，补充 Moss 尚未覆盖的只读链上数据；
+    
+-   锁定 Price Impact 公式；
+    
+-   明确 Analysis Account 与 Demo Address；
+    
+-   为每个 UI 字段标注数据来源与可用性；
+    
+-   避免 Risk Band 和 Data Confidence 变成新的黑箱评分；
+    
+-   收缩 History 与 Diff 的首版范围。
+    
+
+## 今日复盘
+
+今天最大的收获是：真正的差异化不是“我们也做评级、模拟或 Agent API”，而是把这些能力连接成一条可执行的风险决策链。技术设计也必须忠于真实依赖：需要链上读取不代表需要自建合约；没有 Oracle 依赖就不应展示 Oracle 风险；数据缺失也不能自动视为安全。
+
+## 下一步计划
+
+1.  将 PRD 修订为 v0.2；
+    
+2.  建立字段—数据来源—可用性矩阵；
+    
+3.  明确 Price Impact 计算方法；
+    
+4.  确认 Kuru 与 PancakeSwap 的共同 Demo Pair；
+    
+5.  完成 Moss Query + RPC 只读数据的最小验证；
+    
+6.  初始化 Parallax GitHub 仓库。
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 ## 今日主题
 
 围绕 Week 4 的交易前风险分析工具，按照“技术服务需求”的原则评审技术方案，并结合五人团队重新划分前端、后端、风险引擎与协议研究职责。
@@ -125,6 +223,7 @@ Kuru MON → USDC
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 ## 今日学习主题
 
 围绕 Moss Collaboration Demo Studio，重新梳理 Pendle Adapter 的展示重点，完成主网演示预检、用户测试流程设计和个人贡献说明。
@@ -202,6 +301,7 @@ discover → load → markets → quote → swap → simulate → Receipt
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 ## 今日主题
@@ -345,6 +445,7 @@ AI 帮助提取 Session Log、整理课程任务、生成研究与测试材料�
 
 
 
+
 ## 今日主题
 
 复盘 Co-learning 中关于随机数、代理合约初始化、升级存储布局和预言机时效性的四道安全题，并将老师的讲解与 AI 辅助解释进行对照。同时了解 Week 3 Mini Demo、黑客松和组队要求。
@@ -460,6 +561,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 
 
+
 ## **今日主题**
 
 围绕 **PR** [**#109**](https://github.com/brightheartma/moss/issues/109) **Pendle Adapter 的 audit 后续收尾**：把作者对两个延后问题（ABI 交叉核对、dust 错误）的回复逐一落地，同时诚实处理一个新发现的 live 测试 flakiness——能确定性根治的交作者定，不硬修、不臆造证据。
@@ -490,6 +592,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -700,6 +803,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -1199,6 +1303,7 @@ Git 状态：
 
 
 
+
 ## 今日主题
 
 围绕 [Moss PR #56：Clober V2 CLOB Adapter](https://github.com/nishuzumi/moss/pull/56)，完成“作者修复—本地复测—发现剩余问题—定位根因—提交反馈—再次修复—全量回归”的完整开源 Review 闭环。
@@ -1558,6 +1663,7 @@ AI 帮助完成：
 
 
 
+
 # 2026-07-17｜残酷共学笔记
 
 ## 今日主题
@@ -1718,6 +1824,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：完成 Moss GitHub 探索，并把三个 Week 2 任务收束成一个 MCP 安全预览原型**
 
 今天没有急着继续写 Adapter，而是先把 Moss 的代码架构、GitHub 治理方式和 PR review 过程系统读了一遍，并完成三份相互关联的 Week 2 提交：
@@ -1842,6 +1949,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：完成 Moss 项目的业务理解 + 全链路实操**
 
 从手写代码到 agent 自主调用,完整走了一遍 Moss([github.com/nishuzumi/moss](http://github.com/nishuzumi/moss))的两种用法:先在 play.ts 里手写 discover → load → action → simulate 四步;再通过 `.mcp.json` 把 Moss 的 MCP 服务器接入 Claude Code,让 agent 纯靠四个 MCP 工具自主跑通"1 MON 能换多少 USDC"(本地 mainnet fork 实测)。同步完成任务:⭐ Star 仓库、README 精读、理解分享文案。
@@ -1890,6 +1998,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -1956,6 +2065,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 # 2026-07-13
 
 ## 今日进度：完成 Week 2 职业方向选择提交，搭建 AI 协作记录 + 学习记录归档体系
@@ -1996,6 +2106,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+
 
 
 
@@ -2075,6 +2186,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：monad-clicker 加登录系统，并用真实使用数据修了一串前端 bug**
 
 昨天把「为什么需要频繁交互」的场景论证做完之后，今天把 monad-clicker 从 Demo 推进到「能被人反复实际使用」的状态：加了 MetaMask 登录（会话代签），然后没有止步于"能跑"，而是自己连续实测/连点/换账号，揪出了 6 个真实 bug 并逐一修复，最后把改动推到了 GitHub，也把 Week 1 Build Log 整理提交。
@@ -2116,6 +2228,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -2197,6 +2310,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 ## **今日进度：BuildAnything 初中课程 3/13**
 
 课程地址：[https://buildanything.so/zh/tracks/sophomore](https://buildanything.so/zh/tracks/sophomore)
@@ -2254,6 +2368,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -2348,6 +2463,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 
 
+
 \## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
 
 \### 今天做了什么
@@ -2387,6 +2503,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

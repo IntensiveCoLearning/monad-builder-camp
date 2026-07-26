@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+今天围绕 Web3、AI 与电子商务（AI E-commerce）的融合方向进行了前沿调研，为即将到来的黑客松做准备。重点学习了 AI Agent 在智能购物、链上支付、数字身份、个性化推荐、去中心化数据与可信交易等场景中的最新发展，分析了 Agent Economy 与 Web3 基础设施结合带来的产品创新机会。同时调研了当前优秀项目的技术架构、商业模式与用户体验，思考如何将 AI 与区块链的优势结合，设计具有实际价值且可快速验证的 MVP。通过今天的学习，对黑客松的选题方向和技术路线有了更清晰的认识，下一步将进一步完成方案设计、技术验证与原型开发，为后续团队协作和项目实现做好准备。
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 今天完成了 Week 3 全部 12 个作业，从 Builder Profile、组队规则、问题定义，到角色检查、脑暴、团队计划、AI 使用记录、用户反馈、项目改进、其他团队体验、Mini Demo 提交和 Hackathon 复盘，形成了完整闭环。本周我以 Sunshine One-Person Builder Lab 的方式推进，用不同 persona 承担 Research、Ops、Dev、Product、Design 等角色，并用 AI 工具辅助完成 Moss MCP Transaction Preview Demo、GitHub repo、README、反馈改进和 Week 4 计划。下一步准备进入 Hackathon。
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 # **DAY 5｜Mini Demo Day 学习笔记**
 
@@ -38,6 +45,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 # DAY 4｜Test & Improve：把 Demo 交给真实的人
@@ -58,6 +66,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 **DAY 3 学习笔记｜Co-build：让研究、运营和开发真正一起工作**
 
 今天的学习让我认识到，跨角色协作并不是 Research、Ops 和 Dev 各自完成一份任务，而是建立一条可以持续传递和迭代的交付链。Research 需要将用户问题、竞品、协议能力和风险整理成 Product Brief；Ops 再将研究结果转化为项目叙事、测试邀请和反馈问题；Dev 则依据明确的 Scope 完成最小可运行功能，并说明技术边界与已知问题。
@@ -73,6 +82,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天的学习重点，是从“我们想做什么”转向“用户遇到了什么问题”。团队需要结合 Research、Ops、Dev 三个视角，确认问题是否真实、用户是否明确、功能是否能在 3–4 天内完成。
 
 Mini Demo 应只保留一个核心用户动作，并划分 Must Have、Nice to Have 和 Not This Week。同时说明为什么需要链上能力、为什么适合 Monad，并明确尚待验证的假设。
@@ -82,6 +92,7 @@ Mini Demo 应只保留一个核心用户动作，并划分 Must Have、Nice to H
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -112,6 +123,7 @@ Week 3 所训练的并不只是“组队”，而是一种更加重要的 Builde
 
 
 
+
 今天我围绕 Moss 完成了从“认识开源项目”到“真实参与开源协作”的完整学习闭环：先阅读 README、Docs、Issues 与 Pull Requests，理解 Moss 如何通过 discover、load、action、simulate 支持 AI Agent 安全构建和模拟链上交易；随后以 Dev Builder 为主要身份，结合 Research 与 Ops 能力，提出了关于模拟后用户意图核查的 Issue #97，并通过 Fork、Branch、Documentation、Commit 和 Pull Request #99 完成了一次真实、公开、可验证的开源贡献。
 
 在协作过程中，我进一步理解了 Issue 用于解释“为什么需要改变”，Commit 用于记录“具体改变了什么”，Pull Request 用于请求社区审查，而 Review 则帮助贡献者发现 Markdown 格式、技术边界和表述准确性方面的问题。我也根据反馈继续修改中文文档结构，认识到即使是 Documentation Contribution，也必须理解 Receipt、Outcome、Capability 和交易保护之间的区别。
@@ -128,11 +140,13 @@ Week 3 所训练的并不只是“组队”，而是一种更加重要的 Builde
 
 
 
+
 在BuildAnything完成初中课程，进一步深化Vibe-coding及Monash Chain开发的基础知识和实践
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -155,11 +169,13 @@ Week 3 所训练的并不只是“组队”，而是一种更加重要的 Builde
 
 
 
+
 今天完成了从学习到产出的关键跨越：围绕真实产品形成市场判断，将 Space 策划细化为可执行、可复盘的运营方案，并通过 repo、README、截图、交易记录或开源贡献沉淀了可验证的 Proof of Work。
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -186,11 +202,13 @@ Week 3 所训练的并不只是“组队”，而是一种更加重要的 Builde
 
 
 
+
 DAY 2 打卡：今天围绕 Research、Ops 与 Dev 三条路径，将职业方向进一步拆解为可执行的 Scope，明确了研究问题与资料边界、活动目标与参与闭环，以及 AI-assisted Web3 MVP 的技术方案与实现边界。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -221,11 +239,13 @@ Week 2 Day 1 打卡：通过了解 Research、Ops 与 Dev 三条 Web3 Builder �
 
 
 
+
 Week 1 复盘：全面复习 Week 1 五项任务的完整链路，完成时间打卡，并通关 [https://buildanything.so/zh/tracks](https://buildanything.so/zh/tracks) 新手课程全模块——钱包配置、链上交易、AI 辅助合约开发、高频场景分析与首个 Monad 合约部署，全部完成闭环验证。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -260,11 +280,13 @@ Week 1 复盘：全面复习 Week 1 五项任务的完整链路，完成时间�
 
 
 
+
 DAY 5 的学习重点是理解 Monad 如何通过高性能与低成本支持更高频的链上交互体验，并将第一周的钱包、交易、合约部署、AI 协作与安全实践整理为 Build Log，完成 Mini Demo 0，同时明确 Week 2 的 Tech / Ops / Research 主攻方向。
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -303,11 +325,13 @@ DAY 4：借助 AI 生成并理解最小 Solidity 智能合约，在 Remix 完成
 
 
 
+
 DAY 3｜已完成课程专用钱包创建、Monad Testnet 添加、测试币领取与第一笔测试网交易，并通过区块浏览器查看 transaction hash，理解了钱包安全、交易、gas 与链上记录的基本流程。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

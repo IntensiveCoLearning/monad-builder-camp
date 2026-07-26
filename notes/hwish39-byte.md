@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+## 周末休息
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 ## 周末小休一天
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 ## 今天复习了一下agent相关知识
 
@@ -83,6 +90,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
 
+
 ## 构思黑客松idea
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
@@ -91,11 +99,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ## 完善补充个人github，寻找队友
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -110,11 +120,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ## 参与产品分享会和co-learning
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -167,11 +179,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 ## 周末休息
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -191,6 +205,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -222,6 +237,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -390,11 +406,13 @@ int main(int argc, char** argv) {
 
 
 
+
 ## 听分享会，构思黑客松项目idea
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -444,6 +462,7 @@ int main(int argc, char** argv) {
 
 
 
+
 ## 周末休息（ ^\_^ ）
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
@@ -463,11 +482,13 @@ int main(int argc, char** argv) {
 
 
 
+
 ## 周末休息(^\_^)
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -533,6 +554,7 @@ Monad 是一条 Layer-1 区块链，核心目标是 **消除去中心化与性�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -651,6 +673,7 @@ contract Gmonad {
 
 
 
+
 ## **今日学习内容完成情况**
 
 1.  **Web3 实习手册｜安全与合规**
@@ -733,6 +756,7 @@ contract Gmonad {
 
 
 
+
 ## **今日学习内容完成情况**
 
 1.  **Web3 实习手册｜Web3 工作方式**
@@ -772,6 +796,7 @@ contract Gmonad {
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

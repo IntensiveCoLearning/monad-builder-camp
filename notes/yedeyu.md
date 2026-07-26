@@ -15,13 +15,20 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+-   制作残酷共学笔记网站
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 -   观看回放 [第2周例会](https://www.youtube.com/watch?v=wZejSUPs_cg)
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 -   观看回放 [第2周例会](https://www.youtube.com/watch?v=wZejSUPs_cg)
 <!-- DAILY_CHECKIN_2026-07-24_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
 
+
 -   观看回放 [第2周例会](https://www.youtube.com/watch?v=wZejSUPs_cg)
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -47,6 +56,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   观看回放 [从研究到公共知识：AI 时代 Web3 Researcher 的成长之路](https://x.com/i/broadcasts/1yGBeeNaYeoKN)
     
     -   [P2P共有资源宣言(简中版) Peer to Peer: The Commons Manifesto](https://3ook.com/en/store/0xbef7ec8649fb96c8d78ea63d8dfeb40bc2a6eec4)
@@ -54,6 +64,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -72,11 +83,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   继续观看回放 [例会 Week1](https://www.youtube.com/watch?v=Sd3ICTtrTh4)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -99,11 +112,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   观看回放 [例会 Week1](https://www.youtube.com/watch?v=Sd3ICTtrTh4)
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -130,11 +145,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   观看回放 [AI Agent 如何拥有支付能力？](https://x.com/LXDAO_Official/status/2074809051406581822)
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -165,11 +182,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 -   观看回放 [DevRel 的成长之路](https://www.youtube.com/watch?v=tVo5Q1rGa0w)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

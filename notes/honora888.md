@@ -15,8 +15,33 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-27
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# Hackathon项目创意
+
+Week 4 团队将从 MoPay 产品方向调整至智能合约安全审计方向，但不会把项目做成传统、严肃且信息密集的扫描工具，而是将安全知识包装成一套修仙升级系统。
+
+在这个世界中：
+
+-   智能合约是需要守护的“宗门秘境”；
+    
+-   安全漏洞是不同属性和等级的“漏洞妖兽”；
+    
+-   用户是刚进入安全世界的“审计修士”；
+    
+-   找到并修复漏洞就是完成一次“除魔任务”；
+    
+-   修复记录会被收录进个人的《漏洞异兽志》；
+    
+-   用户通过积累经验值升级境界、解锁关卡和获得成就勋章。
+    
+
+项目首先定位为**教学和演示原型**，帮助新人理解审计思路，不替代正式安全审计。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+
 # MoPay 根据用户反馈完成产品改进记录
 
 ## 收到的反馈
@@ -47,6 +72,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 
 ### **Problem & User Card**
 
@@ -105,6 +131,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
 
+
 ### **今日创意——跨链稳定币收益聚合支付卡**
 
 **问题**：用户在多条链上有稳定币资产，但每次支付时需要手动选择用哪条链、兑换什么资产，体验割裂。
@@ -130,6 +157,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 
 
 
+
 **我的方向：** Research / 产品 / Ops 为主，Dev 为辅，关注 AI Agent × Web3、DeFi、Monad 生态和开源项目。
 
 **我会什么：** 我拥有 KCL AAFM 硕士背景，并有 Web3 中心化交易所财务 BP 工作经历，能够从财务、业务和市场角度分析项目，包括商业模式、成本收益、业务数据、增长逻辑和风险。与此同时，我可以快速阅读项目文档和基础源码，完成竞品研究、产品分析、活动策划、教程与 FAQ，并正在学习 TypeScript、Node.js 和链上开发，已有 Uniswap、Monad 和 Moss 的本地实践经验。
@@ -143,6 +171,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -427,6 +456,7 @@ PR 2：Minimal discover/load Example
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -760,6 +790,7 @@ Maintainer 的工作也不仅仅是开发功能，更重要的是组织项目，
 
 
 
+
 # 阅读 Moss README：理解 AI Agent 为什么需要 Moss
 
 ## 项目简介
@@ -811,6 +842,7 @@ Moss 是一个开源 AI Agent 框架，旨在帮助开发者快速构建、扩�
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -959,6 +991,7 @@ Blob 数据层将 L2 交易数据转移至专用存储，L2 用户不再占用 L
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -1137,6 +1170,7 @@ node queryPool.js --token0 USDC --token1 WETH --fee 3000
 
 
 
+
 # 任务 4｜Week 3 Role Statement
 
 ### 写作执行步骤
@@ -1281,6 +1315,7 @@ node queryPool.js --token0 USDC --token1 WETH --fee 3000
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -1687,6 +1722,7 @@ README、报错日志、目录规范、迭代计划、AI 协作记录虽不增�
 
 
 
+
 # Research Builder
 
 ## EIP Reading Card：EIP-1559
@@ -1930,6 +1966,7 @@ AI 生成如下骨架（已人工微调地址、错误处理、格式等）：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+
 
 
 
@@ -2189,6 +2226,7 @@ Day 2 的 Ops 学习核心并非聚焦“活动增长”，而是优先明确活
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -3678,6 +3716,7 @@ Monad 专属智能交易自动化工具库，解决 DEX / 代币交互 ABI、 ca
 
 
 
+
 # NFTBadge 合约（V0.1）评测报告
 
 ## 一、合约整体结构拆解
@@ -4196,6 +4235,7 @@ contract NFTBadge {
 
 
 
+
 # Build Log初稿模板
 
 文档版本：V1.0
@@ -4365,6 +4405,7 @@ Monad 特殊点：并行执行，Gas 消耗波动大，手动调高 Gas 缓冲�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -4927,6 +4968,7 @@ gas 单价 = min (基础 BaseFee + 用户优先级 PriorityFee, 用户最高 Max
 
 
 
+
 ## 一、AI 生成最小 Solidity 合约（原则：技术辅助，绝不盲信）
 
 ### 1.1 「最小合约」明确定义
@@ -5256,6 +5298,7 @@ AI生成标准最小合约 → 三重校验（编译+人工+静态扫描）→ R
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -5668,6 +5711,7 @@ signature: 私钥签名，证明交易为本人发起
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 
@@ -6194,6 +6238,7 @@ Builder 链上开发者、Alpha 内部项目机会、Tokenomics 代币经济、R
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

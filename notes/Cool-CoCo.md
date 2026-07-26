@@ -15,8 +15,22 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+Day21 学习记录：
+
+一、对于昨天的LOGO修改，调整了，保留核心形象，把多余重复体现安全的元素去掉了；
+
+二、设计其他几个UI界面；
+
+三、跟前端开发沟通交流关于交易页面要实现的功能和模块，再次调整自己理解不对的地方；
+
+![20260726团队项目执行设计、.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-26-1785081500538-20260726_________.png)![xunzhangchengjiiu-1注释.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-26-1785081489156-xunzhangchengjiiu-1__.png)
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 7.24会议纪要<br/>Day 20 -<span class="emoji emoji1f4d1"></span> 学习记录<br/>日期： 2026年7月25日 晚<br/>主要是为项目做准备 for Week 4 黑客松<br/>行动：根据昨天开会内容进行调整目前做的东西，我这边主要做了以下工作：<br/><br/>一、梳理Week 4 项目最终产品方向<br/>产品最终形态、核心流程，增加一定的教育意义。<br/><br/>二、调整前端 UI 设计方案<br/>根据讨论的最终版交易页面要呈现的内容调整页面排版布局，<br/>交易面板 位置 内容<br/><span class="emoji emoji1f539"></span> 左上角 钱包连接按钮 + 连接状态（由于左上角右方项目logo，而且固定在导航栏，所以钱包链接引导按钮和连接状态，我放到了右上角的位置）<br/><span class="emoji emoji1f539"></span> 左侧主区域 交易面板：选择货币对 → 输入金额 → 选银行/链路 → 执行【已完成大概的排版设计✓】<br/><span class="emoji emoji1f539"></span> 中间/右侧 链路评分、风险评估、执行结果【考虑到这题题排版布局，这块原定要展示的内容有点多，所以我将它分布在了页面，视觉中间和中下方的位置，并且额外在风险只是面板右侧增加了一块风险评分模块。已完成大致排版✓】<br/><span class="emoji emoji1f539"></span> 右下角 AI 分析结果 / 解释窗口（可对话）【已完成排版✓】<br/><span class="emoji emoji1f539"></span> 右上角 用户信息 + 成就/NFT 入口<br/>安全/不安全对比： 在交易按钮处加一个「安全执行 / 直接执行」切换【已完成排版，放在了交易兑换模块 ✓】<br/><br/>数据仪表盘：<br/><br/>展示评分【已完成大致排版✓】<br/>（环形图动画效果）【暂未添加交互动效，所有页面排版确定后，细化设计的时候在最后添加】<br/>展示各链状态<br/>【已完成大致排版，跟分数模块紧挨】<br/>不需要做复杂 K 线图，展示实时数据即可<br/>【 】<br/><br/>三、Logo 设计讨论<br/>前几天，根据产品名称和功能定位抽空做了 4 种 Logo 方案：<br/><br/>方案 设计 寓意<br/>① 护盾+铃铛 拿着盾牌的小人 守护交易安全<br/>② 护盾+警戒星 科技感护盾造型 全方位安全评估<br/>③ 骑士头盔+鹰眼 鹰眼造型头盔 敏锐发现风险<br/>④ 代码+绿色感叹号 白色发光感叹号 加密安全防护<br/>团队倾向：方案②，去掉内圈盾牌，放大核心图形，外部轮廓做圆润处理<br/>【暂未完成，正在找好用的ai工具辅助修改】<br/><br/>四、设计 & 前端协作<br/>酷可可：已做出前两个页面的白板框架，今晚到明天完成所有页面排版<br/>前端于老师：先写页面框架，等设计细化后再补充内容<br/>配色方面：决定做 浅色/深色两种主题，酷可可提供色号，前端实现切换<br/>【目前决定先把34主题，也就是原定主视觉页面的这套，所有页面的UI视觉先设计好，但这套设计完成后，我会和前端开发人员沟通，辅助其代码控制的浅色主题的配色】<br/><br/>动态效果：环形评分动画、数据刷新等，设计出交互效果，前端实现<br/>【待所有页面全都设计好后，最后添加交互时控制，不然时间可能来不及，且前面排版和内容没确定好的情况下，就添加交互效果，后期再调整排版和内容之后需要再次调整相关的交互动态，效率不高，而且费时费力】<br/><br/>五、相关截图：
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-25-1784995104693-image.png)
@@ -24,6 +38,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 Day19学习记录：
 
@@ -79,6 +94,7 @@ Day19学习记录：
 
 
 
+
 Day18 学习打卡记录：
 
 一、参加Co-learning会议，有问题可以及时跟主持人老师聊天+老师答疑，
@@ -94,6 +110,7 @@ Day18 学习打卡记录：
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -130,6 +147,7 @@ Day17 2026年7月22日 学习记录：
 
 
 
+
 2026年7月21日 学习记录：
 
 收获——
@@ -149,6 +167,7 @@ Day17 2026年7月22日 学习记录：
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -200,6 +219,7 @@ AIAgent，对于AI Native孩子来说可能只是一个工具，更适合作为�
 
 
 
+
 Day14 2026年7月19日 休息日，自由打卡）学习记录：
 
 优化改善昨天网页上显示或者观感明显不对的地方，优化本地网页显示情况；
@@ -225,6 +245,7 @@ Day14 2026年7月19日 休息日，自由打卡）学习记录：
 
 
 
+
 Day13 2026年7月18日 （休息日，自由打卡）学习记录：
 
 使用Notion和Ai coding了一个关于个人学习计划+每周活动SOP内置、最后呈现团队项目执行排期及项目呈现和复盘的一个游戏化复古像素风视觉呈现网页，所有记录可在线填写并储存在本地浏览器，希望用像玩游戏一样追踪本次的“Web3 Career Build”学习旅程。
@@ -234,6 +255,7 @@ Day13 2026年7月18日 （休息日，自由打卡）学习记录：
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -292,6 +314,7 @@ Day12学习记录：
 
 
 
+
 今日学习： 参与线上Co-learning会议，很有趣的寓教于乐的学习形式，通过谁是卧底的游戏让我们对Web3行业的基础知识有了更进一步的理解； 参与截图如下：
 
 ![Day11-ERC-20和ERC-721.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-16-1784217433503-Day11-ERC-20_ERC-721.png)![Day11-区别.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-16-1784217524023-Day11-__.png)![Day11-线上会议参与截图6、连麦可以加分.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Cool-CoCo/images/2026-07-16-1784217553442-Day11-________6_______.png)
@@ -315,6 +338,7 @@ Day12学习记录：
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -404,6 +428,7 @@ b本次课程对于想要希望进入 社区运营、DevRel、市场增长、内
 
 
 
+
 0713 Day06-
 
 Week2学习记录：
@@ -427,6 +452,7 @@ Week2学习记录：
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -495,6 +521,7 @@ Week2学习记录：
 
 
 
+
 20260712自由打卡：
 
 今日记录——
@@ -510,6 +537,7 @@ Week2学习记录：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -577,6 +605,7 @@ Week2学习记录：
 
 
 
+
 Day05（2026-07-10）学习记录：
 
 本次学习主要围绕 “Web3 实习计划例会｜学员总结+Co-Learning”的线上会议目标，通过线上Zoom会议进行今日学习任务：
@@ -597,6 +626,7 @@ Day05（2026-07-10）学习记录：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -681,6 +711,7 @@ Day04学习记录：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -858,6 +889,7 @@ Day04学习记录：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

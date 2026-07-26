@@ -16,8 +16,14 @@ Web3小趴菜一枚^ ^
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+组队ing
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 # 2026-07-25
 
 * * *
@@ -245,6 +251,7 @@ Web3小趴菜一枚^ ^
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 # 2026-07-24
 
 **Web3 产品分析 & 可借鉴点**  
@@ -343,6 +350,7 @@ Web3小趴菜一枚^ ^
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 # 2026-07-23
@@ -495,6 +503,7 @@ L2 "市销率" ≈ L2 Token 市值 / L2 年化协议收入
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -730,6 +739,7 @@ FluxA 的 Monetize 模块让开发者可以：
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Camino-sec/images/2026-07-21-1784647453764-image.png)
 
 以量化视角切入web3，今天完成了简单的分析报告
@@ -737,6 +747,7 @@ FluxA 的 Monetize 模块让开发者可以：
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -1047,6 +1058,7 @@ FluxA 的 Monetize 模块让开发者可以：
 
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Camino-sec/images/2026-07-19-1784475385169-image.png)
 
 周末愉快，下周继续💪
@@ -1054,6 +1066,7 @@ FluxA 的 Monetize 模块让开发者可以：
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+
 
 
 
@@ -1140,6 +1153,7 @@ Moss 最关键的设计是把"组装交易"和"签名发送"彻底分离。就�
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -1242,6 +1256,7 @@ Moss Issue [#77（中文](#77（中文) FAQ）说明：好的文档、教程、�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -1389,6 +1404,7 @@ Moss Issue [#77（中文](#77（中文) FAQ）说明：好的文档、教程、�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -1597,6 +1613,7 @@ Moss Issue [#77（中文](#77（中文) FAQ）说明：好的文档、教程、�
 
 
 
+
 # 2026-07-14
 
 ## Harberger Agent Quota 项目评估与 Pivot 改造笔记
@@ -1737,6 +1754,7 @@ uint256 public constant MAX_TAX_RATE_BPS = 5000; // 50% 年化上限
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -2116,6 +2134,7 @@ DApp · 钱包 · 后端服务 · 索引器
 
 
 
+
 # 2026-07-12
 
 **方向标签**：AI + Web3 / 机制设计 / Agentic Finance
@@ -2216,6 +2235,7 @@ DApp · 钱包 · 后端服务 · 索引器
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -2469,6 +2489,7 @@ AI 审查（Claude）发现零押金窗口问题
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -2830,6 +2851,7 @@ function canDelete() public view returns (bool) {
 
 
 
+
 # 2026-07-09
 
 ## 今日任务
@@ -2900,6 +2922,7 @@ function canDelete() public view returns (bool) {
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -3381,6 +3404,7 @@ To（接收方）: 0x7f1a8...524db（我的账户1）
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+
 
 
 

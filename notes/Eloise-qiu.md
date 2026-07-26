@@ -15,8 +15,750 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
+# AI Design Skill 拆解
+
+# AI Prompt Engineering（AI设计提示词工程）
+
+## 一、什么是 AI Prompt Engineering？
+
+简单理解：
+
+> **Prompt Engineering = 教 AI 理解你的设计意图，让 AI 按你的想法稳定生成结果。**
+
+很多新人认为：
+
+“会写一句话让 AI 出图，就是会 Prompt。”
+
+实际上：
+
+高级 Prompt 工程是：
+
+**把设计需求 → 转化成 AI 能理解的结构化语言。**
+
+* * *
+
+# 二、为什么 Prompt 是 AI 设计师的核心能力？
+
+传统设计：
+
+```
+客户需求
+ ↓
+设计师理解
+ ↓
+构思
+ ↓
+制作
+ ↓
+修改
+```
+
+AI时代：
+
+```
+用户需求
+ ↓
+设计师拆解需求
+ ↓
+Prompt表达
+ ↓
+AI生成方案
+ ↓
+人工筛选优化
+ ↓
+最终设计
+```
+
+AI不会替代设计师。
+
+但是：
+
+会 Prompt 的设计师，会比普通设计师：
+
+-   创意速度更快；
+    
+-   方案数量更多；
+    
+-   修改成本更低；
+    
+-   探索能力更强。
+    
+
+* * *
+
+# 三、Prompt 工程核心结构
+
+一个专业设计 Prompt 通常由：
+
+## 6个部分组成
+
+公式：
+
+```
+主体 Subject
++
+场景 Context
++
+视觉风格 Style
++
+构图 Composition
++
+材质细节 Material
++
+参数控制 Parameter
+```
+
+* * *
+
+# 1\. 主体 Subject（你设计什么）
+
+回答：
+
+> AI需要生成什么？
+
+例如：
+
+普通：
+
+```
+一只猫
+```
+
+问题：
+
+太宽泛。
+
+AI不知道：
+
+-   什么猫？
+    
+-   什么形态？
+    
+-   什么风格？
+    
+
+* * *
+
+升级：
+
+```
+一只穿宇航服的橘猫角色
+```
+
+更明确。
+
+* * *
+
+设计级：
+
+```
+A cute orange cat astronaut character,
+wearing a futuristic space suit,
+holding a small holographic device
+```
+
+* * *
+
+# 2\. 场景 Context（在哪里）
+
+告诉 AI：
+
+环境是什么。
+
+例如：
+
+普通：
+
+```
+猫在太空
+```
+
+升级：
+
+```
+A cat astronaut floating inside a futuristic spaceship cabin,
+with holographic screens and galaxy background
+```
+
+增加：
+
+-   空间；
+    
+-   氛围；
+    
+-   故事。
+    
+
+* * *
+
+# 3\. 风格 Style（视觉方向）
+
+这是设计师和普通用户最大的区别。
+
+普通用户：
+
+“生成一个漂亮图片。”
+
+设计师：
+
+指定视觉语言。
+
+* * *
+
+常见风格：
+
+## 商业视觉
+
+```
+Apple product design style
+minimalist
+clean interface
+```
+
+* * *
+
+## 游戏原画
+
+```
+AAA game concept art
+cinematic lighting
+high detail
+```
+
+* * *
+
+## 插画
+
+```
+flat illustration
+vector style
+modern graphic design
+```
+
+* * *
+
+## Web3视觉
+
+```
+futuristic cyberpunk
+neon blockchain aesthetic
+digital universe
+```
+
+* * *
+
+# 4\. 构图 Composition（如何呈现）
+
+决定：
+
+图片专业度。
+
+包括：
+
+## 镜头
+
+例如：
+
+```
+close-up portrait
+```
+
+近距离人物。
+
+* * *
+
+```
+wide shot
+```
+
+大场景。
+
+* * *
+
+## 角度
+
+例如：
+
+```
+front view
+side view
+top view
+```
+
+* * *
+
+## 布局
+
+例如：
+
+```
+center composition
+symmetrical layout
+```
+
+* * *
+
+# 5\. 材质 Material（细节）
+
+决定质感。
+
+例如：
+
+普通：
+
+```
+未来城市
+```
+
+高级：
+
+```
+glass architecture,
+metal surface,
+soft neon reflection,
+high quality materials
+```
+
+* * *
+
+常见材质：
+
+-   glass
+    
+-   metal
+    
+-   leather
+    
+-   ceramic
+    
+-   wood
+    
+-   holographic
+    
+
+* * *
+
+# 6\. 参数 Parameter（控制输出）
+
+不同工具：
+
+参数不同。
+
+* * *
+
+Midjourney：
+
+例如：
+
+```
+--ar 3:4
+--style raw
+--v 7
+```
+
+含义：
+
+比例：
+
+3:4
+
+风格：
+
+更真实。
+
+* * *
+
+Stable Diffusion：
+
+控制：
+
+-   Seed
+    
+-   Sampling
+    
+-   CFG Scale
+    
+
+* * *
+
+# 四、Prompt等级对比
+
+## Level 1：普通用户
+
+输入：
+
+```
+设计一个咖啡杯
+```
+
+结果：
+
+随机。
+
+* * *
+
+## Level 2：设计学生
+
+输入：
+
+```
+A modern ceramic coffee cup,
+minimalist design,
+white background
+```
+
+结果：
+
+较稳定。
+
+* * *
+
+## Level 3：职业设计师
+
+输入：
+
+```
+A premium ceramic coffee cup inspired by Japanese minimalism,
+matte texture,
+soft natural lighting,
+placed on a wooden table,
+product photography,
+high-end lifestyle brand aesthetic,
+8k resolution
+```
+
+结果：
+
+接近商业需求。
+
+* * *
+
+# 五、设计师 Prompt 工作流
+
+## Step 1：理解需求
+
+例如：
+
+客户：
+
+“我要做一个 Web3 项目 Logo。”
+
+不要马上生成。
+
+先拆：
+
+* * *
+
+用户：
+
+谁？
+
+Crypto用户。
+
+* * *
+
+品牌：
+
+什么感觉？
+
+未来、科技、安全。
+
+* * *
+
+场景：
+
+用于：
+
+官网、Twitter头像、App。
+
+* * *
+
+# Step 2：建立视觉关键词库
+
+例如：
+
+Web3：
+
+关键词：
+
+```
+future
+digital
+blockchain
+decentralized
+cyber
+network
+```
+
+* * *
+
+金融：
+
+关键词：
+
+```
+trust
+security
+premium
+institutional
+```
+
+* * *
+
+AI：
+
+关键词：
+
+```
+intelligent
+neural network
+agent
+automation
+```
+
+* * *
+
+# Step 3：生成多个方向
+
+不要只生成一次。
+
+设计流程：
+
+```
+方向A
+ ↓
+方向B
+ ↓
+方向C
+ ↓
+筛选
+ ↓
+优化
+```
+
+* * *
+
+例如 Logo：
+
+方向：
+
+1.  科技未来感
+    
+2.  极简金融感
+    
+3.  社区文化感
+    
+
+* * *
+
+# 六、Prompt 在不同设计岗位中的应用
+
+## 1\. UI设计师
+
+Prompt：
+
+生成：
+
+-   页面布局；
+    
+-   用户流程；
+    
+-   Design System。
+    
+
+案例：
+
+```
+Design a crypto wallet mobile app UI,
+clean fintech style,
+dark mode,
+professional interface,
+show portfolio dashboard,
+transaction history,
+security indicators
+```
+
+* * *
+
+## 2\. 平面设计师
+
+生成：
+
+-   海报；
+    
+-   KV；
+    
+-   品牌视觉。
+    
+
+* * *
+
+## 3\. 游戏设计师
+
+生成：
+
+-   人物；
+    
+-   场景；
+    
+-   道具。
+    
+
+* * *
+
+## 4\. 产品设计师
+
+Prompt：
+
+辅助：
+
+-   用户画像；
+    
+-   产品方案；
+    
+-   竞品分析。
+    
+
+例如：
+
+```
+Analyze crypto wallet users,
+identify pain points,
+create user persona
+```
+
+* * *
+
+# 七、高级 Prompt 技巧
+
+## 技巧1：角色设定（Role）
+
+告诉 AI：
+
+“你是谁。”
+
+例如：
+
+```
+You are a senior product designer with 10 years experience.
+```
+
+效果：
+
+输出更专业。
+
+* * *
+
+## 技巧2：参考案例（Reference）
+
+例如：
+
+```
+Inspired by Apple's minimalist design philosophy
+```
+
+* * *
+
+## 技巧3：限制条件（Constraint）
+
+设计最重要。
+
+例如：
+
+```
+Do not use excessive colors.
+Keep the interface simple.
+```
+
+* * *
+
+## 技巧4：迭代优化
+
+不要：
+
+一次生成最终结果。
+
+正确：
+
+第一轮：
+
+探索。
+
+第二轮：
+
+优化。
+
+第三轮：
+
+精修。
+
+* * *
+
+# 八、AI Prompt 工程师需要建立什么能力？
+
+## 1\. 视觉能力
+
+懂：
+
+-   构图；
+    
+-   色彩；
+    
+-   风格。
+    
+
+* * *
+
+## 2\. 产品能力
+
+懂：
+
+-   用户；
+    
+-   场景；
+    
+-   目标。
+    
+
+* * *
+
+## 3\. AI工具能力
+
+懂：
+
+-   Midjourney；
+    
+-   Stable Diffusion；
+    
+-   ChatGPT；
+    
+-   Figma AI。
+    
+
+* * *
+
+## 4\. 表达能力
+
+把：
+
+模糊需求
+
+↓
+
+精准描述。
+
+* * *
+
+# 十、总结
+
+> **Prompt Engineering 不是“会写提示词”，而是把设计思维翻译成 AI 能执行的语言。未来优秀设计师的竞争力，不是画得更快，而是能更准确地定义问题，并让 AI 放大自己的创造力。**
+<!-- DAILY_CHECKIN_2026-07-26_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 **Web3产品经理（PM）的角度**拆解一个 **猫 Meme 项目（Cat Meme Token）**。具体项目有（ $MEW、MOG、WEN、Popcat 等），目前以“典型猫系 Meme 项目模型”进行产品研究拆解。
 
 产品经理研究 Meme 项目，重点不是看“猫图好不好看”，而是研究：
@@ -608,6 +1350,7 @@ Meme热点变化快。
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 
 # Week 3｜Day 5
 
@@ -1387,6 +2130,7 @@ Mini Demo Day
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
 
+
 # Week 3｜Day 4 Test & Improve：把 Demo 交给真实用户验证
 
 ## 主题：用户测试 × 产品迭代 × Demo 打磨
@@ -1983,6 +2727,7 @@ Test & Improve
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+
 
 
 
@@ -2633,6 +3378,7 @@ Co-build
 
 
 
+
 # Week 3｜Day 2 Define Together：从很多想法中选择一个可实现的问题
 
 * * *
@@ -3220,6 +3966,7 @@ Define Together
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
+
 
 
 
@@ -3846,6 +4593,7 @@ Week 3 Builder Collaboration
 
 
 
+
 ### AI Agent 正在杀死艺术，还是拯救艺术？
 
 AI Agent 不会取代艺术家，但它正在重新定义艺术创作。
@@ -3887,6 +4635,7 @@ AI 提高了创作效率，但真正决定作品价值的，依然是人的创�
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -4334,6 +5083,7 @@ Week 2｜Day 5：Portfolio
 
 
 
+
 # Week 2｜Day 4
 
 ## 路径产出：完成第一个 Proof of Work（PoW）
@@ -4682,6 +5432,7 @@ Week 2｜Day 4：Proof of Work
 
 
 
+
 ## 路径深入：学习本方向真正的 Workflow
 
 如果说 Day 1 是选择方向，Day 2 是确定 Scope，那么 Day 3 的重点就是：
@@ -5000,6 +5751,7 @@ Week 2｜Day 3：Workflow
 
 
 
+
 # Week 2｜Day 2
 
 ## 路径启动：把职业方向变成一个可执行的 Scope
@@ -5187,6 +5939,7 @@ Week 2｜Day 2：Scope Definition
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -5425,6 +6178,7 @@ AI 能提高效率，但不能替代思考。
 
 
 
+
 # AI + Solidity + 合约部署：如何从交易进入最小合约实践？
 
 **只有完成一次完整的开发和部署流程，才算真正迈入了 Web3 开发。**借助 AI，从一个"最小可运行合约（Minimum Smart Contract）"开始实践。
@@ -5634,6 +6388,7 @@ Gas 支付
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -5868,6 +6623,7 @@ DApp 的核心优势不是"更酷"，也不是"更先进"，而是提供了新�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -6222,6 +6978,7 @@ Web3 不只是开发者的世界，产品、设计、运营、市场、商务等
 
 
 
+
 # 《Web3 实习手册》智能合约开发
 
 最开始看到 Solidity、EVM、ABI、RPC 等名词时，感觉很陌生。通过阅读这一章节不是学会了写代码，而是理解了：**智能合约开发，并不是单纯写一份 Solidity 代码，而是完成一个 DApp 从需求分析到上线的完整开发过程。**
@@ -6432,6 +7189,7 @@ Web3 有很多经典漏洞，例如：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -6738,6 +7496,7 @@ Web3 不只是钱包安全，邮箱同样重要。因为邮箱几乎可以找回
 
 
 
+
 ## 《Web3 实习手册》读书笔记（第4-9章）
 
 相比于介绍区块链底层技术，这几章更关注一个新人如何真正进入 Web3 行业。从学习方法、岗位选择，到社区参与和实习准备，都给了我很多启发。​
@@ -6903,6 +7662,7 @@ Web3 是一个开放的网络，同时也意味着每个人都要对自己的资
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

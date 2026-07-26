@@ -17,11 +17,18 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
-打卡
+今天完成了 Moss 项目的 Kintsu sMON Liquid Staking Adapter，并提交了 Pull Request。该 Adapter 面向 Monad 主网，为 AI Agent 提供原生 MON 流动性质押能力，支持存入 MON 获取 sMON、 链上份额报价、滑点保护、sMON 与 MON 的份额换算以及总份额查询。 实现过程中，我接入了 Kintsu 当前部署的 StakedMonadV2 合约。存入前会调用
+
+convertToShares获取预期份额，并根据用户设置的滑点计算最低可接受份额，最终生成一笔
+
+deposit(minShares,receiver交易。同时增加了金额精度、uint96 上限、零份额和异常 RPC 等边界校验。 Receipt 部分会完整解析原生 MON 转账、sMON Mint、VirtualSharesSnapshot和Deposit
+
+事件，校验 金额、接收地址与铸造份额是否一致，并保持所有链上 Change 的原始顺序和对象身份。此外还完成了 MonadScan ABI 来源验证、EIP-1967 实现地址检查、MCP 默认发现、中英文文档和 Changeset。最终通 过全仓库构建、类型检查、Biome 检查及离线测试，共 207 项测试通过
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-25_END -->
@@ -30,11 +37,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 
 
@@ -47,11 +56,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -68,11 +79,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -93,11 +106,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 周末休息打卡
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -126,11 +141,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 今天主要完成了 Web3 新人安全入门活动的一整套运营作业。我选择的活动主题是“从看不懂钱包弹窗开 始：新人如何安全参与 Web3”，目标是帮助刚进入 Web3 的新人理解钱包连接、签名、交易、授权和钓 鱼链接等基础风险。 在内容设计上，我先明确了活动为什么要办、面向谁、解决什么问题；然后进一步设计了活动当天的流 程，包括活动简介、时间安排、主持串场、核心讨论问题、互动环节和收尾 CTA。之后又补充了活动执 行预案，整理了上线前的时间排期、宣传节奏、人员分工、当天执行流程、风险预案和预期目标。 最后，我把活动方案转化成可直接使用的运营物料，包括完整宣传文案、报名页简介、活动提醒文案和 参与 CTA，并整理成 Ops Case Study，复盘了本周的运营思路、AI 协作过程和 Week 3 想承担的运营 角色。整体来看，这次作业让我更清楚地理解了：运营不只是写文案，而是围绕用户真实问题，设计一 套能被理解、能被执行、能沉淀复用的内容路径。
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -161,11 +178,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -200,11 +219,13 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -275,6 +296,7 @@ AI 在整个学习过程中主要承担了辅助学习和知识解释的角色�
 
 
 
+
 这几天都在学习golang的基础语法，尝试调用rpc去查询链上信息
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
@@ -299,11 +321,13 @@ AI 在整个学习过程中主要承担了辅助学习和知识解释的角色�
 
 
 
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+
 
 
 
@@ -350,11 +374,13 @@ AI 在整个学习过程中主要承担了辅助学习和知识解释的角色�
 
 
 
+
 **_今天学习了怎么使用monad浏览器进行交易查询，同时也体验到了monad的交易速度确实很快相比于以太坊网络_**
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

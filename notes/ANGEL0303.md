@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# ANGEL0303
-
-**GitHub ID:** ANGEL0303
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 150241986
+- Name: ANGEL0303
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

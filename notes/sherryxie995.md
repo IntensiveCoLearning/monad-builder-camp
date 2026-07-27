@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# NotFound404
-
-**GitHub ID:** sherryxie995
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 54714707
+- Name: sherryxie995
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# laoyubushiyu
-
-**GitHub ID:** laoyubushiyu
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 199550831
+- Name: laoyubushiyu
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

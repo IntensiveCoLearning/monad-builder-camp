@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# mini-zoro
-
-**GitHub ID:** mini-zoro
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 117797954
+- Name: mini-zoro
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

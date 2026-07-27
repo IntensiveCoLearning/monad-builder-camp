@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Ayileah
-
-**GitHub ID:** Ayileah
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 299198388
+- Name: Ayileah
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

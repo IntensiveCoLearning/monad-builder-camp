@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Momo-Yiming
-
-**GitHub ID:** Momo-Yiming
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 251743905
+- Name: Momo-Yiming
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+1
----
-
-# hereMer
-
-**GitHub ID:** hereMer
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 296333304
+- Name: hereMer
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

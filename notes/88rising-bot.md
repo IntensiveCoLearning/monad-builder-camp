@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Francisco
-
-**GitHub ID:** 88rising-bot
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 231028601
+- Name: 88rising-bot
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

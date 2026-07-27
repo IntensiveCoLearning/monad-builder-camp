@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# singsingqin
-
-**GitHub ID:** singsingqin
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 162318246
+- Name: singsingqin
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

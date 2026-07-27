@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# UU
-
-**GitHub ID:** yyou89830-coder
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 297217347
+- Name: yyou89830-coder
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# sonnyboy061117-cmd
-
-**GitHub ID:** sonnyboy061117-cmd
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 250995304
+- Name: sonnyboy061117-cmd
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

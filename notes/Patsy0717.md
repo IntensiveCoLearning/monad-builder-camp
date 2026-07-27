@@ -1,16 +1,7 @@
----
-timezone: UTC+7
----
-
-# Patsy0717
-
-**GitHub ID:** Patsy0717
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 297985973
+- Name: Patsy0717
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

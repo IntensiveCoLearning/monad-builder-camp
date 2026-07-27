@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# nayanjohri-star
-
-**GitHub ID:** nayanjohri-star
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 291752372
+- Name: nayanjohri-star
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

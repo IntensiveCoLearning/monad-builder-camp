@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# caigua838
-
-**GitHub ID:** caigua838
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 227192773
+- Name: caigua838
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

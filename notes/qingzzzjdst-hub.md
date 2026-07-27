@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Guga
-
-**GitHub ID:** qingzzzjdst-hub
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 270313132
+- Name: qingzzzjdst-hub
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yangzhuo-ai
-
-**GitHub ID:** yangzhuo-ai
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298912612
+- Name: yangzhuo-ai
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

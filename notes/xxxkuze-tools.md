@@ -15,8 +15,26 @@ Web3 暑期实习计划 - Monad Buidler Camp
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-27
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+buildanything
+
+**EVM 究竟是如何工作的？**
+
+-   **EVM 是区块链上的“计算机”**：它不是一台真实机器，而是由所有节点共同维护的虚拟执行环境，保证每个节点执行相同代码后得到相同结果。
+    
+-   **智能合约运行在 EVM 上**：开发者使用 Solidity 等语言编写合约，编译后转换成 EVM 能理解的字节码（Bytecode），然后部署到链上执行。
+    
+-   **EVM 通过状态转换工作**：每笔交易都会触发 EVM 执行代码，例如转账、修改数据、调用合约，执行完成后更新区块链状态。
+    
+-   **Gas 机制保证资源公平使用**：EVM 中每一次计算、存储操作都会消耗 Gas，防止恶意代码无限占用网络资源。
+    
+-   **EVM 兼容是生态扩展的关键**：像 Monad 这样的区块链支持 EVM，可以直接复用 Ethereum 的开发工具、钱包、智能合约和开发经验，大幅降低开发成本。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+
 buildanything
 
 **Skills（技能）**
@@ -32,6 +50,7 @@ buildanything
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+
 
 buildanything
 
@@ -50,6 +69,7 @@ buildanything
 <!-- DAILY_CHECKIN_2026-07-22_START -->
 
 
+
 buildanything
 
 **实现 Cadence：单时隙版本**
@@ -65,6 +85,7 @@ buildanything
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+
 
 
 
@@ -87,6 +108,7 @@ buildanything
 
 
 
+
 Build Anything
 
 **加密钱包**
@@ -102,6 +124,7 @@ Build Anything
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+
 
 
 
@@ -130,6 +153,7 @@ Build Anything
 
 
 
+
 Build Anything
 
 **10,000 TPS 会让什么成为可能**
@@ -145,6 +169,7 @@ Build Anything
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+
 
 
 
@@ -169,6 +194,7 @@ Build Anything
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -227,6 +253,7 @@ Build Anything
 
 
 
+
 Build Anything 构建并发布你的第一个应用，我使用了Replit账号，创建之后，输入了我的prompt
 
 ```
@@ -264,6 +291,7 @@ Vibecoing的一个完整循环流程：
 
 
 
+
 总结了下Week1 作品与方向的选择
 
 [https://app.notion.com/p/Week-1-39c564177da180448929f7c7e3b366f7](https://app.notion.com/p/Week-1-39c564177da180448929f7c7e3b366f7)
@@ -283,11 +311,13 @@ Vibecoing的一个完整循环流程：
 
 
 
+
 今天去buildanything官方跟着步骤教程，学习下通过 AI 编程协作开发。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+
 
 
 
@@ -345,6 +375,7 @@ Vibecoing的一个完整循环流程：
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+
 
 
 
@@ -429,6 +460,7 @@ Vibecoing的一个完整循环流程：
 
 
 
+
 听了Coooder老师的co learning，今天学习使用AI Coding来做一个智能合约项目，首先我选择codex来做，首先创建一个文件目录，用来存放项目，然后导入进去codex，在这个项目里面与它对话，内容：\*\*帮我做一个发行nft的智能合约，\*\*等待codex完成（过程中有些指令需要确认）
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xxxkuze-tools/images/2026-07-09-1783579549303-image.png)
@@ -485,6 +517,7 @@ copy .env.example .env
 
 
 
+
 今天学习用 AI 生成一个最小 Solidity 合约，我选择了每日打卡合约，写了个提示词，让chatgpt给我生成 Solidity ^0.8.20 的代码，CheckIn包含totalCount（累计打卡次数），lastCheckIn（最后打卡时间），streak（连续打卡天数），然后是三个函数，checkIn() -> 用户每天只能打卡一次，canCheckIn() -> 判断今天是否还能打卡，getMyRecord() -> 查看自己的打卡信息，AI生成的合约代码，人工检查了Remix 能编译通过，三个函数与 Prompt 一致，数据类型正确，没有不必要的库，变量命名和注释读得懂。然后部署到Remix。大概的流程：Remix 新建 `ChecklnContract.sol` → 编译 `0.8.20` → **Deploy & Run Transactions** → Browser Extension 连 Rabby → 选 Monad Testnet → Deploy，交互Remix **Deployed Contracts** 里：蓝点函数 **call**（如 getMyRecord），橙点函数 **transact**（如 checkIn）。Write 后在区块链浏览器查看确认交易 Status 为 Success。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
@@ -508,11 +541,13 @@ copy .env.example .env
 
 
 
+
 听了7.6晚上参加「Co-learning」线上活动，自己尝试在浏览器上安装MetaMask插件，创建钱包，添加 Monad Testnet 网络，添加成功之后，复制钱包地址，打开区块浏览器，我看到的页面信息，**Address**：我的钱包地址，一串 `0x` 开头的字符，**Balance**：当前账户余额，刚创建时应该是 `0 MON`**，Transactions：**历史交易列表，空钱包时这里是空的。从而**我理解链上产品和普通互联网产品最大的区别是**：普通互联网产品的数据主要存在平台自己的服务器里，而链上产品的关键操作会记录在区块链上，可以通过区块浏览器查询。接着继续了解**行业赛道全览和Web3 工作方式。**
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

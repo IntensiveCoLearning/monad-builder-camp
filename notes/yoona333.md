@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yoona333
-
-**GitHub ID:** yoona333
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 167958904
+- Name: yoona333
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

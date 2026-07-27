@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Hance Hu
-
-**GitHub ID:** F1ower99
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 241924989
+- Name: F1ower99
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

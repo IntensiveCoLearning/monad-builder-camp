@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 0xBrick
-
-**GitHub ID:** 0xBrick-Li
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 175825132
+- Name: 0xBrick-Li
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

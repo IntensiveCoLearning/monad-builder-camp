@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# DrC-Web3
-
-**GitHub ID:** DrC-Web3
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 253366503
+- Name: DrC-Web3
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

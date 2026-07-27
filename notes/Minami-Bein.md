@@ -14,6 +14,11 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
+# 2026-08-28
+<!-- DAILY_CHECKIN_2026-08-28_START -->
+打卡内容1
+<!-- DAILY_CHECKIN_2026-08-28_END -->
+
 # 2026-07-28
 <!-- DAILY_CHECKIN_2026-07-28_START -->
 打卡内容1

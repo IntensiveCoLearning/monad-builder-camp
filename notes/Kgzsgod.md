@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# kgzsgod
-
-**GitHub ID:** Kgzsgod
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 141121121
+- Name: Kgzsgod
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

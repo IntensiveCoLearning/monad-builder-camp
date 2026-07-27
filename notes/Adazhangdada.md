@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Xinyue Zhang
-
-**GitHub ID:** Adazhangdada
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 139906565
+- Name: Adazhangdada
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

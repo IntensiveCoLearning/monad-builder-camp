@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 1mike-max
-
-**GitHub ID:** 1mike-max
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298250789
+- Name: 1mike-max
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

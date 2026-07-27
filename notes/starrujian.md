@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# starrujian
-
-**GitHub ID:** starrujian
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 126538245
+- Name: starrujian
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

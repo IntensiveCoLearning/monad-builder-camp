@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Qsa3Ger
-
-**GitHub ID:** Qsa3Ger
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 142565294
+- Name: Qsa3Ger
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

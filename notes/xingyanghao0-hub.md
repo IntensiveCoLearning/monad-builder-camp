@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# xingyanghao0-hub
-
-**GitHub ID:** xingyanghao0-hub
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 251442522
+- Name: xingyanghao0-hub
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

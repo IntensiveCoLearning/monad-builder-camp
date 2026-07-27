@@ -617,4 +617,27 @@ Explorer：  
 
 今日学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-06.md](https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-06.md)
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+今天我继续收敛 Monad Probability Exchange 的 Hackathon MVP，并将产品方案推进到 BTC Target Sprint v0.5。
+
+这次最重要的调整是：不再尝试一开始就做多个并行的 Rolling Market，而是采用 Single-Lane Continuous Rollover——同一时刻只开放一个 BTC/USD 15 分钟固定目标价市场。当前 Round 到期后，一份 Pyth 边界价格报告会用于结算当前 Round，并作为下一 Round 的 Target Price，从而形成连续换场，但不分散流动性。
+
+用户看到的问题会非常直接：
+
+“BTC/USD 在指定时间是否会达到或高于 Target Price？”
+
+页面展示固定 Target、Pyth 实时参考价、距目标差值、倒计时，以及 Above / Below 的 AMM 市场报价。底层不做 CLOB 或伪订单簿，而是使用 Liquidity Ladder 展示不同交易金额下的 AMM 报价、滑点和价格冲击。
+
+我也核对了 Pyth 的 parsePriceFeedUpdatesUnique 官方语义：它可以返回指定时间范围内第一条更新，并保证不存在更早且仍符合范围的更新。因此它适合定义“到期后第一条有效 Pyth 报告”的确定性结算规则。正式实现前仍会针对多份 updateData、边界时间和不同调用者 payload 做专项测试。
+
+在经济模型上，v0.5 保留完全抵押 Complete Set，但把 Sell 变为条件功能：只有 Buy / Sell / Settle / Void / Redeem 的 10,000 次随机模拟、偿付能力不变量、舍入和手续费 Gate 全部通过后，才会把提前卖出功能放进正式 Demo。否则 MVP 先走 Buy → Hold → Settle / Void → Redeem 的真实闭环。
+
+下一步是先完成 Phase 0 的离线经济模型，再实现单市场 Test USDC 买入、Pyth 结算、Void 和赎回，不会先做 UI 或 Rollover 动画。
+
+今日学习记录：
+[https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-27.md](https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-26.md)
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

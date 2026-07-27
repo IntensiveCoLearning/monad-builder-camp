@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# kassidylee
-
-**GitHub ID:** kassidylee
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 299569294
+- Name: kassidylee
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# kkiii2025
-
-**GitHub ID:** kkiii2025
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 203837220
+- Name: kkiii2025
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

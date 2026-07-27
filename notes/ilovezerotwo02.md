@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 希羽
-
-**GitHub ID:** ilovezerotwo02
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 245666259
+- Name: ilovezerotwo02
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

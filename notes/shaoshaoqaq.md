@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# shaoshaoqaq
-
-**GitHub ID:** shaoshaoqaq
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298350964
+- Name: shaoshaoqaq
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

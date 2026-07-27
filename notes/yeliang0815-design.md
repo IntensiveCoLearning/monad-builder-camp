@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yeliang0815-design
-
-**GitHub ID:** yeliang0815-design
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 296083926
+- Name: yeliang0815-design
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

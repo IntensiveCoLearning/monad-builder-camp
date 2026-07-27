@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Halfman
-
-**GitHub ID:** HalfmanZ
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 231850317
+- Name: HalfmanZ
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

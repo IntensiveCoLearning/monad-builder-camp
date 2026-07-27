@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# xxxkuze-tools
-
-**GitHub ID:** xxxkuze-tools
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 174098119
+- Name: xxxkuze-tools
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

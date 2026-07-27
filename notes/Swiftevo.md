@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Shift
-
-**GitHub ID:** Swiftevo
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 103950662
+- Name: Swiftevo
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 0xLucas918
-
-**GitHub ID:** 0xLucas918
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294242881
+- Name: 0xLucas918
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

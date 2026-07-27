@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# haoshidoufasheng-dev
-
-**GitHub ID:** haoshidoufasheng-dev
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 254890935
+- Name: haoshidoufasheng-dev
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Ori
-
-**GitHub ID:** Ori-uii
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 178649127
+- Name: Ori-uii
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

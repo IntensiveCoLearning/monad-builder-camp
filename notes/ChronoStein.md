@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# ChronoStein
-
-**GitHub ID:** ChronoStein
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 93231474
+- Name: ChronoStein
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

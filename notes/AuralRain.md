@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# AuralRain
-
-**GitHub ID:** AuralRain
-
-**Telegram:** 
-
-## Self-introduction
-
-Java后端开发工程师
+- GitHub ID: 107822973
+- Name: AuralRain
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

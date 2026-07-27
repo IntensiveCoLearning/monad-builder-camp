@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# zhou
-
-**GitHub ID:** tenacious89
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 94431826
+- Name: tenacious89
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

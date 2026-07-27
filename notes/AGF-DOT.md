@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# AGF-DOT
-
-**GitHub ID:** AGF-DOT
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 240708285
+- Name: AGF-DOT
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

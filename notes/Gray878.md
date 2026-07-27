@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Gray878
-
-**GitHub ID:** Gray878
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 111276643
+- Name: Gray878
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

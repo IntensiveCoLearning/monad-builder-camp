@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# louish-0809
-
-**GitHub ID:** louish-0809
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 296579627
+- Name: louish-0809
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# xinxinxie924
-
-**GitHub ID:** xinxinxie924
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 299851453
+- Name: xinxinxie924
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

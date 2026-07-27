@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Likepasttimes
-
-**GitHub ID:** Likepasttimes
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 224182616
+- Name: Likepasttimes
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

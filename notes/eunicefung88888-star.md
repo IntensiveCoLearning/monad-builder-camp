@@ -1,16 +1,7 @@
----
-timezone: UTC+1
----
-
-# eunicefung88888-star
-
-**GitHub ID:** eunicefung88888-star
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 296278576
+- Name: eunicefung88888-star
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

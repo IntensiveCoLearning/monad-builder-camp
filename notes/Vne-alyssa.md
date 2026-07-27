@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Vne-alyssa
-
-**GitHub ID:** Vne-alyssa
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298565146
+- Name: Vne-alyssa
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

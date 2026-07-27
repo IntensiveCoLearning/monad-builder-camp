@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yi个小小yi
-
-**GitHub ID:** ppipppiu
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 88430266
+- Name: ppipppiu
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

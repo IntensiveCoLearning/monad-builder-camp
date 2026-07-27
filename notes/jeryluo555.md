@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# jeryluo555
-
-**GitHub ID:** jeryluo555
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 229695081
+- Name: jeryluo555
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

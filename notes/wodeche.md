@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# wodeche
-
-**GitHub ID:** wodeche
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 40746051
+- Name: wodeche
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

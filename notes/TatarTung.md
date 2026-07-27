@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# TatarTung
-
-**GitHub ID:** TatarTung
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298544142
+- Name: TatarTung
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

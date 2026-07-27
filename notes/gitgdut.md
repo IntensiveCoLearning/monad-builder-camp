@@ -354,4 +354,10 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 3.刚刚期末考完，明天开始继续学习雅思
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+今天看了黑客松开幕式和colearning,并找好了队友，开始探讨黑客松的作品设计
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

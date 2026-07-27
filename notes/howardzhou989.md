@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Howard Zhou
-
-**GitHub ID:** howardzhou989
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 216139980
+- Name: howardzhou989
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

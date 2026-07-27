@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# GnarALI
-
-**GitHub ID:** GnarALI
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 59357337
+- Name: GnarALI
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

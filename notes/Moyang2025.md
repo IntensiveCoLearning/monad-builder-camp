@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Moyang2025
-
-**GitHub ID:** Moyang2025
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 201474356
+- Name: Moyang2025
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -844,7 +844,7 @@ By completing the program, participants will leave with:
 | [baizeOAD](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/baizeOAD.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xl892477-byte](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/xl892477-byte.md) | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zilinhu](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/zilinhu.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [echo5177](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/echo5177.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | |
+| [echo5177](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/echo5177.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | | |
 | [2424389092-blip](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/2424389092-blip.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | |
 | [Lma-Te](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Lma-Te.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yiyaya304](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/yiyaya304.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1119,6 +1119,7 @@ By completing the program, participants will leave with:
 | [IsinkCN](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/IsinkCN.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Nyx-bloom](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Nyx-bloom.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 

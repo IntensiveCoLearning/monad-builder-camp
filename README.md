@@ -439,6 +439,10 @@ By completing the program, participants will leave with:
 
 ✅ = Done ⭕️ = Missed ❌ = Failed
 
+## Intensive Co-learning Check-In Record Table
+
+✅ = Done ⭕️ = Missed ❌ = Failed
+
 <!-- START_COMMIT_TABLE -->
 | Name | 7.06 | 7.07 | 7.08 | 7.09 | 7.10 | 7.11 | 7.12 | 7.13 | 7.14 | 7.15 | 7.16 | 7.17 | 7.18 | 7.19 | 7.20 | 7.21 | 7.22 | 7.23 | 7.24 | 7.25 | 7.26 | 7.27 | 7.28 | 7.29 | 7.30 | 7.31 | 8.01 | 8.02 | 8.03 | 8.04 | 8.05 | 8.06 | 8.07 |
 | ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -672,7 +676,7 @@ By completing the program, participants will leave with:
 | [NashNode](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/NashNode.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   |   |   |   |   |   |   |   |   |   |   |   |
 | [caigua838](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/caigua838.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   |   |   |   |   |   |   |   |   |   |   |   |
 | [Chic7777](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/Chic7777.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   |   |   |   |   |   |   |   |   |   |   |
-| [midi-zhuanjia](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/midi-zhuanjia.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   |   |   |   |   |   |   |   |   |   |   |   |
+| [midi-zhuanjia](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/midi-zhuanjia.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ |   |   |   |   |   |   |   |   |   |   |   |
 | [LOOK741741](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/LOOK741741.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ❌ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | [tenacious89](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/tenacious89.md) | ✅ | ⭕️ | ✅ | ⭕️ | ❌ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | [explorerer](https://github.com/IntensiveCoLearning/monad-builder-camp/blob/main/notes/explorerer.md) | ⭕️ | ⭕️ | ❌ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# WW2n
-
-**GitHub ID:** WW2n
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 299352078
+- Name: WW2n
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

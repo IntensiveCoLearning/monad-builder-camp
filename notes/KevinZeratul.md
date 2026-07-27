@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# KevinZeratul
-
-**GitHub ID:** KevinZeratul
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 37375885
+- Name: KevinZeratul
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

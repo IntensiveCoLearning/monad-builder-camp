@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yuyuer-yy
-
-**GitHub ID:** yuyuer-yy
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 299842292
+- Name: yuyuer-yy
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

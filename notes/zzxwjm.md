@@ -1,16 +1,7 @@
----
-timezone: UTC-7
----
-
-# Zixie Zheng
-
-**GitHub ID:** zzxwjm
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 167147777
+- Name: zzxwjm
+- Timezone: UTC-7
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

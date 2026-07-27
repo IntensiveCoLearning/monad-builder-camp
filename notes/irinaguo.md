@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# irinakoay
-
-**GitHub ID:** irinaguo
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 196757095
+- Name: irinaguo
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

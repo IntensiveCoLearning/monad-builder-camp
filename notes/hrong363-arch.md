@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Amber
-
-**GitHub ID:** hrong363-arch
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 252303962
+- Name: hrong363-arch
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

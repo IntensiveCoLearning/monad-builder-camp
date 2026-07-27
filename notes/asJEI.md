@@ -1,20 +1,7 @@
----
-timezone: UTC+8
----
-
-# Hokkai
-
-**GitHub ID:** asJEI
-
-**Telegram:** 
-
-## Self-introduction
-
-一个正在学习的大三学生而已。
-具体学习记录与总结可查看：https://www.hokkai2005.online
-具体学习记录可查看：https://www.hokkai2005.online
-具体学习记录可查看：https://www.hokkai2005.online
-具体学习记录可查看：https://www.hokkai2005.online/blog/web3-notes-02/
+- GitHub ID: 160241483
+- Name: asJEI
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

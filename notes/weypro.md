@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# wey
-
-**GitHub ID:** weypro
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 22854837
+- Name: weypro
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

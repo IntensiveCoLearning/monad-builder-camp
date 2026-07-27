@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yanyang04
-
-**GitHub ID:** yanyang04
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 272830353
+- Name: yanyang04
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

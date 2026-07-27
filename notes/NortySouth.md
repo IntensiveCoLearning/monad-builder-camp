@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# NortySouth
-
-**GitHub ID:** NortySouth
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 240913758
+- Name: NortySouth
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# zhaody26-collab
-
-**GitHub ID:** zhaody26-collab
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 273757405
+- Name: zhaody26-collab
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

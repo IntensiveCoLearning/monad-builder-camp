@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# sinuocai71-cyber
-
-**GitHub ID:** sinuocai71-cyber
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 290717197
+- Name: sinuocai71-cyber
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

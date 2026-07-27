@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Pan
-
-**GitHub ID:** arcnapan
-
-**Telegram:** arcna1215
-
-## Self-introduction
-
-想做运营的web3小白一枚
+- GitHub ID: 149470114
+- Name: arcnapan
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

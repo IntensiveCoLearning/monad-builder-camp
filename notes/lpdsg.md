@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# PengLLLLLLLL
-
-**GitHub ID:** lpdsg
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 171908178
+- Name: lpdsg
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

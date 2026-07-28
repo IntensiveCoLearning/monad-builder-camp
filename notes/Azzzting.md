@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Azzzting
-
-**GitHub ID:** Azzzting
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 138744150
+- Name: Azzzting
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

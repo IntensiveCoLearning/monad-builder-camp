@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# hugoooo1018
-
-**GitHub ID:** hugoooo1018
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 133837033
+- Name: hugoooo1018
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

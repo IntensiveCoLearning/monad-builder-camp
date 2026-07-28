@@ -110,4 +110,10 @@ vibe coding真的ai幻觉还是好严重啊
 
 今日学习了web3实习手册中的内容，主要是结合ai工具对web3的一些黑话术语有所了解，构建对web3的初步认知，希望之后能够更深入的体会
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+今天终于正常了啊
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

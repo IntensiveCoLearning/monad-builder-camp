@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Ripped
-
-**GitHub ID:** Ripped-sys
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 274415010
+- Name: Ripped-sys
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
+
 今天参加了「Co-learning」线上活动。本场分享的核心是通过共同学习、交流讨论和阶段复盘，让参与者在相互监督与经验分享中持续推进学习任务。相比独自学习，共学能够及时发现知识盲区，也可以通过优秀笔记、问题答疑和项目交流，了解其他同学的学习方法与实践思路。
 
 **与 Web3 学习路径的关系：**  
@@ -31,6 +24,7 @@ Web3 涉及区块链基础、智能合约、钱包交互和前后端开发等多
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
 
 今天主要对本周 Web3 实习计划的学习内容进行了简单复盘，并进一步明确了周例会的重点。周例会不仅会分享优秀学习笔记，还会集中解答大家在学习过程中遇到的问题，同时提前介绍下周课程安排，帮助我们及时调整学习节奏。
 
@@ -43,16 +37,14 @@ Web3 涉及区块链基础、智能合约、钱包交互和前后端开发等多
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
+# 2026-07-09
 
 通过本场「AI Agent 高危案例解析与安全构建」活动，我意识到 AI Agent 在 Web3 场景中不仅是效率工具，也可能带来高风险，例如私钥泄露、越权操作、错误调用合约、被恶意提示词诱导等。因此我后续学习 Web3 和开发项目时，需要重点关注 **权限控制、敏感信息隔离、操作确认机制和安全审计**，避免让 Agent 直接接触私钥或执行不可逆链上操作。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
+# 2026-07-06
 
 ![0c50c28d15fb1ece2b63f4a0de5eb184.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Ripped-sys/images/2026-07-06-1783349437472-0c50c28d15fb1ece2b63f4a0de5eb184.jpg)
 <!-- DAILY_CHECKIN_2026-07-06_END -->

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Adejoke
-
-**GitHub ID:** natureloved
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 175978134
+- Name: natureloved
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

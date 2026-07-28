@@ -8,6 +8,8 @@
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 這段是在 **把簽好的 off-chain attestation 存成 JSON 檔，然後把結果印出來給你看**。
 
 這句最重要：
@@ -128,6 +130,7 @@ evidence hash 是什麼
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 `const` 是 JavaScript 裡用來**宣告變數**的關鍵字。
 
@@ -399,7 +402,7 @@ main:
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 開始了，off-chain attestation 的簽名與驗證腳本已做好並測通。
 
@@ -438,8 +441,7 @@ evidence valid: true
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 下一步我建議學 **Off-chain attestation 實作**。
 
@@ -528,9 +530,7 @@ evidence.txt
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 以現在查到的資料看，**EAS 還是活躍的，不像是死掉或完全邊緣化的項目**。但它也不是「所有 Web3 app 都在用的主流基礎設施」那種級別。比較準確的定位是：
 
@@ -590,10 +590,7 @@ reputation / credential design
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 好，我們深入一點，但先不掉進數學黑洞。
 
@@ -839,11 +836,7 @@ nonce
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 對，**橢圓曲線簽名**是加密學裡的東西，也是 Web3 幾乎每天都在用的核心技術。
 
@@ -941,12 +934,7 @@ DAO 投票簽名
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 實際上有兩種常見做法，兩種都叫「用錢包簽 off-chain attestation」。
 
@@ -1166,14 +1154,7 @@ DAO 投票簽名
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 不是。**任何人都可以驗證** 的前提是：他拿到了那份 off-chain attestation。
 
@@ -1237,15 +1218,7 @@ payload 裡只放 hash
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 EAS 有兩種主要 attestation：
 
@@ -1570,17 +1543,7 @@ Off-chain attestation 只做前者，所以不花 gas。
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 PS C:\\Users\\User\\Documents\\EAS> node sepolia-verify.cjs
 
@@ -1664,18 +1627,7 @@ Revoked: false
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 下一步學 `bytes32 evidenceHash` **實作**。
 
@@ -2073,19 +2025,7 @@ Ethereum 用的是 Keccak 系列 hash。你可以把它當成 EVM 世界常用�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 `bool` 是 **boolean** 的縮寫，意思是「布林值」。
 
@@ -2310,21 +2250,7 @@ revoked / expirationTime 驗證是否仍有效
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 好，下一步學 **讀取一筆真實的 attestation**。
 
@@ -2422,22 +2348,7 @@ const decodedData = encoder.decodeData(encodedData);
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 意思是：我們先只學 **EAS 怎麼把「人看得懂的資料」轉成「鏈上合約看得懂的 bytes」**。
 
@@ -2838,25 +2749,7 @@ schemaUID -> 找 schema -> decode data
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 **On-chain vs Off-chain**
 
@@ -2893,26 +2786,7 @@ npm install @ethereum-attestation-service/eas-sdk
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天在看 021 學習以太坊，了解到多個層面叠加的去中心化  
   
@@ -2924,4 +2798,36 @@ npm install @ethereum-attestation-service/eas-sdk
 • 扩容路径：通过 Rollup-中心路线，把执行和创新推向大量 L2，L1 聚 焦于数据和共识的高去中心化、安全性。  
 • 治理层：没有形式化的链上投票，靠公开讨论和社会共识推动协议演进， 避免简单的「代币持有量 = 治理权」。 任何持有至少 32 ETH 的人，都可以通过质押成为验证者，直接参与到网络
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+Schema
+↓
+定義格式
+
+Attestation
+↓
+填入資料
+
+Attester
+↓
+誰說的
+
+Recipient
+↓
+說的是誰
+
+UID
+↓
+唯一編號
+
+Revocation
+↓
+可撤銷
+
+Onchain / Offchain
+↓
+儲存方式
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

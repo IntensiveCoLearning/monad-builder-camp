@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 42ium
-
-**GitHub ID:** 42ium
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 228938849
+- Name: 42ium
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

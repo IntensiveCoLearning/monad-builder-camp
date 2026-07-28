@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# John
-
-**GitHub ID:** USDHGwang
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 215296031
+- Name: USDHGwang
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 \# Day 21 — 被打回七項，然後去讀自己送出去的東西
 
 把 Week 2 卡住的四個任務清掉。開任務詳情才發現「完成第一次 GitHub 協作 +50」
@@ -62,6 +55,7 @@ native transfer 也只比金額不比 from/to。一個不相干的同簽章事�
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 \# 2026-07-25
 
@@ -80,7 +74,7 @@ DeFi 協議把 unbonding delay 當常識，文件寫一行就算交代。但 age
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 \# 2026-07-24
 
@@ -97,8 +91,7 @@ DeFi 協議把 unbonding delay 當常識，文件寫一行就算交代。但 age
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 \# 2026-07-23
 
@@ -121,9 +114,7 @@ ABI 從完整 verified 版抓，不是手寫 trim。shMONAD 是 proxy，explorer
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 \# 2026-07-22
 
@@ -144,10 +135,7 @@ FastLane 的官方套件 @fastlane-labs/fastlane-contracts 只 ship Solidity 原
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 今天沒寫 code，花時間把「為什麼模型輸出需要外部驗證」從機制層拆開。起點是一支 AI 科普影片加楊植麟的 K2 訪談，過程跟 Claude 逐條核對理解，錯的當場被抓（驗證器是訓練迴圈內的東西，我原本以為是訓練完的考核；推理時我以為參數還會微調，實際上全程凍結）。
 
@@ -167,11 +155,7 @@ FastLane 的官方套件 @fastlane-labs/fastlane-contracts 只 ship Solidity 原
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 \# Day 15｜shMONAD Protocol Adapter
 
@@ -196,12 +180,7 @@ FastLane 的官方套件 @fastlane-labs/fastlane-contracts 只 ship Solidity 原
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 shMONAD adapter 昨天寫完跑過 mainnet，今天回頭看整個過程，注意到一件事：在 Moss repo 裡貢獻程式碼的體驗，和在自己的 EIV/AIP repo 裡寫東西完全不同。
 
@@ -216,13 +195,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 今天開始寫 Moss protocol adapter。第一步就踩坑：原本打算寫 WMON adapter，結果翻 repo 才發現 `@themoss/system` 已經有了。計劃直接作廢，重新在 GitHub issues 裡找目標。
 
@@ -235,14 +208,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 今天把技術、研究、運營三個賽道的任務都交了。十份文件寫的都是 Moss 和 agent authorization，但寫給不同讀者的時候，自己對材料的理解會被迫重組。
 
@@ -255,15 +221,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 # **Day 11 — 一份深入，四個賽道的產出**
 
@@ -280,16 +238,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 今天開始接觸 Moss 這個 AI Agent × Web3 的開源專案，一開始只是想了解目前 AI Agent 在 Web3 生態中的發展方向，因此花了一些時間閱讀專案的 README 和整體架構。
 
@@ -314,17 +263,7 @@ Moss 有 11 份 ADR 記錄架構決定，有 [CONTRIBUTING.md](http://CONTRIBUTI
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 ### **2025.07.14**
 
@@ -359,18 +298,7 @@ Week 2 Challenge 方向是 Moss（github.com/nishuzumi/moss），今天花時間
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 Week 2 Dev 軌開跑，這週的 Challenge 是給開源專案 Moss 做貢獻——认识 codebase、
 
@@ -397,19 +325,7 @@ agent 只当查询和解释工具。
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 **2026-07-11 — Day 6｜Week 1 收官**
 
@@ -440,20 +356,7 @@ agent 只当查询和解释工具。
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 2026-07-10 — Day 5｜Monad 理解 + on-chain agent 探索
 
@@ -484,21 +387,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 **2026-07-09 — Day 4｜Agent 安全框架 vs 自己的 AIP/EIV**
 
@@ -515,22 +404,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 # **Daily Note — 2026-07-08**
 
@@ -563,23 +437,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 **2026-07-07 — Day 2**
 
@@ -592,24 +450,7 @@ AMM 其實是史上最成功的 fully on-chain agent（確定性做市、零鏈�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 **2026-07-06 — Day 1｜工具準備與 Builder 身份**
 

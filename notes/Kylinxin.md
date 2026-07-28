@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# BoFeng
-
-**GitHub ID:** Kylinxin
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 113959708
+- Name: Kylinxin
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+# 2026-07-09
+
 ## 今日主题
 
 今天继续围绕 Monad NFT Badge 项目做收尾和复盘，重点不是继续堆功能，而是检查项目是否真的具备“可提交、可展示、可复现”的完整度。主要工作集中在文档整理、部署信息核对、敏感信息检查、前端体验确认，以及对 Chain Runner 小游戏合约逻辑的安全边界复盘。
@@ -54,6 +47,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
 
 # 2026-07-07｜残酷学习打卡｜Monad NFT Badge 项目
 
@@ -159,7 +153,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
+# 2026-07-06
 
 今日打卡｜Monad 学习记录
 

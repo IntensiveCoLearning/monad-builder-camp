@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Flora
-
-**GitHub ID:** Flora-hihihi
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 265837585
+- Name: Flora-hihihi
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+# 2026-07-18
+
 ## **一、面试准备通用框架**
 
 ### **1\. 基础认知准备（所有岗位必备）**
@@ -58,6 +51,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+# 2026-07-16
 
 ## **🛠️ Tech Track**
 
@@ -90,8 +84,7 @@ Rather than simply acquiring knowledge, participants will produce tangible **Pro
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
+# 2026-07-15
 
 # Web3运营
 
@@ -170,9 +163,7 @@ Rather than simply acquiring knowledge, participants will produce tangible **Pro
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
+# 2026-07-13
 
 # AI开发与Web3技术栈分享
 
@@ -203,10 +194,7 @@ Rather than simply acquiring knowledge, participants will produce tangible **Pro
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
+# 2026-07-11
 
 # Web3 安全与合规
 
@@ -1083,11 +1071,7 @@ EOS 链上赌博平台 BigGame
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
+# 2026-07-09
 
 # 行业赛道
 
@@ -1154,12 +1138,7 @@ EOS 链上赌博平台 BigGame
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
+# 2026-07-08
 
 # AI agent支付领域的产品探索
 
@@ -1212,13 +1191,7 @@ DAO ：Decentralized Autonomous Organization
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
+# 2026-07-07
 
 # 普通人如何进入以太坊协议链
 
@@ -1256,14 +1229,7 @@ DAO ：Decentralized Autonomous Organization
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 # 开营仪式回看
 

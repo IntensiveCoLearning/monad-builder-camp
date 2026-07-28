@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# liubai
-
-**GitHub ID:** xiqing21
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 46130783
+- Name: xiqing21
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

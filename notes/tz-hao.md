@@ -1,34 +1,28 @@
----
-timezone: UTC+8
----
-
-# Milli
-
-**GitHub ID:** tz-hao
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 272461971
+- Name: tz-hao
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 今天继续推进项目的基础实现，并对目前的任务进度进行了整理。团队围绕核心流程进行了初步验证，确认了现阶段可以优先完成的部分，同时记录了实现过程中遇到的问题。
 
@@ -37,8 +31,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 ### 第三周第 4 天打卡记录
 
@@ -51,9 +44,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 今天和团队进一步讨论了项目方向，围绕目标用户、实际需求和使用场景进行了梳理，并对现阶段的想法做了调整。
 
@@ -62,10 +53,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 今天完成了组队方向和协作需求的梳理。我目前还在寻找队友，计划围绕 **AI × Web3 应用**完成项目实践。我主要负责技术开发和 Demo 实现，希望找到擅长运营、内容整理和项目展示的队友。
 
@@ -74,11 +62,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 第三周 Day1 打卡记录
 
@@ -93,12 +77,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 今天主要围绕 Moss 的 Clober V2 Adapter PR #56 进行了第二轮 Review 修复和完善。
 
@@ -113,27 +92,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 今天主要围绕 **Moss Adapter 开源贡献** 和 **GitHub PR 提交流程** 完成学习与实践。
 
@@ -142,33 +108,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 ## **今日完成**
 
@@ -207,147 +154,49 @@ Moss 的价值不只是帮助 Agent 调用链上协议，更重要的是限制 A
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 今天看完了实习手册感觉收获满满
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 加深之前的学习、了解  
 **1\. Web3 行业赛道**  
@@ -387,52 +236,21 @@ Web3 岗位大致分为技术岗和非技术岗。
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 听了jack老师的讲解，对eth协议方面有了更深的了解
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天听了xiaohai老师的分享，对行业认知更加清晰一点
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+打卡打卡
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

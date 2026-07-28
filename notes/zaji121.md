@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# zaji121
-
-**GitHub ID:** zaji121
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 253465389
+- Name: zaji121
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

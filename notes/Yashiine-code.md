@@ -1,22 +1,15 @@
----
-timezone: UTC+4
----
-
-# Yashiine
-
-**GitHub ID:** Yashiine-code
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 253579230
+- Name: Yashiine-code
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
+
 ```
 # 《如何从0到1用AI开发Web3》学习报告
 
@@ -153,6 +146,7 @@ AI 可以加速建设，但可靠性仍来自清晰的需求、合理的设计�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+# 2026-07-11
 
 \# BuildAnything 新生课程学习笔记
 
@@ -803,15 +797,14 @@ Monad 智能合约
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
+# 2026-07-10
 
 选择了研究向的，预测与量化，个人之前是做一些量化的策略自己在回测跑
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
+# 2026-07-09
 
 **今日学习笔记：Web3 求职、运营与项目实践**
 
@@ -1000,9 +993,7 @@ Web3 求职不能只靠海投简历，更重要的是：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
+# 2026-07-08
 
 本次分享主要介绍了 AI Agent 支付基础设施的设计思路和落地场景。核心观点是：未来 Agent 会承担大量重复性任务，而这些任务中必然会涉及资金流转，因此“让 Agent 安全、可控地花钱”会成为 Agent 经济的重要基础设施。
 
@@ -1015,10 +1006,7 @@ Web3 求职不能只靠海投简历，更重要的是：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
+# 2026-07-07
 
 \# 2026-07-08｜Monad Testnet 智能合约部署学习笔记
 
@@ -1087,11 +1075,7 @@ getMessageCount()
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
+# 2026-07-06
 
 ```
 今天学习了钱包地址、测试网资产、交易哈希和区块浏览器的基本用法。通过 MonadVision 查看交易时，我理解了 From 是发起交易的钱包地址，To 是接收地址，Value/Amount 是转账数量，Gas 是链上执行交易需要支付的手续费。即使是在测试网，这个流程也和真实链上交易很接近，因此操作时要注意不要泄露助记词、私钥或其他敏感信息。

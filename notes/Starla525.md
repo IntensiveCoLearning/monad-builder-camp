@@ -1,42 +1,35 @@
----
-timezone: UTC+8
----
-
-# Starla525
-
-**GitHub ID:** Starla525
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 258757486
+- Name: Starla525
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+# 2026-07-17
+
 -   web3不是web3.0
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+# 2026-07-16
 
 -   合规RWA实体资产上链，连接现实经济
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
+# 2026-07-15
 
 -   模块化区块链（把链拆成结算层，执行层，数据存储DA层）
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
+# 2026-07-13
 
 -   账户抽象钱包AA
     
@@ -47,9 +40,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
+# 2026-07-11
 
 1. Web3的信任体系脱离了中心化机构的信用背书，依靠密码学与节点共识形成信任最小化环境，实现了无需中介即可完成价值交互。
 
@@ -64,10 +55,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
+# 2026-07-10
 
 1.  NFT：插画，头像，权益
     
@@ -78,11 +66,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
+# 2026-07-08
 
 1.  Dapp 的架构主要由三个核心部分组成：**前端，智能合约，数据检索器**
     
@@ -93,12 +77,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
+# 2026-07-07
 
 -   monad公链高性能EVM兼容L1
     
@@ -109,13 +88,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
+# 2026-07-06
 
 1.  区块链：不可篡改/公开透明/匿名/快速交易/去中心化/不可篡改
     

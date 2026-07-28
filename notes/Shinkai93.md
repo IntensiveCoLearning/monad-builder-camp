@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Shinkai93
-
-**GitHub ID:** Shinkai93
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 214286610
+- Name: Shinkai93
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

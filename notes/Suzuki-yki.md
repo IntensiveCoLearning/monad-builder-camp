@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Suzuki-yki
-
-**GitHub ID:** Suzuki-yki
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 280371370
+- Name: Suzuki-yki
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 今日学习笔记：完成research的一些任务
 
 [https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/narxmh0tuw4l31hy/collaborator/join?token=MeD4P1ODJJfohrJ1&source=doc\_collaborator#](https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/narxmh0tuw4l31hy/collaborator/join?token=MeD4P1ODJJfohrJ1&source=doc_collaborator#) 《Product to market Brief》
@@ -28,21 +21,21 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 [https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/vks7gago7bua0o35/collaborator/join?token=Vg0Edi5wHYDDmgFy&source=doc\_collaborator#](https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/vks7gago7bua0o35/collaborator/join?token=Vg0Edi5wHYDDmgFy&source=doc_collaborator#) 《Moss Beginner Guide: Understanding Your First AI Agent Transaction》
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 [https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/collaborator/join?token=SmsRd6r0buqxz7in&source=book\_collaborator#](https://www.yuque.com/g/xxxxx-a9v34/sn6lqb/collaborator/join?token=SmsRd6r0buqxz7in&source=book_collaborator#) 《Web3 Career Build Summary》我今天去语雀写了我的笔记
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 今日学习笔记：
 
@@ -133,9 +126,7 @@ Monad Ecosystem Gaming Report
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 今日学习笔记：
 
@@ -144,10 +135,7 @@ Monad Ecosystem Gaming Report
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 今日学习笔记：
 
@@ -156,36 +144,21 @@ Monad Ecosystem Gaming Report
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 今天尝试我自己制作的工作流agent
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 [https://github.com/Suzuki-yki/SeedFill-AutoCAD-GitHub](https://github.com/Suzuki-yki/SeedFill-AutoCAD-GitHub)
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 # 今日学习笔记：
 
@@ -198,15 +171,7 @@ Week 2 | Space / 小型活动策划案
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 # 今日学习笔记：
 
@@ -215,16 +180,7 @@ Week 2 | Space / 小型活动策划案
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 今日学习笔记，和ai探讨了我该做什么项目,点击这个连接可以查看详情 [https://github.com/Suzuki-yki/LUMI-Relay-Szk65-/blob/main/README.md](https://github.com/Suzuki-yki/LUMI-Relay-Szk65-/blob/main/README.md)
 
@@ -233,17 +189,7 @@ Week 2 | Space / 小型活动策划案
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 ### **今日学习笔记：**
 
@@ -254,18 +200,7 @@ go-learning学到的tx.origin看交易从谁开始，msg.sender看现在谁在�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # Web3 面试学习笔记
 
@@ -284,19 +219,7 @@ Web3 面试准备不能只靠背概念，而要同时完成“了解项目、夯
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 ### Web3 安全与合规学习笔记
 
@@ -309,20 +232,7 @@ Web3 面试准备不能只靠背概念，而要同时完成“了解项目、夯
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 # Web3 社区运营学习笔记（今日学习总结）
 
@@ -698,21 +608,7 @@ Web3 社区运营是一项综合能力要求较高的工作，需要具备内容
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 # **今日学习笔记：**
 
@@ -972,22 +868,7 @@ contract MyContract {
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 ## **今日学习笔记：**
 
@@ -1062,23 +943,7 @@ EVM（Ethereum Virtual Machine）是 **以太坊的"大脑"**，是专门用来\
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 # 今日学习日记：
 
@@ -1118,25 +983,7 @@ EVM（Ethereum Virtual Machine）是 **以太坊的"大脑"**，是专门用来\
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 ## **今日学习日记：**
 
@@ -1206,26 +1053,7 @@ Marketplace 比较： owner == msg.sender
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 ## **今日学习笔记：**
 
@@ -1265,27 +1093,7 @@ AI告诉我一句话：**Update your own state before interacting with others** 
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 ### 今日学习笔记：
 
@@ -1313,4 +1121,10 @@ _这都是我请教AI了解到的知识(｡ì \_ í｡)_
 
 **以上就是今天学习的进度，因为手机打字设计排版实在太麻烦了，主播只写这么多了，明天我要先学了之后用电脑完成我的学习日记！ヽ(；▽；)ノ**
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+<https://www.yuque.com/g/xxxxx-a9v34/whvfgq/ltrr19ipr9gogf66/collaborator/join?token=G6RL0cDEl9Pm8IJy&source=doc_collaborator#> 《产品可行性分析》这是我目前构思的产品内容
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

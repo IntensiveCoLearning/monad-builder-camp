@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Leng-Winona
-
-**GitHub ID:** Leng-Winona
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 285679060
+- Name: Leng-Winona
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

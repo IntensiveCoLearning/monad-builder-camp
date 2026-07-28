@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# elizabetheeeeeing-dev
-
-**GitHub ID:** elizabetheeeeeing-dev
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 251948042
+- Name: elizabetheeeeeing-dev
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

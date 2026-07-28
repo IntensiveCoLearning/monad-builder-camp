@@ -1,34 +1,28 @@
----
-timezone: UTC+8
----
-
-# song-tuo
-
-**GitHub ID:** song-tuo
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 97003011
+- Name: song-tuo
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+# 2026-07-17
+
 ![3eb82b8e1ab073ca7dcc877f05a14c62.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/song-tuo/images/2026-07-17-1784286944702-3eb82b8e1ab073ca7dcc877f05a14c62.png)
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+# 2026-07-15
 
 ![bdc031645fdee4157f3e06e977dcedac.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/song-tuo/images/2026-07-15-1784113517375-bdc031645fdee4157f3e06e977dcedac.png)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
+# 2026-07-13
 
 ```
 “零到一”。这里的“一”不是一个完整成熟的商业系统，而是一个能够证明 idea 核心价值的 demo。这个 demo 应该能让目标用户、潜在投资人或团队成员体验到产品解决什么问题、核心流程是什么、价值是否成立。
@@ -90,8 +84,7 @@ Web3 开发主要有五个方向：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
+# 2026-07-11
 
 ```
 本周最大的收获不是某个具体技术点，是对 Web3 和以太坊生态的心态有了调整。
@@ -106,30 +99,21 @@ Web3 现在整体还处在很早期，只看价格意义不大，也容易变得
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
+# 2026-07-10
 
 ![Weixin Image_20260710190640_269_2.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/song-tuo/images/2026-07-10-1783681933203-Weixin_Image_20260710190640_269_2.png)
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
+# 2026-07-09
 
 ![cab88576632f3d57cfa1f1a9fac07351.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/song-tuo/images/2026-07-09-1783597076612-cab88576632f3d57cfa1f1a9fac07351.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
+# 2026-07-08
 
 # 课程笔记：Agent 如何高效、安全地花钱（FluxA · AI-Native Payment Infrastructure）
 
@@ -226,12 +210,7 @@ Agent 高效安全花钱的关键 = **给它一个身份（Agent ID）+ 一次�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
+# 2026-07-07
 
 # 普通开发者如何进入以太坊协议层（EPF7）
 

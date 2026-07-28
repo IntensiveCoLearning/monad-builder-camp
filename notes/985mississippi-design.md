@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# 985mississippi-design
-
-**GitHub ID:** 985mississippi-design
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 296051905
+- Name: 985mississippi-design
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
+
 今天终于空出来时间听大家的分享！真的发现大家都好厉害！
 
 然后我昨天也是因为学校这边的事情所以没有按时打卡学习，我争取这两天追上大家的进度~
@@ -42,6 +35,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
 
 今天其实重点主要是把昨天的内容和今天的内容进行学习
 
@@ -64,7 +58,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
+# 2026-07-06
 
 今天主要是进行系统的web3扫盲
 

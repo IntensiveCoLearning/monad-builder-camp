@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Ziggy
-
-**GitHub ID:** 0621Zoeng
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 94673551
+- Name: 0621Zoeng
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Click-75
-
-**GitHub ID:** Click-75
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 293765904
+- Name: Click-75
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

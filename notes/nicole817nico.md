@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# nicole817nico
-
-**GitHub ID:** nicole817nico
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 218213697
+- Name: nicole817nico
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

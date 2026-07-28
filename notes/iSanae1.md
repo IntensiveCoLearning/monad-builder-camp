@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# iSanae1
-
-**GitHub ID:** iSanae1
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 126803844
+- Name: iSanae1
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
+
 # **Day 2 学习笔记：工具准备与 Builder 身份**
 
 ## 一、工具准备：搭建远程工作基础设施
@@ -50,7 +43,7 @@ Proof of Work 是 Web3 中具颠覆性的概念——传统简历是自我声明
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
+# 2026-07-09
 
 # **Day 1 学习笔记：开营与 Web3 入门 — 我为什么要进入链上世界？**
 
@@ -307,8 +300,7 @@ EVM 的核心意义在于**确定性**：同一段智能合约代码在所有节
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
+# 2026-07-07
 
 # **Web3 实习计划学习笔记：从认知到 Builder 的五周旅程**
 

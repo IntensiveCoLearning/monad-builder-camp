@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yiyaya304
-
-**GitHub ID:** yiyaya304
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298965614
+- Name: yiyaya304
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

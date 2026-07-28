@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# BBBINGW
-
-**GitHub ID:** BBBINGW
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 240388803
+- Name: BBBINGW
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 # \[Web3（去中心化互联网）\]
 
 **核心特征**：

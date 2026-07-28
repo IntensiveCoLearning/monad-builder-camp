@@ -1,27 +1,21 @@
----
-timezone: UTC+8
----
-
-# elliothunter32-star
-
-**GitHub ID:** elliothunter32-star
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294402932
+- Name: elliothunter32-star
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+# 2026-07-22
+
 今天主要学习关于钱包的知识，掌握了钱包的一些基础的漏洞，假客服索要助记词，助记词发错群，还有陌生空投要求无限授权；包括智能合约的一些常见问题，对于今天的学习，我只掌握了一些基础概念，需要根据今天的内容去深化学习一下
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+# 2026-07-19
 
 # Research Notes：质押、金库标准与收益分配机制
 
@@ -255,38 +249,28 @@ ERC-20（同质化代币标准）
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
+# 2026-07-18
 
 今天学习，怎么用ai辅助，开发自己的钱包
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
+# 2026-07-17
 
 今天主要学习，如果之前没有web3经历，只在其他传统行业工作过，如何修改自己的简历，进入web3行业
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
+# 2026-07-16
 
 今天看了两节课，一个是ai时代如何做reserach，一个是web3的运营流程是怎么样的，ai reserach这边了解到grokpedia这个工具，然后运营的话，核心就是利用ai提升效率，综合来说，还是要利用ai区完善自己的工作流。我在这次web3的学习中，理解熟悉了一些基础概念，感觉核心还是怎么把ai嵌入自己的日常工作当中，最好能利用ai去完善自己的产品
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
+# 2026-07-15
 
 ![592fe03df460c9a59e134965af642c7a.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/elliothunter32-star/images/2026-07-15-1784121207325-592fe03df460c9a59e134965af642c7a.png)
 
@@ -295,12 +279,7 @@ agents.md这个，我后续会结合自己的工作流深入研究一下；然�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
+# 2026-07-12
 
 ## 一、ERC-20 是什么？
 
@@ -533,13 +512,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
+# 2026-07-11
 
 分享一下今天的学习成果，从零搭了一个预测市场 DApp，已经上线了：
 
@@ -552,14 +525,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 ## 一、账户与身份体系
 
@@ -611,15 +577,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ![a672f12f-102a-4ea0-bd4a-38f9327668ac.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/elliothunter32-star/images/2026-07-09-1783605084886-a672f12f-102a-4ea0-bd4a-38f9327668ac.png)![12eaf9c6-c760-4770-a0ae-35d2ccda8daf.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/elliothunter32-star/images/2026-07-09-1783605100079-12eaf9c6-c760-4770-a0ae-35d2ccda8daf.png)
 
@@ -634,16 +592,7 @@ Solidity 没有小数（浮点数），所以用整数模拟小数：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 ![cb2e9382af2db6f6146bc1f17762cdb1.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/elliothunter32-star/images/2026-07-08-1783509776518-cb2e9382af2db6f6146bc1f17762cdb1.png)
 

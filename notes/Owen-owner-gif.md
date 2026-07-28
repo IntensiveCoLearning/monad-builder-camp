@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Owen-owner-gif
-
-**GitHub ID:** Owen-owner-gif
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295873784
+- Name: Owen-owner-gif
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

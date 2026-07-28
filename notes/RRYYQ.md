@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# yurik rong
-
-**GitHub ID:** RRYYQ
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 184450177
+- Name: RRYYQ
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
+
 # **Day 4｜AI + Solidity + 合约部署 学习笔记**
 
 ## **学习目标**
@@ -392,6 +385,7 @@ OpenZeppelin 是实际开发中最重要的智能合约标准库之一。
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
 
 # Web3 实习课程 Day 1 自学笔记 —— 钱包、Monad Testnet 与交易浏览器
 

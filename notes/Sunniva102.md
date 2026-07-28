@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Sunniva102
-
-**GitHub ID:** Sunniva102
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 261756854
+- Name: Sunniva102
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# LauraClark1993
-
-**GitHub ID:** LauraClark1993
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 278289963
+- Name: LauraClark1993
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

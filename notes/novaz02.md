@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Alan
-
-**GitHub ID:** novaz02
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 166926911
+- Name: novaz02
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+# 2026-07-23
+
 社群skill
 
 ![33cb6d448d0d7fef7de2669ad3793589.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/novaz02/images/2026-07-23-1784819727807-33cb6d448d0d7fef7de2669ad3793589.jpg)
@@ -24,13 +17,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
+# 2026-07-22
 
 本次colearning提问的问题帮我又扫清了一些区块链的问题
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
+# 2026-07-21
 
 -   **AI+Crypto 交叉领域核心探索**
     
@@ -59,8 +53,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
+# 2026-07-20
 
 「吹 100 个的概念，不如跑通一个真实的业务，解决一个真实的痛点」
 
@@ -77,9 +70,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
+# 2026-07-19
 
 相信写作当KOL能发财，类似于相信大学读中文系，毕业了能成为作家。
 
@@ -102,21 +93,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
+# 2026-07-18
 
 今天在研究AIcoding用AIcoding了我的推特推文封面以及酒店名宿修图
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
+# 2026-07-17
 
 今天参与了colearning会议yoyo讲了运营方向让内容被看见被理解而不是单纯的写作文章对我有了启发，long分享了开发者运营需要关注哪些用户的反馈以及GitHub要经常刷干货
 
@@ -125,12 +109,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
+# 2026-07-16
 
 本次活动参加了谁是卧底对对以太坊技术协议我抽到了ERC721，ERC-721 是以太坊上的一种非同质化代币标准，主要用来制作 NFT。
 
@@ -141,13 +120,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
+# 2026-07-15
 
 本次为 Mona 实习计划开展的 Web3 运营主题分享会，围绕运营实操逻辑、入行方法、工具使用等内容答疑，核心要点如下：
 
@@ -190,14 +163,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 本次为科研成长主题分享会，主讲人薛伊芙围绕科研原则、AI 工具应用、Web3 科研工具、落地路径等内容展开分享，内容如下：
 
@@ -280,15 +246,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 今天colearning做了销售扮演角色对区块链应用场景有了更深刻理解
 
@@ -299,33 +257,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 今天要到了小海老师黑客松的作品demo万物皆可预测，对黑客松产品介绍有了具体了解如何用视频来介绍产品demo
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 本次参与Web3 Builder共学营第一周周会，完整吸收全员一周学习成果、实操经验、工具方法论与后续共学规划，本周完成零基础Web3入门+链上实操落地+AI开发能力搭建，整体完成从概念认知到可落地项目产出的完整闭环。
 
@@ -374,18 +313,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 本次为 Web3 及 AI 安全基础设施服务商 GoPlus 主办的 AI Agent 安全主题分享会，通过真实高危案例拆解风险并给出落地防护方案，内容如下：
 
@@ -402,60 +330,21 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 ![whiteboard_exported_image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/novaz02/images/2026-07-08-1783524110244-whiteboard_exported_image.png)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今天主要是对**EPF 项目介绍**：EPF 是聚焦以太坊协议层的学习实践项目，分为有津贴的入选通道和无门槛的公开参与通道，核心围绕以太坊共识、网络、密码学等内容开展。中途听着有些专业名词还是听着有些云里雾里需要加强记忆以及学习，同时colearning讲到了vibecoding
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 推特已更新最新推文[https://x.com/0xAlan39/status/2074086835542995232?s=20](https://x.com/0xAlan39/status/2074086835542995232?s=20)  
 

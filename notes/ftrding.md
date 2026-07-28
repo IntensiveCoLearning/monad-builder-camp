@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# ftrding
-
-**GitHub ID:** ftrding
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 139351910
+- Name: ftrding
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

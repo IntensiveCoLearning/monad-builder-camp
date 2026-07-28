@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Gooooods
-
-**GitHub ID:** Gooooods
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 180412556
+- Name: Gooooods
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

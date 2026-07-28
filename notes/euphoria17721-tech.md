@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# euphoria17721-tech
-
-**GitHub ID:** euphoria17721-tech
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295150940
+- Name: euphoria17721-tech
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 1.  ## 活动简介
     
 
@@ -230,6 +223,7 @@ AI 提供了结构和初稿，但以下部分主要由我自己判断：
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 # Moss 是什么？为什么 AI Agent 需要一个 Web3 安全协作框架
 
@@ -381,7 +375,7 @@ Moss 是一个面向 Monad 生态的 AI Agent × Web3 开源框架。它试图�
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 # Open Source Contribution：Moss Documentation Suggestion
 
@@ -459,8 +453,7 @@ I would be happy to draft a first version if maintainers think this direction is
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 # Open Source Contribution Plan：Moss
 
@@ -586,9 +579,7 @@ Moss 的 README 已经说明它通过 `discover → load → action → simulate
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 今天学习了一下钱包的设计，收获颇深
 
@@ -597,10 +588,7 @@ Moss 的 README 已经说明它通过 `discover → load → action → simulate
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 # GitHub Exploration Log：Moss
 
@@ -754,11 +742,7 @@ Pull Requests 里可以看到很多协议接入和核心能力改进，例如：
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 进入 Week 3 团队后，我希望主要承担 **Ops / Product Ops** 角色。我目前的方向是基于 Monad 的高频交互场景，继续推进 **Monad Rank Rush**：一个链上社交小游戏 + 实时排行榜 + 任务徽章 + Meme 传播的 Campaign 原型。我能负责的部分不是复杂合约开发，而是把产品机制设计得更适合用户参与和社区传播。
 
@@ -772,12 +756,7 @@ Pull Requests 里可以看到很多协议接入和核心能力改进，例如：
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 \# Week 2 学习记录：Monad / Web3 / Ops
 
@@ -1224,13 +1203,7 @@ Pull Requests 里可以看到很多协议接入和核心能力改进，例如：
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 # Web3 学习笔记续篇
 
@@ -1255,14 +1228,7 @@ Week 1 的时候，我做了 Monad Rank Rush 这个方向，一个基于 Monad �
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 这两周我围绕 Monad 和 Web3 高频交互场景做了一次比较完整的入门实践。从一开始只是知道 Monad 是一条高性能 EVM 链，到后来逐渐理解它更适合承载什么类型的产品，我对 Web3 应用的理解变得具体了很多。
 
@@ -1283,15 +1249,7 @@ AI 在这个过程中帮我做了很多整理工作，比如帮我把零散想�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 认真看完这份 Web3 运营全景流程图，很多之前模糊的思路一下子理顺了，也纠正了我长久以来对 Web3 运营比较片面的理解。
 
@@ -1314,16 +1272,7 @@ AI 在这个过程中帮我做了很多整理工作，比如帮我把零散想�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 1\. Week 1 作品链接
 
@@ -1396,17 +1345,7 @@ Ops：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 ![图片.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-14-1784006262654-__.png)
 
@@ -1587,18 +1526,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 完成了一次部署合约交互
 
@@ -1607,19 +1535,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 用 AI 生成一个最小 Solidity 合约，学习中。。。。还是不太懂
 
@@ -1628,20 +1544,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 重新复盘听完本节课内容，系统梳理了AI智能体自主支付的完整底层基础设施。明晰了通过搭建人机共管钱包、配套风控框架，能够有效管控AI自主操作，避免无序支出；同时熟悉了各类支付相关产品、实际落地应用场景，对行业后续的发展趋势也有了整体认知。
 
@@ -1650,21 +1553,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 我使用 Remix 编写并编译了一个最小化的 `MessageBoard` 留言板智能合约，通过课程专用钱包连接 Monad Testnet 后完成了合约部署，并记录了部署后的合约地址和部署交易 hash。部署完成后，我调用了 `message()` 等 read function 读取链上留言内容，又调用 `setMessage()` write function 修改留言，并再次读取确认链上状态已经更新。通过这次操作，我完整体验了从 Solidity 合约源码、编译、部署、链上交互到区块浏览器验证的全过程。
 
@@ -1673,22 +1562,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-09-1783564839294-image.png)![bfef306100b3094ecd492b7707f8f629.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/euphoria17721-tech/images/2026-07-09-1783564846939-bfef306100b3094ecd492b7707f8f629.png)
 
@@ -1715,23 +1589,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 学会get测试币，会看transaction 的 detail了
 
@@ -1740,24 +1598,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 普通互联网产品所有数据都存在公司后台，账号、道具平台想封就封，里面的虚拟东西也只能在这个软件里用。 链上产品数据存在全网节点，改不了，资产是自己私钥说了算，平台拿不走，虚拟资产还能跨软件流转，规则提前写死没法后台暗改。
 
@@ -1768,25 +1609,7 @@ Week 1 之前，我对 Monad 的理解比较简单，主要是“高性能 EVM �
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 学习
 
@@ -1886,4 +1709,170 @@ Monad Rank Rush 是一个轻量级链上社交小游戏。\
 
 **你会不会愿意玩一局，并把战绩分享给朋友？**
 <!-- DAILY_CHECKIN_2026-07-27_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+Moss 新人入门指南：理解 AI Agent 如何安全参与 Web3
+项目链接：<https://github.com/nishuzumi/moss>
+
+1. Moss 是什么？
+   Moss 是一个面向 Monad 生态的 AI Agent × Web3 开源框架。
+   它的核心目标是：
+   让 AI Agent 能够理解、构建和模拟链上协议操作，但不直接替用户签名或发送交易。
+   Moss 的 README 中写到，它通过：
+   discover → load → action → simulate
+   把 Monad 协议交互变成 Agent 可以调用的 Capabilities。它会构建和验证 未签名交易，但不会签名，也不会发送交易。
+   这对 Web3 很重要，因为链上操作涉及钱包、签名、授权和资产安全。AI Agent 可以帮助用户理解和准备操作，但最终签名权应该留给用户。
+2. 为什么 AI Agent 需要 Moss？
+   在普通应用里，AI Agent 可以帮用户点击按钮、整理资料、调用 API。
+   但在 Web3 里，情况更复杂。
+   一笔链上操作可能涉及：
+   钱包地址
+   Token 授权
+   合约调用
+   资产转移
+   交易失败或滑点风险
+   不可逆状态变化
+   如果 Agent 直接根据一句自然语言生成交易并发送，风险会很高。
+   Moss 的价值在于，它给 Agent 增加了一个更安全的中间层：
+   先发现可以调用什么能力。
+   再读取这个能力需要什么参数。
+   然后构建未签名交易。
+   最后模拟结果，让用户在签名前理解可能发生什么。
+   所以 Moss 不是让 Agent “更大胆地自动执行”，而是让 Agent “更清楚、更安全地辅助用户”。
+3. Moss 的核心工作流
+   Step 1：discover
+   discover 的作用是发现当前有哪些协议能力可以调用。
+   你可以把它理解成：
+   Agent 先问系统：“我现在能操作哪些协议？有哪些方法可以用？”
+   比如：
+   ERC-20 transfer
+   ERC-20 approve
+   WMON wrap / unwrap
+   Kuru swap
+   PancakeSwap swap
+   这一步帮助 Agent 避免凭空猜测协议能力。
+   Step 2：load
+   load 的作用是读取某个 Capability 的详细规则。
+   你可以理解成：
+   Agent 选中一个能力后，需要先看说明书。
+   比如一个 swap 能力可能需要：
+   tokenIn
+   tokenOut
+   amountIn
+   slippage
+   account
+   这一步能让 Agent 明确参数要求，而不是随便拼交易。
+   Step 3：action
+   action 的作用是根据参数构建操作。
+   这里 Moss 会生成未签名交易。
+   注意：这一步还没有真正发送交易，也没有动用用户资产。
+   它只是把用户意图转化成一笔可以进一步检查和模拟的链上操作。
+   Step 4：simulate
+   simulate 的作用是在签名前模拟交易结果。
+   这一步非常关键。
+   模拟结果可以告诉 Agent 和用户：
+   交易是否可能失败
+   会产生哪些状态变化
+   是否有 Warnings
+   Receipt 是否能解释所有 Changes
+   如果模拟失败，或者出现风险警告，就不应该继续让用户签名。
+4. Moss 最重要的安全边界
+   Moss 有一个非常重要的设计：
+   Moss 只构建和模拟未签名交易，不负责签名和发送交易。
+   也就是说：
+   Agent 可以帮助用户理解操作。
+   Agent 可以准备交易。
+   Agent 可以模拟交易结果。
+   Agent 可以解释风险。
+   但最终是否签名，要由用户或钱包决定。
+   这对 AI Agent × Web3 很重要。
+   因为如果 Agent 直接拥有签名和发送权限，用户可能在不理解交易内容的情况下损失资产。Moss 把 Agent 辅助和用户授权分开，能让链上交互更可解释、更可验证。
+5. 新人如何阅读 Moss 项目？
+   如果你是第一次打开 Moss 仓库，可以按这个顺序阅读：
+6. 先读 README
+   README 会告诉你：
+   Moss 是什么
+   为什么需要 Moss
+   支持哪些协议
+   如何快速开始
+   如何作为 MCP server 使用
+   如何作为 library 使用
+   项目目录结构是什么
+7. 再读 Getting Started
+   Getting Started 更适合实际上手。
+   它会帮助你理解 Moss 的基本运行流程。
+8. 再看 docs
+   重点关注：
+   MCP tool contracts
+   Agent safety rules
+   Protocol onboarding
+   Architecture decisions
+   这些文档能帮助你理解 Moss 不只是一个 SDK，而是一套面向 Agent 的链上交互框架。
+9. 最后看 examples
+   examples 可以帮助你理解代码如何使用 Moss。
+   如果你暂时看不懂全部代码，也可以先理解输入、输出和流程。
+10. 新人可以如何参与 Moss 开源贡献？
+    不一定要一开始就写复杂代码。
+    Moss 这类项目也很需要文档、教程和 FAQ。
+    适合新人的贡献方式包括：
+    阅读 README 后整理中文学习笔记。
+    写一份 Beginner FAQ。
+    解释 discover → load → action → simulate 工作流。
+    整理 Moss 和普通 SDK 的区别。
+    提出文档改进 Issue。
+    帮助补充新手教程。
+    记录自己运行 examples 时遇到的问题。
+    如果你是 Dev Builder，可以尝试：
+    跑通本地环境。
+    阅读 packages 目录。
+    理解已有协议 Adapter。
+    修复文档或示例中的小问题。
+    后续尝试贡献新的协议 Adapter。
+    如果你是 Ops / Research Builder，可以尝试：
+    写教程。
+    做项目解读。
+    整理使用场景。
+    设计新人活动。
+    帮助更多开发者理解 Moss。
+11. Moss 常见问题 FAQ
+    Q1：Moss 是钱包吗？
+    不是。
+    Moss 不负责保管资产，也不负责替用户签名。
+    Q2：Moss 会自动发送交易吗？
+    不会。
+    Moss 构建和模拟未签名交易，但不签名、不发送。
+    Q3：Moss 和普通 SDK 有什么区别？
+    普通 SDK 更偏开发者直接调用代码。
+    Moss 更强调 Agent 工作流、安全边界、模拟结果和 Receipt 验证，让 AI Agent 可以更可靠地理解链上操作。
+    Q4：为什么需要 simulate？
+    因为链上操作有风险。
+    在用户签名前先模拟，可以提前发现失败、Warnings 或不符合预期的状态变化。
+    Q5：什么是 Capability？
+    Capability 可以理解成一个协议能力。
+    比如 transfer、approve、swap、wrap 都可以是 Agent 能调用的能力。
+    Q6：什么是 Receipt？
+    Receipt 是模拟后对结果的结构化解释。
+    它帮助 Agent 和用户理解这笔操作会产生什么变化。
+    Q7：新人适合从哪里开始贡献？
+    最适合从文档开始。
+    比如整理 FAQ、写中文入门笔记、补充教程、提出 Issue，都是有价值的开源贡献。
+12. 一个简单理解
+    如果用一句话解释 Moss：
+    Moss 是 AI Agent 和链上协议之间的安全协作层。
+    它不是让 AI 直接替用户操作钱包，而是让 AI 在签名前帮助用户看懂：
+    能做什么
+    需要什么参数
+    会构建什么交易
+    模拟后会发生什么
+    有没有风险提示
+    这也是我认为 Moss 未来有价值的地方。
+    随着 AI Agent 进入 DeFi、钱包、链上任务和多协议交互场景，类似 Moss 这样的框架会越来越重要。
+13. 总结
+    Moss 的核心不是“让 AI 更自动”，而是“让 AI 更安全地协助用户”。
+    它通过 discover → load → action → simulate 的流程，让 Agent 能够标准化地理解和准备链上操作，同时保留用户最终签名权。
+    对新人来说，学习 Moss 不只是学习一个开源项目，也是在理解 AI Agent 进入 Web3 后最重要的问题：
+    AI 可以辅助用户，但不能替用户放弃判断。
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

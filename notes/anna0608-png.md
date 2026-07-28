@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Zhong Sirui
-
-**GitHub ID:** anna0608-png
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 199122215
+- Name: anna0608-png
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

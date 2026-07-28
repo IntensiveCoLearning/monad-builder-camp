@@ -1,27 +1,21 @@
----
-timezone: UTC+8
----
-
-# Rei
-
-**GitHub ID:** rainypilgrimage-beep
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 267839572
+- Name: rainypilgrimage-beep
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 -   团队线上讨论会议
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 -   黑客松赛道校准方向
     
@@ -30,15 +24,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 脑暴方案，产出A方向与B方向，待讨论决定
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 -   提交Moss PR
     
@@ -47,9 +40,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 -   完成Moss介绍、新手教程
     
@@ -62,10 +53,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 -   产品分享直播Building in the AI Era: From Product to Agent Economy
     
@@ -74,11 +62,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 -   阅读Moss README
     
@@ -89,12 +73,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 -   认识Moss项目
     
@@ -103,13 +82,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
+# 2026-07-17
 
 -   完成提交 **Product-to-Market Brief**
     
@@ -118,14 +91,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 -   完成 EIP Reading Card
     
@@ -136,15 +102,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 -   参加 7.15如何在 Web3 世界里开启你的第一段运营经历
     
@@ -155,16 +113,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 ```
 完成钱包、智能合约、交易与 ERC-20 授权的最小理解。
@@ -177,17 +126,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 -   查看通用资料，了解常见职业、岗位和成长路径
     
@@ -202,18 +141,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 -   在 Monad Testnet 完成 LearningCheckin 合约部署与读写验证，并围绕受限 Agent 的预算、授权、支付与验收边界完成 Monad 产品方向分析，提出低频 MVP 与后续验证问题。
     
@@ -222,19 +150,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 -   综合官方课程材料、嘉宾Agent支付分享、Agent安全分享内容，展开研究，撰写MiniDemo0
     
@@ -247,20 +163,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 -   完成为什么是monad任务research，查阅buildanything对应05课参考
     
@@ -273,21 +176,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 -   完成智能合约实践，部署第一个 Monad 合约
     
@@ -300,22 +189,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 完成了 Monad Testnet 上的第一笔测试网交易，获取并使用测试网 MON，向另一个测试账户转账
 
@@ -328,23 +202,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 -   完成 Week 1 前置准备任务进入 Web3 与链上世界。
     
@@ -365,24 +223,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 1.  创建项目集合 记录群内信息
     
@@ -392,4 +233,12 @@ Web3 暑期实习计划 - Monad Buidler Camp
     
 4.  工具准备 web3常用工具和远程办公软件配置
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+市场调研与竞品分析
+
+团队会议
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

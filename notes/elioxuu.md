@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# elioxuu
-
-**GitHub ID:** elioxuu
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 297545367
+- Name: elioxuu
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

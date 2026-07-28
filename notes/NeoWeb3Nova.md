@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Neo.Yun
-
-**GitHub ID:** NeoWeb3Nova
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 221855057
+- Name: NeoWeb3Nova
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 今日完成：  
   
 1\. 对本周任务进行了集中收尾和梳理，汇总了团队组建、问题定义、Mini Demo 范围、技术论证、团队计划、重要决定与 AI 使用记录，并检查了各文档中的成员、方向和范围是否一致。  
@@ -34,6 +27,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 ## 今日完成
 
@@ -86,7 +80,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 今日主题: 团队创意投票锁定 & Mini Demo 技术骨架推进  
 学习投入时长: 约 2–3 小时  
@@ -126,8 +120,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 主题：项目创意收集与 MVP 方向梳理  
   
@@ -154,9 +147,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 1\. 今日目标  
   
@@ -202,10 +193,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
+# 2026-07-17
 
 Week 2 Day 5｜Moss Neverland 协议适配器 PR 提交 + Proof of Work 记录  
   
@@ -241,11 +229,7 @@ GitHub：[https://github.com/NeoWeb3Nova](https://github.com/NeoWeb3Nova)
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
+# 2026-07-16
 
 今日完成：  
   
@@ -274,12 +258,7 @@ GitHub：[https://github.com/NeoWeb3Nova](https://github.com/NeoWeb3Nova)
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
+# 2026-07-15
 
 Week 2｜Moss Core 首个开源 PR 打卡  
   
@@ -297,13 +276,7 @@ Week 2｜Moss Core 首个开源 PR 打卡
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
+# 2026-07-14
 
 【Week 2｜Dev / Tech Track 打卡】  
   
@@ -359,14 +332,7 @@ Moss 的价值不是让 AI Agent 更快发起交易，而是在用户签名前�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 今日完成：  
 \- 确定 Dev / Tech 主方向。  
@@ -390,15 +356,7 @@ Moss 的价值不是让 AI Agent 更快发起交易，而是在用户签名前�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 今天是 Web3 Summer Internship Program / Monad Builder Camp 的 Day 5，主题是「AI 工具与 Vibe Coding 入门」。  
   
@@ -425,16 +383,7 @@ Moss 的价值不是让 AI Agent 更快发起交易，而是在用户签名前�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 今天是 Web3 Summer Internship Program / Monad Builder Camp 的 Day 4，主题是“第一笔 Monad Testnet 链上交易准备”。  
   
@@ -481,17 +430,7 @@ Testnet 虽然没有真实资产价值，但流程非常接近真实链上开发
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 今日完成：  
 1\. 根据 Week 1 Day 3 任务，整理 Monad Testnet 配置清单：RPC URL、Chain ID、Explorer、Faucet。  
@@ -516,18 +455,7 @@ Testnet 虽然没有真实资产价值，但流程非常接近真实链上开发
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 周次: Week 1 - 认知奠基期 / 进入 Onchain World  
 Day: Day 2  
@@ -562,19 +490,7 @@ Day: Day 2
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天核心学习了，monad的gas机制：
 
@@ -644,4 +560,61 @@ Monad 生态技术文章还提到，Monad 的目标利用率是 80%，高于 Eth
 
 **Monad 的 Gas 价格模型像 Ethereum：Base Fee + Priority Fee + Max Fee；但收费对象不一样：Ethereum 主要按 Gas Used 收费，Monad 按 Gas Limit 收费。**
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+&#x20;【Web3 暑期实习计划｜Monad Builder Camp 每日打卡】\
+\
+&#x20;   日期：2026 年 7 月 28 日\
+&#x20;   周次：Week 4 Day 2\
+&#x20;   方向：Tech / Dev Builder\
+&#x20;   主题：验证 Agent 钱包交易黑匣子 Idea，完成组队与需求预演\
+\
+&#x20;   今日完成：\
+\
+&#x20;   1\. 完成 Problem & Idea Card，确定 Week 4 Hackathon 方向为「Agent Wallet Flight Recorder｜Agent 钱包交易黑匣子」。\
+\
+&#x20;      我想帮助使用 AI Agent 操作链上资产的个人用户，解决两个问题：签名前看不懂自己将授权什么；交易异常后无法还原「用户意图—Agent 提案—风险提示—用户确认—实际执行」之间发生了什么。\
+\
+&#x20;   2\. 完成团队确认。Week 3 原团队继续合作：\
+&#x20;      \- Neo：Dev / Tech Lead，负责 Moss 集成、决策收据和技术验证；\
+&#x20;      \- Riso：Product / Research / Pitch，负责需求验证和项目表达；\
+&#x20;      \- eleven：UI / Visual Design，负责核心流程和证据时间线设计。\
+\
+&#x20;      三人每周各投入约 6 小时，继续通过微信群和 GitHub 协作。\
+\
+&#x20;   3\. 使用 3 个 AI Persona 进行了需求预演：\
+&#x20;      \- Agent 钱包新手最在意金额、授权对象和最坏损失；\
+&#x20;      \- DeFi 高频用户最在意最终签署的交易是否就是刚才模拟的交易；\
+&#x20;      \- 钱包安全开发者最在意交易版本绑定、哈希可复现和证据来源。\
+\
+&#x20;   4\. 根据预演结果，初步决定「缩小范围」：\
+&#x20;      \- 从完整的「责任归属系统」缩小为「交易版本绑定 + 可核验决策收据」；\
+&#x20;      \- 第一版只验证一笔 Swap；\
+&#x20;      \- 保留 Moss action → simulate、风险解释、用户确认和收据完整性校验；\
+&#x20;      \- 暂不做自动判责、多协议、多角色审批、完整聊天记录上链和自动执行。\
+\
+&#x20;   今日最重要的收获：\
+\
+&#x20;   留下更多日志，并不等于用户真正理解了风险。产品不应该把用户点击确认包装成免责证明，而应该忠实记录：Agent 提议了什么、模拟发现了什么、用户确认了什么、链上最终执行了什么。\
+\
+&#x20;   从第一性原理看，这个产品的核心价值不是替任何一方判责，而是保证「被解释和模拟的交易」与「用户最终签署的交易」可以被独立核验。\
+\
+&#x20;   真实性说明：\
+\
+&#x20;   今天完成的是 AI Persona 需求预演，不将模拟内容冒充 3 位真实用户反馈。正式进入集中开发前，仍需访谈 3 位真实用户或相关人员，确认问题是否真实存在、他们当前如何解决，以及是否愿意保存和查看决策收据。\
+\
+&#x20;   下一步：\
+\
+&#x20;   1\. 找 3 位真实用户完成简短交流；\
+&#x20;   2\. 根据真人反馈确认「继续 / 缩小 / 调整 / 合并 / 暂停」；\
+&#x20;   3\. 如果需求成立，再进入 Build Sprint，验证一笔 Swap 的最小决策收据。\
+\
+&#x20;   今日 GitHub 证据：\
+\
+&#x20;   \- 218eedd：提交 Agent 钱包黑匣子 Idea Card\
+&#x20;   \- 7aa018c：提交 Team Matching Card\
+&#x20;   \- 86ab681：提交 AI Persona Reality Check，并纠正为 Week 4 Day 2
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

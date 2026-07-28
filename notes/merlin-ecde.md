@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# okkotsu.eth
-
-**GitHub ID:** merlin-ecde
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 118063007
+- Name: merlin-ecde
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

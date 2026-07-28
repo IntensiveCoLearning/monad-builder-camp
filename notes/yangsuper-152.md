@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yangsuper
-
-**GitHub ID:** yangsuper-152
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 189278981
+- Name: yangsuper-152
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

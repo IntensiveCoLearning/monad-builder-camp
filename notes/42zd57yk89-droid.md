@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 42zd57yk89-droid
-
-**GitHub ID:** 42zd57yk89-droid
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294774829
+- Name: 42zd57yk89-droid
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

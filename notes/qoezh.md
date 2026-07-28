@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# qoezh
-
-**GitHub ID:** qoezh
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 181685672
+- Name: qoezh
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

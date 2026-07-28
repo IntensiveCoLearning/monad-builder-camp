@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# zcq99
-
-**GitHub ID:** zcq99
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 144800844
+- Name: zcq99
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

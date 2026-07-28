@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Shuhan Zhang
-
-**GitHub ID:** Manifold68575
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 248613480
+- Name: Manifold68575
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

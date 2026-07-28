@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# hedyhai0125-debug
-
-**GitHub ID:** hedyhai0125-debug
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 252734089
+- Name: hedyhai0125-debug
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

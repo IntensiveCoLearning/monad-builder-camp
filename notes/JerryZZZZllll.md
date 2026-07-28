@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# JerryZZZZllll
-
-**GitHub ID:** JerryZZZZllll
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 220491397
+- Name: JerryZZZZllll
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

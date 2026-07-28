@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# ComAsUare
-
-**GitHub ID:** ComAsUare
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 39948706
+- Name: ComAsUare
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 monad相关学习，链接： [https://github.com/ComAsUare/LearnMonadBuild/](https://github.com/ComAsUare/LearnMonadBuild/)
 
 笔记：
@@ -62,6 +55,7 @@ monad中，eoa被eip7702委托后，由于reserve balance,
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 参与例会，黑客松赛道分享和共学
 
@@ -84,7 +78,7 @@ monad中，eoa被eip7702委托后，由于reserve balance,
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
+# 2026-07-22
 
 1.  参加钱包开发新人避坑与需求直播分享
     
@@ -157,8 +151,7 @@ monad中，eoa被eip7702委托后，由于reserve balance,
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
+# 2026-07-21
 
 参加building in AI era和stevie project两场直播分享
 
@@ -219,9 +212,7 @@ datadance：数据隐私公链
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
+# 2026-07-19
 
 1.学习数据库原理后构建清单应用
 
@@ -232,10 +223,7 @@ datadance：数据隐私公链
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
+# 2026-07-18
 
 1.  builder anthing学习
     
@@ -320,11 +308,7 @@ datadance：数据隐私公链
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
+# 2026-07-16
 
 1.  测试网交易
     
@@ -337,12 +321,7 @@ datadance：数据隐私公链
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
+# 2026-07-14
 
 参加ai时代researcher和moss直播分享
 
@@ -369,13 +348,7 @@ datadance：数据隐私公链
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
+# 2026-07-13
 
 1.参加ai开发与实践直播分享
 
@@ -430,14 +403,7 @@ datadance：数据隐私公链
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 实习手册整理：
 
@@ -547,15 +513,7 @@ datadance：数据隐私公链
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 1.  实习手册整理
     
@@ -640,16 +598,7 @@ datadance：数据隐私公链
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 1、进入epf回放观看。
 
@@ -692,17 +641,7 @@ datadance：数据隐私公链
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 观看agent支付、进入epf两个分享。
 
@@ -740,18 +679,7 @@ ai高效，安全的支付是核心问题；
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 开营仪式，xiaohai build分享，直播回放。
 
@@ -793,4 +721,57 @@ ai高效，安全的支付是核心问题；
         * 3. raptocast 区块传播
 ```
 <!-- DAILY_CHECKIN_2026-07-07_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+1. moss学习：
+
+   ```markdown
+   ```
+
+moss
+&#x20;   1\. moss是什么
+&#x20;       把dapp用户交互抽象成agent调用
+&#x20;       1\. 发现协议。kuru,“全链上订单薄（Fully On-Chain Order Book）”去中心化交易所（DEX）,&#x20;
+&#x20;       neverland, Monad 生态中最核心、体量最大的原生 DeFi 借贷协议
+&#x20;       morpho 无需许可、高效且高度模块化的去中心化借贷协议。
+&#x20;       2\. 加载协议
+&#x20;           协议能力
+&#x20;       3\. 构造交易
+&#x20;           由能力传送参数构建交易
+&#x20;       4\. 模拟交易
+&#x20;           mcp告诉agent模拟情况
+&#x20;   2\. 仓库组成
+&#x20;       monad 上的mcp协议层
+&#x20;       1\. template模板包起步
+&#x20;       2\. adr架构， agent读adr包，获取标准
+&#x20;       3\. agent从用户开始，完成第一笔swap
+&#x20;       4\. 先issue对齐，再动手；
+&#x20;   3\. 贡献方向
+&#x20;       1\. 主流协议补充
+&#x20;       2\. 新兴协议添加
+&#x20;       3\. moss构建应用
+&#x20;       4\. 推广采用，内容创作，社区协作
+&#x20;   4\. 先当用户
+&#x20;       claude code子agent，在本地fork moss主网上进行第一笔真实swap
+&#x20;   5\. agent使用
+&#x20;       1\. 先对齐issue
+&#x20;           方向确认再写代码
+&#x20;       2\. one goal per change
+&#x20;           agent无关改动一律复原
+&#x20;       3\. 你签名你负责
+&#x20;           agent流程没那么熟悉，或能力不强。兜底，人工审计测试代码
+&#x20;      &#x20;
+&#x20;   6\. 起步
+&#x20;       1\. package模版阅读，然后和agent提需求
+&#x20;           issue提出完善
+&#x20;       2\. skill/mcp推荐：
+&#x20;           https\://github.com/mattpocock/skills
+&#x20;       3\. 动手，认领isuue
+&#x20;           写一篇教程
+&#x20;           搭一个demo
+&#x20;       catogory lab, 开源列表
+&#x20;       foundry-monad免去本地跑节点
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

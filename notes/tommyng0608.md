@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# tommyng0608
-
-**GitHub ID:** tommyng0608
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298249123
+- Name: tommyng0608
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

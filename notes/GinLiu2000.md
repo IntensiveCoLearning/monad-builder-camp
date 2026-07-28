@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# GinLiu2000
-
-**GitHub ID:** GinLiu2000
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 125204251
+- Name: GinLiu2000
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

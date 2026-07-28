@@ -1,34 +1,28 @@
----
-timezone: UTC+8
----
-
-# xianyu104
-
-**GitHub ID:** xianyu104
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294672879
+- Name: xianyu104
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+# 2026-07-14
+
 为什么昨天不让打卡，今天又可以了
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
 
 今天学习了大家的学习笔记，听了大家第一周的作业分享，明白了学习英语的重要性
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
+# 2026-07-09
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xianyu104/images/2026-07-09-1783606394588-image.png)
 
@@ -37,8 +31,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
+# 2026-07-08
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/xianyu104/images/2026-07-08-1783524959638-image.png)
 
@@ -47,10 +40,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
+# 2026-07-07
 
 今天听了老师的分享，以太坊方面的，没有太理解，然后看老师使用codex做demo
 
@@ -59,12 +49,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
+# 2026-07-06
 
 观看了开营仪式，xiaohai老师的成长经历，还有8点的co-learning，观看苏生老师演示如何去做第一周的作业，
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Jaina0624
-
-**GitHub ID:** Jaina0624
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 251003778
+- Name: Jaina0624
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

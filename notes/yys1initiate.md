@@ -1,34 +1,28 @@
----
-timezone: UTC+8
----
-
-# yys1initiate
-
-**GitHub ID:** yys1initiate
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 159123665
+- Name: yys1initiate
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 今日休息
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 今天休息了一天ing
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 今天加了一个同学的微信，和她一起商量了一下她的项目，但是感觉还有很多问题，范围有点大了：文档自己写了：
 
@@ -95,8 +89,7 @@ Axios → API 请求 ✅ 主流选择
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 今天主要去看了一下学习手册，发现了许多之前没有注意的东西：
 
@@ -117,55 +110,35 @@ Axios → API 请求 ✅ 主流选择
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
+# 2026-07-20
 
 今日主要是听了直播，然后对之前的任务做做复盘
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
+# 2026-07-19
 
 今日休息~~
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
+# 2026-07-18
 
 完成了几项作业的提交
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 今天提交了一个pull request，具体在notion里
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 今天一整天都在读moss的结构，讲一下思路变化吧：
 
@@ -178,45 +151,21 @@ Axios → API 请求 ✅ 主流选择
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 今天写的工作记录在notion上，分享一下链接：[https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3](https://app.notion.com/share/22cb3dad4b488173bf5500037c915758/39eb3dad4b4881acad7000a94aab69c3)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 我今天的学习笔记 都搬到notion上了，完成了week2的一个任务：[https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy\_link](https://app.notion.com/p/What-s-Moss-AI-Agent-Web3-39db3dad4b488081b206f04b0fa9fd90?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 开始看开源项目 moss：
 
@@ -235,17 +184,7 @@ Axios → API 请求 ✅ 主流选择
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 这次将我的项目部署到了github上，上传了我的第一个项目，刚开始原本是打算让claude替我完成的，但是api接的deepseek可能是能力不足，一直失败，所以选择手动部署，遇到问题问ai，这里记录下一些心得什么的：
 
@@ -282,60 +221,21 @@ Axios → API 请求 ✅ 主流选择
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 休息日ing
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 今天没学什么，但是打个卡
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 前情提要：由于remix做的一直连不上钱包，换桌面版登录之后，找不到之前的文件了，ai额度也用完了，所以不用remix了，打算重新做。
 
@@ -364,23 +264,7 @@ ps：记得还要把私钥改成自己的
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今天主要学习了以太坊，和回顾了昨天的内容。
 
@@ -405,24 +289,7 @@ ps：记得还要把私钥改成自己的
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今日co-learning:
 
@@ -448,4 +315,10 @@ ps：记得还要把私钥改成自己的
 
 成功领取测试币，但是我没找到水龙头在哪？
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+今天学习了一些基础知识
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

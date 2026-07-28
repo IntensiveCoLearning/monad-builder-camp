@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Gamla
-
-**GitHub ID:** GamlaNyx
-
-**Telegram:** 
-
-## Self-introduction
-
-Beneath bright daylight skies, flowers bloom freely.
+- GitHub ID: 224283681
+- Name: GamlaNyx
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+# 2026-07-17
+
 2026.7.17
 
 ## **薅羊毛攻击**
@@ -165,6 +158,7 @@ Beneath bright daylight skies, flowers bloom freely.
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+# 2026-07-16
 
 2026.7.16
 
@@ -414,7 +408,7 @@ solidity中，失败的低级调用不会让交易回滚
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
+# 2026-07-15
 
 2026.7.15
 
@@ -474,8 +468,7 @@ uint256 加法溢出公式：a + b = (a + b) \\bmod 2^{256}
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
+# 2026-07-14
 
 2026.7.14
 
@@ -610,9 +603,7 @@ uint
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
+# 2026-07-08
 
 ## **7.8**
 
@@ -756,10 +747,7 @@ pure：既无法读取也无法修改
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
+# 2026-07-07
 
 ## **2026.7.7**
 

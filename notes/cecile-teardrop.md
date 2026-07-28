@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Cynthia
-
-**GitHub ID:** cecile-teardrop
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 187445379
+- Name: cecile-teardrop
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
@@ -22,21 +13,21 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 moss issue初稿：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/moss-issue-draft.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/moss-issue-draft.md)
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 黑客松准备
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 **Moss 入门指南：**
 
@@ -45,30 +36,21 @@ moss issue初稿：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 **GitHub 探索日志:**[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/721.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/721.md)
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 moss开源贡献计划篡写：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/720.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week3/720.md)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 ### **AgentNFT (ERC-721) 基础合约**
 
@@ -105,25 +87,14 @@ readme：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 BattleEngine合约完成部署测试，功能验证
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
+# 2026-07-17
 
 BattleEngine 合约核心逻辑编写（submitMove + 状态机）
 
@@ -133,14 +104,7 @@ BattleEngine 合约核心逻辑编写（submitMove + 状态机）
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 **认识一个开源项目：Moss**  
 项目简介：  
@@ -184,15 +148,7 @@ Agent 是“大脑”，负责理解需求和规划步骤；Moss 是“翻译官
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 方向选择：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week2/Role%20Choice%20Card.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week2/Role%20Choice%20Card.md)  
 学习log建立：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week2/Role%20Log.md](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/week2/Role%20Log.md)
@@ -376,16 +332,7 @@ event BattleEnded(uint256 indexed battleId, address winner);
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 \> 学习笔记 | 适用于零基础入门 Web3 + AI 辅助开发的全流程实践  
 2026-07-13  
@@ -1970,35 +1917,14 @@ foundry.toml # Foundry 配置
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 完成Week 1 Build Log，确定未来研究方向——Tech，链接：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/main/Week%201%20Build%20Log](https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/blob/main/Week%201%20Build%20Log)，继续完成week1产品——一个最小合约 Demo
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 一、高频交互  
   
@@ -2207,19 +2133,7 @@ AI Agent 的决策是连续的、多步的。一个 Agent 完成任务可能需�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 # 继续完成部署合约：  
 
@@ -2236,20 +2150,7 @@ README:链接：[https://github.com/cecile-teardrop/-Monad-Buidler-Camp2026-7/bl
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 # **AI Agent 安全思考：从"自动化"到"自主化"的权限之殇**
 
@@ -2410,21 +2311,7 @@ AI Agent 从"自动化"到"自主化"的进化，本质上是**将更多决策�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 # 1.部署在Monad Testnet的第一个合约
 
@@ -2494,22 +2381,7 @@ contract SimpleStorage {
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 # 1.交易测试
 
@@ -2666,4 +2538,10 @@ AI 生成代码需要人工检查的地方：
 潜在安全性能风险  
 边界情况是否处理等等
 <!-- DAILY_CHECKIN_2026-07-07_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+继续黑客松完善内容
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

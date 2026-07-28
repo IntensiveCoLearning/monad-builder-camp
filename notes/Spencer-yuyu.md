@@ -8,35 +8,35 @@
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 昨天忘打卡了崩溃了
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 任务十分延迟！
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 [https://app.notion.com/p/7-22-Day17-3a554a97f45180dab20accd05c324270?source=copy\_link](https://app.notion.com/p/7-22-Day17-3a554a97f45180dab20accd05c324270?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 [https://app.notion.com/p/7-21-Day16-3a454a97f451803f896cd5fb2c1956e2?source=copy\_link](https://app.notion.com/p/7-21-Day16-3a454a97f451803f896cd5fb2c1956e2?source=copy_link)
 
@@ -45,10 +45,7 @@
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 在DefiLlama和Dune中游泳  
 [https://app.notion.com/p/Week-2-Role-Log-39e54a97f45180a6bffbe838308c1ca6?source=copy\_link](https://app.notion.com/p/Week-2-Role-Log-39e54a97f45180a6bffbe838308c1ca6?source=copy_link)
@@ -56,50 +53,28 @@
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 打卡啊啊啊
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 发现要研究一个问题，无数个问题会涌现出来
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
+# 2026-07-17
 
 **还在Product Research Question Card 任务中。。。怎么什么都不会啊服了**
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 **Product Research Question Card 任务中。。。**
 
@@ -108,15 +83,7 @@
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 才开始Week2任务
 
@@ -127,16 +94,7 @@
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 差点忘了打卡。。。
 
@@ -145,17 +103,7 @@
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 参与实时活动和共学，完成week1任务，保持research赛道
 
@@ -164,37 +112,14 @@
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 打卡！
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 看两个AI Agent相关视频回放
 
@@ -205,41 +130,14 @@
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 这周最难的部分已经完成，还有几个任务好好做完，思考和确定下周方向
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 在remix里面搞了好久终于deploy成功了！
 
@@ -248,22 +146,7 @@
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 搞懂智能合约是如何部署的，和交易很类似
 
@@ -276,23 +159,7 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 完成了第一笔转账！
 
@@ -301,24 +168,7 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 完成co-learning任务，没找到今天的回放
 

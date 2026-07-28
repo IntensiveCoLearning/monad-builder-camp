@@ -703,4 +703,10 @@ Finish homework, watch re-play of the sessions
 
 第一天加入，了解了如何一步步成为builder, very inspiring and will keep on doing the study and finish homework as requested.
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+choosing hackthon direction today
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

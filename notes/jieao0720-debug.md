@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Jieao Liu
-
-**GitHub ID:** jieao0720-debug
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 237099126
+- Name: jieao0720-debug
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

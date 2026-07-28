@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Ceciliachen04
-
-**GitHub ID:** Ceciliachen04
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 199108195
+- Name: Ceciliachen04
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# suuuukie0112-lang
-
-**GitHub ID:** suuuukie0112-lang
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 299862858
+- Name: suuuukie0112-lang
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

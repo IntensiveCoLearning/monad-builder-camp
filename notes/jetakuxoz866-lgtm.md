@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# jetakuxoz866-lgtm
-
-**GitHub ID:** jetakuxoz866-lgtm
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 288505595
+- Name: jetakuxoz866-lgtm
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

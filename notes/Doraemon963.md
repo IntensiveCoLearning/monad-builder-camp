@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Doraemon963
-
-**GitHub ID:** Doraemon963
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 203669662
+- Name: Doraemon963
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+# 2026-07-09
+
 AI Agent风险来源：模型本身、提示与记忆、工具与环境、用户与外部输入、架构与运维
 
 1\. **幻觉与错误推理** Agent 自主规划步骤时凭空编造接口、参数、权限，执行非法操作；逻辑链断裂导致越权调用工具。
@@ -32,6 +25,7 @@ AI Agent风险来源：模型本身、提示与记忆、工具与环境、用户
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
 
 \- Agent 支付核心架构
 

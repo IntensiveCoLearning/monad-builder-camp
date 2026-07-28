@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# fenixIves
-
-**GitHub ID:** fenixIves
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 252904734
+- Name: fenixIves
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+# 2026-07-12
+
 # 智能合约开发流程
 
 智能合约开发是一个**从需求定义到上线维护的闭环流程**，核心遵循「**设计→开发→测试→部署→交互**」的步骤，且每个环节都需要严格把控安全性（因为合约部署后无法修改）。以下是详细的、可落地的具体流程：
@@ -381,6 +374,7 @@ npx hardhat run scripts/deploy.js --network mainnet
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
 
 # 部署你的第一个 Monad 合约
 
@@ -484,7 +478,7 @@ Counter 是一个最小可行的链上计数器合约，包含：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
+# 2026-07-09
 
 # 使用 AI 工具生成一个最小 Solidity 合约
 
@@ -576,8 +570,7 @@ ABI 函数数量: 4
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
+# 2026-07-08
 
 # **Monad 理解｜为什么 Monad 体验不同**
 
@@ -619,9 +612,7 @@ Monad 的核心技术乐观并行执行，本质是"识别互不依赖的交易�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
+# 2026-07-07
 
 # Solidity学习笔记
 
@@ -1721,10 +1712,7 @@ contract ExceptionExample {
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
+# 2026-07-06
 
 # Monad 研究笔记
 

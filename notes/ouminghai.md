@@ -1128,4 +1128,10 @@ NaN.  权限管理与访问控制 (Access Control)
         
     -   确认 string 类型的使用是否可以优化为 bytes32 以节省存储成本。 总结建议 在 Web3 领域，“代码即法律”。AI 可以帮你写出 90% 的原型，但剩下的 10%（安全性、兼容性、逻辑严密性）必须由人工进行“审计”。在 Remix 部署前，请务必查看编译器是否有 Warning 提示，那通常是人工检查的第一步。
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+主要学习 ai agent 相关知识<https://hello-agents.datawhale.cc/#/>
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

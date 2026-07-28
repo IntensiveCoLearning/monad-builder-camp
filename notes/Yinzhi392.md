@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Yinzhi
-
-**GitHub ID:** Yinzhi392
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 269663967
+- Name: Yinzhi392
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

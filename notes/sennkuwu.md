@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# 子扬xv
-
-**GitHub ID:** sennkuwu
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 106435851
+- Name: sennkuwu
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
+
 平台积分系统
 
 收到的钱会转换为平台上的凭证（credential），类似于稳定币，可以点对点转账。
@@ -28,6 +21,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
 
 2026-07-07直播纲要笔记
 

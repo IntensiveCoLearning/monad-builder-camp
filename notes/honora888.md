@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# honora888
-
-**GitHub ID:** honora888
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 296800432
+- Name: honora888
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-27
 <!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
 # Hackathon项目创意
 
 Week 4 团队将从 MoPay 产品方向调整至智能合约安全审计方向，但不会把项目做成传统、严肃且信息密集的扫描工具，而是将安全知识包装成一套修仙升级系统。
@@ -41,6 +34,7 @@ Week 4 团队将从 MoPay 产品方向调整至智能合约安全审计方向，
 
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
 
 # MoPay 根据用户反馈完成产品改进记录
 
@@ -72,7 +66,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
-
+# 2026-07-25
 
 ### **Problem & User Card**
 
@@ -129,8 +123,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
-
+# 2026-07-24
 
 ### **今日创意——跨链稳定币收益聚合支付卡**
 
@@ -154,9 +147,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
-
+# 2026-07-23
 
 **我的方向：** Research / 产品 / Ops 为主，Dev 为辅，关注 AI Agent × Web3、DeFi、Monad 生态和开源项目。
 
@@ -171,10 +162,7 @@ Commit：6c7aeaaa2e3e4442790950c56ac9f41c64fde174
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
-
+# 2026-07-22
 
 # Moss 开源贡献计划
 
@@ -456,11 +444,7 @@ PR 2：Minimal discover/load Example
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
-
+# 2026-07-21
 
 # GitHub Exploration Log —— Moss 项目探索
 
@@ -783,13 +767,7 @@ Maintainer 的工作也不仅仅是开发功能，更重要的是组织项目，
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
-
-
+# 2026-07-20
 
 # 阅读 Moss README：理解 AI Agent 为什么需要 Moss
 
@@ -842,14 +820,7 @@ Moss 是一个开源 AI Agent 框架，旨在帮助开发者快速构建、扩�
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
-
-
+# 2026-07-19
 
 # ETH 完整销毁机制
 
@@ -991,15 +962,7 @@ Blob 数据层将 L2 交易数据转移至专用存储，L2 用户不再占用 L
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-18
 
 ## AI-assisted Dev Plan: Uniswap V3 Pool Data Query Script
 
@@ -1160,16 +1123,7 @@ node queryPool.js --token0 USDC --token1 WETH --fee 3000
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 # 任务 4｜Week 3 Role Statement
 
@@ -1315,17 +1269,7 @@ node queryPool.js --token0 USDC --token1 WETH --fee 3000
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 # Research Builder
 
@@ -1708,20 +1652,7 @@ README、报错日志、目录规范、迭代计划、AI 协作记录虽不增�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 # Research Builder
 
@@ -1966,21 +1897,7 @@ AI 生成如下骨架（已人工微调地址、错误处理、格式等）：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # Research 路径：提出优质研究问题，明确资料边界
 
@@ -2226,22 +2143,7 @@ Day 2 的 Ops 学习核心并非聚焦“活动增长”，而是优先明确活
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 # 通用模块学习笔记
 
@@ -3699,23 +3601,7 @@ Monad 专属智能交易自动化工具库，解决 DEX / 代币交互 ABI、 ca
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 # NFTBadge 合约（V0.1）评测报告
 
@@ -4216,25 +4102,7 @@ contract NFTBadge {
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 # Build Log初稿模板
 
@@ -4405,26 +4273,7 @@ Monad 特殊点：并行执行，Gas 消耗波动大，手动调高 Gas 缓冲�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 # 一、Monad 基础定义、诞生背景与核心定位
 
@@ -4947,27 +4796,7 @@ gas 单价 = min (基础 BaseFee + 用户优先级 PriorityFee, 用户最高 Max
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ## 一、AI 生成最小 Solidity 合约（原则：技术辅助，绝不盲信）
 
@@ -5298,28 +5127,7 @@ AI生成标准最小合约 → 三重校验（编译+人工+静态扫描）→ R
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 # 一、Web3 国内合规与全维度法律安全
 
@@ -5711,30 +5519,7 @@ signature: 私钥签名，证明交易为本人发起
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 # 延续2026/7/6——
 
@@ -6238,32 +6023,7 @@ Builder 链上开发者、Alpha 内部项目机会、Tokenomics 代币经济、R
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 # **Blockchain Basics**
 
@@ -6420,4 +6180,729 @@ Runs on every chain node, executes smart contract code uniformly, ensuring consi
 
 **Infrastructure**: Infura nodes, Besu client, Linea Layer-2 network
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+# 链安修仙录（Chain Security Cultivation）项目进度 Log
+
+> 记录日期：2026-07-28 项目主张：**修一个漏洞，升一层境界；守一份合约，护一条 Monad 公益灵脉。**
+
+***
+
+## 0. 文档目的与事实边界
+
+本文用于记录截至 2026-07-28 的项目真实进度，作为后续 Quest 1 收尾、Moss × Monad 集成、AI Agent 设计和黑客松提交的共同基线。
+
+信息依据：
+
+1. 《链安修仙录10日计划与技术架构》；
+2. 《链安修仙录 Chain Security Cultivation Mini Demo Card》；
+3. 当前 GitHub Repo 压缩快照；
+4. 最近对话中已经确认的 Quest 1 视觉决策；
+5. 截至记录日期的 Moss 与 Monad 官方公开资料。
+
+状态定义：
+
+状态
+
+含义
+
+已完成
+
+仓库已有代码、文档或链上证据支持
+
+已完成，待复核
+
+已有记录，但仍需在本地 Git、CI 或生产环境重新验收
+
+进行中
+
+已开始设计或制作，但尚未形成最终仓库产物
+
+待开始
+
+尚未进入实现
+
+Mock／简化
+
+为保证 Demo 可控而使用静态数据、预设流程或局部模拟
+
+待开放
+
+产品路线中保留，但不属于当前 Mini Demo
+
+> 当前压缩包不含 `.git` 目录，因此本文不能证明本地分支、HEAD、远端同步状态或工作区是否干净；Git 状态仍需在用户本机仓库核对。
+
+***
+
+# 1. 当前项目定位
+
+《链安修仙录》是一款修仙闯关式智能合约安全学习与公共安全贡献平台。用户以“审计修士”的身份挑战漏洞妖兽，通过代码定位、攻击理解、修复判断、工具验证和链上存证完成成长闭环。
+
+当前项目正在从第一阶段的单关卡产品，向第二阶段的 Agent 原生公共安全协议演进：
+
+```
+Quest 安全学习
+→ Foundry / Slither 验证
+→ 审计证据与报告 Hash
+→ Moss 构造和模拟 Monad 操作
+→ 用户审核与签名
+→ 报告、贡献和勋章上链
+→ 社区案例进入《漏洞异兽志》
+```
+
+当前最重要的两条路线：
+
+1. **先完成 Quest 1 的正式视觉闭环和最终验收**；
+2. **随后优先完成 Moss Guardian Protocol 与 Monad 多步骤模拟闭环**，再扩展 AI 异兽志编纂 Agent。
+
+***
+
+# 2. 已完成工作总览
+
+## 2.1 产品范围与设计原则——已完成
+
+已经明确：
+
+* 正式项目名为“链安修仙录”；
+* 境界 Realm、五行属性 Element、严重程度 Severity、正式漏洞类型彼此独立；
+* 修为 EXP 代表学习能力，功德值 Merit 代表公共物品贡献；
+* 不通过捐款购买安全等级；
+* Mini Demo 只做一只完整妖兽和一个完整安全闭环；
+* 第一版不处理真实慈善资金；
+* 教学报告不等同于正式生产审计；
+* Moss 不接触私钥、不替用户签名；
+* 完整源码、报告和测试保留链下，链上只保存 Hash、里程碑与贡献凭证。
+
+## 2.2 Quest 1 安全教学模型——已完成
+
+当前唯一开放 Quest：
+
+字段
+
+当前实现
+
+Quest ID
+
+1
+
+妖兽
+
+噬灵回环兽
+
+正式漏洞
+
+Classic Reentrancy
+
+境界
+
+金丹期
+
+属性
+
+水
+
+当前仓库风险标签
+
+High
+
+修复原则
+
+Checks-Effects-Interactions
+
+勋章
+
+水系守护者
+
+Token ID
+
+1
+
+说明：早期计划使用 `Critical`，但当前 README、Quest 内容、审计报告和链上元数据均使用 `High`。在专门完成一次全仓风险等级复核前，后续文档和界面应以 **High** 为当前实现基线，避免同一关卡出现两套标签。
+
+## 2.3 Solidity 漏洞、攻击与修复合约——已完成
+
+仓库已有：
+
+* `src/VulnerableCharityVault.sol`
+* `src/ReentrancyAttacker.sol`
+* `src/FixedCharityVault.sol`
+
+已实现教学闭环：
+
+```
+外部调用发生在余额清零前
+→ 攻击合约 receive() 再次进入 withdraw()
+→ 同一余额被重复读取
+→ 金库被抽空
+```
+
+修复版使用 CEI：
+
+```
+检查余额
+→ 先更新状态
+→ 记录事件
+→ 最后执行外部交互
+```
+
+## 2.4 Foundry 测试与 Invariant——已完成，有仓库证据
+
+当前仓库包含：
+
+* 3 个 CharityVault 场景测试；
+* 9 个 GuardianQuest 测试；
+* 1 个 FixedCharityVault Invariant。
+
+Quest 1 报告记录：
+
+```
+漏洞金库原有：10 ETH
+攻击者存入：1 ETH
+攻击后金库：0 ETH
+攻击合约最终：11 ETH
+重入次数：大于 1
+```
+
+Invariant 记录：
+
+```
+Runs: 64
+Depth: 32
+Calls: 2,048
+Unexpected reverts: 0
+```
+
+验证属性：
+
+```
+FixedCharityVault 实际余额
+=
+所有用户账面余额之和
+```
+
+以上数字来自仓库报告；本次压缩快照审查未重新执行 `forge test`，提交前仍需本地和 CI 复验。
+
+## 2.5 Slither 对照证据——已完成
+
+仓库记录使用 Slither `0.11.5`：
+
+合约
+
+`reentrancy-eth`
+
+`reentrancy-events`
+
+VulnerableCharityVault
+
+检测到
+
+检测到
+
+FixedCharityVault
+
+未检测到
+
+未检测到
+
+已保存：
+
+* `reports/slither-reentrancy.txt`
+* `reports/slither-fixed.txt`
+* `reports/slither-checklist.md`
+
+结论边界已经写明：静态分析结果不等同于完整安全审计。
+
+## 2.6 GuardianQuest 合约——已完成
+
+当前 MVP 没有按早期架构拆成 Registry、Vault、ReportAnchor、Badge 四个合约，而是合并为一个 `GuardianQuest.sol`，这是合理的范围压缩。
+
+当前合约支持：
+
+* 注册和启停 Quest；
+* 保存 Quest 内容 Hash；
+* 验证者记录学习者完成状态；
+* 保存审计报告 Hash；
+* 铸造不可转让 ERC-1155 勋章；
+* 测试网原生资产资助；
+* 管理员提取 Quest 资金；
+* 禁止重复完成和勋章转移。
+
+主要写方法：
+
+```
+registerQuest
+setQuestActive
+verifyCompletion
+fundQuest
+withdrawQuestFunds
+```
+
+注意：早期 Moss 设计中的 `anchorReport`、`claimBadge` 等独立 Capability 并不是当前合约的同名 ABI。后续 Moss Package 必须以真实 `GuardianQuest` ABI 为准，或在必要时设计 V2 合约，不能直接照搬早期概念接口。
+
+## 2.7 Monad Testnet 部署、注册与通关——已完成，有链上记录
+
+项目
+
+记录
+
+Network
+
+Monad Testnet
+
+Chain ID
+
+10143
+
+GuardianQuest
+
+`0x131DEbd042208A327841128e5800dd4a833032ab`
+
+部署交易
+
+`0x577d17c114c2c22d9b1e467e67649cd82217d7a4ba19f41e4526ba66cc9602e2`
+
+Quest 1 注册交易
+
+`0x79596150497251cb506eb25eee28f9b9b5bb3e801da49ebf4dfd4416d283f648`
+
+通关与铸造交易
+
+`0x3b336c8f9d208e2492309f8db252a889ca9cfe6f61814321f4f48dd4ffdfc5e8`
+
+可复现证据：
+
+```
+Quest Content Hash:
+0x1935647cb838b5dd3caa4448702b2928cfc4532381fe7a9b1f84481029253f69
+
+Audit Report Hash:
+0xef3b4f9d8637a0a9b30e5dcba100216506a7844eea31c9ea107c08c29d4f306c
+```
+
+`.gitattributes` 已用于稳定证据文件的换行与字节规则。
+
+## 2.8 Quest 1 六幕前端——功能版已完成
+
+当前前端技术事实：
+
+* Next.js App Router；
+* React + TypeScript；
+* CSS Module；
+* `useReducer` 状态机；
+* `localStorage` 版本化存档；
+* 手写代码区和 SVG 资金流；
+* 未接入 wagmi、viem、Monaco、React Flow、Zustand 等早期计划依赖。
+
+六幕流程已实现：
+
+```
+ACT1 妖兽现身
+→ ACT2 定位危险代码
+→ ACT3 判断漏洞和属性
+→ ACT4 重放攻击
+→ ACT5 CEI 封印
+→ ACT6 奖励、异兽志与链上核验
+```
+
+主要已有能力：
+
+* Boss HP 阶段变化；
+* 危险代码行选择；
+* 漏洞分类；
+* 攻击步骤播放、暂停、回退和重播；
+* Vault 与攻击者余额变化；
+* CEI 顺序重排；
+* EXP、水系熟练度和本地徽记；
+* 异兽志条目；
+* Reduced Motion；
+* 本地完成状态与链上状态隔离。
+
+## 2.9 Monad Testnet 只读核验 API——已完成
+
+已有：
+
+```
+GET /api/quest-1/chain-status?address=0x...
+```
+
+服务端固定执行：
+
+* `eth_chainId`
+* `eth_blockNumber`
+* `eth_call`
+
+读取：
+
+* `completed(questId,address)`
+* `reportHashes(questId,address)`
+* `balanceOf(address,questId)`
+
+安全边界：
+
+* 浏览器不能提供 RPC URL；
+* 不能提供合约地址；
+* 不能提供 JSON-RPC method；
+* 不能提供任意 calldata；
+* 不连接钱包；
+* 不请求签名；
+* 不发送写交易；
+* 使用固定链 ID 和固定 GuardianQuest 地址；
+* 环境变量只存在服务端。
+
+真实生产验收已经覆盖 `completed=false`。仓库也记录了一次真实通关和勋章铸造交易，但只读 API 文档尚未把可信公开地址的 `completed=true` 分支列为独立真实验收。因此在最终 Demo 前，应补一次明确的 `completed=true` API 验收记录。
+
+## 2.10 Vercel 生产部署——已完成
+
+当前生产路由：
+
+* `/`
+* `/quests/1`
+* `/api/quest-1/chain-status`
+
+已记录首次平台级 404 的排查和修复：增加 `web/vercel.json`，明确 Next.js framework 与 `npm run build`，且不指定静态输出目录。
+
+## 2.11 CI——部分完成
+
+现有 GitHub Actions 已执行：
+
+```
+forge fmt --check
+forge build --sizes
+forge test -vvv
+```
+
+尚未进入 CI 的项目：
+
+* `npm ci`
+* `npm run lint`
+* `npm run build`
+* 前端单元测试；
+* API Mock 测试；
+* 敏感信息扫描；
+* Markdown / diff 检查；
+* 图片体积预算检查。
+
+***
+
+# 3. Quest 1 视觉进度
+
+## 3.1 设计规格——已完成
+
+仓库已有：
+
+* `docs/quest-1-ui-polish-spec.md`
+* `docs/quest-1-beast-visual-bible.md`
+* `docs/quest-1-beast-assets-batch-1.md`
+
+已经确定整体视觉方向：
+
+```
+玄水护阵
+深水、回环、吞噬、递归、灵力倒灌、墨色卷宗、水系封印
+```
+
+## 3.2 唯一正式角色母版——已锁定，但尚未进入当前仓库快照
+
+最近设计决策：
+
+```
+B 护阵型为主体
++ A 灵体型的水灵材质
++ C 吞噬型的递归裂口
+```
+
+母版核心结构已经冻结：
+
+* 低扁楔形头部；
+* 三片水晶额甲；
+* 回流鳍冠；
+* 冷青双眼；
+* 水压瓣膜口部；
+* 垂直递归裂口；
+* 实体外环和半透明内环；
+* 右下断环缺口；
+* 方形状态玉扣；
+* 分叉双叶状态闸片；
+* 无翼、无足、无触手、无额外角或尾巴。
+
+## 3.3 当前视觉制作任务——进行中
+
+当前准确阶段：
+
+> 基于唯一正式母版生成“潜伏待机状态”D1、D2、D3 候选。
+
+后续顺序：
+
+```
+潜伏待机定稿
+→ 重入攻击状态
+→ 异兽志头像
+→ 主立绘与三状态一致性验收
+→ WebP 压缩入库
+→ next/image 接入
+→ CSS 动画与状态机联动
+→ 移动端、无障碍和 Reduced Motion 验收
+```
+
+## 3.4 当前视觉缺口
+
+当前仓库只有 8 张约 1.8–3 MB 的 UI 参考截图，正式生产素材目录尚未建立：
+
+```
+web/public/assets/quest-1/beast/
+web/public/assets/quest-1/bestiary/
+```
+
+页面仍在多处使用：
+
+```
+TemporaryVisualPlaceholder
+```
+
+因此 Quest 1 的功能闭环已完成，但正式视觉闭环尚未完成。
+
+***
+
+# 4. Moss × Monad 当前进度
+
+## 4.1 当前已具备的前置条件
+
+* GuardianQuest 已部署到 Monad Testnet；
+* Quest 1 已注册；
+* 报告 Hash 与不可转让勋章已有真实写入记录；
+* 前端能够只读核验 GuardianQuest；
+* ABI、部署地址、交易 Hash 和事件语义已经形成基础证据；
+* Moss 所需的 Protocol 场景已经存在。
+
+## 4.2 Moss 实现——尚未开始
+
+当前仓库未发现：
+
+* Moss Fork 或子模块；
+* Monad Testnet Runtime；
+* `@themoss/protocol-guardian`；
+* Guardian Query；
+* Guardian Capability；
+* Receipt Parser；
+* `discover → load → action → simulate` 演示；
+* Capability Tree；
+* Warning / Revert / Receipt coverage 测试；
+* Moss MCP 集成页面。
+
+Moss 当前官方定位是把 Monad 协议交互转换为 Agent 可调用的 Capability，通过 `discover → load → action → simulate` 构建和验证未签名交易；任何写操作都必须模拟，遇到 Warning 必须停止。Moss 目前面向 Monad 主网 Chain ID `143`，并明确标注为未审计 alpha 软件。因此本项目需要测试网扩展或本地 Fork 降级方案。
+
+## 4.3 后续 Moss 最小验收目标
+
+第一阶段只要求：
+
+```
+1 个 Query
++ 1 个真实 Capability
++ 1 个 Receipt Parser
++ action + simulate
++ 正常与失败测试
+```
+
+随后扩展为：
+
+```
+fundQuest
+→ verifyCompletion / anchor evidence
+→ badge result
+```
+
+如果当前 `verifyCompletion()` 同时完成报告记录和勋章铸造，则 Capability 设计应忠实解释一个真实交易产生的多个 Change，而不是为了符合旧文档强行拆成不存在的链上方法。
+
+***
+
+# 5. 异兽志编纂 Agent 新方向
+
+## 5.1 已完成的产品判断
+
+已经确认可新增：
+
+> **Bestiary Curator Agent／异兽志编纂使**
+
+其目标是处理社区提交的高质量开源安全案例，生成结构化案例分析、五行属性、Severity、Realm、妖兽档案和 Quest 草稿。
+
+## 5.2 当前状态——概念与架构已讨论，尚未实现
+
+拟定流水线：
+
+```
+用户提交固定 Git Commit 的公开案例
+→ 来源、许可证和重复性检查
+→ 隔离 Worker 提取代码与工具证据
+→ AI 生成结构化分类与 Quest 草稿
+→ 人工审核
+→ Foundry / Slither 验证
+→ 收录异兽档案
+→ Moss 模拟发布和功德奖励
+→ Monad 存证
+```
+
+关键安全原则：
+
+* AI 不等同于正式审计；
+* AI 不得自动发布正式 Quest；
+* 不能直接执行任意用户仓库脚本；
+* 必须固定到 Git Commit；
+* 必须校验许可证和公开披露状态；
+* Severity、五行、Realm 和正式漏洞类型分开判断；
+* 必须经过工具验证与人工复核；
+* 提交链接本身不产生功德值；
+* 重复案例不能重复领取奖励。
+
+建议状态机：
+
+```
+Submitted
+→ AI Analyzed
+→ Needs Evidence
+→ Human Reviewed
+→ Technically Verified
+→ Bestiary Accepted
+→ Quest Candidate
+→ Playable Quest
+```
+
+***
+
+# 6. 当前 Mock、简化与待开放板块
+
+## 6.1 当前真实实现中的 Mock／简化
+
+板块
+
+当前处理
+
+ACT4 攻击动画
+
+本地预设攻击轨迹，不是实时链上攻击
+
+在线 Foundry 验证
+
+页面展示已有证据，不在 Vercel 中实时运行 Forge
+
+修复方式
+
+固定 CEI 顺序题，不开放任意代码编辑
+
+EXP 与五行熟练度
+
+浏览器本地状态，不是链上资产
+
+普通徽记
+
+本地展示；只有重要勋章有链上 ERC-1155 记录
+
+`completed=true` API 分支
+
+写入交易已有记录，但生产 API 独立验收文档仍需补齐
+
+妖兽图像
+
+当前页面仍有占位组件
+
+资助流程
+
+GuardianQuest 支持测试网原生资产资助，尚无 Kuru/USDC 组合流程
+
+## 6.2 尚未实现但属于黑客松核心路线
+
+* 正式 Quest 1 妖兽素材接入；
+* Moss Guardian Protocol Package；
+* Monad Testnet Runtime／本地 Fork 适配；
+* Query、Capability、Receipt Parser；
+* 多步骤 Capability Tree；
+* Moss Agent 任务输入和模拟结果展示；
+* 用户审核后钱包签名边界；
+* 功德值的可验证发放模型；
+* 异兽志编纂 Agent 受控 Demo。
+
+## 6.3 待开放产品板块
+
+* 七大境界完整内容；
+* 金木水火土全部 Quest；
+* 稀有属性关卡；
+* Quest 2 及多关卡大厅；
+* 任意代码编辑和用户自定义 Patch；
+* 任意仓库自动执行；
+* 通用 AI 自动审计；
+* 真实慈善捐赠和正式资金拨付；
+* 主网 Guardian Protocol；
+* Moss 上游正式合并；
+* 全球排行榜；
+* 用户账户和跨设备同步；
+* 数据库和审核后台；
+* IPFS／去中心化内容存储；
+* 音效和完整动画状态集；
+* 正式安全审计和多签治理。
+
+***
+
+# 7. 当前优先级
+
+## P0：完成 Quest 1
+
+1. 定稿潜伏状态；
+2. 生成重入攻击状态和异兽志头像；
+3. 完成素材压缩、命名和透明背景验收；
+4. 接入入口页、ACT1、ACT2、ACT4、ACT5、ACT6 和异兽志；
+5. 完成 Reduced Motion、移动端和图片失败降级；
+6. 补 `completed=true` 只读真实验收；
+7. 运行 Forge、Web build、lint 和生产回归。
+
+## P1：Moss × Monad 核心闭环
+
+1. 阅读并运行 Moss 官方示例；
+2. 确定测试网 Runtime 降级路线；
+3. 创建 Guardian Protocol Package；
+4. 完成 Query；
+5. 完成单一 Capability 与 Receipt；
+6. 完成模拟和 Warning 测试；
+7. 扩展多步骤 Capability Tree；
+8. 在前端展示意图、交易树、Receipt 和 Warning；
+9. 保持签名与 Agent 分离。
+
+## P2：异兽志编纂 Agent
+
+1. 定义 Case Submission Schema；
+2. 固定案例来源和 Commit；
+3. 定义五行、Severity、Realm 规则；
+4. 选择一个受控公开案例；
+5. 生成结构化分析和 Quest 草稿；
+6. 人工审核与工具验证；
+7. Moss 模拟 `anchorCase → publishQuest → grantMerit`；
+8. Monad 存证和贡献勋章。
+
+## P3：提交与产品化
+
+* Demo 视频；
+* 3 分钟 Pitch；
+* README 更新；
+* 架构图；
+* CI 扩展；
+* 性能和无障碍；
+* Quest 2 规划；
+* Moss / Monad 上游贡献准备。
+
+***
+
+# 8. 当前一句话总结
+
+> **截至 2026-07-28，《链安修仙录》已经完成 Quest 1 的智能合约安全验证、Monad Testnet 凭证和六幕前端功能闭环，正在完成正式妖兽视觉；下一核心里程碑不是立即扩展 Quest 2，而是把 GuardianQuest 接入 Moss，形成可发现、可构造、可模拟、可解释的 Monad Agent 工作流，并在此基础上实现社区驱动的异兽志编纂 Agent。**
+
+***
+
+# 9. 外部资料（截至记录日期核对）
+
+* [Moss GitHub](https://github.com/nishuzumi/moss)
+* [Moss Agent Safety Rules](https://github.com/nishuzumi/moss/blob/main/docs/agent-skill.md)
+* [Moss Protocol Onboarding](https://github.com/nishuzumi/moss/blob/main/docs/protocol-onboarding.md)
+* [Monad Documentation](https://docs.monad.xyz/)
+* [Monad Protocol Directory](https://github.com/monad-developers/protocols)
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

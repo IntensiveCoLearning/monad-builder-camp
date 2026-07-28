@@ -1,42 +1,35 @@
----
-timezone: UTC+8
----
-
-# meganliao021-commits
-
-**GitHub ID:** meganliao021-commits
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 261581576
+- Name: meganliao021-commits
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
+
 今天主要听了分享，了解如何借助AI完成web3的应用开发
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
 
 今天和我朋友系统的分享了RWA以及未来在中国境内的一个发展的方向是什么！
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
+# 2026-07-09
 
 今天参加了7点的分享会，也听了8点的colearning
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
+# 2026-07-08
 
 今天在co-learning里面，yoona姐姐分享了她自己的经历和经验，受益匪浅！
 
@@ -49,9 +42,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
+# 2026-07-07
 
 今天主要复习了区块链的基础概念。
 

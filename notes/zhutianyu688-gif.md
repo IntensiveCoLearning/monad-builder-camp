@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# zhutianyu688-gif
-
-**GitHub ID:** zhutianyu688-gif
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 257322794
+- Name: zhutianyu688-gif
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

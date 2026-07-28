@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# SelinaAnn
-
-**GitHub ID:** SelinaAnn
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 228867732
+- Name: SelinaAnn
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 # **📅 Team Build Plan (Week 3 剩余时间)**
 
 | 任务 | 负责人 | 截止时间 | 依赖关系 |
@@ -35,6 +28,7 @@ _注：Dev 的任务通常阻塞其他人的后续动作，所以 Dev 必须按�
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-24-1784902640044-image.png)
 
@@ -54,8 +48,7 @@ _注：Dev 的任务通常阻塞其他人的后续动作，所以 Dev 必须按�
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 **Dev Portfolio 必须包含的 6 个模块：**
 
@@ -73,19 +66,14 @@ _注：Dev 的任务通常阻塞其他人的后续动作，所以 Dev 必须按�
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-22-1784727059124-image.png)
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 ### **你的专属产出：任务 16 执行指南与模板**
 
@@ -147,11 +135,7 @@ _注：Dev 的任务通常阻塞其他人的后续动作，所以 Dev 必须按�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-20-1784556028506-image.png)
 
@@ -172,25 +156,14 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-19-1784466140748-image.png)
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 **📝 Dev 产出模板：AI-assisted Dev Plan**
 
@@ -229,14 +202,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 **1\. 什么是 AI-assisted Web3 Prototype？** 你不再是苦力，而是**架构师 + 审计员**。你用 Cursor/ChatGPT 写脚手架、生成基础合约、解释报错；你负责把模块拼起来，并确保不把私钥喂给 AI。
 
@@ -259,15 +225,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 **1\. 活动定义的 5 个核心锚点**
 
@@ -296,16 +254,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 **1\. “两条线”研究法**
 
@@ -339,35 +288,14 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-14-1784037939936-image.png)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 # **🛠️ AI-assisted Dev Plan**
 
@@ -434,39 +362,14 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-12-1783819303776-image.png)
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 ### **Remix IDE 实战指南**
 
@@ -511,21 +414,7 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 ### **从“交易”到“合约”的思维跃迁**
 
@@ -545,45 +434,14 @@ Web3 是开源的天下。今天（特别是 Bonus 任务中看 Moss 项目）�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-09-1783601532564-image.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 ### **硬核解读：用 Block Explorer 拆解交易**
 
@@ -608,49 +466,14 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-07-1783431460944-image.png)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/SelinaAnn/images/2026-07-06-1783336548272-image.png)
 <!-- DAILY_CHECKIN_2026-07-06_END -->
@@ -660,4 +483,28 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 ![image.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-228867732/2026-07/2f80aaa0-d3d2-41ad-99b6-e285c90d1bc8.png)
 <!-- DAILY_CHECKIN_2026-07-27_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+### **💻 深度聚焦：Dev 的“带刀加入”与 24 小时试合作**
+
+很多开发者组队的失败模式是：加入一个团队，干等了 3 天需求，最后发现啥也没做出来。
+
+#### **1. 你的 30 秒“带刀加入”Pitch**
+
+当你在匹配环节遇到没有开发者的团队（Idea Holder），不要只说“我会写 Solidity 和前端”。你要这样说：
+
+> “我是 Dev。听了你们的想法，我觉得可行。**我已经用 AI 在昨天搭好了一个基础的前端连钱包骨架和空合约（这就是我带的刀）**。如果你们觉得行，我们不用聊太久，**接下来 24 小时我们搞个 Trial Run（试合作）**。明天晚上 8 点，我看得到你们的竞品分析和宣发文案，你们看得到我能跑通的核心逻辑代码。如果都对味，我们就正式组队，否则一拍两散，互相不耽误。”
+
+#### **2. 为什么必须强制“24 小时试合作”？**
+
+* **筛掉“嘴炮党”**：很多人只有三分钟热度，遇到要输出具体东西就消失。
+* **测试沟通摩擦**：有时候一个人能力行，但沟通极其费劲，24 小时足以暴露问题。
+* **验证技术可行性（尽早排雷）**：DAY 2 定的 Scope，到了 DAY 3 真正动手写第一行代码时，你可能会发现“卧槽，这个接口 Monad 测试网还没支持”。早发现，早转向。
+
+#### **3. 如果遇到“合并”建议**
+
+助教可能会建议两个相似的团队合并。**作为 Dev，合并的唯一条件是：立刻明确谁是主 Dev。** 两个团队如果各有一个 Dev，千万别妥协说“我们一起写”。代码合并是地狱。要么你让出主 Dev 地位（你去写测试或看文档），要么你接手全部代码，对方 Dev 转型做 Ops 或 Research。
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

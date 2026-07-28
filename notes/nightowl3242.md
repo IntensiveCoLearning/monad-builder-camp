@@ -1,22 +1,15 @@
----
-timezone: UTC+6
----
-
-# nightowl3242
-
-**GitHub ID:** nightowl3242
-
-**Telegram:** 
-
-## Self-introduction
-
-应用统计学专业大二
+- GitHub ID: 188189075
+- Name: nightowl3242
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 今天正式进入了 Monad Builder Camp 的学习，对于没有Web2背景、也没怎么接触过 Web3 的我来说，这一切都显得非常陌生。我尝试用对待底层数据的逻辑，来拆解今天学到的链上基础知识。
 
 普通软件的账号存在公司的服务器里，而区块链的账户体系完全不同。今天我安装了人生中第一个加密钱包MetaMask。它更像是一个密钥管理工具，帮我生成并保管一个在链上世界通用的唯一地址。课程特别强调了隔离风险的原则，所以这个钱包是专为课程新建的，为的是避免未来误操作导致真实资产受损。

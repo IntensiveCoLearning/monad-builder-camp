@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# 0xlomai
-
-**GitHub ID:** 0xlomai
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 253339470
+- Name: 0xlomai
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+# 2026-07-12
+
 今天继续完成 Web3 基础学习，并对行业生态和常见业务模式有了更系统的认识。通过这一阶段的学习，也逐渐建立起了对 Web3 整体框架的初步理解。
 
 接下来希望能够将基础知识与实际项目结合，在实践中不断积累经验、提升认知。
@@ -24,6 +17,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+# 2026-07-11
 
 **Web3 实习学习笔记（第五天）**
 
@@ -34,7 +28,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
+# 2026-07-09
 
 今天继续学习 Web3 的基础内容，并进一步熟悉常用工具和操作流程。随着学习的深入，对区块链生态的基本组成和不同项目之间的关系有了更清晰的认识。
 
@@ -43,8 +37,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
+# 2026-07-08
 
 今天继续熟悉 Web3 基础知识和相关工具，对区块链钱包、链上交互以及 Web3 产品的基本运行方式有了进一步了解。
 
@@ -53,9 +46,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
+# 2026-07-07
 
 Web3 实习学习笔记（第一周）
 

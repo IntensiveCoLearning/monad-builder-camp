@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Jiang0836
-
-**GitHub ID:** Jiang0836
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 292482617
+- Name: Jiang0836
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 努力阅读了一下手册
 
 区块链：一个去中心化的分布式账本，靠密码学技术把交易数据按时间打包成一个个“区块”，然后像链条一样串起来，由全网所有节点共同维护。它的核心优势是数据没法篡改，因为除非你能同时搞定全网超过 51% 的节点，否则改了也没用。另外它完全公开透明，而且不需要像银行这样的第三方中介，大家可以直接点对点交易。

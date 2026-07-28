@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# ts5578-max
-
-**GitHub ID:** ts5578-max
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 264440291
+- Name: ts5578-max
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

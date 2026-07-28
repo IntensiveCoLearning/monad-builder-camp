@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# millarxixi-afk
-
-**GitHub ID:** millarxixi-afk
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 296023197
+- Name: millarxixi-afk
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

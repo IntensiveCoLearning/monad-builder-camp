@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# xzhc
-
-**GitHub ID:** xzhc
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 58842295
+- Name: xzhc
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
+
 ### **普通开发者如何进入以太坊协议层**
 
 ## 什么是EPF？
@@ -42,6 +35,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
 
 # DevRel的成长之路
 

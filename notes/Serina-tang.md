@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Serina-tang
-
-**GitHub ID:** Serina-tang
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 237023778
+- Name: Serina-tang
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

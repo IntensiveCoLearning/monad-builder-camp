@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# clairelake-dev
-
-**GitHub ID:** clairelake-dev
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294888594
+- Name: clairelake-dev
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -8,81 +8,63 @@
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 今天思考了一下项目的技术路线，做了自己的Builder Profile
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 今天设计一下项目结构图，然后试试生成一个网站
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 深入了解Giveth，完善竞品分析
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 把自己的Demo又做了一些改进，继续思考该以何种形式呈现
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 把自己的产品想法初步地整理了出来，并且做了一点竞品分析
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 今天主要是跟AI不停地互动，努力把一个潜在的想法落实成可讨论的产品结构
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 Aave与Morpho完整笔记链接：[https://www.notion.so/Aave-vs-Morpho-A-Comparative-Analysis-3a1d7418ee2180c1a99eec2596c561c6?source=copy\_link](https://www.notion.so/Aave-vs-Morpho-A-Comparative-Analysis-3a1d7418ee2180c1a99eec2596c561c6?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 Uniswap V3 Notion笔记链接：[https://www.notion.so/Uniswap-V3-3a0d7418ee2180e59f70feb8d872da6e?source=copy\_link](https://www.notion.so/Uniswap-V3-3a0d7418ee2180e59f70feb8d872da6e?source=copy_link)
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 今日主要了解了改进提案和治理提案
 
@@ -254,14 +236,7 @@ EIP、ERC、MIP 通常会详细说明：
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 | An NFT internet  一个非同质化代币网络 | The internet today  如今的互联网 |
 | --- | --- |
@@ -277,15 +252,7 @@ EIP、ERC、MIP 通常会详细说明：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 初步地了解了Moss这个项目；回顾了有关Tokenomics的一些学习资料  
 人们进入你的生态系统的一个最重要的原因是什么？这是网络的最有价值的交互（Most Valuable Interaction，MVI），代币设计的重点是激励这种 MVI 的可持续反馈循环。  
@@ -297,165 +264,63 @@ EIP、ERC、MIP 通常会详细说明：
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 继续自行了解相关领域的研究，今天主要是预言机和多代币系统
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 完成了week1 的Demo，给下一周的思考定了基本的方向，细化了一些细节
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 对自己初步构思的web3产品进行了深入思考，争取明天做出初版的demo
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 根据提供的资料，更深入地了解了Monad的特点。根据任务的指引，思考并尝试构建了一个简单的适合Monad的交互场景。
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 根据分享和Co-Learning中的内容，了解了一些新东西；继续了解Monad
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 对于AI Agent在web3支付领域的应用有了初步了解
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 用ai agent写了第一份智能合约，并完成了部署
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 观看了昨天开营式的回放，了解了本次共学的计划和目标，我本人对于本次共学也有了相应的期望，并且预想了接下来的学习计划。听了XiaoHai的分享，对于他的经历和研究领域有了一些了解。参加了7.06Co-learning，跟着分享人的步骤操作，尝试创建了自己的钱包，接下来会继续跟着任务推进，去完成一笔交易
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+做了项目的流程图
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

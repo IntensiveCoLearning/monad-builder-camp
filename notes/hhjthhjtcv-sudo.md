@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# hhjthhjtcv-sudo
-
-**GitHub ID:** hhjthhjtcv-sudo
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 265731705
+- Name: hhjthhjtcv-sudo
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,84 +1,63 @@
----
-timezone: UTC+8
----
-
-# Tang Yuyue 
-
-**GitHub ID:** yuyue95
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 184196171
+- Name: yuyue95
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+# 2026-07-14
+
 今天学习手册
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
 
 Remix 写 `MessageBoard` 合约 → 编译 → MetaMask 切 Sepolia → 水龙头领测试币 → `Injected Provider - MetaMask` 部署 → 在 Sepolia Etherscan 用 tx hash 和合约地址查看 **Events 日志** → 写前端用 ABI 实例化合约,`.call()` 读(免费)、`.send()` 写(要 gas 和签名)。
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
+# 2026-07-12
 
 今天继续看文档，但是只看了一小点，实在太忙了。下周恢复正常学习进度
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
+# 2026-07-11
 
 今天依旧学习手册
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
+# 2026-07-10
 
 今天看了实习手册
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
+# 2026-07-09
 
 今天在remix上面建立了合约，调用了read和write来实现留言和读取。在测试网上查询到了这笔交易
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
+# 2026-07-08
 
 今天转账了，还没有写合约，明天写一下
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
+# 2026-07-06
 
 1.用MetaMask创建了一个钱包，用助记词。重要钱包要离线保存。
 

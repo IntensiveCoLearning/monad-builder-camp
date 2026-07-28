@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# HerschelLi-31
-
-**GitHub ID:** HerschelLi-31
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295893903
+- Name: HerschelLi-31
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
+
 ## **Week 2 Role Choice Card**
 
 ### **我选择的主方向**
@@ -60,13 +53,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+# 2026-07-12
 
 复习colearning和agent设计
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
+# 2026-07-10
 
 Week1总结:
 
@@ -79,8 +73,7 @@ Week1总结:
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
+# 2026-07-09
 
 下面是一份可以直接提交/整理到学习记录里的 **Day 4 学习笔记**。你可以把后面 `transaction hash`、截图链接、区块浏览器查询结果再补进去。
 
@@ -248,9 +241,7 @@ gas = 部署合约消耗的计算费用
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
+# 2026-07-07
 
 完成discord，telegram，notion，codex的安装和准备
 
@@ -261,10 +252,7 @@ gas = 部署合约消耗的计算费用
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
+# 2026-07-06
 
 区块链可以理解为很多节点共同维护的一本账本，交易被打包进区块，区块之间用哈希连接，所以历史记录很难被篡改。它的可信不是来自某个公司，而是来自分布式网络、共识机制和代币激励。比特币说明了“去中心化货币”如何运行，而公链、联盟链、私链的区别主要在于开放程度和控制权。
 

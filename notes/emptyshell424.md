@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# shell
-
-**GitHub ID:** emptyshell424
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 121221459
+- Name: emptyshell424
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

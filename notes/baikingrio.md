@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Quinn
-
-**GitHub ID:** baikingrio
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 3849855
+- Name: baikingrio
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 今天我调研了在 Monad 上使用 Chainlink Data Streams / Live Data 获取并链上验证 BTC/USD 价格的路径。
 
 结论是：Chainlink Data Streams 适合低延迟、按需拉取的价格场景，但它不是传统的 latestRoundData() Push Feed，而是 Pull Oracle。正确流程是后端用 HMAC 凭据取回 Chainlink DON 签名 report，再把原始 report 带进交易，由合约调用 Verifier Proxy 验证并解码价格、观察时间和有效期。
@@ -40,6 +33,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 今天我验证了 BTC/USD 15 分钟预测方向最关键的一层：价格能否在 Monad Testnet 上被真实、可复查地结算。
 
@@ -54,7 +48,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 今天把 Monad Lucky Draw 的免弹窗抽奖跑通了。
 
@@ -71,8 +65,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 今天我继续完善 Monad Lucky Draw 的账户抽象实践，重点不是再加一个“免弹窗”按钮，而是核查 Session Key 的真实权限边界。
 
@@ -89,9 +82,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 今天继续推进 Monad Account Abstraction Practice Lab，并把 Lucky Draw 从学习型页面推进到真实 Monad Testnet 闭环。
 
@@ -104,10 +95,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 今天继续完善 Week 3 的 Monad Account Abstraction Practice Lab。
 
@@ -128,11 +116,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 今天进入 Week 3 的组队和 Mini Demo 阶段。我和 Hagoo、ritscher 先确定了 Research、Ops、Dev 的基础分工：Hagoo 负责用户与资料核查，ritscher 负责项目叙事和用户反馈，我负责 Monad Testnet 验证、前端原型、测试和技术 Proof。
 
@@ -145,12 +129,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 今天继续研究了 Safe 和账户抽象，重点是确认 Safe Passkeys 能不能直接迁到 Monad。
 
@@ -165,13 +144,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 今天系统看了 Safe SDK 的官方总览，重点不是马上接入代码，而是先把 Safe 的账户模型和交易流程理清。
 
@@ -184,14 +157,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 今天我继续围绕 Moss 做 Dev Builder 学习和开源贡献准备。
 
@@ -208,15 +174,7 @@ Dev Portfolio Pack：[https://github.com/baikingrio/monad-builder-camp/blob/main
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 今天继续围绕 Moss 做了从“文档理解”到“可检查 Proof”的完整实践。
 
@@ -233,16 +191,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 今天完成了 Dev Track 的「文档到代码骨架」任务。
 
@@ -257,17 +206,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 今天主要完成了 Week 2 的 Dev Builder 学习材料整理，并提交了 Role Choice Card、Week 2 Role Log、AI Collaboration Log 和 Week 3 Role Statement 四项基础任务。
 
@@ -284,18 +223,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 今天进入 Monad Builder Camp Week 2，我先把主方向确定为 Dev Builder。
 
@@ -312,19 +240,7 @@ Moss 系列学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 今天主要学习并实践了 ERC-7702，也继续梳理了 ERC-4337 Sponsor 授权的安全边界。
 
@@ -351,20 +267,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 今天继续完善 Monad 上的 ERC-4337 学习实践，重点是 Sponsor Authorization 的安全边界。
 
@@ -393,21 +296,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 今天继续完善 Monad Testnet 上的 ERC-4337 实验，并学习和实践了 ERC-1363。
 
@@ -424,22 +313,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 今天主要围绕 ERC-4337 Account Abstraction 做了三组连续实验，把智能账户从“能执行 UserOperation”继续扩展到更接近真实应用体验的能力，重点学习和实践了三个方向：
 
@@ -482,23 +356,7 @@ Sponsor 部分让我更明确了一点：Sponsor 不替用户授权，而是判�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 今天继续做链上实践和学习记录，重点做了 ERC-4337 最小实践，从 EntryPoint v0.7 迁移到 Monad Testnet 官方 EntryPoint v0.8，并记录两者差异。
 
@@ -553,24 +411,7 @@ Explorer：  
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今天学习了 ERC-4337 Account Abstraction 和 thirdweb 的 Session Keys 文档，重点理解了智能账户、UserOperation、Bundler、EntryPoint、Paymaster 之间的关系。
 
@@ -587,25 +428,7 @@ Explorer：  
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天是 Monad Builder Camp 的 Day 1，我先搭建了独立学习仓库，并在 `experiments/monad-playground` 里创建了一个 Foundry 实验项目。
 
@@ -640,4 +463,54 @@ Explorer：  
 今日学习记录：
 [https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-27.md](https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-26.md)
 <!-- DAILY_CHECKIN_2026-07-27_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+今天完成了 BTC Target Sprint 的 Kuru 链上订单簿验证，并正式确定 v0.8 的两周黑客松主线：
+
+ 
+
+Prediction-native Fully Onchain CLOB
+
+\+ Complete Set
+
+\+ Pyth
+
+\+ Single-Lane Rollover
+
+今天的关键结论不是“Kuru 能不能交易 ERC-20”，而是它能否安全承载固定到期的预测市场。
+
+<br />
+
+实际在 Monad Testnet 上完成了：
+
+<br />
+
+\- 自定义 Outcome Market 创建；
+
+\- 跨地址限价挂单、成交、部分成交；
+
+\- Cancel、Batch Cancel、Margin Withdraw；
+
+\- OutcomeVault 的 Above / Below / Void 结算与赎回；
+
+\- 本地 Foundry 回归 16 passed, 0 failed。
+
+<br />
+
+验证结果显示，官方 Kuru Router 虽然可以完成链上订单簿交易，但项目 Resolver 无法独立暂停市场；OutcomeVault 结算后，Kuru Market 仍可能保持 ACTIVE 并接受新订单。因此官方 Kuru 不适合作为固定 Cutoff、Pyth Settlement 的正式底层。
+
+<br />
+
+基于这次验证，我将 v0.8 收敛为预测市场原生 CLOB：互补的 Buy Above + Buy Below 在链上原子锁定 Test USDC，并创建完全抵押的 Complete Set；同方向 Buy / Sell 用于二级交易。Protocol AMM 保留为 Day 7 Gate 未通过时的回退方案。
+
+<br />
+
+下一步先冻结四类订单的资金账本、固定 Tick / Lot、Direct Match 与 Complementary Match 的价格规则和关键不变量，再进入 CLOB 的链上实现。
+
+<br />
+
+**今日学习记录：**https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-28.md
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

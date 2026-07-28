@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# MalenthaWu
-
-**GitHub ID:** MalenthaWu
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 283407802
+- Name: MalenthaWu
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

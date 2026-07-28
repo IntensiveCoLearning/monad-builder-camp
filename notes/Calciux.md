@@ -1,146 +1,84 @@
----
-timezone: UTC+8
----
-
-# Calciux
-
-**GitHub ID:** Calciux
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 94445577
+- Name: Calciux
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+# 2026-07-21
+
 生病请假
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+# 2026-07-19
 
 因事无法学习，暂时打卡
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
+# 2026-07-18
 
 打卡占位，链接后补
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
+# 2026-07-17
 
 临时打卡，链接后补
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
+# 2026-07-15
 
 [https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-15.md](https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-15.md)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
+# 2026-07-13
 
 今日打卡链接明日提交
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 [https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-11.md](https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-11.md)
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 [https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-10.md](https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-10.md)
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 [https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-09.md](https://github.com/Calciux/Monad-Builder-Camp/blob/main/daily/2026-07-09.md)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 [https://github.com/Calciux/Monad-Builder-Camp](https://github.com/Calciux/Monad-Builder-Camp)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今日暂时无法打卡，后补
 <!-- DAILY_CHECKIN_2026-07-07_END -->

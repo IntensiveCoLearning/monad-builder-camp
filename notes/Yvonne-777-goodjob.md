@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Yvonne-777-goodjob
-
-**GitHub ID:** Yvonne-777-goodjob
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294512896
+- Name: Yvonne-777-goodjob
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

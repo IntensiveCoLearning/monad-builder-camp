@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Annie Zhang
-
-**GitHub ID:** AnnieZhang2026
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 285317069
+- Name: AnnieZhang2026
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

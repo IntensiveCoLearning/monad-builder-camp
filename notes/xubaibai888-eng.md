@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# xubaibai888-eng
-
-**GitHub ID:** xubaibai888-eng
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 293754078
+- Name: xubaibai888-eng
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

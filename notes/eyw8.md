@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# eyw8
-
-**GitHub ID:** eyw8
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 281870836
+- Name: eyw8
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,42 +1,35 @@
----
-timezone: UTC+8
----
-
-# Xiaonan2020
-
-**GitHub ID:** Xiaonan2020
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 59467835
+- Name: Xiaonan2020
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
+# 2026-07-21
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
+# 2026-07-19
 
 打卡学习
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
+# 2026-07-16
 
 **参加 7.16 Co-learning**
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
+# 2026-07-15
 
 参加
 
@@ -47,9 +40,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
+# 2026-07-14
 
 **实时参加 7.14｜**
 
@@ -60,10 +51,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
+# 2026-07-13
 
 参加 Web3 技术如何从 0 到 1 用 AI 开发 会议  
 学习BuildAnything课程
@@ -71,50 +59,28 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
+# 2026-07-12
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
+# 2026-07-11
 
 ai辅助做线上合约应用
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
+# 2026-07-10
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 1 参加会议：从「裸奔」到「受控」：AI Agent 高危案例解析与安全防线构建  
 2 看Web3 实习手册
@@ -122,31 +88,14 @@ ai辅助做线上合约应用
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 补课补课
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 1 学习web3手册，看基础知识
 

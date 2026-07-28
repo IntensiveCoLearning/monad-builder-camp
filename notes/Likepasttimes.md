@@ -8,6 +8,8 @@
 <!-- Content_START -->
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+# 2026-07-16
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-16-1784192545148-image.png)
 
 读了一大堆材料，根本看不懂，晚上再深入了解一下概念
@@ -15,30 +17,28 @@
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+# 2026-07-15
 
 ![Pendle（收益代币化）.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-15-1784078319117-Pendle_______.png)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
+# 2026-07-14
 
 今天尝试学习Pendle，开始学习是寻找资源发现全英文，尝试翻译发现太理论看不懂，发现油管视频，好像在做六级听力，尝试拿豆包翻译，发现豆包是个唐氏，没办法只能硬着头皮看了，刚看懂一点发现该睡觉了，我发誓明天一早我就开始学习pendle
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
+# 2026-07-13
 
 今天了解到了一个有意思的网站，这个网站里有丰富的学习资源我在这个网页中浏览了好长时间感受到了学习的乐趣
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
+# 2026-07-12
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-12-1783864007700-image.png)
 
@@ -47,47 +47,28 @@
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
+# 2026-07-11
 
 ![完成智能合约的创建.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-11-1783740876207-_________.png)
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
+# 2026-07-09
 
 ![完成智能合约的创建.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-09-1783557983178-_________.png)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
+# 2026-07-08
 
 ![行业赛道概览.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Likepasttimes/images/2026-07-08-1783472467670-______.png)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 为什么只能提交一张图片呢
 
@@ -96,19 +77,7 @@
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 |   | 早上先了解了一节基础知识 |   |   |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

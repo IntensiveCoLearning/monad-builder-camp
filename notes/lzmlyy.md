@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# 梁志敏
-
-**GitHub ID:** lzmlyy
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 186316574
+- Name: lzmlyy
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
+
 # DAY 2｜工具准备与 Builder 身份：我如何开始远程协作？
 
 ## 一、今日学习目标
@@ -183,6 +176,7 @@ Notion 和 Google Docs 更适合做长期笔记、协作文档和学习记录。
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
 
 -   **Web3 不是单纯炒币**  
     Web3 更像是一套新的互联网协作方式：资产、身份、数据、组织都可以放到链上运行。新人不要一上来只看币价，先理解区块链、钱包、智能合约、Dapp 和安全风险。

@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# sophie
-
-**GitHub ID:** sophisame
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 151982944
+- Name: sophisame
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
+
 FluxA
 
 FluxA 是 AI 原生的支付基础设施，赋予 AI 智能体在互联网上自主、安全、即时地收发资金的能力——且不会让人类用户暴露于金融风险之中。
@@ -90,6 +83,7 @@ ODP / AEP2
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
 
 EPF＝以太方
 

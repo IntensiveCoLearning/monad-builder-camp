@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# changlu812
-
-**GitHub ID:** changlu812
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 230476357
+- Name: changlu812
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

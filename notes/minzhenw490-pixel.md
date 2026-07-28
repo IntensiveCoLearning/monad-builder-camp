@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# 灵灵七
-
-**GitHub ID:** minzhenw490-pixel
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298759833
+- Name: minzhenw490-pixel
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-27
 <!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
 ![9c91c12ca5b3610968b648f19948e543.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/minzhenw490-pixel/images/2026-07-26-1785090705905-9c91c12ca5b3610968b648f19948e543.jpg)
 
 _修改了项目的Logo，并确定了demo叙事讲述_
@@ -46,13 +39,14 @@ _🎙️ 讲述：_\*：
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 [https://github.com/minzhenw490-pixel/Execution-Safety-Agent/blob/main/docs/Agent-Reason%E6%96%87%E6%A1%88.md](https://github.com/minzhenw490-pixel/Execution-Safety-Agent/blob/main/docs/Agent-Reason%E6%96%87%E6%A1%88.md)
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 🎬 Demo Script — Execution Safety Agent时长： 约 2 分钟 形式： 对照演示（无保护 vs 有 Agent） 面向： Hackathon 评委 / 观众🎬 场景设定用户：小明（普通 DeFi 用户）
 
@@ -97,108 +91,63 @@ _🎙️ 讲述：_\*：
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 主要讨论内容1. 🏗️ 项目技术架构讨论核心方向： DeFi 交易安全层，在用户执行 Swap 前做风险检查关键风险场景分享（苏生/jayz）：• 报价操纵（Price Manipulation）：部分交易池存在两套参数——一套给链上模拟/路由用（虚报好价格），一套给真实用户交易用（实际成交价差），诱导用户进入不利池子• 滑点攻击（Slippage Attack）：用户设置预期价格和最低可接受价格后，攻击者故意打到用户最低价格• 排队/拥堵问题：连接到热门交易池时容易排不进去，导致交易失败或产生大额滑点• 小规模交易者风险更高：大交易者有对冲策略保护，小散户更容易被"收割"架构层级讨论：• 三层架构（基于群主/架构师的执行计划）：1. 市场模拟层（Market Simulation）—— 提供风险场景数据2. 后端处理层（Backend）—— 数据分析与决策3. Agent 层（LLM）—— 结果解释与用户交互• LLM 的使用定位：◦ ✅ 用于：结果的解释和自然语言呈现（告诉用户为什么拦截、风险是什么）◦ ❌ 不用于：实时风险评分（速度不够快）◦ 建议使用\*\*规则判断（类似 E124 类型）\*\*来做实时风险检测，LLM 只做解释层2. 🎨 前端 & 设计方向酷可可 & joy yu的设计讨论：展示方式——两个方向：方向方案特点A - 前置引导用户进入产品时先选择角色/偏好，获得初始身份形象像游戏选角色，有参与感B - 成就奖励用户先交易，达到条件后解锁 NFT/勋章作为奖励更聚焦核心功能讨论结论： 两个方向结合。• 前期：固定几个形象做产品引导，帮助新用户了解产品• 成就系统：交易达到一定量/条件后发放 NFT 奖励• NFT 类型先固定几种，不做自定义生成设计参考：• 酷可可倾向可爱、小巧风格• 建议参考 Web3 成熟产品的 UI 风格（颜色、色调、对比度）• 参考 小孩老师分享的钱包设计案例（创建钱包注册照护的流程逻辑）• 参考 CryptoZombies 根据参数生成不同类型形象的方式3. 🆔 链上身份 & NFT 讨论核心共识：NFT = 成就奖励，不是链上身份绑定• 区别于真正的"链上身份"（如 Fierce 银行那种绑定真实身份的 DID）• 我们的 NFT 不需要 KYC/真实身份绑定• 用户钱包地址交易量/次数达到里程碑 → 发放 NFT 勋章NFT 设计要点：• 交易完成一定笔数或金额后发放• 可以分级（不同等级对应不同形象）• 前端通过链上数据渲染 NFT 形象（颜色/名称/特征等参数驱动）• NFT 一旦发放不可修改，所以设计要简洁、稳定• Demo 阶段先用固定几种 NFT，不做开箱/随机生成Agent 人格化建议：• 可让用户给 Agent 设定人格（新手友好版 / 老手专业版）• 通过对话风格区分，不影响安全检测核心功能• 这种方式比 NFT 身份更容易实现4. 📱 用户定位讨论目标用户群体争议：• 初学者角度：用通俗语言解释复杂 DeFi 逻辑，让新用户理解链上交易• 专业人士角度：直接面向有链上知识的专业交易者结论： 对外展示时面向普通用户，用数据+简单流程展示产品价值。内部技术细节不需要全部暴露给用户。5. 📋 下一步工作1. 需求文档整理：根据群主/架构师发布的执行计划整理需求2. 前端设计：酷可可 + 前端同学推进 UI 和交互设计3. 先做 Demo：尽快把核心流程的小 Demo 做出来，再做体验迭代4. 交互逻辑确认：确定新用户引导流程（身份选择 or 直接用核心功能）5. NFT 设计：固定几种成就 NFT 形象，后端提供数据接口，前端渲染待办事项#任务负责人状态1确认 NFT 技术方案（里程碑计数 + 触发 mint）⏳ 待确认2设计 NFT 勋章视觉（3-4 个等级）酷可可⏳ 待开始3前端 Profile 页面 + 勋章展示前端同学⏳ 待开始4更新 Demo 脚本（加入 NFT 展示环节）77✅ 已完成5编写 PRD77⏳ 待开始6确定新用户引导流程设计酷可可 + 前端⏳ 待开始7确认产品目标用户群体全员⏳ 待讨论以上纪要基于会议录音整理，如有遗漏或偏差请补充。
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 [https://github.com/minzhenw490-pixel/Monad-Mini-Demo/blob/721f4122f002535041056ed194851062360418e6/my-melody-demo.html](https://github.com/minzhenw490-pixel/Monad-Mini-Demo/blob/721f4122f002535041056ed194851062360418e6/my-melody-demo.html)
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 [https://github.com/minzhenw490-pixel/web3-/blob/52106925dc7495994fd27304a4d860d174487990/Week3-Day1.md](https://github.com/minzhenw490-pixel/web3-/blob/52106925dc7495994fd27304a4d860d174487990/Week3-Day1.md)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 [https://github.com/minzhenw490-pixel/web3-/blob/e7533aa61e3cef3365ded37f22cb36dab2ea33ce/Week2%20Day7%EF%BD%9C%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md](https://github.com/minzhenw490-pixel/web3-/blob/e7533aa61e3cef3365ded37f22cb36dab2ea33ce/Week2%20Day7%EF%BD%9C%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 [https://github.com/minzhenw490-pixel/web3-/blob/524a27fd7cbf262b849f2e60d44a17bc44bbe521/AI%20Collaboration%20Log%EF%BD%9CCoinGecko%20ETH%20%E4%BB%B7%E6%A0%BC%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.md](https://github.com/minzhenw490-pixel/web3-/blob/524a27fd7cbf262b849f2e60d44a17bc44bbe521/AI%20Collaboration%20Log%EF%BD%9CCoinGecko%20ETH%20%E4%BB%B7%E6%A0%BC%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.md)
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
+# 2026-07-17
 
 [https://github.com/minzhenw490-pixel/web3-/blob/0ab8a8a1bf58955779eec164021c3ea7730eb875/DAY%205%EF%BD%9C%E8%B7%AF%E5%BE%84%E6%94%B6%E6%9D%9F%EF%BC%9AWeek3%20%E7%BB%84%E9%98%9F%E4%BD%9C%E5%93%81%E9%9B%86%20Portfolio.md](https://github.com/minzhenw490-pixel/web3-/blob/0ab8a8a1bf58955779eec164021c3ea7730eb875/DAY%205%EF%BD%9C%E8%B7%AF%E5%BE%84%E6%94%B6%E6%9D%9F%EF%BC%9AWeek3%20%E7%BB%84%E9%98%9F%E4%BD%9C%E5%93%81%E9%9B%86%20Portfolio.md)
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 [https://github.com/minzhenw490-pixel/web3-/blob/58656676e151643b5903cc4fd3e25f1a03727378/Web3.%20Day4%20%20Space%20%E7%BA%BF%E4%B8%8A%E5%88%86%E4%BA%AB%20Ops%20%E6%89%A7%E8%A1%8C%E9%A2%84%E6%A1%88%20v1%20%2B%20%E6%A0%87%E5%87%86%E5%8C%96%E5%8F%8D%E9%A6%88%E5%A4%8D%E7%9B%98%E6%A1%86%E6%9E%B6.md](https://github.com/minzhenw490-pixel/web3-/blob/58656676e151643b5903cc4fd3e25f1a03727378/Web3.%20Day4%20%20Space%20%E7%BA%BF%E4%B8%8A%E5%88%86%E4%BA%AB%20Ops%20%E6%89%A7%E8%A1%8C%E9%A2%84%E6%A1%88%20v1%20%2B%20%E6%A0%87%E5%87%86%E5%8C%96%E5%8F%8D%E9%A6%88%E5%A4%8D%E7%9B%98%E6%A1%86%E6%9E%B6.md)
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 [https://github.com/minzhenw490-pixel/web3-/blob/207f76bfc49d805ca7154d44fb5d6260af5a4509/Week2%20Day3%20space%20%E5%AE%A3%E4%BC%A0%E6%96%87%E6%A1%88%E6%96%B9%E6%A1%88%20.md](https://github.com/minzhenw490-pixel/web3-/blob/207f76bfc49d805ca7154d44fb5d6260af5a4509/Week2%20Day3%20space%20%E5%AE%A3%E4%BC%A0%E6%96%87%E6%A1%88%E6%96%B9%E6%A1%88%20.md)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # Day 2 Ops 学习笔记｜Web3 小型 Space 活动策划 Brief
 
@@ -318,17 +267,7 @@ _🎙️ 讲述：_\*：
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 ```
 Week 2 Day 1（周一）｜主方向：**Ops Builder（运营）**
@@ -413,18 +352,7 @@ Week 2 Day 1（周一）｜主方向：**Ops Builder（运营）**
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 **今日学习目标**
 
@@ -624,19 +552,7 @@ Week 2 Day 1（周一）｜主方向：**Ops Builder（运营）**
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 1\. 我使用的 Prompt
 
@@ -957,20 +873,7 @@ return total;
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 Monad **学习笔记：不只是“更快”，而是高频交互体验的重构**
 
@@ -1057,21 +960,7 @@ Monad **不是简单地“把** TPS **从** 15 **提高到** 10,000**”，而�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 **一个完整的** DApp **通常由以下几层构成：**
 
@@ -1194,22 +1083,7 @@ OpenZeppelin **是一个经过社区验证的智能合约库，提供了** ERC20
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 涵盖：安全合规、钱包账户、交易与Gas、Monad测试网与浏览器
 
@@ -1312,23 +1186,7 @@ Monad Testnet（测试网）—— 实操重点
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 1\. DevRel（开发者关系）**核心职责：让开发者愿意用你家的链**/**协议。具体干活是：写技术文档、做** Demo **演示、在** Discord **里回答开发者问题、办黑客松。需要懂一点技术（能写** Demo **代码），但更看重沟通能力和耐心。左手拉工程师，右手拉社区**
 
@@ -1338,4 +1196,10 @@ Monad Testnet（测试网）—— 实操重点
 
 [https://x.com/min\_zhen07/status/2074357783755907265?s=46刚在 Monad 测试网完成了一笔链上交易，记录一下这次哈希交互的细节。](https://x.com/min_zhen07/status/2074357783755907265?s=46)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+<https://github.com/minzhenw490-pixel/sentinel-for-safe-execution/blob/f8d4d4cbc087e9dadc63043314f5d8c446a04cf7/docs/Sentinel-ProblemCard.md>
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

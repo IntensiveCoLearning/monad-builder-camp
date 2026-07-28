@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Lma-Te
-
-**GitHub ID:** Lma-Te
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294376231
+- Name: Lma-Te
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

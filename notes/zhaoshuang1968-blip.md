@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 善渊
-
-**GitHub ID:** zhaoshuang1968-blip
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 293830031
+- Name: zhaoshuang1968-blip
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

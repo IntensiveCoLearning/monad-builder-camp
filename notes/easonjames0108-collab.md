@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# easonjames0108-collab
-
-**GitHub ID:** easonjames0108-collab
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 284006333
+- Name: easonjames0108-collab
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

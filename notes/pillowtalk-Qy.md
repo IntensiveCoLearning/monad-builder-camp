@@ -8,6 +8,8 @@
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 ## 今日概览
 
 今天主要同时推进了两个仓库：
@@ -160,6 +162,7 @@ PR #138 当前可合并但仍为 Open，尚未收到正式 Review。我也主动
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 ## 今日重点
 
@@ -286,7 +289,7 @@ ADR 0001 和 ADR 0002 合并并通过主分支质量门禁后，[Issue #5](https
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 ## 今日进展
 
@@ -314,8 +317,7 @@ ADR 0001 和 ADR 0002 合并并通过主分支质量门禁后，[Issue #5](https
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 今天的工作重点是把 Week 3 团队 Mini Demo 从讨论阶段推进到可协作、可检查的工程化阶段，同时持续跟进 Moss 上游建设。
 
@@ -394,9 +396,7 @@ M0 基线已通过 [PR #2](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 今日主题：**从代码贡献进一步进入开源审查、安全维护与团队协作规划**
 
@@ -893,11 +893,7 @@ Week 3 方面，OriginShift 团队已经拥有脑暴会议方案和可导入 Not
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
-
+# 2026-07-21
 
 今日主题：**Moss 核心贡献落地，以及 Week 3 团队 Mini Demo 的前期准备**
 
@@ -1463,12 +1459,7 @@ Week 3 方面，OriginShift 团队已经完成组建，并将尚未命名的 Min
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
-
+# 2026-07-20
 
 ## 2026-07-20 今日打卡笔记
 
@@ -1785,13 +1776,7 @@ address-free compiled ERC-4626 ABI slice
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
-
+# 2026-07-19
 
 ## 今日打卡笔记：Moss 开源贡献记录
 
@@ -1986,15 +1971,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-18
 
 ## 今日打卡笔记：Moss 开源贡献与 Adapter 架构建设
 
@@ -2151,16 +2128,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 ## **今日学习笔记：Moss Adapter 方向判断与开源协作推进**
 
@@ -2203,17 +2171,7 @@ PR：[https://github.com/nishuzumi/moss/pull/91](https://github.com/nishuzumi/mo
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 今天的主线非常明确：围绕 **Moss 开源贡献与建设** 展开。从单纯阅读项目，进一步进入到真实 PR、项目维护方式、贡献定位和内容沉淀。
 
@@ -2437,18 +2395,7 @@ AI Agent 可以辅助链上操作，但必须经过 capability、simulation、re
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 今天的学习重点主要围绕 **Week 3 角色定位、DevRel 方向表达、活动运营设计，以及 DeFi 代表产品研究** 展开。相比前几天偏单点文章阅读或原型整理，今天更像是在把自己的方向、能力边界和研究方法进一步具体化。
 
@@ -2841,19 +2788,7 @@ Aave 成立的关键条件包括：
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 今天主要完成了两类任务：一是阅读并拆解一个真实 EIP，二是选择一个已经上线的 Web3 产品做 Product / Protocol Reading Card。今天的重点是从“看懂概念”进一步转向“结构化分析真实协议和产品”。
 
@@ -2976,20 +2911,7 @@ Polymarket 连接的是预测市场、公共判断、信息聚合和 AI 治理�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 今天主要完成了 Week 2 的方向调整、学习记录建立，以及 AI 协作方式的反思。今天的重点不是继续做基础合约 Demo，而是重新确认自己真正想探索的主题和工作方式。
 
@@ -3158,21 +3080,7 @@ AI 今天主要帮助我：
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 这一周的学习主线，可以概括为：
 
@@ -3272,22 +3180,7 @@ AI 在本周主要帮助我：
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 今天学习的是 Vitalik 关于 **AI 2040、AI 治理与公共协调机制** 的讨论。核心不是单纯争论“AI 会不会很快到来”，而是：当社会对 AI 未来存在巨大分歧时，应该如何建立一种开放、可信、可协调的公共决策机制。
 
@@ -3400,23 +3293,7 @@ d/acc 不是盲目加速所有技术，而是加速那些增强防御、韧性�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 今天学习了 Ethereum Foundation Blog 的文章：[**The triage is the product: running AI agents against Ethereum's protocol code**](https://blog.ethereum.org/2026/07/09/triage-is-the-product)。
 
@@ -3562,24 +3439,7 @@ AI 把问题从“找不到候选 bug”变成了“候选太多，如何筛选�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 今天主要阅读和理解了 Vitalik 关于 **obfuscation（程序混淆 / 程序不可读化）** 的文章。今天最大的收获是：这篇文章讨论的重点不是“如何隐藏数据”，而是 **如何隐藏程序本身**。
 
@@ -3694,25 +3554,7 @@ Obfuscated program 本身有一个明显问题：它不能防止复制。
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 今天课程主要围绕 **AI Agent 支付** 展开，重点讨论了 Agent 自主完成任务时为什么需要新的支付体系，以及 Fluxa 团队推出的 **Affluxa 支付协议体系** 如何解决 Agent 支付中的身份、预算、风控和结算问题。
 
@@ -3892,26 +3734,7 @@ Affluxa 的价值在于，它尝试用身份、预算、风控、可撤销、一
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今天主要完成了 Week 1 的复盘整理，并为 Week 2 的方向选择做了确认。整体上，今天不是从零学习新概念，而是把前几天完成的链上实践、AI 辅助开发、Monad 产品方向分析和个人分轨判断整理成可以提交的材料。
 
@@ -4126,27 +3949,7 @@ Week 2 的下一步计划是：
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天主要围绕链上产品、交易理解、Solidity 合约和 Monad Testnet 开发流程完成了一轮基础练习。
 
@@ -4174,4 +3977,159 @@ Week 2 的下一步计划是：
     
 -   完成一个适合 Monad 的高频交互应用方向分析
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+## 今日概览
+
+今天的重点不是继续堆叠 Mini Demo 代码，而是完成 Week 3 阶段材料、向 Builder Camp 提交公开记录，并集中审查 Moss 生态中的多项协议与基础设施 PR。
+
+今日可核查产出：
+
+* 整理完成 Mini Demo 阶段提交和三分钟介绍稿；
+* 完成 Week 3 团队复盘与 Week 4 继续参与决定；
+* 整理可运行工程原型的提交说明；
+* 向 Monad Builder Camp 提交 1 个真实 PR；
+* 在 Moss 完成 8 次独立 Review；
+* 其中 4 个 `APPROVED`，4 个 `CHANGES_REQUESTED`。
+
+## 一、Mini Demo 阶段提交
+
+团队继续使用 **OriginShift**，项目暂定名为 **Monad Preflight**。
+
+今天整理了本周 Mini Demo 的完整提交材料，包括：
+
+* 项目解决的用户问题；
+* 本周真实完成的工程内容；
+* Demo 查看和运行方式；
+* 真实功能与 Mock 内容的区别；
+* 已收到的技术 Review 反馈；
+* 三分钟项目介绍稿；
+* 团队成员与分工。
+
+当前可展示成果是一个可运行的 **PreflightReport v0.1 证据校验工程原型**。用户可以克隆仓库并运行：
+
+```
+pnpm install --frozen-lockfile
+pnpm check
+```
+
+项目能够通过公共包入口加载合成报告，并验证证据完整性、SourceReference、STOP 关联和信任边界。
+
+需要明确的是，今天 Mini Demo 仓库没有新增代码提交。当前主分支仍为 `316dd14`，通过620项测试，但仓库还没有前端、Decision Engine、实时 Moss/Monad 集成或完整用户交互流程。
+
+项目仓库：[Moss-Mini-Demo/moss-mini-demo](https://github.com/Moss-Mini-Demo/moss-mini-demo)
+
+## 二、Week 3 团队复盘
+
+团队决定继续参加 Week 4 Hackathon，但继续控制范围，只完成一个 Monad/Kuru Swap 交易前检查流程。
+
+我的主要职责仍然是：
+
+* 技术架构与安全边界；
+* PreflightReport Schema；
+* Decision Engine 契约；
+* Moss/Kuru 集成研究；
+* Fixture、测试和质量门禁；
+* GitHub Issue、PR 和 Review 流程。
+
+本周仓库中可核查的工程成果主要由我完成。团队当前的问题是技术推进较集中，Max、Chris 的具体交付仍需明确，Damia 的演示和用户测试工作也尚未形成公开材料。
+
+## 三、Builder Camp 公开提交
+
+今天 Fork 了 [IntensiveCoLearning/monad-builder-camp](https://github.com/IntensiveCoLearning/monad-builder-camp)，并提交了 [PR #24](https://github.com/IntensiveCoLearning/monad-builder-camp/pull/24)。
+
+该 PR：
+
+* 标题为 `Add pillowtalk-Qy check-in for 2026-07-27`；
+* 修改 `notes/pillowtalk-Qy.md`；
+* 新增120行学习与建设记录；
+* 只包含标准 DAILY\_CHECKIN 内容；
+* 当前状态为 Open；
+* 分支与上游保持可合并状态；
+* 仓库暂未配置对应自动检查。
+
+这将前一天的学习、Mini Demo 建设和 Moss 开源贡献整理成了公开可验证的课程记录。
+
+## 四、Moss Review 总览
+
+今天在 [nishuzumi/moss](https://github.com/nishuzumi/moss) 完成了8次正式 Review。
+
+我没有只检查代码能否运行，还检查了 Receipt 证据归因、资源上限、RPC 可替换性、ABI 来源、发布版本联动、文档安全语义和真实链上验证。
+
+## 五、已批准的 Review
+
+### PR #134：Nad.fun Lens Query Adapter
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/134#pullrequestreview-4797663941)
+
+确认 Nad.fun 已加入公共包 linked release group，ABI 降级验证边界也已准确说明。Lint、Build、Typecheck、Offline、在线查询、无 API Key ABI 验证和 ABI 再生成全部通过，因此提交 `APPROVED`。
+
+### PR #142：Capability Tree 复杂度与循环保护
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/142#pullrequestreview-4797728018)
+
+确认 Capability 树的循环检测、共享节点识别、累计参数与 calldata 预算、MCP 前置验证和 uint256 边界都保持 fail-closed。完整在线测试 213/213 通过，没有剩余阻塞项，因此提交 `APPROVED`。
+
+### PR #141：Monad Cards Query Adapter
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/141#pullrequestreview-4797765341)
+
+确认此前提出的 `MOSS_RPC_URL` 问题已经修复，并新增字节码、名称、Symbol 和 ERC-721 接口验证。使用无效 RPC 时测试会在指定端点失败，证明环境变量真正生效，因此提交 `APPROVED`。
+
+### PR #137：Kintsu sMON Liquid Staking Adapter
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/137#pullrequestreview-4797945081)
+
+确认真实 Monad 主网 Quote、Deposit 模拟和 Receipt 已进入正常测试流程，原始 Change 的身份和顺序保持不变。完整在线测试 219/219、Kintsu 21/21 通过，因此提交 `APPROVED`。
+
+## 六、要求修改的 Review
+
+### PR #109：Pendle PT Swap Adapter
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/109#pullrequestreview-4797605828)
+
+此前的 SY 归因和 revert selector 问题已修复，但 buy-PT 分支没有验证 `Market.Swap.receiver` 与最终 Outcome receiver 一致。
+
+我构造负向 Fixture 后确认，Market 指向错误接收者时 Receipt 仍能成功解析。因此提交 `CHANGES_REQUESTED`，要求加入确定性 receiver 绑定。
+
+### PR #144：Diamond-style Selector Proxy ABI Cross-check
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/144#pullrequestreview-4797798643)
+
+发现 `facetAddresses()` 路径在检查 `MAX_FACETS` 前，会先对全部 Facet 发起 RPC 请求。使用257个地址复现后，系统先发出257次调用才抛错，说明资源上限没有真正限制 RPC fanout。
+
+因此要求在循环前检查 Facet 数量，并在累计 selector 超限时立即停止后续调用。
+
+### PR #121：Clober V2 CLOB Adapter
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/121#pullrequestreview-4797836146)
+
+七项代码级阻塞均已修复，完整在线测试 224/224、Clober 26/26 通过。目前剩余问题主要是 PR 描述仍在使用旧的 exact-input、代理部署和 API Key 验证说法，与实际 maximum-input 和无 Key 降级验证契约不一致。
+
+因此要求修改 PR 证据描述后再合并。
+
+### PR #145：Agent Swap 故障排查文档
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/145#pullrequestreview-4797974708)
+
+发现文档把 `anvil --version` 描述成 Monad Anvil 的充分证明，但实际代码还会检查版本输出中是否包含 Monad。新增的签名前检查列表也弱于 canonical Agent 安全规范，可能让用户误以为较短列表已经完整。
+
+因此要求修正文档语义，并移除新增的文件尾空行。
+
+## 七、今日判断
+
+今天最大的收获是，Review 不只是寻找明显 Bug，还要判断实现是否真正满足它声称的边界。
+
+几个典型问题分别说明：
+
+* 验证结果正确，不代表证据身份已经绑定；
+* 定义资源上限，不代表 RPC 调用真的受到限制；
+* 测试支持环境变量，不代表代码实际使用了该变量；
+* 代码完成修复后，PR 描述和文档也必须同步；
+* 文档中的一句弱化表达，同样可能破坏安全边界。
+
+今天没有继续编写 Mini Demo 功能代码，但通过公开提交、阶段材料整理和8次独立 Review，进一步练习了 Builder、Reviewer、Maintainer 和开发者关系所需要的综合能力。
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Luney12
-
-**GitHub ID:** Luney12
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 274487550
+- Name: Luney12
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

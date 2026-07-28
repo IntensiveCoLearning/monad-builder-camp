@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Riso
-
-**GitHub ID:** LierMi
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 193933043
+- Name: LierMi
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 学习Monad链的知识，以更好进行黑客松  
   
 绝大多数区块链之所以慢，是因为它们在串行处理交易，且受到了 CPU 读写硬盘数据（I/O）的严重拖累。Monad 通过重构以太坊最底层的四个核心组件，完成了整机的“极速改造”：
@@ -76,6 +69,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 今日黑客松项目持续中。。
 
@@ -86,7 +80,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 今天主要学习了 Web3 中钱包授权、智能合约和 DeFi 协议的安全机制。我认识到，Web3 的真正安全边界是链上合约，而不是项目网页：断开钱包不代表取消授权，隐藏按钮也不能阻止别人直接调用合约。
 
@@ -99,8 +93,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 今天系统了解了 Moss 项目，并完成了项目介绍、GitHub 探索日志和新手教程。
 
@@ -129,9 +122,7 @@ Moss 是一个面向 Monad 的 AI Agent 交易框架，可以把协议操作变�
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 完成组队，拟定了团队分工计划，我的角色：PM + Tech  
 继续学习Monad链 + MOSS相关知识、源码  
@@ -140,10 +131,7 @@ Moss 是一个面向 Monad 的 AI Agent 交易框架，可以把协议操作变�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 听了分享会，关于未来agent经济和web3国内外社媒推广营销方向
 
@@ -159,11 +147,7 @@ Moss 是一个面向 Monad 的 AI Agent 交易框架，可以把协议操作变�
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
+# 2026-07-18
 
 ### 自动做市商 (AMM) 与流动性池
 
@@ -193,12 +177,7 @@ AMM 如何决定代币的价格呢？最经典的算法是 Uniswap V2 推广的�
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 参加了这周例会和co-learning  
 完成了上一个项目，今天浅浅休息一下，周末继续
@@ -206,13 +185,7 @@ AMM 如何决定代币的价格呢？最经典的算法是 Uniswap V2 推广的�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 继续学习DeSci相关内容以及和医药大佬聊了它未来的应用方向
 
@@ -281,14 +254,7 @@ contract DeployScript is Script {
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 学习了DeSci相关的内容/学习手册，Dapp开发流程
 
@@ -347,15 +313,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 学习solidity的各种函数  
 听了两场分享会，对Desci方向很感兴趣，阅读了一些相关资料，再研究研究，看能不能从传统科研往这个方向发展
@@ -363,33 +321,14 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 做了一个小项目来更好的学习和实践如何接入钱包，如何用agent管理钱包，以及各环节的安全审查
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 ### 智能合约标准化部署 SOP
 
@@ -418,18 +357,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 ### 今日继续学习 智能合约开发 (Smart Contract Development)
 
@@ -476,19 +404,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 学习了怎么写智能合约，搭建了本地开发环境，基本上能看懂简单的合约，各种不同的语言都了解了一下。  
 
@@ -527,20 +443,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 跟着web3实习手册学习，查漏补缺，逐个击破，夯实基础
 
@@ -551,21 +454,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 1，写简单的合约，部署合约，Remix（直接用AI也行，反正以后合约都是AI写）  
 2，听了老师分享会，学习了关于EPF (Ethereum Protocol Fellowship) 和 EIP（Ethereum Improvement Proposal），学习路线、研究方向等等
@@ -573,22 +462,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 第一天！  
 听了Xiaohai老师的分享会和co-learning，得到了很多实际的建议
@@ -601,4 +475,10 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 
 打卡打卡 测试
 <!-- DAILY_CHECKIN_2026-07-27_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+打卡测试
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

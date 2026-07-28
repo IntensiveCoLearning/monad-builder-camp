@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# ggus39
-
-**GitHub ID:** ggus39
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 212540076
+- Name: ggus39
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

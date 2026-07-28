@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# qpoinsdovas
-
-**GitHub ID:** qpoinsdovas
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 169470134
+- Name: qpoinsdovas
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
+
 Day2
 
 今天的东西已经上了些难度，需要多琢磨学习
@@ -26,6 +19,7 @@ Day2
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
 
 Day1
 

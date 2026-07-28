@@ -1,34 +1,28 @@
----
-timezone: UTC+8
----
-
-# Sunshine
-
-**GitHub ID:** sunshineluyao
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 48966917
+- Name: sunshineluyao
+- Timezone: UTC-12
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 今天围绕 Web3、AI 与电子商务（AI E-commerce）的融合方向进行了前沿调研，为即将到来的黑客松做准备。重点学习了 AI Agent 在智能购物、链上支付、数字身份、个性化推荐、去中心化数据与可信交易等场景中的最新发展，分析了 Agent Economy 与 Web3 基础设施结合带来的产品创新机会。同时调研了当前优秀项目的技术架构、商业模式与用户体验，思考如何将 AI 与区块链的优势结合，设计具有实际价值且可快速验证的 MVP。通过今天的学习，对黑客松的选题方向和技术路线有了更清晰的认识，下一步将进一步完成方案设计、技术验证与原型开发，为后续团队协作和项目实现做好准备。
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 今天完成了 Week 3 全部 12 个作业，从 Builder Profile、组队规则、问题定义，到角色检查、脑暴、团队计划、AI 使用记录、用户反馈、项目改进、其他团队体验、Mini Demo 提交和 Hackathon 复盘，形成了完整闭环。本周我以 Sunshine One-Person Builder Lab 的方式推进，用不同 persona 承担 Research、Ops、Dev、Product、Design 等角色，并用 AI 工具辅助完成 Moss MCP Transaction Preview Demo、GitHub repo、README、反馈改进和 Week 4 计划。下一步准备进入 Hackathon。
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 # **DAY 5｜Mini Demo Day 学习笔记**
 
@@ -45,8 +39,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 # DAY 4｜Test & Improve：把 Demo 交给真实的人
 
@@ -63,9 +56,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 **DAY 3 学习笔记｜Co-build：让研究、运营和开发真正一起工作**
 
@@ -78,10 +69,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 今天的学习重点，是从“我们想做什么”转向“用户遇到了什么问题”。团队需要结合 Research、Ops、Dev 三个视角，确认问题是否真实、用户是否明确、功能是否能在 3–4 天内完成。
 
@@ -92,11 +80,7 @@ Mini Demo 应只保留一个核心用户动作，并划分 Must Have、Nice to H
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 # Week 3 学习笔记｜从个人 Proof of Work 走向团队 Mini Demo
 
@@ -117,12 +101,7 @@ Week 3 所训练的并不只是“组队”，而是一种更加重要的 Builde
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 今天我围绕 Moss 完成了从“认识开源项目”到“真实参与开源协作”的完整学习闭环：先阅读 README、Docs、Issues 与 Pull Requests，理解 Moss 如何通过 discover、load、action、simulate 支持 AI Agent 安全构建和模拟链上交易；随后以 Dev Builder 为主要身份，结合 Research 与 Ops 能力，提出了关于模拟后用户意图核查的 Issue #97，并通过 Fork、Branch、Documentation、Commit 和 Pull Request #99 完成了一次真实、公开、可验证的开源贡献。
 
@@ -133,223 +112,93 @@ Week 3 所训练的并不只是“组队”，而是一种更加重要的 Builde
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 在BuildAnything完成初中课程，进一步深化Vibe-coding及Monash Chain开发的基础知识和实践
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 今天完成了 Week 2 学习成果的系统整理，将研究、运营或开发过程中的任务证据、AI 协作记录与个人判断沉淀为可展示的 Portfolio Pack，并进一步明确了 Week 3 组队中能够承担的角色、可提供的 Proof of Work 以及所需队友。
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 今天完成了从学习到产出的关键跨越：围绕真实产品形成市场判断，将 Space 策划细化为可执行、可复盘的运营方案，并通过 repo、README、截图、交易记录或开源贡献沉淀了可验证的 Proof of Work。
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 今日深入学习 Research、Ops 与 Dev 三类 Builder 的真实工作流，从提案与协议拆解、Space 活动设计到 AI 辅助开发，进一步理解如何将知识转化为可验证、可执行的实际产出。
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 DAY 2 打卡：今天围绕 Research、Ops 与 Dev 三条路径，将职业方向进一步拆解为可执行的 Scope，明确了研究问题与资料边界、活动目标与参与闭环，以及 AI-assisted Web3 MVP 的技术方案与实现边界。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 Week 2 Day 1 打卡：通过了解 Research、Ops 与 Dev 三条 Web3 Builder 路径，我完成了职业方向选择，并开始用 Role Log 和 AI Collaboration Log 记录学习过程、产出目标与人机协作边界，为本周 Proof of Work 和 Week 3 组队做好准备。
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 Week 1 复盘：全面复习 Week 1 五项任务的完整链路，完成时间打卡，并通关 [https://buildanything.so/zh/tracks](https://buildanything.so/zh/tracks) 新手课程全模块——钱包配置、链上交易、AI 辅助合约开发、高频场景分析与首个 Monad 合约部署，全部完成闭环验证。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 **This week I bridged theory and practice: mastering wallet mechanics and transaction fundamentals, then executing my first testnet interaction and verifying it independently on-chain—establishing the verification habit that will anchor the rest of this course.**
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 DAY 5 的学习重点是理解 Monad 如何通过高性能与低成本支持更高频的链上交互体验，并将第一周的钱包、交易、合约部署、AI 协作与安全实践整理为 Build Log，完成 Mini Demo 0，同时明确 Week 2 的 Tech / Ops / Research 主攻方向。
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 DAY 4：借助 AI 生成并理解最小 Solidity 智能合约，在 Remix 完成编译、部署与交互，掌握合约源码、ABI、合约地址、读写函数和交易哈希之间的关系，迈出从链上交易到智能合约开发实践的第一步。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 DAY 3｜已完成课程专用钱包创建、Monad Testnet 添加、测试币领取与第一笔测试网交易，并通过区块浏览器查看 transaction hash，理解了钱包安全、交易、gas 与链上记录的基本流程。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 完成 Web3 常用工具准备，了解了 X、Telegram、Discord、GitHub、Notion 和 AI Coding 工具的用途，并开始理解 Builder、DevRel 和 Proof of Work 的意义。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+今天我进一步理解了 Monad Playground 的参与方式：黑客松的起点不是立即写代码，而是先清楚地表达“我是谁、我能做什么，以及我希望与谁合作”。一个完整的团队不仅需要开发者，也需要研究、产品、运营、设计、测试和表达能力。
+
+目前，我计划以 **Sunshine One-Person Builder Lab** 的方式进入 Playground，继续探索 **AI Agent、Moss、Monad 与 Web3 用户体验** 的结合，并通过不同角色与 AI 工具完成研究、产品设计、开发和运营协作。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

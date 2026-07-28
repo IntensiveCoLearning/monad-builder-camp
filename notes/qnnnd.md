@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# profile
-
-**GitHub ID:** qnnnd
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 45587247
+- Name: qnnnd
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

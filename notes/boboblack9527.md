@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# boboblack9527
-
-**GitHub ID:** boboblack9527
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294856836
+- Name: boboblack9527
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

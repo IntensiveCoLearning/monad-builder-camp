@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# e-ALX-e
-
-**GitHub ID:** e-ALX-e
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 148843429
+- Name: e-ALX-e
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

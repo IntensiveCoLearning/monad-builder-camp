@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Yue05X
-
-**GitHub ID:** yue05x
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 179419934
+- Name: yue05x
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+# 2026-07-09
+
 需要学习技术栈清单
 
 Node/Go/Python、Viem、GraphQL、MySQL、Docker/K8s
@@ -42,6 +35,7 @@ Solidity 合约开发（DeFi/NFT/DAO）、多链部署、Gas 优化、单元测�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
 
 今天所学
 
@@ -56,7 +50,7 @@ Solidity 合约开发（DeFi/NFT/DAO）、多链部署、Gas 优化、单元测�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
+# 2026-07-07
 
 # EPF（Ethereum Protocol Fellowship）协议层学习与贡献经验分享笔记
 
@@ -788,8 +782,7 @@ Consensus / Execution Layer
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
+# 2026-07-06
 
 学习到合约是运行在区块链上的执行规则，因为开发者不能随意修改自己已经部署的内容，所以比传统后端（可能会被公司删改数据、封号）要更可靠。
 <!-- DAILY_CHECKIN_2026-07-06_END -->

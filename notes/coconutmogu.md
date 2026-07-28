@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 椰子
-
-**GitHub ID:** coconutmogu
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 184864659
+- Name: coconutmogu
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

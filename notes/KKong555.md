@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# KKong555
-
-**GitHub ID:** KKong555
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 194185481
+- Name: KKong555
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 搜集以往黑客松的一些项目，找找灵感，[https://dorahacks.io/buidl-collection/5662](https://dorahacks.io/buidl-collection/5662)
 
 以及vibe coding尝试做了一个应用，但是遇到一些问题，比如cursor额度用完，需要购买token之类的。
@@ -24,13 +17,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+# 2026-07-23
 
 整理自己擅长的技能以及整理作品，为黑客松做准备～
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
+# 2026-07-22
 
 **会议主题**：OneKey 加密钱包产品设计与行业思考分享
 
@@ -133,8 +127,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
+# 2026-07-21
 
 Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
@@ -161,9 +154,7 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
+# 2026-07-20
 
 ## Building in the AI Era+Co learning  
 一、从“技术概念”回归“商业常识”
@@ -275,21 +266,14 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
+# 2026-07-19
 
 观看回放 【DevRel 的成长之路 —— 从 Builder 到生态连接者】，学习智能合约，remix相关操作
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
+# 2026-07-18
 
 今日完成申请Avdenture X，希望可以加入黑客松。  
 
@@ -298,12 +282,7 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
+# 2026-07-16
 
 日常用钱包的安全常识。
 
@@ -314,13 +293,7 @@ Race分享核心实验项目：人生胶囊（Life Capsule AI）
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
+# 2026-07-14
 
 1\. Web3 Researcher 的成长之路
 
@@ -357,14 +330,7 @@ Web3 是一个极度务实且结果导向的行业。无论是 Researcher 往Gro
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 本次会议围绕 AI 开发闭环与 Web3 技术栈展开，指出利用 AI（如配置持久化指令 [AGENTS.md](http://AGENTS.md)、推行测试与规范驱动开发）能大幅降低门槛并加速从 Demo 到系统的落地；同时系统梳理了 Web3 的五大开发方向（DApp、合约、钱包、节点、审计）及以太坊分层状态机原理，强调最终目标是利用 AI 提升定义问题、验证结果与设计系统的核心工程能力，而非盲目背诵工具清单。 
 
@@ -379,17 +345,9 @@ Web3 开发需要去魅，回归底层计算机基础：此次分享把复杂的
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
 
-
-
-
-
-
-
-
-
-
-本周共完成了 10 位来自不同背景学员的心得分享浏览，并对第一周的积分排行榜（基于共学参与、作业提交和分享表现）进行了回顾，成功把第一周的共学成果进行了系统整理。 
+本周共完成了 10 位来自不同背景学员的心得分享浏览，并对第一周的积分排行榜（基于共学参与、作业提交和分享表现）进行了回顾，成功把第一周的共学成果进行了系统整理。       
 
 对于这10位同学分享，其中影响比较深的是《AI 赋能知识库管理与 Claude 进阶使用》、《Fintech × AI × Web3 的 Week1 学习分享》、《我怎么用 AI 学 Web3，并做出第一个链上 Demo》、《分享笔记：一个新手如何理解 Web3》，这几个分享，最重要的一点是逆向AI学习机制。学会了通过精准的 Prompt 去强制升级 AI 的教学方式（如要求 Claude “严厉一点，不要顺着我讲”），让 AI 通过抽查、批改、复测和剧本杀式的情境演练来帮自己诊断技术短板。这四场影响最深刻的分享不仅教大家如何用Obsidian和Claude升级大脑的知识库，还展示了如何用AI辅助快速写出代码Demo，最后通过社科视角给Web3注入了更深层次的批判性思考，非常完整地覆盖了从“工具精进到认知构建到动手实践再到深度反思”的共学过程。  
   
@@ -403,16 +361,7 @@ Week 2 Builder Track Split 正式开启
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 AI Agent 高危案例解析与安全构建
 
@@ -445,17 +394,7 @@ AI Agent 高危案例解析与安全构建
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 **Jack老师分享会：AI Agent 支付基础设施与Web3融合**
 
@@ -480,18 +419,7 @@ Agent Economy与Web3结合： 传统支付难以满足机器间的高频交互�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 **第一部分：Jack老师分享**
 
@@ -568,21 +496,7 @@ Step 4：开发前端
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天首先是XiaoHai老师介绍他个人前端、智能合约方面的经验，其次是web3目前需求比较多的岗位（市场、BD、运营），以及小白如何开始，比如可以从黑客松开始积累经验等。
 
@@ -592,4 +506,55 @@ Step 4：开发前端
 
 ![1.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/KKong555/images/2026-07-06-1783353706807-1.jpg)![2.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/KKong555/images/2026-07-06-1783353716324-2.jpg)![3.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/KKong555/images/2026-07-06-1783353728827-3.jpg)![5.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/KKong555/images/2026-07-06-1783354933844-5.jpg)![4.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/KKong555/images/2026-07-06-1783354984321-4.jpg)
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+观看「如何在 Web3 世界里开启你的第一段运营经历？」以及借助AI学习。在 Web3 开启第一段运营经历，其实比传统 Web2 更看重“实战痕迹”而非单纯的履历背景。Web3 的运营生态非常注重社区、去中心化协作和快速迭代， 切入点也非常多样化。
+
+1\. 明确 Web3 运营的核心板块
+
+Web3 运营和传统运营有共通之处，但侧重点不同。通常包含以下几类岗位：
+
+* 社区运营（Community Lead / Moderator）： Web3 的灵魂在 Discord 和 Telegram。核心工作是维护活跃度、解答用户疑问、组织 AMA活动、设计积分/等级激励体系。
+* 内容与 Growth 运营（Growth / Content Marketer）： 负责 X、Mirror、Substack 等渠道的内容输出，撰写项目解读、Thread（推文串）、运营长文，以及策划带动增长的活动（如 Zealy/Galxe 任务）。
+* KOL & 活动运营（BD / Event Manager）： 建立与 Web3 KOL 的合作关系，跟进联名活动（Co-Marketing），以及线上/线下 Side Event 的组织搭建。
+
+2\. 0 到 1 的行动指南：打造“链上/社交 Resume”
+
+在 Web3，“做了什么”远比“写了什么”重要。
+
+（1）沉浸式体验与积累“数字资产”:1-2 周.
+
+* 深度使用核心工具： 熟练使用 X、Discord、Telegram、Zealy、Galxe等。
+* 塑造你的 X 个人品牌： X 是 Web3 的名片。开始发布自己的项目分析、行业长推文（Thread）或日常学习笔记。
+
+（2）从 Mod（版主）或 Ambassador（大使）切入:最容易拿到的第一段经历.
+
+* 找 2-3 个你真正看好且处于早期/活跃期的项目（如新公链生态项目、DeFi、Web3 社交/工具应用）。
+* 积极在 Discord 中回答新手问题、提供建设性反馈，表现出极高的热情与专业度。
+* 申请项目的 Ambassador Program（大使计划） 或 Mod 岗位。绝大多数 Web3 运营人的第一份工作都是从兼职 Mod 开始的。
+
+（3）参与 DAO 或 黑客松（Hackathon）运营协作:积累项目实战案例.
+
+* 加入活跃的 DAO（如公会、开发者社区、内容 DAO），主动承接运营、活动筹备或社区发文的任务。
+* 组队参加黑客松（如 ETHGlobal、各类 L1/L2 黑客松），担任团队中的 Growth / Non-tech Role，负责项目 Pitch 文稿准备、社交媒体推广和 Demo 展示。
+
+（4）整理 Proof of Work（工作成果证明）:准备求职.
+
+* 把写过的 Thread、组织的社区活动数据、搭建的 Discord 架构、黑客松获奖/运营经历整理成一份干净的 Notion 页面（Web3 更流行 Notion Resume）。
+
+3\. 寻找机会的渠道
+
+提示： Web3 的招聘极度依赖网络关系与社区露出，传统招聘网站往往不是首选。
+
+* X： 关注 Web3 HR、项目方创始人，很多团队会在 X 上直接发布招聘，或者直接 DM（私信）自荐。
+* Web3 专项招聘平台： Web3.career、CryptoJobsList、Bankless Jobs。
+* Discord & Telegram 社区： 很多 DAO 和项目的 #jobs 或 #hiring 频道会实时发布兼职/全职需求。
+
+初学者如何开始：
+
+1. Permissionless（无需许可的贡献）： 不要等别人给你岗位才开始做。你可以直接为你喜欢的项目写一份《社区改进建议》或《运营分析报告》发在 X 上并 @ 项目方，这种“主动式贡献”在 Web3 极为受用。
+2. 拥抱 remote 与兼职： Web3 绝大多数团队支持远程办公，很多第一份经历都是从兼职开始，做得出色后再转为全职。
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

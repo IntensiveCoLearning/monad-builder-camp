@@ -1,16 +1,7 @@
----
-timezone: UTC+7
----
-
-# Qy
-
-**GitHub ID:** pillowtalk-Qy
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 190499865
+- Name: pillowtalk-Qy
+- Timezone: UTC+14
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

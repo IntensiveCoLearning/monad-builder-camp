@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# niniyvette13-prog
-
-**GitHub ID:** niniyvette13-prog
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295635389
+- Name: niniyvette13-prog
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

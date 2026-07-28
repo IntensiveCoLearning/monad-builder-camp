@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# goodccgood
-
-**GitHub ID:** goodccgood
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 253685480
+- Name: goodccgood
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

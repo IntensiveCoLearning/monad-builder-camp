@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Herobrine-dream
-
-**GitHub ID:** Herobrine-dream
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 260163017
+- Name: Herobrine-dream
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

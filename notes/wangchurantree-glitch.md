@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# wangchurantree-glitch
-
-**GitHub ID:** wangchurantree-glitch
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 236238833
+- Name: wangchurantree-glitch
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

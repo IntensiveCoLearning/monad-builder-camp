@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# ningjia65
-
-**GitHub ID:** ningjia65
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 214059281
+- Name: ningjia65
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

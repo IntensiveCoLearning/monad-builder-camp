@@ -1,27 +1,21 @@
----
-timezone: UTC+8
----
-
-# Xi Cheng
-
-**GitHub ID:** chxii
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 16949423
+- Name: chxii
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+# 2026-07-18
+
 以太坊开发环境搭建
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+# 2026-07-17
 
 [skills.devnads.com](http://skills.devnads.com)
 
@@ -32,7 +26,7 @@ github.com/monad-developers
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
+# 2026-07-14
 
 参与两个线上课程
 
@@ -47,8 +41,7 @@ DeSci 学习：[https://equable-mountain-09d.notion.site/DeSci-3523ad5edf5c80809
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
+# 2026-07-13
 
 参与线上活动：**Web3 技术如何从 0 到 1 用 AI 开发**
 
@@ -67,9 +60,7 @@ Web3需要什么技术栈？（以以太坊为例）
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
+# 2026-07-10
 
 去中心化是区块链与 Web3 的核心叙事，但它并非银弹——既有显著优势，也有现实的工程与治理难题。
 
@@ -136,10 +127,7 @@ Web3需要什么技术栈？（以以太坊为例）
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
+# 2026-07-09
 
 四、公链 vs 私链 vs 联盟链
 
@@ -302,11 +290,7 @@ Python + RDFLib + SPARQL
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
+# 2026-07-08
 
 # 区块链基础概念与比特币
 
@@ -429,12 +413,7 @@ Python + RDFLib + SPARQL
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
+# 2026-07-07
 
 因为这周都在外地，很可惜这周的线上活动都只能等回去后补视频😭
 
@@ -443,13 +422,7 @@ Python + RDFLib + SPARQL
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
+# 2026-07-06
 
 开始了这次活动的学习。先是补了一下开营的录播，但是这周都在外地😭，先尝试一下是否能用手机顺利打卡
 <!-- DAILY_CHECKIN_2026-07-06_END -->

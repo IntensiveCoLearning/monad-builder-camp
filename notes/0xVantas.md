@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# 0xVantas
-
-**GitHub ID:** 0xVantas
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 255485806
+- Name: 0xVantas
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

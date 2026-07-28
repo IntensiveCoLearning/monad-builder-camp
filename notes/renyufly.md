@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# RenFly
-
-**GitHub ID:** renyufly
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 96655131
+- Name: renyufly
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# GwynGO
-
-**GitHub ID:** Gavinwonder
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 131938005
+- Name: Gavinwonder
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+# 2026-07-14
+
 今天全程参与了晚上的分享会和co-learning，刷新了我对Web3 Research的认识，确定了需要build in public的信念。
 
 要更多地拿实际贡献和成果说话。
@@ -24,6 +17,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
 
 今天工作比较繁忙，确定了主要方向是运营，但是也不会放过学习技术和研究的基本。
 
@@ -32,7 +26,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
+# 2026-07-12
 
 # AI Agent支付生态研究报告
 
@@ -452,8 +446,7 @@ x402 的公开交易量数据**水分极大**，直接引用会产生误导：
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
+# 2026-07-10
 
 今天部署了自己的一个智能合约，并去具体了解了——
 
@@ -540,9 +533,7 @@ x402 的公开交易量数据**水分极大**，直接引用会产生误导：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
+# 2026-07-09
 
 Agent 的失控，本质上是因为底层的 LLM（大模型）依然存在无法根除的硬伤，当这些硬伤与“自动执行工具”结合时，就会引发灾难：
 
@@ -611,10 +602,7 @@ Agent 通常会集成第三方的微调模型（如未经审计的 LoRA 权重�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
+# 2026-07-08
 
 今天最大的收获在于了解了AI Agent支付领域，浅浅做了些进一步深挖，特别是当前应用阶段的情况——
 
@@ -681,11 +669,7 @@ Agent自主支付带来了极高的效率，但也带来了安全挑战。针对
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
+# 2026-07-07
 
 今天主要通过和AI的对话，了解了Solidity合约的基本定义和主要代码结构，并且了解到它区别于传统代码的四个颠覆性的特点：
 
@@ -721,12 +705,7 @@ Agent自主支付带来了极高的效率，但也带来了安全挑战。针对
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
+# 2026-07-06
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Gavinwonder/images/2026-07-06-1783309557808-image.png)
 

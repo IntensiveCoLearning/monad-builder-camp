@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# aGolgenFish
-
-**GitHub ID:** aGolgenFish
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 98270869
+- Name: aGolgenFish
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

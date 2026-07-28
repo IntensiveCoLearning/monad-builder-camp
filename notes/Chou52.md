@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Chou52
-
-**GitHub ID:** Chou52
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 129676176
+- Name: Chou52
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

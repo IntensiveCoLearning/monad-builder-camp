@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# zeliawoo247
-
-**GitHub ID:** zeliawoo247
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 298560584
+- Name: zeliawoo247
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

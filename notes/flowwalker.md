@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Zhizhong Chen
-
-**GitHub ID:** flowwalker
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 226886657
+- Name: flowwalker
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 # 区块链&以太坊
 
 > _web3小白入门笔记_

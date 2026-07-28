@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# liud3929-cell
-
-**GitHub ID:** liud3929-cell
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294863010
+- Name: liud3929-cell
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,61 +1,49 @@
----
-timezone: UTC+8
----
-
-# David Ye
-
-**GitHub ID:** yedeyu
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 22652991
+- Name: yedeyu
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 -   制作残酷共学笔记网站
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 -   观看回放 [第2周例会](https://www.youtube.com/watch?v=wZejSUPs_cg)
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 -   观看回放 [第2周例会](https://www.youtube.com/watch?v=wZejSUPs_cg)
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 -   观看回放 [第2周例会](https://www.youtube.com/watch?v=wZejSUPs_cg)
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 -   观看回放 [产品分享：个人小数据与 Stewie Project](https://x.com/i/broadcasts/1dxYllYaeEMJX)
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
+# 2026-07-18
 
 -   观看回放 [从研究到公共知识：AI 时代 Web3 Researcher 的成长之路](https://x.com/i/broadcasts/1yGBeeNaYeoKN)
     
@@ -64,144 +52,63 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
+# 2026-07-16
 
 -   观看回放 [Web3 如何从 0 到 1 开始运营](https://x.com/i/broadcasts/1dGYllQnbDzKX)
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
+# 2026-07-15
 
 -   继续观看回放 [例会 Week1](https://www.youtube.com/watch?v=Sd3ICTtrTh4)
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 -   继续观看回放 [例会 Week1](https://www.youtube.com/watch?v=Sd3ICTtrTh4)
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 -   观看回放 [例会 Week1](https://www.youtube.com/watch?v=Sd3ICTtrTh4)
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 -   观看回放 [从“裸奔”到受控：AI Agent 高危实例解析与安全防线构建](https://x.com/i/broadcasts/1NGarrQrWeVJj)
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 -   观看回放 [AI Agent 如何拥有支付能力？](https://x.com/LXDAO_Official/status/2074809051406581822)
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 -   观看回放 [普通开发者如何进入以太坊协议层](https://youtu.be/IpviIyrpOFA)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 -   观看回放 [DevRel 的成长之路](https://www.youtube.com/watch?v=tVo5Q1rGa0w)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 -   观看回放 [Web3实习计划开营式](https://x.com/i/broadcasts/1MJgNNOXZvwGL)
     
@@ -217,4 +124,10 @@ Web3 暑期实习计划 - Monad Buidler Camp
         
     -   [https://web3intern.xyz/zh/](https://web3intern.xyz/zh/)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+* 观看回放 [Monad Playground OpenDay](https://x.com/i/broadcasts/1aKbddrRQqZJX)
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

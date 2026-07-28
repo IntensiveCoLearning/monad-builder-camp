@@ -1,61 +1,49 @@
----
-timezone: UTC+8
----
-
-# gexugg-wq
-
-**GitHub ID:** gexugg-wq
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 267593904
+- Name: gexugg-wq
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 实习生周末也加班，还能挤出时间学吗
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 黑客松真的很考验队友
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 那便是把针对生活中一个小痛点进行分析，先在假学习这个demo上先跑，后续再深化
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 了解链上服务基本是要接触钱包，但钱包容错率极低
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 今天学习了蒸馏的本质
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 **Dev Builder—修复 Bug** 需要先找到可复现 Bug，并理解 Moss 内部代码，结果不确定。
 
@@ -64,11 +52,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 本周我主要通过 Vibe Coding 的方式开发一个“假学习识别 Agent”。这个 Agent 的目标不是简单记录用户学习了多长时间，而是结合学习目标、过程记录、实际产出和用户反馈，判断用户是否存在形式化打卡、低效学习或缺乏真实进展的情况。我目前将自己的方向定位为 **AI Agent 与 Python 后端开发**，主要使用 Python 和 LangGraph 搭建工作流。
 
@@ -126,25 +110,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 今日终于可以开始学习
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/gexugg-wq/images/2026-07-16-1784205101157-image.png)
 
@@ -153,14 +126,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 可以从以下三个部分进行工作流变更
 
@@ -169,66 +135,28 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 Research：判断方向对不对 Ops：让用户愿不愿意参与 Dev：把产品真正做出来
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 pdd的编程理念能够帮助理解测试和边界的理解
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 确认好目标是做一个假学习监督助手，将基于openhands基础上实现
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 Mini Demo 0：Monad FocusProof Agent
 
@@ -237,39 +165,14 @@ Mini Demo 0：Monad FocusProof Agent
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 我认识到裸奔状态下的智能体存在提示词注入、越权工具调用、自主执行不可控等高危风险，了解了对Agent做权限管控、结构化输出约束、流程校验的安全构建思路。
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/gexugg-wq/images/2026-07-08-1783509612025-image.png)
 
@@ -282,51 +185,24 @@ Mini Demo 0：Monad FocusProof Agent
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 ![faf35fdce29f9006cf9b3549f2863e3b.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/gexugg-wq/images/2026-07-07-1783406763416-faf35fdce29f9006cf9b3549f2863e3b.jpg)
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 ```
 我对链上产品的理解：
 链上产品和普通互联网产品最大的不同是数据和资产状态记录在区块链上，而不是只存在某个平台自己的服务器里。普通互联网产品通常用账号密码登录，数据由平台管理；链上产品通常用钱包地址和签名交互，交易和资产变化可以在区块浏览器公开查询。链上产品的规则很多时候由智能合约执行，所以更透明，但操作成本和安全要求也更高。
 ```
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+为什么一起检修验证，codex会跑这么久
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

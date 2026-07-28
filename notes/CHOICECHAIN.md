@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# CHOICECHAIN
-
-**GitHub ID:** CHOICECHAIN
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294472985
+- Name: CHOICECHAIN
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
+
 今日学习内容笔记
 
 1\. 安全与合规（Web3实习手册）
@@ -52,6 +45,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
 
 * * *
 
@@ -92,7 +86,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
+# 2026-07-06
 
 回顾了区块链相关名词
 

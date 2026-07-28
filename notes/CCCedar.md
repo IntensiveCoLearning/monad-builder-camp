@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# CCCedar
-
-**GitHub ID:** CCCedar
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 162447528
+- Name: CCCedar
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
+# 2026-07-14
+
 不能交给AI的部分：私钥管理、主网部署决策、合约安全审计。
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/CCCedar/images/2026-07-14-1784042251583-image.png)
@@ -26,13 +19,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+# 2026-07-13
 
 我趁空挡看了下同学们的分享，真的是非常有意思的想法。我也是有小游戏开发的想法，但是看到比较厉害又努力的学霸直接发了demo，我顿时感到自己的思想不成熟，既想参与，又觉得自己不可能进入什么团队吧，正好三个方向都喜欢，不如一人成军，就是压力更大了
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
+# 2026-07-10
 
 Monad 的价值不只是“快”，而是它让“快”变成了开发者可以“不再担心”的默认项，这解放了应用层的想象力。
 
@@ -41,8 +35,7 @@ Monad 的价值不只是“快”，而是它让“快”变成了开发者可�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
+# 2026-07-09
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/CCCedar/images/2026-07-09-1783608510808-image.png)
 
@@ -57,9 +50,7 @@ Monad 的价值不只是“快”，而是它让“快”变成了开发者可�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
+# 2026-07-08
 
 今天把国内金融市场一些术语给学了一遍，再稍微过了一下021那本书的读前必看
 
@@ -68,10 +59,7 @@ yoona老师说的至少技术不用和人打交道，目前来说我还处于探
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
+# 2026-07-07
 
 其实我老早知道vibe-coding了，但是还是第一次使用，毕竟我的过往经历没有需要用代码跑的地方，也就一次使用过Pycharm，分析了一下什么流量啊风向啊。感觉设计方面的还是不够硬核，当然也可能只是国内不太硬核，我真正去认识到设计也是从网上自学来的，我太喜欢学习了，一天不学习心里难受。
 
@@ -82,11 +70,7 @@ yoona老师说的至少技术不用和人打交道，目前来说我还处于探
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
+# 2026-07-06
 
 成功在 Monad 测试网上从我的钱包 A 向钱包 B 转账了 1个 MON 测试币
 

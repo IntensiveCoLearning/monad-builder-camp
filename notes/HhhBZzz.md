@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# HhhBZzz
-
-**GitHub ID:** HhhBZzz
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 136743673
+- Name: HhhBZzz
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# brightheartma
-
-**GitHub ID:** brightheartma
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 253285555
+- Name: brightheartma
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 ## 今日主题
 
 围绕 Week 4 项目 **Parallax** 完成差异化定位、核心机制收敛、协议范围确认、仓库结构设计与 PRD 审查。
@@ -114,6 +107,7 @@ MVP 使用 Moss 已支持的：
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 ## 今日主题
 
@@ -222,7 +216,7 @@ Kuru MON → USDC
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 ## 今日学习主题
 
@@ -301,8 +295,7 @@ discover → load → markets → quote → swap → simulate → Receipt
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 ## 今日主题
 
@@ -442,9 +435,7 @@ AI 帮助提取 Session Log、整理课程任务、生成研究与测试材料�
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 ## 今日主题
 
@@ -557,10 +548,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 ## **今日主题**
 
@@ -592,11 +580,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 ## 今日主题
 
@@ -803,12 +787,7 @@ AI 帮助我用代码和生活类比拆解四类安全问题，并整理老师�
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 ## **今日主题**
 
@@ -1296,13 +1275,7 @@ Git 状态：
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 ## 今日主题
 
@@ -1655,14 +1628,7 @@ AI 帮助完成：
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 # 2026-07-17｜残酷共学笔记
 
@@ -1815,15 +1781,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 ## **今日进度：完成 Moss GitHub 探索，并把三个 Week 2 任务收束成一个 MCP 安全预览原型**
 
@@ -1939,16 +1897,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 ## **今日进度：完成 Moss 项目的业务理解 + 全链路实操**
 
@@ -1998,17 +1947,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 ## **今日进度：Week 2 Day 2｜排查 Moss monorepo 构建问题 + 撰写 Week 3 Role Statement**
 
@@ -2053,18 +1992,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 # 2026-07-13
 
@@ -2106,19 +2034,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 # **残酷共学打卡 · 2026-07-11**
 
@@ -2172,20 +2088,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 ## **今日进度：monad-clicker 加登录系统，并用真实使用数据修了一串前端 bug**
 
@@ -2228,21 +2131,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 ## 今日进度：完成「Monad 理解｜为什么 Monad 体验不同」议题
 
@@ -2294,22 +2183,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ## **今日进度：BuildAnything 初中课程 3/13**
 
@@ -2368,23 +2242,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 ## 今日进度：BuildAnything 新生课程 10/10 完结 ✅
 
@@ -2445,24 +2303,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 \## Week 1 打卡｜部署 NFTBadge 到 Monad Testnet
 
@@ -2503,25 +2344,7 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 **今日学习内容**
 
@@ -2594,4 +2417,126 @@ PR #72 的状态变化也提醒我：真实开源协作并不完全按照个人�
     
 -   领取测试网资产，完成一次测试网转账/应用交互实操
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+## 今日主题
+
+ 
+
+围绕 Parallax 完成产品范围、技术栈、Moss 依赖和钱包模拟边界的再确认，并发现产品决策文档与技术方案文档之间存在同步滞后。
+
+## 今天完成了什么
+
+### 1. 重新收敛产品 P0
+
+Parallax 不做新的 DEX Aggregator、通用钱包安全扫描器或完整 DeFi Risk Dashboard，而是：
+
+> 一个基于 Moss 的 Monad Swap 签名前解释与调整层：在用户签名前说明这笔交易会发生什么、哪里可能造成明显损耗或暴露，以及现在可以调整什么。
+
+当前建议的 P0 闭环是：
+
+```
+输入 Swap Intent
+→ 获取 Kuru Quote / Route
+→ 构造并模拟 unsigned transaction
+→ 展示资金变化、损耗、规则结果与证据
+→ 修改金额或路线
+→ 重新 Quote / simulate
+→ 展示前后 Diff
+
+```
+
+主 Demo 使用 Kuru `MON → USDC`。PancakeSwap 默认降级为第二 Quote / Route Preview，只有真实 PoC、字段来源和失败隔离都通过技术闸门，才进入 P0 完整模拟。Approval 不再作为主流程硬依赖，因为原生 MON 输入通常不产生 ERC-20 Approval。
+
+### 2. 明确当前技术栈
+
+核心技术栈没有换，变化是 P0 范围做了减法：
+
+* Node.js 22 + TypeScript + ESM + pnpm；
+* Moss + viem：Moss 负责交易构造、模拟、Receipt 和 Evidence，viem 负责 RPC 只读辅助；
+* Hono + zod：Hono 提供轻量 API，zod 校验请求和共享 Schema；
+* Vite + React + TypeScript：单页强交互，不需要 SSR；
+* `packages/contracts`：前后端、Moss Adapter 和 Risk Engine 的共享契约；
+* `moss-bridge`：隔离 Moss 版本和原始证据；
+* 纯函数 Rule Engine：输出 `PASS / WARN / FAIL / UNKNOWN / NOT_APPLICABLE`。
+
+P0 暂不引入 Go、Next.js、SQLite、SSE、复杂任务队列和 Recharts 金额曲线。Session / 内存 Diff 足以支撑一次 Adjust & Re-run，SQLite 和完整 History 延后到 P1。
+
+### 3. 澄清 Moss 的发布版与开发分支能力
+
+当前 Moss 开发分支已经支持 `SimulatorOptions.stateOverrides`，可以通过 ERC-20 balance mapping slot 注入 synthetic balance；但这项公共 API 尚未进入 `origin/main`，不能直接假设已发布的 `@themoss/simulator@0.1.0` 支持它。
+
+因此形成三个技术闸门：
+
+* Gate A：使用发布版 Moss 完成 Kuru `MON → USDC` 真实 Quote、Action、Simulation 和 Receipt；
+* Gate B：只有在 ERC-20 balance/allowance slot、锁定依赖和专项 Smoke Test 都通过后，才能把 ERC-20 输入升级为 P0；
+* Gate C：Price Impact 需要多次 Quote 时，必须证明基准 Quote 和用户金额 Quote 的区块可比，否则返回 `UNKNOWN`。
+
+Synthetic prestate 只能证明“在提供这组假设状态时交易会怎样”，不能证明真实钱包拥有余额、授权或支付能力。
+
+### 4. 讨论钱包接入与“实际资金模拟”
+
+连接钱包和使用实际资金模拟并不矛盾，但必须区分：
+
+* **Demo Mode：** 固定 sender 或录制快照，保证演示稳定；
+* **Wallet-aware Mode：** 读取用户地址、Chain ID、余额和 Allowance，以用户地址作为 `from` 做只读模拟；不签名、不广播、不扣款；
+* **Synthetic Mode：** 用 `stateOverrides` 人工注入余额或授权，只能标记为 synthetic simulation。
+
+当前 Moss simulator 会给 sender 预充原生 MON，因此模拟成功不一定代表用户实际余额足够支付。产品应显示 `AFFORDABILITY_UNKNOWN`，不能把“模拟成功”写成“用户现在一定付得起”。
+
+当前 PRD 将钱包连接列为可选能力，团队还需要决定：P0 只做 Demo Mode，还是同时提供 Wallet-aware Mode。无论选择哪一种，产品文案都不应说“用真实资金试交易”，应说“基于钱包地址和当前链上状态进行签名前只读模拟”。
+
+### 5. 理解 Hono 与 zod 的职责边界
+
+Hono 是 API 入口，负责路由、读取请求和返回 JSON；zod 是运行时数据审核层，负责确认外部 JSON 是否符合 Intent、金额、滑点和路线规则。
+
+例如 `POST /api/check`：
+
+```
+浏览器请求
+→ Hono 匹配路由
+→ zod 校验 JSON
+→ Moss 构造并模拟
+→ Risk Engine 判断
+→ Hono 返回 Receipt / Warning / Verdict
+
+```
+
+TypeScript 类型只能在编译阶段约束代码，不能阻止用户在运行时发送错误 JSON。zod 需要把金额作为字符串校验，后端通过校验后再转换为 BigInt 或协议需要的格式。
+
+### 6. 发现文档同步问题
+
+今天确认了两篇 Notion 文档的职责不同：
+
+* 第一篇负责仓库目录、Owner、Git/PR 协作规范和技术实现方案；
+* 第四篇负责产品价值、P0 范围和技术闸门。
+
+两篇不应该写成同一份文档，但第一篇的技术方案必须服从第四篇的产品决策。当前第四篇已经加入 Moss Gate A/B/C 和钱包接入议题；第一篇仍保留 SQLite、Job 查询、Recharts 和更完整双协议流程，需要后续同步。
+
+## 今日关键结论
+
+1. 核心技术栈没有改变，改变的是 P0 技术方案的复杂度。
+2. Kuru `MON → USDC` 是发布版 Moss 基线下最稳的主 Demo。
+3. ERC-20 override 是开发分支能力，不是当前已发布依赖能力。
+4. 钱包只读接入与模拟不矛盾，但真实链上状态、synthetic state 和支付能力必须分别标记。
+5. Simulation Success 只说明交易在特定状态下可执行，不等于安全、符合 Policy 或用户当前余额足够。
+6. 产品 Scope 文档是上位约束，技术方案文档必须跟随 Scope 更新。
+
+## 今日复盘
+
+今天最大的收获不是记住了 Hono、zod 或某个 Moss API，而是认识到：技术方案真正危险的地方不是“框架选错”，而是产品承诺超过了证据能力。
+
+“使用用户真实资金模拟”听起来很有吸引力，但如果实际使用的是 synthetic balance 或 simulator 预充的原生余额，就必须诚实地降低表述。只有把真实状态、合成状态、模拟区块和支付能力分开，Risk Guardrail 才不会变成另一种黑箱。
+
+## 下一步计划
+
+1. 团队决定 P0 是否包含 Wallet-aware Mode；
+2. 完成发布版 Moss 下 Kuru `MON → USDC` Smoke Test；
+3. 将第一篇技术方案同步到第四篇的 P0 和 Gate A/B/C；
+4. 冻结 Intent、Receipt、Evidence、Verdict 和错误状态 Schema；
+5. 单独验证钱包只读模式、真实余额/Allowance 读取和 `AFFORDABILITY_UNKNOWN` 展示；
+6. 评审后由 Kai 更新 PRD v0.2 与 Decision Log。
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

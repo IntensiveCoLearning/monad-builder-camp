@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Colin-rgb
-
-**GitHub ID:** Colin-rgb
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 88979349
+- Name: Colin-rgb
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+# 2026-07-18
+
 # 方向思考
 
 我选择 Dev Builder，并将 Research Builder 作为辅助方向。
@@ -34,6 +27,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+# 2026-07-17
 
 今天的 co-learning 采用了游戏互动的形式，通过 Web3 名词竞猜和“找出不同词”的方式，帮助大家复习和辨析相关概念。
 
@@ -42,7 +36,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
+# 2026-07-16
 
 为什么 AI Agent 需要 Moss？
 
@@ -75,8 +69,7 @@ Moss 的意义不在于让 Agent 更大胆地替用户操作资产，而在于�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
+# 2026-07-13
 
 # 利用AI辅助DApp开发
 
@@ -85,19 +78,14 @@ Moss 的意义不在于让 Agent 更大胆地替用户操作资产，而在于�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
+# 2026-07-11
 
 继续合约的部署
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
+# 2026-07-10
 
 # Remix IDE开发
 
@@ -133,11 +121,7 @@ Moss 的意义不在于让 Agent 更大胆地替用户操作资产，而在于�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
+# 2026-07-09
 
 # 智能合约开发
 
@@ -258,12 +242,7 @@ Solidity 是状态机编程，每一行代码的执行都需要消耗资源（Ga
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
+# 2026-07-08
 
 # 第一次测试网整个交易过程
 
@@ -298,13 +277,7 @@ Solidity 是状态机编程，每一行代码的执行都需要消耗资源（Ga
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
+# 2026-07-07
 
 # **以太坊概览**
 
@@ -386,14 +359,7 @@ Solidity 是状态机编程，每一行代码的执行都需要消耗资源（Ga
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 **先了解了基础知识，尝试第一次的链上交互。**
 <!-- DAILY_CHECKIN_2026-07-06_END -->

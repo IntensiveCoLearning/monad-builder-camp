@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# fan224-rgb
-
-**GitHub ID:** fan224-rgb
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 245547543
+- Name: fan224-rgb
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# tt
-
-**GitHub ID:** sorichtt
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 223486873
+- Name: sorichtt
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

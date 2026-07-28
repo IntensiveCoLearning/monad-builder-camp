@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# xixiaoqi-art
-
-**GitHub ID:** xixiaoqi-art
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 294862728
+- Name: xixiaoqi-art
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 -   **链上实操核心任务全流程演示**
     
     -   **任务一：创建 Mod 测试网专用钱包**

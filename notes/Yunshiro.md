@@ -1,55 +1,42 @@
----
-timezone: UTC+8
----
-
-# Jeong Un-Seo
-
-**GitHub ID:** Yunshiro
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 41314707
+- Name: Yunshiro
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 今天思考一下吉祥物设计，我们的项目不要鸽我
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
-
+# 2026-07-25
 
 查看我们团队的整体计划
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
-
+# 2026-07-24
 
 参与分享 介绍 我们团队作品 不要鸽我
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
-
+# 2026-07-23
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-23-1784809889026-image.png)
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
-
+# 2026-07-22
 
 onekey产品经理分享
 
@@ -58,11 +45,7 @@ onekey产品经理分享
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
-
+# 2026-07-21
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-21-1784635356499-image.png)
 
@@ -71,25 +54,14 @@ onekey产品经理分享
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
-
+# 2026-07-20
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-20-1784548428415-image.png)
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
-
+# 2026-07-19
 
 ### Monad 高性能应用开发最佳实践总结
 
@@ -121,29 +93,14 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
-
+# 2026-07-18
 
 今天加入lxdao，参加了onboarding流程
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Yunshiro/images/2026-07-17-1784290477168-image.png)
 
@@ -152,16 +109,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 今天给Moss提了一条pr，给kuru适配器添加了限价单功能
 
@@ -170,17 +118,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 链上2048开发
 
@@ -189,18 +127,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 晚上参加分享会，了解了三大赛道的职业方向和职责
 
@@ -211,19 +138,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 [https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/week2/chain2048-%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3.md](https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/week2/chain2048-%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3.md)
 
@@ -232,20 +147,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 今天构思了一下后续黑客松做什么内容：
 
@@ -258,21 +160,7 @@ Vercel/Railway 用起来方便但量大后可能溢价严重；AWS 等云厂商�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 做了一个链上五子棋，游玩地址：[https://gomoku-onchain.vercel.app/](https://gomoku-onchain.vercel.app/)
 
@@ -281,94 +169,28 @@ github repo：[https://github.com/Yunshiro/gomoku-contract](https://github.com/Y
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 今天晚上参加例会分享，小白从0到1部署你的第一个Dapp
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 今天做了一个需求清单，链上五子棋：[https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/链上五子棋需求清单.md](https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/链上五子棋需求清单.md)
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 今天整理了一个周五分享笔记，repo地址：[https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/小白从0-1上线一个留言板dapp.md](https://github.com/Yunshiro/Monad-Buidler-Camp-Jeong/blob/main/notes/小白从0-1上线一个留言板dapp.md)
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今天产出一个简单的DAPP，Monad测试网链上留言板，部署在：[https://message-board-ui.vercel.app/](https://message-board-ui.vercel.app/)
 
@@ -383,26 +205,7 @@ repo地址：[Yunshiro/message-board-ui](https://github.com/Yunshiro/message-boa
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 ## 学习内容
 
@@ -459,4 +262,12 @@ repo地址：[Yunshiro/message-board-ui](https://github.com/Yunshiro/message-boa
 
 2、为什么读取查询不消耗gas费用？
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+![image.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-41314707/2026-07/1321b7f2-d162-44e7-bdaa-589246e11423.png)
+
+今天看一下我们团队北海做的竞品分析
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

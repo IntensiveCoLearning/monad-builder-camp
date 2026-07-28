@@ -8,45 +8,42 @@
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 继续学习运营知识，今天是LinkedIn
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 继续学习运营知识中，昨天忘记打卡QAQ
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 差一点点忘记打卡惹。今天仍旧是学习运营知识，并且寻求组队中。
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
+# 2026-07-21
 
 今天参加了共学，在思考要不要和别人一起组队。i人紧张中
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
+# 2026-07-20
 
 今天参加了co-learning以及分享会。在学习LinkedIn Event的相关内容时候发现和运营要准备的事情大同小异，知识共通了
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
+# 2026-07-19
 
 Planned a 60-minute live audio session on X end to end this week, as the ops task on a summer programme I'm doing: brief, run of show, execution plan. Two things I took from it.  
   
@@ -57,116 +54,56 @@ The second is that a plan isn't finished until it says what happens when things 
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
+# 2026-07-18
 
 今天系统性的又复习了一遍运营一个活动的完整流程。包括前期、活动中以及活动后的准备。还是很好奇在活动中都会遇到什么突发情况并且如何解决的。
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 今天学习了一些运营知识，但是发现还是很多内容都不会。继续学习中
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 今天看了线上分享会。其中给ai写一个总体指令md对我很有帮助。
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 今天学习了运营知识。感觉还是很基础的。就是一些行业‘黑话’，我是一句都没听懂。
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 今天听了两场分享会，在信息时代即时分享自己的知识和能力十分重要。
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 今天是第二周，开始职业方向选择，我选择运营方向，更偏向活动策划和传播执行吧
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 今天做Mini Demo 0，和AI好朋友一起
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 今天在AI的帮助下复习了前几天的课程，尤其是Day4、Day5的内容。
 
@@ -175,19 +112,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 今天参加了实习计划例会，在例会上分享经验的同学们都对web3很有理解。  
 为什么我学了几天还是一知半解我要哭了。  
@@ -196,20 +121,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 今天学习AI + Solidity + 合约部署，非常之难。学习Python或者SQL的时候觉得语言还是能理解，这个不用ai都不会。
 
@@ -224,21 +136,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 今天学习了如何创建钱包，如何保持安全以及操作了第一笔测试网交易。
 
@@ -249,22 +147,7 @@ The second is that a plan isn't finished until it says what happens when things 
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今天配置了Web3的常用工具以及账号。
 
@@ -284,4 +167,10 @@ Day1的内容补卡
 
 而且今天的学习内容包含了vibe编码，一直想学习但一直没有开始。这是一个很好的机会。
 <!-- DAILY_CHECKIN_2026-07-07_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+打卡测试。7月28日。今天继续学习运营知识。考了一个LinkedIn的证书
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

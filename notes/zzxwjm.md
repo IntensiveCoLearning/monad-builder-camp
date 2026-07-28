@@ -8,56 +8,49 @@
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 继续组队
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 组队成功
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 自习
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 设计钱包产品，需求拆解
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 了解个人ai
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 交流phd在web3的求职情况
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 [https://github.com/zzxwjm/web3-learning-research-portfolio](https://github.com/zzxwjm/web3-learning-research-portfolio)
 
@@ -66,70 +59,35 @@
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 修改简历投递实习
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
+# 2026-07-17
 
 修改web3简历
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 完成第一份pr，研究research track的预测任务
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 开始理解moss，开始正式进入week2
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 1.  重新确定 Week 2 主方向  
     选择 **Research** 作为主方向，Dev 作为辅助能力，重点关注协议、治理和链上指标。
@@ -168,37 +126,14 @@
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 **1\. 分轨初步理由**
 
@@ -226,20 +161,7 @@
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 Week 1 - AI 辅助开发 - Onchain Todo
 
@@ -698,22 +620,7 @@ completed: true
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 **分享笔记：一个新手如何理解 Web3**
 
@@ -857,25 +764,7 @@ Web3 试图改变一部分信任结构：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ## What I Did Today
 
@@ -1034,55 +923,14 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 学习ai agent支付，先打卡
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 和ai讨论心理测量+web3，得到结论为理念很好，但是实践层面上可能没有现存的启发式测量有削。  
 今日目标：开始实践
@@ -1090,30 +938,7 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 ### **Web3实习计划开营式（录播）：**
 
@@ -1132,4 +957,10 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 但我也仍然存在疑问：这种“信任代码规则”的结构，是否真的比信任人更可靠？它在实践中依然可能被算力、资本或开发者影响，从而形成新的权力集中。此外，所谓规则不可随意更改，也引出了系统如何演化的问题：当进化依赖社区共识时，它是否只是把政治过程技术化，而并未真正消除权力结构？从这个角度看，区块链更像是一种权力的重新分布，而不是权力的消失，这种“技术中心主义”的可信性仍值得进一步质疑。
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+思考黑客松idea
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

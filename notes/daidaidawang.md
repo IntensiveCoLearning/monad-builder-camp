@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# daidaidawang
-
-**GitHub ID:** daidaidawang
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 184881686
+- Name: daidaidawang
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
+# 2026-07-12
+
 # 第11课：实现 Cadence
 
 ## 一、Cadence 是什么
@@ -709,6 +702,7 @@ Finality=7
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
+# 2026-07-11
 
 # 第10课：构建你的第一个去中心化应用（dApp）
 
@@ -1531,7 +1525,7 @@ React区块链交互工具。
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
+# 2026-07-10
 
 # 第09课：加密钱包（Crypto Wallet）
 
@@ -2195,8 +2189,7 @@ DApp得到：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
+# 2026-07-09
 
 # 第08课：数据库与文件存储（Database & File Storage）
 
@@ -2843,9 +2836,7 @@ API key 不暴露。
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
+# 2026-07-08
 
 # 第 06 课：重要的区块链概念
 
@@ -3022,10 +3013,7 @@ RPC 就是钱包或应用连接区块链的接口（URL）。
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
+# 2026-07-07
 
 # Freshman Track 第01课：Vibecoding 入门笔记
 

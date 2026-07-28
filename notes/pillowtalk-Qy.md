@@ -6,6 +6,126 @@
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-27
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+## 今日概览
+
+今天完成了 Hackathon 项目定义、需求验证演练、Mini Demo 核心工程建设、Moss 上游修复和多项开源代码审查。
+
+主要产出包括：确认 OriginShift 团队和两周 Demo 范围；输出 Team Card 与 Start Card；完成三类用户模拟访谈；合并 Mini Demo PR #15、#16；更新 Moss PR #138；审查 Moss PR #109、#119、#134、#141 和 #140；发现 Decision Engine 的四项契约冲突并暂停实施。
+
+## 一、Hackathon 团队
+
+团队继续使用 **OriginShift**，成员为 Qy、Max、Chris 和 Damia。
+
+- Qy：Dev、Research、架构与技术推进；
+- Damia：运营、内容表达和 Demo 演示；
+- Max：前端与产品展示，具体范围待确认；
+- Chris：测试与数据流程验证，具体范围待确认。
+
+OriginShift 是团队名称，项目正式名称还没有最终确定。
+
+## 二、项目方向
+
+项目暂定名为 **Monad Preflight**，用于帮助使用 AI Agent 完成 Monad 链上操作的用户，在签名前检查交易意图、协议调用与模拟结果是否一致。
+
+两周 Demo 只聚焦一个核心动作：用户提交一次 Monad/Kuru Swap 意图，系统通过 Moss 获取协议能力并执行模拟，最终生成包含原始证据的 `MANUAL_REVIEW` 或 `STOP` 报告。
+
+本次不做钱包、私钥管理、签名、交易发送、多协议接入和自动交易策略。
+
+## 三、需求验证演练
+
+今天模拟了 Monad DEX 用户、Agent 开发者和安全开发者三类访谈。初步判断是，用户更关心资产流向、授权范围、最低到账、证据来源和意图一致性，而不是笼统的“AI 判断安全”。
+
+这部分只是模拟访谈，用于完善真实访谈提纲，不能作为已完成三次真实用户交流的证明。
+
+## 四、PreflightReport Schema 修复与合并
+
+项目仓库：[Moss-Mini-Demo/moss-mini-demo](https://github.com/Moss-Mini-Demo/moss-mini-demo)
+
+今天重新审查了 [PR #15](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/15)。虽然原版本通过 CI，但人工复核发现 Node.js 22 公共包入口失效、`AVAILABLE.raw` 可以为空、SourceReference 可以自证或指向无关内容、raw 字段可能被误伤，以及 STOP 证据关联测试不完整等问题。
+
+在接受完整修复范围并取得实施授权后，我完成了三次主要提交：
+
+- `598cea9`：加固 Report Schema 信任边界；
+- `b7d94de`：修正 Workspace 与包边界文档；
+- `6c9bc46`：修正 JSON Pointer 中 `#` 字符的处理。
+
+最终加入 NodeNext ESM 构建、公共包名导入测试、非空 `RawArtifactSchema`、上下文引用校验、循环和悬空引用拦截、raw 子树所有权区分，以及双向 STOP 证据关联。
+
+最终通过 618 项测试和 Exact-Head `quality-gate`，PR #15 已合并为主分支提交 `a210d9c`。
+
+## 五、MANUAL_REVIEW Fixture 合并
+
+Schema 合并后，我继续处理 [PR #16](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/16)，将原来依赖旧 Schema 的 Fixture 刷新到最新主分支。
+
+今天完成的主要提交：
+
+- `4082e02`：记录合成 MANUAL_REVIEW Fixture；
+- `229062f`：确保测试前构建公共 Schema 包；
+- `4ec154b`：补齐 Fixture 的边界声明；
+- `57e39b1`：加入完整的否定语义断言。
+
+Fixture 明确说明：`MANUAL_REVIEW` 不是安全结论、批准、授权、执行保证或签名许可。
+
+最终从没有生成 `dist` 的干净环境完成构建与测试，通过 7 个测试文件、620 项测试和 Exact-Head `quality-gate`。PR #16 已合并为主分支提交 `316dd14`，对应 Issue #7 已关闭。
+
+## 六、Decision Engine 契约检查
+
+PR #15 合并后，Issue #6 的 Schema 依赖已经满足。但在正式实现 Decision Engine 前，我对 ADR 0003 和当前 Schema 进行了逐项核对，发现四项关键冲突：
+
+1. Receipt、Outcome、Warning 的 JSON Pointer 路径不一致；
+2. `MANUAL_REVIEW` 是否包含空 `reasons` 数组没有统一；
+3. Receipt/Outcome 集合“不完整”缺少可观察定义；
+4. 多种失败事实没有明确的逐原因证据关联方式。
+
+我在 [Issue #6](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/6) 提交了正式的契约协调和最小范围请求。在 ADR 或正式契约修订完成前，我不会自行推断语义或开始实现，避免在基础契约冲突的情况下继续堆叠代码。
+
+## 七、Moss Kuru 修复推进
+
+Moss 仓库：[nishuzumi/moss](https://github.com/nishuzumi/moss)
+
+Box 对 [PR #138](https://github.com/nishuzumi/moss/pull/138) 的核心方案给予肯定，同时提出三项修改要求。我在提交 `d3b1695` 中完成了：
+
+- 将 `FlippedOrderCreated` 改为不带因果推断的中性文本；
+- 在 ADR 0007 中补充两个事件签名、topic0 和模板字节码证据；
+- 记录 `_fillOrder -> _handleFlipOrderUpdate -> _emitTrade` 的执行顺序依据。
+
+lint、build、typecheck 全部通过；全量在线测试 207/207，Kuru 测试 27/27 且零 Warning；Linux CI 与 Windows Offline CI 均通过。
+
+PR #138 目前仍然开放，等待 Box 对最新提交重新 Review，尚未批准或合并。
+
+## 八、Moss 独立 Review
+
+**PR #119：Debt Risk Label**
+
+我完成最终复核并提交 `APPROVED`。确认 `fundOut` 表示当前交易资产流出，`debt` 表示未来还款义务增加。Core 33/33 通过；叠加 PR #138 后，全量测试 208/208 通过，没有剩余阻塞问题。
+
+**PR #109：Pendle PT Swap Adapter**
+
+正常路径和 Pendle 147 项在线测试通过，但仍发现两个证据归因问题：SY/YT emitter 没有真正绑定到已验证的 Market 身份；全局 revert selector 可能把其他协议的错误错误解释为 Pendle 错误。此外还发现 ABI 生成文件问题，并要求确认公开 `stateOverrides` API 的安全语义，因此提交 `CHANGES_REQUESTED`。
+
+**PR #134：Nad.fun Lens Adapter**
+
+实现层原有问题基本修复，但新公共协议包没有加入 Changesets 的 linked package group，后续版本可能失去同步。PR 描述中的 ABI 验证方式和测试数量也已经过时，因此提交 `CHANGES_REQUESTED`。同时提出 Git 来源 ABI 是否需要最小提交年龄规则的问题。
+
+**PR #141：Monad Cards Query Adapter**
+
+确认官方 Registry、合约字节码、`totalMinted()` 查询、MCP discover/load 和发布集成基本正确，实测 `totalMinted()` 返回 1549。阻塞问题是测试硬编码公共 RPC，没有使用 `MOSS_RPC_URL`，同时 PR 描述存在未闭合代码块，因此提交 `CHANGES_REQUESTED`。
+
+**PR #140：Euler V2 Lending Adapter**
+
+该 PR 同时涉及动态 Vault、EVC、借贷动作、风险语义、Receipt 和 MCP 发布。由于相关共享架构仍在确定，我建议先由 Box 明确 v1 是查询、单一 Vault、Supply/Withdraw，还是完整动态 Vault/EVC 范围，再进入详细实现审查，避免后续大规模返工。
+
+## 九、今日收获
+
+今天同时实践了 Builder、Reviewer 和 Maintainer 三种角色。
+
+最重要的认识是：正常路径跑通只是最低要求。可信的 Web3 Agent 工具还需要处理证据来源、错误归因、Mock 边界、发布集成、失败关闭策略和规范一致性。
+
+CI 通过只能证明已有检查通过，不能证明信任边界一定正确。当基础契约没有定义清楚时，暂停实现并要求正式决策，本身也是必要且有价值的工程工作。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
 ## 今日概览

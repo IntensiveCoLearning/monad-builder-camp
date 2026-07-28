@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# hhhuang5w3
-
-**GitHub ID:** hhhuang5w3
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295531716
+- Name: hhhuang5w3
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 今日主要了解了区块链和部分以太坊的基础知识
 
 区块头包含了上一个区块的哈希值，交易记录，自身的哈希值等信息，又哈希算法容易方便却难以反推，因此区块链难以篡改。

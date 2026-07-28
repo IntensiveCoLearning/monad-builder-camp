@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Crazyjelly0505
-
-**GitHub ID:** Crazyjelly0505
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 236561067
+- Name: Crazyjelly0505
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

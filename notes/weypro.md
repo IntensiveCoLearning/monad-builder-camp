@@ -8,222 +8,126 @@
 <!-- Content_START -->
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
+
 搞项目
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 打卡黑客松
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 做项目
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 当日仅打卡
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 参加直播课
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 看大佬分享
 <!-- DAILY_CHECKIN_2026-07-20_END -->
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 看week2任务
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 完成week2任务
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
+# 2026-07-17
 
 进行week2任务
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 看week2任务
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 学习web3的research
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 查看不同职业方向的具体内容
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 继续补看之前的内容
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 看回放学习
 <!-- DAILY_CHECKIN_2026-07-11_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 学习ai agent安全知识
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 继续学习，并思考如何设计一个web3项目
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 看录播，初步了解web3和monad
 <!-- DAILY_CHECKIN_2026-07-07_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+看黑客松
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

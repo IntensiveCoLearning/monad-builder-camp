@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Justin Li
-
-**GitHub ID:** may-tonk
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 202514480
+- Name: may-tonk
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
+# 2026-07-07
+
 **1\. Monad vs. 以太坊：深度对比**
 
 虽然 Monad 与以太坊完全兼容，但它们在“底层引擎”上有着本质的区别。

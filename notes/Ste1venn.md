@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# Ste1venn
-
-**GitHub ID:** Ste1venn
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 189578245
+- Name: Ste1venn
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

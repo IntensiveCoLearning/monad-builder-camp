@@ -6,8 +6,84 @@
 ## Notes
 
 <!-- Content_START -->
+# 2026-07-28
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+今天完成了人生第一个开源贡献。
+
+项目：Moss  
+方向：AI Agent × Web3 Infrastructure
+
+从一开始甚至分不清：
+
+-   fork 是什么
+    
+-   clone 是什么
+    
+-   branch 为什么存在
+    
+-   remote 和 upstream 有什么区别
+    
+
+到今天真正走完了一遍开源协作流程：
+
+✅ Fork 项目  
+✅ Clone 到本地  
+✅ 创建 feature branch  
+✅ 阅读项目结构  
+✅ 本地安装依赖  
+✅ 运行测试和 example  
+✅ 修改文档  
+✅ Git commit  
+✅ Push branch  
+✅ 提交 Pull Request
+
+我的第一个 PR：
+
+> docs(agent-swap): add troubleshooting and verification notes
+
+做的事情很简单：
+
+在运行 agent-swap example 后，发现第一次接触项目的贡献者可能会卡在：
+
+-   Foundry 环境检查
+    
+-   fork setup troubleshooting
+    
+-   signing 前的验证流程
+    
+
+所以补充了一些文档说明。
+
+可能不是一个复杂的代码贡献，但这是第一次真正参与一个公开项目，而不是停留在：
+
+“看教程”  
+“收藏 repo”  
+“想学 GitHub”
+
+* * *
+
+之前总觉得开源离自己很远。
+
+但实际上：
+
+开源不是只有写核心代码的人才能参与。
+
+一个好的文档、一条清晰的说明、一次真实的问题反馈，都是对项目的贡献。
+
+今天开始，把学习变成公开产出。
+
+Next:
+
+→ 第二个 PR  
+→ 第一个代码贡献  
+→ 第一个 AI Agent Demo
+
+Build in public.
+<!-- DAILY_CHECKIN_2026-07-28_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+
 今天正式开始了我的第一次开源贡献实践。
 
 一开始我几乎不了解 GitHub 开源协作流程，只知道老师要求提交一个 Pull Request（PR）。今天最大的收获不是写代码，而是把整个协作流程真正跑通了一遍。
@@ -140,6 +216,7 @@ cd ~/moss/moss
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
 
+
 **Day 17 | Monad Builder Camp 残酷共学**
 
 今天目标:向 Moss 提交人生第一个开源 PR。晚上全部时间花在找靶子和搭环境上,过程比结果曲折。
@@ -242,6 +319,7 @@ git checkout -b docs/first-contribution
 <!-- DAILY_CHECKIN_2026-07-23_START -->
 
 
+
 **Day 16 | Monad Builder Camp**
 
 **🔍深读 Moss 仓库:从"这是什么"到"这怎么管人"**
@@ -320,6 +398,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 
 
+
 **Day 15 | Monad Builder Camp 残酷共学**
 
 今天听区块链钱包产品设计。这场的价值在于:它把我这两周踩的坑,变成了产品设计的取舍框架。
@@ -368,6 +447,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 
 
+
 **Day 14 | Monad Builder Camp 残酷共学**
 
 今天听课抓到一个跟我高度契合的方向:**群情感计算**。
@@ -405,6 +485,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 
 
+
 **Day 13 | Monad Builder Camp 残酷共学**
 
 今天听了一场 AI 产品与 agent 的分享,内容意外地对准了我这半个月的处境。
@@ -426,6 +507,7 @@ AI 时代真正稀缺的不是"会用工具"(工具人人会用了),是判断力
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
+
 
 
 
@@ -537,6 +619,7 @@ if (simulation.halted || simulation.results.some(i => i.warnings.length)) {
 
 
 
+
 今天没有产出,如实记录。
 
 白天上班,晚上没动。昨天一天读完Moss README、写完Space策划案、双平台发了内容、上了两场课——今天就空了。
@@ -556,6 +639,7 @@ if (simulation.halted || simulation.results.some(i => i.warnings.length)) {
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+
 
 
 
@@ -664,6 +748,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 
 
+
 **Day 9 | Monad Builder Camp 残酷共学**
 
 今天是纯实战的一天,而且是我第一次独立从0跑通"用AI做出一个网站并部署上线"的完整流程。
@@ -697,6 +782,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
+
 
 
 
@@ -747,6 +833,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 
 
+
 **Day 5 | Monad Builder Camp 残酷共学**
 
 今天很累,只完成了听课和整理。
@@ -766,6 +853,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+
 
 
 
@@ -855,6 +943,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 
 
+
 **Day 3**
 
 今天从"读代码"跨到"部署代码",完整走通了一次链上开发全链路。
@@ -901,6 +990,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 
 
+
 **Day 2 | Monad Builder Camp 共学打卡**
 
 **嘉宾分享:以太坊协议开发经验**
@@ -931,6 +1021,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+
 
 
 

@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# qingweizhang661-code
-
-**GitHub ID:** qingweizhang661-code
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 297114131
+- Name: qingweizhang661-code
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# kira-061
-
-**GitHub ID:** kira-061
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295764724
+- Name: kira-061
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 1.  区块链的结构
     
     ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/kira-061/images/2026-07-06-1783344828261-image.png)

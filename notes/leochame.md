@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# leochame
-
-**GitHub ID:** leochame
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 190907680
+- Name: leochame
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

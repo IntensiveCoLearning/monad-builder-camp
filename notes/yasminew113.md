@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# yasminew113
-
-**GitHub ID:** yasminew113
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 299020334
+- Name: yasminew113
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

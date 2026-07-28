@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# lynn-000-cccc
-
-**GitHub ID:** lynn-000-cccc
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 223823263
+- Name: lynn-000-cccc
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

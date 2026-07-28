@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# cryptobugweb3-cloud
-
-**GitHub ID:** cryptobugweb3-cloud
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 237827763
+- Name: cryptobugweb3-cloud
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

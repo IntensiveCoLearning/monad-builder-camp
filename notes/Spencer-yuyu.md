@@ -180,4 +180,10 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 进行钱包任务中...
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+<https://app.notion.com/p/Research-Workflow-Polymarket-3a854a97f4518022a28ce98a90a90b93?source=copy_link>
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

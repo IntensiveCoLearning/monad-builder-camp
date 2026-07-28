@@ -1,42 +1,35 @@
----
-timezone: UTC+8
----
-
-# W11Main00
-
-**GitHub ID:** W11Main00
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295698854
+- Name: W11Main00
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 复习Java基本逻辑语言 同步学习web
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 自主学习vibe coding
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 ![e9e2c3fe9d0287846737b1802fbf5aee.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/W11Main00/images/2026-07-24-1784905498865-e9e2c3fe9d0287846737b1802fbf5aee.jpg)
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 ### 1\. Research Builder 研究作品集
 
@@ -120,9 +113,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 ## 一、第一大类：钱包与用户安全（6 个场景，面向普通用户风险）
 
@@ -197,10 +188,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 1.  **核心产品：Life Capsule（人生胶囊）** 团队当前主推的落地产品，属于 “第二大脑” 赛道。不追求直接做巨型大模型，而是先搭建**轻量化小模型**，把它做成打通不同 AI 大模型的中间桥梁：
     
@@ -267,11 +255,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 多学习 多交流 参加峰会
 
@@ -284,12 +268,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 ### 1\. Merge 后双层客户端架构（EL 执行端 + CL 共识端）
 
@@ -413,13 +392,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 处理文档读取相关问题时，要先分清用户真实需求，再决定是否告知内容获取、解析失败提示。若用户只是简单查阅资料、提取文字，系统无法读取文档链接、文件内容时，需直白说明获取或解析失败，同时结合报错提示、文档名称、链接里仅存的有效信息，给出有限可用内容；若用户需求侧重格式调整、排版修改，无原文支撑难以操作，除报错提醒外，仅依托 URL、文件名里的关键词简单回应。
 
@@ -428,14 +401,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 今天学习 verso 学如何写简历
 
@@ -497,15 +463,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 1.  三大角色分工
     
@@ -544,16 +502,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 运营得工作内容
 
@@ -562,17 +511,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 1.  **通用大模型能力**
     
@@ -646,18 +585,7 @@ Web3 Researcher、AI 大模型、人机协同、研究员不可替代性、行�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 围绕 AI 赋能 Web3 开发搭建完整知识框架，清晰区分 0 到 1 验证产品与 1 到 99 规模化系统两个阶段，拆解 AI 开发方法论与 Web3 全栈技术体系，让我跳出工具背诵思维，建立系统化工程认知，收获颇丰。
 
@@ -674,19 +602,7 @@ Web3 技术栈部分摒弃零散工具罗列，先梳理区块链底层原理，
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 我还在补课程
 
@@ -783,21 +699,7 @@ Web3 技术栈部分摒弃零散工具罗列，先梳理区块链底层原理，
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 今天学习了小海老师得一篇文章：[https://x.com/xiaohai67890/status/2075399417566539947?s=46](https://x.com/xiaohai67890/status/2075399417566539947?s=46)
 
@@ -834,23 +736,7 @@ Web3 技术栈部分摒弃零散工具罗列，先梳理区块链底层原理，
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 网站：深潮[https://ww删w.techflowpost.com/](https://ww删w.techflowpost.com/)
 
@@ -863,24 +749,7 @@ Milk Road：[https://milkr删oad.com/news/](https://milkr删oad.com/news/)
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ## 一、主题
 
@@ -974,26 +843,7 @@ AI 自己可以自动执行指令之后，出现 4 大类攻击方式；通过�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 ![1e4d51775fb91947d5657d220bb76d29.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/W11Main00/images/2026-07-08-1783518186515-1e4d51775fb91947d5657d220bb76d29.jpg)
 
@@ -1020,27 +870,7 @@ AI 自己可以自动执行指令之后，出现 4 大类攻击方式；通过�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 1.什么是EPF
 

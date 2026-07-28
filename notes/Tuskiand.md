@@ -1,51 +1,42 @@
----
-timezone: UTC+8
----
-
-# Tingting Gan
-
-**GitHub ID:** Tuskiand
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 118924121
+- Name: Tuskiand
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 今天休息
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 ### 晚上参加Web3 实习计划例会、了解黑客松有哪些赛道
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
+# 2026-07-22
 
 参加了晚上的**分享会：如果让你设计一款钱包：新人避坑指南与需求拆解和co learning**
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
+# 2026-07-21
 
 晚上参加了分享会，Race老师介绍了个人生命胶囊项目还有co-learning
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
+# 2026-07-20
 
 # AI从产品到Agent经济路径
 
@@ -154,10 +145,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
+# 2026-07-19
 
 # **Week2 学习总结**
 
@@ -282,11 +270,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
+# 2026-07-18
 
 # **Moss 项目分析**
 
@@ -350,12 +334,7 @@ Moss 解决的是 **AI Agent 安全操作区块链协议** 的问题：把各类
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 # **Week 2分享会**
 
@@ -485,13 +464,7 @@ NaN.  **选择平台调性发布**：小红书，可爱治愈像素风
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 # **Web3 基础概念复习**
 
@@ -650,14 +623,7 @@ NaN.  **选择平台调性发布**：小红书，可爱治愈像素风
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 # Web3事故急救室
 
@@ -825,15 +791,7 @@ NaN.  **选择平台调性发布**：小红书，可爱治愈像素风
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # **Web3职业方向与moss开源项目**
 
@@ -979,16 +937,7 @@ NaN.  **Monad生态**：主节点、开发者模板等仓库均开源，可使�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 # AI开发与Web3技术栈学习
 
@@ -1149,17 +1098,7 @@ DApp编码构造交易 → 估算Gas、构建交易 → 钱包签名 → RPC广�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 # **Week 1 阶段总结**
 
@@ -1310,18 +1249,7 @@ NaN.  **AI 是杠杆，人工判断是底线**：AI 能完成代码落地与概�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 # **链上待办合约**
 
@@ -1509,21 +1437,7 @@ NaN. **测试网注意事项**：需手动配网络、领水龙头；测试网�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 ## 一、今日学习主题
 
@@ -1617,22 +1531,7 @@ NaN. **测试网注意事项**：需手动配网络、领水龙头；测试网�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 # AI Agent安全+Web3线上共学分享会总结
 
@@ -1691,24 +1590,7 @@ AI Agent安全攻防已从传统自动化转向自主化，其核心风险被定
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 # **AI 辅助开发｜用 AI 生成一个最小 Solidity 合约**
 
@@ -1809,25 +1691,7 @@ ai输出：[https://chatgpt.com/s/t\_6a4e5d42d15881918e8208bc0de8e0fa](https://c
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 1.  了解到了链上产品和普通互联网产品有什么不同：
     
@@ -1844,28 +1708,7 @@ ai输出：[https://chatgpt.com/s/t\_6a4e5d42d15881918e8208bc0de8e0fa](https://c
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 1.  实时参加线上活动DevRel 的成长之路 —— 从 Builder 到生态连接者、Co-learning
     
@@ -1875,4 +1718,12 @@ ai输出：[https://chatgpt.com/s/t\_6a4e5d42d15881918e8208bc0de8e0fa](https://c
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/Tuskiand/images/2026-07-06-1783342145995-image.png)
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+1.参加了晚上co-learning，是自学时间
+
+2.寻找团队ing
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

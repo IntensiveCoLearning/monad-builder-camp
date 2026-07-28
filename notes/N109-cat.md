@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# N109-cat
-
-**GitHub ID:** N109-cat
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 128275784
+- Name: N109-cat
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
+# 2026-07-06
+
 # 分享会内容
 
 学习路径分享：智能合约——前端——后端

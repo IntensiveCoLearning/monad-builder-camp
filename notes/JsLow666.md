@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# JsLow666
-
-**GitHub ID:** JsLow666
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 201059802
+- Name: JsLow666
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

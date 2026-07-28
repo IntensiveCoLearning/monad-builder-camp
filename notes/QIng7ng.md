@@ -1,42 +1,35 @@
----
-timezone: UTC+8
----
-
-# QIng7ng
-
-**GitHub ID:** QIng7ng
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 297750761
+- Name: QIng7ng
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 打卡
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 先打卡
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 先打卡一下
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 ## 一、团队节奏（项目可控推进体系）
 
@@ -229,19 +222,14 @@ Web3 新手、开发者同学、社群 builder、对公链测试感兴趣的用�
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 先打卡，后补一下
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 # Web3 项目完整研判模块（用户场景 + 竞品协议 + 事实核查 + 产品逻辑 + 风险 + Monad 适配）
 
@@ -466,36 +454,21 @@ Web3 新手、开发者同学、社群 builder、对公链测试感兴趣的用�
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
+# 2026-07-18
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-18_END -->
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 先打卡后补内容
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 # 全球 Web3 开发者生态 + 2026 行业趋势完整解读
 
@@ -769,14 +742,7 @@ Git + GitHub：项目版本归档、开源 Demo 交付（你 Mini Demo 提交标
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 # Web3 技术 / 运营 / 研究三大方向：做好的标准 + 全套必备技能 + 落地提升方法
 
@@ -1075,15 +1041,7 @@ Git + GitHub：项目版本归档、开源 Demo 交付（你 Mini Demo 提交标
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # Web3 三大方向完整细分详解（技术 / 运营 / 研究）
 
@@ -1389,16 +1347,7 @@ Web3 行业 “智库”，通过链上数据、行业资讯、项目拆解、�
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 Web3三大核心角色：研究、运营、开发 + 方向选择指南
 
@@ -1587,17 +1536,7 @@ Web3三大核心角色：研究、运营、开发 + 方向选择指南
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 一、什么是 Monad
 
@@ -1784,18 +1723,7 @@ TPS = Transactions Per Second 每秒交易/请求处理数（区块链/支付/�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 # Hardhat 智能合约开发 Build Log（完整归档日志）
 
@@ -2059,21 +1987,7 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 [https://kitten-namer-delight--yamentin1313.replit.app/](https://kitten-namer-delight--yamentin1313.replit.app/)
 
@@ -2084,22 +1998,7 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 今天把工具都准备了一下，目前不知道telegram怎么登陆上去，因为收不到短信验证码。。。明天再详细看看攻略。
 
@@ -2125,23 +2024,7 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 一、区块链基础概念
 
@@ -2225,4 +2108,10 @@ Web3的工作方式与传统互联网有很大不同，强调去中心化、远�
 
 ​非技术岗：包括社区运营、内容创作、市场推广、产品经理、数据分析等 。
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+11111先打卡
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

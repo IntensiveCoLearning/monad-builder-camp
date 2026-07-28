@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# Sannate Thompson
-
-**GitHub ID:** CarterLeven
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 142103995
+- Name: CarterLeven
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
+# 2026-07-18
+
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -123,6 +116,7 @@ contract OnchainTodo {
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+# 2026-07-16
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/CarterLeven/images/2026-07-16-1784207177537-image.png)
 
@@ -133,7 +127,7 @@ contract OnchainTodo {
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
+# 2026-07-15
 
 # 运营更多是解决问题、连接资源、创造价值，让生态持续增长
 
@@ -170,8 +164,7 @@ Web3 的运营本质上是“连接产品、开发者、社区与生态，让 Bu
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
+# 2026-07-13
 
 # Web3 技术分享：如何从 0 到 1 使用 AI 开发
 
@@ -271,9 +264,7 @@ Web3 的运营本质上是“连接产品、开发者、社区与生态，让 Bu
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
+# 2026-07-12
 
 周末对本周知识进行简单复习  
 例如周五分享的web3求职注意事项  
@@ -312,11 +303,7 @@ Milk Road | 海外： 海外非常火爆、文风幽默有趣的 Web3 日报（N
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
+# 2026-07-10
 
 ## 为什么 Monad 改变了高频交互的竞技场？
 
@@ -343,12 +330,7 @@ Milk Road | 海外： 海外非常火爆、文风幽默有趣的 Web3 日报（N
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
+# 2026-07-09
 
 ## 直播
 
@@ -407,13 +389,7 @@ ai会出现自己的想法，幻觉
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
+# 2026-07-07
 
 **7/7**
 
@@ -456,14 +432,7 @@ ai会出现自己的想法，幻觉
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 ### **晚上分享环节笔记**
 

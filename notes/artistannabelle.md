@@ -1,22 +1,15 @@
----
-timezone: UTC+6
----
-
-# artistannabelle
-
-**GitHub ID:** artistannabelle
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 153367553
+- Name: artistannabelle
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
+# 2026-07-10
+
 ### 区块链底层带来的独特安全约束（区别于 Web2 AI）
 
 1.  **交易不可逆**：区块链账本仅追加、无法回滚，AI 被诱导生成的恶意转账、授权合约一旦上链，资产损失永久无法撤销，不存在服务器撤回机制，模型推理失误会直接转化为永久财务亏损**arXiv**。
@@ -101,6 +94,7 @@ AI 交易 Agent、金库管理 Agent 高度依赖预言机价格、链上行情�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
 
 -   **AI Agent支付产品Flux A核心方案**
     
@@ -150,7 +144,7 @@ AI 交易 Agent、金库管理 Agent 高度依赖预言机价格、链上行情�
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
+# 2026-07-06
 
 # 【1】创建专用钱包
 

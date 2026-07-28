@@ -8,6 +8,8 @@
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 ````markdown
 预言机（Oracle）技术与安全实战笔记
 
@@ -681,6 +683,7 @@ contract Liquidation {
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 ````markdown
 EVM底层原理与前沿技术笔记
@@ -1149,7 +1152,7 @@ Monad等链支持JIT编译：
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 ````markdown
 Uniswap V4 学习笔记
@@ -1867,8 +1870,7 @@ cast send $POOL_MANAGER "initialize(PoolKey,sqrtPriceX96,bytes)" \
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 ````markdown
 可升级合约学习笔记
@@ -2380,9 +2382,7 @@ contract MyContract is UUPSUpgradeable, OwnableUpgradeable {
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 学习笔记
 
@@ -2602,10 +2602,7 @@ contract MyContract is UUPSUpgradeable, OwnableUpgradeable {
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 ````markdown
 合约安全学习笔记
@@ -3231,11 +3228,7 @@ OpenPerp = Monad L1 + Uniswap V4 Hook + Perpetual DEX
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 ````markdown
 # 今日学习笔记
@@ -3519,12 +3512,7 @@ Hyperliquid证明了自建L1的威力（200K TPS），但V4和Morpho证明了模
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 ````markdown
 # 📚 今日学习笔记
@@ -3787,13 +3775,7 @@ AI 是「加速器」，不是「替代品」
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 ````markdown
 # 📚 学习笔记 - 2026年7月18日
@@ -4207,14 +4189,7 @@ npx hardhat ignition deploy    # 部署合约
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 # 今日学习笔记：ERC721 非同质化代币标准
 
@@ -4380,15 +4355,7 @@ json
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 # 今日学习笔记：智能合约常见安全漏洞汇总
 
@@ -4537,16 +4504,7 @@ DEX 交易、NFT 发售、代币兑换场景，攻击者监听内存池，抬高
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 **\# 今日学习笔记**
 
@@ -4871,17 +4829,7 @@ class MossError extends Error {
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 **\# Moss 项目学习笔记**
 
@@ -5376,18 +5324,7 @@ _学习笔记完_
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 ````markdown
 
@@ -5621,19 +5558,7 @@ npx hardhat run scripts/deploy-migration.js --network monadTestnet
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 今日学习笔记：ERC20代币完整知识点梳理
 
@@ -5738,20 +5663,7 @@ ERC20标准规定了智能合约必须实现的基础接口，所有合规ERC20�
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 Solidity 进阶语法 · 今日学习笔记（0.8.x 稳定版）
 
@@ -6007,21 +5919,7 @@ contract C is A, B {
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 Ethers.js 今日学习笔记（v6 最新版）
 
@@ -6215,22 +6113,7 @@ console.log("合约查询结果：", result);
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 ## 今日学习笔记
 
@@ -6361,23 +6244,7 @@ JSON-RPC 是区块链与外部程序通信的标准协议，前端 / 工具通�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 **#学习笔记 - 2026年7月8日**
 
@@ -6856,24 +6723,7 @@ await tx.wait()
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 ````markdown
 学习笔记 - 2026年7月7日
@@ -7115,26 +6965,504 @@ const lastMsg = await contract.getMessageByIndex(newCount - 1n);
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天已经把安装插件、创建钱包、添加网络、领水、看区块链浏览器这些步骤全部完成了
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+````markdown
+区块链UI设计实战学习笔记
+
+日期：2026年7月28日
+主题：DeFi/加密产品UI设计核心逻辑、落地流程、专属优化与实战代码
+关联项目：OpenPerp永续DEX（前端UI重构）、预言机数据可视化平台（个人项目）
+核心目标：掌握区块链产品UI的差异化设计方法，能独立搭建符合DeFi审美与安全需求的前端原型
+
+---
+
+## 第一部分：UI设计的底层逻辑（结合DeFi场景）
+
+### 1.1 什么是「好看的UI」？
+好看的UI≠堆特效，而是**清晰传递信息+降低认知负担+视觉节奏舒适**，核心遵循4个原则：
+| 原则 | DeFi场景落地 | 反面例子 |
+|------|--------------|----------|
+| 视觉层次 | 实时预言机价格（48px大字体）> 更新时间（14px灰字）> 合约地址（12px暗字） | 所有信息同大小，用户找不到核心数据 |
+| 一致性 | 所有「连接钱包」用圆角蓝色按钮，所有「告警」用红色Badge，所有「安全」用绿色Badge | 今天用蓝色按钮，明天用紫色按钮，用户混乱 |
+| 留白呼吸 | 元素间用8/16/24px网格间距，避免挤成一团 | 预言机价格+图表+地址堆在一行，密集恐惧 |
+| 即时反馈 | 钱包连接时显示Loading，交易成功弹绿色Toast，错误弹红色Toast | 用户点击后无反应，以为没点到 |
+
+### 1.2 DeFi产品UI的本质
+DeFi产品的核心是「信任」，UI的任务是**降低用户的信任成本**：
+- 让用户一眼看到「数据是否可靠」（比如Chainlink来源标识、实时状态）
+- 让用户一眼看到「操作是否安全」（比如二次确认、风险提示）
+- 让用户一眼看到「资金是否清晰」（比如保证金、盈亏、手续费）
+
+---
+
+## 第二部分：从0到1的落地流程（区块链专属）
+
+### 2.1 前期准备（先想清楚再动手）
+| 步骤 | 具体动作 | 工具/参考 |
+|------|----------|-----------|
+| 明确产品定位 | 是「预言机数据展示平台」？还是「DeFi交易仪表盘」？还是「钱包管理工具」？ | Miro/ProcessOn画脑图 |
+| 目标用户画像 | 是给开发者看技术数据？还是给普通用户看简化版操作？ | 参考Aave（开发者友好）vs Uniswap（普通用户友好） |
+| 竞品抄作业 | 找3-5个同赛道优秀产品：<br>🔹 预言机：Chainlink、Band Protocol<br>🔹 DeFi：Aave、Uniswap、dYdX<br>🔹 钱包：MetaMask、Rabby | Figma截图标注（标注对方的间距、字体、颜色） |
+
+### 2.2 视觉系统搭建（像搭乐高一样）
+#### ① 配色方案（DeFi通用：暗色主题）
+DeFi产品几乎都用**暗色主题**（降低视觉疲劳、突出数据、科技感强），直接复用这套Tailwind配置：
+```jsx
+// tailwind.config.js 配置
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        // 背景系（从深到浅）
+        bg: {
+          primary: '#0A0A0A',    // 近黑主背景
+          secondary: '#141414',   // 卡片背景
+          tertiary: '#1F1F1F',   // hover/选中背景
+        },
+        // 主色（科技蓝，DeFi通用）
+        primary: {
+          DEFAULT: '#3B82F6',
+          hover: '#2563EB',
+          light: '#60A5FA',
+        },
+        // 语义色（状态提示）
+        success: '#10B981',  // 绿色=安全/正常
+        warning: '#F59E0B',  // 黄色=注意（比如预言机延迟更新）
+        danger: '#EF4444',   // 红色=告警/错误（比如清算、价格异常）
+        // 文字系（从深到浅）
+        text: {
+          primary: '#F5F5F5',    // 主文字（近白）
+          secondary: '#A3A3A3',  // 次要文字（灰）
+          muted: '#6B7280',      // 辅助文字（浅灰）
+        }
+      }
+    }
+  }
+}
+```
+👉 配色工具推荐：[coolors.co](https://coolors.co)（自动生成和谐配色）、[colorhunt.co](https://colorhunt.co)（找现成的DeFi主题）
+
+#### ② 排版规则（别乱改字体和字号）
+- **字体**：无衬线字体优先（Inter/Roboto/PingFang SC），清晰易读
+- **字号层级**（固定，别随便改）：
+  | 类型 | 字号 | 字重 | 用途 |
+  |------|------|------|------|
+  | 大标题（核心数据） | 48px | 700（粗体） | 实时预言机价格、总资产 |
+  | 中标题（模块标题） | 24px | 600（半粗） | 「今日行情」「我的持仓」 |
+  | 正文（普通文字） | 14px | 400（常规） | 解释说明、操作按钮 |
+  | 辅助文字（次要信息） | 12px | 400（常规） | 更新时间、合约地址、手续费 |
+- **字间距**：DeFi产品常用紧凑字间距（`letter-spacing: -0.02em`），更有科技感
+- **数字**：用等宽字体（`font-mono`），避免数字跳动（比如价格从100涨到999，普通字体数字宽度不同会抖动）
+
+#### ③ 间距系统（8px网格法）
+所有元素的宽高、边距、内边距都是**8的倍数**（8/16/24/32/48px），保证视觉节奏一致，不会忽大忽小：
+```jsx
+// 例子：Card组件的内边距和外边距
+<Card className="p-6 mb-4">  {/* p-6=24px内边距，mb-4=16px外边距 */}
+  <div className="text-4xl">  {/* text-4xl=36px字号，对应间距24px */}
+```
+
+### 2.3 组件库选择（结合区块链技术栈）
+别自己写组件！用成熟的开源组件库节省时间，推荐最适配DeFi的：
+| 技术栈 | 组件库 | 优势 | 地址 |
+|--------|--------|------|------|
+| **React/Next.js** | ✅ **shadcn/ui** | 免费开源、可定制（代码直接复制到项目）、基于Tailwind、DeFi社区常用 | [ui.shadcn.com](https://ui.shadcn.com) |
+| **Vue/Nuxt** | ✅ **Element Plus** | 免费、组件丰富、有暗色主题、中文文档全 | [element-plus.org](https://element-plus.org) |
+| **区块链专属** | ✅ **Wagmi** | 钱包连接、链上数据读取（React/Vue都支持） | [wagmi.sh](https://wagmi.sh) |
+| **图表** | ✅ **ECharts** | 实时数据可视化（预言机历史价格、持仓盈亏） | [echarts.apache.org](https://echarts.apache.org) |
+| **图标** | ✅ **Lucide Icons** | 免费、风格简洁、支持所有框架 | [lucide.dev](https://lucide.dev) |
+| **动画** | ✅ **Framer Motion** | React最流行的动画库（钱包连接、价格更新动画） | [framer.com/motion](https://framer.com/motion) |
+
+👉 **shadcn/ui特别适合你**：它不是npm包，而是把组件代码直接复制到项目里，你可以完全修改样式（比如加DeFi的配色），而且自带暗色模式、组件可组合，Aave、Uniswap的新UI都在用类似的思路。
+
+### 2.4 原型设计（先画再写）
+用Figma画高保真原型，重点是**模拟真实使用流程**：
+- 比如做预言机数据平台：首页（实时价格卡）→ 数据源列表 → 详情页（历史图表）→ 订阅弹窗
+- 原型要考虑所有状态：空状态、加载中、错误态、成功态
+- 找参考：Dribbble搜「DeFi UI」「Crypto Dashboard」（比如[Dribbble DeFi UI](https://dribbble.com/search/defi-ui)）
+
+### 2.5 开发实现（最后一步）
+- **响应式设计**：必须适配移动端（DeFi产品有大量手机用户），用Tailwind断点（sm/md/lg）
+- **暗色模式**：默认开启，支持手动切换（shadcn/ui自带）
+- **实时数据**：用Web3 Provider监听链上事件（比如Chainlink价格更新、交易确认）
+- **钱包连接**：用Wagmi+RainbowKit，别自己写（省时间且符合用户习惯）
+
+---
+
+## 第三部分：区块链UI的专属优化（区别于普通UI）
+
+### 3.1 数据可信度可视化（DeFi核心）
+用户最关心「数据是不是真的」，所以要把可信度直接展示出来：
+- **实时状态标识**：数据旁边加绿色脉冲点+「Live」字样，让用户知道数据是活的
+- **来源徽章**：预言机数据旁边加彩色Badge（比如Chainlink蓝色Badge、Uniswap TWAP紫色Badge）
+- **安全徽章**：合约旁边加「已审计」「多签管理」「开源」等绿色/蓝色Badge
+- **数据溯源**：合约地址简化显示（`0x1234...5678`），点击复制/跳转Etherscan
+
+### 3.2 操作安全可视化（避免用户踩坑）
+DeFi操作不可逆（链上交易不能撤回），所以要强化安全提示：
+- **钱包连接前置**：「连接钱包」按钮固定在顶部导航栏，别藏在设置里
+- **交易二次确认**：所有链上操作（比如开仓、充值）都弹模态框，显示：
+  - 操作内容（比如「开10倍ETH多单」）
+  - 金额（比如「保证金1ETH」）
+  - Gas费估算（比如「≈0.001ETH」）
+  - 合约地址（简化显示）
+- **风险等级提示**：高风险操作（比如开20倍杠杆）弹红色警告框，要求用户勾选「我已了解风险」才能继续
+- **错误提示**：操作失败时，显示具体原因（比如「预言机价格异常，交易被拒绝」），而不是「操作失败」
+
+### 3.3 降低用户认知（把专业术语变人话）
+DeFi有大量专业术语，要翻译成普通用户能懂的话：
+| 专业术语 | 人话翻译 | 显示方式 |
+|----------|----------|----------|
+| Oracle/Feed | 预言机数据源 | Tooltip解释：「Chainlink官方维护的数据源，数据可信度99.9%」 |
+| TWAP | 时间加权平均价 | Tooltip解释：「30分钟内的平均价格，避免单次价格操纵」 |
+| Liquidation | 清算 | 红色Badge+Tooltip：「当保证金低于维持水平时，仓位会被强制平仓」 |
+| Slippage | 滑点 | 设置默认值（0.5%），Tooltip解释：「交易价格的最大允许偏差」 |
+
+### 3.4 实时数据的视觉反馈
+DeFi数据是实时变化的，要让用户感知到：
+- **价格闪烁**：价格更新时，数字闪一下绿色/红色（涨绿跌红），用CSS动画实现
+- **数据更新提示**：数据旁边显示「2秒前更新」「刚刚更新」
+- **图表动画**：预言机历史价格图表，新数据点出现时有弹出动画
+
+---
+
+## 第四部分：实战代码（可直接复用）
+
+### 4.1 预言机价格卡组件（shadcn/ui+Tailwind）
+```jsx
+// components/OraclePriceCard.jsx
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { useEffect, useState } from "react"
+import { useChainlinkPrice } from "@/hooks/useChainlinkPrice" // 自己封装的Chainlink查询Hook
+
+export function OraclePriceCard({ feedAddress, feedName, feedIcon }) {
+  const { price, lastUpdate, isLive, change24h } = useChainlinkPrice(feedAddress)
+  const [isPriceUpdating, setIsPriceUpdating] = useState(false)
+
+  // 监听价格更新，触发闪烁动画
+  useEffect(() => {
+    setIsPriceUpdating(true)
+    const timer = setTimeout(() => setIsPriceUpdating(false), 500)
+    return () => clearTimeout(timer)
+  }, [price])
+
+  // 格式化价格（比如1234.56→$1,234.56）
+  const formatPrice = (p) => `$${Number(p).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+
+  // 格式化更新时间
+  const formatTime = (t) => {
+    const diff = (Date.now() - t) / 1000
+    if (diff < 10) return "刚刚更新"
+    if (diff < 60) return `${Math.floor(diff)}秒前更新`
+    if (diff < 3600) return `${Math.floor(diff/60)}分钟前更新`
+    return "超过1小时未更新"
+  }
+
+  return (
+    <Card className="bg-bg-secondary border border-border hover:border-primary transition-colors">
+      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+        <div className="flex items-center gap-2">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-xl">
+            {feedIcon} {/* 比如ETH的🟣图标 */}
+          </div>
+          <CardTitle className="text-text-primary">{feedName}</CardTitle>
+        </div>
+        <div className="flex items-center gap-2">
+          {/* 实时状态标识 */}
+          {isLive ? (
+            <span className="flex items-center gap-1 text-success text-xs">
+              <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
+              Live
+            </span>
+          ) : (
+            <span className="text-warning text-xs">离线</span>
+          )}
+          {/* 24小时涨跌幅 */}
+          <Badge variant={change24h >= 0 ? "success" : "destructive"}>
+            {change24h >= 0 ? "▲" : "▼"} {Math.abs(change24h).toFixed(2)}%
+          </Badge>
+        </div>
+      </CardHeader>
+      <CardContent>
+        {/* 核心价格（48px大字体，等宽，闪烁动画） */}
+        <div className={`text-4xl font-bold text-text-primary font-mono tracking-tight transition-all ${isPriceUpdating ? "scale-105" : ""}`}>
+          {formatPrice(price)}
+        </div>
+        {/* 更新时间（次要文字） */}
+        <div className="text-xs text-text-muted mt-2">
+          {formatTime(lastUpdate)}
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
+```
+
+### 4.2 Chainlink价格查询Hook（Wagmi+Viem）
+```jsx
+// hooks/useChainlinkPrice.js
+import { useContractRead, useContractEvent } from "wagmi"
+import { Abi } from "viem"
+
+// Chainlink AggregatorV3Interface ABI（简化版）
+const chainlinkAbi = [
+  {
+    inputs: [],
+    name: "latestRoundData",
+    outputs: [
+      { name: "roundId", type: "uint80" },
+      { name: "answer", type: "int256" },
+      { name: "startedAt", type: "uint256" },
+      { name: "updatedAt", type: "uint256" },
+      { name: "answeredInRound", type: "uint80" },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "decimals",
+    outputs: [{ name: "", type: "uint8" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { name: "roundId", type: "uint80" },
+      { name: "answer", type: "int256" },
+      { name: "startedAt", type: "uint256" },
+      { name: "updatedAt", type: "uint256" },
+      { name: "answeredInRound", type: "uint80" },
+    ],
+    name: "NewRound",
+    type: "event",
+  },
+] as const
+
+export function useChainlinkPrice(feedAddress) {
+  // 查询最新价格
+  const { data: roundData, isSuccess: isRoundSuccess } = useContractRead({
+    address: feedAddress,
+    abi: chainlinkAbi,
+    functionName: "latestRoundData",
+  })
+
+  // 查询小数位数
+  const { data: decimals, isSuccess: isDecimalsSuccess } = useContractRead({
+    address: feedAddress,
+    abi: chainlinkAbi,
+    functionName: "decimals",
+  })
+
+  // 监听NewRound事件，实时更新
+  useContractEvent({
+    address: feedAddress,
+    abi: chainlinkAbi,
+    eventName: "NewRound",
+    listener: (logs) => {
+      // 触发组件重新渲染
+      console.log("Chainlink price updated:", logs)
+    },
+  })
+
+  // 计算处理后的数据
+  if (!isRoundSuccess || !isDecimalsSuccess || !roundData) {
+    return { price: 0, lastUpdate: 0, isLive: false, change24h: 0 }
+  }
+
+  const [roundId, answer, startedAt, updatedAt, answeredInRound] = roundData
+  const price = Number(answer) / Math.pow(10, decimals) // 去掉小数位数
+  const lastUpdate = Number(updatedAt) * 1000 // 转毫秒
+  const isLive = (Date.now() - lastUpdate) < 3600000 // 1小时内更新过就算在线
+  // 24小时涨跌幅获取提示：需调用 Chainlink 的 getRoundData() 查询24小时前的轮次价格，计算差值
+  // 示例逻辑：先获取当前轮次ID → 减24*60/更新间隔（如20分钟）→ 查询对应轮次价格 → 计算涨跌幅
+  const change24h = 0 // 占位符，实际项目需实现历史价格查询逻辑
+
+  return { price, lastUpdate, isLive, change24h }
+}
+```
+
+### 4.3 钱包连接按钮（Wagmi+RainbowKit）
+```jsx
+// components/WalletConnectButton.jsx
+import { ConnectButton } from "@rainbow-me/rainbowkit"
+import { useAccount } from "wagmi"
+
+export function WalletConnectButton() {
+  const { isConnected, address } = useAccount()
+
+  return (
+    <ConnectButton.Custom>
+      {({
+        account,
+        chain,
+        openAccountModal,
+        openChainModal,
+        openConnectModal,
+        authenticationStatus,
+        mounted,
+      }) => {
+        const ready = mounted && authenticationStatus !== "loading"
+        const connected = ready && account && chain && (!authenticationStatus || authenticationStatus === "authenticated")
+
+        return (
+          <div
+            {...(!ready && {
+              "aria-hidden": true,
+              style: { opacity: 0, pointerEvents: "none", userSelect: "none" },
+            })}
+          >
+            {(() => {
+              if (!connected) {
+                return (
+                  <button
+                    onClick={openConnectModal}
+                    type="button"
+                    className="px-4 py-2 rounded-lg bg-primary hover:bg-primary-hover text-white font-medium transition-colors"
+                  >
+                    连接钱包
+                  </button>
+                )
+              }
+
+              if (chain.unsupported) {
+                return (
+                  <button
+                    onClick={openChainModal}
+                    type="button"
+                    className="px-4 py-2 rounded-lg bg-danger hover:bg-danger/90 text-white font-medium transition-colors"
+                  >
+                    切换网络
+                  </button>
+                )
+              }
+
+              return (
+                <div className="flex items-center gap-2">
+                  {/* 网络图标+名称 */}
+                  <button
+                    onClick={openChainModal}
+                    type="button"
+                    className="px-3 py-2 rounded-lg bg-bg-secondary hover:bg-bg-tertiary text-text-primary transition-colors flex items-center gap-2"
+                  >
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                      {chain.iconUrl && <img alt={chain.name} src={chain.iconUrl} className="w-4 h-4" />}
+                    </div>
+                    <span className="text-sm hidden sm:block">{chain.name}</span>
+                  </button>
+
+                  {/* 钱包地址（简化显示） */}
+                  <button
+                    onClick={openAccountModal}
+                    type="button"
+                    className="px-4 py-2 rounded-lg bg-primary hover:bg-primary-hover text-white font-medium transition-colors flex items-center gap-2"
+                  >
+                    <span className="font-mono">
+                      {account.displayName.slice(0, 6)}...{account.displayName.slice(-4)}
+                    </span>
+                    {account.displayBalance && (
+                      <span className="text-sm opacity-75 hidden md:block">
+                        {account.displayBalance}
+                      </span>
+                    )}
+                  </button>
+                </div>
+              )
+            })()}
+          </div>
+        )
+      }}
+    </ConnectButton.Custom>
+  )
+}
+```
+
+### 4.4 价格闪烁动画CSS（Tailwind扩展）
+```jsx
+// tailwind.config.js 扩展动画
+module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        'price-flash-up': 'priceFlashUp 0.5s ease-out',
+        'price-flash-down': 'priceFlashDown 0.5s ease-out',
+      },
+      keyframes: {
+        priceFlashUp: {
+          '0%': { color: '#10B981', transform: 'scale(1.05)' },
+          '100%': { color: '#F5F5F5', transform: 'scale(1)' },
+        },
+        priceFlashDown: {
+          '0%': { color: '#EF4444', transform: 'scale(0.95)' },
+          '100%': { color: '#F5F5F5', transform: 'scale(1)' },
+        },
+      },
+    },
+  },
+}
+```
+
+---
+
+## 第五部分：今日行动项（可落地）
+
+1. **搭建UI脚手架**：用Next.js+TypeScript+Tailwind+shadcn/ui初始化项目（参考shadcn/ui官方文档：`npx shadcn-ui@latest init`）
+2. **集成Wagmi+RainbowKit**：实现钱包连接功能（支持Ethereum、Arbitrum、Optimism等DeFi常用链）
+3. **开发预言机价格展示页**：
+   - 用Chainlink的ETH/USDC Feed（地址：`0x986b5E1e1755e3C2440e9604a9c10b13cb63923d`）作为测试数据源
+   - 实现3个价格卡：ETH/USD、BTC/USD、USDC/USD
+   - 实时监听Chainlink NewRound事件，触发价格闪烁动画
+4. **研究竞品UI**：打开Aave、Uniswap、dYdX的官网，截图标注它们的布局、配色、组件样式
+5. **完成Figma原型**：画一个「预言机数据平台」的高保真原型，包含首页、数据源列表、详情页
+
+---
+
+## 第六部分：学习资源（区块链UI专属）
+
+### 6.1 前端框架/组件库
+- [Next.js官方文档](https://nextjs.org/docs)：React全栈框架，DeFi前端首选
+- [shadcn/ui官网](https://ui.shadcn.com)：可定制的组件库，DeFi社区通用
+- [Tailwind CSS官方文档](https://tailwindcss.com/docs)：原子化CSS，快速写样式
+
+### 6.2 区块链前端工具
+- [Wagmi官方文档](https://wagmi.sh)：React/Vue的以太坊Hook库，简化链上交互
+- [Viem官方文档](https://viem.sh)：轻量的以太坊客户端库，Wagmi底层
+- [RainbowKit官方文档](https://www.rainbowkit.com)：钱包连接组件，支持所有主流钱包
+- [ECharts官方文档](https://echarts.apache.org)：实时图表库，用于预言机历史价格
+
+### 6.3 DeFi UI参考
+- Aave V3前端仓库：[github.com/aave/aave-ui](https://github.com/aave/aave-ui)
+- Uniswap V3前端仓库：[github.com/Uniswap/interface](https://github.com/Uniswap/interface)
+- dYdX V4前端仓库：[github.com/dydxprotocol/v4-web](https://github.com/dydxprotocol/v4-web)
+- Chainlink预言机展示页：[data.chain.link](https://data.chain.link)
+
+### 6.4 设计灵感
+- Dribbble「DeFi UI」：[dribbble.com/search/defi-ui](https://dribbble.com/search/defi-ui)
+- Behance「Crypto Dashboard」：[behance.net/search/projects?search=crypto%20dashboard](https://www.behance.net/search/projects?search=crypto%20dashboard)
+- CoinDesign（加密设计社区）：[coindesign.org](https://coindesign.org)
+
+### 6.5 设计规范
+- [Material Design 3](https://m3.material.io)：谷歌的通用设计规范，适合入门
+- [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)：iOS设计规范，参考移动端DeFi产品
+
+---
+
+## 第七部分：今日学习心得
+
+1. **UI不是炫技**：DeFi UI的核心是「降低信任成本」，所有设计都要围绕「让用户觉得安全、让用户觉得简单」展开
+2. **别重复造轮子**：用成熟的组件库（shadcn/ui）、区块链工具（Wagmi），把时间花在核心功能上
+3. **实时性是灵魂**：DeFi数据是实时变化的，UI必须及时反馈（闪烁动画、实时状态、更新时间）
+4. **安全第一**：所有链上操作都要二次确认，所有风险都要可视化提示，因为链上交易不可逆
+5. **抄作业要会改**：参考优秀DeFi产品的UI，但要改成适合自己产品的样式（比如加自己的Logo、配色）
+````
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

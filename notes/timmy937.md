@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# timmy937
-
-**GitHub ID:** timmy937
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 120255833
+- Name: timmy937
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

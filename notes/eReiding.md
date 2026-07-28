@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# eReiding
-
-**GitHub ID:** eReiding
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 274423539
+- Name: eReiding
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

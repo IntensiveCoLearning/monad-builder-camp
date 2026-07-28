@@ -1,16 +1,7 @@
----
-timezone: UTC+8
----
-
-# LLLay-zz
-
-**GitHub ID:** LLLay-zz
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 253485631
+- Name: LLLay-zz
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 

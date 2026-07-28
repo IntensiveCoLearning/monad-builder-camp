@@ -8,18 +8,21 @@
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 学习运营知识中
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 学习web3运营知识中
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 ```
 // SPDX-License-Identifier: MIT
@@ -56,8 +59,7 @@ contract DailyCheckIn {
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 ```
 // SPDX-License-Identifier: MIT
@@ -95,9 +97,7 @@ contract SimpleCounter {
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 我选择 Ops（运营） 作为自己的主方向，因为我认为运营是连接产品、社区和用户的重要角色。通过 Ops 工作，我不仅可以深入了解 Web3 项目的运作方式，还能锻炼沟通、协作和组织能力。同时，运营方向对技术背景要求相对较低，适合我在实践中不断学习和成长。
 
@@ -112,10 +112,7 @@ Ops 主要服务于项目的日常运营和社区建设，帮助解决用户增�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 Builder 身份
 
@@ -216,11 +213,7 @@ Day 7：总结提交
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 Builder 身份
 
@@ -321,12 +314,7 @@ Day 7：总结提交
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
+# 2026-07-18
 
 ```
 // SPDX-License-Identifier: MIT
@@ -374,13 +362,7 @@ contract DonationBox {
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
+# 2026-07-17
 
 ```
 // SPDX-License-Identifier: MIT
@@ -466,14 +448,7 @@ contract OpsCampaignDemo {
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 ```
 // SPDX-License-Identifier: MIT
@@ -529,15 +504,7 @@ contract SimpleVote {
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 ```
 // SPDX-License-Identifier: MIT
@@ -615,16 +582,7 @@ contract NFTBadge {
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 合约demo
 
@@ -673,17 +631,7 @@ contract Guestbook {
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 ```remix-solidity
 合约demo
@@ -770,18 +718,7 @@ contract OpsCampaignDemo {
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 一、面试准备通用框架
 
@@ -812,19 +749,7 @@ contract OpsCampaignDemo {
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 一、比特币
 
@@ -863,20 +788,7 @@ GHOST协议
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 陆、合规与网络安全
 
@@ -1065,21 +977,7 @@ MiCA（加密资产市场法规）：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 二、RPC节点服务详解
 
@@ -1236,22 +1134,7 @@ Twitter Space执行流程参考：主持人开场，嘉宾问答（每题15分�
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 肆、智能合约开发
 
@@ -1338,23 +1221,7 @@ Dapp的开发流程可以分为以下几个阶段：
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 叁、行业赛道
 
@@ -1475,24 +1342,7 @@ RWA（Real-World Assets）是把国债、基金份额、应收账款等现实世
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 Web3实习手册
 
@@ -1736,4 +1586,10 @@ EVM（Ethereum Virtual Machine）是 以太坊的“大脑”，是专门用来�
 
 EVM的核心特点：图灵完备、全球同步、隔离安全。
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+学习web3 ops知识中
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

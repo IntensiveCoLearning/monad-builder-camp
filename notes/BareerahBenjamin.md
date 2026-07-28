@@ -1,27 +1,21 @@
----
-timezone: UTC+8
----
-
-# BareerahBenjamin
-
-**GitHub ID:** BareerahBenjamin
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 99247545
+- Name: BareerahBenjamin
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
+# 2026-07-16
+
 今天整理了一下DEV方向任务的文档然后提交
 <!-- DAILY_CHECKIN_2026-07-16_END -->
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
+# 2026-07-15
 
 今天重读了以太坊的官方文档，复习了一下之前在 EPF 实习计划中看过的内容，然后查看了 Moss 项目的仓库
 
@@ -30,45 +24,35 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
+# 2026-07-14
 
 今天主要听了晚上的课，然后在做DEV方向的demo
 <!-- DAILY_CHECKIN_2026-07-14_END -->
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
+# 2026-07-13
 
 今天完成了 Role Choice Card，AI Collabration Log 和 ERP Reading Card.
 <!-- DAILY_CHECKIN_2026-07-13_END -->
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
+# 2026-07-12
 
 今天整理了本周的学习内容，完成了本周剩下的两个任务
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
+# 2026-07-10
 
 晚点发笔记，打卡先补个
 <!-- DAILY_CHECKIN_2026-07-10_END -->
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
+# 2026-07-09
 
 # 本地内存池 **Local Mempool**
 
@@ -431,12 +415,7 @@ Monad 在设计时对比了两种签名方式的优缺点：
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
+# 2026-07-08
 
 # RaptorCast
 
@@ -557,13 +536,7 @@ Monad 提供的部分快速实时数据源会直接报告 **Proposed** 状态下
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
+# 2026-07-07
 
 # 异步 I / O（**Asynchronous I/O）**
 
@@ -650,14 +623,7 @@ Unhappy Path（Fault Handling）
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天完成了 week1 的大部分通用任务，熟悉了一些 Monad 生态
 <!-- DAILY_CHECKIN_2026-07-06_END -->

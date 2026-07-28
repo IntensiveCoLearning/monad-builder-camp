@@ -1,27 +1,21 @@
----
-timezone: UTC+8
----
-
-# zhaolangchen910
-
-**GitHub ID:** zhaolangchen910
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 295685468
+- Name: zhaolangchen910
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
+# 2026-07-09
+
 DeFi，是基于区块链技术建立的金融体系，目标是提供不依赖传统银行或金融中介的服务，比如借贷、交易、支付等，让每个人都可以自由参与
 <!-- DAILY_CHECKIN_2026-07-09_END -->
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
+# 2026-07-08
 
 比特币 PoW = Proof of Work。哪个节点先算出来，谁就获得这次记账权，把新区块加到区块链上，并获得比特币奖励（算力、电力成本）
 
@@ -43,7 +37,7 @@ Blob 交易：以太坊专门给 Layer 2 准备的，降低数据存储成本
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
+# 2026-07-06
 
 2026-07-06 开营
 

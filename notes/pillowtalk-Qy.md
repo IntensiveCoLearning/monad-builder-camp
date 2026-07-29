@@ -4137,4 +4137,173 @@ pnpm check
 
 今天没有继续编写 Mini Demo 功能代码，但通过公开提交、阶段材料整理和8次独立 Review，进一步练习了 Builder、Reviewer、Maintainer 和开发者关系所需要的综合能力。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+## 今日概览
+
+今天主要完成两类工作：
+
+* 为 **Moss Mini Demo** 建立完整的 Hackathon 恢复计划、里程碑和任务依赖；
+* 在 **Moss** 上完成三次深入代码审查，其中一个批准、两个要求修改。
+
+今天没有向 Mini Demo 主分支提交新代码。主要成果是将后续开发从宽泛计划拆解为可追踪的工程任务，并在实现前重新明确依赖和信任边界。
+
+## 一、Mini Demo Hackathon 恢复规划
+
+项目仓库：[Moss-Mini-Demo/moss-mini-demo](https://github.com/Moss-Mini-Demo/moss-mini-demo)
+
+今天为项目新增了 **47 个 Issue（#18–#64）**，加上继续复用的 #4、#6、#8、#9 和 #11，共有 **52 项计划工作**获得唯一的 GitHub 记录。
+
+这次拆分不是简单增加待办，而是把项目从证据契约、Moss 集成、前端 Console、可选 Credential、发布测试到最终演示的完整链路工程化。
+
+## 二、M1 依赖重新排序
+
+在 [Issue #4](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/4#issuecomment-5114055679) 中完成了 M1 恢复规划。
+
+新的依赖链为：
+
+```
+#18 契约澄清
+  -> #19 DecisionInput 运行时边界
+  -> #6 Decision Engine
+  -> #8 tokenOut STOP Fixture
+  -> #20 amountIn STOP Fixture
+  -> #9 M1 证据边界与关闭评估
+```
+
+其中：
+
+* [#18](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/18) 负责澄清 `DecisionInput` 和 `MANUAL_REVIEW` 契约；
+* [#19](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/19) 负责导出严格的 `DecisionInputV0_1` 运行时边界；
+* [#20](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/20) 负责补充 amountIn 不一致的 STOP Fixture。
+
+因此 #6、#8 和 #9 被调整为 `Blocked`。这一状态变化不会否定已经合并的 Schema、Fixture 和 ADR，只表示后续实现需要等待前置契约完成。
+
+## 三、完整里程碑建立
+
+今天新增了 M2–M6 五个里程碑：
+
+* **M2：Moss Integration & Mini-Demo Core，7 月 31 日**
+* **M3：Mini-Demo Console & Gate A，8 月 1 日**
+* **M4：Clear402 Credential Layer & Gate B，8 月 2 日**
+* **M5：Reliability & Release Candidate，8 月 5 日**
+* **M6：Demo & Submission，8 月 9 日**
+
+M0 已完成，M1 保留原逾期日期作为历史记录，不通过修改日期掩盖延误。
+
+## 四、各阶段工程范围
+
+### M2：Moss 集成与核心流程
+
+M2 包含运行时选择、Moss 依赖锁定、Adapter Package、Quote、Capability、模拟、证据映射、Monad Live Smoke、Alignment、Report 组装、Web/API 和非 UI E2E Gate。
+
+父 Tracker 为 [Issue #21](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/21)。
+
+### M3：Mini Demo Console
+
+M3 负责真正可展示的页面，包括：
+
+* Workbench 和运行状态机；
+* Intent、Quote、协议选择和 Provenance；
+* Capability Inspector；
+* Simulation Evidence 时间线；
+* 三方对比、Alignment 和两层 Decision UI；
+* 响应式、可访问性和视觉稳定性；
+* 不依赖 Clear402 的 Gate A 验收。
+
+### M4：可选 Clear402 Credential
+
+M4 规划了一个可选的 Monad Action Credential 层，包括严格 Schema、RFC 8785 Digest、独立验证器、导出与篡改验证 UI。
+
+这一层是可选扩展，不能阻塞基础 Mini Demo。Gate A 必须证明项目在没有 Clear402 时也能独立工作。
+
+### M5：可靠性与发布候选
+
+M5 覆盖确定性场景、Live/Fixture 恢复、E2E 失败矩阵、Known Issues、安全与依赖审计、性能、部署、Clean Clone 验收、桌面和移动端 QA，以及 Release Candidate 冻结。
+
+### M6：演示与提交
+
+M6 负责五分钟讲稿、证据声明、Q\&A、计时演练、失败恢复、媒体与链接整理，以及最终 Go/No-Go 判断。
+
+今天还为 M2、M3、M4、M5 和 M6 建立了父子 Issue 映射。创建这些任务不代表已经授权实施、通过 Gate 或完成对应功能。
+
+## 五、当前 Mini Demo 状态
+
+今天没有新增代码或 PR，主分支仍停留在提交 `316dd14`。
+
+当前真实完成的仍然是：
+
+* TypeScript 工程与质量门禁；
+* `PreflightReport v0.1` Runtime Schema；
+* 证据与 SourceReference 信任边界；
+* 合成 MANUAL\_REVIEW Fixture；
+* 620 项自动化测试。
+
+尚未完成：
+
+* Decision Engine；
+* Moss/Monad 实时集成；
+* Kuru Swap 核心流程；
+* Web/API；
+* 前端 Console；
+* 真实用户交互 Demo；
+* Clear402 Credential；
+* 部署与最终演示。
+
+## 六、Moss PR #109：Pendle 最终批准
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/109#pullrequestreview-4807988317)
+
+昨天发现 buy-PT 分支没有绑定 `Market.Swap.receiver` 与最终 Outcome receiver。作者提交13行针对性修复后，我重新完成最终检查。
+
+新的负向 Fixture 会将 Market receiver 单独改为错误地址，并确认该矛盾 Trace 现在能够 fail-closed。
+
+验证结果：
+
+* `git diff --check`、Build、Typecheck 通过；
+* Pendle 在线测试 152/152；
+* Receipt 测试 21/21；
+* Market discovery、双向 Quote、Buy PT、Sell PT 和 Dust Revert 均通过。
+
+没有发现剩余阻塞问题，因此提交 `APPROVED`。
+
+## 七、Moss PR #144：资源上限修复复核
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/144#pullrequestreview-4807241286)
+
+昨天发现 `facetAddresses()` 在检查 Facet 上限前会先发起全部 RPC 请求。今天复核确认该问题已经正确修复：
+
+* 257 个 Facet 会在循环前被拒绝；
+* `facetFunctionSelectors` 调用次数保持为零；
+* 累计 selector 超过8192时会立即停止后续请求；
+* 新测试验证的是拒绝时机和调用次数，而不只是最终错误。
+
+代码层面没有剩余阻塞，但 PR 描述仍记录旧测试数量和旧的 direct-dispatcher 规则，因此继续提交 `CHANGES_REQUESTED`，要求先同步合并证据。
+
+## 八、Moss PR #143：Uniswap V4 与 Core Self Review
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/143#pullrequestreview-4807238270)
+
+该 PR 为 Uniswap V4 Adapter 引入 Core `self` 能力，使 Protocol Capability 可以调用自身的其他 Capability。方向合理，但我发现三个公共边界问题。
+
+第一，最终 Capability Tree 深度检查发生得太晚。构造阶段会先完成全部递归调用，再验证树深度。我用 Review Fixture 复现：配置深度限制为16时，Capability 方法实际执行了101次后才抛出 `CAPABILITY_DEPTH`。如果每层执行 RPC，资源消耗已经发生。
+
+第二，`self` 没有被声明为保留注入名称。`contracts.self`、`protocols.self` 或实例字段 `self` 可能产生属性冲突或被静默覆盖。
+
+第三，文档称 `self` 只用于 Capability，但类型和运行时实际上还暴露 Query 与 Receipt，公共契约范围不一致。
+
+因此提交 `CHANGES_REQUESTED`，要求在构造阶段加入主动深度/调用上下文、保留 `self` 名称，并正式限定或定义公开 API 范围。
+
+## 九、今日收获
+
+今天的主要工作是把“想做一个 Demo”转化为完整的依赖图和验收路径，同时继续通过上游 Review 验证自己的工程判断。
+
+最重要的认识有两点：
+
+第一，项目计划不能只是功能列表，还必须记录依赖、Gate、信任边界和失败条件；但创建大量 Issue 也不等于取得实现进度，最终仍要回到最小交付路径。
+
+第二，安全限制必须在昂贵操作发生前生效。无论是 RPC 数量上限还是递归深度，如果系统先完成全部工作再报错，那么这个限制只约束结果，并没有真正约束资源和风险。
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

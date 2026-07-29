@@ -5917,16 +5917,7 @@ Gas 费用 = Gas Limit × Gas Price
 <!-- DAILY_CHECKIN_2026-07-29_START -->
 # 2026-07-29
 
-如果你的目标是**基于 Monad 搭建一个线上赌场（On-chain Casino）**，从技术角度可以设计为一个 Web3 游戏娱乐平台。不过需要先说明：**线上赌博业务在很多司法辖区受到严格监管**，涉及真钱下注、提现、博彩运营可能需要牌照和合规体系。下面我会从**区块链游戏协议 / 去中心化娱乐平台**的技术架构角度介绍如何构建，而不是指导规避监管运营非法赌场。
-
-基于 Monad 的优势（高吞吐、低 Gas、EVM 兼容），比较适合做高频链上游戏，例如：
-
-* Provably Fair 骰子游戏
-* 链上抽奖
-* NFT 游戏资产
-* 积分竞技系统
-* DAO 游戏平台
-* Web3 娱乐应用
+基于 Monad 的线上链游探究
 
 ***
 
@@ -5965,7 +5956,9 @@ Gas 费用 = Gas Limit × Gas Price
 用户通过：
 
 * MetaMask
+
 * Rabby Wallet
+
 * WalletConnect
 
 连接 Monad。
@@ -6201,8 +6194,11 @@ contract DiceGame {
 功能：
 
 * 投注
+
 * 随机结果
+
 * 判断
+
 * 奖励
 
 ***
@@ -6551,8 +6547,11 @@ scripts/deploy.js \
 项目名称示例：
 
 * MonadPlay
+
 * FairDice
+
 * Monad Arcade
+
 * Monad GameFi Hub
 
 核心卖点：

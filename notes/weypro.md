@@ -6,6 +6,12 @@
 ## Notes
 
 <!-- Content_START -->
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
 # 2026-07-25
@@ -130,10 +136,4 @@
 
 看黑客松
 <!-- DAILY_CHECKIN_2026-07-28_END -->
-
-<!-- DAILY_CHECKIN_2026-07-27_START -->
-# 2026-07-27
-
-由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
-<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

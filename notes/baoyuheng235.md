@@ -6,6 +6,12 @@
 ## Notes
 
 <!-- Content_START -->
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
 # 2026-07-25
@@ -157,10 +163,4 @@ agent给的方案是做 deterministic fixture：模拟一份真实链上执行�
 
 本周主要完成了 Moss V2 下 Aave V3 Lending Demo 的搭建与协作流程实践。从最初分析已有 PR #38 和 Issue #8 的旧版 Action 架构，到理解新版 Moss 使用 Capability、Protocol、Receipt 的设计方式，我逐渐明确了如何将传统 DeFi 协议接入 Agent 框架。通过创建 `aave-v3` protocol package，实现了基于 USDC 的 supply Capability，包括参数校验、6 位精度转换、精确 ERC20 approve、Aave Pool supply transaction tree 构建，以及 deterministic simulation fixture。同时，我也学习了为什么不能直接使用 WMON 作为 demo 资产，因为当前 Monad Aave Pool 并未配置 WMON reserve，而 USDC 才是已验证支持的资产。整个过程让我理解了 Research、Dev 和 Ops 在团队协作中的衔接方式：Research 负责确认协议事实和风险，Dev 负责实现可验证功能，最终通过 Demo 展示完整用户流程。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
-
-<!-- DAILY_CHECKIN_2026-07-27_START -->
-# 2026-07-27
-
-由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
-<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

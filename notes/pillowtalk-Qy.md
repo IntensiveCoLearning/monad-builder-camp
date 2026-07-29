@@ -6,7 +6,12 @@
 ## Notes
 
 <!-- Content_START -->
-# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 <!-- DAILY_CHECKIN_2026-07-26_START -->
 # 2026-07-26
 
@@ -4132,10 +4137,4 @@ pnpm check
 
 今天没有继续编写 Mini Demo 功能代码，但通过公开提交、阶段材料整理和8次独立 Review，进一步练习了 Builder、Reviewer、Maintainer 和开发者关系所需要的综合能力。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
-
-<!-- DAILY_CHECKIN_2026-07-27_START -->
-# 2026-07-27
-
-由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
-<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

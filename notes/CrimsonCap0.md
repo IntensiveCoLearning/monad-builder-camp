@@ -6,7 +6,12 @@
 ## Notes
 
 <!-- Content_START -->
-# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 <!-- DAILY_CHECKIN_2026-07-26_START -->
 # 2026-07-26
 
@@ -377,10 +382,4 @@ Agent 任务托管、链上赏金、Monad Testnet、React DApp、ethers.js、Met
 
 昨天打卡系统出bug了！正在联系老师补卡……今天按照昨晚hackathon的要求来，做了一个粗糙的demo出来
 <!-- DAILY_CHECKIN_2026-07-28_END -->
-
-<!-- DAILY_CHECKIN_2026-07-27_START -->
-# 2026-07-27
-
-由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
-<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

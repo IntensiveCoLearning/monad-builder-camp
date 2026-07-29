@@ -6,7 +6,12 @@
 ## Notes
 
 <!-- Content_START -->
-# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
 <!-- DAILY_CHECKIN_2026-07-26_START -->
 # 2026-07-26
 
@@ -7465,10 +7470,4 @@ module.exports = {
 5. **抄作业要会改**：参考优秀DeFi产品的UI，但要改成适合自己产品的样式（比如加自己的Logo、配色）
 ````
 <!-- DAILY_CHECKIN_2026-07-28_END -->
-
-<!-- DAILY_CHECKIN_2026-07-27_START -->
-# 2026-07-27
-
-由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
-<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

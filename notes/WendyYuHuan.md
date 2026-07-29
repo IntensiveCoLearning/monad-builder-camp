@@ -8,6 +8,8 @@
 <!-- Content_START -->
 # 2026-07-28
 <!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
 # 学习记录
 
 1.Demo UI讨论及前端页面修改
@@ -15,6 +17,7 @@
 
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
 
 # 学习记录
 
@@ -25,7 +28,7 @@
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
-
+# 2026-07-25
 
 # 学习记录
 
@@ -34,8 +37,7 @@
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
-
+# 2026-07-24
 
 # 学习记录
 
@@ -46,9 +48,7 @@
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 # 学习记录
 
@@ -59,10 +59,7 @@
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 # 学习记录
 
@@ -75,11 +72,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 # 学习记录
 
@@ -90,12 +83,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
+# 2026-07-19
 
 # 学习记录
 
@@ -104,13 +92,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
+# 2026-07-18
 
 # 学习记录
 
@@ -119,14 +101,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 # 学习记录
 
@@ -137,15 +112,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 # 学习记录
 
@@ -156,16 +123,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 # 学习记录
 
@@ -176,17 +134,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # 学习记录
 
@@ -201,18 +149,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 # 学习记录
 
@@ -227,19 +164,7 @@ link：[https://mood-journal--joy1118.replit.app](https://mood-journal--joy1118.
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 # 学习记录
 
@@ -804,20 +729,7 @@ contract NFTBadge {
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 # 学习记录
 
@@ -832,21 +744,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 # 学习记录
 
@@ -861,22 +759,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 # 学习记录
 
@@ -891,23 +774,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 # 学习记录
 
@@ -925,24 +792,7 @@ AI生成NFT Badge合约并部署，完成Week1课程任务
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 # 学习记录
 
@@ -960,25 +810,7 @@ Codex部署合约实操
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 # 学习记录
 
@@ -997,4 +829,10 @@ Codex部署合约实操
 
 完成链上测试网交易、部署solidity合约
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+Demo页面开发：修改Dashboard、Transactions页面布局及样式，修改接口
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

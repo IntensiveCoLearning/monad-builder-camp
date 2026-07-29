@@ -130,4 +130,12 @@
 
 * 观看回放 [Monad Playground OpenDay](https://x.com/i/broadcasts/1aKbddrRQqZJX)
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+<br />
+
+* 思考黑客松
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

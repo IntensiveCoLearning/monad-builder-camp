@@ -1202,4 +1202,10 @@ Monad Testnet（测试网）—— 实操重点
 
 <https://github.com/minzhenw490-pixel/sentinel-for-safe-execution/blob/f8d4d4cbc087e9dadc63043314f5d8c446a04cf7/docs/Sentinel-ProblemCard.md>
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+**[web3-/Week3-组队完成确认.md at main · minzhenw490-pixel/web3- · GitHub](https://github.com/minzhenw490-pixel/web3-/blob/main/Week3-%E7%BB%84%E9%98%9F%E5%AE%8C%E6%88%90%E7%A1%AE%E8%AE%A4.md "https://github.com/minzhenw490-pixel/web3-/blob/main/Week3-%E7%BB%84%E9%98%9F%E5%AE%8C%E6%88%90%E7%A1%AE%E8%AE%A4.md")**
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

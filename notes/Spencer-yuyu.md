@@ -186,4 +186,10 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 <https://app.notion.com/p/Research-Workflow-Polymarket-3a854a97f4518022a28ce98a90a90b93?source=copy_link>
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

@@ -963,4 +963,10 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 思考黑客松idea
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

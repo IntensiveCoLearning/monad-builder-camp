@@ -968,4 +968,10 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 思考黑客松idea
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+设计黑客松选题
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

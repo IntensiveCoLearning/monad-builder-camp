@@ -216,13 +216,13 @@ mindmap
 
 ### 4.3 类型系统约束
 
-$$
+$
 \forall tx \in TransactionPool: \text{latency}(tx) \leq \tau_{max} \Rightarrow \text{throughput}(system) \geq \lambda_{target}
-$$
+$
 
-$$
+$
 \text{ParallelEVM}_{state} = \{ s_1, s_2, ..., s_n \} \quad \text{where} \quad s_i \cap s_j = \emptyset \; (i \neq j)
-$$
+$
 
 ---
 
@@ -378,7 +378,7 @@ stateDiagram-v2
 
 ### 8.2 每日学习闭环
 
-$$
+$
 \text{Learning闭环} = \left\{
 \begin{aligned}
 &\text{Input}_t: \text{新知识/任务} \\
@@ -387,7 +387,7 @@ $$
 &\text{Reflection}_t: \text{问题记录} + \text{改进方案}
 \end{aligned}
 \right\}
-$$
+$
 
 ---
 
@@ -442,4 +442,10 @@ $$
 
 331
 <!-- DAILY_CHECKIN_2026-07-27_END -->
+
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
+123
+<!-- DAILY_CHECKIN_2026-07-28_END -->
 <!-- Content_END -->

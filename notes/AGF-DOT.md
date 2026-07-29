@@ -7155,7 +7155,7 @@ export function OraclePriceCard({ feedAddress, feedName, feedIcon }) {
   }, [price])
 
   // 格式化价格（比如1234.56→$1,234.56）
-  const formatPrice = (p) => `$${Number(p).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+  const formatPrice = (p) => `${Number(p).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 
   // 格式化更新时间
   const formatTime = (t) => {
@@ -7465,4 +7465,10 @@ module.exports = {
 5. **抄作业要会改**：参考优秀DeFi产品的UI，但要改成适合自己产品的样式（比如加自己的Logo、配色）
 ````
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

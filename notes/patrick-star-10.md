@@ -215,4 +215,34 @@ AI 在整个学习过程中主要承担了辅助学习和知识解释的角色�
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+<br />
+
+今天继续完善了 Moss 的 Kintsu sMON Liquid Staking Adapter PR。 PR 地址：<https://github.com/nishuzumi/moss/pull/137> 本次主要根据维护者 Review 完成以下修改：
+
+1\. 删除了不应提交到仓库的临时 Agent 设计和执行计划文件，将有长期价值的内容整理到
+
+packages/
+
+protocols/kintsu/README.md
+
+2\. 补充 Kintsu 异步赎回流程说明，明确本次 Adapter 只支持 MON 质押，不将requestUnlock →batch → cooldown → redeem错误封装为单笔原子操作。
+
+3\. 新增 Monad 主网端到端测试，包括代理合约字节码检查、实时
+
+quoteDeposit报价，以及使用createTraceSimulator 执行真实的 1 MON 存款模拟。
+
+4\. 验证执行结果没有中止和警告，并能够将链上事件完整解析为类型化 Receipt。
+
+5\. 修复 sender 与 receiver 地址格式不一致的问题，在 Outcome 边界统一转换为 EIP-55 checksum 地址，同时保持原始 Changes 的顺序和对象不变。
+
+6\. 将分支 Rebase 到最新上游main，更新 PR 描述、测试环境和验证结果。 测试环境为 macOS 26.3.1、Apple Silicon、Node.js v24.13.1、pnpm 11.10.0，Monad 主网 Chain ID 为 143。最终工作区构建、TypeScript 类型检查、Biome Lint 和离线测试全部通过；离线测试结果为 27 个测试文件、208 项测试通过，Kintsu 主网测试为 21/21 通过，MCP Server 测试为 10/10 通过。 由于当前环境没有MONADSCAN\_API\_KEY
+
+，带密钥的在线 ABI Explorer 测试未执行，但主网代理字节 码、ABI 语义对比、实时报价和存款 Trace 均已独立验证。 修改说明：<https://github.com/nishuzumi/moss/pull/137#issuecomment-5104302047> 目前该 PR 已获得一名项目贡献者的
+
+APPROVED，对方也独立完成了安装、构建、类型检查、Lint、219 项测试、Kintsu 主网 Trace 和代理合约检查。当前正在等待仓库维护者进行最终复审。
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

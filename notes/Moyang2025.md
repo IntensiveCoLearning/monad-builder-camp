@@ -329,4 +329,10 @@ EIP、ERC、MIP 通常会详细说明：
 
 做了项目的流程图
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+今天按照最新一版的项目方案重新调整了网页，设计了logo
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

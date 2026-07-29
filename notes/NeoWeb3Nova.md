@@ -617,4 +617,38 @@ Monad 生态技术文章还提到，Monad 的目标利用率是 80%，高于 Eth
 &#x20;   \- 7aa018c：提交 Team Matching Card\
 &#x20;   \- 86ab681：提交 AI Persona Reality Check，并纠正为 Week 4 Day 2
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+【Web3 暑期实习计划｜Monad Builder Camp 打卡】
+
+日期：2026 年 7 月 29 日
+周次：Week 4｜Monad Playground Hackathon · Day 3
+方向：Tech / Dev Builder
+主题：Meet Your Team — Team Matching + Day 4 验证工具准备
+学分任务：Team Matching Card +20
+
+今日完成：
+
+1. 完成 Team Matching Card。与 Week 3 队友 Riso（Product/Research）、eleven（UI）确认继续组队，推进「Agent 钱包黑匣子」方向：帮助个人用户在 Agent 执行 Swap 时签前看懂授权、事后能还原「提议—风险—确认—执行」事实。对齐四问（同一问题、各约 6h/周、可检查贡献、方向不成立时的缩小/合并策略），并约定微信群 + 每晚 21:00 同步 + 仓库文档的最小协作方式。
+2. 补全 Builder Signal，写清我能贡献的 Moss 集成、证据数据结构、Demo Evidence，以及可选招募的钱包安全开发者角色。
+3. 为 Day 4 准备两套执行工具：给 Riso 的访谈邀请话术与记录模板；给自己的 Moss Kuru Swap 技术验证 checklist（action→simulate、决策收据字段、真实 vs Mock 边界）。明确现有 Reality Check 仅为 AI Persona 预演，不算正式 3 人需求证据。
+
+今日收获：
+
+组队不等于写好名字，而是把时间、贡献和失败时的调整方式说清楚。Playground 周先匹配人、再验证需求，比立刻堆功能更接近能进入 Build Sprint 的状态。
+
+下一步：
+
+Riso 完成 3 人真人访谈；我跑通一笔 Moss Swap 的 simulate 与收据字段映射；三人根据证据选择继续/缩小/调整，再进入 Day 5 Start Card。
+
+仓库证据：
+
+* daily/2026-07-29.md
+* submissions/week-04-hackathon/team-matching-card.md
+* submissions/week-04-hackathon/builder-signal.md
+* submissions/week-04-hackathon/interview-kit-riso.md
+* submissions/week-04-hackathon/moss-swap-tech-checklist.md
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

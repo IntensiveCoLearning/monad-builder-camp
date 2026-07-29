@@ -198,4 +198,10 @@ co-learning
 
 昨天断签到了。。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+准备黑客松
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

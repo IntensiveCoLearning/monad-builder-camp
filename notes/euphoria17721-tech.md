@@ -1875,4 +1875,27 @@ Moss 新人入门指南：理解 AI Agent 如何安全参与 Web3
     对新人来说，学习 Moss 不只是学习一个开源项目，也是在理解 AI Agent 进入 Web3 后最重要的问题：
     AI 可以辅助用户，但不能替用户放弃判断。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+我的方向：
+Ops / Product Ops
+
+我会什么：
+我擅长把一个 Web3 / AI 项目的概念整理成新人能看懂的内容，包括项目介绍、活动策划、宣传文案、用户测试问题、FAQ、教程和学习笔记。我目前主要围绕 Monad、Moss、AI Agent × Web3、安全边界、Builder 入门路径做内容和运营方向的学习与输出。也可以协助团队把技术想法拆成用户能理解的表达和活动机制。
+
+我想做什么：
+我想参与 AI Agent × Web3、Monad 生态、Consumer Crypto、链上任务系统、AI 钱包安全层或 Builder 教育类项目。比较感兴趣的是：如何让新人理解项目，如何设计用户参与路径，如何把复杂技术转化成文档、教程、活动和社区传播内容。
+
+我希望寻找的队友：
+希望找 Dev / Research 方向的队友。Dev 同学可以负责合约、前端、Adapter、Demo 或工具开发；Research 同学可以负责项目调研、竞品分析、技术架构理解和资料整理。我可以负责 Ops、文档、活动策划、用户测试、宣传物料和项目表达。
+
+本周可以投入的时间：
+本周预计可以投入 6–10 小时，主要用于文档整理、活动策划、用户测试准备、项目介绍页和协助团队打磨提交材料。
+
+我的作品或资料链接（选填）：
+Monad Rank Rush：<https://github.com/euphoria17721-tech/monad-rank-rush>
+Moss 学习方向：已完成 Moss 项目阅读、教程草稿、活动策划案和 Ops Case Study。
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

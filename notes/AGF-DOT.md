@@ -7470,4 +7470,181 @@ module.exports = {
 5. **抄作业要会改**：参考优秀DeFi产品的UI，但要改成适合自己产品的样式（比如加自己的Logo、配色）
 ````
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+````markdown
+ERC1155核心知识速记
+
+日期：2026年7月29日
+主题：ERC1155多代币标准核心要点
+适用场景：OpenPerp仓位代币、多资产管理
+
+---
+
+## 一、ERC1155是什么？
+
+以太坊**多代币标准**，一个合约可管理任意数量的同质化代币+NFT+半同质化代币。
+
+### 核心定位
+- 1个合约 = 多种代币
+- 原生支持批量操作
+- 统一接口规范
+
+---
+
+## 二、与ERC20/ERC721对比
+
+| 维度 | ERC20 | ERC721 | ERC1155 |
+|------|-------|--------|---------|
+| 代币类型 | 仅同质化 | 仅NFT | **混合支持** |
+| 部署数量 | 每代币1合约 | 每集合1合约 | **1合约管所有** |
+| 批量操作 | ❌ | ❌ | ✅ |
+| Gas效率 | 低 | 低 | **高50-80%** |
+
+---
+
+## 三、核心接口（必记）
+
+### 3.1 查询类
+```solidity
+// 单代币余额
+balanceOf(address account, uint256 id) → uint256
+
+// 批量余额查询
+balanceOfBatch(address[] accounts, uint256[] ids) → uint256[]
+
+// 代币URI
+uri(uint256 id) → string
+```
+
+### 3.2 操作类
+```solidity
+// 授权（批量授权所有代币）
+setApprovalForAll(address operator, bool approved)
+
+// 单转账
+safeTransferFrom(address from, address to, uint256 id, uint256 value, bytes data)
+
+// 批量转账（核心优势！）
+safeBatchTransferFrom(address from, address to, uint256[] ids, uint256[] values, bytes data)
+```
+
+### 3.3 接收者钩子（防攻击）
+```solidity
+// 接收者需实现此函数，否则转账会revert
+onERC1155Received(operator, from, id, value, data) → bytes4
+onERC1155BatchReceived(operator, from, ids, values, data) → bytes4
+```
+
+---
+
+## 四、OpenPerp仓位代币实现
+
+### 核心设计
+- 用ERC1155替代ERC721仓位NFT
+- 支持批量清算（核心优势）
+- 多资产仓位统一管理
+
+### 关键代码片段
+```solidity
+// 批量清算（一次处理多个爆仓仓位）
+function batchLiquidate(uint256[] calldata tokenIds) external onlyOwner {
+    for (uint i = 0; i < tokenIds.length; i++) {
+        _liquidatePosition(tokenIds[i]);
+    }
+}
+
+// 批量Mint（节省Gas）
+function openPositionBatch(
+    address[] calldata users,
+    uint256[] calldata sizes,
+    uint256[] calldata leverages
+) external {
+    // 批量铸造仓位代币
+    _mintBatch(msg.sender, tokenIds, amounts, "");
+}
+```
+
+---
+
+## 五、安全要点
+
+### 5.1 必做检查
+| 检查项 | 原因 |
+|--------|------|
+| 余额检查 | 防止批量操作中余额不足 |
+| 接收者验证 | 防止恶意onERC1155Receiver |
+| 授权范围 | 限制setApprovalForAll滥用 |
+| 重入保护 | 批量操作易受重入攻击 |
+
+### 5.2 安全实现要点
+```solidity
+// 1. 前置检查（状态变更前完成）
+require(balanceOf(from, id) >= value, "Insufficient balance");
+
+// 2. 状态变更（无外部调用）
+_balances[from][id] -= value;
+_balances[to][id] += value;
+
+// 3. 外部调用（状态变更后）
+if (to.code.length > 0) {
+    try IERC1155Receiver(to).onERC1155Received(...) returns (bytes4 retval) {
+        require(retval == CORRECT_SELECTOR, "Transfer rejected");
+    } catch {}
+}
+
+// 4. 加ReentrancyGuard防重入
+```
+
+---
+
+## 六、Gas优化技巧
+
+| 优化项 | 方式 | 节省 |
+|--------|------|------|
+| 批量操作 | `_mintBatch`/`_burnBatch` | 50-80% |
+| 紧凑存储 | 小变量packed | 10-20% |
+| 批量事件 | `TransferBatch`单事件 | 10-30% |
+
+### 批量vs单操作对比
+```solidity
+// 单操作10次：~1M Gas
+for (uint i = 0; i < 10; i++) {
+    _mint(to, ids[i], amounts[i], "");
+}
+
+// 批量操作1次：~200k Gas
+_mintBatch(to, ids, amounts, "");
+// 节省80%!
+```
+
+---
+
+## 七、速记卡片
+
+### 7.1 什么时候用ERC1155？
+✅ 多资产组合管理（如LP+仓位+权益）
+✅ 需要批量操作（如批量清算、批量铸造）
+✅ 游戏+DeFi混合场景
+❌ 单一资产（用ERC20更简单）
+❌ 单一NFT集合（用ERC721更成熟）
+
+### 7.2 OpenPerp集成收益
+- 🚀 批量清算支持
+- 💰 Gas费降低50-80%
+- 🔄 多资产统一管理
+- 🎯 简化前端接口
+
+### 7.3 必用工具
+- OpenZeppelin Contracts：标准实现
+- Foundry/Hardhat：测试部署
+- Slither：静态分析
+
+---
+
+
+````
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

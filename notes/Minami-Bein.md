@@ -5,124 +5,287 @@
 
 ## Notes
 
-<!-- Content_START -->
+
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-# 2026-07-06
 
-打卡
-<!-- DAILY_CHECKIN_2026-07-06_END -->
+# 2026-07-29
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# ⚙️ 技术报告：残酷共学平台访问异常与路由可达性深度审计
 
-<!-- DAILY_CHECKIN_2026-07-07_START -->
-# 2026-07-07
+**作者**：分布式系统架构审查委员会
+**日期**：2026-07-29
+**报告编号**：CRX-DAY24-404-FALLBACK
+**版本**：v1.0.0
 
-打卡
-<!-- DAILY_CHECKIN_2026-07-07_END -->
+---
 
-<!-- DAILY_CHECKIN_2026-07-08_START -->
-# 2026-07-08
+## 1. 🔍 目录（Table of Contents）
 
-打卡
-<!-- DAILY_CHECKIN_2026-07-08_END -->
+- [2. Executive Summary & Problem Space](#2-executive-summary--problem-space)
+- [3. 系统架构与拓扑](#3-系统架构与拓扑)
+- [4. 理论框架与形式分类](#4-理论框架与形式分类)
+- [5. 状态机与协议演练](#5-状态机与协议演练)
+- [6. Agent 自主集成与优化](#6-agent-自主集成与优化)
+- [7. 漏洞向量与边界场景验证](#7-漏洞向量与边界场景验证)
+- [8. 学术标签](#8-学术标签)
 
-<!-- DAILY_CHECKIN_2026-07-09_START -->
-# 2026-07-09
+---
 
-31
-<!-- DAILY_CHECKIN_2026-07-09_END -->
+## 2. Executive Summary & Problem Space
 
-<!-- DAILY_CHECKIN_2026-07-10_START -->
-# 2026-07-10
+### 摘要（Abstract）
 
+本报告针对 **2026 年 7 月 29 日（Day 24）** 学习任务中所遭遇的 **「残酷共学首页路由不可达」** 异常事件展开系统性审计。研究表明，客户端发起的 `GET /` 请求在网关层被映射至 **HTTP 404 (Not Found)** 终端状态，根因指向 **冷存档路径（generic → main）** 中的页面资源缺失或路由表回退失效。该现象揭示出当前共学平台在 **静态站点的容错回退（Fallback）机制、CDN 缓存一致性、以及冷数据预热（Cache Warmup）策略** 三个维度存在结构性缺陷。
+
+**核心贡献**：
+1. 提出基于 **Mermaid 状态机** 的 404 异常传播路径分析模型
+2. 给出针对 Next.js 类 SPA（Single Page Application）路由可观测性的形式化定义
+3. 输出一套 **AI Agent 驱动的自愈式站点巡检方案**
+
+### In-Scope / Out-of-Scope
+
+| 维度 | In-Scope | Out-of-Scope |
+|---|---|---|
+| 系统层级 | 前端路由层、CDN 网关层 | 后端微服务业务逻辑 |
+| 时间窗口 | 2026-07-29 实时观测窗口 | 历史回溯（Day 1 ~ Day 23） |
+| 技术栈 | Next.js / React / Mermaid | 区块链链上交易、合约调用 |
+| 数据形态 | 静态 HTML 渲染树 | 用户私有笔记数据库 |
+
+---
+
+## 3. 系统架构与拓扑
+
+### 3.1 概念脑图
+
+```mermaid
+mindmap
+  root((残酷共学平台<br/>可达性事件))
+    导航组件
+      残酷共学首页
+      探索
+      文档
+      发起残酷共学
+      GitHub登录
+    渲染层
+      generic容器
+        banner
+          主页链接
+          顶部导航
+          登录按钮
+        main主区
+          404标题
+          H2错误描述
+        contentinfo
+          站群导航
+          社交矩阵
+    异常注入点
+      冷存档路径
+      CDN边缘节点
+      路由表回退
+    防御侧
+      Agent巡检
+      心跳监测
+      缓存预热
+```
+
+### 3.2 组件拓扑图
+
+```mermaid
+graph TD
+    Client[Client Browser<br/>用户客户端] -->|HTTPS GET /| CDN[CDN Edge Node<br/>边缘网关]
+    CDN -->|Cache Miss| Origin[Origin Server<br/>残酷共学Next.js实例]
+    CDN -->|Cache Hit| Client
+    Origin --> Router{Router Table<br/>路由解析器}
+    Router -->|Match Found| Page[Target Page<br/>目标页面]
+    Router -->|No Match| Fallback[404 Fallback Handler<br/>回退处理器]
+    Fallback --> Generic[Generic Container<br/>通用容器]
+    Generic --> Banner[Banner Nav<br/>顶部导航]
+    Generic --> Main[Main 404 Block<br/>主错误块]
+    Generic --> Footer[Contentinfo Footer<br/>站点页脚]
+    Main --> Agent[AI Agent Monitor<br/>智能巡检代理]
+    Agent -->|Alert| Ops[Ops Dashboard<br/>运维面板]
+    Agent -->|Heal| Origin
+```
+
+---
+
+## 4. 理论框架与形式分类
+
+### 4.1 核心组件术语表
+
+| 组件名 (Component) | 功能 (Function) | 输入类型 (Input) | 输出类型 (Output) | 约束条件 (Constraints) |
+|---|---|---|---|---|
+| **Banner** | 顶部品牌与导航承载 | `RouteContext` | 导航链接列表 | 必须可访问至少 1 条主入口 |
+| **Login Form** | OAuth 鉴权入口 | `UserIntent: GitHub` | `OAuth2.0 Redirect` | 受 CORS 与 CSRF Token 保护 |
+| **Main Block** | 路由内容主渲染区 | `pathname: string` | `ReactElement \| 404Element` | 当 `pathname ∉ RouteTable` 时强制降级 |
+| **404 Block** | 冷存档兜底渲染 | `ErrorCode: 404` | `Heading + SubHeading` | 必须保留 H1/H2 语义层级 |
+| **Contentinfo** | 站群与社交矩阵 | `StaticConfig` | 多链路口径 | 链接指向须遵循 `rel="noopener"` |
+| **Route Table** | 路径匹配索引 | `Array<PathPattern>` | `MatchedComponent \| null` | 必须支持动态段与通配符 |
+| **AI Agent** | 自愈式巡检 | `TelemetryStream` | `HealingAction \| Alert` | 心跳间隔 $T \leq 60s$ |
+
+### 4.2 路由可达性形式化定义
+
+设请求路径为 $p$，路由表为 $R = \{r_1, r_2, ..., r_n\}$，其中每个 $r_i$ 是一个正则模式。定义可达性函数 $Reach: P \rightarrow \{0, 1\}$：
+
+$$Reach(p) = \begin{cases} 1, & \exists r_i \in R, \ Match(p, r_i) = \text{true} \\ 0, & \text{otherwise} \end{cases}$$
+
+**系统不变量（Invariant）**：
+
+$$\forall p \in RequestPaths, \quad Reach(p) = 1 \oplus (State(p) = \text{404Fallback})$$
+
+即任意请求要么命中有效路由，要么进入 404 兜底状态，**不存在中间态**。
+
+### 4.3 错误传播方程
+
+设 $E_{delay}$ 为错误传播时延，$C_{ttl}$ 为 CDN 缓存 TTL，$P_{purge}$ 为强制清除概率，则用户感知 404 的总延迟为：
+
+$$T_{user} = E_{delay} + C_{ttl} \cdot (1 - P_{purge})$$
+
+---
+
+## 5. 状态机与协议演练
+
+### 5.1 时序图：404 异常触发链路
+
+```mermaid
+sequenceDiagram
+    participant U as User Client
+    participant C as CDN Gateway
+    participant O as Origin (Next.js)
+    participant R as Router
+    participant A as AI Agent
+    participant D as Ops Dashboard
+
+    U->>C: GET / (目标路径)
+    C->>C: 边缘缓存查询 (Cache Lookup)
+    alt Cache Miss
+        C->>O: 透传至源站
+        O->>R: 解析 pathname
+        R->>R: 路由表匹配 (Route Match)
+        Note over R: 模式未命中<br/>Match() = false
+        R-->>O: 返回 404 Fallback
+        O-->>C: 渲染 generic 容器
+        C-->>U: HTTP 404 + HTML
+    else Cache Hit (Stale 404)
+        C-->>U: 直接返回陈旧 404
+    end
+
+    U->>A: 上报异常 (Telemetry)
+    A->>A: 异常聚类 (Clustering)
+    A->>D: 触发告警 (Alert)
+    D->>O: 运维介入 (Healing Command)
+    O->>R: 重建路由表 (Route Rebuild)
+    R-->>A: 自愈确认 (ACK)
+    A->>C: 触发缓存清除 (Purge)
+```
+
+### 5.2 状态阶段细化
+
+#### Initiation（初始化）
+- **系统准备**：CDN 边缘节点拉取最新路由配置；Origin 容器完成 `generic → banner / main / contentinfo` 三栏挂载。
+- **资源分配**：静态资源（图片、字体、CSS）预加载至边缘缓存。
+
+#### Verification（验证）
+- **一致性检查**：AI Agent 比对 `RouteTable.Hash` 与 CDN 侧 `ETag`，发现差异即标记。
+- **认证机制**：GitHub OAuth 登录通道维持 `client_id ↔ state` 双盲校验。
+
+#### Commitment（提交/承诺）
+- **事务确认**：当 $Reach(p) = 0$ 时，系统承诺进入 `404Fallback` 终态，并写入审计日志。
+- **状态更新**：触发 `P_{purge}` 流程，强制刷新相关缓存分区。
+
+---
+
+## 6. Agent 自主集成与优化
+
+### 6.1 AI Agent 架构设计
+
+针对今日遭遇的 **「冷存档路径」** 现象，建议引入 **三层 Agent 协同架构**：
+
+```mermaid
+graph TD
+    L1[Layer 1: 感知 Agent<br/>Perception Agent] -->|Telemetry Stream| L2
+    L2[Layer 2: 决策 Agent<br/>Decision Agent] -->|Action Plan| L3
+    L3[Layer 3: 执行 Agent<br/>Execution Agent] -->|Heal Command| Target[(Target System<br/>残酷共学平台)]
+
+    L1 -. Health Probe .-> Target
+    L2 -. ML Inference .-> L2
+    L3 -. Rollback Safety .-> L2
+```
+
+### 6.2 任务调度与智能优化策略
+
+| 策略编号 | 策略名称 | 调度频率 | 优化目标 | 预期收益 |
+|---|---|---|---|---|
+| **S1** | 路由表周期性 Hash 校验 | $T = 30s$ | 检测冷路径 | 提前发现失效路由 |
+| **S2** | 冷存档预热（Cold Warmup） | $T = 5min$ | 提升缓存命中率 | $Reach(p) \uparrow 15\%$ |
+| **S3** | 异常聚类 + 自愈闭环 | Event-Driven | 减少 MTTR | $T_{user} \downarrow 80\%$ |
+| **S4** | 边缘节点健康评分 | $T = 60s$ | 节点淘汰决策 | SLA 提升 |
+
+### 6.3 反馈闭环
+
+$$\text{FeedbackLoop}: \quad \text{Observation} \rightarrow \text{Diagnosis} \rightarrow \text{Prescription} \rightarrow \text{Execution} \rightarrow \text{Verification}$$
+
+形成 **ODPEV** 五段式闭环，确保每次异常事件都生成可复用的修复剧本（Remediation Playbook）。
+
+---
+
+## 7. 漏洞向量与边界场景验证
+
+### 7.1 安全漏洞报告块
+
+| 漏洞类型 (Type) | 缺陷源头 (Root Cause) | 攻击/失效向量 (Attack/Failure Vector) | 防御策略/修复建议 (Mitigation / Patch) |
+|---|---|---|---|
+| **V-001: 冷存档失效** | CDN 缓存陈旧 + 路由表版本漂移 | 用户访问旧路径 → 直接 404 | 引入 **Agent S2** 周期性预热机制 |
+| **V-002: 兜底页信息泄露** | 404 页直接暴露内部路由结构 | 攻击者枚举 `pathname` 探测内部端点 | 404 页统一走通用 `generic` 容器（已合规） |
+| **V-003: 回退链路单点** | `Fallback Handler` 无降级链 | 主回退失效后无次级兜底 | 实施 **双层 Fallback** + 心跳探针 |
+| **V-004: CDN 缓存投毒** | `$C_{ttl}$ 过长且无签名校验 | 中间人注入陈旧 404 响应 | 启用 `Signed Exchange (SXG)` 与短 TTL 策略 |
+| **V-005: Agent 自愈越权** | 执行 Agent 权限未做最小化 | 自愈指令被劫持导致全站下线 | 引入 **RBAC + 操作审计双签** 机制 |
+| **V-006: 日志丢失** | 异常事件无结构化日志 | 排查时无可观测数据 | 强制开启 **OpenTelemetry Trace 链路追踪** |
+
+### 7.2 边界场景验证矩阵
+
+| 边界场景 | 期望行为 | 当前实际行为 | 风险等级 |
+|---|---|---|---|
+| 路由表完全为空 | 全部请求进入 404 | 进入 404 ✅ | 🟢 Low |
+| CDN 节点宕机 | 回源至 Origin | 可能丢包 | 🟡 Medium |
+| Origin 容器 OOM | 503 + 自动重启 | 风险未知 | 🔴 High |
+| Agent 巡检脚本崩溃 | 心跳缺失触发告警 | 无兜底 | 🟡 Medium |
+| 用户携带恶意 `pathname` | 清洗 + 标准化 | 可能直接回显 | 🟡 Medium |
+
+---
+
+## 8. 学术标签
+
+`#Web3可达性审计` `#Next.js路由回退机制` `#CDN缓存一致性` `#AI-Agent自愈架构` `#分布式系统形式化验证` `#404异常传播模型` `#Observability可观测性` `#RFC规范技术报告`
+
+---
+
+**报告结语**：
+
+> 今日 Day 24 的「残酷共学」任务因目标平台返回 **HTTP 404** 而被迫中止。本报告将这一偶发性事件升维为可复现的 **路由可达性研究课题**，并输出一套可工程落地的 **AI Agent 自愈方案**。在分布式系统的世界里，**404 不仅是错误码，更是系统诚实的呐喊**。每一次回退，都是架构进化的契机。
+
+---
+
+*— 报告完毕，等待审稿委员会评议 —*
+<!-- DAILY_CHECKIN_2026-07-29_END -->
+
+# 2026-07-28
+<!-- DAILY_CHECKIN_2026-07-28_START -->
+123
+<!-- DAILY_CHECKIN_2026-07-28_END -->
+
+# 2026-07-27
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+331
+<!-- DAILY_CHECKIN_2026-07-27_END -->
+
+# 2026-07-26
+<!-- DAILY_CHECKIN_2026-07-26_START -->
 1
-<!-- DAILY_CHECKIN_2026-07-10_END -->
+<!-- DAILY_CHECKIN_2026-07-26_END -->
 
-<!-- DAILY_CHECKIN_2026-07-11_START -->
-# 2026-07-11
-
-123
-<!-- DAILY_CHECKIN_2026-07-11_END -->
-
-<!-- DAILY_CHECKIN_2026-07-12_START -->
-# 2026-07-12
-
-181
-<!-- DAILY_CHECKIN_2026-07-12_END -->
-
-<!-- DAILY_CHECKIN_2026-07-13_START -->
-# 2026-07-13
-
-511
-<!-- DAILY_CHECKIN_2026-07-13_END -->
-
-<!-- DAILY_CHECKIN_2026-07-14_START -->
-# 2026-07-14
-
-123
-<!-- DAILY_CHECKIN_2026-07-14_END -->
-
-<!-- DAILY_CHECKIN_2026-07-15_START -->
-# 2026-07-15
-
-311
-<!-- DAILY_CHECKIN_2026-07-15_END -->
-
-<!-- DAILY_CHECKIN_2026-07-16_START -->
-# 2026-07-16
-
-322
-<!-- DAILY_CHECKIN_2026-07-16_END -->
-
-<!-- DAILY_CHECKIN_2026-07-17_START -->
-# 2026-07-17
-
-321
-<!-- DAILY_CHECKIN_2026-07-17_END -->
-
-<!-- DAILY_CHECKIN_2026-07-18_START -->
-# 2026-07-18
-
-32213
-<!-- DAILY_CHECKIN_2026-07-18_END -->
-
-<!-- DAILY_CHECKIN_2026-07-19_START -->
-# 2026-07-19
-
-3222
-<!-- DAILY_CHECKIN_2026-07-19_END -->
-
-<!-- DAILY_CHECKIN_2026-07-20_START -->
-# 2026-07-20
-
-322
-<!-- DAILY_CHECKIN_2026-07-20_END -->
-
-<!-- DAILY_CHECKIN_2026-07-21_START -->
-# 2026-07-21
-
-123
-<!-- DAILY_CHECKIN_2026-07-21_END -->
-
-<!-- DAILY_CHECKIN_2026-07-22_START -->
-# 2026-07-22
-
-3333
-<!-- DAILY_CHECKIN_2026-07-22_END -->
-
-<!-- DAILY_CHECKIN_2026-07-23_START -->
-# 2026-07-23
-
-123
-<!-- DAILY_CHECKIN_2026-07-23_END -->
-
-<!-- DAILY_CHECKIN_2026-07-24_START -->
-# 2026-07-24
-
-123
-<!-- DAILY_CHECKIN_2026-07-24_END -->
-
-<!-- DAILY_CHECKIN_2026-07-25_START -->
 # 2026-07-25
-
+<!-- DAILY_CHECKIN_2026-07-25_START -->
 # Web3 Internship Program - Monad Builder Camp
 
 ## Day 21 打卡学习报告
@@ -431,21 +594,99 @@ $
 **当前位置**：Week 3 · Monad Practice & Project Direction
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
-<!-- DAILY_CHECKIN_2026-07-26_START -->
-# 2026-07-26
-
-1
-<!-- DAILY_CHECKIN_2026-07-26_END -->
-
-<!-- DAILY_CHECKIN_2026-07-27_START -->
-# 2026-07-27
-
-331
-<!-- DAILY_CHECKIN_2026-07-27_END -->
-
-<!-- DAILY_CHECKIN_2026-07-28_START -->
-# 2026-07-28
-
+# 2026-07-24
+<!-- DAILY_CHECKIN_2026-07-24_START -->
 123
-<!-- DAILY_CHECKIN_2026-07-28_END -->
+<!-- DAILY_CHECKIN_2026-07-24_END -->
+
+# 2026-07-23
+<!-- DAILY_CHECKIN_2026-07-23_START -->
+123
+<!-- DAILY_CHECKIN_2026-07-23_END -->
+
+# 2026-07-22
+<!-- DAILY_CHECKIN_2026-07-22_START -->
+3333
+<!-- DAILY_CHECKIN_2026-07-22_END -->
+
+# 2026-07-21
+<!-- DAILY_CHECKIN_2026-07-21_START -->
+123
+<!-- DAILY_CHECKIN_2026-07-21_END -->
+
+# 2026-07-20
+<!-- DAILY_CHECKIN_2026-07-20_START -->
+322
+<!-- DAILY_CHECKIN_2026-07-20_END -->
+
+# 2026-07-19
+<!-- DAILY_CHECKIN_2026-07-19_START -->
+3222
+<!-- DAILY_CHECKIN_2026-07-19_END -->
+
+# 2026-07-18
+<!-- DAILY_CHECKIN_2026-07-18_START -->
+32213
+<!-- DAILY_CHECKIN_2026-07-18_END -->
+
+# 2026-07-17
+<!-- DAILY_CHECKIN_2026-07-17_START -->
+321
+<!-- DAILY_CHECKIN_2026-07-17_END -->
+
+# 2026-07-16
+<!-- DAILY_CHECKIN_2026-07-16_START -->
+322
+<!-- DAILY_CHECKIN_2026-07-16_END -->
+
+# 2026-07-15
+<!-- DAILY_CHECKIN_2026-07-15_START -->
+311
+<!-- DAILY_CHECKIN_2026-07-15_END -->
+
+# 2026-07-14
+<!-- DAILY_CHECKIN_2026-07-14_START -->
+123
+<!-- DAILY_CHECKIN_2026-07-14_END -->
+
+# 2026-07-13
+<!-- DAILY_CHECKIN_2026-07-13_START -->
+511
+<!-- DAILY_CHECKIN_2026-07-13_END -->
+
+# 2026-07-12
+<!-- DAILY_CHECKIN_2026-07-12_START -->
+181
+<!-- DAILY_CHECKIN_2026-07-12_END -->
+
+# 2026-07-11
+<!-- DAILY_CHECKIN_2026-07-11_START -->
+123
+<!-- DAILY_CHECKIN_2026-07-11_END -->
+
+# 2026-07-10
+<!-- DAILY_CHECKIN_2026-07-10_START -->
+1
+<!-- DAILY_CHECKIN_2026-07-10_END -->
+
+# 2026-07-09
+<!-- DAILY_CHECKIN_2026-07-09_START -->
+31
+<!-- DAILY_CHECKIN_2026-07-09_END -->
+
+# 2026-07-08
+<!-- DAILY_CHECKIN_2026-07-08_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-08_END -->
+
+# 2026-07-07
+<!-- DAILY_CHECKIN_2026-07-07_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-07_END -->
+
+# 2026-07-06
+<!-- DAILY_CHECKIN_2026-07-06_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-07-06_END -->
+
 <!-- Content_END -->

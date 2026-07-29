@@ -8,6 +8,8 @@
 <!-- Content_START -->
 # 2026-07-27
 <!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
 buildanything
 
 **EVM 究竟是如何工作的？**
@@ -25,6 +27,7 @@ buildanything
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
 
 buildanything
 
@@ -41,7 +44,7 @@ buildanything
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
+# 2026-07-23
 
 buildanything
 
@@ -58,8 +61,7 @@ buildanything
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
+# 2026-07-22
 
 buildanything
 
@@ -76,9 +78,7 @@ buildanything
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
+# 2026-07-21
 
 buildanything
 
@@ -95,10 +95,7 @@ buildanything
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
+# 2026-07-20
 
 Build Anything
 
@@ -115,11 +112,7 @@ Build Anything
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
+# 2026-07-19
 
 Build Anything
 
@@ -138,12 +131,7 @@ Build Anything
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 Build Anything
 
@@ -160,13 +148,7 @@ Build Anything
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 Build Anything
 
@@ -185,15 +167,7 @@ Build Anything
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 Build Anything
 
@@ -234,16 +208,7 @@ Build Anything
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 Build Anything 构建并发布你的第一个应用，我使用了Replit账号，创建之后，输入了我的prompt
 
@@ -271,17 +236,7 @@ Vibecoing的一个完整循环流程：
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 总结了下Week1 作品与方向的选择
 
@@ -290,37 +245,14 @@ Vibecoing的一个完整循环流程：
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 今天去buildanything官方跟着步骤教程，学习下通过 AI 编程协作开发。
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 ## 今天总结下这周的内容
 
@@ -366,20 +298,7 @@ Vibecoing的一个完整循环流程：
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 今天理解适合 Monad 的高频交互场景，并说明为什么它可能更适合在 Monad 上构建，我选择的是排行榜 / 任务系统。
 
@@ -436,21 +355,7 @@ Vibecoing的一个完整循环流程：
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 听了Coooder老师的co learning，今天学习使用AI Coding来做一个智能合约项目，首先我选择codex来做，首先创建一个文件目录，用来存放项目，然后导入进去codex，在这个项目里面与它对话，内容：\*\*帮我做一个发行nft的智能合约，\*\*等待codex完成（过程中有些指令需要确认）
 
@@ -491,74 +396,37 @@ copy .env.example .env
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 今天学习用 AI 生成一个最小 Solidity 合约，我选择了每日打卡合约，写了个提示词，让chatgpt给我生成 Solidity ^0.8.20 的代码，CheckIn包含totalCount（累计打卡次数），lastCheckIn（最后打卡时间），streak（连续打卡天数），然后是三个函数，checkIn() -> 用户每天只能打卡一次，canCheckIn() -> 判断今天是否还能打卡，getMyRecord() -> 查看自己的打卡信息，AI生成的合约代码，人工检查了Remix 能编译通过，三个函数与 Prompt 一致，数据类型正确，没有不必要的库，变量命名和注释读得懂。然后部署到Remix。大概的流程：Remix 新建 `ChecklnContract.sol` → 编译 `0.8.20` → **Deploy & Run Transactions** → Browser Extension 连 Rabby → 选 Monad Testnet → Deploy，交互Remix **Deployed Contracts** 里：蓝点函数 **call**（如 getMyRecord），橙点函数 **transact**（如 checkIn）。Write 后在区块链浏览器查看确认交易 Status 为 Success。
 <!-- DAILY_CHECKIN_2026-07-08_END -->
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 听了7.6晚上参加「Co-learning」线上活动，自己尝试在浏览器上安装MetaMask插件，创建钱包，添加 Monad Testnet 网络，添加成功之后，复制钱包地址，打开区块浏览器，我看到的页面信息，**Address**：我的钱包地址，一串 `0x` 开头的字符，**Balance**：当前账户余额，刚创建时应该是 `0 MON`**，Transactions：**历史交易列表，空钱包时这里是空的。从而**我理解链上产品和普通互联网产品最大的区别是**：普通互联网产品的数据主要存在平台自己的服务器里，而链上产品的关键操作会记录在区块链上，可以通过区块浏览器查询。接着继续了解**行业赛道全览和Web3 工作方式。**
 <!-- DAILY_CHECKIN_2026-07-07_END -->
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今天观看了开营仪式回访内容，学习了web3实习手册，了解了区块链基础概念，以太坊概览，下一步会继续学习了解行业赛道全览，web3的工作方式。
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+buildanything
+
+**Monad 的架构**
+
+* **Monad 并不是修改开发方式，而是优化底层架构**：开发者仍然使用 Solidity、EVM 和以太坊生态工具，无需学习全新的开发模型。
+
+- **性能提升来自多项底层技术协同**：包括**共识（MonadBFT）**、**执行（Parallel Execution）**、**流水线（Pipelining）** 和**存储优化（MonadDB）**，让区块生产、交易执行和状态更新能够高效协同进行，而不是串行处理。
+- **并行执行是核心创新之一**：Monad 能分析交易之间是否存在依赖关系，将互不影响的交易同时执行，从而显著提高吞吐量，同时保证最终执行结果与串行执行一致。
+- **MonadDB 优化了状态存储和访问效率**：减少读取和写入状态数据的开销，避免存储成为性能瓶颈。
+- **文章强调，Monad 的目标不是单纯追求更高 TPS，而是让开发者能够构建体验接近 Web2、同时保留去中心化优势的大规模 Web3 应用。**
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

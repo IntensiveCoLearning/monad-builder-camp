@@ -1,51 +1,42 @@
----
-timezone: UTC+8
----
-
-# vayusdream
-
-**GitHub ID:** vayusdream
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 116142399
+- Name: vayusdream
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
+
 # d17
 <!-- DAILY_CHECKIN_2026-07-24_END -->
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+# 2026-07-23
 
 nft智能合约开发中
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
+# 2026-07-22
 
 # D15
 <!-- DAILY_CHECKIN_2026-07-22_END -->
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
+# 2026-07-21
 
 # D14
 <!-- DAILY_CHECKIN_2026-07-21_END -->
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
+# 2026-07-20
 
 # D13
 
@@ -54,21 +45,14 @@ Agent prod分享
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
+# 2026-07-19
 
 # D12
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
+# 2026-07-18
 
 # D11
 
@@ -77,25 +61,14 @@ Agent prod分享
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 # D10
 <!-- DAILY_CHECKIN_2026-07-17_END -->
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 # D9
 
@@ -112,15 +85,7 @@ Agent prod分享
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 # D8
 
@@ -255,16 +220,7 @@ Agent prod分享
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # D7
 
@@ -335,23 +291,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 # D6
 
@@ -390,25 +330,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 # D5 例会
 
@@ -433,26 +355,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 # D4 AI Agent高危示例&安全防线构建
 
@@ -467,31 +370,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 # D3
 
@@ -532,34 +411,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 # D2
 
@@ -580,35 +432,7 @@ monad上的mcp协议是把dapp交互抽象成agent可调用的能力
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 # D1
 
@@ -1099,4 +923,10 @@ contract MessageBoard {
 
 ## 部署Monad合约
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

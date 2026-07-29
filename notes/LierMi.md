@@ -473,7 +473,7 @@ The transaction is broadcast to the network. Miners/validators execute the smart
 <!-- DAILY_CHECKIN_2026-07-27_START -->
 # 2026-07-27
 
-打卡打卡 测试
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
 <!-- DAILY_CHECKIN_2026-07-27_END -->
 
 <!-- DAILY_CHECKIN_2026-07-28_START -->

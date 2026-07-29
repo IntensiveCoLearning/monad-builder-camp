@@ -83,6 +83,7 @@ Build in public.
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 今天正式开始了我的第一次开源贡献实践。
 
@@ -215,7 +216,7 @@ cd ~/moss/moss
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 **Day 17 | Monad Builder Camp 残酷共学**
 
@@ -317,8 +318,7 @@ git checkout -b docs/first-contribution
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 **Day 16 | Monad Builder Camp**
 
@@ -395,9 +395,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 **Day 15 | Monad Builder Camp 残酷共学**
 
@@ -443,10 +441,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 **Day 14 | Monad Builder Camp 残酷共学**
 
@@ -480,11 +475,7 @@ r/place 是一个方向(集体、零责任、情感归属),它是另一个方向
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 **Day 13 | Monad Builder Camp 残酷共学**
 
@@ -507,12 +498,7 @@ AI 时代真正稀缺的不是"会用工具"(工具人人会用了),是判断力
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
+# 2026-07-17
 
 **Day 12 | Monad Builder Camp 残酷共学**
 
@@ -612,13 +598,7 @@ if (simulation.halted || simulation.results.some(i => i.warnings.length)) {
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
+# 2026-07-16
 
 今天没有产出,如实记录。
 
@@ -639,14 +619,7 @@ if (simulation.halted || simulation.results.some(i => i.warnings.length)) {
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 **Day 10**
 
@@ -739,15 +712,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 **Day 9 | Monad Builder Camp 残酷共学**
 
@@ -782,16 +747,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 **Week 1项目demo想法:无限画布**
 
@@ -822,17 +778,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 **Day 5 | Monad Builder Camp 残酷共学**
 
@@ -853,18 +799,7 @@ Paragraph = Web3的写作/newsletter平台(Mirror已并入),钱包登录。它�
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 **Day 4**
 
@@ -930,19 +865,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 **Day 3**
 
@@ -976,20 +899,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 **Day 2 | Monad Builder Camp 共学打卡**
 
@@ -1021,21 +931,7 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 今日收获：
 
@@ -1056,4 +952,10 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 明日计划：需要课后通过实习手册学习更多知识，并且熟悉该计划的各种板块以及考核标准，尽快建立学习SOP。
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-27_START -->
+# 2026-07-27
+
+由于残酷共学平台问题导致本人没有打上卡，此条记录为补卡。
+<!-- DAILY_CHECKIN_2026-07-27_END -->
 <!-- Content_END -->

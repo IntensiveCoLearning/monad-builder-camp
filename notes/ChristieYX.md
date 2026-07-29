@@ -1592,4 +1592,10 @@ EVM的核心特点：图灵完备、全球同步、隔离安全。
 
 学习web3 ops知识中
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+学习web3运营知识中
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

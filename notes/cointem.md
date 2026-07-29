@@ -129,4 +129,10 @@ zoom和x 回放看不了，只能看看文档，领了测试币
 
 打卡
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+打卡
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

@@ -919,4 +919,10 @@ AI中转平台存在数据抓取风险，私钥输入第三方AI工具存在资�
 
 ![Screenshot_20260706_202442.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/NashNode/images/2026-07-06-1783344230608-Screenshot_20260706_202442.jpg)
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+今天学习了eth
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

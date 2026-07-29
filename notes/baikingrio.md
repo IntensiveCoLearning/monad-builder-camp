@@ -513,4 +513,30 @@ Prediction-native Fully Onchain CLOB
 
 **今日学习记录：**https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-28.md
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+今天完成了 OddLane 的方向收敛和第一轮合约开发验证。
+
+ 
+
+我先完成了 Kuru 链上订单簿验证：Monad Testnet 上已经跑通自定义 Outcome Market、跨地址限价订单、成交、部分成交、Cancel、Batch Cancel、Margin Withdraw，以及 OutcomeVault 的 Above / Below / Void 结算与赎回。
+
+<br />
+
+但验证也明确了一个关键限制：官方 Kuru Router 的市场暂停权限不属于项目 Resolver。项目无法从合约层保证固定到期后停止新单和旧单成交，且 OutcomeVault 已结算后 Kuru Market 仍可能保持 ACTIVE。因此 OddLane 不再直接集成官方 Kuru，而是采用自控生命周期的 Prediction-native CLOB。
+
+<br />
+
+当前 OddLane 的合约已完成订单簿基础结构：Above / Below、Buy / Sell 四类订单、固定 1–99 价格档、Price Level、同价 FIFO、Best Bid / Ask、Active Price Bitmap 和 Cancel。本地 Foundry 回归为：
+
+6 passed, 0 failed
+
+接下来我会继续实现 Available / Reserved 资金与 Outcome Share 账本、同方向 Direct Match、Partial Fill、互补 Buy Mint、Complete Set 抵押，以及 Pyth Settlement / Void 与 Rollover。Day 7 前必须跑通完整资金闭环，否则会按预设 Gate 回退到 Protocol AMM。
+
+<br />
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-28.md
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

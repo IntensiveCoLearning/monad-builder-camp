@@ -1726,4 +1726,17 @@ ai输出：[https://chatgpt.com/s/t\_6a4e5d42d15881918e8208bc0de8e0fa](https://c
 
 2.寻找团队ing
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+1. 重构链上待办合约demo：支持新增、编辑、完成切换、删除、稳定任务 ID、钱包数据隔离和链上事件。
+2. 完成瑞士风格前端：任务统计、搜索筛选排序、链上交易状态、移动端适配，并移除无意义的“10”。
+3. 接入 Monad Testnet 正式合约 `0xCF1b2E6d5C7471513Cf84C31B49b97CD027e5769`，支持自动切换网络和跳转 MonadScan 查看合约。
+4. 修复任务列表布局：勾选框不再与名称重叠，完成图标居中，页面编号从 `TASK #1` 开始。
+5. 补充 Hardhat 测试、Vite 构建和部署文档，所有改动已推送到 GitHub `main` 分支。
+6. 部署上线网站：[Monad Todo](https://tuskiand-personal-onchain-todo.vercel.app/)
+
+   ![image.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-118924121/2026-07/4a452f64-24cb-4cbd-9071-7afe1aa08ec0.png)
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

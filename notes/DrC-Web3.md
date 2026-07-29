@@ -140,4 +140,10 @@ Ai确实辅助很多 但是基本框架 基础 设计 还是需要工程师思�
 
 not working why
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+认真学习 做笔记 找助教
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

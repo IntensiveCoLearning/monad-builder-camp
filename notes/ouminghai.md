@@ -1,34 +1,28 @@
----
-timezone: UTC+8
----
-
-# manyu
-
-**GitHub ID:** ouminghai
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 5787500
+- Name: ouminghai
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-26
 <!-- DAILY_CHECKIN_2026-07-26_START -->
+# 2026-07-26
+
 [https://adongwanai.github.io/AgentGuide/](https://adongwanai.github.io/AgentGuide/) learn about ai agent features
 <!-- DAILY_CHECKIN_2026-07-26_END -->
 
 # 2026-07-25
 <!-- DAILY_CHECKIN_2026-07-25_START -->
+# 2026-07-25
 
 今天要完成成品上线
 <!-- DAILY_CHECKIN_2026-07-25_END -->
 
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
-
+# 2026-07-24
 
 [https://hello-agents.datawhale.cc/#/](https://hello-agents.datawhale.cc/#/)
 
@@ -37,17 +31,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
-
-
+# 2026-07-23
 
 完成 [https://web3career.build/](https://web3career.build/) 里的相关任务，进行组队分工
 <!-- DAILY_CHECKIN_2026-07-23_END -->
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
-
-
+# 2026-07-22
 
 基于 ERC721 、ERC1152 开发，相关数据上链
 
@@ -56,10 +47,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
-
-
+# 2026-07-21
 
 [https://github.com/ouminghai/Fanora](https://github.com/ouminghai/Fanora)
 
@@ -68,11 +56,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
-
-
+# 2026-07-20
 
 完成 web3 auth 对接
 
@@ -81,27 +65,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-19
 <!-- DAILY_CHECKIN_2026-07-19_START -->
-
-
-
-
-
-
-
+# 2026-07-19
 
 完善项目
 <!-- DAILY_CHECKIN_2026-07-19_END -->
 
 # 2026-07-18
 <!-- DAILY_CHECKIN_2026-07-18_START -->
-
-
-
-
-
-
-
-
+# 2026-07-18
 
 完成 Fanora 首页制作
 
@@ -110,15 +81,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
-
-
-
-
-
+# 2026-07-17
 
 [https://github.com/ouminghai/Fanora](https://github.com/ouminghai/Fanora)
 
@@ -127,16 +90,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
-
-
-
-
-
+# 2026-07-16
 
 **Fanora--AI Agent 驱动的 Web3 链上粉丝身份与互动平台**  
 基于 `LangGraph + FastAPI + viem/web3.py + Monad + Solidity` 构建链上粉丝身份与互动协议，支持用户行为采集、链上身份徽章铸造、粉丝互动任务、积分/等级体系与智能 Agent 自动化分析，为创作者和社区提供可验证、可组合的粉丝关系基础设施。
@@ -146,17 +100,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-15
 
 [https://github.com/ouminghai/moss/tree/main/homework](https://github.com/ouminghai/moss/tree/main/homework)
 
@@ -167,19 +111,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 # 定义一个 AI-assisted Web3 Prototype。
 
@@ -196,22 +128,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-13
 <!-- DAILY_CHECKIN_2026-07-13_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-13
 
 ## **DAY 1｜职业方向选择：我更适合做研究、运营还是开发？**
 
@@ -233,49 +150,14 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-12
 <!-- DAILY_CHECKIN_2026-07-12_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-12
 
 # 查看 week2 任务，打卡
 <!-- DAILY_CHECKIN_2026-07-12_END -->
 
 # 2026-07-11
 <!-- DAILY_CHECKIN_2026-07-11_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-11
 
 # TODO
 
@@ -286,26 +168,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-10
 <!-- DAILY_CHECKIN_2026-07-10_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-10
 
 # 打卡
 
@@ -314,29 +177,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-09
 <!-- DAILY_CHECKIN_2026-07-09_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-09
 
 阅读 buildnaything 初中系列课程
 
@@ -345,31 +186,7 @@ learn Monskills build ai dapp
 
 # 2026-07-08
 <!-- DAILY_CHECKIN_2026-07-08_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-08
 
 # nft minidemo
 
@@ -462,33 +279,7 @@ FanBadge 是一个基于 Monad 区块链构建的高频互动粉丝生态 DApp�
 
 # 2026-07-07
 <!-- DAILY_CHECKIN_2026-07-07_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-07
 
 # **#0x00学习什么是 Monad？**
 
@@ -787,37 +578,7 @@ Monad 能做到这些，靠的是共识层和数据层的一系列创新：Monad
 
 # 2026-07-06
 <!-- DAILY_CHECKIN_2026-07-06_START -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2026-07-06
 
 # **0x0.进入 Web3 与链上世界**
 
@@ -1134,4 +895,12 @@ NaN.  权限管理与访问控制 (Access Control)
 
 主要学习 ai agent 相关知识<https://hello-agents.datawhale.cc/#/>
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+<https://hello-agents.datawhale.cc/#/./chapter1/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%88%9D%E8%AF%86%E6%99%BA%E8%83%BD%E4%BD%93>
+
+学习 ai agent 相关知识，准备将 hackson demo 嵌入 ai agent 能力
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

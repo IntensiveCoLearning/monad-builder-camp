@@ -347,4 +347,155 @@ PR 信息：
 下一步：
 继续等待 PR #134 的最终 Review，同时保存 PR #133 的合并证据，用于后续课程提交、作品集和简历中的开源贡献记录。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+日期：
+2026 年 7 月 29 日
+
+今日主题：
+Parallax 第二次团队会议与 P0 Scope Freeze
+
+今日完成：
+
+1. 参加 Parallax 第二次团队会议
+
+今晚团队通过 Zoom 召开了第二次会议，Kai、Jie、Clare、Antony 和 Rei 五名成员全部参加。
+
+会议围绕 Parallax PRD v0.2 进行逐项确认，主要目标是停止继续扩大产品范围，冻结目标用户、核心问题、P0 流程、技术边界和成员职责，为后续正式开发做准备。
+
+1. 确认产品定位
+
+团队确认 Parallax 是一个由 Moss 驱动的 Monad Swap 交易决策层。
+
+核心 Demo 表达为：
+
+“Moss tells us what will happen. Parallax tells the user what to do next.”
+
+产品核心从 Risk Report 和风险总分收缩为 Transaction Decision，帮助用户决定：
+
+* PROCEED；
+* ADJUST；
+* STOP；
+* UNKNOWN。
+
+INTEGRATION\_ERROR、UNAVAILABLE 和 TIMEOUT 等技术问题将与协议风险判断分开。
+
+1. 确认目标用户与核心问题
+
+Primary User 确认为：
+
+在 Monad 上进行基础 Swap、理解钱包基本操作，但无法判断失败原因和正确调整方式的轻度 DeFi 用户。
+
+明确排除完全零基础用户、专业 Trader、机构用户和 Agent Builder 作为当前消费者产品主用户。
+
+Primary Problem 确认为：
+
+用户看到 Swap Failed、Simulation Failed、No Route 或 Revert 后，无法判断应该调整 Slippage、Priority Fee、Amount、Token Pair 还是 Route，容易进行无效或危险的重复试错。
+
+1. 冻结 P0 产品范围
+
+团队确认首个协议为 Kuru，首个 Token 范围为 MON 与 USDC。
+
+P0 核心闭环为：
+
+Swap Input
+→ Check before signing
+→ Verdict
+→ Reason and Action
+→ Adjust
+→ Re-run
+→ Previous vs New Diff
+→ Evidence Drawer
+
+当前不同时开发 PancakeSwap 完整 E2E，PancakeSwap 暂时作为 Stretch、技术闸门或 UNAVAILABLE。
+
+P0 不自研智能合约，不签名、不广播、不托管资产，也不开发浏览器插件、聊天式 Agent、复杂 Policy、Session History 和完整协议评级。
+
+1. 确认规则边界
+
+第一版只保留三组确定性规则：
+
+* Execution；
+* Economic Boundary；
+* Evidence Completeness。
+
+Rule Engine 必须使用确定性纯函数，LLM 不参与最终风险裁决。
+
+团队同时确认：
+
+* Simulation Success 不自动等于 PROCEED；
+* Zero Warning 不等于经济结果可接受；
+* UNKNOWN 不等于 PASS；
+* Integration Error 不得聚合为协议 FAIL；
+* 原生 MON 场景没有 Approval 时返回 NOT\_APPLICABLE。
+
+1. 明确个人职责
+
+我在团队中正式负责：
+
+* 锁定 Moss 版本；
+* 验证 Kuru MON / USDC 双向兼容性；
+* Kuru 真实 E2E；
+* Moss Bridge；
+* Raw Evidence 保存；
+* Evidence Normalization；
+* Error Normalization；
+* BigInt 转 string；
+* Rule Engine；
+* Verdict 聚合；
+* Fixtures；
+* Smoke Test；
+* 与 Rei 对接 Evidence → Rule → Action；
+* 与 Clare 对接 Moss Output → API Contract。
+
+当前第一项开发任务为：
+
+Parallax Day 4 — Kuru Moss Compatibility and E2E Evidence Spike。
+
+1. 建立 GitHub 协作基础
+
+团队已经建立 GitHub Organization：
+
+parallax-monad
+
+组织内已有5名团队成员，并创建公共仓库：
+
+parallax
+
+仓库基础框架预计于 7月30日完成。在框架完成前，我只进行本地技术验证，不把个人代码提前上传或描述为团队正式集成。
+
+今日结果：
+
+* 第二次团队会议完成；
+* 五人团队与角色确认；
+* PRD v0.2 确认；
+* Primary User 和 Primary Problem 确认；
+* P0 Scope Freeze 完成；
+* Kuru 主协议确认；
+* PancakeSwap 降为 Stretch；
+* 暂不自研智能合约；
+* GitHub Organization 和公共仓库建立；
+* Jie 的第一开发任务明确。
+
+今日证据：
+
+* Zoom 五人参会截图；
+* Primary User 和 Trigger Moment 勾选截图；
+* 团队群聊确认 PRD 截图；
+* GitHub Organization 五人成员截图；
+* GitHub parallax 公共仓库截图；
+* PRD v0.2 文件。
+
+下一步：
+
+1. 等待共享仓库基础框架完成；
+2. 本地选择并锁定 Moss 版本或 Commit；
+3. 验证 Kuru MON → USDC 与 USDC → MON 双向支持；
+4. 完成 Quote、Action、Simulation 和 Receipt Smoke Test；
+5. 保存真实 Raw Moss Evidence；
+6. 开始 Evidence Normalization 和 Rule Engine Skeleton；
+7. 保持本地验证与团队正式集成状态分离。
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

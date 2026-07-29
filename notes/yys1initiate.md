@@ -321,4 +321,10 @@ ps：记得还要把私钥改成自己的
 
 今天学习了一些基础知识
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+进行打卡
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

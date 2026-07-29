@@ -2830,4 +2830,143 @@ Onchain / Offchain
 ↓
 儲存方式
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+有，下面是幾個**真實、仍看得到活躍使用痕跡**的 EAS 例子。
+
+**1. Coinbase Verifications on Base**
+
+這是很實際的例子。Coinbase 用 EAS 在 **Base** 上發出 on-chain attestations，證明某個錢包地址已通過 Coinbase 的某些驗證。
+
+用途包括：
+
+```
+Verified Account
+Verified Country
+Verified Coinbase One
+```
+
+EASScan 上可以看到 Base 最近幾分鐘內仍有 `Coinbaseverifications.coinbase.eth` 發出的 attestation。Base EASScan 顯示 Base 上已有超過 `3.4M` attestations。來源：[Base EASScan](https://base.easscan.org/)、[Coinbase Help](https://help.coinbase.com/en/coinbase/getting-started/verify-my-account/onchain-verification)。
+
+這類用途很接近：
+
+```
+KYC / account status / country / membership badge
+```
+
+但 Coinbase 也提醒：這些 attestation 是鏈上公開的。
+
+***
+
+**2. Optimism Retro Funding / Governance**
+
+Optimism 是很重要的 EAS 使用者。Optimism 文件明確寫到 EAS 是 OP Stack 的 predeploy，並列出多個 schema，例如：
+
+```
+Retro Funding project identifier
+Project metadata
+Retro Funding application
+Application approval / rejection
+Retro Funding rewards
+Citizen attestations
+Gitcoin Passport scores
+Superchain Faucet access
+```
+
+這不是空泛例子，而是治理、Retro Funding、身份、項目資料都用 attestation 串起來。來源：[Optimism docs](https://docs.optimism.io/governance/gov-faq)。
+
+Optimism EASScan 也顯示超過 `1.3M` attestations，最近仍有新 attestation。來源：[Optimism EASScan](https://optimism.easscan.org/)。
+
+***
+
+**3. Gitcoin Passport Scores / Stamps**
+
+在 EAS curated schemas 裡，可以看到：
+
+```
+Gitcoin Passport Stamps
+Gitcoin Passport Scores
+```
+
+這些是用來把 Passport 分數或 stamp 變成可查、可組合的 attestation。Optimism 文件也列出 Gitcoin Passport V1 scores schema UID。
+
+用途大概是：
+
+```
+anti-sybil
+身份可信度
+治理 / 空投 / faucet / badge eligibility
+```
+
+來源：[Base schema collections](https://base.easscan.org/schemas/explore)、[Optimism docs](https://docs.optimism.io/governance/gov-faq)。
+
+***
+
+**4. Superchain Faucet Access**
+
+Optimism 文件列出 `Superchain Faucet schema UID`。這代表 EAS 可以用來記錄：
+
+```
+這個地址是否有資格取得更多 testnet ETH
+```
+
+這很實際，因為 faucet 常常需要防濫用。EAS attestation 可以作為：
+
+```
+access control credential
+```
+
+來源：[Optimism docs](https://docs.optimism.io/governance/gov-faq)。
+
+***
+
+**5. Coinbase / Base 上的生態身份與 reputation**
+
+Base EASScan 的 schema collection 裡可以看到一整類「Verifications for ecosystem engagement」，包括 Coinbase Verified Account、Verified Country、Verified Coinbase One 等。
+
+這種用法的重點是：
+
+```
+不是發 NFT
+不是 token
+而是給地址加一份可驗證聲明
+```
+
+例如：
+
+```
+這個地址屬於通過 Coinbase 驗證的帳戶
+這個地址來自某國家
+這個地址是 Coinbase One 使用者
+```
+
+來源：[Base EASScan schemas explore](https://base.easscan.org/schemas/explore)。
+
+***
+
+**6. Content Hash / Provenance 類應用**
+
+EAS 官方和 EASScan curated schemas 都有 `Content Hash`、content authenticity、podcast、file hash 類 schema。這和你前面做的 `bytes32 evidenceHash` 很像：
+
+```
+文件 / 音訊 / 圖片 / metadata 放鏈下
+鏈上放 hash attestation
+之後任何人可驗證內容沒有被改
+```
+
+這類不是單一大公司案例，而是 EAS 很常見的可組合用途。來源：[Base schema collections](https://base.easscan.org/schemas/explore)、[EAS digital notary use case](https://docs.attest.org/docs/idea--zone/use--case--examples/digital-notary)。
+
+***
+
+我的判斷是：
+
+```
+最強真實案例：Coinbase Verifications、Optimism Retro Funding / governance
+比較通用活躍場景：Gitcoin Passport、faucet access、content hash、credentials
+```
+
+所以 EAS 現在不是「沒人用的實驗品」。它更像一個**底層信任資料層**：普通用戶未必知道自己在用 EAS，但 Coinbase、Optimism、Gitcoin Passport 這類場景會在背後用它記錄「某地址具備某種可信狀態」。
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

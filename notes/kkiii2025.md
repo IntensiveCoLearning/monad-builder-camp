@@ -368,4 +368,64 @@ packages/
 * token = NATIVE → 原生 MON transfer
 * token = 0x某ERC20地址 → ERC-20 transfer()
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+理解 Moss 仓库：
+
+`pnpm-workspace.yaml` 把 `packages/*`、`packages/protocols/*` 和 `examples/*` 纳入同一工作区。
+
+根目录的 `package.json` 再统一执行所有子包的构建、测试和类型检查。
+
+`docs/ADR` 是 **Architecture Decision Record 架构决策记录**，用于解释为什么选择这种设计、曾经考虑过什么方案、当前哪些规则是正式规则、设计的限制与取舍。
+
+官方要求贡献者**同时阅读** **`CONTEXT.md`** **和相关 ADR**，因为它们共同定义项目当前的框架契约。
+
+`node_modules`：是执行 pnpm install 后生成的依赖目录。
+
+.github / .changeset
+
+协作、测试和发布流程
+
+docs / README
+
+使用说明
+
+examples
+
+样品与教学实验
+
+node\_modules
+
+安装进来的外部零件
+
+packages
+
+真正的机器和零件
+
+根目录配置文件
+
+工厂统一规则
+
+**`packages/core`：Moss 的框架大脑**，定义所有 Protocol 必须共同遵守的规则。比如 “const registry = new Registry(runtime);”
+
+**`packages/simulator`：交易模拟与证据收集**，负责
+
+> 调用 RPC 的 `debug_traceCall`  按顺序模拟多笔交易  把上一笔交易产生的新状态传给下一笔  提取 Event  提取原生 MON 转账  生成有序的 Change  发现回滚、Trace 失败等 Warning
+
+——不负责把KuruEvent解释成Swap结果，具体解释属于对应Protocol的Receipt parser。比如 “createTraceSimulator(runtime, ...)”
+
+<br />
+
+**`packages/system`：Monad 系统级环境和固定信息包**，处理Monad特定运行环境、官方常量和系统合约（erc处理通用Token标准和通用操作），负责
+
+> `monadRuntime`  Monad 链 ID、RPC 环境  官方合约地址常量  `NATIVE` `USDC_ADDRESS`  WMON 的 `wrap / unwrap / balanceOf`  其他系统级 Protocol
+
+\*\*`packages/protocols`：\*\*每个协议包需要定义 Protocol 名称和描述、合约地址、ABI、Capability、Query、参数规则、 calldata 构建逻辑、 Receipt parser、测试。
+
+<br />
+
+![c0a44357-8007-446a-80eb-e83b972a7515.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-203837220/2026-07/931c173a-f250-4d62-b186-38f519338df9.png)
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

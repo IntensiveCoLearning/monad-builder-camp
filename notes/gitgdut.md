@@ -189,4 +189,10 @@
 
 继续学习go语言，刚学完go并发并完成了微小项目
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+继续学习geth
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

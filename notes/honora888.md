@@ -6905,4 +6905,121 @@ GuardianQuest 支持测试网原生资产资助，尚无 Kuru/USDC 组合流程
 * [Monad Documentation](https://docs.monad.xyz/)
 * [Monad Protocol Directory](https://github.com/monad-developers/protocols)
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-29_START -->
+# 2026-07-29
+
+## 阶段 8：Quest 1 正式视觉素材生产 🟡（已完成）
+
+### 目标
+
+用同一角色母版生成最小但完整的生产状态集。
+
+### 执行批次
+
+#### 8.1 潜伏待机状态
+
+* D1、D2、D3 候选；
+* 同一解剖、同一缺口方向、同一状态玉扣；
+* 选定正式 Dormant 版本。
+
+#### 8.2 重入攻击状态
+
+* 保留同一角色；
+* 用回流残影、递归裂口和水脉表现攻击；
+* 不让攻击效果遮挡调用栈和余额。
+
+#### 8.3 异兽志头像
+
+* 方形或接近方形构图；
+* 缩小后保留三个识别点；
+* 不重新设计头部。
+
+#### 8.4 主立绘整理
+
+* 导出透明背景生产母版；
+* 清理边缘、压缩和色彩；
+* 确保与三状态一致。
+
+### 建议生产文件
+
+```
+web/public/assets/quest-1/beast/reentry-devourer-main.webp
+web/public/assets/quest-1/beast/reentry-devourer-dormant.webp
+web/public/assets/quest-1/beast/reentry-devourer-reentrancy.webp
+web/public/assets/quest-1/bestiary/reentry-devourer-portrait.webp
+```
+
+### 验收
+
+* 透明背景真实有效；
+* 解剖无漂移；
+* 右下断环缺口固定；
+* 方形状态玉扣存在；
+* 移动端缩小仍可辨认；
+* 体积满足页面预算；
+* 无文字、水印、棋盘格和背景残留。
+
+***
+
+## 阶段 9：Quest 1 视觉接入与动画 🟡／⏳（卡在这了）
+
+### 目标
+
+替换占位素材，让妖兽状态与教学状态机一致。
+
+### 修改范围
+
+* 入口页主视觉；
+* ACT1 潜伏／苏醒；
+* ACT2 追踪；
+* ACT3 弱点显现；
+* ACT4 重入攻击；
+* ACT5 CEI 封印；
+* ACT6 战败、奖励和异兽志。
+
+### 动画层级
+
+#### Level 1：CSS
+
+* 呼吸；
+* 漂浮；
+* 眼睛微光；
+* 水纹；
+* HP；
+* 短促受击；
+* 阵法旋转。
+
+#### Level 2：状态切换
+
+* 潜伏 → 攻击；
+* 攻击 → 封印；
+* 封印 → 战败；
+* 主立绘 → 异兽志头像。
+
+#### Level 3：教学联动
+
+* 外部调用；
+* fallback 再进入；
+* 重入计数；
+* 余额变化；
+* Effects 提前更新后路径中断。
+
+### 必须支持
+
+* `prefers-reduced-motion`；
+* 动画可跳过；
+* 图片加载失败降级；
+* 不阻塞用户阅读；
+* 移动端不裁切；
+* alt 与 aria-live。
+
+### 验收
+
+* `TemporaryVisualPlaceholder` 从正式流程移除或只保留错误降级；
+* `npm run lint`；
+* `npm run build`；
+* 桌面和移动端六幕人工回归；
+* 生产部署检查。
+<!-- DAILY_CHECKIN_2026-07-29_END -->
 <!-- Content_END -->

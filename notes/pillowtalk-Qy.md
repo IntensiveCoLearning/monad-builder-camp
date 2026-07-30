@@ -4306,4 +4306,189 @@ M6 负责五分钟讲稿、证据声明、Q\&A、计时演练、失败恢复、�
 
 第二，安全限制必须在昂贵操作发生前生效。无论是 RPC 数量上限还是递归深度，如果系统先完成全部工作再报错，那么这个限制只约束结果，并没有真正约束资源和风险。
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+## 今日概览
+
+今天主要完成两类工作：
+
+* 为 Moss Mini Demo 确定关键契约与 Web 运行时方向；
+* 在 Moss 上完成5次独立 Review，其中2个批准、3个要求修改。
+
+今天没有向 Mini Demo 主分支提交新代码，主要成果是解决实现前的契约歧义，并继续检查 Moss 的协议、ABI 和文档边界。
+
+## 一、DecisionInput 契约正式确定
+
+项目仓库：[Moss-Mini-Demo/moss-mini-demo](https://github.com/Moss-Mini-Demo/moss-mini-demo)
+
+今天在 [Issue #18](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/18#issuecomment-5133046404) 正式接受 `DecisionInput` 与 `MANUAL_REVIEW` 的 v0.1 契约。
+
+关键决定包括：
+
+* `MANUAL_REVIEW` 只能是：
+
+```
+{ "status": "MANUAL_REVIEW" }
+```
+
+* `MANUAL_REVIEW` 不包含 `reasons`；
+* `STOP` 必须包含非空 `reasons`；
+* STOP 原因只能使用 ADR 0003 定义的封闭原因代码；
+* 每个 STOP 原因必须对应自己的真实触发条件；
+* 不同原因代码的证据不能合并成一个全局引用集合；
+* 同一原因的重复触发合并为一个原因对象，并对引用去重、排序。
+
+同时确定了 Receipt、Outcome、Warning 等集合的标准路径，原 ADR 中冲突的 `raw/<i>` 路径不再作为 DecisionInput 标准路径。
+
+## 二、不完整集合的可证明边界
+
+今天进一步明确：v0.1 只能根据空集合确定 Receipt 或 Outcome 集合必然不完整。
+
+非空集合不等于完整集合，但在没有 expected count、交易标识或独立完整性证明时，系统也不能声称自己能够识别所有“部分缺失”情况。
+
+因此，当前 `RECEIPT_SET_INCOMPLETE` 和 `OUTCOME_SET_INCOMPLETE` 默认只处理可证明的空集合情况。未来如果要覆盖非空但部分缺失的集合，需要单独扩展契约，不能在 Decision Engine 中自行推断。
+
+## 三、DecisionInput 所有权与依赖状态
+
+`DecisionInputV0_1Schema` 及其类型只能由 `@moss-mini-demo/report-schema` 公共入口导出。
+
+以下字段禁止进入 DecisionInput：
+
+* `decision`
+* `limitations`
+* `presentation`
+* `credential`
+
+这可以避免 Decision Engine 读取自己的输出、展示内容或可选 Credential，从而形成循环判断或证据污染。
+
+Issue #18 已关闭，[Issue #19](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/19) 的依赖已经解除并进入 `Ready`。但 Decision Engine 仍需等待严格的 DecisionInput Runtime Schema 合并后才能开始。
+
+## 四、Web 运行时方向选择
+
+今天在 [Issue #22](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/22#issuecomment-5133035289) 选择了 **Option A**：
+
+> Next.js App Router + Node Runtime + 单一可部署 Node 进程。
+
+当前方向包括：
+
+* 普通 Node Server 或 Container 作为部署基线；
+* Edge Runtime 不作为默认方案；
+* 核心 Preflight API 使用 Route Handlers；
+* Server Actions 不负责核心 API；
+* 浏览器只消费报告契约和展示数据；
+* Moss、RPC、环境变量和证据组装全部留在服务端。
+
+模块边界确定为：
+
+```
+report-schema      契约
+decision-engine    纯决策
+moss-adapter       Moss/Monad I/O 与原始证据映射
+preflight-core     Alignment、DecisionInput 与报告组装
+clear402-profile   可选报告消费者
+web/server         编排、HTTP 与传输
+web/client         展示
+```
+
+前端不能直接导入 `moss-adapter`、`preflight-core`、Moss 包、RPC 配置或服务端环境变量，也不能修改原始证据的语义。
+
+## 五、运行时方向仍待验证
+
+Option A 目前只是方向选择，还没有被最终接受。
+
+下一阶段需要通过兼容性 Spike 验证：
+
+* Node.js 22 和 pnpm 11；
+* ESM 构建；
+* Next.js Production Build/Start；
+* Moss 只能进入 Server Bundle；
+* Moss/Monad RPC 路径能够运行；
+* `CLEAR402_ENABLED=false` 时核心流程保持独立；
+* 干净环境能够启动和部署。
+
+如果 Next.js 无法可靠承载 Moss，或服务端代码进入浏览器 Bundle，则回退到 **React/Vite + Fastify**。
+
+因此 Issue #22 仍保持 `status:needs-decision`，不能记录为已经完成技术选型验收。
+
+## 六、Moss PR #143：Core SelfRef 复核
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/143#pullrequestreview-4810757586)
+
+此前发现的递归构造预算、`self` 保留名称和 Query/Receipt 暴露问题已经修复，但今天发现一个新的类型与运行时不一致：
+
+* `SelfRef` 会根据返回类型把某个普通方法识别为 Capability；
+* 运行时只注入带 `@Capability` 装饰器的方法；
+* 因此未装饰的方法可能通过 TypeScript 编译，却在运行时出现 `is not a function`。
+
+我使用 Review Fixture 复现了该问题，因此提交 `CHANGES_REQUESTED`，要求编译期契约与装饰器驱动的运行时表面保持一致。
+
+## 七、Moss PR #146：Pyth Oracle Adapter
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/146#pullrequestreview-4810775641)
+
+Pyth Adapter 的 Feed 白名单、Freshness 检查、Source Pinning、MCP 集成和 Monad 主网查询整体较规范。离线测试198项、Pyth 在线测试10/10通过。
+
+但发现两个阻塞问题：
+
+1. 当前 Pyth 地址是 ERC-1967 Proxy，提交的 ABI 没有绑定到实际 Implementation；
+2. Biome 使用 `!**/sources` 排除了仓库内所有名为 `sources` 的目录，范围过大。
+
+因此要求加入 Implementation-aware ABI 证据，并把 Formatter 排除范围限制到 Pyth 的具体 Vendored Source 路径。
+
+新增 `oracle` Category 是否进入 Core 封闭分类，由 Box 做最终架构决定。
+
+## 八、Moss PR #144：Selector Proxy ABI Tool 批准
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/144#pullrequestreview-4810784213)
+
+PR 描述已经与当前实现和验证证据保持一致，包括：
+
+* Complete 与 Partial Evidence 区分；
+* Transport Error 传播；
+* Direct Dispatcher `getCode` 回退；
+* 256 Facet 和8192 Selector 的前置资源限制；
+* 当前测试数量。
+
+此前代码层问题已经验证完成，因此提交 `APPROVED`。
+
+## 九、Moss PR #121：Clober V2 Adapter 批准
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/121#pullrequestreview-4810791246)
+
+PR 描述已经更新为实际交付契约：
+
+* `amountIn` 是最大输入，而不是严格 exact-input；
+* Outcome 展示预计和实际输入、输出及退款；
+* 不推断 Controller 和 BookManager 的部署形式；
+* ABI 使用无 Key 的 ADR 0007 降级验证；
+* 当前 Workspace 224/224、Clober 26/26、ABI Evidence 4/4。
+
+此前七项实现阻塞已经完成独立验证，因此提交 `APPROVED`。
+
+## 十、Moss PR #145：Agent Swap 文档复核
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/145#pullrequestreview-4810799128)
+
+此前两个主要文档问题已解决：
+
+* 文档现在明确要求 Anvil 版本输出必须包含 Monad；
+* 已删除弱于 canonical 安全流程的简化签名前检查列表。
+
+目前只剩两个清理项：
+
+* Markdown 空行和文件结尾格式仍不符合 `git diff --check`；
+* PR 描述仍声称新增了已经被删除的签名前验证内容。
+
+因此继续提交 `CHANGES_REQUESTED`。当前没有代码或安全逻辑阻塞，只需要修正文档和 PR 证据描述。
+
+## 十一、今日收获
+
+今天最重要的工作不是实现新功能，而是将模糊的 Decision Engine 输入正式变成可执行契约。
+
+一套决策系统不能只定义“有哪些原因”，还必须明确每个原因如何触发、能引用哪些证据，以及系统在哪些情况下无法证明完整性。
+
+Web 技术选型也不能只根据开发速度决定。对于 Moss Mini Demo，真正需要验证的是服务端依赖隔离、RPC 与环境变量边界、生产构建兼容性，以及浏览器是否可能接触原始执行能力。方向选择只是开始，兼容性证据通过后才能正式接受。
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

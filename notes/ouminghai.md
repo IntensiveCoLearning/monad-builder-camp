@@ -903,4 +903,12 @@ NaN.  权限管理与访问控制 (Access Control)
 
 学习 ai agent 相关知识，准备将 hackson demo 嵌入 ai agent 能力
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+<https://hello-agents.datawhale.cc/#/./chapter14/%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%99%BA%E8%83%BD%E4%BD%93?id=_1431-agent-%e8%81%8c%e8%b4%a3%e5%88%92%e5%88%86>
+
+ai agent 深度研究助手学习
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

@@ -1007,4 +1007,28 @@ python + RDFLib + SPARQL
 | 需要联网查文档但不想暴露本机        | Cloud + 严格网络策略   |
 | 需要多分支实验               | Worktree / Cloud |
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+# **Git、分支和worktree**
+
+让codex的改动可控可回滚。不要让codex在主分支、未提交工作区、唯一副本上做大改。
+
+最稳妥的做法，创建一个分支，让codex在该分支上工作，看diff，跑测试，提交commit，发PR，然后再审查合并。
+
+Git worktree可以理解为：同一个仓库同时开出多个独立工作目录，每个目录可以在不同分支上工作，但共用Git历史。
+
+codex的worktree功能可以让多个任务在不同目录，不同分支并行进行。
+
+适合场景：
+
+worktree A：修 bug
+
+worktree B：做新功能
+
+worktree C：实验重构方案
+
+这样不同任务不会互相污染。
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

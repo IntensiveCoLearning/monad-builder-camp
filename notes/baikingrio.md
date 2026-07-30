@@ -539,4 +539,40 @@ Prediction-native Fully Onchain CLOB
 
 今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-28.md
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+今天继续推进 OddLane 的 Prediction-native CLOB 实现，并完成了合约与前端两部分的进度核查。
+
+ 
+
+合约侧已经从基础订单存储推进到单市场的资金、撮合、结算和生命周期闭环。本地 Foundry 回归结果：
+
+70 passed, 0 failed
+
+当前覆盖了 Test USDC 的 Deposit / Withdraw、Available / Reserved 账本、Above / Below 四类限价单、固定 Tick、Price-Time Priority、Direct Match、Partial Fill、Batch Cancel、互补 Buy Mint、Maker / Taker Price Improvement、Expiry 后禁止交易但允许 Cancel、Pyth Anchor / Settlement / Void、Redeem，以及 Permissionless Rollover / Recovery。
+
+<br />
+
+前端侧已经完成第一轮 Vue 3 交易终端集成。本地验证结果：
+
+vitest: 4 passed, 0 failed
+
+production build: passed
+
+页面可以读取 Monad Testnet 的市场、订单簿、余额和订单，并展示 Pyth Reference Price。Pyth 只作为参考价与结算语义来源，不被当作订单簿成交价格；图表也只记录页面打开之后读取到的链上缓存价格，不伪造历史数据。
+
+<br />
+
+今天最大的学习是：全链上订单簿不只是把订单挂到链上，还必须同时保证资金预留、部分成交、价格优先、到期硬截止、结算后赎回和下一轮恢复都处于同一套可验证规则中。Kuru 验证帮助我确认了通用订单簿的交易能力，但 OddLane 需要由自己的合约控制 Cutoff、Settlement 与 Rollover。
+
+<br />
+
+下一步会继续以真实 Monad Testnet 闭环为目标，核对部署、订单、Pyth 结算、赎回和前端读取是否一致。
+
+<br />
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-28.md
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

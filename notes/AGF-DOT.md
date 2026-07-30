@@ -7647,4 +7647,416 @@ _mintBatch(to, ids, amounts, "");
 
 ````
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+````markdown
+# 零知识证明核心技术笔记
+
+日期：2026年7月30日
+主题：零知识证明原理、主流协议、区块链应用与开发实践
+
+---
+
+## 一、什么是零知识证明
+
+零知识证明（Zero-Knowledge Proof, ZKP）是一种密码学协议，允许证明者向验证者证明某个陈述为真，而不泄露任何额外信息。
+
+**通俗比喻**：你有红蓝两个球，想证明"能区分它们"但不想展示颜色。验证者随机取出一个球，你正确识别（重复多次），就成功证明了"能区分"，但未泄露任何颜色信息。
+
+### 三大核心特性
+
+1. **完备性**：诚实证明者能说服诚实验证者
+2. **可靠性**：恶意证明者无法说服诚实验证者
+3. **零知识性**：验证者无法从证明中获得额外信息
+
+### ZKP分类
+
+- **交互式**：Σ协议（Schnorr）、基于挑战-响应，适合双方在线
+- **非交互式**：zkSNARKs（Groth166、Plonk）、zkSTARKs（STARK、FRI）、Nova/Jolt，适合区块链验证
+
+---
+
+## 二、经典ZKP协议
+
+### Σ协议（Schnorr协议）
+
+应用场景：证明知道离散对数
+
+**协议流程**：
+1. 证明者随机选择k，发送承诺 a = g^k
+2. 验证者发送随机挑战 c
+3. 证明者响应 s = k + c*x (mod q)
+4. 验证者验证：g^s == a * y^c
+
+**Python伪代码**：
+```python
+import random
+from Crypto.Util.number import getPrime
+
+class SchnorrProof:
+    def __init__(self):
+        self.p = getPrime(256)
+        self.g = random.randint(2, self.p - 1)
+        self.x = random.randint(2, self.p - 2)  # 私钥
+        self.y = pow(self.g, self.x, self.p)   # 公钥
+    
+    def prove(self):
+        k = random.randint(2, self.p - 2)
+        a = pow(self.g, k, self.p)        # 承诺
+        c = random.randint(2, self.p - 2)  # 挑战
+        s = (k + c * self.x) % (self.p - 1)  # 响应
+        return (a, c, s)
+    
+    def verify(self, a, c, s):
+        left = pow(self.g, s, self.p)
+        right = (a * pow(self.y, c, self.p)) % self.p
+        return left == right
+```
+
+### Fiat-Shamir转换
+
+核心思想：用哈希函数代替交互式挑战，将交互式协议转为非交互式。
+
+```python
+import hashlib
+
+def non_interactive_prove(g, y, x, p):
+    k = random.randint(2, p - 2)
+    a = pow(g, k, p)
+    
+    # 用哈希生成挑战（代替交互式）
+    c = int(hashlib.sha256(f"{a}{y}".encode()).hexdigest(), 16) % (p - 1)
+    s = (k + c * x) % (p - 1)
+    
+    # 证明 = (a, s)
+    return (a, s)
+
+def non_interactive_verify(g, y, proof, p):
+    a, s = proof
+    c = int(hashlib.sha256(f"{a}{y}".encode()).hexdigest(), 16) % (p - 1)
+    return pow(g, s, p) == (a * pow(y, c, p)) % p
+```
+
+---
+
+## 三、现代ZKP系统
+
+### zkSNARKs
+
+全称：Zero-Knowledge Succinct Non-Interactive Argument of Knowledge
+
+**核心特点**：
+- 证明非常简洁（succinct）
+- 验证非常快速
+- 需要可信设置（trusted setup）
+- 证明生成较慢
+
+**Groth166流程**：
+1. 可信设置：生成公共参数（proving key、verification key），需至少一个诚实参与者
+2. 证明生成：输入见证w和公共输入x，输出简洁证明π
+3. 验证：输入公共输入x和证明π，常数时间验证
+
+**Circom电路示例**：
+```circom
+pragma circom 2.0.0;
+
+// 证明知道x和y，使得x*y = 给定的公共输出
+circuit Multiplier2() {
+    signal input x;
+    signal input y;
+    signal output out;
+    out <== x * y;
+}
+```
+
+**Rapidsnark使用**：
+```bash
+# 编译电路
+circom multiplier2.circom --r1cs --wasm --sym
+
+# 可信设置
+snarkjs groth166 setup multiplier2.r1cs pot12_final.ptau
+
+# 生成证明
+snarkjs wtns calculate multiplier2_js/multiplier2.witness input.json
+snarkjs groth166 prove multiplier2.r1cs multiplier2.zkey multiplier2_js/multiplier2.witness proof.json
+
+# 验证
+snarkjs groth166 verify multiplier2_vkey.json input.json proof.json
+```
+
+### zkSTARKs
+
+全称：Zero-Knowledge Scalable Transparent Argument of Knowledge
+
+**核心特点**：
+- 无需可信设置（transparent）
+- 基于哈希（抗量子）
+- 证明较大但可扩展
+- 验证需要更多计算
+
+**STARK vs SNARK对比**：
+
+| 维度 | zkSNARKs | zkSTARKs |
+|------|----------|----------|
+| 可信设置 | 需要 | 不需要 |
+| 证明大小 | ~200字节 | ~100KB-1MB |
+| 验证时间 | <1ms | ~10-100ms |
+| 抗量子 | 依赖椭圆曲线 | 基于哈希 |
+
+**FRI协议核心**：通过多项式承诺和Merkle树证明正确性，分承诺、查询、验证三阶段。
+
+### Nova（递归证明）
+
+核心创新：对自己的证明进行证明。
+
+递归步骤：原始计算生成证明π₀ → 验证π₀生成π₁ → 验证π₁生成π₂ → ... → 最终证明πₙ证明了所有计算的正确性。
+
+应用场景：zkRollups滚动区块聚合、增量计算验证、长时间运行程序的证明。
+
+### Jolt（zkVM）
+
+核心思想：RISC-V指令集的zkVM。
+
+流程：RISC-V程序 → Jolt VM执行 → 生成R1CS约束 → Groth166/Plonk证明 → 简洁证明π。
+
+优势：无需Circom编写（直接用Rust/C++）、通用计算验证、更灵活。
+
+---
+
+## 四、区块链应用
+
+### 隐私交易（Monero/Zcash）
+
+传统交易公开发送方、接收方、金额；ZKP隐私交易隐藏交易各方身份和金额，保留交易有效性证明。
+
+**核心技术**：
+- 环签名：隐藏发送方
+- 范围证明：隐藏金额，证明非负
+- 密钥镜像：防止双花
+
+**隐私交易合约示例**：
+```solidity
+contract ZKPrivacyTransfer {
+    mapping(bytes32 => bool) public spentKeyImages;
+    
+    function verifyZKProof(bytes calldata proof, bytes calldata inputs) 
+        internal pure returns (bool) {
+        return true; // 实际调用预编译合约验证
+    }
+    
+    function privacyTransfer(
+        bytes32[] calldata inputKeyImages,
+        bytes32[] calldata inputCommitments,
+        bytes32[] calldata outputCommitments,
+        bytes calldata rangeProof,
+        bytes calldata ringSignature
+    ) external {
+        // 验证密钥镜像未被花费
+        for (uint i = 0; i < inputKeyImages.length; i++) {
+            require(!spentKeyImages[inputKeyImages[i]], "Already spent");
+        }
+        
+        // 验证范围证明和环签名
+        require(verifyZKProof(rangeProof, abi.encodePacked(inputCommitments, outputCommitments)), "Invalid range proof");
+        require(verifyZKProof(ringSignature, abi.encodePacked(inputKeyImages)), "Invalid ring signature");
+        
+        // 标记已花费
+        for (uint i = 0; i < inputKeyImages.length; i++) {
+            spentKeyImages[inputKeyImages[i]] = true;
+        }
+    }
+}
+```
+
+### zkRollups扩容
+
+**工作流**：用户交易 → Rollup运营商批量收集、链下计算 → 生成状态转换证明π → 主链验证ZKP并更新状态。
+
+优势：批量处理低Gas费、ZKP验证保证安全性、链下执行实现高TPS。
+
+**主流zkRollup对比**：
+
+| 项目 | ZKP方案 | TPS | 特点 |
+|------|---------|-----|------|
+| zkSync | Plonky2 | 100,000+ | 原生账户抽象、低延迟 |
+| StarkNet | STARK | 10,000+ | Cairo语言、无需可信设置 |
+| Polygon zkEVM | Plonk | 5,000+ | EVM兼容 |
+| Scroll | zkEVM | 3,000+ | 字节码级EVM兼容 |
+
+**zkRollup核心合约**：
+```solidity
+contract ZKRollup {
+    bytes32 public currentStateRoot;
+    uint256 public blockNumber;
+    IZKVerifier public verifier;
+    
+    function submitBatch(
+        bytes32 newStateRoot,
+        bytes calldata zkProof,
+        bytes calldata publicInputs
+    ) external {
+        bool proofValid = verifier.verifyProof(zkProof, publicInputs);
+        require(proofValid, "Invalid ZK proof");
+        
+        bytes32 oldStateRoot = abi.decode(publicInputs[:32], (bytes32));
+        require(oldStateRoot == currentStateRoot, "Invalid state transition");
+        
+        currentStateRoot = newStateRoot;
+        blockNumber += 1;
+    }
+}
+
+interface IZKVerifier {
+    function verifyProof(bytes calldata proof, bytes calldata inputs) external pure returns (bool);
+}
+```
+
+### 去中心化身份（DID）
+
+用户持有身份证明，生成ZKP证明（如"我是成年人"、"我来自某国"），服务提供商验证ZKP有效性但不获取身份细节。
+
+应用场景：DeFi KYC、年龄验证、地域证明。
+
+---
+
+## 五、开发工具与实践
+
+### 开发工具栈
+
+| 工具 | 用途 | 语言 |
+|------|------|------|
+| Circom | ZKP电路编写 | 类JavaScript |
+| Rapidsnark | 证明生成 | C++ |
+| Arkworks | ZKP框架 | Rust |
+| Plonky2 | zkSNARK | Rust |
+| Noir | ZKP编程 | Noir |
+
+### Circom实战示例
+
+**证明知道哈希原像**：
+```circom
+pragma circom 2.0.0;
+
+circuit HashPreimage() {
+    signal input x;           // 私密输入
+    signal input hash_out;    // 公开输入
+    
+    signal[256] bits;
+    bits = Num2Bits(x);
+    
+    component sha256 = SHA256();
+    sha256.inputs[0] <== x;
+    sha256.output[0] <== hash_out;
+}
+```
+
+**范围证明**：
+```circom
+pragma circom 2.0.0;
+
+circuit RangeProof() {
+    signal input value;
+    signal[64] bits;
+    bits = Num2Bits(value);
+    
+    for (var i = 0; i < 64; i++) {
+        bits[i] * (bits[i] - 1) === 0;
+    }
+    
+    signal reconstructed = 0;
+    for (var i = 0; i < 64; i++) {
+        reconstructed += bits[i] * (2**i);
+    }
+    reconstructed === value;
+}
+```
+
+### Solidity验证器
+
+**Groth166验证器结构**：
+```solidity
+contract Groth166Verifier {
+    struct VerifyingKey {
+        uint256[4] alpha1;
+        uint256[4] beta2;
+        uint256[4] gamma2;
+        uint256[4] delta2;
+        uint256[4][] ic;
+    }
+    
+    struct Proof {
+        uint256[4] a;
+        uint256[4][2] b;
+        uint256[4] c;
+    }
+    
+    function verify(uint256[4] memory a, uint256[4][2] memory b, 
+                    uint256[4] memory c, uint256[] memory input) 
+        external pure returns (bool) {
+        require(input.length == 1, "Invalid input length");
+        // 计算公共输入线性组合、验证双线性配对等式
+        return true;
+    }
+}
+```
+
+---
+
+## 六、性能对比与前沿
+
+### 性能对比
+
+| 方案 | 证明生成 | 证明大小 | 验证时间 | 可信设置 |
+|------|----------|----------|----------|----------|
+| Groth166 | 10ms | 240 bytes | <1ms | 需要 |
+| Plonky2 | 50ms | 400 bytes | 2ms | 需要 |
+| STARK | 1s | 100KB | 10ms | 不需要 |
+| Nova | 20ms | 500 bytes | 5ms | 不需要 |
+| Jolt | 100ms | 1KB | 20ms | 不需要 |
+
+### 前沿研究
+
+**递归证明加速**：证明聚合（批量验证）、硬件加速（GPU/TPU）、算法优化（高效多项式承诺）。
+
+**ZKP与AI结合**：
+- AI模型验证：证明模型在特定数据集上训练，不泄露训练数据
+- 隐私AI推理：加密查询、加密推理、不泄露结果
+- AI内容认证：证明内容由指定AI生成
+
+**抗量子ZKP**：STARK和FRI基于哈希函数，具备抗量子能力；Groth166和Plonky2依赖椭圆曲线，不抗量子。
+
+---
+
+## 七、学习总结
+
+### 核心认知
+
+1. 三大特性：完备性、可靠性、零知识性是ZKP基石
+2. 分类体系：交互式→非交互式→递归
+3. 核心权衡：证明大小 vs 验证速度 vs 可信设置
+
+### 方案选择指南
+
+| 场景 | 推荐方案 | 理由 |
+|------|----------|------|
+| 隐私交易 | Groth166/Plonky2 | 证明小、验证快 |
+| zkRollup | Plonky2/STARK | 成熟、高性能 |
+| 通用计算 | Jolt/Nova | 灵活、无需可信设置 |
+| 抗量子需求 | STARK | 基于哈希 |
+| 快速验证 | Groth166 | 验证最快 |
+
+### 行动清单
+
+- [ ] 学习Circom基础语法，实现简单ZKP电路
+- [ ] 搭建Rapidsnark环境，完成可信设置和证明生成
+- [ ] 阅读Groth166论文，理解双线性配对验证
+- [ ] 对比zkSync和StarkNet的ZKP实现差异
+- [ ] 关注Nova/Jolt最新进展
+
+
+````
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

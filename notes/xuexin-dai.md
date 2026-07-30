@@ -173,4 +173,10 @@ Day1的内容补卡
 
 打卡测试。7月28日。今天继续学习运营知识。考了一个LinkedIn的证书
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+昨天忘记打卡0.0 今天正在寻求组队中
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

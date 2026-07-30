@@ -736,4 +736,40 @@ Day 25  7⽉29⽇  学习记录：
 
 ![](file://C:/Users/123/Documents/Day25-%E4%BB%8A%E5%A4%A9%E5%8F%82%E4%BC%9A%E4%BA%BA%E6%95%B0%E6%96%AD%E5%B4%96%E5%BC%8F%E5%87%8F%E5%B0%91%EF%BC%8C%E6%98%BE%E5%BE%97%E6%88%91%E4%BB%AC%E5%9D%9A%E6%8C%81%E4%BA%86%E4%BA%8C%E5%8D%81%E5%A4%9A%E5%A4%A9%E7%9A%84%E4%BA%BA%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%A5%BD%E6%A3%92.png?lastModify=1785150529)
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+Day26  7月30日学习记录：
+
+erin：海报、报告、文章、代码 相信大家都有在ai做了
+
+不知道大家有没有用ai做一些交易工具？
+
+erin老师今天想跟大家探索一下用ai参与数字交易，发现交易，落地闭环
+
+老师语录：
+
+“成为优秀交易员是一个门槛很高的事情，我们可以使用ai工具辅助帮助我们进行交易判断，以此增加我们交易成功的概率？”
+
+目前1.0版本mentis产品主要功能：让mentis（1.0）帮助我们追踪聪明钱+交易基本面判断（输出报告）；2.0可能要打通让AI参与交易的环节。
+
+关于AI参与交易过程中导致可能出现的真实损失的责任问题是值得思考的一个问题——“AI可以写代码，写内容。即使错了也没关系，可以重新修改。但是交易一旦出错，损失就发生了，怎么规避出现这种错误 ？以及真的出现了谁来为损失买单”
+
+![1.00](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-07/de7b84c8-4476-4b41-9c18-2407c3b87835.png)
+
+19:00 - 20:00 Erin Yu老师的分享《AI 会写代码了，那它会交易吗？ Mentis 对 AI Agent 时代全新交易范式的思考》
+
+主要分享了一些关于AI参与交易，或者说对AI Agent时代全新交易范式的思考，以及对黑客松周做产品的思路；
+
+![Day26 线上共学-Web3交易必须多找信息，现在可以借助AI帮咱们关注行情、帮你发现交易信号，理想中是让其发现就分析、综合判断后就立马引导交易、参与到交易过程中.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-07/5c7ac68f-0507-43b1-9fdd-668597c7d6a3.png)
+
+20:00 - 21:00 的Co-learning活动中，主要在主持人引导下大家发布自己的简介进行黑客松周团队的组队，以及有问题的及时提出或上麦交流；
+
+![Day26 Co-learning活动.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-07/fd9db247-d7e2-42f2-a516-71fca179cea8.png)
+
+21:00 - 22:00 的团队沟通中主要进行了当下团队进度汇报，以及下面几天的任务时间把控，我这边主要负责进行首页某元素的优化、仪表盘界面和新加的分析界面的布局 跟前端人员一起优化下，并突出侧重点展示；另外就是勋章墙的勋章设计，原定的按三类分类暂定只按跟交易强挂钩的 交易次数、交易量、系统拦截次数 这三方面进行具体的勋章形象的设计，形象可参考2.5D游戏里那种勋章样式。
+
+![Day26 线上沟通截图.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-07/1103a602-60e6-4361-8260-bdde6979b107.png)
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

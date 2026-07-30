@@ -6585,4 +6585,829 @@ scripts/deploy.js \
 9. **第九章：安全审计与防攻击**
 10. **第十章：部署上线完整教程**
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+<br />
+
+***
+
+# UOKT 类网站是什么？
+
+简单理解：
+
+> 一个连接钱包后，可以完成任务、交互、领取奖励、查看资产的 Web3 App。
+
+类似：
+
+```
+用户
+ |
+ | 钱包连接
+ ↓
+DApp 前端
+ |
+ ├── 钱包资产展示
+ ├── Token交互
+ ├── NFT展示
+ ├── 任务系统
+ ├── 空投系统
+ ├── 积分系统
+ └── 社交裂变
+ |
+ ↓
+智能合约
+ |
+ ↓
+区块链
+
+```
+
+***
+
+# 二、页面结构拆解
+
+一个类似 app.uokt.org 的 DApp，大概率包含：
+
+## 1. 首页 Dashboard
+
+类似：
+
+```
+------------------------------------------------
+
+UOKT Logo
+
+Wallet: 0x1234...abcd
+
+Balance:
+10,542 Points
+
+Your Rank:
+#1523
+
+
+[ Check In ]
+
+[ Earn ]
+
+[ Swap ]
+
+[ Invite ]
+
+------------------------------------------------
+
+```
+
+核心：
+
+* 钱包地址
+* 用户等级
+* 积分
+* 活动入口
+
+***
+
+# 三、核心功能模块拆解
+
+## 模块1：钱包连接
+
+### 技术：
+
+前端：
+
+```
+React
++
+wagmi
++
+viem
++
+RainbowKit
+
+```
+
+支持：
+
+* MetaMask
+* OKX Wallet
+* Rabby
+* WalletConnect
+
+流程：
+
+```
+用户点击 Connect Wallet
+
+↓
+
+钱包弹窗
+
+↓
+
+授权
+
+↓
+
+获取地址
+
+↓
+
+读取链上数据
+
+↓
+
+展示 Dashboard
+
+```
+
+代码逻辑：
+
+```
+const { address } = useAccount();
+
+
+console.log(address);
+
+```
+
+***
+
+# 模块2：用户系统
+
+Web3 没有账号密码。
+
+用户就是：
+
+```
+wallet address
+
+```
+
+数据库：
+
+User表：
+
+```
+users
+
+id
+wallet_address
+created_time
+points
+level
+invite_code
+
+```
+
+例如：
+
+```
+0xabc123
+
+积分:
+5200
+
+等级:
+Gold
+
+```
+
+***
+
+# 模块3：签到系统（你之前做过）
+
+类似：
+
+每日签到：
+
+```
+用户点击
+
+↓
+
+调用合约
+
+↓
+
+记录:
+
+address
+timestamp
+
+↓
+
+增加积分
+
+```
+
+合约：
+
+```
+mapping(address=>uint256)
+points;
+
+
+function checkIn(){
+
+ require(
+ lastCheck[address]+1 days < block.timestamp
+ );
+
+ points[address]+=10;
+
+}
+
+
+```
+
+***
+
+# 模块4：任务系统（核心）
+
+Web3 项目最常见：
+
+```
+任务中心
+
+--------------------------------
+
+完成推特关注
++100积分
+
+加入Discord
++100积分
+
+邀请好友
++500积分
+
+完成链上交易
++50积分
+
+--------------------------------
+
+```
+
+数据库：
+
+Task:
+
+```
+task_id
+
+name
+
+reward
+
+type
+
+status
+
+```
+
+例如：
+
+```
+{
+"id":1,
+"name":"Follow Twitter",
+"reward":100
+}
+
+```
+
+***
+
+# 模块5：积分系统
+
+一般不会直接发 Token。
+
+流程：
+
+```
+行为
+
+↓
+
+积分
+
+↓
+
+排行榜
+
+↓
+
+TGE
+
+↓
+
+兑换 Token
+
+```
+
+架构：
+
+```
+用户行为
+
+↓
+
+Backend
+
+↓
+
+Points数据库
+
+↓
+
+Merkle Tree
+
+↓
+
+Token空投
+
+
+```
+
+***
+
+# 模块6：排行榜
+
+例如：
+
+```
+Leaderboard
+
+
+1
+0x1234
+100000
+
+
+2
+0xabcd
+95000
+
+
+3
+0xffee
+80000
+
+
+```
+
+实现：
+
+后端：
+
+Redis:
+
+```
+ZADD leaderboard
+
+```
+
+排序：
+
+```
+积分倒序
+
+```
+
+***
+
+# 模块7：邀请系统
+
+Web3 项目必备。
+
+逻辑：
+
+用户：
+
+```
+你的链接:
+
+app.com?ref=abc123
+
+```
+
+新人注册：
+
+```
+绑定:
+
+invite_from
+
+
+```
+
+数据库：
+
+```
+User
+
+wallet
+
+invite_code
+
+parent
+
+```
+
+奖励：
+
+```
+A邀请B
+
+B获得1000积分
+
+A获得500积分
+
+```
+
+***
+
+# 四、技术架构
+
+我建议你做：
+
+## 前端
+
+```
+Next.js 15
+
+TypeScript
+
+TailwindCSS
+
+Shadcn UI
+
+wagmi
+
+viem
+
+```
+
+结构：
+
+```
+frontend
+
+├── app
+
+│
+
+├── components
+
+│
+
+├── wallet
+
+│
+
+├── hooks
+
+│
+
+└── contracts
+
+
+```
+
+***
+
+## 后端
+
+推荐：
+
+```
+Node.js
+
+NestJS
+
+PostgreSQL
+
+Redis
+
+```
+
+架构：
+
+```
+              Frontend
+
+                 |
+
+              API
+
+                 |
+
+       ------------------
+
+       |                |
+
+   PostgreSQL       Redis
+
+       |
+
+  Blockchain Indexer
+
+
+```
+
+***
+
+# 五、链上部分设计
+
+假设部署 Monad：
+
+（你之前一直做 Monad，这个方向很适合）
+
+智能合约：
+
+## 1. Point Contract
+
+积分记录：
+
+```
+contract Point {
+
+
+mapping(address=>uint256)
+public points;
+
+
+function addPoint(
+address user,
+uint256 amount
+)
+external{
+
+points[user]+=amount;
+
+}
+
+
+}
+
+```
+
+***
+
+## 2. NFT Badge
+
+完成任务：
+
+领取 NFT：
+
+```
+新用户NFT
+
+早期用户NFT
+
+贡献者NFT
+
+
+```
+
+合约：
+
+ERC721
+
+***
+
+## 3. Token空投
+
+最后：
+
+```
+积分
+
+↓
+
+Merkle Tree
+
+↓
+
+Claim Token
+
+
+```
+
+类似：
+
+```
+claim()
+
+proof验证
+
+领取
+
+```
+
+***
+
+# 六、数据库设计
+
+## User
+
+```
+CREATE TABLE users(
+
+id SERIAL,
+
+wallet VARCHAR(50),
+
+points INT DEFAULT 0,
+
+invite VARCHAR(20),
+
+created_at timestamp
+
+);
+
+```
+
+***
+
+## Tasks
+
+```
+tasks
+
+id
+
+title
+
+reward
+
+type
+
+
+```
+
+***
+
+## UserTask
+
+记录完成：
+
+```
+user_tasks
+
+wallet
+
+task_id
+
+completed
+
+
+```
+
+***
+
+# 七、前端页面拆解
+
+目录：
+
+```
+pages
+
+├── /
+
+首页
+
+
+├── dashboard
+
+用户中心
+
+
+├── tasks
+
+任务中心
+
+
+├── leaderboard
+
+排行榜
+
+
+├── invite
+
+邀请
+
+
+├── nft
+
+NFT
+
+
+```
+
+***
+
+# 八、UI设计
+
+推荐：
+
+类似：
+
+* Blur
+* LayerZero
+* Galxe
+* Zora
+
+风格：
+
+```
+黑色背景
+
+玻璃卡片
+
+渐变按钮
+
+钱包头像
+
+数据Dashboard
+
+```
+
+组件：
+
+```
+<Card>
+
+<WalletButton>
+
+<TaskCard>
+
+<RankList>
+
+
+```
+
+***
+
+# 九、完整开发路线（30天）
+
+## 第1阶段：基础DApp
+
+3天
+
+完成：
+
+✅ 钱包连接
+
+✅ 首页
+
+✅ 用户信息
+
+***
+
+## 第2阶段：任务系统
+
+7天
+
+完成：
+
+✅ 创建任务
+
+✅ 完成验证
+
+✅ 积分增加
+
+***
+
+## 第3阶段：智能合约
+
+7天
+
+完成：
+
+✅ 积分合约
+
+✅ NFT合约
+
+✅ Token合约
+
+***
+
+## 第4阶段：商业化
+
+10天
+
+增加：
+
+✅ 空投
+
+✅ 排行榜
+
+✅ 邀请裂变
+
+✅ DAO
+
+***
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

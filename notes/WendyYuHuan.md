@@ -835,4 +835,10 @@ Codex部署合约实操
 
 Demo页面开发：修改Dashboard、Transactions页面布局及样式，修改接口
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+Demo首页logo替换、样式修改：<https://github.com/YMH0417/sentinel-for-safe-execution/commits/frontend-0730>
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

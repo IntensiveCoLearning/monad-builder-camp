@@ -217,4 +217,10 @@ Mini Demo 0：Monad FocusProof Agent
 
 今日利用codex进行任务检修，发现一直在拉docker镜像，一直不成功，不知道为什么
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+在agent介入交易过程中，最重要是ai在该过程中的决策能力
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

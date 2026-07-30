@@ -498,4 +498,36 @@ hackathon 的題目今天收斂完。三份檔案：問題陳述、產品定義�
 
 最有用的一條測試是把 receipt 葉節點換成內容完全相同的複製品，verifyReceiptCoverage 照樣抓得到。這條說明前端不能在渲染時重建 change 物件，也是 Day 21 被打回那項的同一個道理：框架管有沒有漏認，認得對不對是自己的責任。
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+## Day 25｜三件事都在定邊界
+
+**Paybox**
+
+MoonPay 昨天 GA 了 Paybox，非托管的 credential vault。agent 透過 MCP 接進去，拿不到 raw credential，只拿一次性的衍生憑證，而且授權綁單一動作不可複用。三段式授權：每筆都要 passkey 核准、額度內自動超額才核准、政策內完全不確認。核准畫面列出哪個 agent 在要求、存取什麼、目的地、金額、請求何時失效。
+
+那張欄位表和三段式授權值得抄。但它沒有交易模擬，官方文件裡找不到 simulation 這個詞，audit trail 是事後留痕。它驗的是「這個 credential 該不該交給這個 agent、在什麼範圍內」，我驗的是「這筆交易實際會造成什麼」。範圍對得上，效果仍然可以不對，Bybit 就是這個形狀。
+
+它的 autonomous 模式裡人不看畫面，表面上我的東西在那個模式失效。但我的比對結果是機器可讀的四個值，所以它可以當放行條件用：一致就自動過，不一致才升級給人看。這樣「無人監督」跟「有人把關」不用二選一。這個講法不用寫新 code 就能講。
+
+**介面**
+
+做了模擬畫面。第一版做成獨立面板，做完發現形式不對。我要的是停靠在使用者當前頁面旁邊的側邊欄，不是另開一頁。傳了一張 Monica 的截圖過去才講清楚。
+
+從那張圖抄到最有用的一件：每一條結論後面掛一個 source 連結。這解掉我原本的問題，技術細節收起來之後使用者怎麼知道這些話是查證來的。不用加全域宣告，每條自己帶依據。
+
+也犯了一次錯。我請 Claude 寫給設計那兩位的文件，寫出來變成施工圖，版面順序、欄寬幾 px、按鈕怎麼排都寫死了。那是我在替他們做設計。設計不歸我，我該講的是要達到什麼、什麼不能違反。重寫成 brief，多了一節「我解不掉的問題」直接問他們。
+
+**T1**
+
+把 review 打回的 attribution 修了。三處：事件來源沒驗、ERC20 委派沒驗來源、native transfer 只比金額不比 from/to。
+
+地址比對照 wmon.ts 的既有慣例用 toLowerCase 兩邊。方向性檢查也是照 WMON 抄的，它有我沒有。但查的時候發現 WMON 自己也沒檢查 change.address，錯誤訊息印了那個欄位卻沒拿來比對。同一個病灶在 maintainer 自己的 system 套件裡。
+
+新增五個攻擊型測試：冒充合約發 Deposit、外來代幣的 Transfer、錢沒進 shMONAD、出資人不是 Deposit sender、unstake 的錢不是從 shMONAD 出來。lint / build / typecheck / test 全綠，含 live mainnet 三個。live 那個是對真實主網 trace 跑模擬，它過表示新加的斷言沒有誤擋合法流程，這是我加檢查時最擔心的事。
+
+一件沒解的：unstake 的方向性斷言沒有 live 測試佐證。repo 裡沒有 live unstake 測試，因為測試帳號沒有 shMON，模擬會 revert。如果 shMONAD 實際走 atomic unstaking pool、讓錢從別的合約出來，我這個斷言會誤擋合法交易。
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

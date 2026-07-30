@@ -774,4 +774,26 @@ moss
 &#x20;       catogory lab, 开源列表
 &#x20;       foundry-monad免去本地跑节点
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+moss上协议相关学习：1. wmon
+&#x20;   1\. wmon类似weth, wbnb。
+&#x20;       目的是让原声代币符合erc20的网关
+&#x20;   2\. 存入(wrap)提取(withdraw)两个功能
+&#x20;       让wmon永远和mon一比一兑换
+&#x20;       没有中心化存储风险
+2\. kuru
+&#x20;   全链上 “混合 CLOB - AMM 模型”
+&#x20;   CLOB: Central Limit Order Book.
+&#x20;   kuru查询价格返回实时查询
+3\. moss recepit:
+&#x20;   资产身份必须明确：native MON 使用 NATIVE，官方 USDC 使用 USDC\_ADDRESS。用户输入的 symbol 不能作为 token 身份
+4\. 依赖注入
+&#x20;   依赖注入（Dependency Injection，简称 DI）是一种软件设计模式，它要求一个对象不应当自己去创建或查找它所依赖的其他对象，而是由外部容器或框架在运行时动态地将这些依赖对象传递（注入）进来。 这种模式是实现控制反转（IoC）最常用的技术手段，其核心目的在于降低代码模块之间的耦合度，提高系统的灵活性与可测试性。
+
+```markdown
+```
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

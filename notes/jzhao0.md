@@ -498,4 +498,201 @@ parallax
 6. 开始 Evidence Normalization 和 Rule Engine Skeleton；
 7. 保持本地验证与团队正式集成状态分离。
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+日期：
+2026 年 7 月 30 日
+
+今日主题：
+完成 Parallax 第一阶段 Kuru Evidence Baseline，并提交团队 Draft PR
+
+今日完成事项：
+
+一、完成 Parallax 第一阶段技术交付
+
+今天完成了 Parallax 的第一阶段任务：
+
+Kuru Baseline Evidence Pipeline and ERC-20 Simulation Boundary。
+
+该阶段的目标是先建立一套不依赖完整实时 Moss Runtime 的可移植 Evidence、规则和 Replay 基础，并明确当前 ERC-20 Simulation 的真实技术边界。
+
+二、完成团队仓库第一份功能分支和 Draft PR
+
+功能分支：
+
+feat/kuru-baseline-evidence
+
+Draft PR：
+
+<https://github.com/parallax-monad/parallax/pull/1>
+
+PR 标题：
+
+feat(moss): add Kuru baseline evidence pipeline
+
+当前状态：
+
+* Open；
+* Draft；
+* Mergeable；
+* 已请求 Clare 和 Rei Review；
+* 尚未收到正式 Review；
+* 尚未合并；
+* 当前没有 GitHub Actions Workflow 检查结果。
+
+三、完成四个 Commit
+
+1. a42e329
+   feat(moss): add Kuru evidence normalization
+
+2. 0f74da2
+   feat(risk): add deterministic execution decisions
+
+3. 773096c
+   test(moss): add Kuru baseline fixtures and replay checks
+
+4. 0df65fc
+   docs(moss): record ERC-20 simulation boundary
+
+四、完成 Evidence Pipeline 和 Risk Engine 基础
+
+本阶段已经实现：
+
+* Portable Evidence Normalization；
+* Raw Evidence 与 Normalized Evidence 边界；
+* Evidence Source Provenance；
+* Replay 标记；
+* Recursive BigInt-safe Serialization；
+* Moss Error Classification；
+* Integration Status 与用户风险 Verdict 隔离；
+* 确定性纯函数 Risk Engine；
+* Real Fixtures；
+* Mock Fixtures；
+* Replay Tests；
+* Kuru Smoke Gate；
+* ERC-20 Simulation Boundary ADR。
+
+当前代码不会把 Integration Error 包装成协议风险，也不会把 Replay 或 Mock 冒充为实时链上证据。
+
+五、完成本地测试
+
+实际验证结果：
+
+* pnpm lint：通过；
+* pnpm typecheck：通过；
+* pnpm test：通过；
+* 共 3 个测试文件；
+* 共 11 个测试通过；
+* pnpm build：未执行，因为当前仓库没有 build script；
+* pnpm smoke:kuru：按设计返回 UNAVAILABLE，没有伪造实时成功。
+
+Git 操作过程中：
+
+* 未 Force Push；
+* 未直接 Push main；
+* 未提交私钥、助记词或 Secret；
+* 未提交真实 .env；
+* 未添加 AI 工具身份或 Co-author 标记。
+
+六、记录 Kuru 当前真实技术状态
+
+当前已经验证：
+
+MON → USDC：
+
+* Capability：已验证；
+* Quote：已验证；
+* Action：已验证；
+* Simulation：部分验证；
+* Receipt：仍受 FlipOrderUpdated Parser 缺口影响。
+
+USDC → MON：
+
+* Capability：已验证；
+* Quote：已验证；
+* Action：已验证；
+* Approval Action：已验证；
+* Simulation：部分验证并发生 Revert；
+* Revert 根因尚未完全证明。
+
+当前不能把 USDC → MON 的 Revert 直接解释为：
+
+* Kuru 不支持双向；
+* Moss 不支持双向；
+* 协议风险；
+* 用户余额不足；
+* Allowance 不足。
+
+目前只能确认余额和授权条件尚未被完整证明。
+
+七、明确 ERC-20 Simulation 边界
+
+当前稳定 Moss Simulator 只通过 Native Prefund 为 Sender 提供 MON。
+
+稳定版本目前没有公开的 ERC-20 Synthetic Balance 和 Allowance 注入接口。
+
+因此当前 P0 决定为：
+
+* MON → USDC 作为 Baseline；
+* 保留 USDC → MON 的双向构造证据；
+* USDC → MON 完整 Simulation 不阻塞第一阶段；
+* 不依赖随机第三方地址作为稳定 Demo；
+* 不依赖尚未合并的 State Overrides；
+* 不把未验证的技术路径写成已完成。
+
+八、参加团队会议并审核阶段计划
+
+今晚团队继续召开会议，完成：
+
+1. 共同审核 PRD；
+2. 各成员汇报进度；
+3. 汇报阶段目标和时间节点；
+4. 讨论 Moss、Risk、API 和团队协作边界；
+5. 审核 Stage 1—Stage 7 的阶段规划。
+
+团队确认当前不应继续无边界扩张开发。
+
+我当前进入等待状态，等待：
+
+* PR #1 Review；
+* Clare 对 Moss Output → API Contract 的意见；
+* Rei 对 Evidence → Rule → Action 的意见；
+* Portable Moss Dependency 的团队决策；
+* Shared Contract v0.1 的协作冻结。
+
+今日结果：
+
+* Parallax 团队仓库基础框架已建立；
+* 第一阶段技术工作完成；
+* Draft PR #1 已提交；
+* 4 个 Commit 已进入功能分支；
+* 11 个测试通过；
+* Evidence Normalization、Risk Engine、Fixtures 和 ADR 已形成；
+* Kuru MON → USDC Baseline 技术状态已记录；
+* ERC-20 Simulation 边界已明确；
+* 团队阶段计划已审核；
+* 当前进入 Review 和接口边界确认阶段。
+
+当前准确状态：
+
+第一阶段：
+已完成并提交 Draft PR。
+
+第二阶段：
+尚未正式开始。
+
+当前不是继续自由开发，而是等待 Review、Shared Contract 和协作边界进一步明确。
+
+下一步进入条件：
+
+1. PR #1 收到正式 Review；
+2. Node 22 环境复验完成；
+3. Clare、Rei、Jie 的接口边界明确；
+4. Shared Contract v0.1 可供团队 Review；
+5. Portable Moss Dependency 形成明确决议。
+
+在以上条件未满足前，不继续扩大 Schema、API、规则、PancakeSwap 或智能合约范围。
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

@@ -100,4 +100,10 @@
 
 继续co-learning
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+分享了mentis ai交易agent，目前的问题是如果大家的模型能力和策略能力都差不多的话，最后比拼的是什么
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

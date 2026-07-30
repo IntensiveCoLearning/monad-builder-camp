@@ -2280,4 +2280,147 @@ Web3 工作以**远程协作**为核心，需要掌握一些特定的工具和�
 2. **服务条款 (ToS)**：用户注册账号时必须提供。
 3. **Cookie 同意 (Cookie Consent)**：若对用户进行追踪（如 Analytics）且用户位于欧洲，根据 GDPR 法规必须提供。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+## 一、投票合约 (Ballot)
+
+**核心知识点：结构体、映射、权限控制、委托逻辑**
+
+### 1. 数据结构设计
+
+* **Struct (结构体)**：定义了 `Voter`（选民）和 `Proposal`（提案）。
+* **Mapping (映射)**：`mapping(address => Voter) public voters;` 用于通过地址查询选民状态，是链上数据存储的常用手段。
+* **Array (数组)**：`Proposal[] public proposals;` 用于存储动态长度的提案列表。
+
+### 2. 权限控制
+
+* **主席 (Chairperson)**：在构造函数中设定 `chairperson = msg.sender`。
+* **Modifier 逻辑**：`giveRightToVote` 函数通过 `require(msg.sender == chairperson)` 限制仅主席能授予投票权。
+
+### 3. 核心机制：委托投票 (Delegation)
+
+这是本合约最复杂的部分，展示了如何处理链式逻辑：
+
+* **防死循环**：在 `while` 循环中追踪委托链，如果遇到 `msg.sender` 则 `revert`，防止闭环。
+* **权重转移**：
+  * 如果被委托人已投票，直接将票数加到提案上。
+  * 如果被委托人未投票，将委托人的权重加到被委托人的 `weight` 上。
+* **Gas 风险**：注释中提到，过长的委托链可能导致 Gas 耗尽（Out of Gas）。
+
+### 4. 待优化点思考
+
+* **分配成本**：逐个分配投票权需要大量交易，可以考虑 Merkle Tree（默克尔树）空投白名单机制。
+* **平局处理**：`winningProposal` 目前只返回第一个胜出的提案，未处理票数相同的情况（可返回一个数组或特定状态码）。
+
+***
+
+## 二、拍卖合约 (Auction)
+
+**核心知识点：状态机、资金托管、提现模式**
+
+### 1. 简单公开拍卖 (SimpleAuction)
+
+* **时间控制**：使用 `block.timestamp` 判断拍卖是否结束。
+* **托管逻辑 (Escrow)**：每次出价高于当前最高价时，并不立即退款给上一个投标人，而是记录在 `pendingReturns` 映射中。
+* **取款模式 (Withdraw Pattern)**：
+  * **为什么不用自动退款？**​ 如果直接 `send` 给上一个投标人，对方是一个恶意合约，可能在 `fallback` 函数中回滚交易，导致新投标人无法出价（拒绝服务攻击）。
+  * **解决方案**：让投标人主动调用 `withdraw()` 函数来取钱。
+
+### 2. 盲拍 (BlindAuction)
+
+* **隐私保护**：竞标时提交 `keccak256(value, fake, secret)`（盲化投标），而非真实价格。
+* **虚假投标 (Fake Bids)**：引入 `fake` 参数，允许用户发送高于真实出价的资金但不作为有效出价，以此混淆竞争对手。
+* **阶段划分**：
+  * **Bidding Period**：提交哈希。
+  * **Reveal Period**：公开 `(value, fake, secret)`，合约验证哈希匹配并退还无效投标的押金。
+* **Modifier 复用**：使用 `onlyBefore` 和 `onlyAfter` 修饰符优雅地管理时间窗口。
+
+***
+
+## 三、安全远程购买 (Safe Remote Purchase)
+
+**核心知识点：状态机模式、双向托管**
+
+### 1. 状态机 (State Machine)
+
+使用 `enum State { Created, Locked, Release, Inactive }` 严格控制合约流程：
+
+* **Created**：初始状态，等待买家锁定资金。
+* **Locked**：买家已付双倍押金，等待确认收货。
+* **Release**：买家确认收货，等待卖家取款。
+* **Inactive**：交易结束。
+
+### 2. 信任最小化
+
+* **双倍押金**：买家付 `2 * value`，卖家在部署时付 `value`。
+* **激励相容**：
+  * 买家如果不确认收货，资金被锁死。
+  * 卖家如果发了货但买家不确认，卖家拿不到钱。
+  * 因此，买家确认收货后，卖家获得 `3 * value`（自己的本金+买家的货款），买家拿回 `1 * value`（自己的押金退回一半）。
+
+***
+
+## 四、微支付通道 (Micropayment Channels) 
+
+这是解决区块链吞吐量瓶颈的经典 Layer 2 方案。
+
+### 1. 工作原理 
+
+* **On-chain (链上)**：只做两次交易（开启通道、关闭通道）。
+* **Off-chain (链下)**：无数次微支付通过签名消息传递。
+
+### 2. 签名验证 (ecrecover) 
+
+* **签名构成**：`r`, `s`, `v`。
+* **Solidity 内建函数**：`ecrecover(hash, v, r, s)` 可以从签名中恢复出签名者的地址。
+* **抗重放攻击 (Replay Protection)**：
+  * **Nonce**：防止同一消息被使用两次。
+  * **Contract Address**：防止在 A 合约签名的消息被拿到 B 合约使用。
+  * **Prefix**：`"\x19Ethereum Signed Message:\n32"` 是为了兼容以太坊的 `eth_sign` 标准，防止签名被误认为是交易签名。
+
+### 3. SimplePaymentChannel 流程 
+
+1. **Open**：Alice 存入资金，设定过期时间。
+2. **Transact**：Alice 签署包含“累计欠款总额”的消息发给 Bob。
+3. **Close**：Bob 拿着最新的签名去链上结算。合约验证签名，打款给 Bob，剩余退回 Alice。
+4. **Timeout**：若 Bob 消失，Alice 在过期后可调用 `claimTimeout` 取回资金。
+
+***
+
+## 五、模块化合约 (Modular Contracts) 
+
+**核心知识点：库 (Libraries)、代码复用、安全性**
+
+### 1. 使用 Library 
+
+示例中定义了 `Balances` 库：
+
+* **无状态**：Library 通常不存储状态（或使用 `storage` 指针操作外部数据）。
+* **安全性**：将易出错的算术逻辑（如溢出检查、余额检查）封装在库中，减少主合约的复杂度。
+* **Using for \***：`using Balances for *;` 使得 `balances.move(...)` 这种语法糖生效。
+
+### 2. 不变性 (Invariants) 
+
+注释中提到：“所有余额的总和在合约的有效期内是一个不变的量”。这是审计合约时的核心思路——寻找数学上的不变量来确保资金安全。
+
+***
+
+## 六、通用最佳实践总结 
+
+1. **Checks-Effects-Interactions (检查-生效-交互) 模式**
+   * 永远先检查条件 (`require`)。
+   * 然后修改状态变量。
+   * 最后才进行外部调用（如 `transfer`, `call`）。
+   * *目的*：防止重入攻击（Reentrancy）。
+2. **Pull over Push (取款优于推送)**
+   * 尽量避免直接向用户发送资金，让用户主动来取。
+3. **Gas 限制**
+   * 避免在循环中进行写入操作（如投票合约中的委托链），以免触及区块 Gas Limit。
+4. **清晰的错误处理**
+   * 使用 `error` (Custom Errors) 代替 `string` 错误信息，节省 Gas 且易于调试。
+5. **时间依赖**
+   * `block.timestamp` 可以被矿工轻微操纵，不适合用于高精度随机数或严格的截止时间，但适合拍卖、锁定期等长周期逻辑。
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

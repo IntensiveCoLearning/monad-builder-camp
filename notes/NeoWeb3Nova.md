@@ -651,4 +651,210 @@ Riso 完成 3 人真人访谈；我跑通一笔 Moss Swap 的 simulate 与收据
 * submissions/week-04-hackathon/interview-kit-riso.md
 * submissions/week-04-hackathon/moss-swap-tech-checklist.md
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+# 2026-07-30｜Week 4 Day 4（Test Before Build：3-Person Reality Check）
+
+## 今日信息
+
+* **日期**: 2026-07-30（周四）
+* **周次**: Week 4｜Monad Playground Hackathon
+* **Track**: Tech / Dev Builder
+* **今日主题**: Test Before Build — 先问三个人，再决定做什么
+* **学习投入时长**: 约 2–3 小时
+* **学分任务**: 3-Person Reality Check +20（进行中，真人访谈待完成）
+
+***
+
+## 固定动作
+
+* 查看学习平台 / `tasks/week-04-hackathon.md` Day 4 要求
+* 完成学习平台打卡（提交本文件摘要）
+* 参加/回看 19:00 嘉宾分享（如有，待补充）
+* 参加/回看 20:00 Co-Learning Idea Reality Check（如有，待补充）
+* 更新本地项目记录
+
+***
+
+## 今日完成
+
+### 1. 仓库文档全域对齐｜Week 4 结构修正
+
+本周的核心发现：官方 Week 4 实际是 **Playground 周**（5 个轻量任务、100 学分），而不是之前理解的「直接提交可运行产品」。今日将全仓库 7 个文件统一修正：
+
+| 文件                                                    | 修正内容                                                                                   |
+| :---------------------------------------------------- | :------------------------------------------------------------------------------------- |
+| `README.md`                                           | Week 4 描述从「提交可运行产品」→「Builder Signal、Idea、组队、3 人验证、Start Card」                          |
+| `docs/schedule.md`                                    | Week 4 整节重写：从「产品冲刺 + Demo Day」→「Day 1–5 轻量任务 + Co-Learning」                            |
+| `docs/deliverables.md`                                | 拆分为 5a（Playground 本周强制）+ 5b（Build Sprint 终期提交）                                         |
+| `docs/web3career-platform.md`                         | Week 4 从「最终交付物列表」→「5 任务学分表 + 每日 Co-Learning」                                           |
+| `submissions/README.md`                               | Week 4 文件命名从 `plan.md / demo-link.md` → `builder-signal.md / problem-idea-card.md / …` |
+| `submissions/week-04-hackathon/reality-check.md`      | 顶部挂 Day 4 执行工具入口（访谈包 + 技术清单）                                                           |
+| `submissions/week-04-hackathon/team-matching-card.md` | Day 3 定稿；新增角色互补表、Co-Learning 话术、调整触发表、学习目标自检                                           |
+
+**影响：** Playground 周不是 Build Sprint——本周产出是「协作信号 + 验证证据 + 第一步」，而不是可运行 Demo。这个认知修正避免了团队在 Day 4 就焦虑「还没写代码」。
+
+### 2. Team Matching Card 深度定稿
+
+在昨天草稿基础上完成最终版：
+
+* 补充「角色互补为什么成立」表（每个角色 → 为什么需要 → 本周最低验收）
+* 写好 Co-Learning 60 秒 Idea Holder / 30 秒 Builder 话术（可直接念）
+* 补充落单同学可回应的钩子表（匹配 / 冲突 / 已覆盖 / 待合并）
+* 新增异步 Stand-up 复制即用模板
+* 新增调整触发条件表（4 种场景 → 对应动作）
+* 新增 Day 3 学习目标自检表
+* 新增相关提交索引
+
+<br />
+
+### 3. Day 4 执行工具就绪
+
+* **Riso 访谈工具包**（`interview-kit-riso.md`）：邀请话术 4 套（中/短/英/开场）、正式 6 问 + 追问、单人记录模板、三人交叉结论模板、Plan B（约不到人）
+* **Neo Moss 技术清单**（`moss-swap-tech-checklist.md`）：环境就绪表、Path B/A 双路径、决策收据最小数据模型（14 字段）、真实 vs Mock 表、验证实验记录模板、DoD、时间盒、安全硬约束
+* Reality Check 文件顶部挂工具入口，明确 Persona 预演 ≠ 正式证据
+
+<br />
+
+### 4. Reality Check 当前状态
+
+* **AI Persona 预演**已完成（3 类用户：新手 / 高频 / 开发者）
+* **真人访谈**尚未完成：Riso 待发出邀请并完成 3 人记录
+* **Moss simulate**尚未跑通：Neo 按 checklist 待执行
+* **团队标签**（继续/缩小/调整/合并/暂停）待三人 stand-up 根据证据选择
+
+***
+
+<br />
+
+## 今日证据
+
+| 产出                    | 路径                                                          | 说明            |
+| :-------------------- | :---------------------------------------------------------- | :------------ |
+| 今日打卡                  | `daily/2026-07-30.md`                                       | 本文件           |
+| 仓库文档对齐                | `README.md`, `docs/*.md` (×3), `submissions/README.md`      | Week 4 结构修正   |
+| Team Matching Card 定稿 | `submissions/week-04-hackathon/team-matching-card.md`       | Day 3 学分 +20  |
+| Reality Check 工具入口    | `submissions/week-04-hackathon/reality-check.md`            | 挂 Day 4 执行链接  |
+| 访谈工具包（既有）             | `submissions/week-04-hackathon/interview-kit-riso.md`       | Day 4 Riso 执行 |
+| Moss 技术清单（既有）         | `submissions/week-04-hackathon/moss-swap-tech-checklist.md` | Day 4 Neo 执行  |
+
+> 今日无链上交易或新代码提交；交付重点是认知修正与文档对齐，确保团队在正确周结构下推进。
+
+***
+
+<br />
+
+## 小队快照
+
+| 角色                         | 人      | 今日状态                                                   |
+| :------------------------- | :----- | :----------------------------------------------------- |
+| Dev / Tech Lead            | Neo    | ✅ 仓库文档对齐完成；Team Matching Card 定稿；Moss checklist 就绪，待执行 |
+| Product / Research / Pitch | Riso   | 📋 访谈工具包已就绪；待发出邀请并完成 3 人访谈                             |
+| UI / Visual Design         | eleven | 📋 待根据访谈「最懵的一步」出主路径线框 + 证据时间线                          |
+
+**项目暂定名：** Agent Wallet Flight Recorder｜Agent 钱包黑匣子小队
+
+***
+
+<br />
+
+## AI 协作记录
+
+* **AI 帮了什么**:
+  * 识别 Week 4 官方结构（Playground）与旧文档（Builder Hackathon）的不一致
+  * 批量修正 7 个文件中的 Week 4 描述、任务列表、学分、文件命名
+  * 深度扩展 Team Matching Card（角色互补表、调整触发表、Co-Learning 话术、自检清单）
+  * 在 Reality Check 顶部挂 Day 4 执行工具入口
+* **我验证了什么**:
+  * Week 4 官方定位是 Playground 周（5 任务 100 学分），不是 Build Sprint
+  * 所有文档引用路径与实际文件存在一致
+  * Persona 预演未被误标为真实用户证据
+* **我做了什么判断**:
+  * Playground 周优先「匹配 + 验证」，而不是焦虑没写代码
+  * 结构对齐比堆功能更重要——错误认知会让团队在错误方向上用力
+
+***
+
+<br />
+
+## 遇到的问题
+
+* **问题 1**: 仓库多处文档将 Week 4 描述为「Builder Hackathon / 提交可运行产品」，与官方 Playground 定位不一致
+  * **原因**: 前期理解偏差；官方实际将 Hackathon 拆为 Playground（本周）+ Build Sprint（下周）
+  * **处理**: 今日全域对齐 7 个文件，确保团队和潜在读者正确理解本周任务
+* **问题 2**: 真人访谈 + Moss 技术验证均未完成
+  * **原因**: 今日时间优先用于认知修正和文档对齐
+  * **下一步**: Riso 今晚/明早发出邀请；Neo 按 checklist 跑 Path B
+
+***
+
+<br />
+
+## 今日复盘
+
+* **收获**: 花时间修正「Week 4 是什么」的认知，比急着写代码更关键。Playground 周的本质是「发出信号 → 找到问题 → 验证需求 → 确定第一步」，这个框架一旦正确，团队焦虑自然下降。Team Matching Card 从信息对齐推进到可执行工具（话术、模板、调整表、自检）。
+* **最卡**: Day 4 核心学分（3 人 Reality Check）仍依赖真人访谈和技术验证——这两个动作都在队友侧，需要今晚 stand-up 确认进度并决定是否需要缩小范围或延期。
+* **是否更接近作品集**: 是。文档对齐意味着仓库中 Week 4 的证据结构是正确的，后续不管是提交学分还是向外部展示「我们如何验证需求」，都能直接从 `submissions/week-04-hackathon/` 取用，不需要二次解释。
+
+***
+
+<br />
+
+## 明日计划（Day 5｜Choose Your First Move）
+
+* 补齐 3 人真人访谈记录 → 团队选择标签（继续/缩小/调整/合并/暂停）
+* Moss Path B simulate 跑通（或记录阻塞 + Mock 方案）
+* 填写 Hackathon Start Card（项目快照、核心动作、真实 vs Mock、头号风险、是否进入 Sprint）
+* 准备 90 秒 Project Check-in
+* 更新明日打卡 `daily/2026-07-31.md`
+
+***
+
+<br />
+
+## 相关链接
+
+* 昨日打卡: `daily/2026-07-29.md`
+* 周任务: `tasks/week-04-hackathon.md`
+* Team Matching: `submissions/week-04-hackathon/team-matching-card.md`
+* Problem & Idea: `submissions/week-04-hackathon/problem-idea-card.md`
+* Reality Check: `submissions/week-04-hackathon/reality-check.md`
+* 访谈工具: `submissions/week-04-hackathon/interview-kit-riso.md`
+* 技术清单: `submissions/week-04-hackathon/moss-swap-tech-checklist.md`
+
+***
+
+<br />
+
+## 可直接提交的打卡信息
+
+【Web3 暑期实习计划｜Monad Builder Camp 打卡】
+
+日期：2026 年 7 月 30 日 周次：Week 4｜Monad Playground Hackathon · Day 4 方向：Tech / Dev Builder 主题：Test Before Build — 仓库文档对齐 + 3 人 Reality Check 准备 学分任务：3-Person Reality Check +20（进行中，真人访谈待完成）
+
+今日完成：
+
+1. **全仓库 Week 4 结构修正。** 发现并修正了一个关键认知偏差：Week 4 实际是 Playground 周（5 个轻量任务、100 学分），而不是旧文档描述的「Builder Hackathon / 提交可运行产品」。将 README、schedule、deliverables、web3career-platform、submissions/README 等 7 个文件统一对齐到正确结构，确保团队不在错误方向上焦虑「还没写代码」。
+2. **Team Matching Card 深度定稿。** 在昨天基础上补充角色互补表（每个角色 → 为什么需要 → 本周最低验收）、Co-Learning 话术（60 秒 Idea Holder + 30 秒 Builder）、落单同学钩子表、异步 stand-up 模板、调整触发条件表（4 场景 → 对应动作）、Day 3 学习目标自检。组队卡从信息对齐推进到可执行工具。
+3. **Day 4 执行工具链就绪。** Reality Check 顶部挂上访谈工具包（Riso）和技术验证清单（Neo）入口，明确 Persona 预演 ≠ 正式证据。两套工具均包含话术、模板、Plan B、DoD 和时间盒。
+
+今日收获：
+
+Playground 周最大的坑不是技术难度，而是认知偏差——如果把「认识 Builder、验证需求、确定第一步」误解为「直接提交可运行 Demo」，团队会在 Day 4 就开始焦虑。花 2 小时修正 7 个文件的描述，比写 200 行代码更有价值：它让接下来两天的验证和 Start Card 都发生在正确的周结构里。
+
+下一步：
+
+Riso 完成 3 人真人访谈；Neo 跑通 Moss Path B simulate；三人 stand-up 选择标签（继续/缩小/调整/合并/暂停）；Day 5 根据证据填写 Hackathon Start Card。
+
+仓库证据：
+
+* `daily/2026-07-30.md`
+* `submissions/week-04-hackathon/team-matching-card.md`（定稿）
+* `submissions/week-04-hackathon/reality-check.md`（AI Persona 预演 + Day 4 工具入口）
+* `submissions/week-04-hackathon/interview-kit-riso.md`
+* `submissions/week-04-hackathon/moss-swap-tech-checklist.md`
+* 全域文档对齐：`README.md`, `docs/schedule.md`, `docs/deliverables.md`, `docs/web3career-platform.md`, `submissions/README.md`
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

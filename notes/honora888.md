@@ -7022,4 +7022,38 @@ web/public/assets/quest-1/bestiary/reentry-devourer-portrait.webp
 * 桌面和移动端六幕人工回归；
 * 生产部署检查。
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+###
+
+# **同类产品调研：**
+
+### **⚔️ 闯关游戏 / CTF 类**
+
+* **The Ethernaut**：由 OpenZeppelin 维护的“夺旗”式游戏，玩家通过“破解”智能合约来学习漏洞。它是最接近“闯关”概念的项目，但缺乏修仙叙事和 Agent 能力。
+* **Capture the Ether**：另一个以太坊智能合约“黑客”游戏。同样是纯 CTF 形式，没有世界观包装和 Agent 集成。
+* **ZeroDay Dev**：提供超过 4000 个动手挑战，基于 120 多个真实世界漏洞。侧重于挑战数量，但不具备修仙世界观和 AI Agent。
+* **Cardano CTF**：Cardano 区块链上的互动安全游戏。仅限于 Cardano 生态，没有修仙主题。
+
+### **📚 综合教育平台类**
+
+* **Cyfrin Updraft**：领先的区块链开发和安全教育平台，提供 100 多小时的课程。是传统的视频/课程模式，而非游戏化闯关。
+* **Binance Academy**：提供结构化的区块链及安全课程。典型的课程式学习，缺少互动闯关元素。
+* **SolidityHub**：通过结构化教程和代码示例学习 Solidity。侧重语言教学，非专门安全平台。
+
+### **🔬 漏洞复现 / 实验室类**
+
+* **Damn Vulnerable DeFi**：著名的智能合约安全“游乐场”，旨在磨练审计和漏洞挖掘技能。它是顶级的安全训练场，但缺少游戏化包装和修仙主题。
+* **Smart Contract Vulnerability Lab**：展示真实世界漏洞及攻击模拟的实验室。纯粹的技术实验室，无游戏化设计。
+* **Learn EVM Attacks**：用 Foundry 测试复现漏洞利用的集合。偏向于技术参考，而非面向初学者的学习平台。
+
+### **🤖 AI / 游戏化融合类（最新趋势）**
+
+* **Block Security Arena (BSA)**：集成**游戏化教育**、自动化风险工具和去中心化漏洞赏金的 AI 驱动安全平台。概念上有游戏化和 AI，但核心是“闭环安全层”，而非“学习平台”。
+* **GuardiansNode**：为有经验的 Solidity 开发者设计的、带有丰富故事背景的游戏化教育平台。叙事驱动型学习，但针对高阶开发者，与修仙主题和 AI Agent 无关。
+* **Unphishable**：通过游戏化挑战模拟现实钓鱼攻击。专注于反钓鱼，范围较窄。
+* **CyberTrek**：结合网络安全、区块链和道德黑客的互动学习平台。游戏化学习，但无修仙主题和 Agent。
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

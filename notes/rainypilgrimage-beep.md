@@ -254,4 +254,12 @@
 
 开会
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+review PRD v0,3
+
+确定个人交付、进度、任务
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

@@ -14,6 +14,8 @@
 
 # 2026-07-28
 <!-- DAILY_CHECKIN_2026-07-28_START -->
+# 2026-07-28
+
 今天完成了人生第一个开源贡献。
 
 项目：Moss  
@@ -958,4 +960,149 @@ AI能生成技术上正确但业务上未必合适的隐含决策。这三处必
 
 明日计划：需要课后通过实习手册学习更多知识，并且熟悉该计划的各种板块以及考核标准，尽快建立学习SOP。
 <!-- DAILY_CHECKIN_2026-07-06_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+残酷共学 Day 2｜第一次被 Maintainer Review
+
+昨天提交了人生第一个开源 PR。
+
+今天收到了 Maintainer 的 Review。
+
+项目：
+
+> Moss — AI Agent × Web3 Infrastructure
+
+PR：
+
+> docs(agent-swap): add troubleshooting and verification notes
+
+***
+
+最开始提交的时候，我以为：
+
+> 文档贡献 = 把自己的理解写清楚。
+
+但真实开源协作告诉我：
+
+**文档不是解释自己的想法，而是维护项目的技术契约。**
+
+***
+
+Reviewer 提出了三个问题：
+
+### 1. 不要假设
+
+我写：
+
+> Check that the Monad Anvil binary is available
+
+但实际上：
+
+`anvil --version`
+
+只能证明系统里存在一个 Anvil。
+
+不能证明：
+
+> 这是 Monad 版本。
+
+项目代码本身有更严格的检查逻辑。
+
+所以文档必须和代码行为保持一致。
+
+***
+
+### 2. 不要创造“弱化版规则”
+
+我新增：
+
+> Before signing
+
+列了一些检查项。
+
+本意：
+
+帮助新用户理解签名前应该检查什么。
+
+但 Reviewer 指出：
+
+这个列表反而弱化了项目已有的安全规范。
+
+真正需要检查的是：
+
+* assets
+* amounts
+* recipients
+* approvals
+* protocol semantics
+* uncertainty
+* every Warning
+
+而不是一个简化 checklist。
+
+***
+
+### 3. 小细节也是工程质量
+
+最后还有一个：
+
+EOF 空行。
+
+一个多余的空白行，也会触发：
+
+```
+git diff --check
+
+```
+
+***
+
+于是我做了第二次 commit：
+
+修改文档：
+
+* 精确描述 Monad Anvil 检查逻辑；
+* 删除重复 safety workflow；
+* 修复 formatting issue。
+
+***
+
+最大的收获：
+
+以前觉得开源贡献是：
+
+> 找一个 issue → 写代码 → 提交。
+
+现在发现真实流程是：
+
+> 理解项目 → 提出改进 → 接受审查 → 根据反馈调整 → 达成一致。
+
+***
+
+这和产品工作其实非常像。
+
+PM 写需求不是：
+
+“我觉得这样更好。”
+
+而是：
+
+“用户问题是什么？系统约束是什么？团队如何达成一致？”
+
+***
+
+第一次 PR 没有直接 Merge。
+
+但我反而觉得这个过程更有价值。
+
+因为我第一次体验了：
+
+陌生 Maintainer 如何审查一个贡献。
+
+以及：
+
+如何把一个想法变成符合工程标准的改变。
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

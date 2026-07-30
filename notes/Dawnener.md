@@ -158,4 +158,11 @@
 
 今日持续推进与队友的合作，当前继续完成moss中的aave lending adapter。队友目前已将withdraw、borrow、repay与get account和reserve环节完成，下一步将推进进入abi环节
 <!-- DAILY_CHECKIN_2026-07-29_END -->
+
+<!-- DAILY_CHECKIN_2026-07-30_START -->
+# 2026-07-30
+
+<https://github.com/Dawnener/moss/tree/review/aave-v3-with-debt> \
+当前已经完成abi接入并进行本地测试，已发送给队友要求进行独立测试。无问题后接入demo
+<!-- DAILY_CHECKIN_2026-07-30_END -->
 <!-- Content_END -->

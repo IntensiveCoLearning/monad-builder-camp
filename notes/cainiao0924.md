@@ -154,4 +154,10 @@ diannao dtaika le
 
 日常打卡，感觉已经组队了。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+周五忘了打卡，还需要打卡么都在黑客松了。队友已经开始搭好架构和部分代码了
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

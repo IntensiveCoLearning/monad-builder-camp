@@ -7410,4 +7410,807 @@ NFT
 
 ***
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+`manhuapica.com/categories` 是一个**漫画图片分类浏览站**，属于典型的 **图片内容聚合站（Image Content Platform）**。它是：
+
+> **内容 CMS + 图片存储 + 分类系统 + 搜索系统 + SEO 流量系统**
+
+从产品、页面、技术架构、数据库、开发方案完整拆解。
+
+***
+
+# 一、网站定位分析
+
+这个网站类型：
+
+```
+漫画资源聚合平台
+        |
+        |
+  -----------------
+  |       |       |
+分类浏览  搜索    阅读
+  |
+图片内容库
+
+```
+
+核心价值：
+
+1. 大量漫画内容
+2. 分类索引
+3. SEO 获取搜索流量
+4. 用户浏览图片
+
+类似：
+
+* 漫画站
+* 小说站
+* 图片站
+* 资源站
+
+***
+
+# 二、整体网站结构
+
+大概结构：
+
+```
+首页
+
+ |
+ |
+ +---- Categories 分类页
+
+ |
+ +---- Comic Detail 漫画详情
+
+ |
+ +---- Chapter 阅读页
+
+ |
+ +---- Search 搜索
+
+ |
+ +---- Tags 标签
+
+ |
+ +---- Ranking 排行榜
+
+
+```
+
+***
+
+# 三、页面拆解
+
+## 1. Categories 分类页面
+
+URL:
+
+```
+/categories
+
+```
+
+作用：
+
+展示所有漫画分类。
+
+页面：
+
+```
+--------------------------------
+
+Logo
+
+Search
+
+Home
+Categories
+Latest
+Popular
+
+
+--------------------------------
+
+
+Categories
+
+
+[Action]
+
+[Adventure]
+
+[Romance]
+
+[Fantasy]
+
+[Drama]
+
+[Comedy]
+
+
+--------------------------------
+
+漫画列表
+
+
+封面 封面 封面
+
+标题
+
+作者
+
+浏览量
+
+
+--------------------------------
+
+
+```
+
+核心组件：
+
+```
+CategoryCard
+
+ComicCard
+
+Pagination
+
+
+```
+
+***
+
+# 四、漫画详情页
+
+例如：
+
+```
+/comic/xxx
+
+
+```
+
+结构：
+
+```
+--------------------------------
+
+封面
+
+
+漫画名称
+
+
+作者:
+
+类型:
+
+状态:
+
+简介:
+
+
+[Start Reading]
+
+
+--------------------------------
+
+
+章节列表
+
+
+Chapter 1
+
+Chapter 2
+
+Chapter 3
+
+
+
+```
+
+数据：
+
+```
+Comic
+
+id
+
+title
+
+cover
+
+author
+
+description
+
+category
+
+views
+
+
+```
+
+***
+
+# 五、阅读页面
+
+核心。
+
+URL：
+
+```
+/comic/xxx/chapter/1
+
+```
+
+页面：
+
+```
+上一章
+
+
+图片1
+
+图片2
+
+图片3
+
+图片4
+
+
+下一章
+
+
+```
+
+技术：
+
+图片：
+
+```
+CDN
+ |
+ |
+OSS
+ |
+ |
+图片服务器
+
+```
+
+例如：
+
+```
+https://cdn.xxx.com/
+
+comic001/
+
+001.jpg
+
+002.jpg
+
+003.jpg
+
+
+```
+
+***
+
+# 六、核心技术架构
+
+## 推荐架构
+
+```
+                 用户
+
+                  |
+
+              CDN
+
+                  |
+
+             Next.js
+
+                  |
+
+              API Server
+
+                  |
+
+        -----------------
+
+        |               |
+
+     MySQL          Redis
+
+        |
+
+     Object Storage
+
+        |
+
+       图片
+
+
+
+```
+
+***
+
+# 七、前端技术
+
+推荐：
+
+## Next.js
+
+原因：
+
+漫画站高度依赖 SEO。
+
+技术：
+
+```
+Next.js 15
+
+React
+
+TailwindCSS
+
+TypeScript
+
+
+```
+
+目录：
+
+```
+app/
+
+
+├── page.tsx
+
+首页
+
+
+├── categories
+
+│
+└── page.tsx
+
+
+├── comic
+
+│
+└── [id]
+
+
+├── read
+
+│
+└── [chapter]
+
+
+components/
+
+
+├── ComicCard
+
+├── CategoryCard
+
+├── ImageViewer
+
+
+```
+
+***
+
+# 八、后台管理系统
+
+必须有。
+
+因为你需要上传漫画。
+
+后台：
+
+```
+admin
+
+
+Dashboard
+
+
+漫画管理
+
+分类管理
+
+章节管理
+
+图片上传
+
+用户管理
+
+
+```
+
+***
+
+# 九、数据库设计
+
+## 分类表
+
+category
+
+```
+CREATE TABLE categories(
+
+id INT PRIMARY KEY,
+
+name VARCHAR(100),
+
+slug VARCHAR(100)
+
+);
+
+
+```
+
+例如：
+
+```
+1
+
+Action
+
+
+2
+
+Romance
+
+
+```
+
+***
+
+# 漫画表
+
+comic
+
+```
+CREATE TABLE comics(
+
+id INT,
+
+title VARCHAR(200),
+
+cover TEXT,
+
+description TEXT,
+
+author VARCHAR(100),
+
+category_id INT,
+
+views INT
+
+);
+
+
+```
+
+***
+
+# 章节表
+
+chapter
+
+```
+CREATE TABLE chapters(
+
+id INT,
+
+comic_id INT,
+
+title VARCHAR(100),
+
+number INT
+
+);
+
+
+```
+
+***
+
+# 图片表
+
+images
+
+```
+CREATE TABLE images(
+
+id INT,
+
+chapter_id INT,
+
+url TEXT,
+
+sort INT
+
+);
+
+
+```
+
+结构：
+
+```
+漫画
+
+ |
+章节
+
+ |
+图片
+
+
+```
+
+***
+
+# 十、搜索系统
+
+例如：
+
+搜索：
+
+```
+naruto
+
+```
+
+流程：
+
+```
+用户输入
+
+↓
+
+ElasticSearch
+
+↓
+
+匹配title
+
+↓
+
+返回结果
+
+
+```
+
+技术：
+
+小型：
+
+MySQL LIKE
+
+大型：
+
+ElasticSearch
+
+***
+
+# 十一、图片存储方案
+
+不要存在服务器。
+
+推荐：
+
+## Cloudflare R2
+
+结构：
+
+```
+用户
+
+↓
+
+Cloudflare CDN
+
+↓
+
+R2 Storage
+
+
+
+```
+
+成本：
+
+100万图片：
+
+非常低。
+
+***
+
+# 十二、SEO系统（重点）
+
+这种网站流量核心。
+
+每个页面生成：
+
+Title:
+
+```
+xxx漫画在线阅读
+
+```
+
+Description:
+
+```
+免费阅读xxx漫画全集
+
+```
+
+生成：
+
+```
+/categories/action
+
+/comic/name
+
+/read/name/chapter1
+
+
+```
+
+搜索引擎：
+
+Google
+
+Bing
+
+百度
+
+***
+
+# 十三、后台上传流程
+
+管理员：
+
+上传漫画：
+
+```
+选择分类
+
+↓
+
+上传封面
+
+↓
+
+创建章节
+
+↓
+
+批量上传图片
+
+↓
+
+自动压缩
+
+↓
+
+生成CDN地址
+
+↓
+
+发布
+
+
+```
+
+***
+
+# 十四、图片处理
+
+上传：
+
+原图：
+
+```
+10MB
+
+
+```
+
+处理：
+
+↓
+
+压缩：
+
+```
+500KB
+
+
+```
+
+工具：
+
+```
+Sharp
+
+ImageMagick
+
+
+```
+
+***
+
+# 十五、用户功能
+
+基础：
+
+```
+游客:
+
+浏览
+
+
+注册:
+
+收藏
+
+历史记录
+
+评论
+
+
+```
+
+数据库：
+
+User
+
+```
+id
+
+email
+
+password
+
+avatar
+
+
+```
+
+收藏：
+
+```
+favorites
+
+
+user_id
+
+comic_id
+
+
+```
+
+***
+
+<br />
+
+***
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

@@ -1,6 +1,6 @@
 - GitHub ID: 155389860
 - Name: xuexin-dai
-- Timezone: UTC+8
+- Timezone: UTC+0
 - Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
@@ -179,4 +179,10 @@ Day1的内容补卡
 
 昨天忘记打卡0.0 今天正在寻求组队中
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+学习打卡！！差点忘了，极限
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

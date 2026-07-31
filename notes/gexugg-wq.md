@@ -223,4 +223,10 @@ Mini Demo 0：Monad FocusProof Agent
 
 在agent介入交易过程中，最重要是ai在该过程中的决策能力
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+对于想要实现agent更好地实现，持久化设计是必不可少的
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

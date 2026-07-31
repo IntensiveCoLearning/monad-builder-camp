@@ -106,4 +106,10 @@
 
 分享了mentis ai交易agent，目前的问题是如果大家的模型能力和策略能力都差不多的话，最后比拼的是什么
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+vibecoding黑客松项目的前端网页![image.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-149470114/2026-07/f8a8ec12-b9be-403b-967d-660147c305df.png)
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

@@ -4804,4 +4804,154 @@ W4D3 今日学习打卡：
 
 下一步准备优先完成新的数据 Schema 设计和后端目录结构重构，为后续用户画像、AI策略和 Monad 功能扩展提供基础。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+# W4D5 后端架构升级
+
+ 
+
+## 今日学习内容
+
+今天开始对 Demo v0.1 进行 v0.2 重构，目标是将原本针对固定交易 CSV 的分析逻辑，升级为更加通用的 Web3 用户行为分析框架。
+
+主要完成：
+
+### 1. 后端目录结构重构
+
+原本 v0.1 中所有业务逻辑集中在 services 中。
+
+升级后按照职责拆分：
+
+```
+backend/
+
+├── schemas       数据结构定义
+├── connectors    数据读取
+├── processors    数据处理
+├── analytics     用户分析
+├── services      流程编排
+```
+
+让数据处理、分析和业务流程更加清晰。
+
+***
+
+### 2. 设计 Web3 Event Schema
+
+为了支持不同类型 Web3 数据，将交易模型升级为用户行为事件模型。
+
+新增：
+
+`schemas/event_schema.py`
+
+统一描述：
+
+* &#x20;wallet\_address&#x20;
+* &#x20;event\_type&#x20;
+*  timestamp 
+*  value 
+*  token 
+* &#x20;tx\_hash&#x20;
+* &#x20;contract\_address&#x20;
+*  source 
+*  metadata 
+
+通过 Event Schema，可以将：
+
+*  DEX swap 
+*  NFT mint 
+*  GameFi quest 
+
+等不同类型行为统一处理。
+
+***
+
+### 3. 重构数据清洗模块
+
+将：
+
+```
+cleaning_service.py
+```
+
+迁移为：
+
+```
+processors/cleaning.py
+```
+
+新的清洗逻辑不再依赖交易字段，而是针对标准 Event 数据：
+
+完成：
+
+*  删除重复事件 
+*  删除关键字段缺失数据 
+*  时间格式转换 
+*  数值类型处理 
+*  输出清洗报告 
+
+并成功测试：
+
+```
+original_rows: 3
+
+duplicate_removed: 1
+
+missing_removed: 1
+
+clean_rows: 1
+```
+
+***
+
+### 4. Event 数据对象转换
+
+新增：
+
+```
+```
+
+```
+processors/event_converter.py
+```
+
+实现：
+
+```
+```
+
+```
+DataFrame
+
+↓
+
+EventSchema Object
+```
+
+使后续用户画像、指标计算可以基于统一数据结构。
+
+***
+
+## 今日收获
+
+通过这次重构理解了：
+
+Web3 数据分析产品不能只针对某一种交易格式，而应该先建立统一的数据模型，再进行用户分析。
+
+当前项目已经从：
+
+```
+Transaction Analyzer
+```
+
+向：
+
+```
+Web3 User Growth Analytics Platform
+```
+
+方向升级。
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

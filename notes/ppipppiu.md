@@ -3754,4 +3754,96 @@ Dashboard 可视化用户状态和分析结果。
 
 下一步计划继续调研 Web3 项目的用户增长场景，分析哪些指标能够真正帮助 DApp 项目进行用户运营，并辅助技术方向设计产品功能。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+完成 Demo v0.2 后端架构升级第一阶段。
+
+主要工作：
+
+1. Backend 架构调整
+
+新增模块：
+
+schemas
+processors
+analytics
+connectors
+services
+
+用于拆分数据处理、用户分析和业务流程。
+
+1. 完成 Event Schema 设计
+
+建立统一 Web3 行为数据模型：
+
+支持：
+
+钱包地址
+行为类型
+时间
+金额
+Token
+合约地址
+数据来源
+
+为后续支持不同 DApp 数据做准备。
+
+1. 完成 Cleaning 模块迁移
+
+将 v0.1：
+
+cleaning\_service.py
+
+升级为：
+
+processors/cleaning.py
+
+实现通用 Event 数据清洗。
+
+1. 完成测试验证
+
+成功运行：
+
+test\_cleaning\_v02.py
+
+验证：
+
+重复数据清理
+缺失数据处理
+EventSchema 转换
+下一步计划
+
+继续迁移 v0.1 分析模块：
+
+wallet\_aggregation\_service.py
+→ analytics/user\_profile.py
+metrics\_service.py
+→ analytics/metrics.py
+segmentation\_service.py
+→ analytics/segmentation.py
+
+最终形成：
+
+Event
+
+↓
+
+Cleaning
+
+↓
+
+User Profile
+
+↓
+
+Growth Metrics
+
+↓
+
+User Segmentation
+
+完成 Demo v0.2 后端分析闭环。
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

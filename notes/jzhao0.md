@@ -695,4 +695,219 @@ USDC → MON：
 
 在以上条件未满足前，不继续扩大 Schema、API、规则、PancakeSwap 或智能合约范围。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+日期：
+2026 年 7 月 31 日
+
+今日主题：
+推进 Parallax PR #1 收敛，并明确 PR #3、PR #4 的 Review 与接口依赖
+
+今日完成事项：
+
+一、继续完善 Kuru Evidence Pipeline
+
+今天针对 Parallax 团队仓库 PR #1 的首轮技术 Review 意见进行了修复。
+
+PR：
+<https://github.com/parallax-monad/parallax/pull/1>
+
+分支：
+feat/kuru-baseline-evidence
+
+最新 Head：
+9d413b95d76655292c11efd40b1e318f7f96ed6c
+
+当前 PR 状态：
+
+* Open；
+* 非 Draft；
+* Mergeable；
+* Changes Requested；
+* Merge State 为 Blocked；
+* Node 22 CI 已通过；
+* 尚未合并。
+
+二、处理 PR #1 的五项技术 Blocker
+
+本轮主要完成：
+
+1. 保留结构化 Moss Error：
+   * stage；
+   * code；
+   * message；
+   * integrationStatus；
+   * source。
+
+2. 对不可信关键 Evidence 执行 Fail Closed：
+   * source=unknown；
+   * 不可复现；
+   * mock 支撑核心 Verdict。
+
+3. 未解释的关键 Asset Changes 不再静默通过，而是返回 UNKNOWN。
+
+4. Simulation Result 必须与 Action Transaction 完整匹配：
+   * from；
+   * to；
+   * data；
+   * value；
+   * 一对一匹配；
+   * 缺少字段不得错误匹配。
+
+5. Minimum Received 必须记录来源：
+   * original\_swap；
+   * user\_declared；
+   * demo\_preset；
+   * unavailable。
+
+三、完成三个修复 Commit
+
+* 965611af
+  fix(moss): preserve structured errors and require full transaction identity matching
+
+* fc91277c
+  fix(risk): fail closed on untrusted critical evidence and unexplained asset changes
+
+* 9d413b95
+  fix(risk): record economic boundary provenance and regenerate fixtures
+
+四、完成最新验证
+
+实际验证结果：
+
+* pnpm install：通过；
+* pnpm lint：通过；
+* pnpm typecheck：通过；
+* pnpm test：通过；
+* 3 个测试文件；
+* 41 个测试全部通过；
+* Node 22 GitHub CI：通过；
+* pnpm smoke:kuru：按设计返回 UNAVAILABLE。
+
+当前没有把 Live Runtime 的不可用状态伪装成成功，也没有把 Replay 或 Mock 写成实时链上 Evidence。
+
+五、明确团队 Review 边界
+
+团队对交叉 Review 进行了重新分工：
+
+* Kai 不再重复 Review Jie 的底层 Moss、Normalizer 和 Risk Engine 实现；
+* Kai 后续使用 Jie 的 Evidence Chain 与 Rei 的 Rule Spec形成初步用户语义；
+* Clare继续负责 PR #1 技术复核；
+* Jie负责 PR #3 的 Moss / Evidence 可实现性 Review；
+* Rei继续负责 RuleResult、Central Verdict Policy 和 Reason-to-Action；
+* Antony负责消费最终 API 和 Shared Contract。
+
+这样可以减少重复 Review 和相互冲突的修改意见。
+
+六、同步 PR #3 状态
+
+PR #3：
+docs(risk): propose P0 rule and reason-to-action spec
+
+当前状态：
+
+* Open；
+* Draft；
+* Mergeable；
+* CI 通过；
+* Product Semantics 已获得 Approval；
+* Jie 的 Moss / Evidence 可实现性 Review 尚待完成。
+
+PR #3 目前是 docs-only、non-normative 的方法论和实现目标，不代表完整 Runtime 已实现。
+
+我的 Review 范围只包括：
+
+* Moss Evidence 可实现性；
+* Stage-aware Evidence；
+* NO\_ROUTE Classification Gate；
+* Mock Fixture 限制；
+* Classification Gate 与 Action Gate 分离；
+* Economic Boundary Runtime 依赖；
+* Evidence Provenance；
+* Integration Error Mapping；
+* Asset Changes 和 Warnings；
+* Live / Replay / Mock；
+* PR #4 Shared Contract 依赖。
+
+七、同步 PR #4 状态
+
+PR #4：
+feat(contracts): define P0 swap contracts and trusted API boundary
+
+当前状态：
+
+* Open；
+* 非 Draft；
+* Mergeable；
+* Changes Requested；
+* CI 通过；
+* Antony 已从前端范围 Approve；
+* Rei 提出的 Contract Blocker 仍待 Clare修改。
+
+PR #4 当前等待 PR #3 的规则语义冻结，不应提前基于未冻结 Contract 开发 Adapter。
+
+八、确认当前技术边界
+
+当前 Portable Live Moss Runtime 仍为 UNAVAILABLE。
+
+MON → USDC：
+
+* 使用真实录制 Moss Evidence；
+* Receipt 中存在 FlipOrderUpdated；
+* 当前基线 Parser 尚未支持；
+* Execution Status 保持 UNKNOWN。
+
+USDC → MON：
+
+* Approval 与 Swap Action 已生成；
+* Simulation 在泛化 Revert 后停止；
+* 不推断余额不足；
+* 不推断 Allowance 不足；
+* Execution Status 保持 UNKNOWN。
+
+当前 NO\_ROUTE Fixture 仍属于 Mock Rule Test Input，只能验证 Contract、Normalizer 和 Risk Rule 路径，不能证明真实 Kuru Runtime 会稳定返回 NO\_ROUTE。
+
+今日结果：
+
+* PR #1 五项 Review Blocker 已完成针对性修复；
+* 测试数量增加到 41 个并全部通过；
+* Node 22 CI 通过；
+* PR #1 已从 Draft 转为非 Draft；
+* 团队 Review 职责进一步收敛；
+* PR #3 的技术 Review 范围已经明确；
+* PR #4 确认继续等待规则和 Contract 冻结；
+* 没有扩大到 PancakeSwap、智能合约、签名、广播或真实资金。
+
+当前准确状态：
+
+PR #1：
+等待读取 Clare 最新 GitHub Comment，并判断是否存在新 Blocker。
+
+PR #3：
+等待 Jie 完成 Moss / Evidence 可实现性 Review。
+
+PR #4：
+等待 PR #3 收敛后，由 Clare处理 Contract Blocker。
+
+下一步：
+
+1. 读取 Clare 在 PR #1 的最新 Comment；
+2. 判断该 Comment 是新 Blocker、非阻塞建议、澄清还是通过确认；
+3. 如果存在明确 Blocker，只做针对性修复；
+4. 完成 PR #3 的 Moss / Evidence 可实现性 Review；
+5. 不重复 Kai 的产品 Review；
+6. 不在 PR #1、PR #3 和 PR #4 收敛前启动新的 Adapter 开发；
+7. 不 Merge，直到 CI、Code Owner Review、Conversation Resolution 和 Branch Protection 全部满足。
+
+Git 与安全记录：
+
+* 未 Force Push；
+* 未直接 Push main；
+* 未绕过 Branch Protection；
+* 未使用管理员权限强制 Merge；
+* 未提交私钥、助记词、Token、Cookie、RPC Secret 或 .env；
+* 未在 Branch、Commit、PR、代码或文档中添加 AI 工具身份标识。
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

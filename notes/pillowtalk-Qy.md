@@ -4491,4 +4491,214 @@ PR 描述已经更新为实际交付契约：
 
 Web 技术选型也不能只根据开发速度决定。对于 Moss Mini Demo，真正需要验证的是服务端依赖隔离、RPC 与环境变量边界、生产构建兼容性，以及浏览器是否可能接触原始执行能力。方向选择只是开始，兼容性证据通过后才能正式接受。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+## 今日概览
+
+今天主要推进了三条工作线：
+
+* Mini Demo 的运行时架构、DecisionInput 契约与依赖门禁；
+* Moss 上游安全依赖修复、协议 Review 和 CI 信任边界审查；
+* 实际体验其他团队的链上五子棋产品并整理反馈。
+
+可核查产出包括：
+
+* Mini Demo [PR #65](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/65) 完成并合并；
+* Next.js + Moss 兼容性 Spike 通过并获得 Maintainer 接受；
+* Moss 安全依赖 [PR #148](https://github.com/nishuzumi/moss/pull/148) 已提交；
+* 完成4次 Moss 正式 Review；
+* 复核一次 Moss Live Workflow 的真实证明范围；
+* 完成 MONOKU 链上五子棋体验报告。
+
+## 一、Next.js 与 Moss 兼容性验证
+
+围绕 Mini Demo 的 Web 运行时，我完成了 Option A 的 Node.js 22 兼容性 Spike。
+
+验证环境：
+
+* Node.js 22.23.1；
+* pnpm 11.10.0；
+* Next.js 16.2.12；
+* React/React DOM 19.2.3；
+* Moss 候选版本 `da9b566`。
+
+验证结果：
+
+* Next.js App Router 可以完成生产构建；
+* `next start` 可以使用一个 Node 进程运行；
+* Server-only Route 能导入 Moss Core、Simulator、Kuru 和 PancakeSwap；
+* 浏览器静态 Bundle 中没有 Moss 或 Clear402 代码；
+* `CLEAR402_ENABLED=false` 时，核心路径能够独立运行；
+* Moss、RPC 和环境变量可以保持在服务端边界内。
+
+Next.js 引入的 `sharp@0.34.5` 安装脚本仍需通过明确、固定的 pnpm Allowlist 管理，不能绕过供应链策略。
+
+基于该证据，[Issue #22](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/22#issuecomment-5139052458) 已正式接受 Option A：
+
+> Next.js App Router + Node Runtime + 单一可部署 Node 进程。
+
+## 二、DecisionInput 与 STOP 边界落地
+
+今天完成并合并 [PR #65](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/65)，主分支更新为 `27a9bc6`。
+
+主要内容：
+
+* 新增并接受 ADR 0004；
+* 导出严格的 `DecisionInputV0_1Schema`；
+* 固定 `MANUAL_REVIEW` 的无 `reasons` 结构；
+* 将任意 STOP 字符串改为封闭原因枚举；
+* 要求每个 STOP 原因只能关联属于自己的触发证据；
+* 修正 Warning、Receipt 和 Outcome 的标准路径；
+* 明确 v0.1 只能从空集合证明 Receipt/Outcome 不完整；
+* 禁止 `decision`、`limitations`、`presentation` 和 `credential` 进入 DecisionInput。
+
+PR 共修改11个文件，新增866行、删除355行，通过格式、Lint、类型、构建、公共包导入、340项测试和 Exact-Head `quality-gate`。
+
+Issue #19 已关闭，Decision Engine [Issue #6](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/6) 的依赖门禁已经解除并进入 `Ready`。
+
+## 三、Mini Demo 交付控制调整
+
+架构和契约门禁完成后，以下任务进入 Ready：
+
+* \#6：Decision Engine；
+* \#11：STOP 展示契约刷新；
+* \#23：范围、评委证据和 Gate 文档；
+* \#24：可复现 Moss 依赖；
+* \#32：Web/API 基线。
+
+当前计划状态为：
+
+```
+Done         3
+In Progress  2
+Ready        5
+Backlog      4
+Blocked     38
+```
+
+同时启用第一层 Scope Cut：
+
+* 第二个协议降为 P1；
+* 不做 Capability Tree 动画；
+* 不做 Markdown/打印导出；
+* 不增加第三个攻击场景；
+* Local Fork 不再作为 P0 必须项；
+* 暂不增加额外 Token 和表单灵活性。
+
+Decision Engine、Moss Capability 与模拟证据、PreflightReport、金额不一致 STOP、Provenance、Fixture Recovery 和 Gate A/B/C 不能被删减。
+
+## 四、Moss 安全依赖 PR #148
+
+在 [Issue #125](https://github.com/nishuzumi/moss/issues/125#issuecomment-5141063619) 中确认，`@modelcontextprotocol/sdk@1.30.0` 已正式兼容 Hono 2，因此不再需要跨越上游声明范围的强制 Override。
+
+我提交了 [PR #148](https://github.com/nishuzumi/moss/pull/148)，完成：
+
+* MCP SDK 升级至1.30.0；
+* Hono Node Server 更新至2.0.12；
+* fast-uri 更新至3.1.4；
+* PostCSS 固定到8.5.18；
+* 增加 MCP Server Patch Changeset。
+
+安全检查结果：
+
+* 生产依赖 Audit 为零；
+* Moderate 级别 Audit 通过；
+* 只保留开发环境 `esbuild@0.27.7` 的 Low Advisory；
+* 没有强制升级到超出 tsup 声明范围的 esbuild 0.28。
+
+PR 已通过 Linux CI、Windows Offline、Frozen Install、Peer Check、Lint、Build、Typecheck、194项 Offline 测试和204项 Live 测试。目前 PR 仍开放，尚未合并。
+
+## 五、Moss 协议与 Runtime Review
+
+### PR #143：Uniswap V4
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/143#pullrequestreview-4828852014)
+
+最终确认 `SelfRef` 的类型与运行时边界已经对齐：只有通过 `nestable(...)` 声明的方法可以进入编译期 SelfRef，Runtime 仍以 Decorator Metadata 为准。Core 50/50、Uniswap Offline 和 CI 均通过，因此提交 `APPROVED`。
+
+### PR #149：Monad Runtime 与 CI Egress
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/149#pullrequestreview-4828832211)
+
+发现两个安全问题：
+
+* Fork PR 中缺失 Secret 会产生空字符串，原 Nullish Fallback 不会回退到公共 RPC；
+* Harden-Runner 使用可移动的 `@v2` 标签，而不是不可变 Commit SHA。
+
+因此提交 `CHANGES_REQUESTED`。该 PR 后续已合并，空 RPC 问题继续由 PR #151 修复，Runtime 与文档迁移则在 PR #153 延续处理。
+
+### PR #109：Pendle Live Evidence
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/109#pullrequestreview-4827539322)
+
+新 Live Workflow 发现原有 `0.01` MON Buy-PT 测试已进入当前市场的 Dust 区域。加入 Router-scoped Selector 后，实际错误为 `MarketZeroNetLPFee`，说明是市场状态变化，不是整个 Adapter 回归。
+
+我要求：
+
+* 使用当前已证明能够产生手续费的金额；
+* 在正常 Live 模拟中加入目标绑定的 Selector 映射；
+* 基于最新 Main 重跑完整 Live Suite。
+
+因此原有批准不再代表当前链上状态，PR 回到 `CHANGES_REQUESTED`。
+
+### PR #153：Runtime 文档与错误边界
+
+[Review 记录](https://github.com/nishuzumi/moss/pull/153#pullrequestreview-4830700057)
+
+发现非法 `MOSS_RPC_URL` 的异常会输出完整配置值，可能把用户名、Token、Path 或 Query 中的凭据写入日志。
+
+此外，CLAUDE.md、Workflow 注释和 PR 描述仍引用已经删除的 `DEFAULT_RPC_URL`。
+
+因此要求：
+
+* 错误信息只说明配置非法，不回显原值；
+* 增加带凭据的非法 URL 负向测试；
+* 将旧名称统一更新为 `defaultRpcUrl()` 或 `createRuntime()`；
+* 更新实际 Core 测试数量。
+
+## 六、Live Workflow 证明范围复核
+
+Moss [PR #152](https://github.com/nishuzumi/moss/pull/152) 新增了手动触发的私有 RPC Live Verification Workflow。
+
+我核对首次运行后确认，它成功证明了 Euler PR #140 在指定 Merge Tree 上通过16/16 Euler 测试和完整 Live Suite，也说明此前不稳定问题来自公共 RPC 限制。
+
+但 Workflow 只接受 PR 编号，并在任务执行时读取可变化的 Merge Ref。审批后如果 PR Head 或 Base 发生变化，Secret-bearing Job 可能运行未经 Maintainer 审查的新 Tree。
+
+我建议增加必填 `expected_merge_sha`，并在执行任何仓库代码前校验实际 Checkout SHA。这样 PR 更新后会 fail-closed，而不是静默使用另一份代码获取私有 RPC 权限。
+
+## 七、其他团队产品体验
+
+今天实际体验了 Yunshiro 团队的 [MONOKU 链上五子棋](https://gomoku-onchain.vercel.app/)。
+
+完成的体验包括：
+
+* 查看等待中、对战中和全部棋局；
+* 读取到4个 Monad 测试网历史棋局；
+* 查看棋局编号、房主、押注、手数和状态；
+* 进入已结束的棋局 #002；
+* 查看棋盘、胜者、第9手结束和结算结果；
+* 测试无效棋局 ID；
+* 检查移动端布局。
+
+做得好的地方是产品问题清楚，链上棋局、押注和结算信息能够直接查询，移动端也没有明显布局溢出。
+
+主要问题：
+
+* 输入 `abc` 等无效棋局 ID 后没有错误提示；
+* 进入详情时缺少 Loading 状态；
+* 链上数据加载期间出现一次 RPC `413`；
+* 未连接钱包时创建按钮禁用，但缺少就地说明。
+
+我建议优先完善链上数据的 Loading、错误、重试和输入校验，避免用户将 RPC 等待误认为页面失效。
+
+## 八、今日收获
+
+今天最重要的认识是：测试通过与“证明了什么”必须严格区分。
+
+兼容性 Spike 只能证明当前候选依赖可以运行，不能代替最终供应链锁定；Live Workflow 只能证明实际执行的那个 SHA，不能自动证明 Maintainer 原本审查的代码；链上 Happy Path 也会因为市场状态变化而失效。
+
+真正可靠的工程记录需要同时保存版本、SHA、环境、证据来源、执行边界和失败条件。
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

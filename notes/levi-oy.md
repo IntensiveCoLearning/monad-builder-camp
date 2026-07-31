@@ -335,4 +335,12 @@ Claude Code适合小白写代码，Codex适合优化细节，Gemini适合做UI
 
 AI 能参与交易，但离"自主稳定盈利交易"还有距离，人的风控和判断仍是关键一环。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+LXDAO的一条推分享了一个AI插件，可以让 AI Agent 免费“看完”几乎任何视频。只要粘贴一个 URL它就能逐帧分析画面、理解语音内容，并快速输出总结，成本还很低。感觉以后看各种 Demo、Hackathon、Builder 分享、产品发布会都能省不少时间。
+
+[github.com/bradautomates/claude-video](https://github.com/bradautomates/claude-video)
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

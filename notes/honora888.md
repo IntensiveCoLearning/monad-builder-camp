@@ -7056,4 +7056,57 @@ web/public/assets/quest-1/bestiary/reentry-devourer-portrait.webp
 * **Unphishable**：通过游戏化挑战模拟现实钓鱼攻击。专注于反钓鱼，范围较窄。
 * **CyberTrek**：结合网络安全、区块链和道德黑客的互动学习平台。游戏化学习，但无修仙主题和 Agent。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+## Quest 1 最终验收与冻结 ⏳
+
+### 目标
+
+在进入 Moss 前冻结 Quest 1，避免同时修改教学逻辑、视觉和 Agent 集成。
+
+### 验收清单
+
+#### 合约
+
+* `forge fmt --check`
+* `forge build --sizes`
+* `forge test -vvv`
+* Invariant 通过
+* Slither 对照重跑
+
+#### 前端
+
+* 六幕完整通关；
+* 刷新后存档正确；
+* Reduced Motion；
+* 移动端；
+* 图片性能；
+* 错误状态；
+* 只读 API。
+
+#### Monad
+
+* Chain ID；
+* 合约地址；
+* `completed=false`；
+* `completed=true`；
+* reportHash；
+* badgeBalance；
+* Explorer 链接。
+
+#### 文档
+
+* README 当前进度；
+* Severity 统一；
+* 生产截图；
+* Demo GIF；
+* Known Issues；
+* Mock 边界。
+
+### 完成标准
+
+Quest 1 可以独立演示，且后续 Moss 集成不再依赖修改其核心教学状态机。
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

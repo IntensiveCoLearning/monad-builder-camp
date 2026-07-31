@@ -165,4 +165,10 @@
 <https://github.com/Dawnener/moss/tree/review/aave-v3-with-debt> \
 当前已经完成abi接入并进行本地测试，已发送给队友要求进行独立测试。无问题后接入demo
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+队友已完成abi复测，目前正在将adapter转化为可展示demo
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

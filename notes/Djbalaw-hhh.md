@@ -1031,4 +1031,22 @@ worktree C：实验重构方案
 
 这样不同任务不会互相污染。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+# **权限、安全、联网与敏感数据**
+
+三种常见沙箱级别（sandbox）：
+
+| **模式**             | **含义**     | **推荐用途**       |
+| :----------------- | :--------- | :------------- |
+| read-only          | 只能读，不能写    | 陌生项目、分析、规划、审查  |
+| workspace-write    | 可在当前工作区内读写 | 日常开发、修 bug、补测试 |
+| danger-full-access | 大幅放开限制     | 仅限外部已经充分隔离的环境  |
+
+**不建议--yolo：**、
+
+CLI 中 `--dangerously-bypass-approvals-and-sandbox` / `--yolo` 会绕过审批和沙箱。官方明确说明：只应在外部已经强化隔离的环境中使用。(S7)
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

@@ -126,11 +126,11 @@ graph TD
 
 设请求路径为 $p$，路由表为 $R = \{r_1, r_2, ..., r_n\}$，其中每个 $r_i$ 是一个正则模式。定义可达性函数 $Reach: P \rightarrow \{0, 1\}$：
 
-$$Reach(p) = \begin{cases} 1, & \exists r_i \in R, \ Match(p, r_i) = \text{true} \\ 0, & \text{otherwise} \end{cases}$$
+$Reach(p) = \begin{cases} 1, & \exists r_i \in R, \ Match(p, r_i) = \text{true} \\ 0, & \text{otherwise} \end{cases}$
 
 **系统不变量（Invariant）**：
 
-$$\forall p \in RequestPaths, \quad Reach(p) = 1 \oplus (State(p) = \text{404Fallback})$$
+$\forall p \in RequestPaths, \quad Reach(p) = 1 \oplus (State(p) = \text{404Fallback})$
 
 即任意请求要么命中有效路由，要么进入 404 兜底状态，**不存在中间态**。
 
@@ -138,7 +138,7 @@ $$\forall p \in RequestPaths, \quad Reach(p) = 1 \oplus (State(p) = \text{404Fal
 
 设 $E_{delay}$ 为错误传播时延，$C_{ttl}$ 为 CDN 缓存 TTL，$P_{purge}$ 为强制清除概率，则用户感知 404 的总延迟为：
 
-$$T_{user} = E_{delay} + C_{ttl} \cdot (1 - P_{purge})$$
+$T_{user} = E_{delay} + C_{ttl} \cdot (1 - P_{purge})$
 
 ---
 
@@ -222,7 +222,7 @@ graph TD
 
 ### 6.3 反馈闭环
 
-$$\text{FeedbackLoop}: \quad \text{Observation} \rightarrow \text{Diagnosis} \rightarrow \text{Prescription} \rightarrow \text{Execution} \rightarrow \text{Verification}$$
+$\text{FeedbackLoop}: \quad \text{Observation} \rightarrow \text{Diagnosis} \rightarrow \text{Prescription} \rightarrow \text{Execution} \rightarrow \text{Verification}$
 
 形成 **ODPEV** 五段式闭环，确保每次异常事件都生成可复用的修复剧本（Remediation Playbook）。
 
@@ -852,11 +852,11 @@ graph TD
 
 设请求路径为 $p$，路由表为 $R = \{r_1, r_2, ..., r_n\}$，其中每个 $r_i$ 是一个正则模式。定义可达性函数 $Reach: P \rightarrow \{0, 1\}$：
 
-$$Reach(p) = \begin{cases} 1, & \exists r_i \in R, \ Match(p, r_i) = \text{true} \\ 0, & \text{otherwise} \end{cases}$$
+$Reach(p) = \begin{cases} 1, & \exists r_i \in R, \ Match(p, r_i) = \text{true} \\ 0, & \text{otherwise} \end{cases}$
 
 **系统不变量（Invariant）**：
 
-$$\forall p \in RequestPaths, \quad Reach(p) = 1 \oplus (State(p) = \text{404Fallback})$$
+$\forall p \in RequestPaths, \quad Reach(p) = 1 \oplus (State(p) = \text{404Fallback})$
 
 即任意请求要么命中有效路由，要么进入 404 兜底状态，**不存在中间态**。
 
@@ -864,7 +864,7 @@ $$\forall p \in RequestPaths, \quad Reach(p) = 1 \oplus (State(p) = \text{404Fal
 
 设 $E_{delay}$ 为错误传播时延，$C_{ttl}$ 为 CDN 缓存 TTL，$P_{purge}$ 为强制清除概率，则用户感知 404 的总延迟为：
 
-$$T_{user} = E_{delay} + C_{ttl} \cdot (1 - P_{purge})$$
+$T_{user} = E_{delay} + C_{ttl} \cdot (1 - P_{purge})$
 
 ---
 
@@ -948,7 +948,7 @@ graph TD
 
 ### 6.3 反馈闭环
 
-$$\text{FeedbackLoop}: \quad \text{Observation} \rightarrow \text{Diagnosis} \rightarrow \text{Prescription} \rightarrow \text{Execution} \rightarrow \text{Verification}$$
+$\text{FeedbackLoop}: \quad \text{Observation} \rightarrow \text{Diagnosis} \rightarrow \text{Prescription} \rightarrow \text{Execution} \rightarrow \text{Verification}$
 
 形成 **ODPEV** 五段式闭环，确保每次异常事件都生成可复用的修复剧本（Remediation Playbook）。
 
@@ -999,4 +999,10 @@ $$\text{FeedbackLoop}: \quad \text{Observation} \rightarrow \text{Diagnosis} \ri
 
 123
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+&#x20;333111
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

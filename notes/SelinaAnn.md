@@ -507,4 +507,10 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 助教可能会建议两个相似的团队合并。**作为 Dev，合并的唯一条件是：立刻明确谁是主 Dev。** 两个团队如果各有一个 Dev，千万别妥协说“我们一起写”。代码合并是地狱。要么你让出主 Dev 地位（你去写测试或看文档），要么你接手全部代码，对方 Dev 转型做 Ops 或 Research。
 <!-- DAILY_CHECKIN_2026-07-28_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+![image.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-228867732/2026-07/3a5c04fc-87be-4120-920e-58d4d8b188e4.png)
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

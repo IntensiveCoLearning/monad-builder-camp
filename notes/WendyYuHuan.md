@@ -841,4 +841,10 @@ Demo页面开发：修改Dashboard、Transactions页面布局及样式，修改�
 
 Demo首页logo替换、样式修改：<https://github.com/YMH0417/sentinel-for-safe-execution/commits/frontend-0730>
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+1.页面增加路由鉴权，Dashboard页面布局及样式修改
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

@@ -575,4 +575,40 @@ production build: passed
 
 今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-28.md
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+今天我继续推进 OddLane 的 Monad Testnet 可验证闭环，并同步完成了合约与 Nuxt 前端的最新验证。
+
+ 
+
+OddLane 采用 Prediction-native Fully Onchain CLOB：用户可以通过 Above / Below 限价单进行二元市场交易；互补的 Buy Above 和 Buy Below 会在链上原子锁定 Test USDC，创建完全抵押的 Complete Set；Pyth 负责 Target Anchor 与最终 Settlement。
+
+<br />
+
+合约侧今天已完成项目自有 Test USDC 与 Faucet 路径：每个地址每 24 小时可以领取 100 枚测试资产，领取后用户自行授权并存入交易账户。当前合约本地 Foundry 回归：
+
+79 passed, 0 failed
+
+覆盖 Deposit / Withdraw、Available / Reserved 账本、四类订单、Price-Time Priority、Direct Match、Partial Fill、Complementary Mint、Expiry、Above / Below / Void、Pyth Anchor、Permissionless Rollover 与故障 Recovery。
+
+<br />
+
+Monad Testnet 还验证了：错过 Anchor Window 后可以跳过失败轮次，任何调用者可以恢复下一规范 Slot，并继续完成 Pyth 锚定、结算与下一轮原子打开。这使市场生命周期不依赖部署者或中心化 Keeper 才能继续运行。
+
+<br />
+
+前端已经升级为 Nuxt 4 + Vue 3 交易终端，包含市场首页、BTC Target Sprint、Order Book、Order Ticket、Position、Faucet、Roadmap、Pyth Reference Price 和 Lifecycle 状态展示。前端验证：
+
+Nuxt prepare + vitest: 20 passed, 0 failed
+
+production build: passed
+
+今天最大的收获是：一个链上订单簿 Demo 不只要展示 Place / Match，还必须让测试资产、资金预留、到期截止、Pyth 结算、赎回和失败轮次恢复都能在同一条链上生命周期中被验证。
+
+<br />
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-31.md
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

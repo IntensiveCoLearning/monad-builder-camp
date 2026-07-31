@@ -772,4 +772,24 @@ erin老师今天想跟大家探索一下用ai参与数字交易，发现交易�
 
 ![Day26 线上沟通截图.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-07/1103a602-60e6-4361-8260-bdde6979b107.png)
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+<br />
+
+Day27  7月31日学习记录：
+
+今天只有一个Co-learning，线上会议大家沟通交流的内容主要包括1、Coooder老师的最近实习感悟分享，2、大家谈到AI对于工作的影响、以及对企业员工的影响，并谈到如今越来越“卷”的职场氛围；3、对于黑客松，Coooder老师交代了一些关于汇报或者5分钟限时展示项目时需要注意一些事情，鼓励各项目团队积极准备，参与投入到最后的项目协作当中；4、明早11:00有个LXDAO的周会？大家有时间的可以参与一下。
+
+团队沟通，由于队长在调试合约等项目代码，一时忘记时间没能及时进行今天Co-learning后的团队沟通会议，但在项目群里说明了情况，并引导大家对黑客松上讲述的关于线上路演的汇报注意事项作了说明，也在线敦促大家抓紧昨天的任务进度推进，争取周六在链上部署好测试链后再看下整个demo 还有页面逻辑啥的有没有需要调整的。
+
+我在群里汇报了下我今天的任务进度，主要进行了昨日提到的设计工作的调整，以及勋章墙页面的勋章形象的设计和制作。
+
+
+
+![1.00](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-07/b7e3f613-ba6a-4308-a315-0f51c60e8314.png)
+
+![1.00](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-07/a4e8fd70-2e14-4f38-94be-b2029d662117.png)
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

@@ -262,4 +262,12 @@ review PRD v0,3
 
 确定个人交付、进度、任务
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+review PR#1、PR#2
+
+完成规则 Spec v0.1
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

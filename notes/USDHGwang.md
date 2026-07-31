@@ -530,4 +530,32 @@ MoonPay 昨天 GA 了 Paybox，非托管的 credential vault。agent 透過 MCP 
 
 一件沒解的：unstake 的方向性斷言沒有 live 測試佐證。repo 裡沒有 live unstake 測試，因為測試帳號沒有 shMON，模擬會 revert。如果 shMONAD 實際走 atomic unstaking pool、讓錢從別的合約出來，我這個斷言會誤擋合法交易。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+## Day 26｜查完競品把插件砍了，然後當天把新形態的管線打通
+
+昨天定的形態是網頁加瀏覽器插件側邊欄。今天查完同類產品的下場，插件砍掉。
+
+三個樣本：Wallet Guard 被 Consensys 收購後今年三月關站；Harpie 拿過 Coinbase Ventures 的錢，官方講的收攤理由是做不出可持續的商業模式；Blowfish 賣給 Phantom 之後對外 API 停止。兩個被吸收一個倒閉，沒有反例。錢包端該做的事，MetaMask、Rabby、Phantom、Coinbase、Trust、OKX、Backpack 七家都做了。在那裡不會贏。
+
+那新的位置在哪。錢包的地盤是瀏覽器裡按下簽名的那一刻，那格滿了。沒有人佔的是「我叫 agent 做事」到「一筆交易出現」中間那段，那段不在瀏覽器裡，在對話裡。分發也不同，不是 Chrome Web Store 是 MCP，使用者本來就在裝 MCP server。
+
+MCP Apps 在 07-28 併進主規格，兩天前的事。server 可以回傳 ui:// resource 讓 host 在 sandboxed iframe 裡渲染，而且互動是雙向的。
+
+查了一輪現有玩家的授權判斷停在哪。Fireblocks、Turnkey、Privy、Dfns、BitGo、PayBox、Crossmint 都是靜態規則，地址金額方法選擇器。MetaMask 加 Blockaid 那一類是拿模擬結果比對惡意模式庫。真正做「執行結果對不對得上使用者要的」的只有兩個，Cobo Argus 的 postExecCheck 和 MetaMask 四月上線的 Advanced Permissions，兩個都是執行後 revert，不是簽名前決定要不要送。所以那一格是空的，而佔住相鄰兩格的是 MetaMask。
+
+PayBox 昨天查得不夠細，今天補完。它的核准走推播通知加 passkey，發生在對話外面，核准畫面的欄位清單裡沒有任何交易模擬。所以我們跟它不是同一個位置做不同的事，是連渲染層都不同。
+
+下午把 MCP server 寫出來了。沒有改 Moss 的 mcp-server，自己建一個把 Moss 當 library 用，理由是 Moss 那份在我的 PR 分支上，加東西會污染 PR，而且它的依賴裡本來就沒有 shmonad。
+
+過程中排掉三個坑。pnpm 會把訊息寫到 stdout，我把 stderr 丟掉還是看得到錯誤，JSON-RPC 混進一個雜訊字元整條就壞了。vite-node 要從專案根解析設定，換個 cwd 完全沒輸出。最後用 tsup 打包成 dist/cli.js 再用 node 跑，從別的目錄啟動也通。
+
+驗到的：tools/list 的線路輸出裡帶著 \_meta.ui.resourceUri，resource 回得出自包含的 HTML，27 個測試全綠。
+
+還沒驗到的是面板到底會不會渲染出來，那只能在 Claude Desktop 裡看。有一個疑點先記著：server 協商出的 protocol version 是 2025-11-25，MCP Apps 規格寫的是 2026-01-26，會不會因為版本不同而不啟用渲染，不知道。
+
+順手自己驗了一件一直沒親手確認的事。公開的 rpc.monad.xyz 實測 debug\_traceCall 可用、chain ID 143、CORS 對任意 origin 開放。免後端這個架構的地基是穩的。回傳的 trace 裡還看到 shMONAD proxy DELEGATECALL 到 implementation，地址跟 adapter 裡寫的常數一致，等於順便驗了一次。
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

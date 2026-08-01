@@ -592,4 +592,37 @@ Agent 交易面临的挑战：
 3. 安全与权限边界（Execution Guardrails）：赋予 Agent 资金划转权限需要极强的链上风控机制，如何确保 Agent 在代码逻辑漏洞或推理偏误时不会清空资金池，是项目方必须打好的硬功底。
    AI 会写代码，标志着它掌握了构建工具的手艺。而 AI 开始交易，意味着它正在步入经济博弈的主战场。
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+Moss（仓库：nishuzumi/moss）是一个专门为 Monad 生态设计的 Agent-Protocol 交互框架（Agent Execution Layer）。
+
+它的核心使命是：把 Monad 生态中的链上协议操作（如 Swap、Wrap、Stake 等）标准化封装为 AI Agent 可以调用的能力。
+
+核心设计理念：做 Agent 的“看门人”，永不持有私钥
+
+Moss的定位非常清晰：它只负责构建（Build）和模拟（Simulate）交易，绝对不负责签名（Sign）和发送（Send）。
+
+传统的区块链 SDK 往往把“生成交易”和“私钥签名”绑在一起，但在 AI Agent 场景下这极度危险。Moss 采用了一种严谨的 discover → load → action → simulate 流程：
+
+1. Discover & Load： 自动感知并加载特定协议（如 Monad 上的 DEX、借贷协议等）的地址和 ABI。
+2. Action（构建 Capability）： Agent 发起意图（如“把 10 个 MON 换成 WMON”），Moss 负责将用户语义转化为未签名的原始交易（Unsigned Transactions）。 
+3. Simulate（链上模拟与验证）： 在没有私钥的情况下，利用 RPC 节点对这笔未签名交易进行预演算（Simulation），解析出结构化的 Receipt 以及有序的状态变更（State Changes）。
+4. 验证与独立签名： 模拟成功且零警告后，Agent 或前端界面可以通过明确的 Receipt 文本跟用户的实际请求进行比对校验，确认无误后才交由外部安全的钱包（如 MCP Agent 或用户硬件钱包）进行签名出块。 
+
+项目的核心架构
+
+* @themoss/core： 基础核心库。定义了 @Protocol（协议声明）、@Capability（动词映射如 wrap/swap，返回操作计划 plan）和 @Query（只读查询）装饰器模式。
+* @themoss/system & @themoss/erc： 系统级通用协议，如对 Monad 原生代币与 WMON（wmon.ts）、ERC-20/721/1155 标准的封装。
+* @themoss/protocol-\*： 针对 Monad 生态中各类特有 DeFi / NFT 协议的适配器包（如 Kuru DEX, Monad Cards, PancakeSwap 等）。
+
+关键技术亮点：
+
+封闭动词集 (Closed-set Verbs)：将复杂的合约方法提炼为统一的用户视角动词（如 swap, wrap, unwrap, supply, borrow 等），让 AI 容易理解。
+
+强类型单位转换：传入的参数会自动根据语义类型处理精度（Decimal Scaling），AI 不需要手动去跟 18 位小数算 10^18。
+
+无私钥本地运行：Node.js 示例代码读取的是 Monad 链上的真实状态，但完全不需要配置私钥或有余额的账户，因为 Moss 只做模拟生成。
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

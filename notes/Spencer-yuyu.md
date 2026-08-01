@@ -209,4 +209,12 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 报名黑客松，和队友继续沟通，基本确定分工和计划
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+Working on黑客松产品文档
+
+<https://docs.google.com/document/d/1KI64Uvyv0fPapm_qtJ8qneIeiRPm5UfXYnaLADVIEYM/edit?usp=sharing>
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

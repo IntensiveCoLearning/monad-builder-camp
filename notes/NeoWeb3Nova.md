@@ -857,4 +857,23 @@ Riso 完成 3 人真人访谈；Neo 跑通 Moss Path B simulate；三人 stand-u
 * `submissions/week-04-hackathon/moss-swap-tech-checklist.md`
 * 全域文档对齐：`README.md`, `docs/schedule.md`, `docs/deliverables.md`, `docs/web3career-platform.md`, `submissions/README.md`
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+\- 文件: daily/2026-08-01.md\
+\- 提交: bc2836c docs(week-04): add Day 5 check-in — Hackathon Start Card submission\
+\- 验证: 已推送 origin/master，工作区干净\
+\
+内容概要（沿用仓库既有 daily 格式）:\
+\
+今日信息\
+&#x20; 2026-08-01（周六）｜Week 4 Day 5 Choose Your First Move\
+&#x20; 学分任务: Hackathon Start Card +30\
+\
+今日完成\
+&#x20; 1\. Start Card 定稿提交（commit 7fbeb8f）——项目定为 Silicon Labor Arbitration\
+&#x20; 2\. 方向收敛说明——Start Card 对齐真实项目，并提醒 Day 2–4 旧卡片（Agent Wallet Flight Recorder）口径待统一\
+&#x20; 3\. 以项目仓库为事实源核验——TaskEscrow 已部署 Testnet、Moss Protocol/MossBridge 已合并、规则引擎 + AI 层已跑通、UI 待建
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

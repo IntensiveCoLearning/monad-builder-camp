@@ -3846,4 +3846,184 @@ User Segmentation
 
 完成 Demo v0.2 后端分析闭环。
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+一、今日目标
+
+今天主要完成 Web3-GrowthOS Demo v0.2 的后端代码重构。
+
+Demo v0.1 已经实现：
+
+链上交易数据
+↓
+数据清洗
+↓
+用户聚合
+↓
+指标计算
+↓
+用户分群
+↓
+API接口
+↓
+Frontend展示
+
+但是 v0.1 存在的问题：
+
+所有业务逻辑集中在 services 文件夹
+模块职责不够清晰
+后续增加 AI 分析、更多增长策略困难
+不符合数据产品/分析平台的工程结构
+
+因此 v0.2 目标：
+
+将原来的：
+
+services/
+cleaning\_service.py
+wallet\_aggregation\_service.py
+metrics\_service.py
+segmentation\_service.py
+
+重构为：
+
+analytics/
+cleaning.py
+user\_profile.py
+metrics.py
+segmentation.py
+
+形成更加接近真实 Web3 数据分析平台的结构。
+
+二、Demo v0.1 原架构问题
+
+1. Service层职责过重
+
+之前：
+
+API
+|
+services
+|
+数据处理逻辑
+
+例如：
+
+wallet\_aggregation\_service.py：
+
+负责：
+
+读取交易
+用户聚合
+用户画像生成
+指标计算
+
+多个职责混合。
+
+问题：
+
+如果未来增加：
+
+NFT 用户分析
+DeFi 用户分析
+用户生命周期分析
+
+代码会越来越难维护。
+
+三、v0.2 新架构设计
+
+新的数据分析层：
+
+backend/
+
+├── api/
+│
+├── analytics/
+│ ├── cleaning.py
+│ ├── user\_profile.py
+│ ├── metrics.py
+│ └── segmentation.py
+│
+├── models/
+│
+├── tests/
+│
+└── main.py
+
+核心思想：
+
+API负责：
+
+输入输出
+
+例如：
+
+上传CSV
+返回JSON
+Analytics负责：
+
+业务分析逻辑
+
+例如：
+
+交易数据
+↓
+清洗
+↓
+用户画像
+↓
+指标
+↓
+用户分群
+四、完成内容
+Step 1：Cleaning模块迁移
+
+原：
+
+services/cleaning\_service.py
+
+迁移：
+
+analytics/cleaning.py
+
+负责：
+
+删除重复交易
+删除缺失数据
+时间格式校验
+金额合法性检查
+
+输入：
+
+raw transaction dataframe
+
+输出：
+
+clean dataframe
+\+
+cleaning report
+
+测试：
+
+运行：
+
+python -m tests.test\_cleaning\_v02
+
+结果：
+
+{
+'original\_rows':3,
+'duplicate\_removed':1,
+'missing\_removed':1,
+'invalid\_timestamp\_removed':0,
+'clean\_rows':1,
+'removed\_rows':2
+}
+
+说明：
+
+清洗模块迁移成功。
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

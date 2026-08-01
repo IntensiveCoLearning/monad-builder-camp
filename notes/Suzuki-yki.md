@@ -1145,4 +1145,10 @@ _这都是我请教AI了解到的知识(｡ì \_ í｡)_
 
 继续迭代我的项目：<https://github.com/Suzuki-yki/With-Lumi>
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+因为moss只能在主网使用，所有现在求助ai让他帮我写代码让moss可以适配测试网
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

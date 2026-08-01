@@ -2660,4 +2660,56 @@ TypeScript 类型只能在编译阶段约束代码，不能阻止用户在运行
 * Review 后端提交的 contract PR，确认待定义项的标注方式。
 * 定义用户侧关键词的展示语义（用户看到某个状态时，界面究竟该说什么）。
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+# 残酷共学打卡｜2026-08-01
+
+## 结论（置信度：高）
+
+今天完成了 moss PR #109 的新一轮修复、复审与推送。代码已推进到 commit `6689dd4`，本地全部验证通过；PR 尚未合并，最新 CI 处于 `action_required`，需要 Owner 手动批准 workflow 后才能真正开始运行。
+
+## 今日完成
+
+最初任务名是“修复合并冲突”，但继续分析后发现，真正的阻塞已经变化：Owner 已完成 rebase 和旧 CI 问题修复，原先的本地实验代码也失去价值。今天的核心工作因此转为解决 Owner 最新提出的架构问题：
+
+* 将 Pendle 官方 `Errors.json` 纳入可追溯、可离线复现的 ABI 生成流程。
+* 删除手写的 revert selector 表。
+* 让 Simulator 根据 `protocol + transaction target` 找到协议声明的 ABI，并通过 `decodeErrorResult` 解码 custom error。
+* 将面向用户的错误解释放回 Protocol 元数据，避免 MCP 层积累 Pendle 专属知识。
+* 补齐参数化错误、错误目标、畸形数据和未知 selector 的回退测试。
+* 修正 ADR 0002，以及 ABI 文件的来源、哈希和链上验证说明。
+* 经过多轮 Standards / Spec review，最终两条审查轴均为 0 finding。
+
+完整通过的本地验证包括：
+
+* 冻结依赖安装、lint、build、typecheck
+* 全部 offline tests
+* 严格 TLS 下的完整 live tests
+* Pendle 155/155
+* Monadscan ABI online gate 4/4
+* `git diff --check`
+
+最终通过普通 fast-forward push 将 PR head 更新到 `6689dd4`，没有 force-push，也没有代替本人发布 GitHub 评论。
+
+## 今日最“残酷”的部分
+
+真正困难的不是写代码，而是不断推翻已经不成立的前提。
+
+一开始我把“新建分支”当作更稳妥的风险控制，但进一步确认后发现，Owner 已经替代了旧本地修改。关键并不是分支名字，而是新提交必须直接建立在最新远端 head 上。另一次，在 Monadscan online test 尚未执行时曾形成本地 commit，但“没有执行”不能算“通过”；因此撤销 commit、补齐 Keychain 中的 API key、跑完全部 gate 后才重新提交。
+
+这两次纠偏让我更明确：工程可信度来自可验证的提交基线与完整测试证据，而不是流程看起来规范，也不是大多数测试已经通过。
+
+## 今日收获
+
+* 合并冲突不能只做文本拼接，必须确认双方语义都被保留。
+* CI 历史失败不等于当前功能失败，要区分代码缺陷、secret 限制和运行环境问题。
+* 手写 selector 是重复事实来源；ABI 才应该决定 error name、参数与 selector。
+* 本地测试全绿仍不等于 PR 已完成：当前最后一道门是 Owner 批准 GitHub Actions workflow。
+
+## 下一步
+
+等待 Owner 点击 “Approve and run workflows”。CI 启动后只读检查结果；若全部绿色，再由我本人发布修复摘要并请求重新 review。
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

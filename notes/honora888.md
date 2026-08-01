@@ -7109,4 +7109,104 @@ web/public/assets/quest-1/bestiary/reentry-devourer-portrait.webp
 
 Quest 1 可以独立演示，且后续 Moss 集成不再依赖修改其核心教学状态机。
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+在修仙故事里，修士渡的是天劫；在链上世界，Builder 渡的劫，往往藏在一行代码里。
+
+《链安修仙录》把真实漏洞化作妖兽：玩家追踪资金流、识破攻击，再用正确的安全模式完成封印。但“噬灵回环兽”只是第一只妖兽。未来，每一个公开漏洞案例，都可以经过 AI 辅助编纂、Foundry 与 Slither 验证、人工审核，转化为新的安全 Quest；学习成果、报告与贡献再通过 Moss 和 Monad 形成可验证记录，继续推动下一批案例诞生。
+
+**一只妖兽是一场修炼，千万个真实漏洞，将共同组成一部持续生长的《漏洞异兽志》。**
+
+<br />
+
+**本次黑客松强调：**
+
+```
+能体验
++ 能理解
++ 能展示
++ 组合真实链上能力
++ Moss on-chain Agent
++ AI 执行或验证真实链上任务
++ Protocol / Adapter / Agent Demo
+```
+
+链安修仙录分别对应：
+
+## 2.1 能体验
+
+用户可以在 Production 网站中完整完成 Quest 1：
+
+```
+入口页
+→ ACT1 妖兽苏醒
+→ ACT2 定位危险外部调用
+→ ACT3 识别重入漏洞
+→ ACT4 回放攻击路径
+→ ACT5 完成 CEI 修复
+→ ACT6 获得奖励、徽记与异兽志
+```
+
+## 2.2 能理解
+
+用户看到的不只是“重入攻击”四个字，而是：
+
+```
+外部调用先发生
+→ 控制权交给攻击合约
+→ receive() 再次进入 withdraw()
+→ 原余额尚未清零
+→ 同一余额被重复使用
+→ Vault 被抽空
+```
+
+修复则被明确表达为：
+
+```
+Checks
+→ Effects
+→ Interactions
+```
+
+## 2.3 能展示
+
+评委可以现场看到：
+
+* 完整 Quest；
+* Foundry 测试；
+* Invariant；
+* Slither 修复前后对照；
+* GuardianQuest 合约；
+* Monad Testnet 交易；
+* Quest Content Hash；
+* Report Hash；
+* Badge；
+* Moss `discover → load → action → simulate`；
+* Ordered Receipt；
+* Warning 阻断；
+* 用户钱包签名；
+* 执行前后链上状态变化。
+
+## 2.4 真实 Agent 能力
+
+项目计划将GuardianQuest 接入 Moss，形成可复用 Adapter，而不是一次性 ethers.js 脚本：
+
+```
+自然语言意图
+→ discover Guardian
+→ load Query / Capability
+→ action 构造未签名交易
+→ simulate
+→ Ordered Receipt
+→ Warning 检查
+→ 用户确认
+→ 钱包签名
+→ Monad 执行
+→ 状态复核
+```
+
+***
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

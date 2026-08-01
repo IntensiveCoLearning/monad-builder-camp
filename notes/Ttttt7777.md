@@ -8213,4 +8213,700 @@ comic_id
 
 ***
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+# EIP-4844 结构化阅读与拆解报告
+
+## 1. 提案名称和编号
+
+**提案名称：EIP-4844: Shard Blob Transactions（分片 Blob 交易）**
+
+别名：**Proto-Danksharding（原型 Danksharding）**
+
+提案编号：
+
+> EIP-4844
+
+提案类型：
+
+> Ethereum Improvement Proposal（以太坊改进提案）
+
+状态：
+
+> Final（已完成）
+
+原文链接：
+
+[EIP-4844: Shard Blob Transactions](https://eips.ethereum.org/EIPS/eip-4844?utm_source=chatgpt.com)
+
+该提案由 Vitalik Buterin、Dankrad Feist 等多位 Ethereum 核心研究者提出，目标是在完整 Danksharding 实现之前，为 Rollup 提供更便宜的数据可用性方案。([Ethereum Improvement Proposals](https://eips.ethereum.org/EIPS/eip-4844?utm_source=chatgpt.com "EIP-4844: Shard Blob Transactions"))
+
+***
+
+# 2. 背景问题：EIP-4844 出现前解决什么问题？
+
+在 EIP-4844 出现之前，以太坊面临一个核心扩容问题：
+
+> Ethereum 主网计算能力有限，而 Layer2 Rollup 需要不断向 Layer1 提交数据，因此数据费用成为最大的成本。
+
+简单理解：
+
+以前 Rollup 工作流程：
+
+```
+用户交易
+   ↓
+Layer2 执行
+   ↓
+打包大量交易数据
+   ↓
+发送到 Ethereum 主网 calldata
+   ↓
+支付昂贵 Gas
+
+```
+
+问题：
+
+### ① Rollup 依赖 Ethereum 作为数据可用层
+
+Optimism、Arbitrum、zkSync 等 Rollup 不直接保存全部交易，而是：
+
+* 在 L2 执行交易
+* 把交易证明和数据提交 Ethereum
+* Ethereum 保证数据不会被篡改
+
+但是提交数据需要使用：
+
+```
+calldata
+
+```
+
+而 calldata 本质上属于：
+
+> Ethereum 普通交易数据空间
+
+它不仅用于 Rollup，还用于所有智能合约调用。
+
+因此：
+
+* DeFi 活跃 → Gas 上涨
+* NFT 热潮 → Gas 上涨
+* Rollup 数据提交 → 成本上涨
+
+***
+
+### ② 完整 Danksharding 研发周期太长
+
+Ethereum 长期目标：
+
+```
+Ethereum
+    |
+    |
+Data Sharding
+    |
+大量低成本数据空间
+    |
+Rollup 无限扩展
+
+```
+
+但是完整 Danksharding 需要：
+
+* 数据可用性采样（DAS）
+* 新共识机制
+* 网络层调整
+
+开发周期较长。
+
+所以社区提出：
+
+> 能不能先实现 Danksharding 最关键的一部分？
+
+这就是 EIP-4844。
+
+([Ethereum Improvement Proposals](https://eips.ethereum.org/EIPS/eip-4844?utm_source=chatgpt.com "EIP-4844: Shard Blob Transactions"))
+
+***
+
+# 3. 核心方案（用自己的语言解释）
+
+EIP-4844 的核心思想：
+
+> 给 Rollup 创建一种专门的数据空间，不再和普通交易竞争 Gas。
+
+这个新空间叫：
+
+## Blob
+
+全称：
+
+```
+Binary Large Object
+
+```
+
+可以理解为：
+
+> 临时存储的大块数据包。
+
+***
+
+## 以前：
+
+Rollup 使用 calldata：
+
+```
+Ethereum Block
+
+├── 普通交易
+├── 智能合约调用
+└── Rollup 数据
+
+```
+
+所有东西抢同一个空间。
+
+***
+
+## EIP-4844 后：
+
+```
+Ethereum Block
+
+├── 普通交易空间
+│
+└── Blob 数据空间
+       |
+       |
+       └── Rollup 专用
+
+```
+
+两个市场分离。
+
+***
+
+## Blob 的特点：
+
+### 1. 不直接进入 EVM
+
+普通 calldata：
+
+```
+数据
+ ↓
+EVM
+ ↓
+执行
+
+```
+
+Blob：
+
+```
+数据
+ ↓
+验证存在
+ ↓
+不参与 EVM 执行
+
+```
+
+也就是说：
+
+智能合约不能读取 Blob 内容。
+
+它只能读取：
+
+```
+Blob commitment
+
+```
+
+即：
+
+> "这个数据确实存在，并且没有被修改"
+
+***
+
+### 2. Blob 是临时保存
+
+Blob 不需要永久存储。
+
+原因：
+
+Rollup 只需要：
+
+* 一段时间的数据证明
+* 用户完成验证
+
+之后历史数据可以删除。
+
+这样降低：
+
+* 节点存储压力
+* 网络压力
+
+***
+
+### 3. 独立 Blob Gas 市场
+
+以前：
+
+```
+Gas价格
+=
+所有交易竞争
+
+```
+
+现在：
+
+```
+Execution Gas
+
++
+
+Blob Gas
+
+```
+
+两个市场分开。
+
+类似：
+
+普通公路收费
+
+和
+
+货运专用高速收费。
+
+***
+
+# 4. 影响对象分析
+
+## ① 普通 Ethereum 用户
+
+影响：
+
+### 正面：
+
+Rollup 手续费下降。
+
+例如：
+
+* Arbitrum
+* Optimism
+* zkSync
+
+用户转账成本降低。
+
+未来更多应用可以迁移到 Layer2。
+
+***
+
+### 负面：
+
+普通用户直接使用 Ethereum L1：
+
+影响较小。
+
+因为 EIP-4844 主要优化：
+
+> 数据可用性成本
+
+不是降低所有 L1 Gas。
+
+***
+
+# ② Rollup 开发者
+
+影响最大。
+
+以前：
+
+```
+成本：
+
+提交 calldata
+$$$$$
+
+```
+
+之后：
+
+```
+提交 blob
+
+$
+
+```
+
+优势：
+
+* 更低运营成本
+* 更容易扩大 TPS
+* 可以支持更多应用
+
+例如：
+
+游戏：
+
+以前：
+
+```
+链上操作太贵
+
+```
+
+以后：
+
+```
+大量低价值操作进入 L2
+
+```
+
+***
+
+# ③ Ethereum 节点运营者
+
+影响：
+
+增加新的数据处理需求。
+
+节点需要：
+
+* 验证 Blob
+* 保存 Blob 一段时间
+
+但是 Blob 有大小限制。
+
+避免：
+
+> 节点存储无限膨胀。
+
+***
+
+# ④ 应用开发者
+
+影响：
+
+更多产品可能实现：
+
+* 链游
+* 高频交易
+* 社交应用
+* Web3 游戏经济系统
+
+***
+
+# 5. 关键术语整理
+
+| 术语                         | 解释                          |
+| :------------------------- | :-------------------------- |
+| Rollup                     | 将大量交易移到链下执行，再提交结果到 Ethereum |
+| Data Availability（数据可用性）   | 保证交易数据能够被网络获取               |
+| Blob                       | EIP-4844 引入的大块临时数据空间        |
+| Blob Transaction           | 携带 Blob 数据的新交易类型            |
+| Calldata                   | 过去 Rollup 存储数据的方法           |
+| Proto-Danksharding         | 完整 Danksharding 前的过渡版本      |
+| Danksharding               | Ethereum 下一代数据扩容方案          |
+| KZG Commitment             | 用于证明 Blob 数据正确性的密码学承诺       |
+| Blob Gas                   | Blob 专用费用市场                 |
+| Data Availability Sampling | 未来 Danksharding 使用的数据验证方式   |
+
+([Ethereum Improvement Proposals](https://eips.ethereum.org/EIPS/eip-4844?utm_source=chatgpt.com "EIP-4844: Shard Blob Transactions"))
+
+***
+
+# 6. 可能存在的争议、风险和反对意见
+
+## 风险 1：增加网络复杂度
+
+EIP-4844 引入：
+
+* 新交易类型
+* 新费用模型
+* 新验证逻辑
+
+意味着：
+
+客户端：
+
+* Geth
+* Nethermind
+* Erigon
+
+都需要升级。
+
+***
+
+## 风险 2：Blob 市场可能出现价格波动
+
+Blob Gas 独立后：
+
+可能出现：
+
+```
+Rollup 集体竞争 Blob
+
+↓
+
+Blob Gas 上涨
+
+```
+
+尤其未来 L2 数量大量增加。
+
+***
+
+## 风险 3：中心化风险
+
+虽然 EIP-4844 降低成本，但是：
+
+大型 Rollup：
+
+* Optimism
+* Arbitrum
+* zkSync
+
+可能进一步扩大市场份额。
+
+小型 Rollup 可能竞争困难。
+
+***
+
+## 风险 4：数据长期保存问题
+
+Blob 是临时数据。
+
+问题：
+
+如果未来需要：
+
+* 查询历史 Rollup 数据
+* 数据恢复
+
+谁负责保存？
+
+可能需要：
+
+* 归档节点
+* 第三方存储
+* 去中心化存储网络
+
+***
+
+# 7. 产品启发（重点）
+
+## 启发 1：低成本链上应用时代可能到来
+
+以前：
+
+```
+链上计算贵
+
+↓
+
+只能做金融
+
+```
+
+未来：
+
+```
+低成本数据
+
+↓
+
+更多互联网产品进入 Web3
+
+```
+
+例如：
+
+### Web3 游戏
+
+以前：
+
+玩家操作：
+
+```
+打一局游戏
+=
+几十美元 Gas
+
+```
+
+不可行。
+
+未来：
+
+```
+L2 + Blob
+
+↓
+
+大量游戏行为链上化
+
+```
+
+***
+
+## 启发 2：Monad 等高性能链可以借鉴类似设计
+
+对于 Monad 这样的高性能 EVM：
+
+可以考虑：
+
+```
+执行层优化
+
++
+
+数据层优化
+
+```
+
+不仅提高 TPS。
+
+还需要降低：
+
+* 数据成本
+* 状态增长
+* 应用部署成本
+
+***
+
+## 启发 3：开发新的基础设施产品
+
+可能出现：
+
+### Blob 服务商
+
+类似：
+
+```
+AWS S3
+
+↓
+
+Web3 Blob Storage
+
+```
+
+提供：
+
+* 数据上传
+* Blob 管理
+* Rollup 接入
+
+***
+
+## 启发 4：降低创业门槛
+
+以前：
+
+开发 Web3 产品：
+
+```
+用户成本高
+↓
+
+无法增长
+
+```
+
+未来：
+
+```
+低手续费
+
+↓
+
+普通用户进入
+
+```
+
+可能出现：
+
+* Web3 Reddit
+* Web3 TikTok
+* Web3 游戏
+* 去中心化 AI 应用
+
+***
+
+# 8. 阅读后仍然存在的问题
+
+## 问题 1
+
+如果未来 Rollup 数量达到几百甚至几千个：
+
+Blob 空间是否足够？
+
+***
+
+## 问题 2
+
+Blob 数据删除后：
+
+几十年后的链上应用如何验证历史状态？
+
+***
+
+## 问题 3
+
+未来 Ethereum 完整 Danksharding 实现后：
+
+EIP-4844 是否会被替代？
+
+***
+
+## 问题 4
+
+Blob Gas 市场是否会形成新的 MEV 竞争？
+
+***
+
+# 9. 我的总结理解
+
+EIP-4844 本质不是简单降低 Gas。
+
+它做的是：
+
+> 把 Ethereum 从“所有数据都挤在一个收费通道”的模式，升级成“计算和数据分离”的架构。
+
+以前：
+
+```
+Ethereum = 计算 + 数据 + 存储
+
+```
+
+未来：
+
+```
+Ethereum
+
+执行层：
+处理交易
+
+数据层：
+提供廉价数据空间
+
+Rollup：
+负责扩展应用
+
+```
+
+因此 EIP-4844 是 Ethereum 从单链执行平台，向 Rollup 中心化扩展平台转型的重要一步。([Ethereum Improvement Proposals](https://eips.ethereum.org/EIPS/eip-4844?utm_source=chatgpt.com "EIP-4844: Shard Blob Transactions"))
+
+***
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

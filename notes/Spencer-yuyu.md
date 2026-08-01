@@ -1,6 +1,6 @@
 - GitHub ID: 208880918
 - Name: Spencer-yuyu
-- Timezone: UTC+1
+- Timezone: UTC+0
 - Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
@@ -203,4 +203,10 @@ AI生成「积分记录」Solidity合约，第一次看合约
 
 查看队友vibe coding结果
 <!-- DAILY_CHECKIN_2026-07-30_END -->
+
+<!-- DAILY_CHECKIN_2026-07-31_START -->
+# 2026-07-31
+
+报名黑客松，和队友继续沟通，基本确定分工和计划
+<!-- DAILY_CHECKIN_2026-07-31_END -->
 <!-- Content_END -->

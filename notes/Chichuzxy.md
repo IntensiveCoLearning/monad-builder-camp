@@ -2417,4 +2417,48 @@ Web3 行业已形成四大核心赛道，基础信息汇总如下：
 
 **下一步行动**：完善交互脚本，准备 Week 3 团队协作与用户测试。
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+## **8.01 Monad Builder Camp 学习日志**
+
+### **完成事项**
+
+**Tech Track 项目：AI Monad Explorer**
+
+* 搭建 Foundry 项目，编写 AnalysisRegistry.sol 智能合约
+* 4/4 单元测试通过
+* 集成 Ollama (qwen2.5:1.5b) AI 交易分析流水线
+* 部署到 Monad Testnet (Chain 10143)
+* 合约地址：0x82344C1BD7720cfddbD5aec33E99571DC6628EA5
+* 部署 Tx：0xf108bdb2bef93527b3777e08e1fbf2fbf680f89630995a815c767031a4c5b2bc
+* GitHub：[GitHub - Chichuzxy/ai-monad-explorer · GitHub](https://github.com/Chichuzxy/ai-monad-explorer "https://github.com/Chichuzxy/ai-monad-explorer")
+
+**Moss 开源贡献**
+
+* 阅读 Moss 项目文档，理解 discover → load → action → simulate 架构
+* Fork Moss 并开发 @themoss/protocol-ai-explorer 适配器
+* 向 Moss 提交 PR：[feat: add AI Explorer protocol adapter by Chichuzxy · Pull Request #162 · nishuzumi/moss · GitHub](https://github.com/nishuzumi/moss/pull/162 "https://github.com/nishuzumi/moss/pull/162")
+
+**平台任务提交**
+
+* 完成 Week 2 全部 12 项任务文档（390 学分）
+
+### **AI 工具使用**
+
+* Hermes Agent (DeepSeek v4)：项目搭建、合约编写、文档生成
+* Ollama qwen2.5:1.5b：链上交易 AI 分析
+* GitHub Copilot / gh CLI：仓库管理和 PR 提交
+
+### **踩坑记录**
+
+* .env 私钥需加 0x 前缀，否则 forge script 解析失败
+* Ollama qwen 将 Monad 误读为 Monero，需人工审核 AI 输出
+* Moss fork 后需手动设置 remote（gh repo fork 默认不改 origin）
+
+### **下一步**
+
+* Week 3/4：组队协作、Mini Demo、Hackathon 冲刺
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

@@ -558,4 +558,26 @@ PayBox 昨天查得不夠細，今天補完。它的核准走推播通知加 pas
 
 順手自己驗了一件一直沒親手確認的事。公開的 rpc.monad.xyz 實測 debug\_traceCall 可用、chain ID 143、CORS 對任意 origin 開放。免後端這個架構的地基是穩的。回傳的 trace 裡還看到 shMONAD proxy DELEGATECALL 到 implementation，地址跟 adapter 裡寫的常數一致，等於順便驗了一次。
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+## Day 27｜同一種錯犯了兩次：拿假設當現實
+
+今天把真的管線接上了。agent 呼叫工具、對 Monad 主網跑 debug\_traceCall、Moss 解讀成 Receipt、組成面板要的資料。129 個測試，其中四個每次都真的打主網。傳輸方式也重新決定過，原本要用本機 stdio 因為好接，查完官方文件與四個 GitHub 實例改成 remote HTTPS，Anthropic 自己把 remote 定位為 recommended、stdio 與 mcpb 為 secondary，而且只有 remote 能讓評審不裝東西就試。
+
+但今天真正學到的是兩次同樣的錯。
+
+第一次在凌晨。管線通了之後我自己開面板看，上面寫的是「Native MON Transfer: 250000000000000000 from 0xcccccccc… to 0x1b68626d…」。金額是 wei，地址是完整四十二個字元。這個產品的前提是非技術使用者三十秒讀懂，這樣直接失敗。
+
+問題不在渲染寫錯。我一直拿自己手寫的 fixture 在跑測試，全綠。而那些 fixture 的資料形狀是我自己編的，跟 Moss 真實輸出根本不同。測試保護的是一個不存在的世界。修法是加一層轉換拿 Moss 的結構化資料重寫成人話，fixture 的形狀改成跟主網實測一模一樣並在檔頭記錄實測日期，再加一組回歸測試掃全部情境，出現完整地址或未格式化長整數就失敗。過程中還抓到一個語意錯，我原本把 Deposit 標成「取得」，但那是協議的記帳事件不是價值移動，前面兩行已經算過，標成取得等於重複計算。
+
+第二次在晚上。我一直把 MCP App 的 HTML 面板當唯一形態，終端機文字版當退路。查了官方的 client matrix 才發現順序反了：支援 MCP Apps 渲染的只有 Claude web 和 Claude Desktop，Claude Code、Codex 這些 CLI 一律不在內。而我自己列的 agent 使用場景第一個就是 Claude Code。
+
+所以文字版不是備案，是那批 host 上的主要形態。今天把它寫出來了，跟 HTML 版共用同一份轉換邏輯，內容一致只是排版媒介不同。順帶把後天的 go/no-go 風險降下來，HTML 渲染就算不通，產品在 CLI agent 上是完整的。
+
+中間還踩了一個小坑值得記。我用 node -e 寫 Claude Desktop 的設定檔，路徑的反斜線經過 bash 雙引號和 JS 字串兩層處理被吃光，變成 D:devmonad-camp…，server 當然啟不動。改用正斜線加獨立腳本檔寫入就好了。
+
+今天的共同教訓是：測試綠不等於東西能用，查到的規格不等於實際支援的清單。兩次都是我拿腦中的假設當現實，而抓出來的方法都一樣，就是拿真東西跑一次然後自己當使用者看一遍。
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

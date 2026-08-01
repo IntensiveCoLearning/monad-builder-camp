@@ -4701,4 +4701,153 @@ Moss [PR #152](https://github.com/nishuzumi/moss/pull/152) 新增了手动触发
 
 真正可靠的工程记录需要同时保存版本、SHA、环境、证据来源、执行边界和失败条件。
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+## 一、今日概览
+
+今天的工作主要集中在 Moss 的开源贡献与代码审查，包括：
+
+* 接受 FastLane 相关任务并审查 PR #158。
+* 更新 Kuru Receipt PR #138。
+* 更新 MCP 依赖安全 PR #148。
+* 审查 Moss 的 Live CI 与 Runtime 文档改动。
+* 跟进维护者反馈、测试结果和主分支变化。
+
+今天没有向 Mini Demo 仓库提交新代码，主要精力用于 Moss 上游仓库的真实工程建设。
+
+## 二、FastLane 任务与 PR 审查
+
+我正式确认接受 Moss [Issue #12](https://github.com/nishuzumi/moss/issues/12) 的任务。
+
+由于 FastLane 已经存在正在推进的实现，我没有直接重复开发，而是先向维护者确认剩余范围，并对现有 [PR #158](https://github.com/nishuzumi/moss/pull/158) 进行独立审查。
+
+### 已完成的检查
+
+* 检查 FastLane 事件是否验证真实 emitter。
+* 检查 deposit、redeem、completeUnstake 的原生资产转账是否绑定正确端点。
+* 检查地址比较是否兼容大小写。
+* 独立运行 FastLane 测试，29/29 通过。
+* 测试范围包含 9 个 Monad 主网场景。
+
+### 发现的问题
+
+在 `boostYieldReceipt` 中，如果 FastLane Staking 合约发出多个 `Transfer`，解析器会默认将第一个事件作为顶层结果，再把后续事件交给 ERC-20 Receipt。
+
+当前证据无法证明第一个候选一定是唯一正确结果，因此这种行为可能让存在歧义的 Receipt 继续通过解析。
+
+我提交了正式的 `CHANGES_REQUESTED` Review，要求：
+
+* FastLane 发出的结果候选必须严格只有一个。
+* 增加重复候选的负向测试。
+* 其他 Token 合约发出的 Transfer 继续由 ERC-20 Receipt 处理。
+* 保留现有已经验证正确的 emitter 和端点绑定逻辑。
+
+当前 PR #158 仍处于开放状态，等待作者修改。修改完成后，我会继续进行复审。
+
+## 三、更新 Kuru Receipt PR
+
+我将 [PR #138](https://github.com/nishuzumi/moss/pull/138) 更新到当前 `main@0618926`。
+
+该 PR 解决 Kuru 合法交易在出现 `FlipOrderUpdated` 或 `FlippedOrderCreated` 时，被 Moss 当作未知变化而停止解析的问题。
+
+### 核心设计
+
+* 将两个 Flip Order 事件表示为 ReceiptChange。
+* 只记录事件直接提供的事实，不推断用户意图。
+* 要求 Flip Order 事件后紧邻同市场的 `Trade`。
+* 要求该 Trade 的 taker 是 Kuru Router。
+* 保留所有原始 Change 的身份、数量和顺序。
+* 对反向顺序、跨市场、存在中间事件和孤立事件继续失败关闭。
+
+### 更新与验证
+
+* 使用 `range-diff` 比较更新前后的 3 个功能提交。
+* 3 个提交全部显示为等价，没有行为漂移。
+* Frozen install、lint、build、typecheck 全部通过。
+* Offline 测试通过。
+* 完整测试 259 项全部通过。
+* Kuru 专项测试 27/27 通过。
+* Monad 主网 Swap 模拟成功，没有产生 Warning。
+* Linux CI 与 Windows Offline CI 均通过。
+
+当前环境没有 `MONADSCAN_API_KEY`，因此没有重新运行依赖该密钥的 Explorer 测试。该限制已经在 PR 中公开说明。
+
+PR #138 当前仍为开放状态，等待维护者最终审查。
+
+## 四、更新 MCP 依赖安全 PR
+
+我将 [PR #148](https://github.com/nishuzumi/moss/pull/148) 同步到最新主分支。
+
+该 PR 主要处理 MCP Server 生产依赖中的安全公告。
+
+### 依赖变化
+
+* MCP SDK 更新到 1.30.0。
+* Hono 更新到 2.0.12。
+* fast-uri 更新到 3.1.4。
+* PostCSS 固定到已修复的 8.5.18。
+
+更新过程中，非冻结安装发现新加入的 aPriori Workspace 对应 lockfile importer 已过期。我重新生成并人工核对了锁文件差异，确认没有混入无关依赖变化。
+
+### 安全与测试结果
+
+* 14 个 Workspace 的 frozen install 通过。
+* `pnpm audit --prod` 无已知漏洞。
+* Moderate 级别审计通过。
+* 完整审计只剩一个开发环境中的低风险 esbuild 提示。
+* Peer check、lint、build、typecheck 全部通过。
+* Offline 测试 236 项通过、14 项跳过。
+* Live 测试 250/250 通过。
+* Linux CI 与 Windows Offline CI 均通过。
+* `git diff --check` 通过。
+
+我没有强制升级到超出 `tsup` 声明范围的 esbuild 版本，因为这会引入未经支持的依赖组合，而现有问题仅影响开发服务器并且风险等级较低。
+
+PR #148 当前仍为开放状态，等待维护者 Review。
+
+## 五、Moss CI 与 Runtime 审查
+
+### PR #152：Live Verification Workflow
+
+我检查了 [PR #152](https://github.com/nishuzumi/moss/pull/152) 的首次手动 Live Workflow 运行。
+
+运行结果证明该 Workflow 可以对指定 PR 执行真实 Live 测试，但我也发现其信任边界仍可加强：
+
+* PR 编号和 Ref 都可能发生变化。
+* Workflow 需要明确绑定审核过的 Merge SHA。
+* 应增加必填的 `expected_merge_sha`。
+* Checkout 后应立即验证 SHA。
+* SHA 不匹配时，应在安装、构建和测试前失败关闭。
+
+### PR #153：Runtime 文档与错误处理
+
+我对 [PR #153](https://github.com/nishuzumi/moss/pull/153) 提交了 `CHANGES_REQUESTED` Review。
+
+主要发现：
+
+* 无效 `MOSS_RPC_URL` 的错误信息会回显完整 RPC 地址。
+* 如果 RPC URL 包含 API Key，可能造成敏感信息泄露。
+* 部分文档和 Workflow 注释仍引用已经移除的 `DEFAULT_RPC_URL`。
+* 代码、文档和运行说明需要保持一致。
+
+该 PR 后续已被维护者合并。
+
+## 六、Mini Demo 状态
+
+今天 [moss-mini-demo](https://github.com/Moss-Mini-Demo/moss-mini-demo) 没有新增 Commit 或 PR。
+
+Mini Demo 仍维持此前已完成的 Preflight 流程和仓库状态。今天没有将已有成果重复记录为新增产出，主要时间投入到了 Moss 上游仓库的代码维护、安全修复和独立审查中。
+
+## 七、今日收获
+
+1. 测试全部通过并不代表逻辑没有歧义。PR #158 的多个 Transfer 候选说明，仍需人工检查证据是否足以支持解析结果。
+2. Receipt 设计不只是解析事件，还需要保证事件来源、顺序、端点和唯一性都能被验证。
+3. CI 不仅要运行成功，还需要绑定准确的 Commit SHA，证明测试对象就是被审查的代码。
+4. 依赖修复不能只追求版本最新，还要检查上游声明范围、锁文件变化和真实风险等级。
+5. 开源贡献不仅是提交代码，也包括复现问题、独立测试、提出负向案例、跟进维护者和完成复审。
+
+今天围绕 Moss 推进了 FastLane 审查、Kuru Receipt、MCP 依赖安全和 CI 信任边界四项工作。相比单纯增加功能，今天更关注系统能否基于充分证据安全运行，以及测试结果是否真正可信。
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

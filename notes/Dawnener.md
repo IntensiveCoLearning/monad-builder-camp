@@ -171,4 +171,10 @@
 
 队友已完成abi复测，目前正在将adapter转化为可展示demo
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+队友已完成api复测，开始进行adapter接入demo，完成后再次进行测试
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

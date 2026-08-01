@@ -7209,4 +7209,72 @@ Checks
 
 ***
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+## 阶段 8：Monad 只读 API 冻结复核 ⏳
+
+### 目标
+
+完成 Quest 1 链上核验的最后证据门。
+
+### 必须完成
+
+* `completed=false` 真实验证；
+
+* `completed=true` 可信地址验证；
+
+* `reportHash`；
+
+* `badgeBalance`；
+
+* Chain ID；
+
+* GuardianQuest 地址；
+
+* Explorer 链接；
+
+* Production Route Handler。
+
+### API 硬化
+
+* 校验 `jsonrpc === "2.0"`；
+
+* 校验响应 `id`；
+
+* 校验 `result` 十六进制格式；
+
+* 校验 ABI 返回长度；
+
+* Runtime Schema；
+
+* Timeout；
+
+* `no-store`；
+
+* 错误类型区分；
+
+* 日志脱敏；
+
+* 输入长度限制；
+
+* 必要 Rate Limit。
+
+### 边界
+
+浏览器不能指定：
+
+* RPC；
+
+* 合约地址；
+
+* selector；
+
+* 任意 calldata；
+
+* 写方法；
+
+* 私钥。
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

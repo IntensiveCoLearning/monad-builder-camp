@@ -611,4 +611,20 @@ production build: passed
 
 今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-31.md
 <!-- DAILY_CHECKIN_2026-07-31_END -->
+
+<!-- DAILY_CHECKIN_2026-08-01_START -->
+# 2026-08-01
+
+今天继续完善 OddLane 的短周期预测市场体验，重点不再只是订单簿交易，而是把“市场到期后的用户闭环”做完整。
+
+现在的流程会明确覆盖：市场关闭、等待链上结算、展示本轮结果与可领取资金、进入下一轮，以及保留上一轮的领取入口。即使用户还有上一轮未领取的资产，也不需要先领取才能继续参与新一轮交易。
+
+今天还重点确认了前端展示边界：Pyth 价格只作为参考价和链上结算依据，真实成交价格仍然来自用户订单；没有真实盘口时的价格只能作为估算，不能伪装成真实流动性或保证成交。
+
+下一步会继续核对 Faucet、入金、下单、成交、结算、赎回和下一轮轮转的完整 Demo 路径，确保前端状态和链上最终事实一致。
+
+<br />
+
+今日学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-01.md](https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-31.md)
+<!-- DAILY_CHECKIN_2026-08-01_END -->
 <!-- Content_END -->

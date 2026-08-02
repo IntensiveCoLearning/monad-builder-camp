@@ -160,4 +160,11 @@ diannao dtaika le
 
 周五忘了打卡，还需要打卡么都在黑客松了。队友已经开始搭好架构和部分代码了
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+补打卡，开始黑客松中。\
+周末忙去了，只有现在加班。
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

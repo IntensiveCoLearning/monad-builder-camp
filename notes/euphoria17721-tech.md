@@ -1911,4 +1911,95 @@ AI 在这周帮我做了很多结构化整理，比如把项目想法转成测�
 一句话总结：\
 **我这周学到的是，早期项目最重要的不只是完成产出，而是尽快把想法放到用户面前，确认它有没有被理解、有没有被需要，以及团队下一步到底该做什么。**
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+Pitch Deck: Monad Rank Rush
+
+## Slide 1: Title
+
+**Monad Rank Rush**\
+30-second onchain social gaming on Monad.
+
+Speaker note: 我们做的是一个面向普通用户的 Consumer Crypto 小游戏，让新人不用先理解复杂 DeFi，也能通过挑战、排名和徽章体验链上互动。
+
+## Slide 2: Problem
+
+Web3 新人常见问题：
+
+* 产品太金融化，进入门槛高。
+* 链上交互反馈慢，用户容易放弃。
+* 用户很难理解“为什么这个行为需要上链”。
+* 社区活动常常只有任务打卡，缺少游戏感和传播点。
+
+Speaker note: 我们想解决的不是单纯做一个游戏，而是让链上交互变得更轻、更快、更容易被分享。
+
+## Slide 3: Solution
+
+Monad Rank Rush 是一个 30 秒挑战游戏：
+
+* 连接钱包
+* 开始 30 秒点击挑战
+* 提交最终分数
+* 进入排行榜
+* 解锁徽章
+* 生成 Meme 战绩卡并分享
+
+Speaker note: 用户只需要完成一个很短的挑战，就能看到成绩、排名和身份反馈。
+
+## Slide 4: Why Monad
+
+这个产品适合 Monad 的原因：
+
+* 高频互动需要低延迟反馈。
+* 排行榜和徽章需要低成本状态记录。
+* EVM 兼容方便后续接入钱包、合约和现有前端工具。
+* Consumer Crypto 需要接近 Web2 小游戏的顺滑体验。
+
+Speaker note: 我们不是简单说 Monad 更快，而是因为这个产品本身依赖频繁互动、重复挑战和实时反馈。
+
+## Slide 5: Product Demo
+
+Demo 展示路径：
+
+1. Connect Wallet
+2. Start 30s Round
+3. Tap to Score
+4. Submit Score
+5. View Leaderboard
+6. Unlock Badge
+7. Share Meme Result Card
+
+Speaker note: 当前 Demo 是前端可运行版本，展示了完整用户路径。
+
+## Slide 6: Onchain Design
+
+| Offchain | Onchain |
+| :------- | :------ |
+| 点击过程     | 最终成绩    |
+| 动画反馈     | 任务完成证明  |
+| 连击状态     | 奖励领取记录  |
+| 临时分数     | 赛季徽章    |
+| UI 反馈    | 排行榜可信来源 |
+
+Speaker note: 不是所有行为都应该上链。我们的判断是：过程留在前端，结果和身份记录上链。
+
+## Slide 7: Growth Loop
+
+Play -> Score -> Rank -> Badge -> Meme Card -> Share -> Friend Challenge -> Replay
+
+Speaker note: Ops 传播点来自排行榜、徽章和 Meme 卡。用户不是被动完成任务，而是有理由邀请朋友挑战。
+
+## Slide 8: Next Steps
+
+* 部署分数提交合约
+* 接入真实钱包交易
+* 生成 MonadVision 交易链接
+* 完善徽章或 NFT Badge
+* 发起 7 天排行榜 Campaign
+* 收集 30-100 名用户测试反馈
+
+Speaker note: Week 4 目标是把 Prototype 打磨成可展示、可传播、可继续开发的产品。
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

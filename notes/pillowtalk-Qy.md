@@ -4850,4 +4850,175 @@ Mini Demo 仍维持此前已完成的 Preflight 流程和仓库状态。今天�
 
 今天围绕 Moss 推进了 FastLane 审查、Kuru Receipt、MCP 依赖安全和 CI 信任边界四项工作。相比单纯增加功能，今天更关注系统能否基于充分证据安全运行，以及测试结果是否真正可信。
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+## 一、今日概览
+
+今天的工作集中在两个方向：
+
+1. 继续参与 Moss 上游仓库的代码审查，完成 FastLane 和 ABI Tools 两项最终复审。
+2. 推进 Mini Demo 的 STOP 展示规范和 Decision Engine 实施计划。
+
+今日可验证产出包括：
+
+* 2 次 Moss `APPROVED` Review。
+* 1 个 Mini Demo PR 合并。
+* 1 个 Mini Demo Issue 关闭。
+* 1 份 Decision Engine Work Plan 完成审查并修订为 v2。
+* Mini Demo 主分支质量门禁持续通过。
+
+## 二、Moss FastLane 最终复审
+
+我对 [Moss PR #158](https://github.com/nishuzumi/moss/pull/158) 在最新提交 `1bf4c7d` 上进行了最终复审。
+
+这个 PR 是对我此前 FastLane Receipt 审查意见的修复。经过更新后，以下问题已经解决：
+
+* FastLane 事件必须由正确的合约地址发出。
+* deposit、redeem 和 completeUnstake 的原生资产转账同时绑定事件端点与金额。
+* boostYield 必须存在唯一的 `BoostYield` 事件。
+* 必须存在唯一、由 Vault 发出且属于对应 sender 的 shMON Burn。
+* 重复候选、伪造 emitter、错误端点、错误 Token、非 Burn Transfer 和 `sharesBurned: false` 全部失败关闭。
+* 无关 Token Transfer 继续交给 ERC-20 Receipt 处理。
+* Live boostYield 测试要求得到完整且零 Warning 的 Receipt。
+
+### 独立验证结果
+
+* Frozen install 通过。
+* Lint、build、typecheck 通过。
+* Offline 测试 209 项通过、17 项跳过。
+* 完整 Live 测试 226/226 通过。
+* FastLane 专项测试 41/41 通过。
+* 9 个 Monad 主网场景全部通过。
+* Linux CI 与 Windows Offline CI 均为绿色。
+
+此前一次 Linux 失败来自 Monad RPC 在 `debug_traceCall` 时返回请求频率限制，并非 Receipt 或断言失败。
+
+由于没有 `MONADSCAN_API_KEY`，未在本地重新执行 keyed ABI 测试。该 PR 不修改 ABI 推导路径，因此不构成本次 Receipt 修复的阻塞项。
+
+最终我提交了 `APPROVED` Review，并在 [Issue #12](https://github.com/nishuzumi/moss/issues/12) 中记录验证结果。目前 FastLane 已识别的实现与 Receipt 安全问题基本得到覆盖，下一步仍需维护者确认是否还有额外实现任务。
+
+关于 `completeUnstake` 的 RiskLabel，目前它表现为纯资金流入，不符合现有 `debt` 表示“新增未来偿还义务”的定义。我没有自行修改 Core 词汇，而是将其保留为独立架构问题。
+
+## 三、Moss ABI Tools 最终复审
+
+我对 [Moss PR #144](https://github.com/nishuzumi/moss/pull/144) 在 `ac646ca` 上完成最终跟进审查。
+
+该 PR 为 ABI Tools 增加 Selector Proxy，也就是 Diamond 风格代理的链上 ABI 交叉验证能力。Pendle Router 和 RouterStatic 是主要使用场景，它们无法通过普通 ERC-1967 Implementation 地址完成 ABI 检查。
+
+本轮重点验证了两个新增修复：
+
+* 即使经过验证的 ABI 中存在相同 Selector 的多个函数，且排列顺序不同，也能稳定识别 `selector-collision`。
+* `facetAddresses()` 展开过程中出现网络、超时或限流等非 EVM Revert 错误时，会向上抛出，不会被错误解释成代理不支持该接口。
+
+同时确认原有资源边界没有被破坏：
+
+* 超过 256 个 Facet 时，在发起逐 Facet RPC 前立即拒绝。
+* 累计超过 8192 个 Selector 时立即停止展开。
+* 完整 Loupe Map 和部分 Point Lookup 维持不同的证据语义。
+* Event、Error 和 Function 的验证范围与证据来源保持一致。
+
+### 验证结果
+
+* Offline 测试 275 项通过、14 项跳过。
+* 完整测试 289/289 通过。
+* ABI Tools 测试 106/106 通过。
+* Selector Proxy 专项测试 38 项全部通过。
+* Linux CI 与 Windows Offline CI 均为绿色。
+
+最终我提交了 `APPROVED` Review，当前版本未发现剩余阻塞问题。PR 仍处于开放状态，等待维护者处理。
+
+## 四、Mini Demo STOP 展示规范完成合并
+
+我完成并合并了 [Mini Demo PR #12](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/12)，对应的 [Issue #11](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/11) 已关闭。
+
+本次新增 `docs/stop-presentation.md`，并在 README 中加入文档入口，总计修改 2 个文件、新增 191 行。
+
+### 规范的核心内容
+
+* 固定 STOP 信息的阅读顺序。
+* 首先展示 Decision，再展示受约束的解释、签名边界、证据状态和诊断信息。
+* 明确 STOP 后 Capability 不得进入签名环节。
+* 完整覆盖 ADR 0004 定义的 22 个 STOP Reason Code 及其固定顺序。
+* 多个原因必须全部展示，不允许只显示第一个。
+* 同一原因的多个 SourceReference 需要聚合和去重。
+* Warning、Receipt 和 Outcome 使用当前标准的 `items/<i>` 路径。
+* `FAILED`、`MISSING`、`UNPROVABLE` 与已有不利证据需要分别表达。
+* 展示文案、Decision、limitations 和 Alignment 结果不能自证风险。
+* `MANUAL_REVIEW` 不代表安全、批准、授权或允许签名。
+
+### 验证结果
+
+* Format、lint、typecheck、build 全部通过。
+* Package import smoke test 通过。
+* 8 个测试文件、340 项测试全部通过。
+* STOP Code 文档覆盖检查 22/22 通过。
+* Exact-head `quality-gate` 成功。
+* Diff 仅包含两个经过授权的文档文件。
+
+由于我是 PR 作者，同时也是该仓库 Maintainer，GitHub 中无法形成有意义的自我 `APPROVED` Review。因此我使用可审计的 Maintainer Merge Gate 评论记录检查范围、精确 Head、Base、测试结果和合并授权，但没有将其描述为外部独立 Review。
+
+确认 Head、Base、CI、Diff 和对话状态未发生变化后，PR 已通过 Squash Merge 合入主分支。该成果是未来 STOP 页面和报告的展示契约，不代表 Decision Engine 或 UI 已经实现。
+
+## 五、Decision Engine 实施计划
+
+STOP 展示规范合并后，我继续推进 [Issue #6](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/6) 的 Decision Engine 设计。
+
+### 第一版 Work Plan
+
+第一版计划定义了：
+
+* 纯函数、同步、离线、确定性的 Decision Engine。
+* `evaluateDecisionV0_1(input: unknown)` 作为主要公开入口。
+* `UNSUPPORTED_SCHEMA_VERSION`、`INVALID_SOURCE_REFERENCE` 和 `INVALID_DECISION_INPUT` 三类稳定错误。
+* 完整执行 22 条 STOP 规则，不允许首个命中后提前返回。
+* Reason 按 ADR Rank 排序。
+* SourceReference 按 UTF-8 字节顺序排序。
+* 同一原因的引用聚合、去重。
+* 无 STOP 时只返回 `{ "status": "MANUAL_REVIEW" }`。
+* 不访问网络、RPC、钱包、时间、环境变量或外部服务。
+* 不修改输入，也不产生签名或交易行为。
+
+### Scope Gate 发现的问题
+
+对第一版计划进行角色分离式 Scope Gate 检查后，发现一个阻塞问题：
+
+Decision Engine 计划从 `@moss-mini-demo/report-schema` 的公共包入口导入 Schema，但原计划没有完整说明干净 Checkout 环境下，`typecheck`、`build` 和 package import test 应如何保证先构建 report-schema。
+
+如果不解决，代码可能在已有本地 `dist` 的环境中通过，却在全新 Checkout 或 CI 中失败。
+
+### Work Plan v2
+
+我没有直接开始编码，而是提交了修订后的 Work Plan v2：
+
+* 明确 report-schema 必须先于 decision-engine 构建。
+* 调整根目录 typecheck、build 和 package import test 的执行顺序。
+* 将根 `package.json` 和 `pnpm-lock.yaml` Workspace importer 纳入明确修改范围。
+* 要求在没有 `node_modules` 和 `dist` 的隔离 Worktree 中验证。
+* 保留 22 条 STOP 规则、错误优先级、SourceReference 边界和测试矩阵。
+* 明确不创建 UI、RPC、钱包、交易、Fixture 或真实链上数据。
+* 明确当前状态为 `WORK_PLAN_V2_SUBMITTED / AWAITING_MAINTAINER_SCOPE_CONFIRMATION`。
+
+因此，Decision Engine 当前仍处于计划阶段，尚未创建实现分支、代码提交或 PR。这样可以避免在 Package 构建顺序和范围尚未确认时提前产生返工。
+
+## 六、当前状态
+
+* Moss PR #158：最终复审通过，已提交 `APPROVED`，等待维护者处理。
+* Moss PR #144：最终复审通过，已提交 `APPROVED`，等待维护者处理。
+* Mini Demo PR #12：已合并。
+* Mini Demo Issue #11：已关闭。
+* Mini Demo Issue #6：Work Plan v2 已提交，等待 Scope Confirmation。
+* Decision Engine：尚未开始实现。
+* STOP 展示规范：已进入主分支，但仍是文档契约，不是运行时功能。
+
+## 七、今日收获
+
+1. Review 的价值不仅是发现问题，也包括在作者修复后重新验证，并明确什么时候可以从 `CHANGES_REQUESTED` 转为 `APPROVED`。
+2. 链上证据解析必须处理唯一性、来源、端点和数量，不能只检查某种事件是否出现。
+3. ABI 验证工具需要区分 EVM Revert、网络失败、代理不支持和 Selector 未映射，不能让基础设施错误伪装成正常结论。
+4. 文档规范可以先于 UI 实现，用来固定信息顺序、证据来源和安全边界。
+5. 工程计划必须覆盖干净环境的构建顺序，不能依赖本地残留的 `dist` 或缓存。
+6. 角色分离式检查能够提高个人仓库的决策质量，但不能伪装成外部独立审查，仍需保留清晰、真实的边界说明。
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

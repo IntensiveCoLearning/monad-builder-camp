@@ -235,4 +235,10 @@ Mini Demo 0：Monad FocusProof Agent
 
 完成假学习的基本开发，它是一个能根据你设定的目标以及你提交学习证据来检测你是否真的学会的agent![image.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-267593904/2026-08/cf974687-117e-4c3d-991b-f5e4931d265f.png)
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+今日准备进行多模态的能力接口
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

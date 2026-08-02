@@ -627,4 +627,24 @@ production build: passed
 
 今日学习笔记：[https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-01.md](https://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-07-31.md)
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+今天继续完善 OddLane 的 Monad Testnet 演示体验，重点从“能交易”推进到“用户能完整理解资金、订单、持仓和市场生命周期”。
+
+ 
+
+前端补齐了 Trading Account 入金 / 提现、Portfolio、持仓、未成交订单、批量撤单、成交记录和多档盘口。用户现在可以更清楚地看到测试资产如何进入交易账户、当前持有什么 Outcome、订单是否成交，以及持仓应该卖出还是在结算后赎回。
+
+<br />
+
+为了让黑客松 Demo 更稳定地出现真实撮合和持仓路径，项目新增了独立的演示流动性组件。它使用独立钱包提供浅层互补买单，并明确与协议 AMM、协议本金和 Keeper 生命周期逻辑分离。交易页面会区分演示流动性与真实链上订单簿规则。
+
+<br />
+
+今天也进一步确认了产品展示边界：Pyth 价格只能作为参考价和结算依据；盘口、成交和资金状态必须以链上最终事实为准。没有真实对手盘时，前端估算不能伪装成真实深度或保证成交。
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-02.md
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

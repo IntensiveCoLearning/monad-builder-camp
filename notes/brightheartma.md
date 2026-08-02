@@ -2712,4 +2712,63 @@ TypeScript 类型只能在编译阶段约束代码，不能阻止用户在运行
 
 等待 Owner 点击 “Approve and run workflows”。CI 启动后只读检查结果；若全部绿色，再由我本人发布修复摘要并请求重新 review。
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+# 🔥 残酷共学打卡 · 2026-08-02｜Parallax PR #4：Contract 信任边界与 reviewer 闭环
+
+ 
+
+## 今日主题
+
+围绕 [Parallax PR #4](https://github.com/parallax-monad/parallax/pull/4) 处理 reviewer 反馈与合约边界收紧，完成从“能序列化”到“可被信任地消费”的 Contract/API 校验闭环。
+
+## 今日完成
+
+1. 先处理 reviewer 要求的六项 Contract/API 边界修复：
+   * `NOT_APPLICABLE` 只允许用于 `P0-ECONOMIC-001`。
+   * 建立 RuleResult 与 Rule-bound Scope 的双向一致性校验。
+   * `integration_error` 分支同样执行 Economic Boundary 一致性检查。
+   * 强制 `proposedChange.before/after` 与 Action Verification Evidence 的 `beforeValue/afterValue` 匹配。
+   * `irrelevantActions` 中的 Acceptance Boundary action 必须使用 `CHANGES_ACCEPTANCE_BOUNDARY_ONLY`。
+   * Action ID 在整个 Run 内必须唯一，而不是只在单个 RuleResult 内唯一。
+2. 根据后续 review，补上 Integration Error 的表示边界：当同一 Rule 的 Scope 是 `unknown / REQUIRED_CHECK_INTERRUPTED` 时，不允许同时存在对应的 RuleResult。该修复保持其他已计算完成的 UNKNOWN Rule 行为不变。
+3. 再次收紧四个 P0 Contract 信任边界：
+   * available Route 的 source 关闭为 `moss | quote | derived`，RPC Route 不能被当作可用 Route 序列化。
+   * Economic PASS/FAIL 的模拟输出必须引用同 Run、trusted、`SIMULATE`、`generic` 且带明确 Simulation input role 的 Evidence；QUOTE Evidence 不能冒充 Simulation input。
+   * Core Rule PASS/FAIL 的非 external Evidence 必须 confirmed、可复现，并具备 `runtimeVersion` 与不可变 `runtimeRevision`。
+   * 增加 Route、QUOTE/无类型 Simulation input、缺失或不可复现 runtime provenance 的负向回归测试。
+4. 先后完成并推送多个经过验证的提交，最终提交为 `1728d14 fix(contracts): tighten core evidence eligibility`，分支为 `feat/contracts-core`。
+5. 最终验证通过：142 个测试、typecheck、lint、`git diff --check` 全部通过。
+
+## 今日学到
+
+今天最重要的认识是：Public Contract 不是“先把字段放进去，等真实 adapter 接上再补逻辑”的临时接口，而是消费者据以判断 PASS、FAIL、UNKNOWN 和 NO\_ROUTE 的信任边界。
+
+真正危险的不是单个字段缺失，而是同一事实可以被两种互相冲突的方式表达。例如，一个被 `REQUIRED_CHECK_INTERRUPTED` 标记为尚未得到可信结果的 Rule，不能同时拥有一个可被消费的 UNKNOWN RuleResult；否则下游无法判断它是“已经完成并得出 UNKNOWN”，还是“根本没有完成”。
+
+今天的 review 也再次证明，契约修复最有价值的产物不是 happy path，而是负向测试：明确哪些看似合理的 payload 必须被拒绝，才能让 fail-closed 语义真正落地。范围控制同样重要——可以先冻结 Route、Evidence、Scope 和 Runtime provenance 的边界，但不因此把真实 Moss adapter、Extractor 或 Fixture 偷偷塞进同一个 PR。
+
+## 目前仍然存在的问题
+
+* Live Moss/RPC activation 尚未完成。
+* authoritative tokenOut extractor 尚未实现。
+* 真实或脱敏 Fixtures、真实 adapter 仍属于后续集成工作。
+* `MOSS_RUNTIME_REVISION` 的真实运行时注入与生产 activation 仍需由后续 owner 完成。
+* PR #4 仍需 reviewer 最终复审与合并，Contract 修复完成不等于整条产品链路已经可用。
+
+## 明日计划
+
+1. 跟进 reviewer 对 `1728d14` 的复审结果。
+2. 明确真实 Moss/RPC activation、tokenOut extractor 与 Fixture 的拆分边界。
+3. 将已冻结的 Contract 字段映射到后续 adapter/API 实现，保持 runtime provenance 不被弱化。
+4. 继续优先补充“应拒绝的 payload”测试，再扩展真实集成路径。
+
+## 今日反思
+
+今天处理的表面问题是 PR 合并冲突和 reviewer comment，实质问题是：系统是否允许一条没有充分证据的结论穿过公共边界。最有效的解决方式不是继续增加功能，而是把证据来源、阶段、可复现性、运行时身份和状态表示全部绑定起来，并在不满足条件时明确拒绝。
+
+这次 PR 的关键进展不是“代码更多了”，而是系统更难被含糊的数据骗过。
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

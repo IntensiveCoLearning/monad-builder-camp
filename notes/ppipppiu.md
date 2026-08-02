@@ -4026,4 +4026,249 @@ python -m tests.test\_cleaning\_v02
 
 清洗模块迁移成功。
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+一、为什么需要数据架构升级？
+
+早期 Demo：
+
+CSV
+↓
+
+统计
+
+只能处理固定格式数据。
+
+真实 Web3 项目：
+
+数据来源不同：
+
+Blockchain Events
+Smart Contract Events
+DApp Activity
+Campaign Data
+
+因此需要：
+
+统一事件模型
+二、Event Model 思想
+
+核心思想：
+
+不要直接分析原始交易。
+
+而是：
+
+数据来源
+
+↓
+
+统一 Event
+
+↓
+
+用户行为分析
+
+例如：
+
+不同来源：
+
+Swap
+
+Deposit
+
+Claim
+
+Mint
+
+统一：
+
+event\_type
+
+这样分析系统不依赖具体链或项目。
+
+三、用户画像 User Profile
+
+用户画像是连接：
+
+Event Level
+
+↓
+
+User Level
+
+的重要层。
+
+事件：
+
+wallet A
+
+swap
+
+100 USDC
+
+转换：
+
+用户：
+
+wallet A
+
+交易次数=10
+
+累计价值=5000
+
+活跃天数=20
+
+后续：
+
+分群
+推荐策略
+用户价值分析
+
+都基于 User Profile。
+
+四、Pipeline 分层设计
+
+当前架构：
+
+schemas
+
+↓
+
+processors
+
+↓
+
+analytics
+
+↓
+
+services
+
+↓
+
+API
+
+职责：
+
+schemas
+
+定义数据结构。
+
+processors
+
+负责：
+
+数据转换
+清洗
+analytics
+
+负责：
+
+用户画像
+指标计算
+用户分层
+services
+
+负责：
+
+流程编排。
+
+五、为什么增加 Dashboard Layer？
+
+Backend 输出：
+
+适合开发：
+
+{
+profiles:\[],
+metrics:{}
+}
+
+但是产品需要：
+
+用户增长看板
+
+所以需要：
+
+Analysis Result
+
+↓
+
+Dashboard Response
+
+↓
+
+Frontend
+
+实现：
+
+数据层和展示层解耦。
+
+六、今天最大的技术收获
+
+1. 数据分析产品不是单个 Notebook
+
+完整产品需要：
+
+Data Pipeline
+
+* <br />
+
+Analytics
+
+* <br />
+
+API
+
+* <br />
+
+Frontend
+2\. 数据结构设计比算法更重要
+
+Web3 数据来源复杂。
+
+第一步不是建模型。
+
+而是：
+
+定义统一数据结构
+3\. 模块之间需要接口一致
+
+例如：
+
+Pipeline 调用：
+
+calculate\_growth\_metrics(
+clean\_df,
+profiles
+)
+
+Analytics 必须保持：
+
+输入一致。
+
+否则容易出现：
+
+参数错误
+类型错误
+数据格式错误
+今日项目状态
+Web3-GrowthOS Demo v0.2
+
+Backend
+
+├── Event Schema ✅
+├── Data Cleaning ✅
+├── User Profile ✅
+├── Growth Metrics ✅
+├── Segmentation ✅
+└── Dashboard API ✅
+
+Next:
+
+Frontend Dashboard
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

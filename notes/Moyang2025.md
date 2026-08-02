@@ -347,4 +347,11 @@ vibe coding
 
 进一步完善网站，报名黑客松并完成了组队
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+<https://docs.google.com/document/d/1KI64Uvyv0fPapm_qtJ8qneIeiRPm5UfXYnaLADVIEYM/edit?tab=t.0>\
+项目的Monad黑客松记录文档
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

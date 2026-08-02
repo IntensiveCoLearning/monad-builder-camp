@@ -177,4 +177,10 @@
 
 队友已完成api复测，开始进行adapter接入demo，完成后再次进行测试
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-02_START -->
+# 2026-08-02
+
+demo网站已经构建完毕，当前正在为其添加功能，让其不止只能验证和显示测试通过，尝试成为让其能进行实操的演示demo
+<!-- DAILY_CHECKIN_2026-08-02_END -->
 <!-- Content_END -->

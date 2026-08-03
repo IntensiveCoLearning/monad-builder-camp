@@ -5021,4 +5021,247 @@ Decision Engine 计划从 `@moss-mini-demo/report-schema` 的公共包入口导�
 5. 工程计划必须覆盖干净环境的构建顺序，不能依赖本地残留的 `dist` 或缓存。
 6. 角色分离式检查能够提高个人仓库的决策质量，但不能伪装成外部独立审查，仍需保留清晰、真实的边界说明。
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+## 一、今日概览
+
+今天主要完成了两类工作：
+
+1. 在 Mini Demo 中完成 Decision Engine v0.1 的开发、QA 修复与合并，并启动 tokenOut mismatch STOP Fixture。
+2. 在 Moss 中完成 Morpho、Perps、Neverland、Pendle 四项代码审查，同时跟进自己的 Kuru 与依赖安全 PR。
+
+今日可验证产出：
+
+* Mini Demo [PR #66](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/66) 已合并。
+* Mini Demo Issue #6 已关闭。
+* 新增 Decision Engine Package，完整覆盖 22 个 STOP Code。
+* Mini Demo [PR #67](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/67) 已建立，当前为 Draft。
+* 完成 4 项 Moss `CHANGES_REQUESTED` Review。
+* 跟进 Moss PR #138、#148 的最终审查状态。
+
+## 二、Decision Engine v0.1 完成实现
+
+在 [Issue #6](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/6) 的 Work Plan v2 获得范围确认后，我创建并实现了 [PR #66](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/66)。
+
+本次新增私有 ESM Package：
+
+`@moss-mini-demo/decision-engine`
+
+公共运行时接口被限制为：
+
+* `evaluateDecisionV0_1(input: unknown)`
+* `DecisionInputErrorV0_1`
+
+`DecisionV0_1` 和 `StopReasonCodeV0_1` 仅作为类型导出。
+
+### 核心行为
+
+* 通过公开 `DecisionInputV0_1Schema` 验证未知输入。
+* 按固定优先级区分三类输入错误。
+* 完整执行全部 22 条 STOP 规则，不在首个命中后提前返回。
+* 同一 Code 的 SourceReference 自动聚合和去重。
+* Reference 以 UTF-8 字节顺序排列。
+* Reason 按 ADR 中的固定 Rank 排列。
+* 只有不存在任何 STOP 原因时，才返回严格的：
+
+```
+{ "status": "MANUAL_REVIEW" }
+```
+
+该 Evaluator 是同步、纯函数、离线和确定性的，不读取网络、RPC、环境变量、时间、文件系统或钱包，也不会修改输入和发起交易。
+
+## 三、QA 发现与修复
+
+PR #66 初始实现虽然通过 651 项测试和 CI，但 QA 仍发现了一个确定性缺陷。
+
+不同的 JavaScript 字符串，例如未配对代理字符 `U+D800` 和 `U+D801`，经过 `TextEncoder` 后可能得到相同的 UTF-8 Replacement Bytes。原 Comparator 在字节完全相同时返回 `0`，稳定排序便会保留输入顺序，导致正序和逆序输入可能产生不同的 Decision。
+
+修复方案：
+
+* 保留 UTF-8 Bytes 作为主要排序键。
+* 字节相同时，使用原始 UTF-16 Code Unit 作为确定性 Tie-breaker。
+* 不使用 `localeCompare`，避免依赖运行环境 Locale。
+* 增加正序、逆序、重复执行和 JSON Round-trip 测试。
+
+第一轮修复后，QA 再次阻塞了 PR，因为测试虽然验证了正序和逆序，却没有证明两个字符编码后的字节确实相同，也没有分别对正反输入进行 JSON 序列化往返。
+
+第二轮补充测试后，最终证明：
+
+* 两个原始字符串确实不同。
+* `TextEncoder` 结果完全相同。
+* 正序和逆序输入均经过 JSON Round-trip。
+* 直接输入、Round-trip 输入和重复执行结果完全一致。
+* 聚焦测试 26/26 通过。
+* 完整测试 651/651 通过。
+* Exact-head `quality-gate` 成功。
+
+最终 PR #66 以 `25f895cd` 为确认 Head，经 Merge Gate 后 Squash Merge 到主分支，生成主分支提交 `aa7ea761`。合并后的 Main Quality Gate 同样成功，Issue #6 随后关闭。
+
+需要说明的是，Builder、QA 与 Maintainer Gate 记录均由同一 GitHub 账号按角色分离流程完成，因此这些记录具有审计价值，但不应描述为外部人员的独立 Review。
+
+## 四、启动 tokenOut Mismatch STOP Fixture
+
+Decision Engine 合并后，项目依赖顺序重新评估为：
+
+`Issue #8 → Issue #20 → Issue #9 → M1 Closure`
+
+其中：
+
+* Issue #8：tokenOut mismatch Fixture，已进入开发。
+* Issue #20：amountIn mismatch Fixture，已解除依赖阻塞，但保持未认领。
+* Issue #9：M1 边界与完成标准文档，继续等待两个 Fixture。
+* Tracker #4：保持开放。
+
+我认领了 [Issue #8](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/8)，用于建立一个确定性的 tokenOut 不匹配 STOP 场景。
+
+### Work Plan 修订
+
+第一版计划把跨 Package 集成测试放在 report-schema Package 中，但该位置不能通过公共 Package Name 正确解析 decision-engine。
+
+范围审查因此返回 `SCOPE_CHANGES_REQUESTED`。
+
+Work Plan v2 将测试调整到 decision-engine Package，通过明确的 Fixture 路径读取 JSON，同时继续通过公开 Package Entry 加载 Schema 和 Engine。修订后获得实施授权。
+
+## 五、完成 PR #67 初稿
+
+我随后创建了 Draft [PR #67](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/67)，修改范围严格限制为 3 个文件：
+
+* tokenOut mismatch JSON Fixture。
+* Decision Engine Fixture 集成测试。
+* Fixture README。
+
+Fixture 中：
+
+* Intent 指定的 Output Token 与模拟 Outcome 中的 tokenOut 故意不一致。
+* Simulation 本身保持 `SUCCESS`。
+* Capability、Receipt、Outcome、Warning、Coverage、Ordering 和 State Continuity 均保持有利状态。
+* 唯一 Critical Alignment 为 `FAIL`。
+* Decision 只产生一个 `CRITICAL_ALIGNMENT_FAIL`。
+* SourceReference 精确指向 Intent Token 和模拟观察到的 tokenOut。
+* 所有数据均为确定性 `FIXTURE`，不包含真实地址、RPC、钱包或链上证据。
+
+验证结果：
+
+* Fixture 专项测试 2/2 通过。
+* Report Schema 测试 340/340 通过。
+* Decision Engine 测试 313/313 通过。
+* 完整仓库测试 653/653 通过。
+* Public Package Smoke Test 通过。
+* Exact-head Quality Gate 成功。
+* GitHub 当前显示 `CLEAN / MERGEABLE`。
+
+PR #67 当前保持 Draft，仓库内 Pre-PR QA 记录为通过，但尚未进入最终 Maintainer Merge Gate，也没有合并。
+
+## 六、Moss Morpho Vault 审查
+
+我审查了 [Moss PR #156](https://github.com/nishuzumi/moss/pull/156)。
+
+主要发现是 Supply/Withdraw Receipt 使用 `transfers.find(...)` 选择第一个匹配 Transfer，但没有可靠绑定 Vault 的底层 Token。
+
+我用临时 Fixture 复现了：
+
+* Supply 中提前插入相同端点和金额的其他 Token Transfer，解析器将错误 Token 当成 Asset。
+* Withdraw 存在相同问题。
+* 重复底层资产 Transfer 仍会被接受。
+* 重复 Vault Share Mint/Burn 同样会被接受。
+
+因此要求解析器：
+
+* 收集全部候选。
+* Share Movement 必须严格只有一个。
+* Asset Movement 必须严格只有一个。
+* 如果无法证明底层 Token 身份，歧义时应失败关闭。
+
+同时指出 `maxDeposit(ctx.account)` 是账户级 Capacity，不应被误读为 Vault 全局容量；`isMetaMorpho` 只能证明 Factory Provenance，不能证明 Vault 经过策展。
+
+该 Review 状态为 `CHANGES_REQUESTED`。
+
+## 七、Moss Perps ADR 审查
+
+我审查了 [Moss PR #139](https://github.com/nishuzumi/moss/pull/139)。
+
+主要发现：
+
+* `PositionSide` 虽定义为 `long | short`，但缺少拒绝 `LONG` 等错误拼写的类型和运行时负向测试。
+* 临时将 Schema 扩展为包含 `LONG` 后，Core 测试仍全部通过，说明闭集边界没有被测试固定。
+* ADR 声称 Open/Close 的方向会被 Core 自动强制使用 `PositionSide`，但实际 Core 并没有进行这种机械检查。
+
+我建议增加类型与运行时双层负向覆盖，并将 ADR 改为：当 Open/Close 暴露用户输入的方向参数时，必须使用 `PositionSide`，由 Adapter Review 和测试负责落实。
+
+该 Review 提交为 `CHANGES_REQUESTED`。PR 后续在相同 Head 上被维护者合并，因此不能将其记录为我批准通过。
+
+## 八、Moss Neverland 审查
+
+我审查了 [Moss PR #132](https://github.com/nishuzumi/moss/pull/132)。
+
+发现两个主要问题：
+
+1. Supply、Withdraw、Borrow、Repay 的 Outcome 每次只保留 ABI 事件中的一个参与者，丢失了 payer、beneficiary、recipient 或 repayer 中的另一方。
+2. 辅助证据只检查字段，没有严格验证 emitter 和完整操作身份。
+
+临时 Fixture 证明解析器会接受：
+
+* 外部合约发出的 `PriceObserved`。
+* 外部 Token 发出的 ABI-compatible Mint。
+* 与当前操作不同 Reserve 和用户的 Collateral Toggle。
+
+我要求：
+
+* 每种操作保留事件中的两个角色。
+* 验证 nToken、Debt Token 和 Rewards Controller 的真实 emitter。
+* 将辅助事件绑定到本次操作的 Reserve 与账户。
+* 对错误 emitter、错误 Reserve 和错误账户增加负向测试。
+
+验证中完整测试 277/277、Neverland 25/25 通过，但这些新增攻击 Fixture 会暴露缺陷，因此 Review 状态为 `CHANGES_REQUESTED`。
+
+## 九、Moss Pendle 审查
+
+我审查了 [Moss PR #109](https://github.com/nishuzumi/moss/pull/109)。
+
+该 PR 为 Pendle 和 Simulator 增加 ABI 派生的 Revert 解释，但协议级 Explanation Map 仍可能跨合约 Target 借用语义。
+
+我复现了：
+
+* 两个 Target 定义同名但参数不同的 Custom Error 时，Target C 的错误使用了 Target B 的解释模板。
+* 不同 Target 都产生 `Error("LOCKED")` 时，会共享同一协议级解释，即使具体含义不同。
+
+因此建议：
+
+* Explanation 必须绑定到声明该 ABI 的 Target。
+* Custom Error 最好绑定完整 Signature。
+* String Revert 同样必须绑定 Target。
+* 占位符必须属于对应 Error Signature。
+* 两个 Metadata Map 都要有类型和运行时负向测试。
+
+Pendle Live 测试 155/155 通过，但公开解释的归属边界仍不充分，因此提交 `CHANGES_REQUESTED`。
+
+## 十、跟进自己的 Moss PR
+
+### PR #138：Kuru Receipt
+
+[PR #138](https://github.com/nishuzumi/moss/pull/138) 仍保持在已验证的 `ab20cfc`。
+
+我重新检查其 Merge Tree 与当前 `main@e9ef1fe`，确认可以无冲突组合，新的 Perps Vocabulary 改动与 Kuru Receipt 没有重叠。
+
+因此没有为了“保持最新”而进行无意义 Rebase，只向维护者发送最终审查提醒。
+
+### PR #148：MCP 依赖安全
+
+[PR #148](https://github.com/nishuzumi/moss/pull/148) 继续保持在 `b2828a1`。
+
+我检查了其验证基线到当前 Main 之间的变化，确认没有新的 `package.json`、lockfile 或 Workspace 修改，PR 仍可干净合并。
+
+当前 Main 仍包含该 PR 计划修复的 fast-uri High 和 Hono Moderate Advisory，因此没有依赖理由要求重新 Rebase。我向维护者提出首次正式技术 Review 请求。
+
+## 十一、今日收获
+
+1. Green CI 不能代替边界测试，UTF-8 Tie-breaker 问题就是在全部测试通过后才被 QA 发现。
+2. Fixture 应只证明规定场景，不能因为 Simulation 为 `SUCCESS` 就推导交易安全。
+3. Receipt 必须验证候选唯一性、Emitter、Token 身份、操作参与者和事件关联。
+4. 人类可读解释也属于安全边界，不能跨合约借用错误语义。
+5. 稳定 PR 不需要频繁 Rebase。先判断是否存在冲突、依赖变化或安全原因，再决定是否更新。
+6. 角色分离记录可以提高个人项目的审计性，但不能代替真正的外部独立 Review。
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

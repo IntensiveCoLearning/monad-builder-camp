@@ -934,4 +934,22 @@ Git 与安全记录：
 * PR #4：等待更新；
 * 当前无新的代码任务，等待下一轮 Review。
 <!-- DAILY_CHECKIN_2026-08-01_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+日期：2026 年 8 月 3 日
+
+今日完成：
+
+1. 团队将当前 MVP 主路径收敛为稳定、可复现的 Recorded Replay，Live Check 保留为后续能力。
+2. Shared Contract、Product Delivery、Landing Page 和 Recorded Replay API 已合并进入 main。
+3. Replay API 已支持 MON→USDC 和 USDC→MON 两个 Kuru Recorded Fixture。
+4. 两个 Replay 结果均保持保守 UNKNOWN，不将 Replay、Mock 或缺失证据包装成真实交易结论。
+5. Replay API 已通过 14 个测试文件、159 项测试和 Node 22 CI。
+6. 完成 Landing Page 视觉增强 PR #7 的 MVP 范围复核并提交 Approve；该 PR 当前仍待作者转 Ready 并合并。
+7. 明确 Live POST /api/check 的 Runtime Identity Correlation 技术债不阻塞当前 Replay Demo。
+8. 当前等待前端接入 Replay API，接入完成后由我进行 Recorded Replay 端到端验收。
+9. <br />
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

@@ -5758,4 +5758,347 @@ Backend Pipeline
 Frontend Dashboard
 ```
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+# W5D1-Web3-GrowthOS-Dashboard-Development
+
+ 
+
+## 1. 今日目标
+
+完成 Web3-GrowthOS Demo v0.2 后端分析流程升级。
+
+目标：
+
+将之前已经完成的数据清洗 pipeline，进一步扩展为完整的增长分析数据服务，为前端 Dashboard 提供结构化分析结果。
+
+***
+
+# 2. Demo v0.2 整体架构
+
+```
+Transaction CSV
+
+        |
+
+        v
+
+Normalization
+
+        |
+
+        v
+
+Cleaning
+
+        |
+
+        v
+
+Event Conversion
+
+        |
+
+        v
+
+User Profile
+
+        |
+
+        v
+
+Metrics Analysis
+
+        |
+
+        v
+
+User Segmentation
+
+        |
+
+        v
+
+Dashboard API
+
+        |
+
+        v
+
+Frontend Visualization
+```
+
+***
+
+# 3. Pipeline 模块设计
+
+## 3.1 Data Normalization
+
+作用：
+
+统一链上交易数据格式。
+
+处理：
+
+*  时间字段标准化 
+*  金额类型转换 
+*  地址格式统一 
+
+目的：
+
+保证后续分析的数据一致性。
+
+***
+
+## 3.2 Data Cleaning
+
+主要处理：
+
+### Duplicate Transaction
+
+检测：
+
+```
+transaction_hash
+```
+
+是否重复。
+
+目的：
+
+避免重复交易导致：
+
+*  用户数量错误 
+*  交易量虚高 
+
+***
+
+### Missing Value
+
+处理关键字段缺失：
+
+例如：
+
+* &#x20;wallet\_address&#x20;
+* &#x20;transaction\_hash&#x20;
+*  amount 
+
+***
+
+## 3.3 Event Conversion
+
+将原始链上交易：
+
+```
+Transaction Record
+```
+
+转换为：
+
+```
+Growth Event
+```
+
+例如：
+
+```
+swap
+
+add_liquidity
+
+transfer
+```
+
+目的：
+
+让链上数据可以用于增长分析。
+
+***
+
+# 4. User Profile 构建
+
+通过 wallet\_address 聚合用户行为。
+
+生成用户画像：
+
+| 字段              | 含义   |
+| :-------------- | :--- |
+| wallet\_address | 用户地址 |
+| total\_events   | 交易次数 |
+| total\_value    | 累计价值 |
+| active\_days    | 活跃天数 |
+| first\_activity | 首次行为 |
+| last\_activity  | 最近行为 |
+
+***
+
+# 5. Growth Metrics
+
+生成产品增长核心指标。
+
+## 用户规模
+
+```
+Total Users
+```
+
+表示：
+
+当前分析范围内的钱包数量。
+
+***
+
+## 用户活跃
+
+```
+Active Users
+```
+
+表示：
+
+发生交易行为的钱包。
+
+***
+
+## 用户价值
+
+```
+Total Value
+```
+
+表示：
+
+所有交易价值总量。
+
+***
+
+## 用户重复行为
+
+```
+Repeat Rate
+```
+
+用于衡量：
+
+用户是否形成持续使用。
+
+***
+
+# 6. User Segmentation
+
+根据用户行为进行分层。
+
+当前 Demo：
+
+## High Value User
+
+特点：
+
+*  高交易价值 
+*  高活跃 
+
+***
+
+## At Risk User
+
+特点：
+
+*  曾经活跃 
+*  当前活跃降低 
+
+***
+
+## New User
+
+特点：
+
+*  最近进入生态 
+*  行为较少 
+
+***
+
+# 7. Dashboard API 设计
+
+最终返回：
+
+```
+{
+"overview": {},
+
+"segment_distribution": {},
+
+"segment_value_distribution": {},
+
+"users":[]
+}
+```
+
+其中：
+
+## overview
+
+提供 KPI。
+
+## segment\_distribution
+
+提供用户数量。
+
+## segment\_value\_distribution
+
+提供价值贡献。
+
+## users
+
+提供用户明细。
+
+***
+
+# 8. 今日遇到的问题
+
+## 时区错误
+
+错误：
+
+```
+Cannot subtract tz-naive and tz-aware datetime
+```
+
+原因：
+
+两个 datetime：
+
+一个包含 timezone
+
+一个不包含 timezone
+
+解决：
+
+统一 datetime timezone。
+
+***
+
+# 9. 今日总结
+
+今天完成：
+
+*  后端 pipeline 串联 
+*  Dashboard API 设计 
+*  用户画像输出 
+*  用户分层输出 
+*  增长指标计算 
+
+Demo 已具备：
+
+```
+Data
+ ↓
+Analysis
+ ↓
+Growth Insight
+```
+
+完整闭环。
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

@@ -2002,4 +2002,78 @@ Speaker note: Ops 传播点来自排行榜、徽章和 Meme 卡。用户不是�
 
 Speaker note: Week 4 目标是把 Prototype 打磨成可展示、可传播、可继续开发的产品。
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+# Monad Rank Rush 项目 Overview
+
+## 项目名称
+
+Monad Rank Rush
+
+## 一句话介绍
+
+Monad Rank Rush 是一个基于 Monad 的 30 秒链上社交小游戏，用户可以挑战好友、刷新排行榜、领取徽章，并生成可分享的 Meme 战绩图。
+
+## 项目背景
+
+很多 Web3 产品对新人来说门槛较高，交互过程偏金融化，用户往往不容易理解“为什么要连接钱包”“为什么要上链记录”。Monad Rank Rush 希望用更轻量、更接近 Consumer App 的方式，让用户通过小游戏、排行榜和徽章系统感受到链上互动的价值。
+
+## 核心玩法
+
+用户进入产品后，可以连接钱包并开始 30 秒挑战。在挑战中，用户通过点击获得分数和连击。挑战结束后，用户可以提交最终成绩，查看自己在排行榜中的位置，并获得对应的徽章。系统还会生成一张 Meme 风格的战绩卡，方便用户分享到社群或 X 上，邀请朋友再次挑战。
+
+## Monad 适配理由
+
+这个产品适合在 Monad 上构建，因为它依赖高频互动、低延迟反馈和低成本状态更新。游戏过程中的点击、动画和临时分数不需要全部上链，但最终成绩、任务完成记录、奖励领取和赛季徽章适合写入链上。Monad 的高性能和 EVM 兼容性，可以帮助这种 Consumer Crypto 小游戏获得更顺滑的用户体验，同时保留链上记录的公开性和可验证性。
+
+## 当前 Demo 功能
+
+* 钱包连接 Mock
+* 30 秒点击挑战
+* 分数和连击系统
+* Quick Finish 快速演示按钮
+* 本地排行榜
+* 徽章生成
+* Meme 战绩卡
+* 分享文案复制
+* Daily Quest 任务系统
+* Monad 提交回执 Mock
+* 用户测试说明区
+
+## 链上与链下设计
+
+链下处理：
+
+* 点击过程
+* 动画反馈
+* 连击状态
+* 临时分数
+* 即时 UI 反馈
+
+链上记录：
+
+* 最终成绩
+* 排行榜证明
+* 任务完成记录
+* 奖励领取记录
+* 赛季徽章或 NFT Badge
+
+## 运营传播点
+
+Monad Rank Rush 的传播循环是：
+
+Play → Score → Rank → Badge → Meme Card → Share → Friend Challenge → Replay
+
+它可以设计成 7 天排行榜 Campaign，每天更新榜单，鼓励用户反复挑战、晒成绩、邀请朋友参与。Meme 战绩卡和徽章身份也能成为社区传播素材。
+
+## Week 4 目标
+
+本周目标是把 Monad Rank Rush 从 Prototype 打磨成一个可运行、可展示、可传播、可提交的 Monad Hackathon 产品。当前版本已经完成前端可运行 Demo，下一步需要接入真实 Monad 测试网合约，补充 Contract Address、Transaction Hash 和 Explorer Link。
+
+## 作品集表达
+
+Designed and prototyped Monad Rank Rush, a consumer crypto mini-game on Monad featuring a 30-second challenge loop, leaderboard, badge system, meme result card, and clear onchain/offchain interaction design.
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

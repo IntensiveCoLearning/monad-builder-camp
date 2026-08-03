@@ -647,4 +647,26 @@ production build: passed
 
 今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-02.md
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+今天继续推进 OddLane 的账户体验设计。我复盘了此前在 Monad Builder Camp 做过的 Safe、ERC-4337、Counterfactual Account、Sponsored UserOperation 和 Session Key 实践，并重点调研了 ZeroDev 在 Monad 上的可用性。
+
+ 
+
+ZeroDev 当前文档已列出 Monad Testnet 支持 Kernel Smart Account、Permission / Session Key、Bundler / Paymaster，以及 Passkey 相关能力。基于这次调研，我决定 OddLane 不再自研通用 Smart Account，而是以 ZeroDev Kernel 作为唯一 AA 主线。
+
+<br />
+
+产品体验会收敛为：用户首次点击“启用交易账户”并完成一次明确授权，之后 Buy / Sell / Cancel / Redeem 尽量不再反复弹出钱包；同时链上仍用 Call、Timestamp、Rate Limit 等权限策略限制 Session Key，提现、Approve 和任意外部调用不会开放给快速交易权限。
+
+<br />
+
+下一步会先完成 ZeroDev Monad Testnet 的 RPC / Bundler 预检和 Permission Policy 测试，再用独立钱包跑通真实 UserOperation 与交易、撤单、领取、撤销授权的完整 E2E。
+
+<br />
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-03.md
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

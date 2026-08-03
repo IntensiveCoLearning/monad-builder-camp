@@ -690,4 +690,10 @@ MEV 并不完全等于恶意攻击。
 
 今日对week4的开发文档进行了整理。
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+今日对demo进行了系统整理，准备参加demo day
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

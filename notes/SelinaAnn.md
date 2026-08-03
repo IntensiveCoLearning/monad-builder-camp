@@ -550,4 +550,22 @@ Block Explorer（区块浏览器）是链上的“搜索引擎”，它将底层
 
 * \[如：“砍掉前端的数据图表展示模块，把时间花在优化 MetaMask 弹窗前的引导提示文案上。”]
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+### **Week 5｜Hackathon Final Submission**
+
+* 截止时间：8 月 8 日 24:00（UTC+8）
+
+**提交内容：**
+
+1. 项目名称与一句话介绍
+2. 目标用户及解决的问题
+3. Demo 链接或演示录屏
+4. GitHub、Figma、合约地址等项目链接
+5. Monad 的具体使用方式
+6. 团队成员与分工
+7. 已真实实现、使用 Mock 的部分及已知问题
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

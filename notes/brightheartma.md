@@ -2771,4 +2771,108 @@ TypeScript 类型只能在编译阶段约束代码，不能阻止用户在运行
 
 这次 PR 的关键进展不是“代码更多了”，而是系统更难被含糊的数据骗过。
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+## 今日主题
+
+围绕 PR8 与 PR9，完成 Parallax 的 Live Check 与 Recorded Replay 边界收敛、演示方案调整、Fixture 方案确认，以及 Contract 和 Fixture 所有权问题梳理。
+
+## 今天完成了什么
+
+### 1. 区分 Live Check 与 Recorded Replay
+
+PR8 交付的是 `POST /api/check` 的 Live Check 后端边界：
+
+* 接收并校验交易请求；
+* 生成新的 `runId`；
+* 调用 Agent Flow；
+* 校验返回的 `RunResult`；
+* 记录运行状态与失败原因。
+
+PR9 交付的是 `GET /api/replay/:id` 的 Recorded Replay 边界：
+
+* 读取已经冻结的 Fixture；
+* 校验 `RunResult`；
+* 确认 `replayMode=true`；
+* 确认 Fixture provenance 匹配且不是 Mock；
+* 返回稳定的历史结果。
+
+Replay 不重新调用 Moss、RPC、Risk、Quote 或 Action，也不重新生成 Verdict。
+
+### 2. 将演示方案从 Live 调整为 Fixture
+
+最初计划使用 Moss 的实时数据完成演示，但考虑到当前开发进度、实时链路的不确定性以及现场演示的稳定性，本阶段采用 Fixture-based Recorded Replay。
+
+当前使用两个 Kuru 方向的 Fixture：
+
+* MON → USDC；
+* USDC → MON。
+
+两个 Fixture 都保守返回 `UNKNOWN`，不虚构 `PROCEED`、`ADJUST` 或 `STOP`。
+
+这不是永久放弃 Live，而是先把稳定演示路径与实时运行路径解耦。
+
+### 3. 锁定 Replay 的最小实现范围
+
+本阶段明确不做：
+
+* Live Check fallback；
+* `USE_REPLAY` 或 `ReplayRef` 集成；
+* 运行时 Moss、RPC、Risk、Quote、Action 调用；
+* 运行时生成 Route、Scope、Rule、Summary 或 Verdict；
+* SQLite 或其他生产数据库；
+* Fixture 的生成、刷新、审核和过期生命周期；
+* 完整 Evidence Drawer；
+* 生产环境 server wiring。
+
+首版采用文件型 Fixture，Replay API 只执行：
+
+> 定位 Fixture → Schema 校验 → invariant 校验 → 原样返回。
+
+### 4. 修正“后端可以全权决定”的认识
+
+后端 Owner 可以独立推进：
+
+* 路由；
+* Fixture loader；
+* Contract 校验；
+* 错误处理；
+* API 测试；
+* Hono composition。
+
+但后端不能单方面决定：
+
+* 返回 `RunResult` 还是 `ReplayResponse`；
+* 使用 `fixtureId` 还是 `runId`；
+* Fixture 由谁生成、审核和维护；
+* Evidence provenance 如何解释；
+* 哪些 Rule、Verdict 和 reason code 可以被声明为可信。
+
+技术实现可以并行推进，产品语义和数据责任不能被实现者默默冻结。
+
+### 5. 识别当前实现与目标语义的差异
+
+此前的 Replay 实现仍然会从 `chain-evidence` 动态拼装新的 `RunResult`，包括随机 `runId`、Route、Scope、Rule、Summary 和 Verdict。
+
+这实际上是“基于旧 Evidence 重新投影”，不是忠实读取历史 Replay。PR9 已将方向调整为冻结完整 `RunResult` snapshot，避免当前规则或代码变化改写历史结果。
+
+## 今日复盘
+
+今天最大的收获是：Replay 的难点不是读一个 JSON 文件，而是守住“历史事实不可被当前逻辑重新解释”的边界。
+
+为了赶进度可以减少技术依赖，但不能用减少确认来替代 Contract 设计。没有数据库不等于没有数据责任；Fixture 能被 API 读取，也不等于它的 provenance 已经被 Moss Owner 或风险语义 Owner 认可。
+
+真正需要避免的不是代码写不出来，而是先做出一个语义错误、之后再被迫返工的 Replay。
+
+## 下一步计划
+
+* 建立 Replay Contract Decision Record；
+* 确认 `fixtureId`、`runId` 与响应结构；
+* 明确 Fixture 的生成、审核、版本化与失效责任；
+* 请数据来源 Owner 确认 Quote、Action、Simulation 和 provenance 的可支持范围；
+* 保持 PR9 的最薄读取路径；
+* 将 `PROCEED`、`ADJUST`、`STOP` Fixture 作为独立 PR 处理。
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

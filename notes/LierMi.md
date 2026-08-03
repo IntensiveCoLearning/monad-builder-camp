@@ -770,4 +770,64 @@ invariant_PerTaskLiabilitiesNeverExceedOriginalEscrow()
 
 ***
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-03_START -->
+# 2026-08-03
+
+## 重入攻击与防御
+
+### 攻击原理
+
+合约给对方转账时，**控制权交到了对方手里**。如果对方是合约，它能在收钱的一瞬间反过来再调用你——这时如果状态还没改，就能重复领钱。
+
+### 两道防御
+
+**① Checks-Effects-Interactions（检查 → 改状态 → 再转账）**
+
+顺序不能反。先把状态标成"已支付"，最后才真的转钱。
+
+**② 重入锁，且按业务对象隔离**
+
+```solidity
+modifier nonReentrant(bytes32 taskId)   // ✅ 按 taskId 隔离
+// 而不是一个全局的 locked 布尔值
+```
+
+全局锁会让 A 任务的回调把 B 任务也锁住——功能上正确，但**制造了不必要的状态争用**，正好违反第二节的原则。
+
+项目里有专门的测试验证：`test_PerTaskLockAllowsIndependentTaskProgressDuringCallback`。
+
+<br />
+
+## 托管合约（Escrow）
+
+### 是什么
+
+把资金锁进合约，**按事先约定的条件释放**，任何一方都不能单方面拿走。
+
+### 项目里怎么用
+
+```
+委托人付 0.2 MON → 锁进 TaskEscrow
+  ├─ 验收通过        → 全额给 Agent
+  ├─ 过期未交付      → 全额退委托人
+  └─ 有争议 → 结算   → 按规则分账，判不了的部分冻结
+```
+
+### 关键：资金守恒的写法
+
+```solidity
+// ❌ 直觉写法 —— 加法可能溢出绕回小数字，检查被绕过
+if (toAgent + toClient + frozen != escrowed) revert;
+
+// ✅ 逐级减，每一步都不可能为负
+if (toAgent > escrowed
+    || toClient > escrowed - toAgent
+    || frozen != escrowed - toAgent - toClient) revert InvalidAllocation(...);
+```
+
+**涉及钱的算术，永远先想"能不能被撑爆"。**
+
+***
+<!-- DAILY_CHECKIN_2026-08-03_END -->
 <!-- Content_END -->

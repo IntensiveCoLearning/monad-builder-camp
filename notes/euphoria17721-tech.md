@@ -2076,4 +2076,36 @@ Play → Score → Rank → Badge → Meme Card → Share → Friend Challenge �
 
 Designed and prototyped Monad Rank Rush, a consumer crypto mini-game on Monad featuring a 30-second challenge loop, leaderboard, badge system, meme result card, and clear onchain/offchain interaction design.
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+# 今晚项目实践总结｜Monad Rank Rush
+
+今晚主要完成了 Monad Rank Rush 从前端 Demo 到真实链上交互版本的推进。
+
+一开始，项目只是一个可运行的前端小游戏 Demo，包含 30 秒点击挑战、排行榜、徽章、Meme 战绩卡和分享文案。今晚的重点是把它进一步升级成可以部署智能合约、可以连接 Monad Testnet、可以让用户真实提交链上成绩的版本。
+
+首先，我完成了项目依赖安装。过程中遇到了 PowerShell 禁止运行脚本的问题，后来改用 `npm.cmd install` 解决。安装时出现了很多 `npm warn deprecated` 提示，一开始以为是报错，但后来理解到这些只是依赖包版本提示，不影响项目运行。
+
+然后，我进行了智能合约编译。最开始使用 Hardhat 编译时，卡在 `Downloading compiler 0.8.24`，说明 Hardhat 下载 Solidity 编译器不稳定。后面改成使用本地 `solc` 编译，成功生成了合约编译结果。
+
+接着，我配置了 `.env` 文件，并学习了私钥、钱包地址和助记词之间的区别。部署过程中一开始出现 `invalid private key`，说明填入的不是正确格式的私钥。修正后，部署脚本能够读取钱包，并显示部署钱包地址。
+
+之后又遇到了 RPC 地址无法连接的问题，错误是 `ENOTFOUND rpc.testnet.monad.xyz`。通过更换 Monad Testnet RPC 为 `https://testnet-rpc.monad.xyz`，解决了网络节点连接问题。
+
+最终，我成功将 `RankRushScore` 智能合约部署到了 Monad Testnet。
+
+部署成功后，我把合约地址写入了前端配置文件 `contract-config.js`，让网页从 Mock 模式升级为真实合约模式。之后又发现直接用 `file://` 打开网页时，钱包插件可能无法正常注入，所以改成通过本地服务器运行项目，并使用：
+
+`http://localhost:5173`
+
+来打开 Demo。这样钱包连接和链上提交会更稳定。
+
+今晚最大的收获是，我真正走完了一次从前端 Demo、智能合约、部署脚本、RPC 配置、钱包私钥、测试网部署到前端合约接入的完整流程。以前我对“链上部署”更多停留在概念层面，但这次实际遇到了依赖安装、编译器下载、私钥格式、RPC 连接、钱包交互这些真实问题，也一步步解决了它们。
+
+我也更加理解了 Monad Rank Rush 的链上设计：不是每一次点击都应该上链，而是把点击、动画、临时分数留在前端，把最终成绩、任务完成和徽章记录放到链上。这样既能保证小游戏体验顺滑，也能保留链上记录的可验证性。
+
+目前项目已经具备真实合约地址，下一步需要完成一次真实 `Submit Score` 交易，拿到 Transaction Hash，并把它补充到最终提交材料中。之后还可以把项目部署到 GitHub Pages 或 Vercel，让其他用户也能打开网页、连接自己的钱包，并向同一个 Monad Testnet 合约提交成绩。
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

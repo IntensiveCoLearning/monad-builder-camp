@@ -5264,4 +5264,215 @@ Pendle Live 测试 155/155 通过，但公开解释的归属边界仍不充分�
 5. 稳定 PR 不需要频繁 Rebase。先判断是否存在冲突、依赖变化或安全原因，再决定是否更新。
 6. 角色分离记录可以提高个人项目的审计性，但不能代替真正的外部独立 Review。
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+## 一、今日概览
+
+今天的工作集中在两条主线：
+
+1. 推进 Mini Demo 的 M1 Evidence Contract，完成 Decision Engine 和 tokenOut mismatch Fixture 合并，并开始规划 amountIn mismatch Fixture。
+2. 深度参与 Moss 的 Receipt、Adapter、ABI、依赖边界和 Core 安全审查。
+
+今日可验证成果：
+
+* Mini Demo PR #66、#67 合并，Issue #6、#8 关闭。
+* Mini Demo 主分支新增 Decision Engine 与首个 STOP Fixture。
+* Moss Kuru PR #138 获维护者批准并合并。
+* 完成 Pendle、Clober、Neverland、Morpho、Core 共 6 次 Review 或复审。
+* Clober PR #121 在修复依赖问题后获得我的最终批准。
+* Issue #20 amountIn Fixture Work Plan 已提交，尚未进入实现。
+
+## 二、Decision Engine 正式合并
+
+凌晨完成 [Mini Demo PR #66](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/66) 的最终 Merge Gate 与 Squash Merge。
+
+合并内容包括：
+
+* 新增 `@moss-mini-demo/decision-engine` Package。
+* 通过公开 Schema 验证未知输入。
+* 完整执行 22 条 STOP 规则。
+* 聚合、去重并确定性排序 SourceReference。
+* 按 ADR Rank 排序 Reason。
+* 无 STOP 时只返回 `{ "status": "MANUAL_REVIEW" }`。
+* 保证同步、离线、纯函数、确定性和不修改输入。
+* 修复不同字符串产生相同 UTF-8 Bytes 时缺少稳定 Tie-breaker 的问题。
+
+最终 Head 为 `25f895cd`，651 项测试全部通过，Exact-head 和合并后 Main Quality Gate 均成功。
+
+Squash Commit 为 `aa7ea761`，Issue #6 随后关闭，分支删除。合并没有使用 Auto-merge 或 Admin Bypass，也没有修改保护规则。
+
+## 三、tokenOut Mismatch Fixture 合并
+
+Decision Engine 合并后，我推进 [Issue #8](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/8)。
+
+首版计划因测试放置在 report-schema Package、无法正确解析 decision-engine 公共包入口而被退回。Work Plan v2 将测试调整至 decision-engine Package，并通过显式 Fixture 路径读取数据，随后获得范围确认。
+
+对应的 [PR #67](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/67) 只修改三个文件：
+
+* tokenOut mismatch JSON Fixture。
+* Decision Engine 集成测试。
+* Fixture README。
+
+Fixture 中，Intent Token 与模拟 Outcome tokenOut 不一致，但 Simulation 仍为 `SUCCESS`。唯一关键 Alignment 为 `FAIL`，Decision 只产生一个 `CRITICAL_ALIGNMENT_FAIL`，并引用两项底层证据。
+
+验证结果：
+
+* Fixture 测试 2/2 通过。
+* Report Schema 测试 340/340 通过。
+* Decision Engine 测试 313/313 通过。
+* 完整仓库测试 653/653 通过。
+* Public Package Smoke Test 通过。
+* Exact-head Quality Gate 成功。
+
+PR #67 于上午完成 Squash Merge，主分支提交为 `c5238444`。合并后 Main Quality Gate 成功，Issue #8 关闭并归档。
+
+该 Fixture 只验证已经存在的合成 Alignment 结果，不实现 tokenOut 比较逻辑，也不属于真实 Monad、Moss、RPC 或链上证据。
+
+## 四、规划 amountIn Mismatch Fixture
+
+Issue #8 完成后，串行开发 Slot 释放，我认领了 [Issue #20](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/20)。
+
+Work Plan 规定使用确定性的 1 比 10 amountIn 场景：
+
+* Intent amountIn：`1000000000000000000`
+* Capability amountIn：`10000000000000000000`
+* Simulation Outcome amountIn：`10000000000000000000`
+
+Simulation 保持 `SUCCESS`，唯一 Critical Alignment 为 `FAIL`，最终输出一个 `CRITICAL_ALIGNMENT_FAIL` STOP，并引用：
+
+* `/capability/raw/amountIn`
+* `/intent/inputAmount`
+* `/simulation/outcomes/items/0/raw/amountIn`
+
+计划修改范围仍限制为一个 Fixture、一个 Decision Engine 集成测试和 Fixture README。
+
+当前只提交了 Work Plan，状态为等待 Maintainer Scope Confirmation。尚未创建实现分支、提交代码或打开 PR。Issue #9 继续等待 #20 完成。
+
+## 五、Kuru Receipt PR 正式合并
+
+我的 [Moss PR #138](https://github.com/nishuzumi/moss/pull/138) 今天获得维护者最终批准并合并，对应 [Issue #117](https://github.com/nishuzumi/moss/issues/117) 已关闭。
+
+该 PR 解决 Kuru 合法 Flip Order 生命周期事件被 Receipt Parser 当作未知事件拒绝的问题。
+
+最终结果包括：
+
+* 表示 `FlipOrderUpdated` 和 `FlippedOrderCreated`。
+* 保留原始 Change 身份、数量与顺序。
+* 要求 Flip 事件后紧邻同市场、由 Kuru Router 触发的 Trade。
+* 对反向顺序、跨市场、孤立事件和中间插入事件失败关闭。
+* 使用证据中性的文本，不推断两个 Order ID 的因果关系。
+* 将两个事件签名及 Topic 纳入 ADR 0007 的人工验证记录。
+
+维护者重新计算了事件 Topic，并在主网部署字节码中确认存在；同时运行了我因缺少 Key 无法完成的 MonadScan Explorer Suite，5/5 通过。
+
+Kuru 27/27、Linux CI 和 Windows Offline 均通过。最终 Head 为 `f39560db`，Merge Commit 为 `0c11b5ee`。
+
+## 六、Pendle Revert 解释审查
+
+我对 [Moss PR #109](https://github.com/nishuzumi/moss/pull/109) 提交 `CHANGES_REQUESTED`。
+
+主要问题是协议级错误解释可能跨 Contract Target 借用语义：
+
+* 两个 Target 定义同名但参数不同的 Custom Error 时，可能使用错误模板。
+* 两个 Target 都返回 `Error("LOCKED")` 时，可能共享并不属于当前合约的解释。
+* `stringRevertMessages` 缺少独立类型负向测试。
+* 空 Key、空解释和无效占位符缺少运行时回归测试。
+
+我建议将解释绑定到 Target 和完整 Error Signature，而不只是 Protocol。Pendle Live 155/155 通过，但解释归属仍属于公共安全边界，因此 PR 当前仍开放。
+
+## 七、Clober 依赖边界审查
+
+我对 [Moss PR #121](https://github.com/nishuzumi/moss/pull/121) 进行了两轮审查。
+
+第一轮发现生产源码仍从 `@themoss/system` 导入常量，但 Package 将其从 `dependencies` 移到了 `devDependencies`。这会让 tsup 将 System 和 WMON 实现打进 Clober Dist，同时发布后的 Manifest 不再声明真实跨包依赖。
+
+我要求恢复生产依赖分类，不修改 Clober 行为。
+
+作者修复后，我重新验证：
+
+* Packed Manifest 正确声明 `@themoss/system`。
+* Dist 保持外部 Package Import，不再嵌入 System 实现。
+* 完整 Live 测试 289/289 通过。
+* Clober 26/26 通过。
+* ABI Deployment Evidence 4/4 通过。
+* ABI 再生成零差异。
+
+最终我对 `ad0f5e6` 提交了 `APPROVED`。PR 当前仍开放，等待仓库检查和维护者最终决定。
+
+## 八、Neverland Receipt 二次审查
+
+我对 [Moss PR #132](https://github.com/nishuzumi/moss/pull/132) 进行了两轮审查。
+
+第一轮确认 Outcome 丢失第二个事件参与者，同时发现外部 Token 的 PriceObserved、Mint 和错误 Reserve 的 Collateral Toggle 仍可被接受。
+
+作者修复部分问题后，我在 `2ded0c2` 上复审，确认双 Actor 保存以及单个伪造 emitter 场景已经改善，但仍发现三个阻塞项：
+
+1. Genuine Token 和 Foreign Token 可以同时建立候选，Parser 没有要求 Reserve Token 身份唯一。
+2. Mint/Burn 只要任一参与者匹配就会通过，没有绑定 Pool Event 中的具体角色。
+3. Borrow 流程仍可接受与借款操作无关的 Collateral Enabled 事件。
+
+三项临时负向测试全部复现解析器接受对抗证据，因此再次提交 `CHANGES_REQUESTED`。
+
+## 九、Morpho Vault 复审
+
+我复审了 [Moss PR #156](https://github.com/nishuzumi/moss/pull/156)。
+
+此前发现的 Receipt 歧义已经修复：
+
+* Supply/Withdraw 收集完整候选集合。
+* Share 与 Asset Movement 都必须严格只有一个。
+* 六个 Decoy/Duplicate 场景全部拒绝。
+* 非候选 Transfer 仍交给 ERC-20 Receipt。
+
+完整测试 314/314、Morpho 51/51 通过。
+
+但我发现默认 MCP Composition 没有 Morpho 的 Discover/Load 断言。临时删除 `morpho` 默认注册后，MCP 测试仍然 12/12 通过，说明测试无法保护这项公共集成。
+
+因此要求增加一个能够在移除 Morpho 时真实失败的默认组合测试。PR 当前仍为 `CHANGES_REQUESTED`。
+
+## 十、Core Receipt 遍历安全审查
+
+我审查了新的 [Moss PR #168](https://github.com/nishuzumi/moss/pull/168)。
+
+该 PR 将递归 Receipt 遍历改为显式 Stack，并增加深度、参数数量、Outcome/Data Budget 和 Cycle 检查。
+
+我发现宽度方向仍有一个 Core 级问题：
+
+```
+stack.push(...children.toReversed())
+```
+
+在参数预算生效前，代码会先创建完整 Child Frame Array，并通过 Spread 一次性压入 Stack。
+
+临时测试结果：
+
+* 100,000 个 Change 最终返回预期的类型化 `PARAMETER_COUNT` 错误。
+* 200,000 个 Change 会先触发原生 `RangeError: Maximum call stack size exceeded`。
+
+这意味着超宽 Receipt 可以绕过设计中的类型化失败边界。我要求在分配全部 Frame 前执行宽度预算，并避免对不受限数组使用 Spread，同时增加超宽 Fixture。
+
+该 Review 状态为 `CHANGES_REQUESTED`。
+
+## 十一、当前状态
+
+* Mini Demo PR #66：已合并，Issue #6 已关闭。
+* Mini Demo PR #67：已合并，Issue #8 已关闭。
+* Mini Demo Issue #20：Work Plan 已提交，等待范围确认。
+* Mini Demo Issue #9：继续阻塞。
+* Moss PR #138：已批准并合并。
+* Moss PR #121：已批准，等待维护者处理。
+* Moss PR #109、#132、#156、#168：仍有 Review 阻塞项。
+* Moss PR #148：保持稳定且可合并，已请求首次正式技术 Review。
+
+## 十二、今日收获
+
+1. 合成 Fixture 可以验证 Schema 与 Engine 的失败关闭行为，但不能代替真实 Alignment 计算和链上证据。
+2. Receipt 的深度和宽度都需要资源预算，类型化错误必须先于 JavaScript Runtime Error。
+3. 跨 Package 依赖分类属于发布契约，能够运行不代表依赖关系表达正确。
+4. 人类可读错误解释必须服从与 ABI 相同的 Target 身份边界。
+5. Adapter 的默认注册需要可失效的集成测试，否则功能可能被静默移除。
+6. Kuru PR 的合并证明，从真实主网失败复现、最小修复、负向测试、人工来源记录到维护者验证，可以形成一条完整且公开可审计的开源贡献链。
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

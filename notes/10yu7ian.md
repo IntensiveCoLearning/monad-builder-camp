@@ -302,4 +302,10 @@ ay 3 已经为 Alpha Agent 补齐了任务 2（链上执行）和任务 3（数�
 
 进入前端开发阶段。我选择 React + Vite 作为技术栈
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+今天开始连接前后端，后端部署有点问题
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

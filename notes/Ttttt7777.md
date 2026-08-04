@@ -8936,4 +8936,83 @@ bundle 信息够了——路由、API、商业模式线索都齐了。这是个�
 
 ![534a0cc9-2c32-4c3c-80d6-6a41ecc7bd37.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-164073612/2026-08/151c592d-dcdf-4396-bfd7-1495eb6a4520.png)
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+# **2026-08-04 工作日志**
+
+## **FM分享广播剧网站**
+
+**交付**：`/Users/qiqiqi/2026-08-04-15-27-51/fmfenxiang-clone/`
+
+**技术栈**：Node.js + Express + JSON 文件数据库（data/db.json）+ 原生前端 SPA（hash 路由，浅/深色双主题）
+
+**功能**
+
+* 首页：banner 轮播、热门推荐、最新上架、编辑精选、平台数据、热播榜
+* 广播剧列表：6 大题材分类筛选 + 连载状态 + 3 种排序 + 分页 + 关键词搜索
+* 详情页：封面/简介/CV/制作信息、选集列表、评论、边听边发弹幕、收藏/订阅、原著跳转
+* 全局播放器：播放/暂停、进度条、倍速 0.5-3x、定时关闭 15/30/60 分钟、上一集/下一集、下载、弹幕开关（空格快捷键）
+* 原著：3 本原创小说，章节目录侧栏 + 正文阅读，与广播剧互跳
+* 发现：聚合搜索（剧集/原著/作者/CV）
+* 排行榜：播放榜 / 收藏榜 / 最新榜
+* 社区：帖子列表、热门讨论、发帖（需登录）
+* 用户系统：邮箱注册登录（scrypt 密码哈希 + token）、收藏、订阅、收听历史
+
+**数据**：12 部虚构广播剧（150 集）+ 3 本原著 + 评论/弹幕/帖子种子数据；36 段程序合成演示音频（16kHz WAV，18MB，脚本可重新生成）
+
+**关键脚本**：
+
+* `npm run setup` = seed + gen-audio（重置数据/音频）
+* `npm start` / `node server.js` 启动（端口 3000）
+
+**验证**：19 项端到端测试全通过（CDP 驱动无头 Chrome，脚本 /tmp/fm\_e2e.js），覆盖播放、倍速、选集切换、搜索、筛选、深色模式等。
+
+**待办/说明**：
+
+* 演示音频为合成配乐，替换真实广播剧音频：把文件放入 `storage/audio/` 并更新 db.json 中 episodes\[].audio 路径即可
+* 服务器需用 `run_in_background` 方式启动（普通 nohup 会在会话结束时被回收）
+
+## **追加：防爬改造**
+
+技术栈 Laravel + Livewire + Alpine.js + Howler.js。防爬核心=权限墙：未登录时播放器 boot(null,...,'no\_login',...) 拿不到音频地址；音频 URL 仅在登录+积分/付费解锁后通过 player-ready 事件动态下发；有 CSRF + purchase/payhipUnlock/taobaoUnlock 付费墙。
+
+**本站实现（同等级）**：
+
+* 音频移出 public/ → `storage/audio/`（不再静态暴露）
+* 详情/首页/列表/排行/搜索 API 全部剔除 audio 字段（sanitizeSound）
+* 新增 `POST /api/sounds/:id/play-url`（需登录）→ 返回 HMAC-SHA256 签名 URL `/stream/:sid/:eid?exp=&sig=`，有效期 600s
+* `GET /stream/:sid/:eid` 校验签名+时间戳（timingSafeEqual），支持 Range（res.sendFile）
+* 下载 `GET /api/sounds/:id/episodes/:eid/download` 需登录（前端 fetch blob）
+* SPA fallback 修复：带扩展名资源 404，避免吞掉音频请求返回 200
+* 前端：播放先请求 play-url，未登录 dispatch fm:need-login → 弹登录框
+
+**验证**：未登录播放弹登录框；旧路径 404；未签名/篡改/过期 403；登录播放 200、Range 206；未登录下载 401；23 项 e2e 全通过（/tmp/fm\_e2e.js v2）。
+
+## **追加：真实音频导入工具**
+
+新增 `scripts/import-audio.js` 一键导入真实音频：
+
+* `node scripts/import-audio.js --list` 列出全部剧 ID/标题/集数
+* 音频放 `storage/import/`，命名 `{剧ID}-{集数}.ext` 或 `{剧名}-{集数}.ext`（如 65329-1.mp3 / 晚风告白-1.mp3）
+* 支持 mp3/m4a/aac/wav/ogg/flac/wma/opus；自动复制到 storage/audio/、更新 db.json 该集 audio 与 duration（WAV/MP3 可探测时长）、检测服务器占用并提示重启
+* 逐集独立导入：已导入集用真实音频，未导入集保持演示音频
+* 导入后必须重启服务器生效（server 内存 db 不自动刷新）
+* 已验证：导入第5集后 db.json 正确更新为 /audio/65329-5.wav，duration 16s
+
+## **追加：一键启动器（用户要"更方便的打开方式"）**
+
+* 项目根目录 `启动FM分享网站.command` + `停止FM分享网站.command`（已 chmod +x，桌面也放了一份启动器）
+* 启动器逻辑：curl 探测 3000 端口 → 已在运行则 open 浏览器；未运行则 nohup node server.js 启动并 open <http://localhost:3000>，带 8s 就绪等待
+* 停止器：lsof -ti:3000 kill
+* 注意：会话间后台 node 进程可能被回收（即使 run\_in\_background），双击启动器是最稳的恢复方式
+* 已验证：运行中分支/启动分支/停止分支均正常
+
+## **追加：启动器修复（用户双击报"启动失败"）**
+
+* **根因**：双击 .command 时 macOS GUI 环境 PATH 不含 node（`nohup: node: No such file or directory`）。命令行正常是因为 shell 环境 PATH 里有托管 node
+* **修复**：启动器内 NODE 变量优先用绝对路径 `/Users/qiqiqi/.workbuddy/binaries/node/versions/22.22.2/bin/node`，找不到再 fallback `command -v node`；探测逻辑改为必须 HTTP 200 才算已运行/启动成功（之前"任意 HTTP 响应"会误判，如沙箱代理对无服务端口的 502）
+* 项目与桌面副本均已更新，模拟受限 PATH 验证两种分支通过
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

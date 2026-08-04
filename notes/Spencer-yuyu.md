@@ -223,4 +223,12 @@ Working on黑客松产品文档
 
 打卡
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+<https://app.notion.com/p/8-4-3b254a97f451807ab3f8caeb23f4f0de>
+
+<https://app.notion.com/p/Research-POW-3a454a97f451808f84c2eddcf31bdf7b>
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

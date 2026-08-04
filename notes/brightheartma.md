@@ -2875,4 +2875,62 @@ Replay 不重新调用 Moss、RPC、Risk、Quote 或 Action，也不重新生成
 * 保持 PR9 的最薄读取路径；
 * 将 `PROCEED`、`ADJUST`、`STOP` Fixture 作为独立 PR 处理。
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+## 今日主题
+
+ 
+
+今天把 Parallax API 的两条 P0/P2 主线收束并合并进 `main`：[PR #11](https://github.com/parallax-monad/parallax/pull/11) 把 `POST /api/check` 的 Re-run 父子 Run 关系、不可变 baseline、精确 Intent Diff 和机器可读拒绝原因写进契约；[PR #12](https://github.com/parallax-monad/parallax/pull/12) 补上可执行的 Node 后端运行时，让 Check 与 Recorded Replay 路由能在真实 listener 上启动和验证。两条 PR 都经过三位 Owner 分域 review，并在 review 反馈上迭代到 merge。
+
+## 今日完成
+
+1. **PR #11 — Re-run lifecycle contract**（merged 2026-08-04）
+   * 在 `POST /api/check` 契约上增加可选 `parentRunId`，由 orchestrator 拥有 Re-run 资格判定与 Diff 构造。
+   * 新增 `RerunRejectionReason` 稳定 enum，覆盖 parent missing、Replay parent、chaining、chain/sender 变更、Boundary 变更、no-op、多字段变更等八种拒绝场景。
+   * 失败 child Run 保留 `parentRunId` 和 `diff`，Integration Error 不伪造 Rule Results / Evidence / Verdict。
+   * 新增 ADR 0002，明确 `diff` 是机器可比的 normalized 序列化，不是用户展示模型。
+   * 214 tests、typecheck、lint 全部通过；三位 Owner（@jzhao0、@antony819、@chin0312）全部 approve。
+2. **PR #12 — P2 Node backend runtime**（merged 2026-08-04）
+   * 新增 `bootstrapBackendApp()`、`startBackendServer()` 和 `tsx src/server.ts` 启动路径。
+   * 启动前校验 `MONAD_RPC_URL`、`MOSS_RUNTIME_*`、`PARALLAX_TOKEN_REGISTRY_JSON`、`HOST`、`PORT`；空白 `PORT` 不再被 coerce 成 `0`。
+   * Live Check 默认注入 `UnavailableAgentFlow`，返回 HTTP 502 + `error.code: "UNSUPPORTED"` + `verdict: UNKNOWN` + `retryable: false`。
+   * 新增 CORS middleware、`.env` 加载、真实 Node listener integration test、CI integration test 路径。
+   * 230 tests + integration test 全部通过；@antony819 与 @jzhao0 的 P1 review 项在 follow-up commit 中关闭。
+
+## 今日学到
+
+1. **Re-run 是 orchestrator 拥有的「单条件变更」契约，不是前端随意重试。** PR #11 把 Re-run 资格判定和 Diff 构造下沉到 `packages/orchestrator/application/rerun.ts`。一次 Re-run 只能改一个 normalized Intent 条件；父 Run 必须是 completed baseline，不能 chain child→child；Economic Boundary 不可作为 Re-run 条件；Recorded Replay 与 Check `RunStore` 隔离。
+2. **前端分支必须依赖** **`reason`** **enum，不能匹配英文 message。** `@antony819` 在 PR #11 review 里指出：八种拒绝场景如果只靠 prose `message`，前端只能靠字符串匹配——一旦改文案或做 i18n 就会断。`reason` enum 才是跨语言、跨版本的安全接口。
+3. **失败 child Run 也要保留证据链。** Re-run 过程中 Agent Flow 抛异常或返回无效响应时，child Run 仍以 `integration_error` / `UNKNOWN` 写入 Store，并保留 `parentRunId` 和 `diff`。失败不是空白，而是带上下文的 fail-closed envelope。
+4. **P2 运行时的关键是「可启动 + fail-closed + Live/Replay 分离」。** PR #12 让 `pnpm start` 能跑起来，但 Live Check 明确 fail-closed；`UNSUPPORTED` 与 `AGENT_FLOW_ERROR` 的机器可读区分，决定了 UI 该显示「Live 尚未接入」还是「集成崩溃请重试」。Recorded Replay 只走 `/api/replay/:id`，绝不作为 Live Check fallback。
+5. **Review 反馈把「契约」和「可运行」两条线都推到了可 merge 状态。** PR #11 确认 parent/child 所有权、Boundary 保持、Replay 隔离；PR #12 关闭 CORS、`.env` 加载、`UNSUPPORTED` 结构化错误、真实 env→listener 集成测试路径等 P1 项。
+
+## 目前仍然存在的问题
+
+* verified `ADJUST` Action Gate 与 `ActionGateAttestation` 尚未激活。
+* run-by-id 持久化与 Session History 仍 outside scope，Previous/New 面板刷新后不可读。
+* Live Moss/Kuru Agent Flow 尚未注入（PR #10 adapter 已就绪，P0 Live blocker 仍在）。
+* RunDiff 字段命名与 future transaction-adjustment model 的对齐仍是非阻塞 follow-up。
+* 生产部署、auth、rate limiting 尚未实现。
+
+## 明日计划
+
+1. 开始前端 adapter 接线：基于 `parentRunId`、`diff`、`error.reason` 实现 Re-run 分支逻辑。
+2. 明确 run-by-id / Session History 的拆分边界与 timeline。
+3. 跟进 Live Agent Flow 注入路径，保持 fail-closed 语义不被弱化。
+4. 将 orchestrator Re-run 规则映射到 UI 的 Previous/New 面板设计。
+
+## 今日反思
+
+今天最大的变化，是从「写测试通过的 plumbing」变成「被三位不同视角 Owner review 并 merge 的共享契约」。
+
+PR #11 的 review 让我意识到：API 设计里最容易被低估的不是业务逻辑，而是**消费方如何稳定分支**。PR #12 则把 fail-closed 从测试断言变成了可 `pnpm start` 验证的运行时行为。
+
+两个 PR 也再次印证 Parallax 的分层：`orchestrator` 拥有 Re-run 规则，`apps/api` 拥有传输与 Store，`bootstrap` 拥有运行时组装，ADR 拥有边界声明。每一层都知道自己**不做什么**，这比单 PR 加功能更重要。
+
+今天完成的是已 merge 的后端契约与运行时，不是 Live Check 端到端可用。真正的 Proof of Work 仍然是 Agent Flow 注入、前端 adapter 接线，以及 run-by-id 让 Previous/New 面板在刷新后仍可读。
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

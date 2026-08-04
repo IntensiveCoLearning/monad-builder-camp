@@ -669,4 +669,22 @@ ZeroDev 当前文档已列出 Monad Testnet 支持 Kernel Smart Account、Permis
 
 今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-03.md
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+今天同步并复核了 OddLane 最新的合约与前端代码。CLOB 主线仍保持 Prediction-native Fully Onchain CLOB、Complete Set、Pyth 和 Single-Lane Rollover；我重新跑了合约与前端验证，当前本地回归和 production build 都通过。
+
+ 
+
+这次复核让我更明确地区分了“本地实现已验证”和“线上运行中”：订单、持仓、结算、赎回、Keeper 观测和 Demo 流动性相关界面已经有实现与测试，但不能因为 build 通过就宣称 Keeper、Demo Bot 或线上前端实例当前正在运行。
+
+<br />
+
+同时我记录了两个部署前要继续处理的问题：Bot / Taker 与 RPC 工具的重复导入告警，以及 es2019 构建目标下的 BigInt 兼容性告警。下一步会先修复这些工程问题，并继续推进 ZeroDev Kernel 的 Bundler、Permission Policy 与真实 UserOperation E2E 验证。
+
+<br />
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-04.md
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

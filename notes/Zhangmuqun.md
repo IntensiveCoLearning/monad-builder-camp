@@ -1932,4 +1932,35 @@ OpenZeppelin 原生 ERC20 状态校验逻辑天然兼容，但上层业务不能
 
 常规 approve 需要单独一笔链上交易；Permit 支持链下签名授权，**一笔交易完成授权 + 转账**，大幅改善用户体验，是现代 DApp 主流优化方案。
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+1. **AccessControl 权限模型**
+
+* 通过角色 ID 划分权限：签发者角色、管理员角色、只读用户；不同角色只能调用对应权限函数，普通用户无法发起凭证签发、撤销操作。
+* `grantRole`/`revokeRole`做角色分配，合约部署者默认拥有管理员权限，生产环境注意不要把管理员权限长期留在个人钱包。
+* 与 Ownable 对比：Ownable 仅单一管理员，AccessControl 适合多主体协作场景，契合 LifeProof 多方导师签发凭证的业务。
+
+1. **Moss Agent ↔ 智能合约交互边界**
+
+* Agent 负责：接收用户输入、校验业务逻辑、组装交易参数、做前置数据校验；**Agent 不能保管私钥**，签名依旧交由前端 MetaMask 完成。
+* 合约负责：链上状态持久存储、权限校验、事件 emit；所有关键状态变更必须在合约层再校验一遍，不能信任 Agent 输出结果。
+* 数据流：用户输入→Moss Agent 处理输出结构化参数→前端拿到参数唤起钱包签名→发送交易至 Monad 测试网→合约执行，emit 事件→前端监听事件刷新页面。
+
+1. **Monad 环境开发注意点**
+
+* Gas 机制与以太坊有差异，测试网部署时 gasLimit 不要直接复用以太坊数值，优先依靠 RPC 自动估算。
+* 合约事件监听，优先使用区块浏览器索引或者 viem 的 watchEvent，避免轮询全部区块带来性能损耗。
+
+<br />
+
+1. 合约迭代（Solidity ^0.8.26）
+
+* 引入`@openzeppelin/contracts/access/AccessControl.sol`，给凭证合约继承权限合约。
+* 定义角色常量：凭证签发者、合约管理员；实现 issueCredential 签发、revokeCredential 撤销、getCredential 查询函数。
+* 增加凭证结构体：凭证 ID、接收人地址、签发者地址、元数据 URI、是否撤销、时间戳。
+* 本地 Remix 编译，无警告；部署 Monad 测试网，记录合约地址、部署交易 hash。
+* 测试用例：普通账户尝试调用签发函数，预期回滚拒绝；授权后的签发账户成功发布链上凭证。
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

@@ -986,4 +986,10 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 打卡
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+确定黑客松题目，完成前端
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

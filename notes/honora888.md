@@ -7386,363 +7386,107 @@ quest-1-v1.0.0
 
 <br />
 
-## 已完成
+## 当前阶段 17：链安修仙录主页双入口 🎯
 
-### 1. Quest 1 合约与安全验证
+## 7.1 目标
 
-* GuardianQuest 已部署到 Monad Testnet：\
-  `0x131DEbd042208A327841128e5800dd4a833032ab`
+将 `/` 从单一 Quest 导向页升级为完整产品主页。
 
-* Foundry 全量测试通过。
-
-* Guardian、Charity、Invariant 测试通过。
-
-* Slither 已完成 Vulnerable / Fixed 对照验证。
-
-* 恶意 ERC1155 Receiver 回归测试通过。
-
-* Phase 7 Security Freeze 和安全证据已完成。
-
-* 当前结论为：`PASS WITH KNOWN LOW WARNING`。
-
-### 2. Moss 基线和 Testnet Runtime
-
-* Moss 官方基线完成：
-
-  * install
-
-  * build
-
-  * lint
-
-  * typecheck
-
-  * offline tests
-
-* Monad Testnet RPC 已确认支持：
-
-  * `debug_traceCall`
-
-  * `callTracer`
-
-  * `prestateTracer`
-
-* `createRuntime()` 已支持显式传入：
+主页必须清楚回答：
 
 ```
-expectedChainId: 10143
-
+链安修仙录是什么？
+用户可以做什么？
+修炼与贡献有什么区别？
+Monad 和 Moss 在哪里？
 ```
-
-* 默认 Monad Mainnet `143` 行为未被破坏。
-
-* Runtime 修改已提交：
-
-```
-3bbb4c1 feat(core): allow explicit runtime chain ID
-
-```
-
-* Runtime 分支已推送到你自己的 Moss Fork。
-
-### 3. Guardian Moss Adapter
-
-已经实现：
-
-```
-Package: @themoss/protocol-guardian
-
-Queries:
-guardian.quest
-guardian.questFunding
-
-Capability:
-guardian.fundQuest
-
-```
-
-其中：
-
-* `guardian.quest` 真实调用 `quests(uint256)`。
-
-* `guardian.questFunding` 从 `quests().totalFunded` 投影，不调用不存在的 `questFunding()`。
-
-* `guardian.fundQuest` 构造一笔 payable unsigned transaction。
-
-* 金额必须大于零。
-
-* 不签名、不广播。
-
-* Receipt 会验证：
-
-  * 原生 MON 转账；
-
-  * `QuestFunded` 事件；
-
-  * funder、金额、目标地址；
-
-  * Change 顺序。
-
-人工验证结果：
-
-```
-Guardian tests：8/8 PASS
-Install：PASS
-Build：PASS
-Lint：PASS
-Typecheck：PASS
-Offline tests：PASS
-Unexpected files：0
-
-```
-
-相关代码和全仓库验证均已通过。
-
-### 4. 真实 Monad Testnet 查询与模拟
-
-已经完成真实链上运行，不是 Mock：
-
-```
-discover
-→ load
-→ guardian.quest
-→ guardian.questFunding
-→ guardian.fundQuest
-→ debug_traceCall
-→ Ordered Receipt
-
-```
-
-Quest 1 当前真实状态：
-
-```
-questId：1
-active：true
-contentHash：非零
-metadataURI：有效
-totalFunded：0
-
-```
-
-模拟交易：
-
-```
-金额：0.001 MON
-Wei：1000000000000000
-目标：GuardianQuest
-方法：fundQuest(1)
-reverted：false
-gas：69253
-warnings：[]
-
-```
-
-Ordered Receipt 正确识别了：
-
-```
-1. Native MON Transfer
-2. QuestFunded Event
-
-```
-
-模拟全过程没有签名和广播。
 
 ***
 
-## 尚未完成
+## 7.2 首页 Hero
 
-### 1. Guardian Adapter 提交与推送
-
-Adapter 已实现并验证，但你还没有贴出最终提交和推送结果。
-
-当前需要完成：
+建议文案：
 
 ```
-git add 精确暂存 10 个文件
-git commit
-git push origin feat/guardian-moss-integration
-确认本地 SHA = 远端 SHA
+链安修仙录
+以攻为鉴，以修证道
 
+复现真实智能合约漏洞，完成修复与链上验证；
+也可以提交新的漏洞与攻击样例，共同扩充异兽志与安全 Quest。
 ```
 
-所以目前状态是：
+状态标签：
 
 ```
-Runtime：已提交并推送
-Guardian Adapter：已验证，但提交/推送尚未确认
-
+Monad Testnet
+Evidence-driven
+Moss Protocol Guardrails
+Human-reviewed Contributions
 ```
-
-### 2. 真实钱包交易
-
-目前只是模拟，链上的：
-
-```
-totalFunded = 0
-
-```
-
-还需要真正执行一次：
-
-```
-钱包检查交易
-→ 用户确认签名
-→ 广播 fundQuest(1)
-→ 获得交易哈希
-→ 等待确认
-
-```
-
-然后验证：
-
-```
-totalFunded before
-totalFunded after
-after - before = 实际资助金额
-QuestFunded event 正确
-交易状态成功
-
-```
-
-这是完整闭环中最关键的链上证据。
-
-### 3. Guardian Agent 产品页面
-
-还需要在主项目 `chain-security-cultivation` 中实现最小 `/guardian-agent` 页面：
-
-* 连接钱包；
-
-* 显示 Quest 1 状态；
-
-* 显示当前资金；
-
-* 输入资助金额；
-
-* 调用 Moss 构造交易；
-
-* 展示 unsigned transaction；
-
-* 展示 Ordered Receipt；
-
-* 展示 warnings；
-
-* 有 Warning 时禁止继续；
-
-* 用户确认后调用钱包；
-
-* 显示交易哈希和交易后状态。
-
-### 4. ACT6 入口
-
-需要把主线剧情或 Quest 页面中的 ACT6 CTA 接到 Guardian Agent：
-
-```
-进入 Guardian Agent
-查看安全模拟
-确认链上资助
-
-```
-
-这部分是“修仙叙事”和 Moss Agent 功能之间的产品连接点。
-
-### 5. 最终证据整理
-
-当前 Moss 证据主要保存在：
-
-```
-C:\dev\moss-baseline-evidence
-
-```
-
-还需要选取关键证据写入项目仓库，例如：
-
-```
-Runtime Testnet smoke
-Guardian discover/load
-真实 Query
-unsigned transaction
-Ordered Receipt
-warnings = []
-真实交易哈希
-资金 before / after
-
-```
-
-不要把 RPC URL、私钥或 `.env` 文件写入证据。
-
-### 6. 最终提交材料
-
-还没有完成：
-
-* 主 README 更新；
-
-* 产品架构图；
-
-* Moss 集成说明；
-
-* Monad Testnet 部署信息；
-
-* 安全验证摘要；
-
-* Demo 操作步骤；
-
-* 已知限制；
-
-* 页面部署；
-
-* Demo 录屏；
-
-* Pitch 文案；
-
-* 截图；
-
-* Release / Tag；
-
-* 最终回归；
-
-* 黑客松提交表单。
 
 ***
 
-## 暂缓项目
+## 7.3 首页双入口卡片
 
-这些不属于当前 P0 闭环，继续保持延期：
-
-```
-verifyCompletion 第二个 Capability
-Quest 2
-Kuru 集成
-复杂 Capability Tree
-完整通用 Evidence Dossier
-通用安全漏洞图鉴 Worker
-非关键视觉细节
+### 卡片 A：秘境修炼
 
 ```
+秘境修炼
 
-## 当前进度判断
+进入已收录的安全 Quest，
+复现攻击、完成修复并验证你的理解。
 
-粗略按交付价值估算：
-
-```
-合约与安全层：约 95%
-Moss 后端集成：约 90%
-真实链上闭环：约 65%
-前端产品集成：尚未正式开始
-最终提交材料：约 30%
-整体可提交成品：约 60%
-
+CTA：开始修炼
+Route：/quests/1
 ```
 
-当前最短关键路径是：
+### 卡片 B：异兽献策
 
 ```
-提交并推送 Guardian Adapter
-→ 完成真实 fundQuest 交易
-→ 验证 totalFunded Before / After
-→ 实现最小 Guardian Agent 页面
-→ 接入 ACT6
-→ 部署、录屏、README、Pitch
+异兽献策
+
+提交漏洞合约、攻击样例与修复对照，
+由 Guardian Security Agent 生成待审核的安全案例草案。
+审核收录后结算贡献值。
+
+CTA：提交安全案例
+Route：/guardian-agent
+```
+
+***
+
+## 7.4 首页辅助信息
+
+P0 可加入：
 
 ```
+已开放 Quest：1
+当前支持漏洞：Classic Reentrancy
+分析模式：Deterministic Rules
+外部模型：未连接
+发布机制：Human Review Required
+```
+
+不要伪造：
+
+* 用户贡献总数；
+* 已发贡献值；
+* 活跃用户数；
+* 审核通过案例数；
+* 主网资产数据。
+
+***
+
+## 7.5 首页验收
+
+* 两个 CTA 路由正确；
+* 桌面双卡布局；
+* 移动端单列；
+* 不破坏 Quest 1；
+* 不自动请求 RPC；
+* 不显示钱包连接；
+* 不显示资助为主操作；
+* 不声称外部 AI 模型已接入；
+* `npm run lint`、Typecheck、Build PASS。
 <!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

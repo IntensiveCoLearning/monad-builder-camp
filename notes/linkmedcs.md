@@ -717,4 +717,743 @@ BSC 和 Ethereum 并非简单的竞争关系，而是服务于不同的发展方
 
 **EIP-7702 + EIP-5792 + ERC-4337，做一个“无感链游钱包/游戏账户系统”。**
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+**链上养成类小农场游戏（类似 Farm + NFT + 资源经济 + 成长系统）的核心合约架构。重点放在游戏核心逻辑上链**，采用 Solidity 风格伪代码，不考虑具体链（Monad/EVM 均可适配）。
+
+ 
+
+游戏设定：
+
+* 玩家拥有自己的农场 NFT
+* 种植作物
+* 作物经过时间成长
+* 收获获得资源
+* 资源用于升级土地、购买种子、培养宠物
+* 高级农场产生更高收益
+* 所有核心资产链上验证
+
+***
+
+# **合约架构**
+
+```
+FarmGame
+│
+├── FarmNFT        // 农场土地 NFT
+├── CropNFT        // 作物 NFT
+├── ItemNFT        // 道具 NFT
+├── ResourceToken  // 游戏资源 Token
+│
+└── GameLogic      // 核心玩法合约
+```
+
+核心只需要一个：
+
+```
+FarmGame.sol
+```
+
+***
+
+# **1. 玩家农场结构**
+
+```
+contract FarmGame {
+
+
+struct Farm {
+
+    uint256 owner;
+
+    // 土地等级
+    uint256 level;
+
+    // 最大种植数量
+    uint256 capacity;
+
+
+    // 经验值
+    uint256 exp;
+
+
+    // 当前金币
+    uint256 gold;
+
+
+    // 创建时间
+    uint256 createdAt;
+
+
+    // 已解锁功能
+    uint256 features;
+
+}
+
+
+
+mapping(uint256 => Farm) public farms;
+
+
+// 用户拥有的农场
+mapping(address => uint256[]) public userFarms;
+
+
+}
+```
+
+***
+
+# **2. 创建农场**
+
+玩家第一次进入游戏：
+
+```
+function createFarm()
+external
+returns(uint256 farmId)
+{
+
+    farmId = farmCounter++;
+
+
+    farms[farmId] = Farm({
+
+        owner: msg.sender,
+
+        level:1,
+
+        capacity:3,
+
+        exp:0,
+
+        gold:100,
+
+        createdAt:block.timestamp,
+
+        features:0
+
+    });
+
+
+    userFarms[msg.sender].push(farmId);
+
+
+    // 铸造土地NFT
+    farmNFT.mint(
+        msg.sender,
+        farmId
+    );
+
+}
+```
+
+***
+
+# **3. 种子系统**
+
+种子作为 NFT：
+
+```
+struct Seed {
+
+
+    uint256 id;
+
+
+    // 作物类型
+    CropType crop;
+
+
+    // 生长时间
+    uint256 growTime;
+
+
+    // 基础产量
+    uint256 reward;
+
+
+    // 稀有度
+    uint256 rarity;
+
+
+}
+
+
+
+mapping(uint256=>Seed)
+public seeds;
+```
+
+例如：
+
+```
+普通小麦
+成长 10分钟
+收益 10金币
+
+
+黄金南瓜
+成长 24小时
+收益 500金币
+```
+
+***
+
+# **4. 种植逻辑**
+
+玩家消耗种子：
+
+```
+struct Plant {
+
+
+    uint256 seedId;
+
+
+    uint256 farmId;
+
+
+    uint256 plantedTime;
+
+
+    bool harvested;
+
+}
+
+
+
+mapping(uint256=>Plant)
+public plants;
+
+
+
+function plant(
+uint256 farmId,
+uint256 seedId
+)
+external
+{
+
+
+Farm storage farm = farms[farmId];
+
+
+require(
+farm.owner==msg.sender,
+"not owner"
+);
+
+
+
+require(
+activePlants[farmId]
+<
+farm.capacity,
+"farm full"
+);
+
+
+
+seedNFT.burn(
+msg.sender,
+seedId
+);
+
+
+
+plants[plantId++] = Plant({
+
+seedId:seedId,
+
+farmId:farmId,
+
+plantedTime:block.timestamp,
+
+harvested:false
+
+});
+
+
+}
+```
+
+***
+
+# **5. 作物成长算法**
+
+核心：
+
+```
+收益 = 基础收益 × 土地等级 × 稀有度 × 随机因子
+```
+
+伪代码：
+
+```
+function calculateReward(
+uint256 plantId
+)
+internal
+view
+returns(uint256)
+{
+
+
+Plant p = plants[plantId];
+
+
+Seed memory seed =
+seeds[p.seedId];
+
+
+Farm memory farm =
+farms[p.farmId];
+
+
+
+uint256 timePassed =
+block.timestamp
+-
+p.plantedTime;
+
+
+
+require(
+timePassed >= seed.growTime,
+"not mature"
+);
+
+
+
+reward = 
+seed.reward
+*
+farm.level
+*
+seed.rarity;
+
+
+
+return reward;
+
+
+}
+```
+
+***
+
+# **6. 收获**
+
+```
+function harvest(
+uint256 plantId
+)
+external
+{
+
+
+Plant storage p =
+plants[plantId];
+
+
+Farm storage farm =
+farms[p.farmId];
+
+
+
+require(
+farm.owner == msg.sender
+);
+
+
+
+require(
+!p.harvested
+);
+
+
+
+uint256 reward =
+calculateReward(
+plantId
+);
+
+
+
+p.harvested=true;
+
+
+
+// 发放资源
+resourceToken.mint(
+msg.sender,
+reward
+);
+
+
+
+// 增加经验
+
+farm.exp += reward/10;
+
+
+
+checkLevelUp(
+p.farmId
+);
+
+
+}
+```
+
+***
+
+# **7. 农场升级系统**
+
+升级公式：
+
+```
+升级费用 = 当前等级² ×100
+```
+
+例如：
+
+
+
+Lv1 → Lv2
+
+
+
+100金币
+
+
+
+Lv5 → Lv6
+
+
+
+2500金币
+
+```
+function upgradeFarm(
+uint256 farmId
+)
+external
+{
+
+
+Farm storage farm =
+farms[farmId];
+
+
+require(
+farm.owner==msg.sender
+);
+
+
+
+uint256 cost =
+farm.level *
+farm.level *
+100;
+
+
+
+resourceToken.burn(
+msg.sender,
+cost
+);
+
+
+
+farm.level++;
+
+
+
+farm.capacity +=2;
+
+
+}
+```
+
+***
+
+# **8. 随机事件系统**
+
+增加游戏性：
+
+例如：
+
+* 下雨
+* 虫灾
+* 黄金收成
+
+```
+function randomEvent(
+uint256 farmId
+)
+internal
+{
+
+
+uint256 random =
+keccak256(
+abi.encodePacked(
+block.timestamp,
+msg.sender
+)
+)%100;
+
+
+
+if(random <5)
+{
+
+// 黄金事件
+
+goldBuff[farmId]=2;
+
+}
+
+
+else if(random <15)
+{
+
+// 虫灾
+
+growthPenalty[farmId]=50;
+
+}
+
+
+}
+```
+
+***
+
+# **9. 宠物系统（长期养成）**
+
+宠物 NFT：
+
+```
+struct Pet {
+
+
+uint256 level;
+
+
+uint256 power;
+
+
+uint256 bonus;
+
+
+}
+
+
+
+mapping(uint256=>Pet)
+pets;
+```
+
+宠物影响：
+
+```
+收益提升
+|
+├── 小鸡 +5%
+├── 小狗 +10%
+└── 神龙 +50%
+```
+
+收获：
+
+```
+reward *=
+(100 + pet.bonus)
+/
+100;
+```
+
+***
+
+# **10. 链上经济模型**
+
+推荐：
+
+```
+                 玩家
+                  |
+                  |
+              Resource Token
+                  |
+       -----------------------
+       |                     |
+    升级土地             购买种子
+       |                     |
+       |                     |
+     产量增加 <--------  高级作物
+```
+
+***
+
+# **11. 防止机器人设计**
+
+链游非常重要：
+
+## **每日体力**
+
+```
+struct Player {
+
+
+uint256 energy;
+
+
+uint256 lastUpdate;
+
+
+}
+
+
+
+function consumeEnergy()
+{
+
+require(
+energy>0
+);
+
+
+energy--;
+
+}
+```
+
+***
+
+## **随机种子**
+
+不要使用：
+
+```
+block.timestamp
+```
+
+正式版：
+
+```
+Chainlink VRF
+Monad native randomness
+```
+
+***
+
+# **12. PVP玩法扩展**
+
+可以加入：
+
+偷菜：
+
+```
+function steal(
+uint256 targetFarm
+)
+{
+
+
+require(
+targetFarm.level < attacker.level
+);
+
+
+
+uint256 amount =
+farm.gold * 5 /100;
+
+
+
+farm.gold -= amount;
+
+
+attacker.gold += amount;
+
+
+}
+```
+
+农场战争：
+
+```
+struct Battle {
+
+
+uint256 attacker;
+
+
+uint256 defender;
+
+
+uint256 power;
+
+
+uint256 reward;
+
+
+}
+```
+
+***
+
+# **13. NFT资产设计**
+
+| **资产** | **类型**  | **作用** |
+| :----- | :------ | :----- |
+| 土地     | ERC721  | 农场入口   |
+| 作物     | ERC721  | 成长对象   |
+| 种子     | ERC1155 | 消耗品    |
+| 宠物     | ERC721  | 永久加成   |
+| 金币     | ERC20   | 经济循环   |
+
+***
+
+# **更适合 Monad 黑客松的版本**
+
+如果做 Monad 链游，我建议简化成：
+
+```
+Farm NFT
+    |
+    |
+Plant Contract
+    |
+    |
+Growth Engine
+    |
+    |
+$SEED Token
+    |
+    |
+Marketplace
+```
+
+核心卖点：
+
+1. **低 Gas 高频操作**
+   * 每分钟成长计算
+   * 自动化收获
+2. **链上 AI 农夫**
+   * AI NPC 帮玩家管理农场
+3. **PVP 生态**
+   * 偷菜
+   * 农场战争
+   * 排行榜
+4. **可组合 NFT**
+   * 土地 + 作物 + 宠物组合生成稀有农场
+
+这个结构基本可以作为一个 **Monad Hackathon 的完整链游 MVP 合约设计**。
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

@@ -241,4 +241,10 @@ Mini Demo 0：Monad FocusProof Agent
 
 今日准备进行多模态的能力接口
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+今日做冒烟测试时发现接入真实llm，会出现加载过时超15s报错
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

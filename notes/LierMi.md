@@ -836,4 +836,469 @@ if (toAgent > escrowed
 
 打卡，项目开发遇到一点问题，主要是前端这一块，希望最后能顺利提交
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+# 一、法律概念进了代码：可分给付
+
+## 问题
+
+原来的分账是加权求和：
+
+```
+C1 按时 25% ✅ + C2 PNG 25% ✅ + C3 透明 25% ✅ = 75%
+C4 是猫 25% ⬜ 判不了
+→ 付 0.15，冻 0.05
+```
+
+**看起来很合理，其实错了。**
+
+## 为什么错
+
+加权求和有个**隐含前提**：条款之间可分割、价值可独立累加。
+
+* 买 10 箱水，送到 7 箱 → 那 7 箱**有独立价值**，付 70% 合理
+* 定制一张桌子，少一条腿 → **没有独立价值**，桌子不能用
+
+一张按时交付的、PNG 的、背景透明的**土豆**图，对委托人的价值是零。
+格式条款之所以有意义，是因为它服务于「一只猫」这个主体。
+
+> 大陆法系管这个叫**可分给付 / 不可分给付**：
+> 判断标准是「部分履行对债权人是否有独立价值」。
+
+## 更要命的一层
+
+我们整个项目的主张是「**判不了的，不替人做决定**」。
+
+但按权重付 75%，本身就是一个价值判断 —— **认定「格式合规值 75%」**，
+而这个判断没有依据。
+
+**一边说「我判不了」，一边把 75% 的钱付出去了。**
+
+## 怎么改的
+
+给条款加一个性质字段：
+
+```ts
+essential: boolean   // 是否核心条款（不可分给付）
+```
+
+| 核心条款状态    | 结果           |
+| :-------- | :----------- |
+| ✅ 满足      | 按权重正常结算      |
+| ❌ 违反      | 全额退委托人       |
+| ⬜ **判不了** | **全额冻结，交给人** |
+
+土豆案从 `0.15/0/0.05` 变成 **`0/0/0.2`**。
+
+`violated` 优先于 `undecidable` —— 已经确定不合格，不必再等另一条判出来。
+
+## 留下的一个设计巧思
+
+引擎同时保留了「**不适用这条规则时会怎么分**」：
+
+```ts
+essentialOverride.wouldHaveBeen   // { toAgent: "0.15", ... }
+```
+
+于是路演可以演成：
+
+> 三个章依次盖下 → 算出「本可支付 0.15」→ **但核心条款判不了，一分钱都不动**
+
+\*\*能算，但克制。\*\*比直接付 75% 有说服力得多。
+
+***
+
+# 二、规范化序列化（canonical serialization）
+
+## 要解决什么
+
+`keccak256` 吃的是**字节**，不是对象。而同一份数据能写成很多种字节：
+
+```
+{"id":"C1","weightBps":2500}      键序不同
+{"weightBps":2500,"id":"C1"}
+{"id": "C1", "weightBps": 2500}   空格不同
+[C1,C2,C3,C4] / [C4,C3,C2,C1]     数组顺序不同
+```
+
+**意思一样，字节不同，哈希不同 → 承诺失效。**
+
+所以必须钉死唯一写法：键升序、无空格、条款按 id 排序、字段清单固定、带版本号。
+
+## 坑 1：`JSON.stringify` 的第二个参数不是排序器
+
+这是原代码里的真实 bug：
+
+```js
+JSON.stringify(e3, Object.keys(e3).sort())
+```
+
+看着像「按键排序」，**实际上第二个参数传数组时是一个作用于所有层级的字段白名单**：
+
+```
+输入  { b: 1, a: { nested: 2, other: 3 } }
+输出  {"a":{},"b":1}          ← 嵌套对象被清空
+```
+
+顶层键名恰好不在嵌套层出现，嵌套内容就整个消失。
+
+**后果**：两份完全不同的数据算出同一个哈希。E3 里的 `unsignedTx`、
+`simulation`、`semantics` 全被清成 `{}`。
+
+## 坑 2：Date / Map / Set 会静默变成 `{}`
+
+我自己写的递归版本又踩了另一个：
+
+```js
+canonicalJson(new Date())  →  "{}"
+canonicalJson(new Map())   →  "{}"
+canonicalJson(new Set())   →  "{}"
+canonicalJson({})          →  "{}"     ← 四者哈希相同
+```
+
+**根因**：只判了 `typeof value === "object"`，而这些类型的
+`Object.keys()` 都是空数组。
+
+**最难看的地方**：我在文件开头白纸黑字写了「遇到 Date 一律报错」，
+**代码根本没做**。
+
+> 📌 **注释描述的是意图，不是行为。这正是需要测试的地方。**
+
+修法是加一道「朴素对象」检查：
+
+```ts
+function isPlainObject(v: object): boolean {
+  const proto = Object.getPrototypeOf(v);
+  return proto === Object.prototype || proto === null;
+}
+```
+
+## 设计原则：白名单 + 拒绝未知字段
+
+只用白名单会留下静默陷阱：将来有人加了个有语义的字段，
+它不在清单里 → **没被承诺**，而谁都不会发现。
+
+所以反过来再卡一道：**出现清单外的字段就直接报错**，
+逼加字段的人显式决定「它要不要进哈希」。
+
+```
+条款 C1 含未登记字段：sneaky。请在 COMMITTED_FIELDS 中显式决定
+它是否进 requirementsHash，并同步升级 CANONICAL_VERSION。
+```
+
+## 设计原则：宁可报错，不要猜
+
+canonical 现在拒绝：`undefined`、函数、symbol、BigInt、Date、Map、Set、
+RegExp、类实例、浮点数、NaN、Infinity。
+
+> **承诺环节里，静默的转换就是静默的伪造。**
+
+浮点数为什么也拒绝：十进制表示在不同语言/平台间不保证一致。
+金额一律用整数 wei 或基点，本来也不该出现浮点。
+
+## 格式要带版本号
+
+```ts
+canonicalJson({ version: "req-canon-v1", requirements: [...] })
+```
+
+将来 serializer 升级，历史证据还能被认出该用哪套规则复算，
+而不是算出一个对不上的值却查不出原因。
+
+***
+
+# 三、哈希必须覆盖「真正存的那份东西」
+
+这是今天最反直觉的一条。
+
+## 犯的错
+
+E3 的哈希是对**生成时的中间对象**算的，而案件档案里存的是**另一个形状**
+（domain 的类型多 `rpcFingerprint`，`semantics` 嵌套层级也不同）。
+
+**后果**：第三方拿到案件档案，跑一遍复算，得到的是**另一个值**。
+这个字段就只是装饰。
+
+## 正确做法
+
+```
+domain 定义存档形状 → moss-bridge 直接产出那个形状
+                   → 哈希盖那个形状 → 案件存那个形状
+```
+
+**存进去的、算过哈希的、第三方能读到的，必须是同一个东西。**
+
+## 顺带学到的 TypeScript 知识
+
+原来的签名是：
+
+```ts
+function verifyE3PayloadHash(e3: { canonicalPayloadHash: string; [k: string]: unknown })
+```
+
+**TypeScript 的** **`interface`** **不满足索引签名**，所以 `MossPreSignEvidence`
+传不进去，逼得调用处写 `as unknown as Record<...>`。
+
+改成 `object & { canonicalPayloadHash: string }` 就都通了，
+那个丑陋的 cast 也能删掉。
+
+***
+
+# 四、证据真实性：归档的必须是**实际发生的**
+
+Neo 这轮审计最有价值的一句话：
+
+> **当前 hash 只能证明内容后来没被改过，不能证明内容是真的。**
+
+这两件事完全不同。哈希防的是**事后篡改**，防不了**一开始就写假的**。
+
+## 犯的三个错
+
+### ① 归档参数 ≠ 实际发出去的参数
+
+实际传给 Moss 的 `requirementsHash` 是**十进制**
+（Moss 的参数校验要求非负整数字符串），我归档的是**十六进制**。
+
+而且 `buildE3` 接受调用方任意提供的 `capabilityParams` —— 想写什么写什么。
+
+**修法**：让 `PreparedTask` 携带 `registry.action()` 的原样入参，
+`buildE3` 从 task 读，把 `E3Provenance.capabilityParams` **删掉**。
+编译期就没法传假的了。
+
+### ② 溯源字段是抄的，而且抄错了
+
+```
+代码里写死: mossCommit = 5d70524e…   protocolVersion = 0.1.0
+实际用的:   b00ed2db…（moss.lock.json）            0.0.1
+```
+
+**一份声称可供第三方复算的证据，如果溯源字段是抄进来的，它只是好看。**
+
+**修法**：改成必填参数，由调用方从 `moss.lock.json` 和 `package.json`
+真实读取，**默认值删掉 —— 不给撒谎留位置**。
+
+### ③ 时间线对不上：证据来自另一笔任务
+
+案件时间线写的是 8/1，模拟用的 deadline 是 8/5。**真实模拟成立，
+但它不是这个案子的签前证据。**
+
+E3 的全部意义就是「用户在**这笔任务**签名前看到的那句话」。
+来自另一笔任务，整条叙事就不成立。
+
+**修法**：整份 fixture 的时间线由那次模拟锚定。
+
+这里有个**环**要注意：
+
+```
+C1.expect（截止时间）属于 requirements
+      → 决定 requirementsHash
+      → 又是模拟的入参
+```
+
+所以生成脚本必须按 **deadline → requirements → hash → simulate** 的
+顺序一次性对齐，不能分开跑。
+
+## 一条安全规则：不要归档私密 RPC Key
+
+很多付费节点把密钥放在 URL 里：
+
+```
+https://user:pass@rpc.example.com/v1/KEY?apikey=SECRET
+```
+
+归档完整 URL 等于把密钥写进档案。去敏规则：
+
+* 丢掉 userinfo（`user:pass@`）
+* 丢掉**整个** query
+* 路径里长度 ≥ 16 的段替换成 `***`（那种长度基本只可能是密钥）
+* **保留 host 和路径结构** —— 「用的哪个服务商」本身有验证价值
+
+***
+
+# 五、校验器不该自己崩掉
+
+## 问题
+
+`validateCase()` 直接调用哈希校验，没有捕获异常。
+
+反序列化回来的案件只要深层含有 `Date`、`undefined`，
+或者 `canonicalPayloadHash` 不是字符串 —— **校验器自己抛异常**，
+调用方**一条 issue 都拿不到**。
+
+## 原则
+
+> **校验器的职责是报告问题，不是自己崩掉。**
+
+包 try/catch，失败记一条结构化的 P0：
+
+```
+E3_HASH_UNCOMPUTABLE  该 E3 无法规范化，哈希无从校验：<原因>
+```
+
+***
+
+# 六、pnpm 工程：三个真实的坑
+
+## 坑 1：`file:` 协议会**复制**，不是链接
+
+```json
+"@themoss/simulator": "file:../../vendor/moss/packages/simulator"
+```
+
+`file:` 会把包**复制**进 `.pnpm` 快照，而**快照是安装时拍的** ——
+那时 Moss 还没构建，`dist` 是空的。
+
+表现很怪：
+
+```
+@themoss/core                        ✅ 能找到
+@themoss/simulator                   ❌ 找不到类型声明
+@themoss/system                      ❌
+@themoss/protocol-silicon-arbitration ❌
+```
+
+为什么 `core` 特殊？**它没有自己的依赖，pnpm 直接符号链接了。**
+
+**修法**：这几个包本来就是 `pnpm-workspace.yaml` 的成员，
+改用 `workspace:*` → 四个全部变成指向 `vendor/moss` 的符号链接，
+构建产物立刻可见。
+
+## 坑 2：`postinstall` 永远来不及
+
+我之前用 `postinstall` 自动 init 子模块。**那个从来就没生效过。**
+
+```
+pnpm-workspace.yaml 引用 vendor/moss/packages/*
+      → pnpm 必须先解析 workspace
+      → 子模块没拉下来
+      → ENOENT: scandir …/protocols/silicon-arbitration
+      → install 直接失败，postinstall 根本轮不到
+```
+
+`preinstall` 我也实测了，**一样来不及** —— pnpm 在**任何**生命周期脚本
+之前就要解析 workspace。
+
+**这个先后顺序没有脚本钩子能绕开。** 只能：
+
+```bash
+git clone --recurse-submodules <repo>
+```
+
+它一直「能用」，只是因为我本地早就 init 过了。
+
+## 坑 3：不要为了构建用不到的包而失败
+
+`vendor/moss` 有 16 个包，其中 `@themoss/abi-tools` 缺 `@types/node`，
+全量构建会挂在它的 dts 步骤上。
+
+**而我们只用 4 个。**
+
+```bash
+# 按 <pkg>... 语法只构建目标包及其依赖
+pnpm -r --filter "@themoss/simulator..." build
+```
+
+既绕开了失败，也快得多。
+
+***
+
+# 七、测试
+
+## 零依赖的测试基础设施
+
+项目此前**一个测试都没有**。用 Node 自带的 `node:test`，
+不引入任何测试框架：
+
+```ts
+import { strict as assert } from "node:assert";
+import { describe, it } from "node:test";
+```
+
+```json
+"test": "node --import tsx --test src/**/*.test.ts"
+```
+
+## 什么样的用例值得写
+
+今天写的 52 条里，**几乎每一条都对应一个真实发生过的错误**，
+不是假想的边界：
+
+| 用例              | 对应的真实错误                        |
+| :-------------- | :----------------------------- |
+| 拒绝 Date/Map/Set | 四者算出同一个哈希                      |
+| 拒绝 undefined 属性 | `buildE3` 两参数调用直接崩             |
+| 嵌套完整保留          | `JSON.stringify(o, keys)` 清空嵌套 |
+| 归档参数是十进制        | 归档了十六进制，与实际不符                  |
+| 校验器返回 P0 而非抛错   | 嵌套 Date 让校验器崩掉                 |
+
+> **哈希错了不会崩，只会静默地让承诺失效。只能靠测试兜住。**
+
+## 编译期断言也是测试
+
+```ts
+const slot: NonNullable<Case["evidence"][number]["mossPreSign"]> = e3;
+```
+
+这一行运行时什么都不做，**它的意义在编译期** ——
+证明 `buildE3()` 的返回值能直接存进 `Case`。类型对不上就通不过 `tsc`。
+
+***
+
+# 八、协作流程
+
+## Stacked PR（叠加的 PR）
+
+```
+#18 (E3)  ← 基于 #17 (canonical)  ← 基于 main
+```
+
+**教训**：合并 #17 并删除它的分支时，**GitHub 会自动关闭 #18，而且不允许重开**：
+
+```
+Cannot change the base branch of a closed pull request
+```
+
+只能新建 PR。所以叠加 PR 要么先 retarget 再合，要么接受要重开。
+
+## 评审边界
+
+Neo 定的顺序很值得学：
+
+> 类型漂移属于 #18 的范围，塞进 #17 会扩大范围；
+> 但如果 #18 带着两个不一致的类型合并，它交付的实时 E3 仍然写不进 domain，
+> **因此不能留到合并后**。
+>
+> 最短方案：不新开 #19，不扩大 #17，直接在 #18 修。
+
+**判断标准不是「谁的代码」，而是「这个问题不解决，那个 PR 的交付物成不成立」。**
+
+***
+
+# 九、贯穿今天的一条教训
+
+## 「验证环境和真实环境不一致，等于没验证」—— 今天出现了三次
+
+| 第几次 | 形式                                                           |
+| :-- | :----------------------------------------------------------- |
+| 1   | 用临时目录的 `node_modules` 做 typecheck，那边装的是最新版                   |
+| 2   | `domain` / `moss-bridge` 根本没装 `@types/node`，typecheck 一直是残缺的 |
+| 3   | `postinstall` init 子模块「能用」，只因本地早就 init 过了                    |
+
+**第三次尤其典型**：那是我**为了修同一类问题而写的代码**，
+自己又犯了同一类错误。
+
+## 唯一有效的做法
+
+真的克隆一次，用文档里写的命令跑一遍：
+
+```bash
+git clone --recurse-submodules <repo>
+pnpm install --frozen-lockfile
+pnpm verify
+```
+
+不是「我觉得应该没问题」，是**看到它绿**。
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

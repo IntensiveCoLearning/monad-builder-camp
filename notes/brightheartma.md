@@ -2933,4 +2933,40 @@ PR #11 的 review 让我意识到：API 设计里最容易被低估的不是业�
 
 今天完成的是已 merge 的后端契约与运行时，不是 Live Check 端到端可用。真正的 Proof of Work 仍然是 Agent Flow 注入、前端 adapter 接线，以及 run-by-id 让 Previous/New 面板在刷新后仍可读。
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+## 今日完成
+
+1. 完成并提交 PR #14：接通 Backend-owned 的 Kuru Live Agent Flow 边界。
+2. 根据 Review 意见补齐 runtime preflight、Git provenance 和文档说明。
+3. 增加 `simulatorPinnedBlock` 证据链及 fail-closed 校验。
+4. 通过 `pnpm test`（312 passed、2 skipped）、typecheck、lint 和 `git diff --check`。
+5. PR #14 已完成 Review 并合并。
+
+### 今日收获
+
+今天最大的收获不是“把接口接通了”，而是进一步明确了什么才算真正的 Live 成功：
+
+有 runtime 身份，不代表有真实模拟区块；\
+有接口响应，不代表证据完整；\
+测试通过，也不代表真实链上验收完成。
+
+因此，缺少关键 provenance 时，系统必须返回 `UNKNOWN`、`STOP` 或错误，而不是用 Replay、Mock 或假数据制造成功。
+
+### 今日反思
+
+残酷地说，PR 合并只是 Backend 边界完成，不是整个 Live 目标完成。
+
+当前 pinned Moss runtime 仍然缺少权威的 `simulatorPinnedBlock`，也无法完整解析 `FlipOrderUpdated`。本地没有配置真实 Moss/RPC 环境，现有测试主要依赖 deterministic fake bundle 和 recorded evidence。
+
+所以今天交付的不是“真实 Live 已打通”，而是“系统已经不会轻易误报 Live 成功”。这很重要，但距离 P0 acceptance 仍有明显差距。
+
+### 明日计划
+
+1. 推进 Moss runtime 补齐 pinned block 和 receipt parser 能力。
+2. 准备真实 Chain 143 的 smoke 环境。
+3. 继续补齐 artifact digest、Action Gate 和 `ADJUST` 验证链路。
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

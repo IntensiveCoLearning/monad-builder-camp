@@ -1279,4 +1279,36 @@ Riso 完成 3 人真人访谈；Neo 跑通 Moss Path B simulate；三人 stand-u
 * `tasks/week-05-portfolio.md`
 * 项目仓库：`https://github.com/LierMi/Silicon-Labor-Arbitration`
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+【Web3 暑期实习计划｜Monad Builder Camp 打卡】
+
+日期：2026 年 8 月 5 日
+周次：Week 5｜Hackathon Build Sprint
+方向：Tech / Dev Builder
+主题：canonical requirements hash 与真实 E3 链路技术审计
+
+今日完成：
+
+1. 明确冲刺节奏：今晚先上传代码并同步当前进度与剩余优化项，明天和后天由三人共同收尾。PR 流程坚持最短正确路径，不新增指向 `main` 的并行修复线。
+2. 完成 PR #17 技术审计，复现并指出 `walletConsistency: undefined`、Date / Map / Set 被哈希为 `{}`、E1 占位哈希和缺少回归测试四个阻塞项。原作者在原分支修复后，#17 已于今日合并。
+3. 收敛 E3 类型统一方案：删除 moss-bridge 重复手写类型，复用 domain 的 `MossPreSignEvidence`，让 `buildE3()` 直接构造最终存档形状后再计算 hash。原 #18 已关闭，接续工作为 #19。
+4. 完成 PR #19 审计并 Request Changes：当前仍存在 Moss 实参与归档参数不一致、模拟与案件时间线不一致、RPC fingerprint 未绑定实际 Runtime 且可能泄密、干净环境完整门禁不可复现，以及 malformed E3 会让 validator 直接抛错等阻塞项。#19 当前仍未合并。
+5. 团队更新 C4 不可判定规则：交付物整体不可用时，不再支付 0.15、冻结 0.05，而是 0.2 MON 全额冻结。现有前端按数据字段展示、合约 `settle` 已支持全额 frozen，本次决策不要求单独修改展示逻辑或合约。
+
+今日收获：
+
+证据系统不能只保证“同一份 JSON 能算出同一个 hash”，还要保证被哈希的数据来自真实 Moss 输入、真实 Runtime 和同一案件时间线，并且不泄露 RPC 凭据。可复算只是基础，来源绑定和失败边界才决定它能否作为可信证据。
+
+下一步：
+
+等待 #19 修复后重新审计；在干净 clone 重跑完整测试、typecheck 和 ABI gate；同时由三人同步前端代码与剩余优化清单，集中完成 Demo 闭环。
+
+仓库证据：
+- `daily/2026-08-05.md`
+- PR #17：`https://github.com/LierMi/Silicon-Labor-Arbitration/pull/17`
+- PR #19：`https://github.com/LierMi/Silicon-Labor-Arbitration/pull/19`
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

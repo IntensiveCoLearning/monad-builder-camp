@@ -189,4 +189,11 @@ demo网站已经构建完毕，当前正在为其添加功能，让其不止只�
 
 demo网站已完成https\://moss-aave-lending-lab.dawnener.chatgpt.site/ 目前等待队友提出相关问题及改进意见
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+[MOST，Monad 开源路线](https://most.devnads.com/#apply)\
+网站以及demo已经完成。已经报名本周黑客松，目标为建立跨链相关usdc直接进行兑换的相关内容
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

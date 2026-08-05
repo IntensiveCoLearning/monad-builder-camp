@@ -231,4 +231,10 @@ Working on黑客松产品文档
 
 <https://app.notion.com/p/Research-POW-3a454a97f451808f84c2eddcf31bdf7b>
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+<https://app.notion.com/p/Week-3-Hackthon-3b254a97f45180829158c3879de190aa?source=copy_link>
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

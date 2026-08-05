@@ -5475,4 +5475,249 @@ stack.push(...children.toReversed())
 5. Adapter 的默认注册需要可失效的集成测试，否则功能可能被静默移除。
 6. Kuru PR 的合并证明，从真实主网失败复现、最小修复、负向测试、人工来源记录到维护者验证，可以形成一条完整且公开可审计的开源贡献链。
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+## 一、今日概览
+
+今天完成了 Mini Demo 从 M1 收口到 M2 工程建设的切换。
+
+主要成果：
+
+* 合并 amountIn mismatch Fixture PR #68。
+* 合并 M1 收口文档 PR #69。
+* 完成 M1 Closure，关闭 M1 Tracker 与 Milestone。
+* 创建团队 Moss Fork，并合并可复现 Moss 依赖 PR #70。
+* 合并 Next.js Web/API 基线 PR #71。
+* 完成 Moss Adapter Ports 的技术方案和范围修订，Issue #25 已获实施授权。
+* 今天没有提交新的 Moss 上游 Review，Moss 相关工作集中在 Mini Demo 的集成基础设施。
+
+## 二、完成 AmountIn Mismatch Fixture
+
+凌晨合并 [PR #68](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/68)，对应 Issue #20 已关闭。
+
+Fixture 固定了一个合成的 1 比 10 amountIn 不匹配场景：
+
+* Intent amountIn：`1000000000000000000`
+* Capability amountIn：`10000000000000000000`
+* Simulation amountIn：`10000000000000000000`
+* Simulation 状态：`SUCCESS`
+* Critical Alignment：`FAIL`
+* Decision：单一 `CRITICAL_ALIGNMENT_FAIL`
+
+Reason 引用三项底层证据：
+
+* `/capability/raw/amountIn`
+* `/intent/inputAmount`
+* `/simulation/outcomes/items/0/raw/amountIn`
+
+选中的 Quote 仍使用 Intent amountIn，保证 Report 不会因为 Quote 关联错误提前失效。10 倍差异只存在于 Capability 与模拟 Outcome 中。
+
+验证结果：
+
+* Fixture 测试 2/2 通过。
+* Report Schema 340/340 通过。
+* Decision Engine 315/315 通过。
+* 完整仓库 655/655 通过。
+* Exact-head 和合并后 Main Quality Gate 均成功。
+
+Squash Commit：`9e0d5c07`
+
+## 三、完成 M1 收口文档
+
+随后合并 [PR #69](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/69)，关闭 Issue #9。
+
+本次只修改三个文档路径：
+
+* 更新 README 中过期的项目状态。
+* 更新 Real versus Mock 边界。
+* 新增 M1 Completion Evidence 文档。
+
+文档确认当前已经真实完成：
+
+* Public PreflightReport v0.1 Schema。
+* Strict DecisionInput Boundary。
+* Fail-closed Decision Engine。
+* Success、tokenOut mismatch、amountIn mismatch 三个合成 Fixture。
+* M1 Issue、PR、Merge Commit 和 Main CI 的可追溯记录。
+
+同时继续明确：
+
+* Decision Engine 不创建或增强证据。
+* Fixture 不是链上证据。
+* `MANUAL_REVIEW` 不代表安全或授权。
+* `STOP` 不是安全证明或交易授权。
+* 当前仍没有真实 Moss、Monad、钱包、签名和交易执行能力。
+
+完整测试 655/655 通过。
+
+Squash Commit：`aae0397d`
+
+## 四、M1 正式关闭
+
+PR #69 合并后，我在 [Tracker #4](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/4) 上完成独立的 M1 Closure Assessment。
+
+核查结果：
+
+* M1 关联的 15 个 Issue 全部关闭。
+* 没有开放的 M1 PR。
+* 在精确 Main SHA `aae0397d` 上完成 Fresh Checkout。
+* Frozen Install 通过。
+* Public Package Import Smoke 通过。
+* 完整 `pnpm check` 通过，13 个测试文件、655 项测试全部成功。
+* Main 继续要求严格 Quality Gate、线性历史和 Review Conversation Resolution。
+* Force Push 与 Branch Delete 仍被禁用。
+* Push 权限继续限制在 Maintainers Team。
+
+最终记录为 `M1_CLOSURE_PASS`，Tracker #4 和 M1 Milestone 正式关闭。
+
+这表示 M1 Evidence Contract 阶段完成，不表示产品已经具备真实链上运行能力。
+
+## 五、建立可复现 Moss 依赖
+
+进入 M2 后，我首先推进 [Issue #24](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/24)。
+
+创建公开团队 Fork：
+
+[Moss-Mini-Demo/moss](https://github.com/Moss-Mini-Demo/moss)
+
+随后通过 [PR #70](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/70) 将其作为 Git Submodule 固定到：
+
+`1ae6b6322d51fae9104f047efb94e601050b967f`
+
+该提交已经包含合并后的 Kuru PR #138。
+
+实现内容：
+
+* 新增 `.gitmodules`。
+* 新增 `vendor/moss` Gitlink。
+* 新增 Moss Dependency 文档。
+* 扩展 Quality Gate，验证固定 Moss Workspace。
+* 保持 Moss 与 Mini Demo 为独立 Workspace。
+* 不使用暴露旧接口的 Moss npm 版本。
+* 不添加 Moss 源码 Patch，Patch Digest 为空。
+* 验证匿名 HTTPS Recursive Clone。
+
+测试结果：
+
+* Moss Frozen Install、Build、Typecheck 通过。
+* Moss Offline Suite：249 项通过、14 项跳过。
+* Mini Demo：655 项测试通过。
+* Source、API 和 License Fingerprint 与固定 Commit 一致。
+* 合并后 Main Quality Gate 成功。
+
+Squash Commit：`93235e5c`
+
+这一成果只建立可复现源码依赖，不提供 Adapter、RPC、协议调用或产品能力。
+
+## 六、完成 Web/API 基线
+
+Moss 依赖合并后，我推进 [Issue #32](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/32)，并合并 [PR #71](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/71)。
+
+首版 Work Plan 使用了未限定版本的 `sharp: true` Build Permission。Scope Review 指出该配置会授权任意 Sharp 版本执行安装脚本，因此计划被退回。
+
+Work Plan v2 将权限收紧为：
+
+```
+'sharp@0.34.5': true
+```
+
+这是仓库唯一允许的 Build Script Entry。
+
+### 实际实现
+
+* 新增 Next.js 16.2.12 Web Workspace。
+* 固定 React 19.2.3、Sharp 0.34.5 等依赖。
+* 新增严格的 `POST /api/preflight`。
+* 新增严格的 `GET /api/health`。
+* 设置 65,536 Bytes 请求和响应限制。
+* 由服务端生成 UUID v4 `runId`。
+* 使用固定、脱敏的错误结构。
+* FIXTURE 模式只允许三个现有合成场景。
+* LIVE 模式返回 `LIVE_UNAVAILABLE`，不静默回退到 Fixture。
+* Fake Service 只读取通过公开 Schema 验证的 Fixture。
+* 增加 Browser Bundle Leakage Scan 和 Production Start Smoke。
+
+验证结果：
+
+* Web 专项测试 35/35 通过。
+* 完整仓库测试 690/690 通过。
+* Production Build 和 `next start` 通过。
+* 9 个浏览器 JavaScript 产物中没有 Moss、Clear402 或 Server-only 泄漏。
+* Fresh Clone、Fresh pnpm Store 与完整 Quality Gate 通过。
+
+Squash Commit：`1e42babf`
+
+当前 Web/API 是严格接口与离线 Fake 基线，不包含真实 Moss 执行、Monad RPC、钱包、签名或交易广播。
+
+## 七、Moss Adapter Ports 规划
+
+PR #71 合并后，我认领了 [Issue #25](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/25)。
+
+计划新增：
+
+`@moss-mini-demo/moss-adapter`
+
+公共接口包含五项能力：
+
+```
+interface MossPort {
+  describe(protocolId: string, method: string): Promise<RawOperationContract>;
+  quote(protocolId: string, input: QuoteInput): Promise<RawQuote>;
+  action(protocolId: string, input: ActionInput): Promise<RawCapabilityEvidence>;
+  simulate(capability: RawCapability): Promise<RawSimulationEvidence>;
+  buildInfo(): MossBuildInfo;
+}
+```
+
+Production 与 Fake 必须实现同一 Port。Web 层只能依赖公开 Adapter 接口，不能直接导入 `vendor/moss` 的源码路径。
+
+首版计划错误引用了不存在的 `test:web:prod` Script，因此 Scope Gate 返回 `SCOPE_CHANGES_REQUESTED`。
+
+修订版改为仓库已经存在的：
+
+`pnpm test:web:production`
+
+其他边界保持不变：
+
+* 限定 18 个可写路径。
+* Moss Submodule Commit 不变。
+* 不新增第三方依赖。
+* 不改变 Sharp Build Permission。
+* 不修改 Web/API Contract。
+* 不实现后续 Issue 的业务组合逻辑。
+
+修订计划已获得 `SCOPE_CONFIRMED / IMPLEMENTATION_AUTHORIZED`。
+
+截至 23:03：
+
+* Issue #25 已分配给我。
+* 状态为 In Progress。
+* 尚未创建实现分支。
+* 尚未修改代码。
+* 尚未打开 PR。
+* 当前仓库开放 PR 数量为 0。
+
+## 八、当前项目状态
+
+* M1：已完成，Tracker 与 Milestone 已关闭。
+* M2 Tracker #21：开放并持续推进。
+* Issue #24：完成，可复现 Moss 依赖已合并。
+* Issue #32：完成，Web/API 基线已合并。
+* Issue #25：已获实施授权，是当前唯一 Builder Slot。
+* Issue #23：Ready，尚未认领。
+* Issue #26 至 #31、#33、#34：继续等待直接依赖。
+* 当前 Main：`1e42babf`
+* 当前开放 PR：0
+
+## 九、今日收获
+
+1. M1 Closure 需要独立核查 Main、CI、Issue、PR 和文档，不能仅凭最后一个 PR 合并判断完成。
+2. 固定 Commit、Fork Identity、源码指纹和构建结果，才能形成可复现的第三方依赖。
+3. Build Script Permission 属于供应链边界，必须限定具体 Package 与版本。
+4. LIVE 与 FIXTURE 必须严格隔离，LIVE 失败时不能静默返回合成数据。
+5. Web/API 应先固定输入、输出、字节限制、错误和 Server-only 边界，再接入真实执行逻辑。
+6. 当前已经进入真实 Moss Adapter 边界建设阶段，但 Adapter 实现尚未开始，真实协议与链上能力仍未接入。
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

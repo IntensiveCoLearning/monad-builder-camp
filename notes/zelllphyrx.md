@@ -1,22 +1,15 @@
----
-timezone: UTC+8
----
-
-# zelllphyrx
-
-**GitHub ID:** zelllphyrx
-
-**Telegram:** 
-
-## Self-introduction
-
-Web3 暑期实习计划 - Monad Buidler Camp
+- GitHub ID: 181920730
+- Name: zelllphyrx
+- Timezone: UTC+8
+- Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
 
 <!-- Content_START -->
 # 2026-07-24
 <!-- DAILY_CHECKIN_2026-07-24_START -->
+# 2026-07-24
+
 实时参加Co-learning线上活动，聆听其余同学分享demo和心得等等
 
 ![屏幕截图 2026-07-24 191648.png](https://raw.githubusercontent.com/IntensiveCoLearning/monad-builder-camp/main/assets/zelllphyrx/images/2026-07-24-1784894218197-_____2026-07-24_191648.png)
@@ -24,6 +17,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-23
 <!-- DAILY_CHECKIN_2026-07-23_START -->
+# 2026-07-23
 
 参加Co-learning线上活动，共同晚自习
 
@@ -32,7 +26,7 @@ Web3 暑期实习计划 - Monad Buidler Camp
 
 # 2026-07-22
 <!-- DAILY_CHECKIN_2026-07-22_START -->
-
+# 2026-07-22
 
 xiaohai老师从产品经理视角出发，以onekey钱包为切入点，拆解钱包的用户需求、核心功能与安全边界，并最终引导观众思考：如果从0设计一款钱包，应该从哪里开始。
 
@@ -41,8 +35,7 @@ xiaohai老师从产品经理视角出发，以onekey钱包为切入点，拆解�
 
 # 2026-07-21
 <!-- DAILY_CHECKIN_2026-07-21_START -->
-
-
+# 2026-07-21
 
 聆听了有关Stewie Project的充满激情的分享，了解了lifecapsule以及类似产品将聊天记录、兴趣偏好和日常行为等用户数据化作可选择性存储、可迁移的“胶囊”，成为个人可掌控的“数字资产”的计划和愿景。
 
@@ -51,9 +44,7 @@ xiaohai老师从产品经理视角出发，以onekey钱包为切入点，拆解�
 
 # 2026-07-20
 <!-- DAILY_CHECKIN_2026-07-20_START -->
-
-
-
+# 2026-07-20
 
 聆听了swen老师关于AI+Web3、Agent economy的分享，思考在ai时代如何进行产品设计、商业构建与机会捕捉；  
 聆听了营销电销行业同学初接触web3总结的感受分享、问答，还学习了一点简历的撰写。
@@ -63,10 +54,7 @@ xiaohai老师从产品经理视角出发，以onekey钱包为切入点，拆解�
 
 # 2026-07-17
 <!-- DAILY_CHECKIN_2026-07-17_START -->
-
-
-
-
+# 2026-07-17
 
 参加实习计划例会，聆听了六位同学们的精彩发言，看到了社媒上同学们对这周所学的运营分享帖、vibecoding的技巧以及skillls项目等等，学习了如何撰写web3行业的简历。
 
@@ -75,11 +63,7 @@ xiaohai老师从产品经理视角出发，以onekey钱包为切入点，拆解�
 
 # 2026-07-16
 <!-- DAILY_CHECKIN_2026-07-16_START -->
-
-
-
-
-
+# 2026-07-16
 
 在谁是卧底的游戏中了解了一些web3名词
 
@@ -88,28 +72,29 @@ xiaohai老师从产品经理视角出发，以onekey钱包为切入点，拆解�
 
 # 2026-07-15
 <!-- DAILY_CHECKIN_2026-07-15_START -->
-
-
-
-
-
-
-
+# 2026-07-15
 
 了解了web3从目标到生态增长的运营全流程，包括从明确目标到寻找合作伙伴，从宣发到设计规划，从社区运营、项目提交评审与反馈再到最后的孵化与生态增长。了解了AI如何改变了运营工作流以及模拟了web3运营的一天在做什么...
 <!-- DAILY_CHECKIN_2026-07-15_END -->
 
 # 2026-07-14
 <!-- DAILY_CHECKIN_2026-07-14_START -->
-
-
-
-
-
-
-
-
+# 2026-07-14
 
 了解了Moss、Monad Developers、category-labs、foundry-monad等github开源仓库以及skills，同时学习到了一些实际研究者的心路历程
 <!-- DAILY_CHECKIN_2026-07-14_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+观看第一周的回放补课
+
+①聆听来自GoPlus的老师探讨AI Agent 从“裸奔”状态转变为受控状态的安全构建过程，通过案例展示了Agent因权限过大导致信息泄露、因幻觉导致的一系列灾难性后果等。了解到了AgentGuard工具，它可以通过安全体检、动作检查和威胁情报等构建全方位的安全防线。
+
+![屏幕截图 2026-08-05 170236.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-181920730/2026-08/df31f5e6-77ea-418d-98b2-9293204cc418.png)
+
+②聆听Cooper老师系统地介绍了AI开发与Web3结合的方法论及技术栈，讲解了AI Agent 的进化和测试驱动开发（TDD）、规范驱动开发（SDD）等等
+
+![屏幕截图 2026-08-05 105639.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-181920730/2026-08/72e3fe37-33a4-473b-953c-176217ac8980.png)
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

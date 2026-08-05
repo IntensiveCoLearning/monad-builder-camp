@@ -1242,4 +1242,10 @@ Monad Testnet（测试网）—— 实操重点
 
 **<https://github.com/minzhenw490-pixel/web3-/blob/main/学习日志-20260803.md>**
 <!-- DAILY_CHECKIN_2026-08-03_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+**[https://github.com/minzhenw490-pixel/web3-/blob/main/暑假学习打卡-套利×Sentinel.md](https://github.com/minzhenw490-pixel/web3-/blob/main/%E6%9A%91%E5%81%87%E5%AD%A6%E4%B9%A0%E6%89%93%E5%8D%A1-%E5%A5%97%E5%88%A9%C3%97Sentinel.md "https://github.com/minzhenw490-pixel/web3-/blob/main/%E6%9A%91%E5%81%87%E5%AD%A6%E4%B9%A0%E6%89%93%E5%8D%A1-%E5%A5%97%E5%88%A9%C3%97Sentinel.md")**
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

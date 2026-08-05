@@ -302,4 +302,10 @@ Moss PR merge
 
 整理竞品分析、
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+优化landing page
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

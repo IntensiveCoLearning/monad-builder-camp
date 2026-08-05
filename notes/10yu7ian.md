@@ -308,4 +308,10 @@ ay 3 已经为 Alpha Agent 补齐了任务 2（链上执行）和任务 3（数�
 
 今天开始连接前后端，后端部署有点问题
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+部署网站
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

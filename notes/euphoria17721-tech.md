@@ -2108,4 +2108,10 @@ Designed and prototyped Monad Rank Rush, a consumer crypto mini-game on Monad fe
 
 目前项目已经具备真实合约地址，下一步需要完成一次真实 `Submit Score` 交易，拿到 Transaction Hash，并把它补充到最终提交材料中。之后还可以把项目部署到 GitHub Pages 或 Vercel，让其他用户也能打开网页、连接自己的钱包，并向同一个 Monad Testnet 合约提交成绩。
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+调试ing![图片.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-295150940/2026-08/1a2a60a9-db45-4a56-99a8-dc2a2b105389.png)
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

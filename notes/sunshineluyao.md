@@ -243,4 +243,32 @@ DAY 3｜已完成课程专用钱包创建、Monad Testnet 添加、测试币领�
 
 今天进一步学习了A2A, Agent Skills, Web3 Skills, 以助力黑客松开发
 <!-- DAILY_CHECKIN_2026-08-02_END -->
+
+<!-- DAILY_CHECKIN_2026-08-04_START -->
+# 2026-08-04
+
+今天学习了一个很适合 Web3 新手的线上黑客松——**Monad Playground｜新手也能完成的 Monad 创作赛**。
+
+这是一个围绕 Monad 生态展开的开放式创作活动。参赛者可以开发链上小游戏、AI Agent、学习工具、生态导航、数据看板或社区产品，也可以继续完善已有的 Mini Demo。活动尤其推荐 **Moss Onchain Agent** 方向，探索如何让 AI 更安全、更清晰地帮助用户完成链上操作。
+
+🔗 Moss GitHub：<https://github.com/nishuzumi/moss>
+
+我很喜欢它传递的理念：第一次参加黑客松，不需要提前精通 Solidity，也不一定要拥有完整的开发团队。Research、Product、Design、Ops 和 Dev 都可以找到自己的位置。作品也不必一开始就非常复杂，最重要的是找到一个具体的问题，并让用户真正跑通一条核心体验。
+
+今天最大的收获是：黑客松并不只是比拼代码，更是在有限时间内完成一次从问题发现、产品设计到原型验证的完整实践。即使只有一个人，也可以从一个小问题出发，借助 AI 和开源工具，完成一个能够体验、展示和持续迭代的 Web3 作品。
+
+活动安排：
+
+📅 线上阶段：7 月 27 日—8 月 9 日\
+🚀 Project Open Day：8 月 9 日 14:00\
+🏆 总奖金池：3000 USDT\
+🧑‍🏫 提供产品与技术 Mentor 辅导\
+🤝 提供组队交流与社区支持
+
+完成项目之后，还可以获得一份公开展示的 Demo、GitHub Repo 或个人 Proof of Work。
+
+对我而言，这不仅是一场比赛，也是一次把学习转化为创造的机会。接下来，我希望从一个明确而真实的用户问题开始，逐步完成自己的第一个 Monad 作品。
+
+\#Monad #MonadPlayground #Web3 #Hackathon #AIAgent #OnchainAgent #BuildInPublic #ProofOfWork
+<!-- DAILY_CHECKIN_2026-08-04_END -->
 <!-- Content_END -->

@@ -1456,4 +1456,150 @@ Marketplace
 
 这个结构基本可以作为一个 **Monad Hackathon 的完整链游 MVP 合约设计**。
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+可以把 **ERC-4337** 极简理解成：
+
+ 
+
+**用户不用直接发普通交易，而是提交一个“UserOperation”，由中间人打包并代付 Gas，最终让智能账户执行操作。**
+
+**极简伪代码**
+
+玩家
+
+ ↓
+
+创建 UserOperation
+
+ ↓
+
+Bundler
+
+ ↓
+
+EntryPoint
+
+ ↓
+
+Smart Account
+
+ ↓
+
+执行游戏操作
+
+伪代码：
+
+*// 1. 玩家点击「收获」*
+
+userOp = {
+
+    sender: playerSmartAccount,
+
+    callData: harvest(fieldId),
+
+    signature: sign(userOp)
+
+}
+
+
+
+*// 2. Bundler 收集 UserOperation*
+
+bundler.sendUserOperation(userOp)
+
+
+
+*// 3. EntryPoint 验证*
+
+EntryPoint.handleOps(userOp)
+
+
+
+*// 4. Smart Account 验证签名*
+
+SmartAccount.validate(userOp)
+
+
+
+*// 5. 执行真正的游戏逻辑*
+
+SmartAccount.execute(
+
+    Game.harvest(fieldId)
+
+)
+
+**Paymaster 加进来**
+
+玩家
+
+ ↓
+
+UserOperation
+
+ ↓
+
+Paymaster ←「我帮你付Gas」
+
+ ↓
+
+Bundler
+
+ ↓
+
+EntryPoint
+
+ ↓
+
+Smart Account
+
+ ↓
+
+Game
+
+userOp.paymaster = GamePaymaster
+
+
+
+*// Paymaster 判断：*
+
+*// 「这是我的游戏玩家，我愿意帮他支付Gas」*
+
+
+
+Paymaster.validate(userOp)
+
+
+
+EntryPoint.handleOps(userOp)
+
+
+
+Game.harvest(fieldId)
+
+所以链游里最核心的变化就是：
+
+**传统模式：**
+
+玩家 → 钱包 → ETH → 签名 → Gas → 游戏
+
+**ERC-4337模式：**
+
+玩家 → 游戏 → UserOperation → Smart Account
+
+                         ↓
+
+                     Paymaster
+
+                         ↓
+
+                       Gas
+
+玩家甚至可以**完全没有 ETH**，但依然能够进行游戏操作。
+
+这就是 ERC-4337 对链游最有价值的地方：**把区块链交易隐藏在游戏体验后面，让用户感觉自己是在玩普通 Web2 游戏。**
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

@@ -10276,4 +10276,246 @@ AI 给出的每个判断理由，都应该能从输入数据中找到对应：
 > **可解释性检查的核心：AI 说的每一句话，都应该能从输入数据里找到依据。Bug 探索的核心：像最挑剔的用户一样使用产品，找出所有可能的问题。**
 ```
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+````markdown
+# 学习笔记 Day 4｜Git 版本控制与项目同步实战
+
+> 日期：2026-08-06
+> 今日任务：将本地项目与 GitHub 远程仓库同步，学习 Git 实际操作
+
+---
+
+## 一、为什么今天要做这件事
+
+项目从 GitHub 下载时用的是 **ZIP 压缩包**，没有 `.git` 文件夹。这意味着：
+
+- 无法 `git pull` 获取队友的最新代码
+- 无法 `git diff` 查看自己改了什么
+- 无法 `git commit` 提交自己的修改
+- 团队协作时会出现版本不同步的问题
+
+**Hackathon 场景下，代码同步是团队协作的基础。** 如果每个人都在用 ZIP 包，改了什么、谁改的、怎么合并，全部靠口头沟通，非常容易出错。
+
+---
+
+## 二、今天遇到的问题与解决过程
+
+### 问题 1：Git 连不上 GitHub
+
+**现象：** 执行 `git pull` 时提示 `Recv failure: Connection was reset`
+
+**原因：** 国内网络无法直接访问 GitHub，即使开了 VPN，Git 默认不走代理。
+
+**解决：** 配置 Git 的 HTTP/HTTPS 代理
+
+```bash
+# 查看 VPN 代理端口（一般在 7890、10808 等）
+netstat -ano | findstr "LISTENING" | findstr "7890"
+
+# 配置 Git 走代理
+git config --global http.proxy http://127.0.0.1:7897
+git config --global https.proxy https://127.0.0.1:7897
+```
+
+**知识点：** VPN ≠ Git 代理。VPN 是系统级的，Git 需要单独配置才能走代理。
+
+### 问题 2：分支名不是 master
+
+**现象：** `git pull origin master` 报错 `couldn't find remote ref master`
+
+**原因：** 远程仓库默认分支是 `main`，不是 `master`
+
+**解决：** 先查看远程分支，再 pull
+
+```bash
+# 列出所有远程分支
+git ls-remote --heads origin
+
+# 结果显示远程分支：main、hackson、feat/ai-nft-workbench 等
+# 所以正确命令是：
+git pull origin main
+```
+
+**知识点：** GitHub 从 2020 年起将默认分支从 `master` 改为 `main`。很多老教程还在用 `master`，需要注意区分。
+
+### 问题 3：本地文件与远程冲突
+
+**现象：** `git checkout -b main origin/main` 报错 `untracked working tree files would be overwritten`
+
+**原因：** 本地有远程仓库没有的文件（如 `.env` 配置、`docs` 文档），Git 不知道该如何处理
+
+**解决思路（3 种）：**
+
+| 方案 | 操作 | 适用场景 |
+|------|------|----------|
+| **保留本地文件** | `git add -A && git stash && git pull` | 本地有重要修改，需要保留 |
+| **强制覆盖** | `git reset --hard origin/main` | 本地不需要保留，完全同步远程 |
+| **重新克隆** | 删除 `.git` 后 `git clone` | 最干净，适合第一次同步 |
+
+**最终选择：重新克隆**
+
+因为原来的项目是 ZIP 下载的，没有 Git 历史。最干净的做法是：
+
+1. 备份重要文件（`.env`、自定义的 `docs/`、`shared/`）
+2. 删除整个目录
+3. 用 `git clone` 重新拉取
+4. 恢复备份的文件
+
+### 问题 4：`.env` 文件的处理
+
+**问题：** `.env` 文件包含敏感配置（私钥、API Key），不应该提交到 Git。但项目运行必须有它。
+
+**解决：**
+
+```bash
+# .gitignore 中排除 .env
+echo ".env" >> .gitignore
+
+# .env.example 中保留模板，让队友知道需要配置什么
+# 实际的 .env 文件各自维护
+```
+
+**注意：** 克隆后需要把备份的 `.env` 文件放回原位，项目才能正常运行。
+
+---
+
+## 三、Git 核心概念复习
+
+### 1. Git 工作流
+
+```
+工作区（Working Directory）
+  ↓ git add
+暂存区（Staging Area）
+  ↓ git commit
+本地仓库（Local Repository）
+  ↓ git push
+远程仓库（Remote Repository）
+```
+
+### 2. 常用命令速查
+
+| 操作 | 命令 | 说明 |
+|------|------|------|
+| 克隆仓库 | `git clone <url>` | 从远程下载完整仓库 |
+| 查看状态 | `git status` | 查看哪些文件改了 |
+| 添加修改 | `git add <file>` | 把修改放入暂存区 |
+| 提交修改 | `git commit -m "msg"` | 把修改保存到本地 |
+| 拉取远程 | `git pull` | 下载远程更新并合并 |
+| 推送本地 | `git push` | 把本地提交推到远程 |
+| 切换分支 | `git checkout <branch>` | 切换到其他分支 |
+| 查看日志 | `git log --oneline` | 查看提交历史 |
+| 撤销修改 | `git checkout -- <file>` | 丢弃工作区的修改 |
+
+### 3. 分支模型
+
+```
+main (生产分支)
+  └── hackson (开发分支)
+       ├── feat/ai-nft-workbench (功能分支)
+       └── Teresapepe-patch (补丁分支)
+```
+
+**Hackathon 建议：**
+- `main` 保持稳定，随时可演示
+- 功能开发在 `hackson` 分支进行
+- 每个大功能开独立分支，完成后合并
+
+---
+
+## 四、今天的收获与思考
+
+### 1. ZIP 下载 ≠ 克隆仓库
+
+ZIP 下载只能拿到文件，没有 Git 历史。这意味着：
+- 不知道文件什么时候改的
+- 不知道谁改的
+- 无法回退到之前的版本
+- 无法比较两个版本的差异
+
+**教训：** 第一次获取项目时，尽量用 `git clone` 而不是下载 ZIP。
+
+### 2. 代理配置是国内开发者的基本功
+
+国内访问 GitHub 需要 VPN，但 VPN 不自动传递给 Git。需要手动配置：
+- Git 代理
+- npm/yarn 代理
+- pip 代理
+- Docker 代理
+
+```bash
+# 一键配置常用代理
+git config --global http.proxy http://127.0.0.1:7897
+npm config set proxy http://127.0.0.1:7897
+pip config set global.proxy http://127.0.0.1:7897
+```
+
+### 3. `.env` 文件是团队协作的隐形杀手
+
+每个人的 `.env` 配置不同（不同的 API Key、不同的钱包地址），但代码是一样的。如果不小心把 `.env` 提交到 Git：
+- 密钥会泄露
+- 队友拉取后用了你的配置，导致混乱
+- 所有人都在猜"为什么我的环境跑不起来"
+
+**正确做法：**
+- `.env` 加入 `.gitignore`
+- `.env.example` 保留模板，标注每个变量的用途
+- 新人入门文档中说明如何配置 `.env`
+
+### 4. 团队协作中，版本控制不是锦上添花，而是必选项
+
+如果没有 Git，团队协作会变成：
+- "你把你的文件发我，我覆盖一下" → 覆盖冲突
+- "你改了什么？" → 口头沟通容易遗漏
+- "这个 Bug 什么时候引入的？" → 无法追溯
+- "回退到昨天的版本" → 只能手动恢复
+
+---
+
+## 五、Day 4 待完成事项
+
+### 今日任务清单
+
+- [x] 配置 Git 代理，解决 GitHub 连接问题
+- [x] 确认正确的分支名（main）
+- [x] 备份配置文件（`.env`、`docs/`、`shared/`）
+- [x] 重新克隆远程仓库到本地
+- [x] 恢复配置文件和自定义文档
+- [ ] **确认 `.env` 配置是否需要更新**（远程仓库的 `.env.example` 可能有变化）
+- [ ] **检查远程代码更新了哪些内容**（`git log` 查看最近提交）
+- [ ] **与团队确认分支策略**（是在 main 上开发，还是开 hackson 分支）
+
+### 需要问队友的问题
+
+1. 远程仓库最近有哪些更新？我同步了代码，需要了解改了什么
+2. 我们在哪个分支上开发？main 还是 hackson？
+3. `.env` 配置有变化吗？需要新增或修改哪些变量？
+
+---
+
+## 六、明日计划（Day 5）
+
+### 可解释性检查（续）
+
+- 之前因为 Demo 页面未就绪，今天同步了最新代码，需要确认 Demo 是否可用
+- 如果 Demo 已就绪，立即开始可解释性检查和 Bug 探索
+- 如果 Demo 还未就绪，继续完善手动计算的预期结果
+
+### 代码同步后的验证
+
+- 运行 `git log --oneline -10` 查看最近的提交
+- 检查 `git diff` 看远程做了哪些修改
+- 启动项目验证环境是否正常
+
+---
+
+## 七、一句话总结
+
+> **今天最大的收获：Git 不是"可选技能"，而是团队协作的基础设施。ZIP 下载的项目就像没有版本号的文档——能看但不能改，能跑但不能协作。花 30 分钟搞定 Git 配置，能节省后面 3 小时的沟通成本。**
+
+````
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

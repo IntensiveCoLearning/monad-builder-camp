@@ -705,4 +705,22 @@ ZeroDev 当前文档已列出 Monad Testnet 支持 Kernel Smart Account、Permis
 
 今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-05.md
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+今天同步并核对了 OddLane 最新的 AA 与 Demo 更新。ZeroDev Kernel 这条路线已经不只是文档调研：我确认了独立交易账户在 Monad Testnet 上完成了 Owner UserOperation、领取 Test USDC、存入订单簿，以及由 Owner 提现回钱包的真实资金闭环。
+
+ 
+
+这次验证让我更明确地区分了 Owner 和交易账户的职责。用户身份由 Owner 保持控制，但 Test USDC、订单簿可用现金、订单和持仓统一归属 Kernel 交易账户，这样才能支持后续“一次启用交易账户、受限操作快速执行”的产品体验。
+
+<br />
+
+Session Gas 赞助目前仍未通过连续成功 Gate，不能宣称 OddLane 已经稳定免 Gas。现阶段会保留清晰的降级：赞助不可用时提示用户自付 Gas 或改用 Owner 确认，而不是让交易静默失败。下一步是补 Session 下单、撤单、赎回、越权拒绝、过期和撤销的真实 Testnet E2E。
+
+<br />
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-06.md
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

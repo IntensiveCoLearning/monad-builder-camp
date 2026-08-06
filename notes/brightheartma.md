@@ -2969,4 +2969,41 @@ PR #11 的 review 让我意识到：API 设计里最容易被低估的不是业�
 2. 准备真实 Chain 143 的 smoke 环境。
 3. 继续补齐 artifact digest、Action Gate 和 `ADJUST` 验证链路。
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+# 今日进度：Parallax 仓库 PR #17、#18 合并
+
+一句话总结：给 Check Application 补齐了一份确定性验收矩阵，再把它的行为契约写成前端能直接对接的交接文档，两个 PR 首尾相扣，今天都合并进 main。
+
+## 核心收获
+
+**1. PR #17：P0 backend acceptance matrix（5 commits）**
+
+* 核心产出：一份针对 Check Application 生命周期声明的**确定性验收门禁矩阵**，边界明确排除 Live SUCCESS（不做真实外部调用的正向用例）。
+* 打磨过程分三轮：先把矩阵措辞里残留的 API/HTTP 框架描述剥离，对齐到"stub 应用层"这个真实边界；再按 review 意见修正具体断言——A12 钉死为 `NOT_EXACTLY_ONE_CHANGE`、补上 A8 的 stage 映射断言、统一 A1/A10/A11 措辞；最后补一版面向前端消费者的交接说明。
+
+**2. PR #17 的前端交接注记**
+
+* 记录了四个前端接入时容易踩的坑：双重 Integration Error 信封结构、transport 与 run 两套独立的错误码命名空间、`error.stage` 字段不可靠（不能用来做 UI 判断分支）、Re-run 的 diff 值是原子的。
+
+**3. PR #18：frontend check/replay handoff 文档（6 commits）**
+
+* 对应 `POST /api/check` 与 `GET /api/replay` 的完整集成契约：启动行为、错误分类、数据来源标注（provenance）、Re-run 规则。
+* 过程里有一次真实的自我纠错：扩写了一版交接细节后主动 revert，说明当时的扩写和验收矩阵口径没对齐；等 PR #17 合并后，改成直接链接到 main 上的 `backend-p0-acceptance.md`，让文档单一信源、不重复维护。
+
+**4. 两个 PR 的依赖关系**
+
+* \#18 明确等待 #17 先合并，再把交接文档指回验收矩阵这份权威文档——顺序是先钉死后端契约，再对外交付使用说明，避免文档跑在实现前面。
+
+## 个人思考
+
+* PR #18 那次「扩写又 revert」是今天最有意思的一步：与其让两份文档各自维护同一批错误码细节、迟早口径分裂，不如直接指回单一权威来源——这和我们做 indexer 时"游标状态只在一个地方持久化"是同一个工程直觉。
+* 验收矩阵明确排除 Live SUCCESS，把"确定性可重复"和"真实外部依赖"分成两类测试目标，这个边界划分本身就是本次交付里最值钱的设计决策，比矩阵里具体哪条断言更重要。
+
+明日计划：【待补】
+
+*Day X · Monad x Mola Web3 共学*
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

@@ -1,6 +1,6 @@
 - GitHub ID: 176470539
 - Name: CrimsonCap0
-- Timezone: UTC+7
+- Timezone: UTC+6
 - Application: Web3 暑期实习计划 - Monad Buidler Camp
 
 ## Notes
@@ -708,4 +708,10 @@ MEV 并不完全等于恶意攻击。
 
 今天和队友测试并且修复了若干bug。
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+今日将项目部署上线，进行线上测试。
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

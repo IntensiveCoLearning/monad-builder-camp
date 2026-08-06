@@ -301,4 +301,10 @@ Web3 岗位大致分为技术岗和非技术岗。
 
 打卡打卡
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+打卡打卡
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

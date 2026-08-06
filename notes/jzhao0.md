@@ -996,4 +996,48 @@ Git 与安全记录：
 * PR #14：等待 Clare 修改和 Antony 复审；
 * 当前没有新的编码任务，等待 PR #14 收敛后参与最终 E2E 验收。
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+日期：2026 年 8 月 6 日
+
+今日完成：
+
+1. 完成 PR #17 的首轮审查，发现 A12 测试没有真正覆盖 NOT\_EXACTLY\_ONE\_CHANGE，并提交 REQUEST\_CHANGES。
+2. Clare 修复后完成 exact-head 增量复审，确认测试真实进入生产逻辑目标分支，13 项验收测试及全量测试通过，随后提交 APPROVE。
+3. 完成 PR #18 的首轮审查，核对前端 Check / Replay 交接文档与真实 API、Contract 和 Replay 实现的一致性。
+4. PR #18 更新后完成增量复审，确认 HOST/PORT、Re-run reason 优先级、Replay 错误码和 HTTP 表述均已修正，随后提交 APPROVE。
+5. 在群里同步 PR #17、#18 均已通过，建议按 #17 → #18 的顺序合并。
+
+遇到的问题：
+
+PR #17 原测试虽然修改了两个字段，但生产逻辑会优先返回 CHAIN\_OR\_SENDER\_CHANGED，无法证明 NOT\_EXACTLY\_ONE\_CHANGE 分支真正被覆盖。
+
+如何解决：
+
+要求测试改为修改 amountIn 和 protocol，同时保持 sender、chain 和 economic boundary 不变，并检查返回的稳定错误 reason、message 和失败 child Run 行为。
+
+今日产出：
+
+* PR #17：首轮 REQUEST\_CHANGES，修复后 APPROVE；
+* PR #18：首轮 COMMENT Review，修复后 APPROVE；
+* 固定了前端后续依赖的 INVALID\_RERUN / NOT\_EXACTLY\_ONE\_CHANGE 语义；
+* 确认 API handoff 文档与当前实现一致。
+
+当前项目状态：
+
+* PR #17、PR #18 均已通过我的审查，但尚未确认已经合并；
+* Recorded Replay 仍是当前可交付 Demo 路径；
+* Authoritative Live Moss Success 尚未完成；
+* 前后端联调和最终 Demo 尚未完成。
+
+下一步：
+
+等待 PR #17、#18 合并及前端联调分支更新，随后验证 POST /api/check、GET /api/replay/:id、Replay / Live 标签、UNKNOWN、Integration Error、CTA 和错误分支，并保存截图、Network 记录和录屏。
+
+今日学习与收获：
+
+代码审查不能只看测试是否为绿色，还要确认测试是否真正触发了需要验证的生产逻辑分支。稳定的机器可读错误码和明确的判断优先级，是前后端联调可靠性的基础。
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

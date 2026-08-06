@@ -308,4 +308,10 @@ Moss PR merge
 
 优化landing page
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+整理文档材料
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

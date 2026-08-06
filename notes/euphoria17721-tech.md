@@ -2114,4 +2114,14 @@ Designed and prototyped Monad Rank Rush, a consumer crypto mini-game on Monad fe
 
 调试ing![图片.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-295150940/2026-08/1a2a60a9-db45-4a56-99a8-dc2a2b105389.png)
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+Monad Rush Arena 是一个基于 Monad 的任务声誉系统，让用户完成 AI 引导的挑战任务，生成 Skill Signal、Trust Index、排行榜分数和身份徽章，并将最终成绩提交到 Monad Testnet，形成可验证、可传播的 Builder Reputation Proof。
+
+项目不是单纯的点击小游戏，而是面向 Consumer Crypto、Onchain Social、社区 Campaign 和 Builder 学习营的轻量级 Reputation OS。用户可以连接钱包，选择 Rookie Quiz、Strategy Sprint、Social Raid、Onchain Proof 等任务，完成后获得 Arena Score、Momentum、Skill Signal、排行榜名次和身份徽章。
+
+项目的链上设计是：问答点击、动画、临时状态和即时反馈留在前端；最终 Arena Score、任务完成证明、徽章身份和赛季记录提交到 Monad。这样既保留高频交互的流畅体验，也利用 Monad 的低延迟、EVM 兼容和链上可验证性。
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

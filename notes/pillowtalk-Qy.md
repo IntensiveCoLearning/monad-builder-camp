@@ -5724,6 +5724,164 @@ Production 与 Fake 必须实现同一 Port。Web 层只能依赖公开 Adapter 
 <!-- DAILY_CHECKIN_2026-08-06_START -->
 # 2026-08-06
 
-1
+## 一、今日概览
+
+今天主要围绕 `Moss Mini Demo` 的 Adapter 架构继续建设，完成了两个重要功能合并，并推进了下一个核心 Capability 模块的方案设计。
+
+今天的主要产出：
+
+1. 完成并合并 Adapter Ports：PR #72。
+2. 完成并合并 Quote Collection 与 Deterministic Selection：PR #73。
+3. 完成 Capability 构建模块的方案审查，获得实施授权。
+4. 持续完善测试、安全边界和工程质量检查。
+
+参考仓库：
+
+* [Moss Mini Demo](https://github.com/Moss-Mini-Demo/moss-mini-demo)
+* [Moss 原始仓库](https://github.com/nishuzumi/moss)
+
+## 二、完成 Adapter Ports
+
+PR：[feat: add Moss adapter ports #72](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/72)
+
+该 PR 已经合并，合并提交为：
+
+`a0f3a3e8605812c9f0997059b4a30ea7a736022c`
+
+本次完成了 Moss Adapter 的基础接口层，主要内容包括：
+
+* 建立 `MossPort` 接口。
+* 支持 `buildInfo`、`describe`、`quote`、`action`、`simulate` 五类能力。
+* 同时提供 `Production` 和 `Fake` 两种实现。
+* 注入 `MossSourceBindings`，方便后续连接真实 Moss 能力。
+* 固定 Moss 构建版本和 Monad Chain ID。
+* 区分原始数据与派生数据。
+* 增加结构化、脱敏后的错误处理。
+* 保持服务端专用边界，避免被浏览器端错误打包。
+* 没有引入不必要的 npm、文件系统或浮动依赖。
+
+### 人工检查与修复
+
+这个 PR 不是一次性完成的。在审查过程中发现了两个重要问题：
+
+1. **来源对象可能泄露敏感信息**
+
+某些来源对象的属性读取可能主动抛出包含私钥或敏感信息的错误。最初这些错误没有完全经过统一脱敏处理。
+
+随后将 `buildInfo`、`describe`、`quote`、`action`、`simulate` 的读取和校验都纳入统一的安全处理流程。
+
+1. **公共输入可能利用恶意 Proxy 绕过边界**
+
+`quote`、`action` 和 `simulate` 接收调用方输入，必须防止恶意 Proxy、撤销 Proxy、异常 getter、循环对象和克隆失败等情况。
+
+最终增加了输入快照和 fail-closed 处理：
+
+* 异常输入统一返回 `INVALID_INPUT`。
+* 不返回原始错误、`cause` 或敏感信息。
+* 输入校验失败时不调用任何底层 binding。
+* 适配器只使用自己持有的安全快照。
+
+最终结果：
+
+* Adapter 测试：38 项通过。
+* 全量测试：728 项通过。
+* 完成类型检查、构建检查、浏览器打包检查和生产环境检查。
+* PR 已合并，Issue #25 已关闭。
+
+## 三、完成 Quote Collection
+
+PR：[feat: collect and deterministically select quotes #73](https://github.com/Moss-Mini-Demo/moss-mini-demo/pull/73)
+
+该 PR 已经合并，合并提交为：
+
+`65753ada85156716e263b660eeab72c42d293431`
+
+本次完成了报价收集和确定性选择能力：
+
+* 并发请求多个允许的协议报价。
+* 每个候选报价拥有独立的 8 秒本地超时。
+* 正确传递 `AbortSignal`。
+* 对超时后的延迟成功或失败结果进行清理。
+* 每个候选报价只产生一个最终状态。
+* 使用 `BigInt` 比较最小单位金额，避免精度丢失。
+* 金额相同时，按照协议 ID 的 UTF-8 字节顺序进行稳定排序。
+* 生成 RFC 8785 标准的规范化 JSON。
+* 对报价目录和最终选择结果生成 SHA-256 摘要。
+* 保留原始 Quote 身份，同时保存 Adapter 自己的冻结快照。
+* 增加运行时校验、超时矩阵、确定性排序测试和不变性测试。
+
+本次严格控制了范围，没有提前加入：
+
+* Capability 构建。
+* 钱包连接。
+* 签名和交易发送。
+* RPC 或真实链上交互。
+* 自动决策和交易执行。
+* Web/API 编排层。
+
+测试结果：
+
+* Quote 测试：40 项通过。
+* Selection 测试：21 项通过。
+* Adapter 全量测试：102 项通过。
+* 全仓库检查：23 个测试文件、792 项测试通过。
+* Web 构建、生产检查和差异检查全部通过。
+
+该 PR 合并后，Issue #26 已关闭。
+
+## 四、推进 Capability 构建方案
+
+当前推进的任务是 Issue #27：
+
+[Build Capability #27](https://github.com/Moss-Mini-Demo/moss-mini-demo/issues/27)
+
+今天先后提交了多版 Work Plan。前两版因为安全边界和数据权威性定义不充分被要求修改，第三版最终获得授权。
+
+当前方案重点包括：
+
+* 新增 `constructCapabilityV0_1`。
+* 为已选择的协议调用 Moss Action。
+* 使用 `viem` 将最小单位金额转换为精确的人类可读小数。
+* 全程使用 `BigInt`，避免金额精度问题。
+* 保留 Action 返回对象的精确身份。
+* 生成 Capability 完整性摘要。
+* 增加 `verifyCurrentIntegrity()`。
+* 返回 `MATCH`、`MISMATCH`、`UNPROVABLE` 三种完整性状态。
+* 复用 PR #73 中已经实现的 `createSelectedQuoteDigest`。
+* 只允许合成测试来源，不直接宣称真实链上或真实支付能力。
+* 对描述对象执行严格 JSON 精确校验。
+
+目前的关键安全要求：
+
+* 地址和权限信息不能由调用方直接声称为可信。
+* 必须明确权威快照的来源。
+* Proxy、getter、循环引用、Symbol、稀疏数组、额外属性和不可枚举属性都需要拒绝。
+* Capability 只能表达结构化事实，不能直接替用户做交易决策。
+* 当前还没有开始实现，也没有创建新的 PR。
+
+## 五、当前项目进度
+
+截至今天：
+
+* Adapter Ports：已完成并合并。
+* Quote Collection：已完成并合并。
+* Quote Selection：已完成并合并。
+* Capability Builder：方案已授权，等待开始实现。
+* 当前 Mini Demo 没有开放中的 PR。
+* M2 主线已经从 Adapter 基础层进入报价选择和 Capability 构建阶段。
+
+今天完成的工作，已经让项目从“能连接 Adapter”进一步推进到：
+
+`Adapter 接入 → 报价收集 → 确定性选择 → Capability 构建`
+
+## 六、今日主要收获
+
+1. 公共接口不能只验证正常输入，还必须验证恶意 Proxy、异常 getter 和敏感错误传播。
+2. 报价系统需要确定性规则，否则不同运行环境可能产生不同结果。
+3. Web3 金额处理必须使用 `BigInt` 或等价的精确表示，不能依赖普通浮点数。
+4. 在真实工程中，范围控制和 Work Plan 审查本身也是重要开发工作。
+5. Capability、Quote 和交易执行必须分层设计，不能把报价结果直接等同于可执行交易。
+
+今天 Moss Mini Demo 的核心建设已经取得阶段性成果：两个关键 PR 已合并，下一个 Capability 模块也完成了安全方案确认。
 <!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

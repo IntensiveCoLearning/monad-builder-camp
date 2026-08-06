@@ -992,4 +992,10 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 确定黑客松题目，完成前端
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+完成demo
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

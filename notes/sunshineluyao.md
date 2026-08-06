@@ -271,4 +271,10 @@ DAY 3｜已完成课程专用钱包创建、Monad Testnet 添加、测试币领�
 
 \#Monad #MonadPlayground #Web3 #Hackathon #AIAgent #OnchainAgent #BuildInPublic #ProofOfWork
 <!-- DAILY_CHECKIN_2026-08-04_END -->
+
+<!-- DAILY_CHECKIN_2026-08-05_START -->
+# 2026-08-05
+
+学习了Deeplearning.ai 上相关的A2A及Agent Skills课程准备融入黑客松提交
+<!-- DAILY_CHECKIN_2026-08-05_END -->
 <!-- Content_END -->

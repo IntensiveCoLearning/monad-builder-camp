@@ -7525,4 +7525,254 @@ P0 可加入：
 
 * Production 新版回归。
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+# v7 阶段计划
+
+## 阶段 30：测试数据清理与当前前端冻结 🎯 P0
+
+立即完成。
+
+交付：
+
+* 精确删除刚才人工测试 Profile 记录；
+* 不触碰 Quest 1 正式数据；
+* 不触碰 migrations；
+* 首页重复钱包 CTA 人工复验；
+* `/contribute` UI 人工复验；
+* 当前未提交前端 diff 精确检查。
+
+Go / No-Go：
+
+```
+测试档案干净
++ 首页无重复钱包入口
++ contribute 工作台无回归
+```
+
+***
+
+## 阶段 31：公开《异兽志》前端 🎯 P0
+
+交付：
+
+* `/bestiary`；
+* `/bestiary/[caseId]`；
+* Severity 筛选；
+* 首页最近收录 3 条；
+* 一级导航加入“异兽志”；
+* public access；
+* summary\_only 边界；
+* 手机端。
+
+Go / No-Go：
+
+```
+未登录用户可查看所有 published entries
+Pending / Changes Requested / Rejected 不出现
+完整攻击源码不公开
+```
+
+***
+
+## 阶段 32：Reviewer Workbench UI 🎯 P0
+
+交付：
+
+* `/review`；
+* `/review/[caseId]`；
+* Reviewer Session gating；
+* 三种决定；
+* 五维 Merit；
+* 名称与 public summary；
+* 审核事务 API 接入。
+
+Go / No-Go：
+
+```
+普通贡献者不能审核
+Reviewer 可以完整 Approve
+Approve → Bestiary + Merit
+```
+
+***
+
+## 阶段 33：Guardian Hybrid LLM 🎯 P0（强时间盒）
+
+交付：
+
+* Provider abstraction；
+* 服务端 Gemini／其他免费模型 Provider；
+* explicit opt-in；
+* Structured Output；
+* prompt injection 防护；
+* hybrid merge；
+* 4 个 LLM 异兽名；
+* deterministic fallback；
+* 安全 public error；
+* mock tests。
+
+Go / No-Go：
+
+```
+无 API Key → deterministic 仍正常
+LLM 失败 → fallback
+LLM 成功 → 新漏洞可返回合理语义分类
+不能把未公开源码默认上传
+```
+
+若 3 小时内不能稳定：
+
+```
+LLM 保持 feature flag / disabled
+→ 不阻塞最终提交
+→ deterministic Guardian 继续作为正式功能
+```
+
+***
+
+## 阶段 34：Signed Guardian Draft 🎯 P0
+
+交付：
+
+* `GUARDIAN_DRAFT_SIGNING_SECRET`；
+* HMAC；
+* draft expires；
+* source hashes；
+* wallet binding；
+* submit 时验签；
+* 不二次调用 LLM。
+
+Go / No-Go：
+
+```
+用户看到的草案
+=
+最终保存的草案
+```
+
+***
+
+## 阶段 35：Changes Requested 反馈与返修 🎯 P1
+
+交付：
+
+* contributor-visible `reviewSummary`；
+* reviewer-internal `reviewNotes`；
+* `/profile/cases/[caseId]` 反馈区；
+* changes\_requested 编辑；
+* Guardian rerun；
+* same caseId；
+* 新 hash；
+* 再次 pending\_review；
+* history。
+
+如果影响 P0 稳定：
+
+```
+保留“守阁人意见可查看”
+延后“在线编辑返修”
+```
+
+***
+
+## 阶段 36：修炼进度与 EXP 🎯 P1 / Showcase
+
+交付：
+
+* quest\_progress；
+* exp\_ledger；
+* Quest 1 verified completion；
+* idempotent EXP；
+* Profile 修炼进度；
+* 不再显示纯占位。
+
+Go / No-Go：
+
+```
+重复完成不能重复发 EXP
+Merit 与 EXP 严格分离
+```
+
+***
+
+## 阶段 37：通关 NFT 🎯 P1 / Showcase
+
+交付：
+
+* NFT 合约或复用现有可安全扩展的奖励能力；
+* Quest 1 图片；
+* metadata；
+* 一钱包一 Quest 一次领取；
+* 钱包主动 mint；
+* txHash；
+* Profile NFT 卡；
+* explorer 链接；
+* 合约测试。
+
+No-Go：
+
+```
+若新 NFT 合约在 8 月 8 日上午仍未完成安全测试
+→ 不部署半成品
+→ Profile 只保留“通关凭证即将开放”
+→ Demo 不声称已铸造 NFT
+```
+
+***
+
+## 阶段 38：Moss 钱包执行与 Monad 状态复核 🎯 P0 Showcase
+
+交付：
+
+* Action Review UI；
+* Before；
+* prepare；
+* simulation；
+* Receipt；
+* Warning；
+* wallet send；
+* txHash；
+* After；
+* Delta。
+
+Go / No-Go：
+
+```
+warning / revert 会阻断
+钱包保留签名
+真实 tx 可复核
+```
+
+如果真实发送受网络影响：
+
+```
+保留已经验证的 Testnet simulate 证据
+不把 simulate 写成 executed
+```
+
+***
+
+## 阶段 39：Production / README / Demo / Release 🎯 P0
+
+交付：
+
+* Vercel Preview；
+* Preview 全流程人工验收；
+* PR；
+* main；
+* Production；
+* Production 回归；
+* README；
+* 架构图；
+* 截图；
+* Demo 视频；
+* Pitch；
+* Known Limitations；
+* Tag；
+* Release；
+* 黑客松提交。
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

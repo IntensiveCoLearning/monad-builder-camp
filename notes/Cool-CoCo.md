@@ -911,5 +911,11 @@ Co-learning现在好安静，完全自习，估计都在抓紧时间赶项目中
 &#x20;USDC-BAD SAFEMODE 检测到，拦截
 
 7\. 账户详情和勋章墙
+
+<br />
+
+![今日Co-learning截图.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-08/597ec68f-b39f-49b8-9d89-b7e3c2119884.png)
+
+![Snipaste\_2026-08-06\_23-08-15.png](https://cdn.intensivecolearn.ing/images/programs/icl1-program-1277480730/checkins/icl1-user-64899977/2026-08/30dea078-ac7f-45ae-9f71-d8a159fe8b42.png)
 <!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

@@ -5720,4 +5720,10 @@ Production 与 Fake 必须实现同一 Port。Web 层只能依赖公开 Adapter 
 5. Web/API 应先固定输入、输出、字节限制、错误和 Server-only 边界，再接入真实执行逻辑。
 6. 当前已经进入真实 Moss Adapter 边界建设阶段，但 Adapter 实现尚未开始，真实协议与链上能力仍未接入。
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+1
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

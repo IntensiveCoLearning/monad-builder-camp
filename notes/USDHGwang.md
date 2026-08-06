@@ -751,4 +751,18 @@ PayBox 昨天查得不夠細，今天補完。它的核准走推播通知加 pas
 
 真正的重點是最後一步：**把舊值塞回去，確認測試會紅**。沒驗過會不會紅的測試，只是讓人安心的裝飾。
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+**Day 32｜門面亮了，才發現歷史也是門面**
+
+今天 Landing 正式上線。晚上九點半到十點四十是收尾的高密度時段，6 個 commit 把架構段重建成六幕 pinned scrollytelling：GSAP ScrollTrigger、550vh runway、pin 內層舞台、scrub 0.5，幕間 crossfade 加每幕 scale 沉澱；act 06 的選擇岔路——VERIFIED 卡 → YOU DECIDE → SIGN「broadcasts」/ REJECT「nothing moves」，卡片沉鏈、三個區塊依序點亮、天亮；暗底改成帶藍調的 navy（#0a0e18）加 starfield 捲動視差；字體收斂到 Geist、tracking 0.14–0.18em、body 全部 normal。動畫語言整條守 Vercel camp：零 elastic / back / rotate，全 power2.out，opacity 加 8–16px 位移——信任產品只確認，不表演。i18n 一次補到五語系（en/zh-TW/zh-CN/ja/ko），地球 icon dropdown，切語不重建 ScrollTrigger。舊的 Explode 系列和 three.js 整條刪掉。下午把 GitHub Pages 開起來，`pages.yml` 自動跑，根路徑跟 sign 頁都回 200。門面，亮了。
+
+但同一天發現後門是開的。repo 是 public，git 歷史裡躺著 11 個內部檔：根目錄四份 plan/handoff、product-brief、docs/ 整包交接與日誌。就算現在把檔案刪掉，歷史裡每一版都還挖得出來。處理方式是用 `git-filter-repo` 在 fresh clone 上剝歷史，18 commits 變 15，驗證零殘留，最後一步 force push 覆寫 GitHub 等拍板——還沒推。這堂課比 landing 本身貴：public repo 的歷史就是門面的一部分；交接檔跟日誌根本不該進同一個 repo；在 git 裡「之後再清」的代價，比一開始就分 repo 大得多。
+
+下午另一條線把「知識如何到達 agent」寫成文件。naive route 是餵文檔：靜態快照、鏈會變、知識漂移，而且文檔是指令通道——注入的指令跟知識混在同一條通道，模型分不出來，這正是 prompt injection 的本質。Vigil 的路是 server 即知識：不餵文檔、餵 tools，discover 動態回傳 schema，自由文字只以資料進入、被當證據比對、不當指令遵循。寫完順手實測：全新 session、15 個 tool calls、1 分 6 秒，agent 自己 discover → 準備質押 → 模擬 → 主動講出「receiver 要換成 your address」「簽名錢包要跟帳戶一致」。不是預設 agent 懂 Monad，是 agent 讀 Vigil 就會做，然後 Vigil 驗證它做的對不對——這句話可以直接進 pitch。
+
+晚上第一次用使用者的眼睛把產品完整跑一遍：Hermes 當 host 接 Vigil MCP，預覽 0.25 MON 質押成 shMONAD。verdict BLOCKED，而理由全是真的——模擬帳戶只有 0.001 MON，付不起本金加手續費（\~0.266）照送會直接失敗；receiver 還是測試地址，要換成自己的；簽名錢包要跟帳戶一致。三個前提清清楚楚。壞在誠實的地方，比壞在程式碼裡好一百倍。
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

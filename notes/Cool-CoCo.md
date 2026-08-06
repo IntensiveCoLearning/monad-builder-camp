@@ -882,4 +882,34 @@ Co-learning现在好安静，完全自习，估计都在抓紧时间赶项目中
 
 5、交易结算界面较为空旷，在上方增加下个人的钱包余额等信息平衡下；
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+5月5日学习记录：
+
+<br />
+
+今天Co-learning依然很安静；
+
+团队项目进行线上会议，主要展示昨天修复的测试问题的情况，昨日测试反馈的问题均已修复和完善，今日主要讨论了下路演的准备工作，其中线上路演我们主要围绕以下环节进行陈述：
+
+1\. 首页 - 连接钱包 - metamask授权登录 - 水龙头领2种代币(展示DEMO USDC领取)
+
+2\. 仪表盘 - 信息i - AI分析(真实使用Groq LLAMA3 API)
+
+3\. 风控规则 - 代币+池子
+
+4\. 交易 USDC-GOOD SAFEMODE SHALLOW 产生FALLBACK
+
+5\. USDC-GOOD UNSAFEMODE SDA 交易时间长
+
+&#x20;   USDC-GOOD SAFEMODE SDA 检测到，拦截
+
+6\. BAD-USDC UNSAFEMODE 多签无法转出(多签为前后端模拟，可调控)
+
+&#x20;USDC-BAD SAFEMODE 检测到，拦截
+
+7\. 账户详情和勋章墙
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

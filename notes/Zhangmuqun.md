@@ -1993,4 +1993,57 @@ OpenZeppelin 原生 ERC20 状态校验逻辑天然兼容，但上层业务不能
 * 补充事件字段，在`CredentialIssued`事件中完整透出凭证 id、接收人、签发者、元数据 URI，方便前端直接解析。
 * Remix 本地做边界测试：传入零地址，合约正常回滚；重复撤销同一凭证，交易拒绝。将加固后的合约重新部署 Monad 测试网，更新合约地址与 ABI。
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-06_START -->
+# 2026-08-06
+
+## Monad 并行执行模型（重点）
+
+以太坊：**串行执行**，交易按顺序排队，一笔执行完成才执行下一笔。所有交易共享全局状态，顺序完全确定。
+
+Monad：**并行执行**，没有状态冲突的多笔交易可以同时运行。
+
+> 什么叫状态冲突：两笔交易读写同一个合约存储槽。
+
+✅利好：高频 DeFi、NFT mint、大量用户交互场景，吞吐量大幅提升。
+
+⚠️合约开发坑点：
+
+1. 不要依赖**交易执行顺序**做业务逻辑。以太坊靠交易顺序判断抢先交易，Monad 并行环境下顺序不保证。
+2. 重入风险逻辑依然存在，并行不会自动解决安全问题。
+3. Gas 估算行为和以太坊存在差异，Remix 上的 gas limit 不能直接照搬以太坊经验，测试网务必做真实交易验证。
+4. 绝大多数 EVM 合约源码不需要修改即可部署，但业务逻辑假设串行顺序的合约会出现意料之外行为。
+
+## 二、Solidity Event 事件完整知识
+
+1. 本质：Event 数据存放在**交易收据 (transaction receipt)**，**不写入合约存储 storage**。
+
+* 写 storage：永久占用合约存储空间，gas 成本高，合约内部可以直接读取。
+* emit Event：仅作为日志，合约内部 Solidity 代码**无法读取自己 emit 出来的事件**，只能给链下程序（前端、脚本、索引器）解析。
+
+1. indexed 关键字
+
+* 最多标记 4 个参数为 indexed，进入`topics[]`数组；topics 是用于快速过滤检索的索引。
+* 没有加 indexed 的参数全部打包放在`data`字段，data 是 ABI 编码的原始字节，不支持直接过滤。
+* 字符串 string、数组 array 类型做 indexed：不会保存原值，只会保存 keccak256 哈希。如果业务需要原始字符串，必须同时存到 data。
+
+1. 事件组成
+
+* topic [0]：事件签名哈希 `keccak256("UserAction(address,uint256,string)")`，用来识别这是哪一个事件。
+* topic \[1‑3]：最多 3 个额外 indexed 参数。
+* data：ABI 编码其余全部入参。
+
+1. 两种使用场景
+
+   ① 查询历史：扫描区块，筛选匹配 topics 的事件，做历史数据回溯；
+
+   ② 实时监听：订阅新出块，捕获最新发生的链上行为，DApp 前端展示转账、mint 记录。
+
+## 三、EVM 交易失败分类
+
+1. Revert：业务逻辑主动回滚（require/revert/ 自定义错误），gas 消耗一部分，剩余 gas 退回账户。Monad 浏览器会展示 revert reason 错误原因。
+2. Out‑of‑Gas：设置 gas limit 太小，执行合约运算耗尽 gas，**全部 gas 消耗不返还**，交易标记失败。
+3. Nonce too high / Nonce too low：账户 nonce 序列号混乱，交易直接被节点丢弃，不上链。
+4. Transaction dropped：网络拥堵、gas price 过低，节点不打包，不会出现在区块。
+<!-- DAILY_CHECKIN_2026-08-06_END -->
 <!-- Content_END -->

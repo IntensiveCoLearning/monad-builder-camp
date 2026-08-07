@@ -3006,4 +3006,71 @@ PR #11 的 review 让我意识到：API 设计里最容易被低估的不是业�
 
 *Day X · Monad x Mola Web3 共学*
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+## 今日主题
+
+ 
+
+今天把 Parallax 后端的 **verified** **`ADJUST`** **/ fixture Action Gate** 从「ADR 里写着以后做」推进到可交付的 [PR #19](https://github.com/parallax-monad/parallax/pull/19)：在确定性 Check Application 路径上，经济 FAIL（`OUTPUT_BELOW_BOUNDARY`）且 Execution PASS 的 baseline 可 spawn 只改 `amountIn` 的验证 child；child 通过后 baseline 挂 `action_verification` attestation，公开 `verdict = ADJUST`；未验证候选继续 fail-closed 到 `STOP`。同步补上验收行 A14、handoff 文案，并消化 @chin0312 / @rainypilgrimage 的 CHANGES\_REQUESTED。
+
+## 今日完成
+
+1. **PR #19 — fixture Action Gate for verified ADJUST**（draft → review 迭代中）
+   * Orchestrator：`isActionGateCandidate` / `proposeAmountInAdjustment` / `childRunPassesActionGate` / `buildVerifiedAdjustBaseline`；导出 `buildRunDiff` 供 Gate child 使用。
+   * Check Application：`maybeApplyVerifiedActionGate` 复用 `invokeAgentFlowCheck` + `interpretAgentFlowCandidate`；child `complete` 失败会尝试 `fail` 终态，仍非终态则阻塞 baseline 公开 finalize。
+   * Shared Contract 暂用 interim `action_verification`（完整 §3.3.1 `ACTION_GATE` / CrossRun 明确 deferred）。
+   * 验收：`pnpm test:acceptance` 增补 **A14**；文档更新 `backend-p0-acceptance.md` 与 `api-frontend-handoff.md`。
+   * Commits：`382a5ef`（功能）→ `869ed48`（Biome CI）→ `422359a`（review 反馈）。
+2. **Owner Review Scope 与反馈闭环**
+   * PR 正文约定三位 reviewer：`@jzhao0`（Gate/Evidence）、`@antony819`（前端消费）、`@chin0312`（文档/交付/Action 可见性；Rei 语义并入 Chin，不另增 reviewer）。
+   * Chin：收紧 A14 deeper cite、A14 Action↔Evidence 联动断言、handoff「verified」与 `OUTPUT_IMPROVEMENT_VERIFIED` 边界。
+   * Rei：baseline 强制 `P0-EVIDENCE-001 = PASS`；child 输出从 Economic 规则唯一 EvidenceRef 解析（禁 first-match）。
+   * Self-review：仅对照两人评论，确认五项均已落地。
+3. **工程卫生**
+   * Action Gate fixtures 上收到 `@parallax/orchestrator/application/action-gate-fixtures`，去掉 API 侧重复 builder。
+   * CI 挂在 Biome（import/format/`!`）；本地 lint 清干净后 push。
+4. **前端边界澄清（给联调同事）**
+   * 图上像「已连接钱包 + 报价」：当前是 **demo UI**（写死地址/余额），无真实 wallet connect / 签名 / 广播。
+   * 后端 handoff 只有 `POST /api/check` 与 `GET /api/replay/:id`；报价区若无权威结果显示「无报价」，不造本地假报价充当 Live。
+
+## 今日学到
+
+1. **公开 ADJUST 必须是「验证生命周期」，不能是「看起来像建议」。** 未 attestation 的 ADJUST 必须 STOP；verified 路径要 baseline 候选 → 单字段 child → 终态 child → attestation → 同一 Run 上 Action `evidenceRefs` 可追溯。
+2. **交付契约比「功能能跑」更容易 overclaim。** A14 deeper coverage 写成「TV-ECO-006」会被读成完整规格已实现；interim `action_verification` 必须写进 non-goals，handoff 也要把 `OUTPUT_IMPROVEMENT_VERIFIED` 限定为「该 child 相对不变 Boundary 通过」，不是最优价/最优路径/协议安全/Live 保证。
+3. **取证要钉住规则引用，不能扫第一条同类 Evidence。** 多条 `simulated_token_out` 时，first-match 可能 attest 未参与 Economic 判定的输出；Gate 必须从 `P0-ECONOMIC-001` 的 EvidenceRef 解析。
+4. **Child 落库半失败会破坏 Receipt 不变量。** `start` 成功、`complete` 失败若放任 pending child 同时公开 baseline STOP，违反「非终态 child 时 baseline 不得公开」。先 terminalize，再决定是否 finalize。
+5. **产品 UI 与后端契约要拆开讲。** 「钱包样子」不等于钱包能力；前端联调只依赖 check/replay，避免等不存在的 connect/quote API。
+
+## 目前仍然存在的问题
+
+* 完整 §3.3.1 `ACTION_GATE` / CrossRun locator / 全文 TV-ECO-006 仍 deferred。
+* 每个 live `isActionGateCandidate` 仍会 auto-spawn fixture ⅔ `amountIn` child（live 广度策略后放）。
+* Live Moss SUCCESS 仍 Moss-blocked；本 PR 不 claim Live。
+* baseline 合成同 Run `verified-output-improvement` 是 Shared Contract 权宜，非最终 attestation 形状。
+* PR #19 仍在 draft / review，尚未 merge。
+
+## 明日计划
+
+1. 跟进 #19 三位 Owner re-review，按需小修后转 ready / merge。
+2. 与 Antony 对齐 Analyze 对 A14 verified ADJUST 与 fail-closed STOP 的 CTA 分支。
+3. 视需要开 follow-up：live auto-spawn 策略、完整 `ACTION_GATE` contracts 扩展。
+4. Moss Live pin / simulator pinned-block 仍走独立 blocker 线，不与本 Gate 混谈。
+
+## 今日反思
+
+今天最硬的一课是：**「能出 ADJUST」不等于「可以公开推荐」。** 前者是内部候选，后者必须绑定可审计的验证 child 与 Evidence 链接。
+
+Review 把三件事钉死了：契约措辞不能超卖；Action 与 attestation 必须联动而不是并存；Evidence 规则 PASS 与 Economic 引用必须显式。修完这些之后，A14 才像一条 Action-visibility 交付门，而不只是「happy path 冒烟」。
+
+也提醒自己：前端截图里的钱包与报价，是产品叙事壳；后端今天交付的是签名前检查的 fail-closed / verified 边界。两者都重要，但不能互相冒充。
+
+## 感受
+
+今天是这次残酷共学打卡的最后一天。经历了 20 多天的打卡，我有一个很深的感受，就是自己养成了打卡的习惯，每天记录一天做的任务和学习心得。我希望这个习惯能够延续下去，也希望以后能有更多的机会去参加更多类似的内容。
+
+最后，也感谢助教老师以及群里面 LXDao 的各位老师的辛苦付出和帮助！
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

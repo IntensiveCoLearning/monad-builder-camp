@@ -5888,220 +5888,28 @@ PR：[feat: collect and deterministically select quotes #73](https://github.com/
 <!-- DAILY_CHECKIN_2026-08-07_START -->
 # 2026-08-07
 
-项目名称：AnteSig
+**项目名称：AnteSig**
 
- 
+AnteSig 是一个面向 Monad 链上 AI Agent 操作的签名前证据检查平台。它主要服务于使用 AI Agent 准备链上交易的普通用户，以及正在开发 Agent、钱包周边产品、Moss 集成和协议适配器的开发者。项目要解决的核心问题是：AI Agent 即使能够生成一笔可以执行的交易，也可能误解用户意图、选择错误的协议或资产、改变输入金额、设置非预期的接收地址或授权额度，甚至生成一段看似合理、实际却没有链上证据支持的解释。与此同时，“模拟成功”只说明交易在特定状态下可以运行，并不能证明 Agent 准备的操作与用户原始要求一致。AnteSig 因此在钱包签名之前，将“用户想做什么”“Agent 实际准备了什么”以及“模拟执行中真实发生了什么”放到同一套可追溯的证据报告中进行比较，帮助用户在签名前发现资产、金额、协议、授权、交易顺序和执行结果之间的不一致，避免仅凭 Agent 的自然语言解释或单一的模拟成功状态作出判断。
 
+用户使用 AnteSig 时，首先通过结构化表单描述一笔 Exact-input Swap 的原始意图，包括执行账户、输入资产、输出资产、输入金额、最大滑点、允许使用的协议以及接收地址。系统随后从 Monad 上的 Kuru、PancakeSwap等允许协议获取报价，并保留各协议的成功、失败和超时结果。AnteSig 不会简单地把某个报价描述为“最安全”或“绝对最优”，而是根据公开且确定性的规则进行候选协议选择：只比较资产方向、输入金额和单位基础一致的有效报价，所有金额均使用最小单位整数或 BigInt 处理，避免浮点数误差；在符合条件的报价中优先选择标准化输出金额更高的候选，如结果相同，则按照固定的协议 ID 顺序进行稳定选择。这样，用户不仅能看到最终选择了哪个协议，也能看到为什么选择它，以及其他协议返回了什么结果。
 
+完成协议选择后，AnteSig 通过 Moss 构建原始 Capability Tree。该结构会完整记录 Agent 准备执行的嵌套操作、交易顺序、调用参数、风险标签、Approval 与 Swap 之间的关系。系统会保存 Moss 返回的原始 Capability，不重新排列交易、不修改 calldata、不删除节点，也不会通过界面展示层改变原始证据的含义。AnteSig 还会使用规范化序列化与 SHA-256 摘要检查 Capability 在构建、模拟和报告生成过程中是否发生变化；一旦发现 Capability 被修改，系统就会停止后续流程，而不是继续把结果呈现为可信证据。
 
-一句话介绍：一个面向 Monad AI Agent 操作的交易前证据检查台，通过对比用户意图、Agent 准备的操作与模拟执行结果，在钱包签名前发现资产、金额、协议、授权及执行证据中的不一致，并输出可核验的 MANUAL\_REVIEW 或 STOP 报告。
+在模拟阶段，AnteSig 使用 Monad Chain ID 143 对原始 Capability 进行 Live 模拟，并记录本次运行对应的网络、区块号、区块哈希、RPC 状态、Moss 版本和证据来源。系统采集每一笔交易的执行顺序、Approval、Swap、gas、Receipt、Outcome、Warning、资产与余额变化、回滚信息、覆盖率，以及多笔交易之间的状态连续性。使用 Monad 的原因不只是把项目部署到一条高性能链上，而是利用 Monad 的真实链状态和协议环境，验证 AI Agent 准备的操作是否与用户意图一致。整个链路为：用户提交结构化意图，系统获取 Kuru 和 PancakeSwap 报价，根据确定性规则选择协议，由 Moss 构建 Capability Tree，再在明确的 Monad 区块状态上执行模拟，提取 Receipt、Outcome、Warning、gas 和状态变化，最后将这些执行证据与用户意图和 Agent 操作进行对齐。每次 Live 运行都保留来源信息，确保用户可以判断证据来自哪个网络、哪个区块和哪个组件，而不是把静态数据或 Fixture 误认为真实 Monad 运行结果。
 
+模拟完成后，AnteSig 会进行三方对比：第一部分是用户原始要求，第二部分是 Agent 实际准备的 Capability，第三部分是模拟中观察到的执行结果。系统会逐项检查操作类型、执行账户、输入和输出资产、输入金额、滑点、协议、接收地址、Approval 对象、授权额度、交易集合、交易顺序、Capability 完整性以及是否出现非预期资金移动。每一项检查都会显示预期值、实际值、检查状态和对应的原始证据引用，结果分为 PASS、FAIL 或 REVIEW。即使模拟状态显示 SUCCESS，只要输入金额、输出资产、接收地址或授权关系与用户要求不一致，系统仍然会判定为 STOP。例如，用户要求交换 1 个代币，但 Agent 构建的是 10 个代币的操作，即便该操作在模拟中成功执行，也会因为关键意图不一致而被停止。
 
+AnteSig 最终生成一份 Preflight Evidence Report，报告包括用户意图、协议报价、协议选择依据、原始 Capability Tree、模拟证据、三方对比、Alignment 检查、运行时间、网络与区块上下文、证据来源以及项目限制。决策引擎只会输出 MANUAL\_REVIEW 或 STOP 两种结果。MANUAL\_REVIEW 表示目前可用证据中没有发现已经定义的强制停止条件，用户可以继续进行人工检查；它不代表交易已经安全、获得批准、可以放心签名或保证未来执行成功。STOP 表示发现了关键意图不一致、Warning、Receipt 或 Outcome 失败、回滚、Capability 被修改、交易顺序无法证明、状态连续性中断，或者缺少足以继续审核的关键证据。AnteSig 采用 fail-closed 原则：对于关键证据缺失或无法确认的情况，不会默认通过，也不会通过自然语言解释填补证据缺口。
 
-为谁解决什么问题：
+在所有仓库 Issues 均已实现的情况下，AnteSig 已完成结构化 Exact-input Swap 意图录入、Kuru 与 PancakeSwap 并行报价、确定性协议选择、Moss Capability 构建、Capability 原始结构保存和完整性验证、Monad Live 模拟、Receipt、Outcome、Warning、gas、状态变化、回滚、覆盖率和交易顺序证据提取，以及用户意图、Agent 准备和模拟结果的三方对比。前端提供完整的工作台，可以展示运行状态、Quote 比较、协议选择理由、Capability Inspector、模拟证据时间线、Alignment 检查结果和两层决策信息。普通用户可以先看到简洁的停止原因和下一步建议，开发者与审核人员则可以继续展开精确的 Reason Code、Source Reference 和原始 JSON。系统同时支持原始 Capability、模拟证据和完整报告的查看与导出，并具备响应式布局、键盘操作、可访问性和桌面及移动端展示能力。
 
+AnteSig 还支持可选的 Clear402 Credential。系统可以将合法的 Preflight Evidence Report 封装为带完整性摘要的 Monad Action Credential，并使用 RFC 8785 规范化序列化和 SHA-256 生成可独立验证的摘要。用户可以导出 Credential、离线验证其完整性，也可以修改副本中的金额、资产或其他字段，观察验证结果如何从有效变为无效。需要强调的是，Clear402 的完整性验证只证明受保护的报告内容自生成后没有被修改，不代表发布者身份已经得到认证，也不代表交易安全、链上授权或可以执行；它同样不会改变 AnteSig 原本的 MANUAL\_REVIEW 或 STOP 结果。
 
+为了确保现场 Demo 在 RPC 或外部协议暂时不可用时仍能被观看，AnteSig 提供 Live 和 Fixture 两种明确区分的运行模式，并准备了 Happy Path、Amount Mismatch、RPC Failure 和 Receipt Warning 等确定性场景。Happy Path 用于展示证据完整且未触发停止条件时的 MANUAL\_REVIEW；Amount Mismatch 用于展示模拟成功但金额与用户意图不一致时仍然触发 STOP；RPC Failure 用于展示证据无法获取时系统如何停止；Receipt Warning 用于展示交易出现警告时的 fail-closed 行为。Fixture 中的所有地址、报价、Capability、Receipt 和模拟结果均为合成数据，页面、报告和导出文件都会明确标注 FIXTURE 来源。Live 运行失败时，系统不会自动或静默切换到 Fixture，也不会把两种来源的数据混合在一份报告中，用户必须主动选择 Fixture 模式后重新运行。
 
-AnteSig 主要服务于使用 AI Agent 准备 Monad 链上操作的用户，以及将 Moss 接入 Agent、钱包周边产品或协议适配器的开发者。
+当前 Mock 或非核心实现范围主要包括最终钱包签名、私钥管理和 Monad 主网交易广播。AnteSig 负责的是“交易进入签名器之前”的证据检查，不替用户持有私钥、批准交易、生成最终签名或发送主网交易。自然语言意图解析也不是当前 Demo 的关键证据来源，核心流程以结构化表单记录用户要求，避免 LLM 解析误差直接污染原始意图。用户账号、历史报告数据库、通知系统、美元价格换算，以及 Lending、Staking、Vault、跨链等非 Swap 场景也不属于当前 Demo 的主要范围。Fixture 场景属于明确标记的合成演示数据，不会被描述为真实 Moss、Monad、协议、RPC 或链上证据。
 
-
-
-AI Agent 可能误解用户意图、选择错误的协议或资产、改变交易金额、引入非预期授权，或者生成看似合理但缺少执行证据支持的解释。即使模拟成功，也不代表 Agent 实际准备的操作符合用户最初的要求。
-
-
-
-AnteSig 会在签名前，将“用户要求什么、Agent 准备了什么、模拟实际发生了什么”放在同一份报告中进行比较，帮助用户发现操作中的不一致、风险和关键证据缺口。
-
-
-
-用户如何完成核心操作：
-
-
-
-1\. 用户填写一笔 Exact-input Swap 的结构化意图，包括账户地址、输入和输出资产、输入金额、最大滑点、允许使用的协议及接收地址。
-
-
-
-2\. 系统分别获取 Kuru、PancakeSwap 等允许协议的 Quote，并保留各协议的成功、失败和超时结果。
-
-
-
-3\. 系统根据公开、确定性的规则选择候选协议，只比较资产方向和金额基础一致的有效报价，优先选择标准化 amountOut 更高的候选。
-
-
-
-4\. 系统通过 Moss 构建原始 Capability Tree，并检查构建前后的完整性，确保应用没有修改 Agent 准备的操作。
-
-
-
-5\. Moss 在 Monad 状态上模拟原始 Capability，采集交易顺序、Approval、Swap、gas、Receipt、Outcome、Warning、状态变化、回滚信息、覆盖率和状态连续性等证据。
-
-
-
-6\. 系统对比用户意图、Agent 准备的 Capability 和模拟执行结果，检查资产、金额、滑点、协议、接收地址、授权对象及授权额度是否一致。
-
-
-
-7\. 系统生成 Preflight Evidence Report，并给出两种结果：
-
-
-
-MANUAL\_REVIEW：当前证据中没有发现已定义的强制停止条件，用户可以继续人工检查。
-
-
-
-STOP：发现意图不一致、执行失败、Warning、回滚或关键证据不足，不应继续将该操作交给钱包签名。
-
-
-
-为什么使用 Monad：
-
-
-
-Monad 为项目提供 AI Agent 链上操作的真实执行与验证环境。项目通过 Monad Chain ID 143 的 RPC 状态获取协议 Quote、构建 Capability，并对 Agent 准备的操作进行模拟。
-
-
-
-项目选择 Monad，不只是为了部署或展示交易，而是希望利用 Monad 的真实链状态验证 Agent 操作。系统会检查 Agent 准备的资产、金额、协议、接收地址、授权和交易顺序是否与用户意图一致，并将区块号、区块哈希、Moss 版本和证据来源记录到报告中。
-
-
-
-Monad 的具体使用方式：
-
-
-
-结构化用户意图  
-
-→ 获取 Kuru 和 PancakeSwap 报价  
-
-→ 确定性选择候选协议  
-
-→ Moss 构建原始 Capability Tree  
-
-→ 在 Monad 状态上模拟 Capability  
-
-→ 提取 Receipt、Outcome、Warning、gas 和状态变化  
-
-→ 对比用户意图、Capability 与模拟结果  
-
-→ 输出 MANUAL\_REVIEW 或 STOP  
-
-→ 生成 Preflight Evidence Report
-
-
-
-已实现功能：
-
-
-
-1\. 结构化 Exact-input Swap 意图录入，支持账户、资产地址、金额、滑点、允许协议和接收地址。
-
-
-
-2\. Kuru、PancakeSwap 等协议的并行报价，以及基于公开规则的确定性协议选择。
-
-
-
-3\. Moss Capability Tree 构建、原始结构保存及完整性校验。
-
-
-
-4\. 基于 Monad Chain ID 143 的 Live 模拟，记录区块号、区块哈希和调用上下文。
-
-
-
-5\. Receipt、Outcome、Warning、gas、交易顺序、状态变化、回滚和状态连续性证据提取。
-
-
-
-6\. 用户意图、Agent 准备和模拟结果的三方对比。
-
-
-
-7\. 对操作类型、账户、资产、金额、滑点、协议、接收地址、Approval、交易顺序和 Capability 完整性的确定性检查。
-
-
-
-8\. Fail-closed 决策引擎，最终仅输出 MANUAL\_REVIEW 或 STOP。
-
-
-
-9\. 原始 Capability、Receipt、Outcome、Warning 和模拟证据的查看与导出。
-
-
-
-10\. Clear402 完整性凭证生成、导出、离线验证和篡改测试。
-
-
-
-11\. Live 与 Fixture 双模式。Live 失败时不会自动切换到 Fixture，必须由用户主动选择，并且所有 Fixture 数据都会明确标注来源。
-
-
-
-Mock 部分：
-
-
-
-1\. 最终钱包签名属于 Mock 或未实现范围，系统不会持有私钥或替用户签名。
-
-
-
-2\. Monad 主网交易广播未实现，项目只负责交易前检查、模拟和证据报告。
-
-
-
-3\. 自然语言意图解析可以使用 Mock，当前核心流程通过结构化表单录入用户意图。
-
-
-
-4\. Happy Path、金额不一致、RPC 失败和 Receipt Warning 等备用演示场景使用明确标记为 FIXTURE 的合成数据。
-
-
-
-5\. 用户账号、历史报告数据库、通知系统和美元价格换算不属于当前核心 Demo。
-
-
-
-6\. Lending、Staking、Vault 和跨链操作暂不支持。
-
-
-
-Known Issues：
-
-
-
-1\. 当前仅支持 Exact-input Swap，不支持 Lending、Staking、Vault 或跨链操作。
-
-
-
-2\. 系统不处理私钥、钱包签名或主网交易广播。
-
-
-
-3\. MANUAL\_REVIEW 不代表交易安全或获得批准，只表示现有证据中没有触发已定义的 STOP 条件，用户仍需人工检查。
-
-
-
-4\. 模拟成功不代表未来主网执行一定成功，因为 Monad 的链上状态可能在模拟后发生变化。
-
-
-
-5\. Quote 只用于协议选择，不属于最终执行证据。
-
-
-
-6\. Live 模式依赖 Monad RPC、Moss 及相关协议的可用性。发生错误时，系统会明确显示失败，不会伪装成成功。
-
-
-
-7\. Clear402 只证明报告或凭证内容没有被修改，不代表身份认证、交易安全或执行授权。
-
-
-
-8\. Fixture 仅用于稳定演示和失败恢复，不属于真实 Monad、Moss、协议或链上证据。
-
-
-
-9\. 自然语言解释只用于帮助用户理解，最终应以原始 Capability、Receipt、Outcome、Warning 和 Source Reference 为准。
+AnteSig 的已知限制是目前仅支持 Exact-input Swap，尚未覆盖借贷、质押、Vault 和跨链等更复杂操作；Live 模式依赖 Monad RPC、Moss 及相关协议的可用性，RPC 或协议异常时系统只能明确报告证据获取失败，不能保证始终得到可用模拟结果；Quote 只服务于协议选择，并不等同于最终执行证据；模拟结果只反映特定网络和区块状态，Monad 状态在模拟之后可能发生变化，因此模拟成功不能保证未来主网执行一定成功；MANUAL\_REVIEW 只表示当前证据没有触发既定停止条件，不能理解为安全结论、批准或签名授权；Clear402 只验证报告内容的完整性，不验证发布者身份，也不证明交易安全；自然语言说明只用于帮助用户理解，最终判断仍应以原始 Capability、Receipt、Outcome、Warning、Alignment 和 Source Reference 为准。AnteSig 始终坚持一个边界：它不是自动批准交易的工具，而是在签名前尽可能清楚地告诉用户，Agent 准备了什么、模拟观察到了什么、哪些证据成立，以及在哪些情况下必须停止。
 <!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

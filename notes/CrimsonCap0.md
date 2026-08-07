@@ -714,4 +714,10 @@ MEV 并不完全等于恶意攻击。
 
 今日将项目部署上线，进行线上测试。
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+今日录制demo展示视频，准备提交～
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

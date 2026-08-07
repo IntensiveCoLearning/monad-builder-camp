@@ -723,4 +723,26 @@ Session Gas 赞助目前仍未通过连续成功 Gate，不能宣称 OddLane 已
 
 今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-06.md
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+今天我将 OddLane 从私有开发和本地验证推进到了可公开访问的 Monad Testnet Demo。交易页已经可以展示 BTC Target Sprint 的市场状态、目标价、参考价、倒计时、订单簿、下单界面和交易账户入口；我实际检查到市场完成锚定并进入交易窗口。
+
+ 
+
+今天也完成了 Week 5 的 Hackathon Final Submission。OddLane 是我个人独立完成的项目，我负责产品机制、CLOB 合约、Complete Set、Pyth 生命周期、Monad Testnet 验证、ZeroDev Kernel 交易账户、前端和 Vercel 部署。
+
+<br />
+
+这次整理 Demo 时，我特别保留了真实边界：公开页面可访问，但本次浏览器检查没有连接钱包执行真实下单；当前没有可见的自然订单簿深度和成交；Session Gas Sponsorship 也还没有通过连续成功验证。因此我没有把 Demo 夸大成已经稳定免 Gas 或完整生产可用的交易所。
+
+<br />
+
+下一步是录制独立钱包的领水、入金、下单、撤单和持仓流程，继续补齐 Session Permission 的真实 Testnet E2E，并在 Demo Day 前完成 Keeper、Bot 与用户钱包三类角色的可复现彩排。
+
+<br />
+
+今日学习记录：https\://github.com/baikingrio/monad-builder-camp/blob/main/daily/2026-08-07.md
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

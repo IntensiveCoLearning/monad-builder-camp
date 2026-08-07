@@ -2124,4 +2124,110 @@ Monad Rush Arena 是一个基于 Monad 的任务声誉系统，让用户完成 A
 
 项目的链上设计是：问答点击、动画、临时状态和即时反馈留在前端；最终 Arena Score、任务完成证明、徽章身份和赛季记录提交到 Monad。这样既保留高频交互的流畅体验，也利用 Monad 的低延迟、EVM 兼容和链上可验证性。
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+# Week 5 Hackathon Final Submission：Monad Rush Arena
+
+1. <br />
+
+## 项目名称与一句话介绍
+
+**项目名称：** Monad Rush Arena
+
+**一句话介绍：** Monad Rush Arena 是一个基于 Monad 的任务声誉系统，让用户完成 AI 引导的挑战任务，生成 Skill Signal、Trust Index、排行榜分数和身份徽章，并将最终成绩提交到 Monad Testnet，形成可验证、可传播的 Builder Reputation Proof。
+
+1. <br />
+
+## Demo 链接或演示录屏
+
+**前端 Demo 链接：** <https://monad-rush-arena-monad.vercel.app/>
+
+**GitHub Repo：** <https://github.com/euphoria17721-tech/Monad-Rush-Arena-Monad->
+
+1. <br />
+
+## GitHub Repo、Figma 或合约地址
+
+**GitHub Repo：** <https://github.com/euphoria17721-tech/Monad-Rush-Arena-Monad->
+
+**Monad Testnet 合约地址：** 0xe626B962e39886Ce16753d67609f8e7CC3fc3b35
+
+**合约浏览器链接：** <https://testnet.monadexplorer.com/address/0xe626B962e39886Ce16753d67609f8e7CC3fc3b35>
+
+1. <br />
+
+## Monad 的具体使用方式
+
+项目使用 Monad Testnet 作为最终成绩和身份证明的链上记录层。用户在前端完成任务、问答、挑战和积分积累，这些高频交互先保留在前端，保证体验流畅；当用户完成一轮挑战后，可以将最终 Arena Score 和 Badge 提交到 Monad Testnet 合约中。
+
+项目的链上设计重点不是把每一次点击都上链，而是把真正有公开验证价值的结果上链，例如：
+
+* 最终 Arena Score
+* 用户 Badge / Builder 身份
+* 任务完成证明
+* 排行榜成绩记录
+* 可公开展示的链上参与凭证
+
+这样既保留了 Consumer Crypto 产品需要的即时反馈，也利用 Monad 的低延迟、EVM 兼容和链上可验证性，让用户成绩可以被公开查看和复用。
+
+1. <br />
+
+## 团队成员与分工
+
+**团队成员：** 潘雨晴
+
+**我的具体贡献：**
+
+* 完成产品方向设计：从点击小游戏升级为 Monad 任务声誉系统。
+* 设计核心产品机制：任务挑战、AI Agent Brief、Skill Signal、Trust Index、排行榜、Badge、Achievement Card。
+* 完成前端 Demo 搭建与部署。
+* 完成 Monad Testnet 合约部署与前端合约地址接入。
+* 整理项目文档、提交说明和作品集表达。
+* 完成 Vercel 公开部署，保证评委可以访问 Demo。
+
+1. <br />
+
+## 已实现功能、Mock 部分与 Known Issues
+
+### 已实现功能
+
+* 钱包连接入口
+* 多任务挑战模式：Rookie Quiz / Strategy Sprint / Social Raid / Onchain Proof
+* Arena Score 积分系统
+* Momentum 连击反馈
+* AI Agent Brief 任务建议模块
+* Skill Signal 技能信号展示
+* Trust Index 信任指数展示
+* Season Leaderboard 赛季排行榜
+* Badge Ladder 身份徽章体系
+* Achievement Card 成就分享卡
+* Monad Testnet 合约地址接入
+* 前端 Demo 已部署到 Vercel
+
+### 真实链上部分
+
+* 已部署 Monad Testnet 合约：RankRushScore
+* 合约支持提交用户最终 Score 和 Badge
+* 用户可以通过钱包向合约提交最终成绩
+* 合约地址和浏览器链接可公开验证
+
+### Mock 部分
+
+* 当前排行榜中的部分用户数据为前端模拟数据。
+* AI Agent Brief 当前是规则型推荐文案，还没有接入真实 AI API。
+* Skill Signal、Trust Index、Campaign Health 当前由前端逻辑生成，后续可以接入更完整的数据分析。
+* Badge 目前是前端展示 + 合约提交记录，后续可以扩展为 NFT 或 SBT。
+
+### Known Issues
+
+* 手机普通浏览器可能无法直接连接钱包，需要使用钱包 App 内置浏览器。
+* 国内部分手机网络访问 Vercel 可能不稳定，但电脑浏览器可以正常打开 Demo。
+* 当前 Demo 更偏 MVP 展示，后续还需要补充真实用户数据、完整排行榜后端和更细致的防作弊机制。
+
+## 个人提交说明
+
+我在本项目中主要承担产品设计、Ops 机制设计和 Demo 整理工作。这个作品体现了我对 Monad Consumer Crypto 场景的理解：高频交互不应该全部上链，真正适合上链的是最终成绩、身份、奖励和可验证的公开记录。通过 Monad Rush Arena，我尝试把任务系统、排行榜、徽章身份和社区传播机制结合起来，形成一个更适合黑客松、学习营和社区 Campaign 使用的链上声誉 Demo。
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

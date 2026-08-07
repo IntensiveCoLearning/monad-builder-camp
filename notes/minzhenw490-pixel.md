@@ -1254,4 +1254,14 @@ Monad Testnet（测试网）—— 实操重点
 
 <https://github.com/minzhenw490-pixel/Execution-Safety-Agent/blob/main/notes/%E5%8F%8D%E9%A6%88%E6%94%B9%E8%BF%9B%E6%8F%90%E4%BA%A4-Sentinel.md>
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+<br />
+
+**链接：**
+
+**<https://github.com/minzhenw490-pixel/web3-/blob/main/学习笔记-Demo视频制作.md>**
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

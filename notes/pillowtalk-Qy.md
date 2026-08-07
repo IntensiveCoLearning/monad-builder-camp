@@ -5884,4 +5884,224 @@ PR：[feat: collect and deterministically select quotes #73](https://github.com/
 
 今天 Moss Mini Demo 的核心建设已经取得阶段性成果：两个关键 PR 已合并，下一个 Capability 模块也完成了安全方案确认。
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+项目名称：AnteSig
+
+ 
+
+
+
+一句话介绍：一个面向 Monad AI Agent 操作的交易前证据检查台，通过对比用户意图、Agent 准备的操作与模拟执行结果，在钱包签名前发现资产、金额、协议、授权及执行证据中的不一致，并输出可核验的 MANUAL\_REVIEW 或 STOP 报告。
+
+
+
+为谁解决什么问题：
+
+
+
+AnteSig 主要服务于使用 AI Agent 准备 Monad 链上操作的用户，以及将 Moss 接入 Agent、钱包周边产品或协议适配器的开发者。
+
+
+
+AI Agent 可能误解用户意图、选择错误的协议或资产、改变交易金额、引入非预期授权，或者生成看似合理但缺少执行证据支持的解释。即使模拟成功，也不代表 Agent 实际准备的操作符合用户最初的要求。
+
+
+
+AnteSig 会在签名前，将“用户要求什么、Agent 准备了什么、模拟实际发生了什么”放在同一份报告中进行比较，帮助用户发现操作中的不一致、风险和关键证据缺口。
+
+
+
+用户如何完成核心操作：
+
+
+
+1\. 用户填写一笔 Exact-input Swap 的结构化意图，包括账户地址、输入和输出资产、输入金额、最大滑点、允许使用的协议及接收地址。
+
+
+
+2\. 系统分别获取 Kuru、PancakeSwap 等允许协议的 Quote，并保留各协议的成功、失败和超时结果。
+
+
+
+3\. 系统根据公开、确定性的规则选择候选协议，只比较资产方向和金额基础一致的有效报价，优先选择标准化 amountOut 更高的候选。
+
+
+
+4\. 系统通过 Moss 构建原始 Capability Tree，并检查构建前后的完整性，确保应用没有修改 Agent 准备的操作。
+
+
+
+5\. Moss 在 Monad 状态上模拟原始 Capability，采集交易顺序、Approval、Swap、gas、Receipt、Outcome、Warning、状态变化、回滚信息、覆盖率和状态连续性等证据。
+
+
+
+6\. 系统对比用户意图、Agent 准备的 Capability 和模拟执行结果，检查资产、金额、滑点、协议、接收地址、授权对象及授权额度是否一致。
+
+
+
+7\. 系统生成 Preflight Evidence Report，并给出两种结果：
+
+
+
+MANUAL\_REVIEW：当前证据中没有发现已定义的强制停止条件，用户可以继续人工检查。
+
+
+
+STOP：发现意图不一致、执行失败、Warning、回滚或关键证据不足，不应继续将该操作交给钱包签名。
+
+
+
+为什么使用 Monad：
+
+
+
+Monad 为项目提供 AI Agent 链上操作的真实执行与验证环境。项目通过 Monad Chain ID 143 的 RPC 状态获取协议 Quote、构建 Capability，并对 Agent 准备的操作进行模拟。
+
+
+
+项目选择 Monad，不只是为了部署或展示交易，而是希望利用 Monad 的真实链状态验证 Agent 操作。系统会检查 Agent 准备的资产、金额、协议、接收地址、授权和交易顺序是否与用户意图一致，并将区块号、区块哈希、Moss 版本和证据来源记录到报告中。
+
+
+
+Monad 的具体使用方式：
+
+
+
+结构化用户意图  
+
+→ 获取 Kuru 和 PancakeSwap 报价  
+
+→ 确定性选择候选协议  
+
+→ Moss 构建原始 Capability Tree  
+
+→ 在 Monad 状态上模拟 Capability  
+
+→ 提取 Receipt、Outcome、Warning、gas 和状态变化  
+
+→ 对比用户意图、Capability 与模拟结果  
+
+→ 输出 MANUAL\_REVIEW 或 STOP  
+
+→ 生成 Preflight Evidence Report
+
+
+
+已实现功能：
+
+
+
+1\. 结构化 Exact-input Swap 意图录入，支持账户、资产地址、金额、滑点、允许协议和接收地址。
+
+
+
+2\. Kuru、PancakeSwap 等协议的并行报价，以及基于公开规则的确定性协议选择。
+
+
+
+3\. Moss Capability Tree 构建、原始结构保存及完整性校验。
+
+
+
+4\. 基于 Monad Chain ID 143 的 Live 模拟，记录区块号、区块哈希和调用上下文。
+
+
+
+5\. Receipt、Outcome、Warning、gas、交易顺序、状态变化、回滚和状态连续性证据提取。
+
+
+
+6\. 用户意图、Agent 准备和模拟结果的三方对比。
+
+
+
+7\. 对操作类型、账户、资产、金额、滑点、协议、接收地址、Approval、交易顺序和 Capability 完整性的确定性检查。
+
+
+
+8\. Fail-closed 决策引擎，最终仅输出 MANUAL\_REVIEW 或 STOP。
+
+
+
+9\. 原始 Capability、Receipt、Outcome、Warning 和模拟证据的查看与导出。
+
+
+
+10\. Clear402 完整性凭证生成、导出、离线验证和篡改测试。
+
+
+
+11\. Live 与 Fixture 双模式。Live 失败时不会自动切换到 Fixture，必须由用户主动选择，并且所有 Fixture 数据都会明确标注来源。
+
+
+
+Mock 部分：
+
+
+
+1\. 最终钱包签名属于 Mock 或未实现范围，系统不会持有私钥或替用户签名。
+
+
+
+2\. Monad 主网交易广播未实现，项目只负责交易前检查、模拟和证据报告。
+
+
+
+3\. 自然语言意图解析可以使用 Mock，当前核心流程通过结构化表单录入用户意图。
+
+
+
+4\. Happy Path、金额不一致、RPC 失败和 Receipt Warning 等备用演示场景使用明确标记为 FIXTURE 的合成数据。
+
+
+
+5\. 用户账号、历史报告数据库、通知系统和美元价格换算不属于当前核心 Demo。
+
+
+
+6\. Lending、Staking、Vault 和跨链操作暂不支持。
+
+
+
+Known Issues：
+
+
+
+1\. 当前仅支持 Exact-input Swap，不支持 Lending、Staking、Vault 或跨链操作。
+
+
+
+2\. 系统不处理私钥、钱包签名或主网交易广播。
+
+
+
+3\. MANUAL\_REVIEW 不代表交易安全或获得批准，只表示现有证据中没有触发已定义的 STOP 条件，用户仍需人工检查。
+
+
+
+4\. 模拟成功不代表未来主网执行一定成功，因为 Monad 的链上状态可能在模拟后发生变化。
+
+
+
+5\. Quote 只用于协议选择，不属于最终执行证据。
+
+
+
+6\. Live 模式依赖 Monad RPC、Moss 及相关协议的可用性。发生错误时，系统会明确显示失败，不会伪装成成功。
+
+
+
+7\. Clear402 只证明报告或凭证内容没有被修改，不代表身份认证、交易安全或执行授权。
+
+
+
+8\. Fixture 仅用于稳定演示和失败恢复，不属于真实 Monad、Moss、协议或链上证据。
+
+
+
+9\. 自然语言解释只用于帮助用户理解，最终应以原始 Capability、Receipt、Outcome、Warning 和 Source Reference 为准。
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

@@ -1311,4 +1311,38 @@ Riso 完成 3 人真人访谈；Neo 跑通 Moss Path B simulate；三人 stand-u
 - PR #17：`https://github.com/LierMi/Silicon-Labor-Arbitration/pull/17`
 - PR #19：`https://github.com/LierMi/Silicon-Labor-Arbitration/pull/19`
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+【Web3 暑期实习计划｜Monad Builder Camp 打卡】
+
+日期：2026 年 8 月 7 日
+周次：Week 5｜Hackathon Build Sprint
+方向：Tech / Dev Builder
+主题：用 Archify 固化项目架构、E2E 流程和 TaskEscrow 生命周期，并收敛 Demo 录制路线
+
+今日完成：
+
+1. 团队确认 Demo 采用“现场展示 + 录制视频”两条路线，优先完成 UI 调整、录制和上传，必要时进行轻量剪辑，避免单一现场路线影响最终交付。
+2. 明确架构图交付规范：保留 Archify HTML、SVG 和 JSON IR 源文件；SVG 需要保证 viewBox、文字可读性、透明背景和 README 展示效果；JSON IR 作为后续修改节点、文字和颜色的可编辑源文件。
+3. 完成系统架构图、E2E 流程图和 TaskEscrow 生命周期图，并根据当前实现更新 Next.js mock dossier、Direct Contract Adapter、Moss 仅负责 createTask、后续 viem direct path 以及 Monad Testnet / TaskEscrow / Moss 边界。
+4. 完成 Archify JSON、HTML、SVG XML 校验，并成功将 SVG 渲染为 PNG；生成文件大小分别为 13,315、8,413、18,918 bytes。PR #24 的 TypeScript、Foundry、Hygiene CI 已通过，PR 当前 Open，Vercel 检查因授权问题失败，尚未合并。
+
+今日收获：
+
+架构图不是装饰性图片，而是帮助评委在短时间内理解系统边界、端到端流程和合约生命周期的技术证据。保留 HTML、SVG、JSON IR 比只交 PNG 更利于 README 展示、后续修改和团队协作。Demo 交付则应优先保证可复现和可解释，再继续补充视觉优化。
+
+下一步：
+
+完成 UI 最小收尾并录制 Demo，上传后做必要剪辑；将架构图接入 README，跟进 PR #24 合并和 Vercel 授权问题，并分别演练现场展示和视频备份路线。
+
+仓库证据：
+- daily/2026-08-07.md
+- docs/diagrams/architecture.html / architecture.svg / architecture.architecture.json
+- docs/diagrams/e2e-flow.html / e2e-flow.svg / e2e-flow.workflow.json
+- docs/diagrams/task-lifecycle.html / task-lifecycle.svg / task-lifecycle.lifecycle.json
+- PR #24：https://github.com/LierMi/Silicon-Labor-Arbitration/pull/24
+- 在线 Demo：https://silicon-labor-arbitration.vercel.app/
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

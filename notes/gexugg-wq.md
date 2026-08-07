@@ -253,4 +253,10 @@ Mini Demo 0：Monad FocusProof Agent
 
 今日解决冒烟测试遇到等待时间过长问题
 <!-- DAILY_CHECKIN_2026-08-05_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+开始上传demo
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

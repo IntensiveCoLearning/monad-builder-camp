@@ -998,4 +998,10 @@ I still feel that Web3 has many layers and the user experience is not very intui
 
 完成demo
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+debug
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

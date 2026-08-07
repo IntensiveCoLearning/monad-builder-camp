@@ -212,4 +212,10 @@ GitHub Issues 可用于仓库工作的规划、讨论与追踪，支持记录**�
 
 系统学习去中心化应用 DApp 架构与开发流程，DApp 由交互前端、Solidity 智能合约、链上 Indexer、区块链 / IPFS 存储构成。索引器捕获合约 Event 存入数据库，解决链上数据批量查询痛点。完整流程覆盖需求规划、合约编码测试、索引程序开发、Web3 前端开发、测试网部署。熟悉 Hardhat、Foundry 两套本地开发环境；掌握 RPC 节点通信原理、JSON-RPC 常用接口，对比 Alchemy、Infura 等服务商适用场景，理清前端通过 Viem/Wagmi+RPC + 钱包和合约交互的完整链路。
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+系统学习去中心化应用 DApp 架构与开发流程，DApp 由交互前端、Solidity 智能合约、链上 Indexer、区块链 / IPFS 存储构成。索引器捕获合约 Event 存入数据库，解决链上数据批量查询痛点。完整流程覆盖需求规划、合约编码测试、索引程序开发、Web3 前端开发、测试网部署。熟悉 Hardhat、Foundry 两套本地开发环境；掌握 RPC 节点通信原理、JSON-RPC 常用接口，对比 Alchemy、Infura 等服务商适用场景，理清前端通过 Viem/Wagmi+RPC + 钱包和合约交互的完整链路。
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

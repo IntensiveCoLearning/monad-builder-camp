@@ -765,4 +765,32 @@ PayBox 昨天查得不夠細，今天補完。它的核准走推播通知加 pas
 
 晚上第一次用使用者的眼睛把產品完整跑一遍：Hermes 當 host 接 Vigil MCP，預覽 0.25 MON 質押成 shMONAD。verdict BLOCKED，而理由全是真的——模擬帳戶只有 0.001 MON，付不起本金加手續費（\~0.266）照送會直接失敗；receiver 還是測試地址，要換成自己的；簽名錢包要跟帳戶一致。三個前提清清楚楚。壞在誠實的地方，比壞在程式碼裡好一百倍。
 <!-- DAILY_CHECKIN_2026-08-06_END -->
+
+<!-- DAILY_CHECKIN_2026-08-07_START -->
+# 2026-08-07
+
+### 8/07 打卡摘要
+
+#### 一、核心進展
+
+1. **主網 E2E 全面打通**
+   * 完成真實交易驗證（0.25 MON stake → shMONAD）與 Kuru Swap 本機實測。
+   * 完成 10 個 Capability 測試矩陣（5 可簽名 / 5 預期 Revert），全測項 337 passed，0 typecheck 錯誤。
+2. **i18n 多語言補齊**
+   * 清零「英文對話混中文」缺口，完成 Panel 框架、Sign 頁面及 5 個資料工具輸出的 i18n 化。
+3. **官網與 Repo 整備**
+   * 官網（`/add`、`/docs`）部署至 Vercel。
+   * 補齊 9 個對抗性測試，完成敏感資訊清理、歷史 Commit Squash 及 Repo 拆分準備。
+
+#### 二、 Demo 關鍵認知（重要）
+
+* **Kuru Swap**：金額需 $\ge$ 1 MON（走 AMM），避免小額訂單簿觸發解析異常。
+* **語言切換**：介面語言由 Client 決定，Demo 展示需預先將環境設為英文。
+* **安全機制**：錢包與發起帳戶不符會硬阻斷（`wrongAccount`）；多筆交易不支援（`MULTI_TX_UNSUPPORTED`）作為誠實邊界展示。
+
+#### 三、 踩坑與教訓
+
+* **測試規範**：改檔後必須執行 `typecheck + test + build:all` 三連，避免 Vite 快取漏抓型別錯誤。
+* **餘額機制**：資產可負擔性（Affordability）依賴真實餘額，預充值（Prefund）僅影響模擬 Trace。
+<!-- DAILY_CHECKIN_2026-08-07_END -->
 <!-- Content_END -->

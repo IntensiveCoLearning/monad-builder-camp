@@ -6651,13 +6651,14 @@ By completing the program, participants will leave with:
 
 
 
+
 <!-- STATISTICALDATA_START -->
 ## Statistics
 
-- Total Participants: 0
-- Completed Participants: 0
-- Completed Users: 
-- Perfect Attendance Users: 
-- Failed Participants: 0
-- Failed Rate: 0.00%
+- Total Participants: 628
+- Completed Participants: 83
+- Completed Users: Karynam2, patrick-star-10, gexugg-wq, Minami-Bein, baikingrio, emptytouch, Long299792458, bb-cmb, ouminghai, zane199109, jzhao0, antony819, rainypilgrimage, Camino-sec, starrujian, cainiao0924, Wang-Tongfei, XGe711, zzxwjm, Yunshiro, wsui3y-spec, Iris-1128, yeliang0815-design, tiyadegure, USDHGwang, 1260598954-ctrl, kkiii2025, chin0312, AGF-DOT, yys1initiate, lpdsg, calla7777777, henanshifandaxue, 10yu7ian, yedeyu, Ttttt7777, tz-hao, pillowtalk-Qy, Chic7777, midi-zhuanjia, honora888, hereMer, RicardoXu2, linkmedcs, WendyYuHuan, ppipppiu, BoweiTu, weypro, hwish39-byte, gitgdut, fox896, sunshineluyao, Dawnener, KevinZeratul, echo5177, 2424389092-blip, wenyaohuang, Zhangmuqun, Ritscher-lv, CrimsonCap0, Suzuki-yki, BiBi2644, Chichuzxy, xinnuolin33-glitch, SelinaAnn, brightheartma, a1449, minzhenw490-pixel, baoyuheng235, 2942292987a-boop, bky0211, LierMi, Moyang2025, Spencer-yuyu, Fredenbxy, starshipgo, junnanhuang, euphoria17721-tech, HengYuLexus, 1983069478, Cool-CoCo, fred123h, rainypilgrimage-beep
+- Perfect Attendance Users: patrick-star-10, Minami-Bein, baikingrio, Camino-sec, tiyadegure, AGF-DOT, calla7777777, pillowtalk-Qy, honora888, a1449, 2942292987a-boop, euphoria17721-tech
+- Failed Participants: 547
+- Failed Rate: 87.10%
 <!-- STATISTICALDATA_END -->

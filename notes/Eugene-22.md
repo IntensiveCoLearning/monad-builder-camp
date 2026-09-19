@@ -2,7 +2,7 @@
 timezone: UTC+8
 ---
 
-# Zhengguang Ng
+# Ng
 
 **GitHub ID:** Eugene-22
 
@@ -11,6 +11,10 @@ timezone: UTC+8
 ## Self-introduction
 
 Web3 暑期实习计划 - Monad Buidler Camp
+
+大家好，我是 Ng，目前 base 深圳，趁着假期正在学习 Web3，Ai, 机器人相关领域，欢迎志同道合的小伙伴们一起学习交流。
+
+很高兴和大家一起参与本次的暑期实习活动！
 
 ## Notes
 
